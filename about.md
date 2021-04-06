@@ -30,9 +30,9 @@ The franchise was built to help them with marketing, mentoring, and tools that f
 
 ### The Second Evolution of SQL Saturday
 
-[SQL Saturday #33 - Charlotte](./events/2010-3-6-SQLSat-0033.html), the franchise was handed over to the PASS organization to manage and support.
+[SQL Saturday #33 - Charlotte](/2010-3-6-SQLSat-0033.html), the franchise was handed over to the PASS organization to manage and support.
 
-![The handover](./assets/img/about/sqlsathandover.jpg)
+![The handover](/assets/img/about/sqlsathandover.jpg)
 
 PASS continued to support the franchise and assist local organizers in running events. They hired a community liason, [Karla Landrum](https://twitter.com/karlakay22), who promoted and mentored event organizers around the world. With their support, the franchise grew to run over 100 events in a single year.
 
@@ -44,7 +44,7 @@ PASS rebranded themselves and the site, changing logos, and adding a few require
 
 The new logo incorporated the PASS angle brackets look and a new color scheme.
 
-<img src="./assets/img/logos/sqlsaturday_logo_old.png">
+<img src="/assets/img/logos/sqlsaturday_logo_old.png">
 
 PASS also hired <A href="https://twitter.com/cathrinew">Cathrine Wilhelmsen</A> as the new community liaison to continue to support the franchise.
 
@@ -62,16 +62,16 @@ These are some of the milestones throughout the history of the franchise. If you
 
 ### Centurion Events
 
-- [SQL Saturday #100 - SÃO PAULO 2011](/)
-- [SQL Saturday #200 - Philadelphia 2013](/)
-- [SQL Saturday #300 - Kansas City 2014](/)
-- [SQL Saturday #400 - Torino 2015](/)
-- [SQL Saturday #500 - Boston 2016](/)
-- [SQL Saturday #600 - Chicago 2017](/)
-- [SQL Saturday #700 - Colorado Springs 2018](/)
-- [SQL Saturday #800 - Atlanta - BI Edition 2018](/)
-- [SQL Saturday #900 - Vitoria 2019](/)
-- [SQL Saturday #1000 - Oregon Virtual 2020](/)
+- [SQL Saturday #100 - SÃO PAULO 2011](/2011-11-26-SQLSat-0100/)
+- [SQL Saturday #200 - Philadelphia 2013](/2013-06-01-SQLSat-0200/)
+- [SQL Saturday #300 - Kansas City 2014](/2014-09-13-SQLSat-0300/)
+- [SQL Saturday #400 - Torino 2015](/2015-05-23-SQLSat-0400/)
+- [SQL Saturday #500 - Boston 2016](/2016-03-19-SQLSat-0500/)
+- [SQL Saturday #600 - Chicago 2017](/2017-03-11-SQLSat-0600/)
+- [SQL Saturday #700 - Colorado Springs 2018](/2018-03-24-SQLSat-0700/)
+- [SQL Saturday #800 - Atlanta - BI Edition 2018](/2018-09-22-SQLSat-0800/)
+- [SQL Saturday #900 - Vitoria 2019](/2019-08-24-SQLSat-0900/)
+- [SQL Saturday #1000 - Oregon Virtual 2020](/2020-10-24-SQLSat-1000/)
 
 ### Centurion Speakers
 
