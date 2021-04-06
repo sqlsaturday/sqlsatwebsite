@@ -1,0 +1,567 @@
+---
+layout: "post" 
+title: "SQLSaturday #307 - Iowa City 2014" 
+prettydate: "7 June 2014" 
+---
+# SQLSaturday #307 - Iowa City 2014
+ 
+**Event Date**: 06/07/2014 00:00:00
+ 
+**Event Location**:
+- University of Iowa - University Capitol Centre
+- 201 S Clinton St
+- Iowa City, Iowa
+ 
+<a href="/assets/pdf/0307.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: That's Not in My Job Description: The Accidental Developer
+ 
+**Abstract**:
+By now most everyone is familiar with the term "Accidental DBA".  They are the people who for one reason or another, and usually by no choice of their own, wind up being their company's DBA by default.  But what about the reverse of that situation? You could be happily installing, configuring and maintaining SQL Server, taking care of backups, restorations, setting up HA and DR and then all of a sudden your boss asks you to write some code.  It could be a complex report using SSRS, it could be an SSIS package, a small data entry intranet web app or a dashboard. DON'T PANIC.  In this session we will show you how use the skills that you have developed as a SQL Server DBA, along with other free tools that are available to you, and show you how to make coding easier than you thought!
+ 
+**Speaker(s):**
+- Dave Tigges
+ 
+*Track and Room*: Track 5 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Implement a Dynamic Table Partitioning Solution
+ 
+**Abstract**:
+Have a large or potentially large database that you would like to partition?  Manually implementing partitioning and the corresponding maintenance can be a lot of work, especially if you have many tables.  In this presentation we look at how you would implement a partitioning solution dynamically for all tables with the designated partition column.  We set it up to keep a FIXED number of file groups.  The partition maintenance will recycle the file groups over time as partitions are dropped and created.  We do as much as possible through dynamic scripting.  This solution can easily be used for archiving but in this example we are simply keeping the most current 6 months of data and dropping the rest.  Assumes you have a basic understanding of SQL Server table partitioning.
+ 
+**Speaker(s):**
+- Kirby Richter
+ 
+*Track and Room*: Track 4 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Scary Things A Database Owner Can Do
+ 
+**Abstract**:
+So you've setup your new SQL Server instance and it’s time to start adding databases to it.  You followed security best practices at the instance level, but what about security within each database?  Is that something you can control?  Well, if like me, you work in a shop that mostly purchases software, then having users with database owner permissions is a reality, and likely not one you can change.  But members of the db_owner role can only make changes that would adversely impact their own databases, right?  Think again. During this session we’ll review some common database level settings and actions which can have a negative impact across the entire instance.  We’ll discuss ways to mitigate these risks and monitor for their occurrence.  Come learn how to not let poor choices made by a database owner impact your entire instance.
+ 
+**Speaker(s):**
+- Paul Timmerman
+ 
+*Track and Room*: Track 5 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Are You Maintaining Your SQL Servers?
+ 
+**Abstract**:
+Are you performing all of the regular maintenance you should on your servers?Do you not run CHECKDB because "it takes too long"? How about Index Maintenance - does that take too long?Do you really have the appropriate backups in place?Do you have benchmark numbers in place to compare when your server is "slow"?Come discuss the answers to these and other questions - we will discuss the free Maintenance Solution scripted tools from Ola Hallengren and how they can help you fix these and other problems with a little easy coding you can do yourself. We will also discuss other tips and tricks to help you maintain and troubleshoot your SQL Server instances.
+ 
+**Speaker(s):**
+- Andy Galbraith
+ 
+*Track and Room*: Track 5 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Getting Started with MDX
+ 
+**Abstract**:
+In this session, led by Microsoft BI Architect and SQL Server MVP Bill Pearson, we will concentrate largely upon crafting simple MDX expressions and queries whose purposes, for the most part, are to return a set of data. We will overview the structure of a cube, using as a basis the sample Adventure Works cube that is available to anyone installing SQL Server Analysis Services 2008 R2. We will then outline the components of simple MDX syntax, and get started writing basic expressions and queries. We will expose basic member functions, introduce filters (or “slicers”), and begin exploring core MDX functionality, including calculated members, and named sets.   This session applies equally to Analysis Services 2008, 2008R2 and 2012.
+ 
+**Speaker(s):**
+- William E Pearson III
+ 
+*Track and Room*: Track 2 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Designing a Restore Strategy
+ 
+**Abstract**:
+Do you back up your databases? If the answer is yes (and I really hope it is), do you test your restores? If a table gets dropped at 1:53PM, can you restore the database to 1:52PM using log backups? Can you use the WITH STANDBY parm to apply log backups to a read-only copy of a database?For the answers to these questions and a whole lot more about database restores, plus some nifty scripts, join me for this presentation.
+ 
+**Speaker(s):**
+- Frank Gill
+ 
+*Track and Room*: Track 3 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Yesterday I Couldn’t Even Spell ‘DBA’.
+ 
+**Abstract**:
+Referred to as “DBA by Default” or “Reluctant DBA”, many people are faced with the situation of suddenly becoming a SQL Server database administrator.  Once the initial shock passes they realize that they need help. This is a great place to start finding resources! The abundance of SQL Server books and websites that exist, some good and some not so good, might only increase confusion leading to panic and rash decisions. DON’T PANIC! In this session we will cover ways to address basic problems and offer some suggestions for finding good places to find help. 
+ 
+**Speaker(s):**
+- Larry Toothman
+ 
+*Track and Room*: Track 2 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: The Curious Case of Isolation Levels
+ 
+**Abstract**:
+Have you ever seen or used “WITH (NOLOCK)” in T-SQL? Do you know what it does and its side effects? Is SQL Server optimistic or pessimistic when it comes to locking? Can it be both? In this session we will cover these questions and discuss how and why SQL Server takes locks and how that affects other users. We will go over alternatives for using NOLOCK and discuss when it is appropriate to use. In addition, we will discuss what are the ACID properties and how to monitor locks and blocks.
+ 
+**Speaker(s):**
+- Keith Tate
+ 
+*Track and Room*: Track 3 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: 10 Things Every DBA Should Know!
+ 
+**Abstract**:
+Are you just starting out in the DB world? Are you a developer wanting to gain further insight on how to improve your SQL Skills? If you answered 'Yes' to any of those question, then this is the session for you! John will be talk about things from both an administration side a well as developmental that he's seen in the wild that every DBA should know and understand. We'll look at things like Auo Shrink, SELECT *, Indexe Basics and 7 others!
+ 
+**Speaker(s):**
+- John Morehouse
+ 
+*Track and Room*: Track 3 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: How to Argue with Your Infrastructure Admins – and Win
+ 
+**Abstract**:
+Do you feel like you spend hours going round-and-round with your system, storage, and virtualization administrators over SQL Server best practices? Are their application-agnostic requirements hurting your SQL Server’s performance, or worse, their reliability? David Klee (@kleegeek) will discuss valuable insight into how to start and work through the common conversations with them on the SQL Server infrastructure practices that matter to you the most, and how to succeed in getting what you need while keeping everyone happy.
+ 
+**Speaker(s):**
+- David Klee
+ 
+*Track and Room*: Track 1 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Data Visualization with SQL Server 2012
+ 
+**Abstract**:
+This session will cover the end user experience of Data Visualization. We will look at how data helps businesses gain insights into processes and make informed decisions.
+ 
+**Speaker(s):**
+- Chaitanya Khaladkar
+ 
+*Track and Room*: Track 4 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Managing SQL Server Performance with Extended Events
+ 
+**Abstract**:
+One of a DBA's primary responsibilities is managing the performance of a SQL Server environment. When performance problems arise, DBAs need to have the correct tools in place to be able to dig in and discover the issues that are occurring. Although it's one of the newer tools in the DBA toolbox, Extended Events is one of the most powerful tools available. In this session, we will discuss performance management responsibilities for DBAs and provide a foundation, through Extended Events, to understand and resolve performance issues.
+ 
+**Speaker(s):**
+- Jason Strate
+ 
+*Track and Room*: Track 1 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: PowerShell and SQLPSX the Dynamic Duo for the DBA
+ 
+**Abstract**:
+With PowerShell and SQLPSX your DBA life can be a lot simpler.SMO is powerful, but can be difficult to use.  Enter SQLPSX.Chad Miller put together a set of PowerShell functions thatstreamline the use of SMO, easing management of a multi-server environment. Come learn when and how the addition of PowerShell and SQLPSX can benefit you.
+ 
+**Speaker(s):**
+- Jim Dorame
+ 
+*Track and Room*: Track 4 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Mission Critical Confidence – (SQL 2012/2014 AlwaysOn) and Availability Groups
+ 
+**Abstract**:
+AlwaysOn is SQL Server 2012/2014’s High Availability solution. It provides a new standard for mission critical databases and end-to-end business intelligence at a lower total cost of ownership. It provides the required 9S of availability without the total cost and complexity. In this session, we’ll specifically explore high availability databases – Availability Groups. AG is a new feature that enhances and combines database mirroring and log shipping. We’ll demonstrate the setup and failover of multiple databases simultaneously. 
+ 
+**Speaker(s):**
+- Mark Skiles
+ 
+*Track and Room*: Track 5 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Add SSIS to the developer tool belt without adding to the DBA’s work load Part 1 (for the DBA)
+ 
+**Abstract**:
+SSIS is a powerful tool for this but up until SQL 2012 it has been cumbersome in deployment and for security issues for both the developers and DBAs alike. How is SSIS 2012 different than past versions? This session will discuss the various SSIS deployment modes focusing on the new project deployment model. We will walk through several examples. Using a Hosted SSIS server and the project deployment model empowers the developer to view SSIS as self-service SQL feature and not chore to have to coordinate with the DBA.
+ 
+**Speaker(s):**
+- James Borland
+ 
+*Track and Room*: Track 2 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Microsoft Azure SQL Database for the DBA
+ 
+**Abstract**:
+As we enter the brave new world of the cloud, one of the Windows Azure components DBA's are being asked to use is Microsfot Azure SQL Database. In this introductory session I will show you how to create databases in the cloud, explain the structure behind MASD and it's advantages/disadvantages. I will also give you a list of all of the things SQL Server does that MASD doesn't do...yet. 
+ 
+**Speaker(s):**
+- MIKE DONNELLY
+ 
+*Track and Room*: Track 5 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Add SSIS to the developer tool belt without adding to the DBA’s work load Part 2 (for the developer)
+ 
+**Abstract**:
+This is the second part looking at a hosted model for SSIS 2012 packages. As developer, how is SSIS 2012 different than past versions? This session will discuss the various SSIS deployment modes focusing on the project deployment model. We will walk through several examples. The examples also demonstrate the use of variables, parameters, and environments to make you SSIS more dynamic and reusable.
+ 
+**Speaker(s):**
+- James Borland
+ 
+*Track and Room*: Track 3 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server Features That Will Blow Your Mind!
+ 
+**Abstract**:
+How many lines of code does it take to generate a running total?  How would you find a value in the next row of data - without using a cursor or loop?  How can you efficiently store rows of data with a lot of optional fields, and how can you quickly find which of those rows have values?  And how can you eliminate locking without resorting to dirty reads?  SQL Server has answers for all of these questions, and none requires more than a few lines of code.  Give me an hour, and I will blow your mind!
+ 
+**Speaker(s):**
+- Ed Leighton-Dick
+ 
+*Track and Room*: Track 1 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Reporting for SQL Health
+ 
+**Abstract**:
+Many of us make our living writing reports for other people; it is time SQL server Professionals take advantage of reporting.  You will walk away from this session with 40 or more reports designed to review an SQL Server system for its health and to predict potential problems.
+ 
+**Speaker(s):**
+- Dennis  Graham
+ 
+*Track and Room*: Track 4 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Indexing Deep Dive
+ 
+**Abstract**:
+Another in TheSQLGuru's very popular "Deep Dive" series, this time covering indexing.  You will learn about the internal structures of heaps, clustered indexes and nonclustered indexes.  We will examine included columns and covering indexes, filtered indexes, indexed views, indexing DMVs and finding the right indexes.  There are some incredibly helpful graphics as well as some nice samples to help you transition theory to practice.
+ 
+**Speaker(s):**
+- Kevin Boles
+ 
+*Track and Room*: Track 2 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server Virtualization 101
+ 
+**Abstract**:
+What is virtualization? What impact does it have on DBAs and their systems? What aspects of their job stays the same, and what changes? What is really going on inside that black box? The fundamentals of private cloud computing and how it impacts data professionals will be discussed in this interactive session. Tips on how to use the best of virtualization to improve their daily tasks and efficiencies will be demonstrated, and common questions and concerns will be addressed.
+ 
+**Speaker(s):**
+- David Klee
+ 
+*Track and Room*: Track 4 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Recovery that May or May Not have a Wizard
+ 
+**Abstract**:
+The wizards that come with SQL Server help us accomplish many things including recovering the database; however, we can not use the wizards for all our data recovery issues.  In this session we'll review recovery topics of page corruption, temporary storage loss, master database recovery, and other data recovery scenarios.  We'll also determine which of these scenarios can be resolved with a wizard.
+ 
+**Speaker(s):**
+- Mike Hays
+ 
+*Track and Room*: Track 2 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server 2014 New Features
+ 
+**Abstract**:
+There is MUCH more to SQL Server 2014 than just Hekaton and Updatable Column Store Indexes!!  This session will be a medium-to-high-level overview of many of the new features and enhancements coming in SQL Server 2014.  When I thought of doing this session I initially wanted to have some demos, but there are SOOO many things to cover I couldn't fit in any demos in a 1 hour session!
+ 
+**Speaker(s):**
+- Kevin Boles
+ 
+*Track and Room*: Track 1 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**James Borland**
+ 
+Jim Borland has over 20 years of hands-on Information technology experience across various industries ranging from governmental, hospital, biotechnology, and telemarketing. Jim start out as an application program who ended up liking data too. His SQL Server experience began with SQL Server 6.0 in 1996. Jim currently a Lead Database Administrator at the University of Iowa overseeing 180+ SQL instances and involved in the Business Intelligence campus wide efforts.
+ 
+**Larry Toothman**
+ 
+Contact: [http://IowaTechBear.com](http://IowaTechBear.com)
+ 
+Larry has been a Database Administrator for a non-profit health system in Cedar Rapids, IA since late 2007. With over 20 years of software and database development experience, he was drafted to be the DBA in 1999 for a dev company. Amazed by the wide variety of people in the SQL Server community as well as the support from the "SQL Family" Larry is always looking for opportunities to pay it forward, spread the word  mentoring.
+ 
+**Kevin Boles**
+ 
+Twitter:  - [@TheSQLGuru](https://www.twitter.com/@TheSQLGuru)
+ 
+LinkedIn: [Kevin Boles](http://www.linkedin.com/in/thesqlguru)
+ 
+Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.
+ 
+**Ed Leighton-Dick**
+ 
+Twitter:  - [eleightondick](https://www.twitter.com/eleightondick)
+ 
+LinkedIn: [Ed Leighton-Dick](http://www.linkedin.com/in/eleightondick)
+ 
+Contact: [http://www.edleightondick.com](http://www.edleightondick.com)
+ 
+Ed Leighton-Dick is a Microsoft MVP, SQL Server performance and architecture specialist, and Founder/Principal Consultant of Kingfisher Technologies. He is a frequent volunteer with PASS, including current roles as a Regional Mentor, co-leader of I-380 PASS local group, and co-leader of the HA/DR virtual group. He can often be found teaching sessions at local, regional, and national events, including user groups, SQLSaturday, and PASS Summit.
+ 
+**Jason Strate**
+ 
+Twitter:  - [@stratesql](https://www.twitter.com/@stratesql)
+ 
+LinkedIn: [Jason Strate](http://www.linkedin.com/in/jasonstrate/)
+ 
+Contact: [http://www.jasonstrate.com/](http://www.jasonstrate.com/)
+ 
+Jason Strate is a SQL Server Solutions Architect with Pragmatic Works. He is also a Microsoft SQL Server MVP and MCM. He has over 15 years of experience developing, architecting, and managing data platforms. Jason writes, blogs, and presents on SQL Server.
+ 
+**Mark Skiles**
+ 
+LinkedIn: [Mark Skiles](?https://www.linkedin.com/in/insightstoaction?)
+ 
+Mark Skiles is a (BI) Solutions Architect with Architect IT in Des Moines, IA.  He and his wife live in Carlisle, IA.  He is an international consultant and has worked for EDS in Taiwan and traveled extensively in China and Southeast Asia.  He has over 28 years of technology experience and has worked with SQL server since 1995.  His areas of interest are designing and integrating large scale databases and continual improvement in the presentation of data – ways to turn data into decisions.  
+ 
+**James Borland**
+ 
+Jim Borland has over 20 years of hands-on Information technology experience across various industries ranging from governmental, hospital, biotechnology, and telemarketing. Jim start out as an application program who ended up liking data too. His SQL Server experience began with SQL Server 6.0 in 1996. Jim currently a Lead Database Administrator at the University of Iowa overseeing 180+ SQL instances and involved in the Business Intelligence campus wide efforts.
+ 
+**Keith Tate**
+ 
+Twitter:  - [https://twitter.com/keith_tate](https://www.twitter.com/https://twitter.com/keith_tate)
+ 
+LinkedIn: [Keith Tate](https://www.linkedin.com/pub/keith-tate/34/a40/a46)
+ 
+Contact: [http://thesqlchef.com](http://thesqlchef.com)
+ 
+Keith Tate is a Senior Database Administrator with over 17 years of experience as a data professional. During Keith#39;s professional career he has been a developer, DBA and data architect. Keith is also active in the SQL Server community and is currently the chapter leader of the Albuquerque SQL Server User Group.
+ 
+**Kevin Boles**
+ 
+Twitter:  - [@TheSQLGuru](https://www.twitter.com/@TheSQLGuru)
+ 
+LinkedIn: [Kevin Boles](http://www.linkedin.com/in/thesqlguru)
+ 
+Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.
+ 
+**Frank Gill**
+ 
+Twitter:  - [skreebydba](https://www.twitter.com/skreebydba)
+ 
+LinkedIn: [Frank Gill](http://http://www.linkedin.com/profile/view?id=22766305amp;trk=tab_pro)
+ 
+Contact: [http://skreebydba.com/](http://skreebydba.com/)
+ 
+Frank Gill is a Senior Data Engineer at Concurrency   With 21 years of IT experience, the first 8 as a mainframe programmer, he has developed a love of all things internal. Over the past several years, he has worked extensively with SQL Server solution in Azure, including Managed Instance.  When not administering databases or geeking out on internals, Frank volunteers at the Art Institute of Chicago and reads voraciously.
+ 
+**Paul Timmerman**
+ 
+Contact: [http://blogs.lessthandot.com/index.php/author/mndba/](http://blogs.lessthandot.com/index.php/author/mndba/)
+ 
+Paul is a Microsoft SQL Server MVP and the Lead SQL Server DBA at Hennepin County Medical Center in Minneapolis, Minnesota. Paul has fifteen years of experience in database administration and currently the Chapter Leader of the Minnesota SQL Server User Group, PASSMN. Paul is an active member of the PASS community and routinely speaks at user group meetings and SQL Saturday conferences.
+ 
+**Jim Dorame**
+ 
+Twitter:  - [@DBAJD](https://www.twitter.com/@DBAJD)
+ 
+LinkedIn: [Jim Dorame](https://www.linkedin.com/in/jamesdorame)
+ 
+Contact: [http://www.jamesdorame.com/](http://www.jamesdorame.com/)
+ 
+Jim Dorame has been working with SQL Server for over 20 years. Over those years he has learned a great deal from the SQL community. He has also given back to the community in the hopes that he may help someone in their career. He is always looking for something to learn and luckily Microsoft keeps adding to SQL Server.
+ 
+**Dave Tigges**
+ 
+Over the past 20 years Dave has played the role of software developer, development DBA, and production DBA using mostly Microsoft products.
+He is currently Lead Programmer Analyst at Thomas L Cardella  Associates in Cedar Rapids, Iowa where he works with SQL Server
+and Visual Studio development every day. When not working, you might find him riding his bike all around the Midwest.
+ 
+**David Klee**
+ 
+Twitter:  - [kleegeek](https://www.twitter.com/kleegeek)
+ 
+LinkedIn: [David Klee](http://www.linkedin.com/in/davidaklee)
+ 
+Contact: [http://davidklee.net](http://davidklee.net)
+ 
+David Klee is a Microsoft Data Platform MVP and VMware vExpert with a lifelong passion for technology. David spends his days focusing on the convergence of data and infrastructure as the Founder of Heraflux Technologies. His areas of expertise include cloud, virtualization, performance, and business continuity. David speaks at a number of national and regional technology related events, including PASS Summit, VMware VMworld, SQLBits, SQL Saturday events, and many SQL Server User Groups.
+ 
+**Andy Galbraith**
+ 
+Twitter:  - [https://twitter.com/DBA_ANDY](https://www.twitter.com/https://twitter.com/DBA_ANDY)
+ 
+LinkedIn: [Andy Galbraith](http://www.linkedin.com/pub/andy-galbraith/5/149/98b)
+ 
+Contact: [http://nebraskasql.blogspot.com/](http://nebraskasql.blogspot.com/)
+ 
+I’m a forty-something Microsoft SQL Server DBA of 18+ years, a devoted husband, and a father of three young boys (all aged eight and under!) I have been a DBA at a public university, at a major bank, at a healthcare system, and I now work as a consultant with customers across the United States. I write and speak primarily about the tips and tricks that I discover along my SQL Server journey.
+ 
+**David Klee**
+ 
+Twitter:  - [kleegeek](https://www.twitter.com/kleegeek)
+ 
+LinkedIn: [David Klee](http://www.linkedin.com/in/davidaklee)
+ 
+Contact: [http://davidklee.net](http://davidklee.net)
+ 
+David Klee is a Microsoft Data Platform MVP and VMware vExpert with a lifelong passion for technology. David spends his days focusing on the convergence of data and infrastructure as the Founder of Heraflux Technologies. His areas of expertise include cloud, virtualization, performance, and business continuity. David speaks at a number of national and regional technology related events, including PASS Summit, VMware VMworld, SQLBits, SQL Saturday events, and many SQL Server User Groups.
+ 
+**Chaitanya Khaladkar**
+ 
+Contact: [http://blog.gnetgroup.com](http://blog.gnetgroup.com)
+ 
+Chaitanya is a Solutions Architect with GNet Group, a Microsoft Gold Certified Data Analytics and Collaboration partner. He has over 10 years of in-depth experience leading and architecting solutions in areas of Data Analytics/BI, Data Governance amp; Master Data, and Collaborative Business Applications.
+ 
+**John Morehouse**
+ 
+Twitter:  - [SQLrUs](https://www.twitter.com/SQLrUs)
+ 
+LinkedIn: [John Morehouse](https://www.linkedin.com/in/sqlrus)
+ 
+Contact: [http://www.sqlrus.com](http://www.sqlrus.com)
+ 
+John Morehouse is currently a Consultant with Denny Cherry  Associates living in Louisville, Kentucky. With over 2 decades of technical experience in various industries, John now focuses on the Microsoft Data platform and specializes in Microsoft SQL Server.  He is honored to be a Microsoft Data Platform MVP, VMWare vExpert, Friend of Red Gate, Sentry One PAC member  Community Ambassador, and 2016 Idera Ace.  John has a passion around speaking, teaching technical topics, and giving back to the technical community as much as possible.  He is a user group leader, SQL Saturday organizer, and former PASS regional mentor. He is also a blogger, avid tweeter, and a frequent speaker at SQL Saturday’s as well as other conferences.
+ 
+**MIKE DONNELLY**
+ 
+Twitter:  - [SQLMD](https://www.twitter.com/SQLMD)
+ 
+LinkedIn: [MIKE DONNELLY](http://www.linkedin.com/in/melsar93)
+ 
+Contact: [http://sqlmd.wordpress.com](http://sqlmd.wordpress.com)
+ 
+Michael Donnelly has been working with SQL Server for 15+ years and holds the MCSE: Data Platform certification. He is an avid runner, blogger, and a wannabe gourmet chef. Currently living the SQL Life on the Jersey Shore.
+ 
+**William E Pearson III**
+ 
+Twitter:  - [@Bill_Pearson](https://www.twitter.com/@Bill_Pearson)
+ 
+LinkedIn: [William E Pearson III](https://www.linkedin.com/e/fpf/252170891)
+ 
+Contact: [https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E](https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E)
+ 
+Bill Pearson created Island Technologies Inc. in 1997, and has developed a large and diverse customer base since. Bill#39;s background as a CPA, Internal Auditor, Management Accountant, and SQL Server MVP (BI) enables him to provide value to clients as a liaison between Accounting / Finance and Information Services. Bill has implemented enterprise business intelligence systems over the years for many Fortune 500 companies and focuses his practice upon the integrated Microsoft Business Intelligence 
+ 
+**Kirby Richter**
+ 
+Twitter:  - [@sqlkirby](https://www.twitter.com/@sqlkirby)
+ 
+LinkedIn: [Kirby Richter](http://www.linkedin.com/pub/kirby-richter/16/437/729/)
+ 
+Kirby Richter is a Minnesota SQL Server Professional with 20 years’ experience. Currently Principal Database Architect at Dell Storage, specializing in Database Administration, large databases and Performance Tuning. Working with all versions of SQL Server since 6.5  Enjoys Development, Database Administration and Business Intelligence.  Presents periodically at local events. Hobbies include kayaking, camping and amateur Astronomy.
+
+ 
+**Mike Hays**
+ 
+LinkedIn: [Mike Hays](https://www.linkedin.com/in/mike-hays-21097419)
+ 
+Contact: [http://www.thesqlreport.com/](http://www.thesqlreport.com/)
+ 
+Mike has been working with Microsoft SQL Server for the last twenty years.  Currently working as a Database Administrator for a diversified energy company, he has also worked in the retail, manufacturing,  banking sectors.  He holds a Master’s degree in Computer Information Science from Cleveland State University.  He currently resides in Ohio with his girlfriend Alexia, her two children and their dog Lanna.
+ 
+**Dennis  Graham**
+ 
+Contact: [http://www.oakwoodsys.com](http://www.oakwoodsys.com)
+ 
+With over twenty years in the field, Dennis has been a SQL DBA / Developer, a Report Developer and a Microsoft Certified Trainer.  Concentrating in reporting with both SSRS and Crystal, he has supplied reporting for the military, the federal government, five-investment firms and many small businesses.  He joined Oakwood Systems to design their SCOM Monitoring of SQL Server and SharePoint.
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Confio](http://www.confio.com)
+ 
+- [Gnet Group, LLC](http://www.gnetgroup.com)
+ 
+- [Tegile Systems](http://www.tegile.com)
+ 
+- [GreatAmerica Financial Services Corporation](http://www.greatamerica.com)
+ 
+- [GoDaddy](http://ca.godaddy.com/)
+ 
+- [SQL Power Tools, Inc.](http://www.sqlpower.com)
+ 
+- [QPS Employment Group](http://www.qpsemployment.com)
+ 
+- [Ntirety, Inc.](http://www.ntirety.com)
+ 
+- [Involta](http://www.Involta.com)
+ 
+- [Indicium Resources, Inc.](http://www.idonthaveawebsite.com)
+ 
+- [Pat Phelan](http://www.YetAnotherSQL.com)
+ 
+- [Ed Leighton-Dick](http://www.edleightondick.com)
+ 
+- [PluralSight](http://www.pluralsight.com)
+ 
+- [Manning Publications Co.](http://www.manning.com)
+ 
+- [Apress](http://www.apress.com/)
+ 
+- [xSQL Software](http://www.xsql.com)
+ 
+- [O'Reilly Books](http://oreilly.com/)
+ 
+- [Microsoft Corporation (GAP)](http://www.microsoft.com/en-us/server-cloud/products/sql-server/)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 

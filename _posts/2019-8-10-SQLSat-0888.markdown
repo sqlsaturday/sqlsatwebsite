@@ -1,0 +1,795 @@
+---
+layout: "post" 
+title: "SQLSaturday #888 - Sioux Falls 2019" 
+prettydate: "10 August 2019" 
+---
+# SQLSaturday #888 - Sioux Falls 2019
+ 
+**Event Date**: 08/10/2019 00:00:00
+ 
+**Event Location**:
+- Augustana University, Froiland Science Complex (33rd  Summit Ave)
+- 2001 S Summit Ave
+- Sioux Falls, South Dakota
+ 
+<a href="/assets/pdf/0888.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: Using SQL Server tools to Find Performance Bottlenecks
+ 
+**Abstract**:
+Abstract: 
+Performance is always at the top of every DBA’s list of things to do.  There are many tools that are available that are native to SQL Server.  This session will cover how to use Extended Events, DMVs, Execution Plans and QueryStore to find performance bottlenecks.
+
+Topics to be covered, as well as a few surprises
+• Query Timeouts
+• Index Fragmentation
+• Execution Plan Warnings
+• Missing Indexes
+• SQL Server Wait information
+• Missing Statistics
+• Query bottlenecks
+• Data type conversion issues
+• CPU and Memory Issues
+• IO issues
+• Deadlocks
+
+This session will also cover a few additional topics such as how to format your SQL code allowing for easier reading.  How to perform a complete server assessment and baseline will also be covered as part of the session.  
+
+REGISTER HERE:
+https://www.eventbrite.com/e/precons-sqlsaturday-sioux-falls-tickets-63432355884
+ 
+**Speaker(s):**
+- Dave Bland
+ 
+*Track and Room*: PreCon3 - Room 371
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Why should I care about ... the plan cache?
+ 
+**Abstract**:
+SQL Server is a huge product, with many different places a DBA can go to look for information on how the server is performing. So many in fact that they can often overlap, which sometimes makes it hard to understand why tackling a new tool is worth the effort. In this installment of Rick's "Why should I care" series, he lays out a case for why working knowledge of the plan cache is critical for performance tuning efforts in real world environments. A review of relevant views and functions is included for the (newly?) motivated audience.
+
+Perfect for those who are relatively new to performance tuning concerns, or advanced DBAs trying to figure out how to have a similar conversation with their less experienced peers, or developers who are curious as to why their DBAs often seem so frazzled. This is not a deep dive into the cache, it really is primarily a session exploring _why_ these DMOs are worth slogging through.
+ 
+**Speaker(s):**
+- Rick Lowe
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 373
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: "Why is My Drive Full?" Understanding SQL Backups - Even if you are not responsible for Backups
+ 
+**Abstract**:
+This session will provide an introduction to understanding and configuring  SQL Server backups. It will explain Data files, Transaction Log files, Recover Models, Backup Types as well as show multiple examples of Full, Differential and Transaction Log backups and restores. We will also cover the easiest way to schedule backups and to remove the old backup files.
+
+You will also be shown answers to the following questions?
+    What are the different types of Backups?
+    What does the Recovery Model setting do?
+    Are there conflicting backups happening? 
+    Why are the log (ldf) files so big?
+    How do I clear space from the log files? 
+    How do I shrink the log files?
+
+This is a good introduction, if you need to learn how to backup SQL, want to know more about backups or occasionally need to troubleshoot backup issues.
+ 
+**Speaker(s):**
+- Preston VanderPlaats
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 374
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Don't just code it—Generate It
+ 
+**Abstract**:
+Code Generators are all the rage—BIML, JS frameworks, .NET scaffolding, even the humble templates provide by SSMS for views, stored procedures, functions.
+Table-driven applications allow one set of code to handle changing business needs. Metadata-driven code generation takes this a giant step further. If you can describe your code with an algorithm operating against a set of data, you can get a computer to produce the code.
+ - Source to Target mapping documents can be used to generate the code to effect the mapping.
+ - Service Broker activation stored procedures have a clearly defined structure. They can be mass-produced.
+ - Standard CRUD stored procedures can be stamped out cookie-cutter fashion.
+ - Business rules can be encoded in data and the code to implement them manufactured.
+Generated code has systematic errors. Fix the errors at the generator. All the code now works. If the code is so boring that a computer can produce it, why not spend your talent doing something interesting?
+ 
+**Speaker(s):**
+- Kevin Mackey
+ 
+*Track and Room*: Application  Database Development - Room 114
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Power BI Development Best Practices (Deep Dive)
+ 
+**Abstract**:
+Are you a developer or analyst, creating Power BI reports that will be shared across teams or even your entire organization? Moving from "quick and dirty" deployments to production ready solutions intended for larger audiences means that you should already be thinking about performance, standardization and (most importantly) your end users.  Bring your laptop to follow along as well!
+
+In this pre-con we will take a deep dive into the considerations and best practices when developing Power BI models, reports and dashboards to help you bridge the gap and make your solutions enterprise ready. Some of the topics we will cover are:
+·        Power BI Desktop Configuration
+·        Connection Reuse
+·        Entity/Table Design
+·        Cross Filters
+·        Date Entities
+·        Aggregates  Measures
+Prerequisites
+Beginner or intermediate Power BI development experience is required
+
+REGISTER HERE:
+https://www.eventbrite.com/e/precons-sqlsaturday-sioux-falls-tickets-63432355884
+ 
+**Speaker(s):**
+- Martin Schoombee
+ 
+*Track and Room*: PreCon1 - Room 374
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Real-World PowerShell for SQL Administration
+ 
+**Abstract**:
+If you're like me, you've attended PowerShell sessions before. However, much of the *practical* usage of PS comes with rolling back your sleeves and digging into the nuances of syntax and how to get things done. We are going to focus specifically on using PowerShell within the SQL Server Agent to build out everyday jobs.
+
+In this session, I'm assuming that you know the basics of PowerShell. What we're going to cover are some of the "gotchas" and nuances that I've run into when I've been working with the language, and particularly with the SQL Agent's flavor of PowerShell.
+
+And then we'll spend the balance of our time looking at real-world, practical scripts that I use pretty much every day. PowerShell is an awesome way to automate so many processes and relieve some of the everyday monotony of SQL administration.
+ 
+**Speaker(s):**
+- Brian Hansen
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 116
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Innovative Data Modeling: Make Data Warehousing Cool Again
+ 
+**Abstract**:
+There is much more to life than 3rd normal form and dimensional modeling. Come explore how you can build a data warehouse solution or hybrid solution that is agile in nature. Discover this highly auditable modeling technique used in international banking, manufacturing, insurance and many more industries.  Made a mistake? No worries, own your model. Design changes happen and it can be addressed quickly avoiding pain and project delays and ultimately keeping your business happy.  Learn how to leverage Master Data Management and Azure Technologies to extend your model for performance, history and reference unstructured data. Let us bust the myth that data warehouses take too long to build and are too hard to modify by adding value to your environment and decreasing delivery time.
+ 
+**Speaker(s):**
+- Leslie Weed
+ 
+*Track and Room*: Application  Database Development - Room 114
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Data Science with SQL Server 2017
+ 
+**Abstract**:
+Every wonder if you could predict the outcome of the Superbowl? Or know the score of any game? The NFL is perfect for predictive analytics: it has a fixed time frame, large playing field, and rigorous rules.  These are characteristics we can only envy in the business world. With the power of machine learning Services in SQL Server 2017, we have the strength of statistical languages like R and Python right within the database engine. In this session, John will demonstrate the steps for successfully preparing the data, then run a regression model to predict the scores for a current week’s scheduled NFL games.  Want to know if your team is likely to win against the spread?  Wanna bet?
+ 
+**Speaker(s):**
+- John Byrnes
+ 
+*Track and Room*: Advanced Analysis Techniques - Room 116
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Doing Data Science on Azure (and the Certifications)
+ 
+**Abstract**:
+Companies everywhere are racing to implement AI and data science (a $169 billion industry by 2025). At the same time, companies are making a huge push toward the cloud. Microsoft Azure is leading the way in cloud data science. That is why, in early 2019, Microsoft released new certifications aimed at that skillset. This full day training will leave you knowledgeable about the data science and AI offerings on Azure. Plus, it will leave you prepared to apply data science techniques to your own projects. Finally,it will give you a jump start on preparing for the Azure Data Scientist Associate Exam.
+
+Things to bring with you (besides a smile)
+• A Microsoft account (Hotmail, live.com, outlook.com), a free account will suffice
+• A laptop
+• Some previous experience with programming or scripting (Any necessary math or machine learning background will be covered)
+
+REGISTER HERE:
+https://www.eventbrite.com/e/precons-sqlsaturday-sioux-falls-tickets-63432355884
+ 
+**Speaker(s):**
+- Ryan Swanstrom
+ 
+*Track and Room*: PreCon2 - Room 373
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Are you getting the most out of SQL Agent?
+ 
+**Abstract**:
+Do you think of SQL Agent as a simple scheduling tool? I used to but over the years have learned how to get more out of SQL Agent than I once did. In this session I will show you how to use SQL Agent for notifications, how to create jobs that can re-run steps, jobs to restart jobs, jobs that start jobs on other servers along with a few other tricks. To close the session, I will demonstrate a SQL Agent job that can even clean up after itself.
+ 
+**Speaker(s):**
+- Marcus Hopfinger
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 373
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: How to use Execution Plans to find Performance Issues
+ 
+**Abstract**:
+This is a introductory session on how a DBA and developers can use Execution plans to find performance bottlenecks.  This will cover the fundamentals and cover some of the basic techniques that can be used to find hidden performance problems.  We will also spend some time on how to properly read execution plans.
+ 
+**Speaker(s):**
+- Dave Bland
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 373
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Playing with (M)agic: an introduction to writing M code in Power BI
+ 
+**Abstract**:
+Do you love Power Query?  Are you ready to take your skills to the next level?  Learning to write M code is easier than you think!  Writing M code can reduce maintenance and create a more dynamic solution for you and your users.  
+
+In this session you will learn:
+1.  Where you can write M code in PowerQuery.
+2. The different types of objects you can use as variables in your code.
+3. Different ways you can leverage variables to create a dynamic solution.
+ 
+**Speaker(s):**
+- Justin Mannhardt
+ 
+*Track and Room*: Analytics and Visualization - Room 374
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Advanced Power BI Modeling Techniques
+ 
+**Abstract**:
+Creating a Power BI data model is pretty easy, but sometimes we have to deal with more complex scenarios the require us to dig a little deeper. 
+
+In this session we'll take your modeling skills to the next level as we explore a few advanced techniques that deal with displaying measures or KPIs in the rows of a table (as opposed to the columns), dynamic currency conversions and an alternate approach to role-playing dimensions.
+ 
+**Speaker(s):**
+- Martin Schoombee
+ 
+*Track and Room*: BI Information Delivery - Room 374
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Resume Tips-Go Beyond the Print Out
+ 
+**Abstract**:
+From the basics to the advanced. From paper, to LinkedIn, to what happens when the hiring manager "googles" you. We will explore what makes a GREAT online presence!
+ 
+**Speaker(s):**
+- Leveat Ruse
+ 
+*Track and Room*: Professional Development - Room 116
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: HA in an about an Hour
+ 
+**Abstract**:
+This session will cover the basics for SQL server native tools to provide high availability to your databases.   Overview of AlwaysOn, Failover Cluster Instances, Mirroring, and Log Shipping.  Pros and cons for each will be covered and direct comparisons of the technologies.  After attending this session attendees should be able to know the questions to answer to select the proper HA solution for their environment.
+ 
+**Speaker(s):**
+- Shawn Meyers
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 116
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Unit Testing - How to Make Friends and Influence Databases
+ 
+**Abstract**:
+Is your motto "I don't usually test my database code, but when I do, I do it in production"? Then this series is for you. Many times in developing against a database there are many arguments with why testing is impossible. This session will cover an introductory topic of what unit testing is and how testing databases doesn't have to be a white unicorn.
+ 
+**Speaker(s):**
+- Adam Hafner
+ 
+*Track and Room*: Application  Database Development - Room 114
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: 42 TSQL Functions
+ 
+**Abstract**:
+SQL Server has many build in T-SQL functions. This session will introduce you to 42 (or more) of them and explain how they can make your life easier. To name just a few TRANSLATE(REVERSE(DIFFERENCE(STATS_TIME(STRING_SPLIT(…)))).
+ 
+**Speaker(s):**
+- Thomas Grohser
+ 
+*Track and Room*: Application  Database Development - Room 114
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Hyper-Interactivity in Power BI
+ 
+**Abstract**:
+Power BI provides numerous features to enabling data interactivity. This session combines the more advanced interactive features to demonstrate a truly dynamic viewing experience. Together we will explore the use of specialized report pages, bookmarks, advanced DAX and more, to dynamically change chart axes and even visualization measures with a selection from a slicer. We will even see how to completely change the presentation on a Power BI tab with the single click of a button. Come see how to take your dashboards and reports from interactive to hyper-interactivity.
+ 
+**Speaker(s):**
+- Brian Larson
+ 
+*Track and Room*: Analytics and Visualization - Room 374
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Hidden Power: Service Broker
+ 
+**Abstract**:
+Service Broker is a robust asynchronous programming model that provides reliable messaging between SQL Server instances. Making life easier for developers creating sophisticated applications to communicate between databases and servers. 
+
+With focusing on your basic database to database asynchronous messaging to more advance messaging across multiple servers, we are positive you will walk away with new knowledge about Service Broker. And just as positive we will learn something new with you. As some of you may know, Service Broker never ceases to surprise.
+ 
+**Speaker(s):**
+- Ankit Baria
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - Room 373
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Unit Testing with T-SQLt
+ 
+**Abstract**:
+Unit testing is an important part of application development and maintenance. Knowing that your latest change is not only providing the desired results but also is free from side-effects is critical to the rapid pace expected by your customers. This session will provide an introduction in to how you can easily create a library of unit tests around your database and its programmable objects.
+ 
+**Speaker(s):**
+- Kevin Trojanowski
+ 
+*Track and Room*: Application  Database Development - Room 114
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: What are these new Microsoft Data Certifications?
+ 
+**Abstract**:
+In early 2019, Microsoft released 3 new certifications aimed at data and AI professionals. The new certifications target data scientists, AI engineers, and data engineers. This talk will present the 3 certifications and the necessary exams. It will also cover the topics included for each of the exams. At the end of this talk, you should be able to determine which certification is right for you.
+ 
+**Speaker(s):**
+- Ryan Swanstrom
+ 
+*Track and Room*: Professional Development - Room 116
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Real Time Monitoring with Power BI
+ 
+**Abstract**:
+How are my systems performing RIGHT NOW! That's the problem we had to solve for a client's real-time messaging solution. In this talk we'll discuss the problem domain, the important metrics we needed to collect, how we could collect them, serve them and display them.
+ 
+**Speaker(s):**
+- Bill Fellows
+ 
+*Track and Room*: BI Information Delivery - Room 374
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: XML?  What’s this doing in my database?
+ 
+**Abstract**:
+As a DBA, we’re responsible for making sure our systems run optimally at all times.  We know about Extended Events and how to use XQuery to access them.  So what happens when we have XML data in user tables?  
+In this session, we’ll learn how XML data can be stored in the database, how to index it appropriately for performance, and tips and tricks to make your SQL queries against XML data faster.
+ 
+**Speaker(s):**
+- Adam Koehler
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 374
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Building Web-Apps with R and SQL Server
+ 
+**Abstract**:
+R isn't well known for enterprise Web Applications.  However, recent advancements in the R ecosystem aim to change that.  In this presentation, I will introduce what you need to know for building a production-ready web-app in R.
+
+Here are a few topics we'll address:
+* Building and Managing Database Connections
+* Error Handling  Input Validation
+* Load Testing
+* Performance Tuning and Optimization
+ 
+**Speaker(s):**
+- Matthew Sharkey
+ 
+*Track and Room*: Application  Database Development - Room 114
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: The 10 Commandments of ETL
+ 
+**Abstract**:
+ETL (Extract, Transform  Load) processes are fundamentally important in any data warehouse environment, and there are many different ways in which to develop the components.
+
+In this session I will share the 10 basic principles I follow when developing ETL processes, and also show how the different choices can affect performance. Following these simple guidelines have resulted in many successful projects and happy customers. I'm sure it will work for you too!!
+ 
+**Speaker(s):**
+- Martin Schoombee
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - Room 374
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Big Data Clusters for the Absolute Beginner
+ 
+**Abstract**:
+Are you a DBA or data professional working with out-dated technology or feel your skills are quickly becoming irrelevant? Stay ahead in today's ever changing tech space and take your career to the next level.
+
+Join Mohammad Darab this session to explore the cutting-edge technology that SQL Server 2019 has to offer: Big Data Clusters.
+
+Topics include:
+-Big Data Cluster architecture and its components such as: Containers, Kubernetes and the newly enhanced Polybase
+-Unique advantage of SQL Server Big Data Clusters
+-Data Virtualization, Scale-out Data Marts, and Data Hub concepts
+ 
+**Speaker(s):**
+- Mohammad Darab
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 373
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Extended Events - Better than Profiler
+ 
+**Abstract**:
+Extended Events was introduced in SQL Server 2008. Every release since then, we have seen a significant upgrade to this feature. Join me for a little adventure into the realm of extended events. We will discuss how to use extended events to aid in performance tuning and in day to day administration. We will also explore some background and the architecture of extended events. This is a fast paced session and will be a lot of fun. Attendees will be able to take back several sample XE sessions to help troubleshoot different issues and get to more intimately know their data/environment.
+ 
+**Speaker(s):**
+- Jason Brimhall
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room 373
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Introduction to Business Intelligence
+ 
+**Abstract**:
+Session in the SQLStarter beginner track to introduce the business intelligence career.  Will discuss aspects of what this job entails and what day to day could look like in this career path.  We'll go over important skills and where to find training information.
+ 
+**Speaker(s):**
+- CJ Knapp
+ 
+*Track and Room*: Professional Development - Room 116
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**Dave Bland**
+ 
+Twitter:  - [@SQLDave29](https://www.twitter.com/@SQLDave29)
+ 
+LinkedIn: [Dave Bland](https://www.linkedin.com/in/dave-bland-sql-server)
+ 
+Contact: [https://www.davebland.com](https://www.davebland.com)
+ 
+Over 20 years of SQL Server experience that includes being a DBA,  BI development and Application development using VB.NET.  Dave currently is the Manager of the DBA team at Stericycle.  Dave is a Friend of Red-Gate for 2019. He is a frequent presenter at SQL Saturday events and user groups around the country. Has been teaching SQL Server since version 2000 and is the SQL Server instructor at Harper College in Palatine, IL. Current certifications include: • Microsoft Certified Trainer • MCTS: SQL Server 2008, Implementation and Maintenance • MCTS: SQL Server 2008, BI Development and Maintenance • MCSA: SQL Server 2008 • MCSA: SQL Server 2016 • MCSE: SQL Server 2016 - BI • MCDBA: SQL Server 2000 • MCSD  • MCSE: Data Management and Analytics
+ 
+**Martin Schoombee**
+ 
+Twitter:  - [sqlmartin](https://www.twitter.com/sqlmartin)
+ 
+LinkedIn: [Martin Schoombee](http://www.linkedin.com/in/martinschoombee)
+ 
+Contact: [http://www.martinschoombee.com](http://www.martinschoombee.com)
+ 
+Martin is an independent Business Intelligence  Analytics consultant, helping customers make sense of their data for more than 15 years.
+ 
+**Martin Schoombee**
+ 
+Twitter:  - [sqlmartin](https://www.twitter.com/sqlmartin)
+ 
+LinkedIn: [Martin Schoombee](http://www.linkedin.com/in/martinschoombee)
+ 
+Contact: [http://www.martinschoombee.com](http://www.martinschoombee.com)
+ 
+Martin is an independent Business Intelligence  Analytics consultant, helping customers make sense of their data for more than 15 years.
+ 
+**Jason Brimhall**
+ 
+Twitter:  - [sqlrnnr](https://www.twitter.com/sqlrnnr)
+ 
+LinkedIn: [Jason Brimhall](https://www.linkedin.com/in/dbajbrimhall/)
+ 
+Contact: [http://jasonbrimhall.info](http://jasonbrimhall.info)
+ 
+Jason Brimhall has more than 20 years of experience and has worked with SQL Server 6.5 through SQL Server 2019. He has experience in performance tuning, high transaction environments, and large environments. He is currently a consultant specializing in performance tuning, server analysis, and problem resolution. Jason is a Microsoft Certified Master (MCM) and a Data Platform MVP.
+ 
+**Leveat Ruse**
+ 
+Twitter:  - [www.twitter.com/ncsctechrecruit](https://www.twitter.com/www.twitter.com/ncsctechrecruit)
+ 
+LinkedIn: [Leveat Ruse](https://www.linkedin.com/in/leveatruse)
+ 
+As an Executive Technical Recruiter with Ctrl+f, I currently develop effective recruitment strategies to attract top talent at all levels of an organization. I am an IBM certified trainer and began my career performing general human resources duties. I quickly worked my way up through the ranks of technical recruiting from Lead Recruiter to Senior Recruiter to Business Development.
+ 
+**John Byrnes**
+ 
+Twitter:  - [Riskworks](https://www.twitter.com/Riskworks)
+ 
+LinkedIn: [John Byrnes](https://www.linkedin.com/in/john-byrnes-6051b01?trk=nav_responsive_tab_profile)
+ 
+Contact: [https://johnbyrnes.wordpress.com/](https://johnbyrnes.wordpress.com/)
+ 
+Sr. BI Developer in Omaha Nebraska.  Over twenty years of SQL Server development experience in energy, banking and construction. I am a volunteer data analyst to a D1 Men's hockey team, where I have created a dimensional database to facilitate NFL style advanced hockey stats.   I am a volunteer Alpine ski patroller with National Ski Patrol.
+ 
+**Ryan Swanstrom**
+ 
+Twitter:  - [ryanswanstrom](https://www.twitter.com/ryanswanstrom)
+ 
+LinkedIn: [Ryan Swanstrom](https://www.linkedin.com/in/ryanswanstrom/)
+ 
+Contact: [https://101.datascience.community/](https://101.datascience.community/)
+ 
+Since creating the first data science specific blog on the internet in 2012, Ryan now helps to educate people about using data to solve problems. He lives in South Dakota with his bride and 5 children.
+ 
+**Ankit Baria**
+ 
+LinkedIn: [Ankit Baria](https://www.linkedin.com/in/ankit-baria-29293636)
+ 
+Ankit has over 8 years of experience in Application Developer, Database, Database management, Business Systems Analyst and Software development which includes analysis, design, implementation and testing of web/windows based applications, client/server and relational database design using Oracle, Sybase, MySQL and MS-SQL Server with a Master’s degree focused in Computer Information Systems.
+He has designed and developed a SQL Server Broker Service for real time data movement between multiple SQL Server's for maintaining reliability and improving the performance by keeping the data in sync across multiple platforms  at the same time reducing the load on the servers.
+ 
+**Matthew Sharkey**
+ 
+LinkedIn: [Matthew Sharkey](https://www.linkedin.com/in/matthew-john-sharkey/)
+ 
+Contact: [http://www.hinttank.com/](http://www.hinttank.com/)
+ 
+Matthew has ten years of IT experience, primarily working in IT Operations and Analytics.  His specialties include T-SQL querying, performance optimization, data analysis, and data visualization.  Matt has worked with all major features of the SQL Server Data Platform.  Matt holds a Data Platform MCSE and two masters degrees.
+ 
+**Justin Mannhardt**
+ 
+LinkedIn: [Justin Mannhardt](https://www.linkedin.com/in/justin-mannhardt-569b7830/)
+ 
+Contact: [https://powerpivotpro.com/](https://powerpivotpro.com/)
+ 
+An experienced Data and Analytics leader, with 10 years of diverse experience.  With a specialty in Power BI, Justin helps individuals and organizations get the most from their data.  
+
+As a Principal Consultant with PowerPivotPro, Justin knows what it takes to deliver a successful Power BI deployment from Data Management to ETL to Dashboards, and everything in between.
+
+Justin is a Microsoft Certified Solutions Associate in BI Reporting.
+ 
+**Kevin Mackey**
+ 
+Twitter:  - [@kevinjmackey](https://www.twitter.com/@kevinjmackey)
+ 
+LinkedIn: [Kevin Mackey](https://www.linkedin.com/in/kevinjmackey/)
+ 
+Contact: [https://kjmackey.wordpress.com](https://kjmackey.wordpress.com)
+ 
+Kevin a software architect with a track record of creative and effective delivery of results for organizations who want to translate data into information.
+
+With a background as a trainer Kevin can explain complex technologies and concepts in easy to understand language. By the same token, he can take complex business problems and express them in terms technology teams can use to derive solutions.
+
+Kevin has a focus on automation of data movement, analysis, information delivery, and of the code to accomplish this.
+ 
+**Leslie Weed**
+ 
+Twitter:  - [@weederbug](https://www.twitter.com/@weederbug)
+ 
+Leslie Weed is currently a Data and BI Architect with RevGen Partners in Denver, CO. She has been a SQL Professional specializing in Business Intelligence, data analytics, systems implementation, integration, and solutions delivery for the last 20ish years, including a variety of Enterprise Data Warehouses in various industries.
+ 
+**Ryan Swanstrom**
+ 
+Twitter:  - [ryanswanstrom](https://www.twitter.com/ryanswanstrom)
+ 
+LinkedIn: [Ryan Swanstrom](https://www.linkedin.com/in/ryanswanstrom/)
+ 
+Contact: [https://101.datascience.community/](https://101.datascience.community/)
+ 
+Since creating the first data science specific blog on the internet in 2012, Ryan now helps to educate people about using data to solve problems. He lives in South Dakota with his bride and 5 children.
+ 
+**Shawn Meyers**
+ 
+Twitter:  - [1dizzygoose](https://www.twitter.com/1dizzygoose)
+ 
+LinkedIn: [Shawn Meyers](http://www.linkedin.com/in/shawnmeyers42)
+ 
+Shawn Meyers is a Field CTO working at Tintri.  Shawn has worked in IT for 25+ years and specifically with SQL Server for 20+ years, beginning with version 6.5.  A frequent speaker at many events including PASS Summit, VMworld, VMUGs, Virtual Chapter sessions, and many SQL Saturday events.  Current focus is on improving DBAs lives with better infrastructure.
+ 
+**CJ Knapp**
+ 
+Twitter:  - [@CjKnapp84](https://www.twitter.com/@CjKnapp84)
+ 
+LinkedIn: [CJ Knapp](https://www.linkedin.com/in/chrisjknapp)
+ 
+A husband and SQL Server addict who is obsessed with making data move faster.  CJ has held positions as a data analyst, database developer, database/BI architect, and ETL developer for various companies throughout the Indianapolis area. CJ loves working with every part of the Microsoft data stack, and is eager to acquire every bit of data knowledge possible.
+ 
+**Martin Schoombee**
+ 
+Twitter:  - [sqlmartin](https://www.twitter.com/sqlmartin)
+ 
+LinkedIn: [Martin Schoombee](http://www.linkedin.com/in/martinschoombee)
+ 
+Contact: [http://www.martinschoombee.com](http://www.martinschoombee.com)
+ 
+Martin is an independent Business Intelligence  Analytics consultant, helping customers make sense of their data for more than 15 years.
+ 
+**Marcus Hopfinger**
+ 
+Twitter:  - [DakotaDataWrang](https://www.twitter.com/DakotaDataWrang)
+ 
+LinkedIn: [Marcus Hopfinger](https://www.linkedin.com/in/marcus-hopfinger-69728121?)
+ 
+Contact: [http://dakotadatawrangler.blogspot.com/](http://dakotadatawrangler.blogspot.com/)
+ 
+Marcus has been with Daktronics, Inc. since 2001 where he started doing ColdFusion development and some SQL Server 7 database administration. In late 2003 he was activated and deployed in early 2004 to Iraq with the South Dakota Army National Guard. During this time, he served as a Battalion Communications Officer where he was responsible for redundant voice and data networks including satellite internet and secure internet routing protocol networks. Upon returning to Daktronics in 2005 he moved in into a fulltime database administration position where he gets to work on SQL Server instances on three continents. He is also a Sci-Fi Fan, History buff, Amateur Radio Operator (call sign KA0SQL), but most importantly husband and father.
+ 
+**Brian Larson**
+ 
+Twitter:  - [@Brian_Larson](https://www.twitter.com/@Brian_Larson)
+ 
+LinkedIn: [Brian Larson](http://www.linkedin.com/in/brianlarsonscs)
+ 
+Contact: [http://sqlmag.com/author/brian-larson](http://sqlmag.com/author/brian-larson)
+ 
+Brian Larson is Chief Creative Officer/Partner at Superior Consulting Services and has presented at SQL Server Connections, PASS Summit, and the Microsoft BI Conference. As a consultant to Microsoft, Brian contributed to the original code base of Reporting Services. Brian is the author of “Microsoft SQL Server 2016 Reporting Services: 5th Edition” and “Delivering Business Intelligence with SQL Server 2016: 4th Edition”, as well as the forthcoming “Data Analysis with Microsoft Power BI.”
+ 
+**Dave Bland**
+ 
+Twitter:  - [@SQLDave29](https://www.twitter.com/@SQLDave29)
+ 
+LinkedIn: [Dave Bland](https://www.linkedin.com/in/dave-bland-sql-server)
+ 
+Contact: [https://www.davebland.com](https://www.davebland.com)
+ 
+Over 20 years of SQL Server experience that includes being a DBA,  BI development and Application development using VB.NET.  Dave currently is the Manager of the DBA team at Stericycle.  Dave is a Friend of Red-Gate for 2019. He is a frequent presenter at SQL Saturday events and user groups around the country. Has been teaching SQL Server since version 2000 and is the SQL Server instructor at Harper College in Palatine, IL. Current certifications include: • Microsoft Certified Trainer • MCTS: SQL Server 2008, Implementation and Maintenance • MCTS: SQL Server 2008, BI Development and Maintenance • MCSA: SQL Server 2008 • MCSA: SQL Server 2016 • MCSE: SQL Server 2016 - BI • MCDBA: SQL Server 2000 • MCSD  • MCSE: Data Management and Analytics
+ 
+**Brian Hansen**
+ 
+Twitter:  - [tf3604](https://www.twitter.com/tf3604)
+ 
+Contact: [http://www.tf3604.com](http://www.tf3604.com)
+ 
+Brian is a database administrator at Children International in Kansas City.  He has been working with SQL Server technologies since 1998, including roles in report development, application development and database administration.
+ 
+**Rick Lowe**
+ 
+Twitter:  - [DataFLowe](https://www.twitter.com/DataFLowe)
+ 
+LinkedIn: [Rick Lowe](http://www.linkedin.com/pub/rick-lowe/a/228/441/)
+ 
+Contact: [http://dataflowe.wordpress.com/](http://dataflowe.wordpress.com/)
+ 
+Rick is a Microsoft Certified Master with more than 20 years of SQL Server experience in a variety of roles. He currently lives in Washington state and works as an independent consultant providing remote performance DBA and performance tuning services for clients in the USA and Canada. His first exposure to SQL Server was as a database developer, but over time he became more and more interested in how the database engine operated... eventually specializing more on performance issues than code.
+
+Rick will work with all things relational, but most enjoys helping smaller companies get better performance from MSSQL, as well as smoothing over relationships between DBA and development teams.
+ 
+**Bill Fellows**
+ 
+Twitter:  - [@billinkc](https://www.twitter.com/@billinkc)
+ 
+LinkedIn: [Bill Fellows](http://www.linkedin.com/in/billinkc)
+ 
+Contact: [http://blog.billfellows.net](http://blog.billfellows.net)
+ 
+Bill Fellows is a SQL Server MVP and has been a database developer for most of his career, with the past 15 years focused on ETL. He is the organizer of Kansas City's eight SQL Saturdays and a speaker at many other SQL Saturdays, User Groups and the PASS Summit. Bill is the owner of Sterling Data Consulting where he gets to solve interesting data problems.
+ 
+**Adam Hafner**
+ 
+Twitter:  - [ahafne01](https://www.twitter.com/ahafne01)
+ 
+LinkedIn: [Adam Hafner](https://www.linkedin.com/in/adam-hafner-b309213/)
+ 
+Adam has worked primarily in education, telecommunications, health care and banking industries for the last 17 years.  He has focused primarily on database development, design and architecture.  He has a passion for automation, process efficiency and continuous learning.  He is currently the co-leader for the (605) SQL User Group in Sioux Fall, SD, a member of IEEE since 2011, a Friend of Red Gate since 2018 and is a proud alumni of Dakota State University.  In his free time you can find him working on various Raspberry Pi related side projects, fishing, or working on wood projects in his garage.
+ 
+**Kevin Trojanowski**
+ 
+IT Professional with over 25 years experience across a range of technologies, specializing in data and databases including SQL Server and Redis.
+ 
+**Mohammad Darab**
+ 
+Twitter:  - [https://twitter.com/mwdarab](https://www.twitter.com/https://twitter.com/mwdarab)
+ 
+LinkedIn: [Mohammad Darab](https://www.linkedin.com/in/mdarab/)
+ 
+Contact: [https://mohammaddarab.com](https://mohammaddarab.com)
+ 
+Mohammad Darab is a Microsoft Data Professional, speaker and blogger with over 19 years of IT professional experience, 10+ years of that working with SQL Server. Some areas of his focus are the database engine, HA/DR, and security. He is currently an MCITP, MCP, as well as an IDERA ACE Class of 2019.
+ 
+**Adam Koehler**
+ 
+Twitter:  - [sql_geek](https://www.twitter.com/sql_geek)
+ 
+LinkedIn: [Adam Koehler](http://www.linkedin.com/in/adam-j-koehler)
+ 
+Adam Koehler is the Senior Database Administrator for ScriptPro, LLC.  He has worked with SQL Server from 7.0 to 2017 in various roles throughout his career with the last 14 years in a DBA role.
+ 
+**Thomas Grohser**
+ 
+LinkedIn: [Thomas Grohser](https://www.linkedin.com/in/thomasgrohser/)
+ 
+Thomas Grohser has spent most of the past 26+ years exploring the deeper inner workings of SQL Server and its features while working for entertainment, pharmaceutical, and financial services industries. His primary focus is to architect, plan, build, and operate reliable, highly available, secure, and scalable infrastructures for SQL Server. Over the years he has managed thousands of SQL Server instances, processing trillions of rows, taking up petabytes of storage. Thomas has been a Microsoft Data Platform MVP for 9 years and has spoken regularly at conferences, SQLSaturdays, and user groups for 12 years.
+ 
+**Preston VanderPlaats**
+ 
+Preston VanderPlaats has worked in Industrial Automation for 35 years in the following areas: IT, SQL, PLC  HMI control programming. He is a Microsoft Certified Professional and works as a DBA for  SQL Server 2005 through 2017. Currently he works monitoring and supporting SQL Server instances in the Americas, Europe and Asia. Previous to this he worked with Informix, Btrieve, OS/2 EE Database Manager, IBM DB2 and Oracle.
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Microsoft Corporation](https://www.microsoft.com/en-us/server-cloud/products/sql-server/)
+ 
+- [Blend Interactive](http://www.blendinteractive.com)
+ 
+- [First Premier Bank](https://www.firstpremier.com/)
+ 
+- [Carsforsale.com](https://www.carsforsale.com/)
+ 
+- [Superior Consulting Services, LLC](http://www.teamscs.com)
+ 
+- [Interstates](https://www.interstates.com/)
+ 
+- [MetaBank](https://www.metabank.com/)
+ 
+- [SDN Communications](https://sdncommunications.com)
+ 
+- [House of Brick Technologies / Xigent Solutions](http://houseofbrick.com/)
+ 
+- [The Bancorp](https://thebancorp.mybankingservices.com/)
+ 
+- [First Bank  Trust](https://www.bankeasy.com/)
+ 
+- [Wells Fargo](https://www.wellsfargo.com/)
+ 
+- [Dakota State University](http://dsu.edu/)
+ 
+- [Unify Consulting](https://www.unifyconsulting.com/)
+ 
+- [VMWare](http://www.vmware.com)
+ 
+- [Tyler Technologies](https://www.tylertech.com)
+ 
+- [Red Gate Software](http://www.red-gate.com)
+ 
+- [Raven Industries](http://www.ravenind.com)
+ 
+- [Sanford Health](http://www.sanfordhealth.org)
+ 
+- [CHR Solutions](http://www.chrsolutions.com)
+ 
+- [RAS Companies](http://www.rascompanies.com)
+ 
+- [PASS](http://www.pass.org)
+ 
+- [Midcontinent Communications](http://www.midco.com)
+ 
+- [Omnitech Inc](http://www.omnitech-inc.com/)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 

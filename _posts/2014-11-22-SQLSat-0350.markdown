@@ -1,0 +1,500 @@
+---
+layout: "post" 
+title: "SQLSaturday #350 - Winnipeg 2014" 
+prettydate: "22 November 2014" 
+---
+# SQLSaturday #350 - Winnipeg 2014
+ 
+**Event Date**: 11/22/2014 00:00:00
+ 
+**Event Location**:
+- Red River Community College - downtown
+- 160 Princess St.
+- Winnipeg, Manitoba, Canada
+ 
+<a href="/assets/pdf/0350.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: Implement a Dynamic Table Partitioning Solution
+ 
+**Abstract**:
+Have a large or potentially large database that you would like to partition?  Manually implementing partitioning and the corresponding maintenance can be a lot of work, especially if you have many tables.  In this presentation we look at how you would implement a partitioning solution dynamically for all tables with the designated partition column.  We set it up to keep a FIXED number of file groups.  The partition maintenance will recycle the file groups over time as partitions are dropped and created.  We do as much as possible through dynamic scripting.  This solution can easily be used for archiving but in this example we are simply keeping the most current 6 months of data and dropping the rest.  Assumes you have a basic understanding of SQL Server table partitioning.
+ 
+**Speaker(s):**
+- Kirby Richter
+ 
+*Track and Room*: DBA Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Analysis Services Terms and Concepts for the DBA
+ 
+**Abstract**:
+Despite some overlapping concepts, the worlds of the Relational engine and Analysis Services really are quite different. With more and more organizations realizing the power of Analytics, there is a good chance a BI initiative will come your way at some point. 
+
+This session is intended for the DBA that wants/needs to learn more about SQL Server Analysis Services. The goal is to provide a meaningful base of knowledge that will allow you to effectively participate in discussions of Analysis Services in your organization.
+
+Through both slides and demos, you will learn:
+-- The differences between SSAS Multidimensional and SSAS Tabular
+-- Key terms like Measures, Dimensions, Hierarchies
+-- Storage options such as MOLAP, HOLAP, ROLAP, and Direct Query
+-- Monitoring with Extended Events
+-- Overviews of MDX, DAX, and XMLA
+-- and more
+
+Come take a few steps into the exciting world of Business Intelligence with SQL Server Analysis Services.
+ 
+**Speaker(s):**
+- Mark Vaillancourt
+ 
+*Track and Room*: BI Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Breaking Data - How to Load and Stress test your database using SQL Profiler and OStress
+ 
+**Abstract**:
+This session will present how you can load and stress test your SQL Server database using SQL Profiler and OStress. This session will review how to performance test Extract, Transform, and Load SSIS processes, application SQL code, Reports, and free-roaming SQL. We will share SQL Profiler templates that help to trap the poorly performing SQL statements that can then be using to stress test your database until it breaks. In addition, we will show how SQL Profiler can be used to extract the SQL submitted by SSIS and Object-Relational Modeling tools like Hibernate and then use that SQL to take stress testing to the next level.
+
+The first third of the presentation will be presentation style and the following two thirds will be demonstrations where we try and break the database with our stress testing. All this with a Breaking Bad theme!
+ 
+**Speaker(s):**
+- Terry Bunio
+ 
+*Track and Room*: DBA Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Twice in a Lifetime: T-SQL Refactoring 101
+ 
+**Abstract**:
+Whether it's because you inherited the code from the "last guy," or your stored procedures haven't been looked at since the database was created in 2001, there will come a time when you need to rewrite old code. When you start this project you may ask yourself, how did I get here? And you may ask yourself, how do I work this? This is not my beautiful database. This is not my beautiful T-SQL. Letting the data go by, information flowing to the end users is the goal. Refactoring old code can be tedious, but necessary. Sometimes it isn't just about identifying the worst queries in your application, but figuring out how to rewrite everything to introduce the best practices that the last guy didn't know about five years ago. 
+
+This session will cover ways to quickly find old T-SQL antipatterns, tools that can help make things easier to update code, and deprecated features that can't be used in modern versions of SQL Server. Don't leave your old T-SQL the same as it ever was.
+ 
+**Speaker(s):**
+- MIKE DONNELLY
+ 
+*Track and Room*: Developer Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: 10 things I wish I knew about loading data
+ 
+**Abstract**:
+In this session I’ll share some of the lessons I've learned the hard way about loading data.  I’ll show you some ways SQL Server Integration Services can make your life easier (or harder!) and ways you can move data without ever leaving SQL Server management studio.   Want to move data like a boss Monday morning?  This session will show you how!
+ 
+**Speaker(s):**
+- Tim Costello
+ 
+*Track and Room*: Developer Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Inejctions and How To Stop Them
+ 
+**Abstract**:
+SQL injections are a technique where malicious users can inject SQL commands into a SQL statement, through web page input. If left unprotected, SQL injections can cause havoc with web applications by compromising security, manipulating data, hoarding system resources, retrieving sensitive data, removing databases and database objects, or taking databases offline! This session will show how SQL injections work, identify if you are being attacked, and cover various prevention techniques and their effectiveness.
+ 
+**Speaker(s):**
+- Jeff Prom
+ 
+*Track and Room*: New Technology Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Coupling and Cohesion Patterns and Anti-Patterns in SQL and ETL development
+ 
+**Abstract**:
+Frequently I encounter SQL servers and databases in enterprises with huge interdependency issues, such as linked servers, cross-database views and stored procedures, and complicated ETL packages. In this session I will show the most grievous bad practices, what sorts of problems and constrictions they cause, and how they can be re-written to achieve much looser coupling across all data in an enterprise. Any DBA or developer that uses more than two part table or view names in their queries or stored procedures should attend!
+ 
+**Speaker(s):**
+- Mike Diehl
+ 
+*Track and Room*: Developer Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Hadoop for the SQL Server Developer/DBA
+ 
+**Abstract**:
+How does The Hortonworks Data Platform (HDP and HDInsight) fit into our neat  tidy database world? In this beginner-friendly technical session you'll learn about  Big Data from the ground up with a focus on what SQL Server professionals need to know.  Find out technical details about what HDFS, MapReduce and YARN actually are  how they work. Discover the Hadoop ecosystem and the projects within. Learn how Hadoop complements the traditional relational database world. See demos of real-world data tasks/use cases that Hadoop can accomplish. 
+ 
+**Speaker(s):**
+- Bill Preachuk
+ 
+*Track and Room*: New Technology Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Windowing Functions
+ 
+**Abstract**:
+Window functions are one of the coolest new things in SQL Server 2012, but they can be tricky to figure out. In this session we'll talk about how windows functions work and why you should start using them. This is going to be a demo heavy session with code samples you can take back to work and start using Monday morning!
+ 
+**Speaker(s):**
+- Tim Costello
+ 
+*Track and Room*: New Technology Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Getting Started with Analysis Services Tabular mode
+ 
+**Abstract**:
+Analysis Services Tabular is an in memory analytics engine introduced in SQL Server 2012. It has shown to be a quick and effective way to transform your organization with modern analytics. Join Phillip and learn how easy it is to create a tabular solution and provide valuable insight into your organization's data. 
+ 
+**Speaker(s):**
+- Phillip Labry
+ 
+*Track and Room*: BI Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Geekin’ Out on Extended Events -Deconstructing the system_health session to solve performance issues
+ 
+**Abstract**:
+Extended Events are used to gather a wide range of performance information to help troubleshoot performance problems in SQL Server. The system_health session is an Extended Events session that is included by default with SQL Server. This session starts automatically when the SQL Server database engine starts, and runs without any noticeable performance effects. This presentations will take you on an in-depth tour of the data provided in the system_health event session and how to use it to troubleshoot performance issues. Cases studies from real-life examples will be used to demonstrate tips and tricks.
+ 
+**Speaker(s):**
+- Janis Griffin
+ 
+*Track and Room*: DBA Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Power BI QA: Take your data analysis to the next level
+ 
+**Abstract**:
+Are you bored on spending your days creating reports for the business users? Do you dream on the day the user will simple use a search box and ask what they want and the magic will happen and the report will show up on their screen? Wait no more, this day is today! 
+Let's see on this session how to use this powerful new tool to transform our BI solution in a true self-service BI
+ 
+**Speaker(s):**
+- Felipe Ferreira
+ 
+*Track and Room*: BI Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: T-SQL : Bad Habits  Best Practices
+ 
+**Abstract**:
+Bad habits: we all have them. SELECT * is the obvious one; but in this session you will learn about various other habits and why they can be bad for performance or maintainability. You will also learn about best practices that will help you avoid falling into some of these bad habits. Come learn how these habits develop, what kind of problems they can lead to, and how you can avoid them - leading to more efficient code, a more productive work environment, and - in a lot of cases – both.
+ 
+**Speaker(s):**
+- Aaron Bertrand
+ 
+*Track and Room*: Developer Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Protecting SQL Data for Availability and DR
+ 
+**Abstract**:
+This session provides a comparison of SQL High Availability  Disaster Recovery options, presented by a practitioner who has implemented and managed all the SQL High Availability and Disaster Recovery approaches (and various combinations thereof). We will provide an overview of all the various HA  DR options, then compare trade-offs for complexity, usability, hardware, licensing, failover speed, initial costs, ongoing support costs, staff skill requirements, etc.
+ 
+**Speaker(s):**
+- Tim Plas
+ 
+*Track and Room*: DBA Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Practical Powershell for the Harried DBA
+ 
+**Abstract**:
+We DBAs are a busy lot. As time passes, it seems like we're being asked to configure and manage more and more servers and databases without an increase in headcount. What can we do to keep up? In this session, you'll learn about Powershell and how you can use it to automate your routine (and not-so-routine) tasks. After covering the basics, we'll get into some practical scenarios and compare the Powershell approach with the alternatives.
+ 
+**Speaker(s):**
+- Ben Thul
+ 
+*Track and Room*: DBA Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Looney Tuner?  No, there IS a method to my madness
+ 
+**Abstract**:
+SQL Server query tuning is often more art than science and it can quickly eat up a lot of DBA and/or Developer time. This presentation will outline a method for determining the best approach for tuning queries by utilizing response time analysis and SQL diagramming techniques. Regardless of the complexity of the statement, this quick, systematic approach will lead you down the correct tuning path with no guessing. If you are a beginner or expert, this approach will save you countless hours tuning a query.
+ 
+**Speaker(s):**
+- Janis Griffin
+ 
+*Track and Room*: Developer Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Modernize your data warehouse
+ 
+**Abstract**:
+What is the architecture of a data warehouse in 2014? How can we integrate new trends and technologies? This session talks on how a data warehouse can benefit of newest SQL Server 2014 features and Azure HDInsight Big Data technologies.
+ 
+**Speaker(s):**
+- Christian Cote
+ 
+*Track and Room*: BI Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Bring your SQL Server Skills to the Hive 
+ 
+**Abstract**:
+Hive is the gateway for SQL Server professionals to enter the world of Hadoop.  In this session you will learn why  how you should augment your relational systems with HDP/HDinsight and Hive. We will discuss the differences between SQL Server and Hadoop/Hive at the Hardware, Software, and Query levels. We’ll go into the syntax differences between T-SQL and HiveQL (surprise, there aren’t that many). Finally we will discuss common Use Cases where Hive shines. Expect plenty of useful tips and side-by-side comparisons.   
+ 
+**Speaker(s):**
+- Bill Preachuk
+ 
+*Track and Room*: New Technology Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: MDX Trek: First Contact
+ 
+**Abstract**:
+Cube space; the final frontier. In this Star Trek themed introduction to MDX, we will discuss the fundamentals of cube structure and vocabulary, including tuples, members, sets, hierarchies, and more. We will introduce and demonstrate the basic syntax of MDX with queries that include navigating hierarchies and even some time-based expressions. This session will give you the tools you need to write simple, yet meaningful, MDX queries in your own environment. 
+ 
+**Speaker(s):**
+- Mark Vaillancourt
+ 
+*Track and Room*: BI Track - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**Tim Costello**
+ 
+Twitter:  - [timcost](https://www.twitter.com/timcost)
+ 
+LinkedIn: [Tim Costello](http://www.linkedin.com/pub/tim-costello/8/b38/a02/)
+ 
+Contact: [http://www.timcost.com](http://www.timcost.com)
+ 
+Tim Costello is an MCITP, MCTS specializing in etl and data analytics for Interworks Inc. Tim is an international speaker that is always looking for opportunities to share his passion for SQL Server, Tableau and data visualization. Tim is active in the SQL community and leads a data visualization focused user group in the Dallas area.
+ 
+**Kirby Richter**
+ 
+Twitter:  - [@sqlkirby](https://www.twitter.com/@sqlkirby)
+ 
+LinkedIn: [Kirby Richter](http://www.linkedin.com/pub/kirby-richter/16/437/729/)
+ 
+Kirby Richter is a Minnesota SQL Server Professional with 20 years’ experience. Currently Principal Database Architect at Dell Storage, specializing in Database Administration, large databases and Performance Tuning. Working with all versions of SQL Server since 6.5  Enjoys Development, Database Administration and Business Intelligence.  Presents periodically at local events. Hobbies include kayaking, camping and amateur Astronomy.
+
+ 
+**Phillip Labry**
+ 
+Twitter:  - [@philliplabry](https://www.twitter.com/@philliplabry)
+ 
+Contact: [http://phillip.labry.com](http://phillip.labry.com)
+ 
+Phillip Labry is a Senior BI Consultant and Trainer with over 20 years experience in SQL Server and over 30 in IT. He has been lucky enough to work on data projects spanning telecom, banking, retail, law enforcement, health care, insurance, financial services and energy sectors. As a national consultant he provides training and builds solutions utilizing the full MS BI stack. He is an active member of the Madison, WI PASS chapter and speaks at events in the USA and Canada.
+ 
+**Tim Costello**
+ 
+Twitter:  - [timcost](https://www.twitter.com/timcost)
+ 
+LinkedIn: [Tim Costello](http://www.linkedin.com/pub/tim-costello/8/b38/a02/)
+ 
+Contact: [http://www.timcost.com](http://www.timcost.com)
+ 
+Tim Costello is an MCITP, MCTS specializing in etl and data analytics for Interworks Inc. Tim is an international speaker that is always looking for opportunities to share his passion for SQL Server, Tableau and data visualization. Tim is active in the SQL community and leads a data visualization focused user group in the Dallas area.
+ 
+**Janis Griffin**
+ 
+Twitter:  - [DoBoutAnything](https://www.twitter.com/DoBoutAnything)
+ 
+LinkedIn: [Janis Griffin](http://www.linkedin.com/pub/janis-griffin/0/914/aba)
+ 
+Janis Griffin has over 30 years of DBA/database experience including design, development and implementation of many critical database applications. Before coming to Quest Software, Janis primarily worked in the Telecom/Network Industry, working with both real-time network routing databases and OLTP business to business applications.  Janis also held positions as a Principal Architect and Senior Manager, mentoring other DBAs on best practices in database performance tuning.
+ 
+**Mark Vaillancourt**
+ 
+Twitter:  - [@markvsql](https://www.twitter.com/@markvsql)
+ 
+LinkedIn: [Mark Vaillancourt](http://www.linkedin.com/in/markvsql/)
+ 
+Contact: [http://markvsql.com](http://markvsql.com)
+ 
+Mark is a Data Solutions Architect for Microsoft, helping organizations design data solutions in Azure. He has been working with Microsoft data technologies since 2007. Before joining Microsoft, he was a Business Intelligence consultant and two-time Microsoft Data Platform MVP. With a background in Theater and Improvised Comedy, Mark makes sure that his presentations are both informative and fun.
+
+ 
+**Christian Cote**
+ 
+Twitter:  - [Christian_SQL](https://www.twitter.com/Christian_SQL)
+ 
+LinkedIn: [Christian Cote](https://ca.linkedin.com/in/ccote)
+ 
+Contact: [http://bi-blogger.typepad.com/](http://bi-blogger.typepad.com/)
+ 
+Christian Coté is an IT professional with more than 15 years of experience working in data warehouse and business intelligence projects.  Christian developed an expertise in data warehousing over the years and designed many ETL/BI processes using a range of tools on multiple platforms. He's been presenting at several conferences and code camps. He currently co-leads the SQL Server PASS chapter in Montreal as well as Global French SQL PASS Chapter.  He is also a Microsoft Data Platform Most Valuable Professional (MVP).
+ 
+**Terry Bunio**
+ 
+Twitter:  - [@tbunio](https://www.twitter.com/@tbunio)
+ 
+Contact: [http://www.agilevoyageur.com](http://www.agilevoyageur.com)
+ 
+Terry started his career working with Adabas as a DBA., Over the next 20 years, Terry has worked with Oracle, Informix, Sybase, and Microsoft SQL Server as both a Data Modeler and DBA. Terry is a huge proponent of normalization and dimensional modeling. 
+
+Terry has implemented Operational Data Stores, Data Warehouses, and ETL solutions for Investors Group, LPL Financial, Manitoba Blue Cross, and others.
+
+Terry has recently worked on integrating Agile practices into Database projects.
+ 
+**Mike Diehl**
+ 
+
+ 
+**Jeff Prom**
+ 
+LinkedIn: [Jeff Prom](http://www.linkedin.com/pub/jeff-prom/7/1b7/bb1/)
+ 
+Contact: [http://jeffprom.com/](http://jeffprom.com/)
+ 
+Jeff Prom is a Data and BI Developer with over 15 years experience. From a wide variety of industries, he has worked at corportations both large and small including several global fortune 50 companies. Jeff is an active member in the SQL community and regularly speaks and attends user groups and conferences. He has earned MCTS certifications for Database Development, Administration, and BI. Jeff is currently employed at Silver Bay Realty Trust Corp as a Data Architect in Minnesota.
+ 
+**Ben Thul**
+ 
+Twitter:  - [@spartansql](https://www.twitter.com/@spartansql)
+ 
+Contact: [http://www.spartansql.com](http://www.spartansql.com)
+ 
+Born naked and defenseless, he overcame these obstacles to become a mender of broken things, seeker of magic rings, and occasional watcher of slow pings.
+ 
+**Bill Preachuk**
+ 
+Twitter:  - [@BillPreachuk](https://www.twitter.com/@BillPreachuk)
+ 
+LinkedIn: [Bill Preachuk](http://www.linkedin.com/pub/bill-preachuk/1/a53/954)
+ 
+Bill Preachuk is employed by Hortonworks as a Hadoop Solutions Engineer. He is also a SQL Server MCTS with plenty of years spent in the SQL Server DBA/Developer/DW trenches.
+
+Bill has been in IT since 1991 and has presented at PASS Summit , multiple SQL Saturdays, and PASS/Hadoop/Analytics user group meetings in the Twin Cities, Wisconsin, Iowa, Winnipeg, and Ukraine.  He also served 2 years on the Board of PASSMN - The Minnesota SQL Server User Group.
+ 
+**Mark Vaillancourt**
+ 
+Twitter:  - [@markvsql](https://www.twitter.com/@markvsql)
+ 
+LinkedIn: [Mark Vaillancourt](http://www.linkedin.com/in/markvsql/)
+ 
+Contact: [http://markvsql.com](http://markvsql.com)
+ 
+Mark is a Data Solutions Architect for Microsoft, helping organizations design data solutions in Azure. He has been working with Microsoft data technologies since 2007. Before joining Microsoft, he was a Business Intelligence consultant and two-time Microsoft Data Platform MVP. With a background in Theater and Improvised Comedy, Mark makes sure that his presentations are both informative and fun.
+
+ 
+**Janis Griffin**
+ 
+Twitter:  - [DoBoutAnything](https://www.twitter.com/DoBoutAnything)
+ 
+LinkedIn: [Janis Griffin](http://www.linkedin.com/pub/janis-griffin/0/914/aba)
+ 
+Janis Griffin has over 30 years of DBA/database experience including design, development and implementation of many critical database applications. Before coming to Quest Software, Janis primarily worked in the Telecom/Network Industry, working with both real-time network routing databases and OLTP business to business applications.  Janis also held positions as a Principal Architect and Senior Manager, mentoring other DBAs on best practices in database performance tuning.
+ 
+**Tim Plas**
+ 
+Twitter:  - [tjplas](https://www.twitter.com/tjplas)
+ 
+LinkedIn: [Tim Plas](https://www.linkedin.com/in/tplas)
+ 
+Tim is a Principal Consultant at Virteva, in Mpls MN. His current focus areas are cloud architecture / engineering / migration, operational-DBA services (esp. HA/DR), server migrations, server virtualization, and storage. His experience over the past 25+ years has been primarily with server / data-center infrastructure, including being CTO / co-founder of a successful hosting company. Tim has held a variety of MS certifications since 1994.
+ 
+**Bill Preachuk**
+ 
+Twitter:  - [@BillPreachuk](https://www.twitter.com/@BillPreachuk)
+ 
+LinkedIn: [Bill Preachuk](http://www.linkedin.com/pub/bill-preachuk/1/a53/954)
+ 
+Bill Preachuk is employed by Hortonworks as a Hadoop Solutions Engineer. He is also a SQL Server MCTS with plenty of years spent in the SQL Server DBA/Developer/DW trenches.
+
+Bill has been in IT since 1991 and has presented at PASS Summit , multiple SQL Saturdays, and PASS/Hadoop/Analytics user group meetings in the Twin Cities, Wisconsin, Iowa, Winnipeg, and Ukraine.  He also served 2 years on the Board of PASSMN - The Minnesota SQL Server User Group.
+ 
+**Felipe Ferreira**
+ 
+Twitter:  - [@SQLBoy](https://www.twitter.com/@SQLBoy)
+ 
+LinkedIn: [Felipe Ferreira](http://ca.linkedin.com/in/felipeff/en)
+ 
+A SQL Server MVP and a self-proclaimed geek, Felipe admits his curiosity gets him in trouble because he often finds himself “working” on weekends. A lover of data, research, and studying, he has learned a lot of what he knows by teaching himself. Felipe’s clients and peers can rely on him for just about any issue related to data warehousing and BI. Addicted to adrenaline, Felipe can be found skydiving and bungee jumping in his spare time
+ 
+**MIKE DONNELLY**
+ 
+Twitter:  - [SQLMD](https://www.twitter.com/SQLMD)
+ 
+LinkedIn: [MIKE DONNELLY](http://www.linkedin.com/in/melsar93)
+ 
+Contact: [http://sqlmd.wordpress.com](http://sqlmd.wordpress.com)
+ 
+Michael Donnelly has been working with SQL Server for 15+ years and holds the MCSE: Data Platform certification. He is an avid runner, blogger, and a wannabe gourmet chef. Currently living the SQL Life on the Jersey Shore.
+ 
+**Aaron Bertrand**
+ 
+Twitter:  - [@AaronBertrand](https://www.twitter.com/@AaronBertrand)
+ 
+Contact: [https://blogs.sentryone.com/author/AaronBertrand](https://blogs.sentryone.com/author/AaronBertrand)
+ 
+Aaron, Product Manager at SentryOne, produces performance and optimization tools for the entire Microsoft data platform, as well as Plan Explorer, a free tool for SQL Server execution plan analysis. In his spare time, he is either playing volleyball, curling, blogging at sqlperformance.com and blogs.sentryone.com, or contributing to SQL Server conversations on Twitter and dba.stackexchange.com. He has worked with SQL Server since 6.5 and has been an MVP since 1997.
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Protegra](http://www.protegra.com)
+ 
+- [Microsoft Canada](https://technet.microsoft.com/en-ca)
+ 
+- [Imaginet Resources Corp.](http://www.imaginet.com)
+ 
+- [Quest Software](https://www.quest.com/)
+ 
+- [SolarWinds](http://www.solarwinds.com)
+ 
+- [Pyramid Analytics](http://www.PyramidAnalytics.com)
+ 
+- [Hortonworks](http://hortonworks.com/)
+ 
+- [McGraw-Hill Ryerson Ltd.](http://www.mheducation.ca/)
+ 
+- [PluralSight](http://www.pluralsight.com)
+ 
+- [MDD Solutions Ltd.](http://mikedefehr.com)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 

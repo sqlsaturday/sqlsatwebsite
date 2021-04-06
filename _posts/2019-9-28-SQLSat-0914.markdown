@@ -1,0 +1,573 @@
+---
+layout: "post" 
+title: "SQLSaturday #914 - Torun 2019" 
+prettydate: "28 September 2019" 
+---
+# SQLSaturday #914 - Torun 2019
+ 
+**Event Date**: 09/28/2019 00:00:00
+ 
+**Event Location**:
+- Uniwersytet Mikołaja Kopernika, Wydział Matematyki i Informatyki, 
+- ul. Chopina 12/18
+- Torun, Kuyavian-Pomeranian Voivodeship, Poland
+ 
+<a href="/assets/pdf/0914.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: AutoML at scale
+ 
+**Abstract**:
+Automating the construction and tuning of machine learning (ML) models has long been one of the goals of the ML community. This is due to several factors, most notably a sharp increase in the demand for tailored AI solutions, a relative scarcity of trained ML scientists, and the development of deep learning models with complex architectures requiring accurate design and fine-tuning.
+Existing automated machine learning (AutoML) techniques have been remarkably successful in identifying good parameters for a given model, sometimes even outperforming humans. However, these options either take too long to train or they work for only a handful of parameters. That’s why Azure Machine Learning uses probabilistic latent variable model to work with DNNs without needing to fully train them. Azure Machine Learning Services (AML) provides a cloud-based environment you can use to develop, train, test, deploy, manage, and track machine learning models. AutoML in the cloud will soon become mainstream.
+ 
+**Speaker(s):**
+- Marcin Szeliga
+ 
+*Track and Room*: Advanced Analysis  Machine Learning - Aula
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Statystyki danych - czy to jest istotne?
+ 
+**Abstract**:
+Jak napisano w oficjalnej dokumentacji SQL Server: "The Query Optimizer uses statistics to create query plans that improve query performance". Wydaje się więc, że zrozumienie tego jak dbać o statystyki jest jednym z kluczowych punktów podnoszenia wydajności naszych serwerów. 
+
+Sesja pomyślana tak, by ilość slajdów ograniczyć do minimum i jak najwięcej czasu poświęcić na dema. Oczywiście będzie odrobina teorii, ale przede wszystkich będziemy statystyki tworzyć, kasować, aktualizować na różne sposoby. Spróbujemy też czytać je tak jak robi to Optymalizator Zapytań. Zobaczymy też różnice, jakie zaszły w interpretacji oraz mechanizmach aktualizujacych statystyki wraz z wprowadzeniem SQL Server 2014 i 2017. A na koniec przeniesiemy statystyki bazy produkcyjnej do bazy testowej.
+ 
+**Speaker(s):**
+- Rafał Suchorski
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - S9
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Processing Large Tabular models with Analysis Services Partition Manager
+ 
+**Abstract**:
+Processing of Tabular model is very common situation, there are many of solution for this problem: starting from  SSIS packages and ends on Azure Logic App. But what, when there is very large data model and time for processing limited to 5 minutes? The full processing takes too long, what's more there is no necessary to reload all the data, only data from last month can be changed and needs to be reloaded. In this case Partition manager is good solution which can limit the processing time to necessary minimum. During the session I will show how to easy implement solution, also I will tell about processing types and performance tips for large tabular models. 
+Session in Polish.
+ 
+**Speaker(s):**
+- Łukasz Bielak
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - S5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Wprowadzenie do SQL Server Data Tools
+ 
+**Abstract**:
+SQL Server Data Tools (SSDT) jest bardzo bogatym narzędziem pozwalającym administratorom oraz deweloperom na prawidłowe zarządzanie kodem źródłowym baz danych. Jego znajomość może okazać się bardzo przydatna właśnie teraz, kiedy wiele przedsiębiorstw zaczyna rozumieć potrzebę traktowania kodu bazodanowego podobnie do kodu aplikacyjnego. Dzięki SSDT w bardzo łatwy sposób możesz zacząć wdrażać to podejście w swoim projekcie, co pozwoli na dalsze ulepszenia, takie jak automatyzacja procesów CI/CD.
+
+Na tej sesji dowiesz się jakie funkcjonalności dostarcza SSDT, jak stworzyć nowy projekt bazodanowy zawierający model bazy danych, jak za jego pomocą wgrać zmiany na serwer bazodanowy oraz jak porównać istniejącą bazę z wzorcowym modelem.
+ 
+**Speaker(s):**
+- Marek Maśko
+ 
+*Track and Room*: Application  Database Development - S9
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Query optimization on steroids with SQL Server 2017/2019
+ 
+**Abstract**:
+Adaptive or Intelligent? Maybe both? SQL Server 2017 has come into the light packed with automated query tuning based on the Query Store and Plan Cache. 
+SQL Server 2019 has a lot more important features like  =batch mode on rowstore, memory grant feedback, interleaved execution, adaptative joins, deferred compilation and approximate query processing. So now we have entered the Intelligent Query Processing world!.
+
+I would like to present both the AQP and IQP to show what you can expect in the nearest future and how these features help your queries running faster
+ 
+**Speaker(s):**
+- Damian Widera
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - S9
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Life on the Edge
+ 
+**Abstract**:
+TBA
+ 
+**Speaker(s):**
+- Emil Wasilewski
+ 
+*Track and Room*: Cloud Application Development  Deployment - Aula
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Docker for data amateur
+ 
+**Abstract**:
+Even tough it's nothing new, Docker is a thing nowadays. I've decided to check containers out as well and learn how they can help me. Although I'm a BI consultant and not really using Docker and containers in the current projects, I've already found them to be very helpful on my daily basis learning and other activities. If you are also passionate about data and still experimenting with SQL Server and/or Python and/or any other technology, please join the session and see how Docker can change your life. 
+I will show you my journey, my thoughts and my findings regarding the usage of SQL Server and Python together with Docker. And there will be a lot, a lot of demos.
+ 
+**Speaker(s):**
+- Sławomir Drzymała
+ 
+*Track and Room*: Application  Database Development - Sala Konferencyjna
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Czy można nauczyć komputer znajdować budynki na zdjęciach satelitarnych?
+ 
+**Abstract**:
+Przedstawię zarys tego, do czego można używać sieci neuronowych w kontekście obrazów - klasyfikacja, detekcja i segmentacja. Skupię się na segmentacji obiektów na przykładzie znajdowania budynków na zdjęciach satelitarnych w konkursie Mapping Challenge i pokażę kilka pomysłów na usprawnienie modelu. Następnie pokażę, jak taki model pracuje na zdjęciach różnych miast z Google Maps i omówię warunki potrzebne do wytrenowania dobrego modelu.
+ 
+**Speaker(s):**
+- Andrzej Pyskir
+ 
+*Track and Room*: Advanced Analysis  Machine Learning - S9
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Zaawansowane obchodzenie ograniczneń w Power BI. Komentarze do danych w real-time w bankingu.
+ 
+**Abstract**:
+Jak dodawać komentarze w Power BI, żeby były dostępne w czasie rzeczywistym na Report Serverze, gdzie nie można użyć Power Apps? Poznaj pierwsze takie rozwiązanie stworzone dla najlepszego banku w Polsce. Uwaga, pokażemy jak to zrobiliśmy! Będzie też kod C# i będzie kod TypeScript!
+ 
+**Speaker(s):**
+- Michał Ćwiok
+ 
+*Track and Room*: Analytics and Visualization - S5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: How does the recursive CTE work?
+ 
+**Abstract**:
+We all know CTEs and the recursive version of it. But how does it work internally? Why sometimes it can produce an unexpected result?
+
+If you want to know how does recursive CTE work internally, want to know more about non-blocking, blocking and semi-blocking query plan operators, want to familiarise yourself with the spools, asserts, compute scalars - come to this session. I will analyse the whole query plan flow, describe the internals of the used operators and show you other situations where they are useful (or not).
+ 
+**Speaker(s):**
+- Bartosz Ratajczyk
+ 
+*Track and Room*: Application  Database Development - Aula
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Mój własny wykres w Power BI
+ 
+**Abstract**:
+Paleta podstawowa komponentów wizualizacyjnych w Power BI zwykle pokrywa większość naszych potrzeb, a w razie pojawienia się większego apetytu mamy mozliwość korzystać z zawartości półek Marketplace lub niezależnych producentów. Jeśli jednak tak szeroka oferta w jakiś sposób nie jest zbieżna z naszą wizją to możemy sami stworzyć komponent wizualizacyjny. W czasie sesji pokażę Wam jak się do tego zabrać od strony narzędziowej, które "klocki" należy poznać i jakiego rodzaju umiejętności są kluczowe przy tworzeniu własnego typu wykresu. Oczwiście, w trakcie tych kilku kwadransów powstanie taki komponent, który bedzie gotowy do użycia na naszym dashboardzie.
+ 
+**Speaker(s):**
+- Hubert Kobierzewski
+ 
+*Track and Room*: Analytics and Visualization - S9
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Availability Groups on Kubernetes in SQL Server 2019
+ 
+**Abstract**:
+With SQL Server 2019 announced new capabilities for High Availability and Disaster Recovery on containers in Kubernetes. During the session, you will learn Kubernetes concepts used by the latest version of SQL Server. How SQL Server High Availability works in Kubernetes and how to deploy it
+ 
+**Speaker(s):**
+- Lukasz Kaluzny
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Sala Konferencyjna
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: AI and (Power) BI - Better Together
+ 
+**Abstract**:
+Power BI is on the market for a while now. It's seems to be a mature BI platform, but still does not utilize the potential of AI to support business decisions. However, in the last few months Microsoft announced many new Power BI features related to AI which can change the way people will work with this technology in the future. The purpose of this demo-intensive session is to show the AI-based capabilities of Power BI in use.
+ 
+**Speaker(s):**
+- Pawel Potasinski
+ 
+*Track and Room*: Analytics and Visualization - Aula
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Best Practices in SSIS
+ 
+**Abstract**:
+Integration Services has been in existence for about 14 years, but how it works hasn't really changed.
+One of the most important features of SSIS is flexibility, which is also one of the most common failures. In this session you will learn what are the good practices of creating SSIS packages. How to handle errors, what to do to make our SSIS work quickly and efficiently.
+ 
+**Speaker(s):**
+- Tomasz Waloszek
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - S5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: PowerBI Embedded: powerful analytics in your application
+ 
+**Abstract**:
+Have you ever wondered how to introduce powerful analytical functions to your application? How many times have you failed to complete this task? During this session, you will learn how to implement the power of Power BI in your own application. You will learn how to enrich your solution by placing excellent reports and dashboards.
+
+Based on selected case studies, I will show you step by step on how to add data visualizations and interactive reports to your application.
+ 
+**Speaker(s):**
+- Jakub Wawrzyniak
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - Sala Konferencyjna
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Hidden aspects of SQL Server
+ 
+**Abstract**:
+Nowadays we are dealing with super efficient auto-tuning database servers but our queries sometimes run very slow. Everything looks ok but in our monitoring tools we can see higher resource consumption, wait statistics associated with locks or tempdb activity etc. What is the reason of this? During the session I will show few not very well-known aspects of work with SQL Server that can affect performance of specific queries and entire instance. During the session you will find a lot of practical demonstrations and tips that will help you diagnose specific problems and errors.
+ 
+**Speaker(s):**
+- Adrian Chodkowski
+ 
+*Track and Room*: Application  Database Development - Sala Konferencyjna
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: How to quickly cook a brand new visual for Power BI
+ 
+**Abstract**:
+You have two ways to create a new visual for your great Power BI reports. The first one is to take something called Typescript and code a new stuff. It’s simple and exciting, isn’t it?  The second way is easier and cooler... Use Charticulator! This tool with a strange name gives you everything to prepare your own visual from a scratch without coding, only with dragging and dropping.
+ 
+**Speaker(s):**
+- Grzegorz Stolecki
+ 
+*Track and Room*: Analytics and Visualization - Aula
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: How to get the most from Azure SQL Database
+ 
+**Abstract**:
+In this session we will show how to get the most advantages out from Azure SQL Database.
+We will learn how to monitor the performance of our workload, how to improve it and how to secure it using the tools and features at our disposal on the Azure portal without having to install 3rd party tools.
+We will also see some ways to lower the costs or increase performance without having to also increase costs.
+ 
+**Speaker(s):**
+- Jose Manuel Jurado Diaz
+ 
+*Track and Room*: Cloud Application Development  Deployment - Sala Konferencyjna
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Creating data transformation in minutes with no code using Azure Data Factory with Data Flows
+ 
+**Abstract**:
+Data Flows component for Azure Data Factory brings power of Spark on Databricks with flexible and easy to use user interface. In this session you will learn basics of how Data Factory works, what is Data Flows components, how does it work and how does it integrate with Databricks without writing any code. Session will end with a live demo of Data Factory with Data Flow component.
+This is also natural migration path for those working with SSIS.
+ 
+**Speaker(s):**
+- Adam Marczak
+ 
+*Track and Room*: Cloud Application Development  Deployment - S9
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Uczenie maszynowe – jak zacząć
+ 
+**Abstract**:
+W czasie wykładu przedstawię podstawowe narzędzia wygodne w prototypowaniu modeli uczenia maszynowego, pokaze kody rozwiązujące przykładowe zagadnienia dla danych tabelarycznych i obrazów i wskażę linki do miejsc przydatnych w dalszej nauce.
+ 
+**Speaker(s):**
+- Patryk Miziuła
+ 
+*Track and Room*: Advanced Analysis  Machine Learning - S5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: DAX Filter Context
+ 
+**Abstract**:
+Session will help to understand term of context in DAX language and will help to understand why so often result of our query differs from expectation.
+Basing on queries and visualizations, playing with PowerBI and DAX studio, we will see rules and examples, trying to understand how engine works and how sees what is coded in our calculations.
+ 
+**Speaker(s):**
+- Tomasz Gołaszewski
+ 
+*Track and Room*: Advanced Analysis  Machine Learning - S5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Database Adventure
+ 
+**Abstract**:
+Aimed mostly at administration and based on real life scenarios, in this audience interactive session we will go through some scenarios DBA's might encounter whilst dealing with SQL Server databases and you will be provided with some options about what to do. Members of the audience will then select from these options what to do and we will follow that path and see what the outcome is from there.
+
+Each selection will have a different outcome, and along the way you will probably learn some new things.
+ 
+**Speaker(s):**
+- Kevin Chant
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Aula
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Metody wykrywania anomalii z zastosowaniem sieci LSTM
+ 
+**Abstract**:
+TBA
+ 
+**Speaker(s):**
+- Tomasz Cieplak
+ 
+*Track and Room*: Advanced Analysis  Machine Learning - Sala Konferencyjna
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Non-relational faces of SQL
+ 
+**Abstract**:
+Despite the diversity of processed data, the approach to their presentation still has a lot in common. I'd like to tell you about tools, which have their own approach to SQL language. We will see how NoSQL in MongoDB, OQL in Pivotal GemFire ​​and KSQL in Apache Kafka can imitate the most popular elements of the SQL language.
+ 
+**Speaker(s):**
+- Natalia Świtalska
+ 
+*Track and Room*: Application  Database Development - S5
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**Pawel Potasinski**
+ 
+Twitter:  - [https://twitter.com/PawelPotasinski](https://www.twitter.com/https://twitter.com/PawelPotasinski)
+ 
+LinkedIn: [Pawel Potasinski](https://www.linkedin.com/in/pawelpotasinski)
+ 
+Contact: [http://blog.sqlgeek.pl](http://blog.sqlgeek.pl)
+ 
+CTO at Elitmind. Focused on determining the company's technological directions and transforming Clients into successful data driven organizations. Former Microsoft employee (Data Insights Product Manager for Poland). In 2007 Pawel started Polish SQL Server User Group (PLSSUG), currently known as Data Community Poland, an official PASS Chapter in Poland. Pawel has been a speaker at many conferences in Poland and worldwide (e.g. SQLDay, SQLSaturday, European PASS Conference). He has been awarded with Microsoft Most Valuable Professional (MVP) sixtimes in his career. Father of three. Avid runner.
+ 
+**Jose Manuel Jurado Diaz**
+ 
+Twitter:  - [jmjuradodiaz](https://www.twitter.com/jmjuradodiaz)
+ 
+LinkedIn: [Jose Manuel Jurado Diaz](https://www.linkedin.com/in/jose-manuel-jurado-diaz-5a586014/)
+ 
+José Manuel Jurado currently works as SQL Escalation Engineer and Subject Matter Expert in Azure SQL Database at Microsoft Spain. With over 20+ years of experience in SQL Server environments (administration and database development), he is a speaker for internal events at Microsoft and for public events such as SQLSaturday, SQL Nexus, SQLBits, Pass Summit, SQL Server Konferenze, TechReady, DotNetConference, and Azure BootCamp. In the past, he worked as Project Manager for large global retail company for more than 10 years developing projects using different Microsoft Technologies.
+ 
+**Jakub Wawrzyniak**
+ 
+Data Architect and Developer Team Leader at TIDK. Enthusiast of AI solutions. PhD student, scientifically associated with the Laboratory of Algorithm Design and Programming Systems at the Institute of Computer Science at the Poznan University of Technology. In the IT industry for over ten years. Designer and creator of solutions for public administration, programmer. He has experience in international research and development projects. His scientific interests include such issues as machine learning, algorithm design, complexity analysis, combinatorial optimization, or scheduling. Passionate about data, games and Japanese culture. Member of the Organizing Committees of the Game Industry Conference and the Applied Data Science.
+ 
+**Hubert Kobierzewski**
+ 
+LinkedIn: [Hubert Kobierzewski](http://www.linkedin.com/in/kobierzewski)
+ 
+Hubert works at Codec-dss as BI Practice Lead. He helps customers to gather their data and convert it into valuable information using Microsoft Data Platform technologies. Hubert is also a board member of Data Community Poland and a leader of Warsaw Power BI User Group.
+ 
+**Emil Wasilewski**
+ 
+Twitter:  - [wasilewskiemil](https://www.twitter.com/wasilewskiemil)
+ 
+.
+ 
+**Tomasz Waloszek**
+ 
+Twitter:  - [WaloszekTomasz](https://www.twitter.com/WaloszekTomasz)
+ 
+LinkedIn: [Tomasz Waloszek](https://www.linkedin.com/in/tomaszwaloszek/)
+ 
+He has been working with SQL Server 2008 for 8 years. As an administrator and programmer, he has proven his skill with MCP, MCSA, MCSE Data Management and Analytics by obtaining numerous certificates. A Business Intelligence consultant at Neuca company, where he designs and develops data warehouse and multi-dimensional databases. Leader of the Bydgoszcz-Toruń Data Community group. Privately, an enthusiast of combat sports and strength training using hardstyle methodology.
+ 
+**Andrzej Pyskir**
+ 
+LinkedIn: [Andrzej Pyskir](https://www.linkedin.com/in/andrzej-pyskir-19b55b85/)
+ 
+Graduated from Factulty of Physics, University of Warsaw, and then turned to be a Data Scientist and an Instructor at deepsense.ai. Interested in CNNs, recommender systems and teaching Data Science.
+ 
+**Lukasz Kaluzny**
+ 
+Twitter:  - [kaluzaaaa](https://www.twitter.com/kaluzaaaa)
+ 
+LinkedIn: [Lukasz Kaluzny](https://www.linkedin.com/in/lukaszkaluzny/)
+ 
+Contact: [https://kaluzny.io](https://kaluzny.io)
+ 
+Cloud Technology Leader w Beyond.pl. Pasjonat chmury publicznej oraz szeroko pojętej nowoczesnej architektury w IT oraz hipsterskich technologii, które dopiero się pojawiają. Od 2012 roku wyróżniony tytułem Microsoft Most Valuable Professional w kategoriach: Microsoft Azure oraz historycznie Hyper-V. Autor bloga: kaluzny.io
+ 
+**Kevin Chant**
+ 
+Twitter:  - [kevchant](https://www.twitter.com/kevchant)
+ 
+LinkedIn: [Kevin Chant](https://www.linkedin.com/in/kevin-chant/)
+ 
+Contact: [https://www.KevinRChant.com/](https://www.KevinRChant.com/)
+ 
+Senior Database Architect originally from the UK and now living in the Netherlands. 
+
+Over 23 years experience in the IT sector, and has supported databases for companies in the top 10 of the fortune 500 list.
+
+In addition to a lot of SQL Server experience also has a fair few Microsoft Certifications. In addition, was probably the last ever person in the world to gain the MCSD Azure Architect certification and has gained the latest Microsoft DevOps Engineer Expert certification. 
+
+Has real life experience with SQL Server and Azure Devops. Currently SQL Server Product Owner of around 1,900 instances. 
+
+In addition, done various things over the years for the Data Platform Community.
+ 
+**Michał Ćwiok**
+ 
+Ex-Microsoft self-taught BI Developer. Currently working for Clouds On Mars. Specializes in Power BI and Azure. Apart from BI love, hugely invested in Internet Privacy. You can learn more at cwiok.pl
+ 
+**Rafał Suchorski**
+ 
+LinkedIn: [Rafał Suchorski](https://www.linkedin.com/in/rafal-suchorski-02894b47)
+ 
+Contact: [https://datacommunity.pl/tag/rafal-suchorski/](https://datacommunity.pl/tag/rafal-suchorski/)
+ 
+Database Administrator (MS SQL Server), SSIS Developer, MCSE, ex-MCT, ex-Leader of PLSSUG (Bydgoszcz and Toruń)
+ 
+**Adam Marczak**
+ 
+Azure Cloud Architect working at Lingaro. Passionate .NET developer and Azure evangelist. For many years delivering solutions in FMCG for global scale clients. Since 2014 working primarly in Azure and Cloud specific projects as a developer, tech leader and architect. In spare time writing on his personal blog and recently YouTube channel dedicated to Azure technologies.
+ 
+**Marek Maśko**
+ 
+Twitter:  - [https://twitter.com/marekmasko](https://www.twitter.com/https://twitter.com/marekmasko)
+ 
+LinkedIn: [Marek Maśko](https://www.linkedin.com/in/marekmasko/)
+ 
+Contact: [http://blog.sqlterritory.com/](http://blog.sqlterritory.com/)
+ 
+Marek works as a Principal Database Analyst at Sabre Polska where he is developing a database solution for flight planning system. He supports teams of developers, testers, delivery, and technical support staff in this large international project. Fan of query optimization and exploration of knowledge about SQL Server Internals. He professionally works on databases and in particular with SQL Server since 2010. Earlier, a Java and C# coder. An active member of the Krakow chapter of the Polish Data Community. Marek is MCSE: Data Platform and MCSE: Data Management and Analytics.
+ 
+**Sławomir Drzymała**
+ 
+Twitter:  - [https://twitter.com/SDrzymala](https://www.twitter.com/https://twitter.com/SDrzymala)
+ 
+LinkedIn: [Sławomir Drzymała](https://www.linkedin.com/in/sdrzymala/)
+ 
+Contact: [http://seequality.net/](http://seequality.net/)
+ 
+Slawomir Drzymala is a Data Warehouse Developer and a big enthusiast of the Microsoft technologies, which is still playing with data, the .NET technologies and Microsoft's data products. Big fan of the data mining/data science, but also of the self-service BI. Speaker at many different events including the biggest Microsoft SQL Server conference in Poland. Organizer of the meetings, conferences and hackathon dedicated to the Microsoft Data Platform. President of Malta Microsoft Data Platform User Group.
+ 
+**Damian Widera**
+ 
+Twitter:  - [@DamianWidera](https://www.twitter.com/@DamianWidera)
+ 
+LinkedIn: [Damian Widera](https://pl.linkedin.com/in/damian-widera-0b56284)
+ 
+Contact: [https://codingfamily.net](https://codingfamily.net)
+ 
+SQL Server MVP amp; MCT
+Software engineer with 18+ years of professional experience in all aspects of software development.
+Damian participated in a number of projects in international environments and possesses practical knowledge of procedures and tools which are necessary for successful implementation of such projects.
+Now he focuses on building solutions based on Microsoft SQL Server environment (including complex database driven systems, database tuning and optimization).
+ 
+**Łukasz Bielak**
+ 
+LinkedIn: [Łukasz Bielak](https://www.linkedin.com/in/lukasz-bielak/)
+ 
+Contact: [https://cloudbi.pl](https://cloudbi.pl)
+ 
+Business Intelligence Consultant, works with Microsoft technology stack from 2014. Currently focused on developing BI solution on Azure. Runs a blog CloudBI.pl and writes articles about data platform. Owner of Microsoft Certificates MCSE: Data Management And Analytics, MCSA: SQL SERVER 2012 and MCSA: BI Reporting
+ 
+**Grzegorz Stolecki**
+ 
+Twitter:  - [gstolecki](https://www.twitter.com/gstolecki)
+ 
+LinkedIn: [Grzegorz Stolecki](https://pl.linkedin.com/in/grzegorzstolecki)
+ 
+Business Intelligence expert with 20+ years of experience. Grzegorz worked as architect, developer and trainer. Currently he focuses on developing specialized analytical and reporting solutions using machine learning models for large and mid-size enterprises. He also works on financial planning, consolidation and budgeting applications. Grzegorz is one of the leaders of Polish Data Community (former Polish SQL Server User Group PLSSUG). You can meet him very often at community meetings, conferences and other events. He is an active speaker and ATE member. Microsoft MVP in Data Platform Area since 2010.
+ 
+**Adrian Chodkowski**
+ 
+Twitter:  - [https://twitter.com/Adrian_SQL](https://www.twitter.com/https://twitter.com/Adrian_SQL)
+ 
+LinkedIn: [Adrian Chodkowski](https://pl.linkedin.com/in/adrian-chodkowski-91947457)
+ 
+Contact: [http://www.seequality.net](http://www.seequality.net)
+ 
+Business Intelligence Consultant responsible for developing and architecting Microsoft Data Platform Solutions for wide range of clients. Trainer, blogger (www.seequality.net) and real fun of Microsoft on-premise and cloud technologies. Enthusiast of technology community with many pro-bono activities and experiences. Owner of many technology certificates like MCSA, MCSE: data management  analytics or MCSE:Business Intelligence.
+ 
+**Marcin Szeliga**
+ 
+LinkedIn: [Marcin Szeliga](https://pl.linkedin.com/in/marcinszeliga)
+ 
+Data Philosopher. Since 2006 invariably awarded Microsoft Most Valuable Professional title in the Data Platform category. A speaker at numerous conferences across Europe, as well as at user groups meetings. The author of many books and articles devoted to Microsoft Data Platform. An independent consultant, database-centric application practitioner and architect totally focused on SQL Server and Azure. Huge fan of Data Science and Machine Learning.
+ 
+**Bartosz Ratajczyk**
+ 
+Twitter:  - [@b_ratajczyk](https://www.twitter.com/@b_ratajczyk)
+ 
+LinkedIn: [Bartosz Ratajczyk](http://pl.linkedin.com/in/bartoszratajczyk)
+ 
+Contact: [http://blog.bartekr.net/](http://blog.bartekr.net/)
+ 
+Database developer and (sometimes) administrator working with SQL Server Data Platform. Currently focusing on ETL development, delivery automation using TFS, query tuning, SQL Server training. Data Community Poland (DC) member, local group and conference speaker.
+ 
+**Patryk Miziuła**
+ 
+Data scientist and lead instructor at deepsense.ai. Comes from and lives in Bydgoszcz.
+ 
+**Tomasz Gołaszewski**
+ 
+LinkedIn: [Tomasz Gołaszewski](https://www.linkedin.com/in/tomasz-go%C5%82aszewski/)
+ 
+A Data Architect fascinated with IT and programming since early school years. I chose data analysis as a specialization path and from that angle I'm used to work with the SQL Server database engine. I've gained experience with the engine on data warehouses and building data flows oriented at a specific business needs.
+ 
+**Tomasz Cieplak**
+ 
+Twitter:  - [https://twitter.com/TomaszCieplak](https://www.twitter.com/https://twitter.com/TomaszCieplak)
+ 
+Data Community Poland - Lublin chapter leader
+ 
+**Natalia Świtalska**
+ 
+LinkedIn: [Natalia Świtalska](https://www.linkedin.com/in/natswitalska/)
+ 
+At work: Certified Java developer with additional knowledge in ETL, DWH, BAM systems, Real-Time Streaming solutions and Cloud, in meantime: Data Community member and SQL and Data Analysis  enthusiast.
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Microsoft Corporation](https://www.microsoft.com/en-us/server-cloud/products/sql-server/)
+ 
+- [KursySQL](http://www.kursysql.pl)
+ 
+- [Grupa NEUCA](https://kariera.neuca.pl/)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 

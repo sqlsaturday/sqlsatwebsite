@@ -1,0 +1,706 @@
+---
+layout: "post" 
+title: "SQLSaturday #425 - Johannesburg 2015" 
+prettydate: "5 September 2015" 
+---
+# SQLSaturday #425 - Johannesburg 2015
+ 
+**Event Date**: 09/05/2015 00:00:00
+ 
+**Event Location**:
+- Microsoft Office
+- 3201 William Nicol Drive
+- Bryanston, Gauteng, South Africa
+ 
+<a href="/assets/pdf/0425.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: Load Testing With SQL Server Tools
+ 
+**Abstract**:
+It’s often difficult to know how your SQL Servers will perform under different loads. By performing load testing, we can gain these key insights, perform modifications to existing configurations, and understand the impact on performance levels.
+
+Come learn about the native tools at our disposal for performing these important load tests and how we can identify when performance levels begin to drop. Using demos of these native tools – including Distributed Replay Utility (DRU), Database Tuning Adviser (DTA), Perfmon, Extended Events, and Profiler – we’ll see how to plan and perform a load test project, gain an understanding of SQL Server’s performance under varying load scenarios, and discover which tell-tale indicators can help alert us to performance degradation.
+ 
+**Speaker(s):**
+- Neil Hambly
+ 
+*Track and Room*: Database Development - Room4
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: RC, SI, and RCSI, Oh My! –We're off to see the Wizard -to understand how it all works.
+ 
+**Abstract**:
+I'm just going to say it straight out. I'm pessimistically optimistic that most really understand transaction concurrency in SQL Server. There is often significant confusion about transaction concurrency and contention options available to Developers -is it 'pessimistic', or 'optimistic', or in between? Everyone ‘sort of’ understands READ COMMITTED (RC). But do you sometimes feel 'dirty' as you attempt to 'repeatedly' read that phantasma? In order to reduce locking and blocking conflicts, some folks adopt SNAPSHOT ISOLATION (SI). And a few hardy stalwarts have ventured into the new world of READ COMMITTED SNAPSHOT ISOLATION (RCSI). In this session, we will explore the differences between the three, including a discussion about the positives and negatives of each option. We will discuss the effects of 'Dirty', 'Repeatable' and 'Phantom' reads, and why you may want to know which may be buried in your code. There will be code examples demonstrating the benefits and traps of each option.
+ 
+**Speaker(s):**
+- Arnie Rowland
+ 
+*Track and Room*: Database Development - Room4
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: tSQLt - Database Unit Testing
+ 
+**Abstract**:
+Everyone writes perfect SQL code, but sometimes things happen that make your code run in weird and unexpected ways.
+Or you are that lucky person that has to make changes to business critical code, where a mistake can put you on a fist name basis with the CEO.
+
+Sure, we have testing departments that will check our code, and some of us have to test our code ourselves. 
+But you might still end up lying awake at night wondering about that edge case scenario.
+
+Testing takes time, and database tables have foreign keys and constraints and all sorts of other things that make it hard to get the system into a specific state. Then you change your code and have to do it all over again.
+
+tSQLt allows you to prepare your database for a test, and once the test is run the database is set back like nothing happened. All that remains is whether your test succeeded.
+
+We will go through setting up the framework, how to write tests and run them - either manually or as part of your build process
+
+ 
+**Speaker(s):**
+- Clinton van Blommestein
+ 
+*Track and Room*: Database Development - Room4
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Analytics Platform System - SQL 2012 Parallel Data Warehouse vs SQL 201x
+ 
+**Abstract**:
+This session will cover some of the key fundamentals that differentiate SMP SQL from MPP SQL (SQL 2012 Parallel Data Warehouse vs SQL 201x) . 
+I will go over some of the architectural implementations that make MPP SQL Possible, and that offer its ground breaking performance. Will also briefly cover scenarios where APS will shine and scenarios which are not ideal for APS as well as some of the current limitations on APS. 
+I have access to an actual APS appliance (AU3) so we will be running side by side queries on a comparative SQL 201x Environment and then on the APS to show the performance of an APS as a data warehousing solution. 
+Some of the specific side by side comparisons we will run: 
+Data Loads - BCP, SSIS and BULK INSERT vs DWLoader.exe 
+Data Transformation - CTAS, CRTAS
+BI Demonstration - Connecting Excel directly to 30 million + rows and doing a real time pivot without a cube off the back of APS. 
+Lastly will cover some of the hybrid hadoop functionality with APS CETAS
+ 
+**Speaker(s):**
+- Alain Dormehl
+ 
+*Track and Room*: Data Warehouse  Business Intelligence - Room2
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server and the Data Management Practice
+ 
+**Abstract**:
+Microsoft SQL Server is NOT recognised as a platform that can deliver a Data Management Practise! How do we use SQL Server technologies to achieve data maturity? Data is a very important asset and you need a comprehensive strategy to manage it correctly.
+Using SQL Server technologies to build a DAMA framework we will explore how to map the technologies onto the DAMA wheel which is divided into 11 principles: Data Governance, Data Architecture, Data Design  Modelling, Data Storage  Operations, Data Security, Data Integration  Interoperability, Unstructured Data, Reference  Master Data, Data Warehousing  Business Intelligence, Metadata  and Data Quality Management.
+Technologies such as DQS and Azure Data Catalog are used to achieve Data Quality Management. Power BI and PowerQuery will be mapped onto the Warehousing  BI sector of the DAMA framework. The SQL Engine ensures Data Security. A comprehensive set of mappings will be provided.
+The Data Managemnt Trainline is a set of pat
+ 
+**Speaker(s):**
+- Howard Diesel
+ 
+*Track and Room*: Strategy And Architecture - Room5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: I wanna learn SQL Server and I know nothing
+ 
+**Abstract**:
+Learning about the basics of SQL Server
+ 
+**Speaker(s):**
+- Steve Simon
+ 
+*Track and Room*: SQL Dev: Soup to Nuts - Room1
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Backups? What backups?
+ 
+**Abstract**:
+That’s never something you want to hear. Unfortunately it tends to be heard far too often.
+In this introductory session, we’ll look at backups, backups and more backups (because there’s no such thing as too many backups)
+
+We’ll look at full backups, what they are and how often they should be run.
+We’ll look at differential backups, how they fit into backup strategies and the pitfalls you may encounter when using them.
+We’ll look at transaction log backups, at why they are an essential part of the backup strategy for important databases and at what happens when transaction log backups go wrong.
+
+ 
+**Speaker(s):**
+- Gail Shaw
+ 
+*Track and Room*: Database Administration - Room3
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Data Warehouse Schema Design and Evolution
+ 
+**Abstract**:
+discussion around Data Warehouse Schema Design and evolution.The flexibility of ROLAP model to support all Schema design categorizations and optimizes the performance of the ROLAP model.
+
+Different types Schema Design: In terms of tables accessed, Joins, data modification, data loading/Maintenance, data redundancy, design and size.
+
+•         Completely
+•         Normalized
+•         Moderately de-normalized
+•         Completely de-normalized
+•         Star
+
+And lastly discuss around the common schema design roadblocks that people face like Hierarchy, SCD etc…
+
+ 
+**Speaker(s):**
+- Sandesh Nagaraj
+ 
+*Track and Room*: Database Development - Room4
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Performance Troubleshooting Using DMVs
+ 
+**Abstract**:
+Performance troubleshooting is a complex subject with many factors under consideration when you find poorly performing SQL statements, using proven methodologies, and evaluating performance data available in the Dynamic Management Views and Functions. In this session, we’ll go over a foundation of how and which DMVs to use to identify those problematic statements for versions of SQL Server from 2005 – 2014.
+
+We’ll be demonstrating using practical examples, including code that can be taken away and used on attendees’ own SQL Servers. We’ll also discuss how to identify common causes of performance issues, and learn how to quickly review and understand the wealth of performance data available
+ 
+**Speaker(s):**
+- Neil Hambly
+ 
+*Track and Room*: Database Administration - Room3
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Data Profiling in SQL Server
+ 
+**Abstract**:
+We always struggled to get our code to work as per specification due to bad data quality. Sandesh will illustrate and make you realize that Data Profiling is a necessary precursor for designing any kind of system that use data. Data profiling is a method of assessing any data in a systematic and analytical way. The goal of data profiling is to give an exhaustive information detailing the content, context, and quality of data. Data profiling leads to better data integration, which leads to better data quality.
+ 
+**Speaker(s):**
+- Sandesh Nagaraj
+ 
+*Track and Room*: Database Development - Room4
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Automating your data-warehouse development with BIML
+ 
+**Abstract**:
+BIML is a great tool for the automaton of your Business Intelligence solution. In this talk you will learn how BIML can be used to create consistent and well-designed SSIS packages to handle the loading of your data warehouse. Using templates and meta-data driven package generation we can quickly build up the ETL solution and just as quickly respond to changing requirements as they arrive.
+ 
+**Speaker(s):**
+- Michael Johnson
+ 
+*Track and Room*: Data Warehouse  Business Intelligence - Room2
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Datazen the new kid on the block
+ 
+**Abstract**:
+This session will introduce the new toolset available as an advanced delivery of visuals and analytics to end users 
+ 
+**Speaker(s):**
+- Bhavesh Lala
+ 
+*Track and Room*: Data Warehouse  Business Intelligence - Room2
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL licensing aka how to use Microsoft SQL Server legally
+ 
+**Abstract**:
+The session helps to understand how to calculate SQL licenses, when to choose which licensing. 
+It  includes basic Microsoft licensing information (internal usage, third party services, cloud) then goes deeper into SQL licensing through examples - topologies. 
+ 
+**Speaker(s):**
+- Nóra Kovács
+ 
+*Track and Room*: Strategy And Architecture - Room5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Lies, Damned Lies And Statistics
+ 
+**Abstract**:
+Ever wondered what the things called statistics are, why they're important and what needs to be done to maintain them? If so, this session is for you! 
+
+In this session well take a look at what statistics are and why SQL keeps them; at how SQL maintains them and under what circumstances that maintenance is insufficient; and well look at the problems that result when they are inaccurate. 
+
+Finally we'll cover some suggestions and options around maintenance of statistics when the automatic maintenance is not sufficient.
+ 
+**Speaker(s):**
+- Gail Shaw
+ 
+*Track and Room*: Database Administration - Room3
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Dynamic Management Views and Functions - a Practical Overview
+ 
+**Abstract**:
+For anyone working on SQL Server these are an invaluable tool.  They provide a means to diagnose problems and performance tune.  
+
+This session will cover the more commonly used Dynamic Management Views and introduce the new ones that will be coming in 2016.
+
+ 
+**Speaker(s):**
+- Sean Cremer
+ 
+*Track and Room*: Database Administration - Room3
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Microsoft Stream Analytics and Real-Time Data Visualisation
+ 
+**Abstract**:
+An Introduction to real-time data analytics using Micosoft Azure Stream Analytics and Visualisation with Power BI
+ 
+**Speaker(s):**
+- Gary Hope
+ 
+*Track and Room*: Data Warehouse  Business Intelligence - Room2
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Power BI Whirlwind Tour
+ 
+**Abstract**:
+What is Power BI? What do I use Power BI for? How does Power BI complement and extend my BI investment? This and many more questions will be answered in this session. Lots of demos to illustrate how Power BI works. 
+
+While Power BI is in preview, many updates and changes are anticipated. These will be incorporated into the session as far as possible.
+ 
+**Speaker(s):**
+- Toufiq Abrahams
+ 
+*Track and Room*: Strategy And Architecture - Room5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Power to the people!!
+ 
+**Abstract**:
+Power Pivot and Power View provide new and innovative ways for end users to view their data and to convert this data to valuable information. Enabling and convincing end users to take ownership of their data (as Data Stewards) is half the challenge, and in practice is not all that problematic.
+In this hands on presentation we shall be looking at practical ways and means of creating reports, utilizing Power Pivot and Power View. We shall take advantage of the BISM and have our data stored within a SQL Server tabular database. All examples come from actual implementations and we shall be looking at the constructive feedback provided by end users.
+
+ 
+**Speaker(s):**
+- Steve Simon
+ 
+*Track and Room*: SQL Dev: Soup to Nuts - Room1
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server Always-Encrypted
+ 
+**Abstract**:
+Overview of the new encryption technologies in SQL Server 2016 and Azure SQL DB
+ 
+**Speaker(s):**
+- Gary Hope
+ 
+*Track and Room*: Database Development - Room4
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Dynamic SQL, not so scary
+ 
+**Abstract**:
+The application of dynamic SQL in database and .NET projects. Discussing example cases where there are objects that are only known at runtime, against which repeatable actions need to be executed.
+ 
+**Speaker(s):**
+- Howard Diesel
+ 
+*Track and Room*: Database Development - Room5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Efficient and Effective coding of Stored Procedures
+ 
+**Abstract**:
+Data does not become information until decision makers are able to view it and make those decisions that affect the enterprise as a whole. Stored procedures are one means of getting the data from the database tables to the reports in an effective and efficient manner.
+In this hands-on presentation, we shall be looking at best practices with regards to creating and tuning stored procedures. We shall also be discussing parameter sniffing and other gotcha’s that affect us in our daily lives. 
+ 
+**Speaker(s):**
+- Steve Simon
+ 
+*Track and Room*: SQL Dev: Soup to Nuts - Room1
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: The Monkey Wrench of data and information
+ 
+**Abstract**:
+monkey wrench of data and information
+ 
+**Speaker(s):**
+- Howard Diesel
+ 
+*Track and Room*: Strategy And Architecture - Room5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: What you get out is as good as what you put in
+ 
+**Abstract**:
+Database design
+ 
+**Speaker(s):**
+- Steve Simon
+ 
+*Track and Room*: SQL Dev: Soup to Nuts - Room1
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Microsoft Machine Learning Overview
+ 
+**Abstract**:
+Advanced Predicive Analytics Overview with Azure Machine Learning
+ 
+**Speaker(s):**
+- Gary Hope
+ 
+*Track and Room*: Database Administration - Room5
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Introduction to Extended Events in SQL Server 2012  2014
+ 
+**Abstract**:
+As a lone DBA in the scary new world of SQL Server Extended Events, you may be wary of the threats of the deprecated profiler feature and the Extended Events themselves. In this session, come and learn how to perform monitoring and troubleshooting of your SQL Server using the new and improved XEvents that are found in SQL Server 2012 and 2014. You will also learn about the improved XEvents interfaces - the XEvents User Interface and the Admin Console - and how to use XEvents to performance tune your server by tracking issues. In addition, I will be detailing what “events” are and how they relate to YOUR SQL Server.
+ 
+**Speaker(s):**
+- Howard Diesel
+ 
+*Track and Room*: Database Administration - Room3
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Dashboard DAX
+ 
+**Abstract**:
+Say what? The secret sauce for creating smart dashboards with Power BI is DAX (Data Analysis Expressions). Delivering insight isn't just about data viz, its also about having the right measurements and meaningful context. In this session we show you how to create DAX calculated columns and fields that will take your dashboard creation skills to the next level.
+ 
+**Speaker(s):**
+- Toufiq Abrahams
+ 
+*Track and Room*: Data Warehouse  Business Intelligence - Room2
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: WomenInTech (ZA) - Diversity in the Tech Sector
+ 
+**Abstract**:
+One step forward two steps back?
+One year on from WomeninTechZA's launch and much has changed in the tech sector, and a lot has not. In this talk we look at changing attitudes to diversity, specifically in the tech sector, why diversity is profitable, and what local companies can do to tackle the diversity challenge.
+ 
+**Speaker(s):**
+- Howard Diesel
+ 
+*Track and Room*: SQL Dev: Soup to Nuts - Room1
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**Sandesh Nagaraj**
+ 
+LinkedIn: [Sandesh Nagaraj](http://za.linkedin.com/in/sandeshnagaraj)
+ 
+A Certified Data Architect with around 15 years of experience in Data warehouse, Business Intelligence and Database implementation. Sandesh holds MCITP SQL Server in BI, Data Architect certified from Microstrategy etc. He has worked extensively as BI Consultant/Technical Specialist/BI Architect/Sales Engineer/Manager.  Sandesh actively participates and speaks at Johannesburg SQL Server User and SQL Saturday events.
+ 
+**Gail Shaw**
+ 
+Twitter:  - [@SQLInTheWild](https://www.twitter.com/@SQLInTheWild)
+ 
+Contact: [http://sqlinthewild.co.za](http://sqlinthewild.co.za)
+ 
+Gail Shaw is a Database Specialist focusing on database performance tuning and database recovery, with a particular interest in topics such as indexing strategies, execution plans, and writing T-SQL code that performs well and scales gracefully. Gail holds a Microsoft Certified Master certification for SQL Server 2008 and is a Data Platform MVP. She's a frequent poster on the SQLServerCentral forums, a Pluralsight author, writes articles for both SQLServerCentral.com and Simple-Talk.com, and has spoken at SQLSaturdays, SQL Bits and at the PASS Community Summit. Gail has been responsible for extending the lifespan of many an application, by performance-tuning their databases and providing technical guidance on all things SQL Server related.
+ 
+**Howard Diesel**
+ 
+Twitter:  - [@howarddiesel](https://www.twitter.com/@howarddiesel)
+ 
+LinkedIn: [Howard Diesel](http://za.linkedin.com/in/howarddiesel)
+ 
+Contact: [http://www.modelwaresystems.com](http://www.modelwaresystems.com)
+ 
+Howard Diesel is a Data Management consultant, who has over a span of 30 years, serviced a host of companies from diverse sectors of business
+
+Howard studied Computer Science at the University of the Witwatersrand, completing an Honours Degree in Computer Science and a Masters Degree in Electrical Engineering. He has recently been accredited with International DAMA Certification from DAMA International.
+
+Howard is adept at identifying and implementing solutions for serious data problems. 
+ 
+**Howard Diesel**
+ 
+Twitter:  - [@howarddiesel](https://www.twitter.com/@howarddiesel)
+ 
+LinkedIn: [Howard Diesel](http://za.linkedin.com/in/howarddiesel)
+ 
+Contact: [http://www.modelwaresystems.com](http://www.modelwaresystems.com)
+ 
+Howard Diesel is a Data Management consultant, who has over a span of 30 years, serviced a host of companies from diverse sectors of business
+
+Howard studied Computer Science at the University of the Witwatersrand, completing an Honours Degree in Computer Science and a Masters Degree in Electrical Engineering. He has recently been accredited with International DAMA Certification from DAMA International.
+
+Howard is adept at identifying and implementing solutions for serious data problems. 
+ 
+**Gail Shaw**
+ 
+Twitter:  - [@SQLInTheWild](https://www.twitter.com/@SQLInTheWild)
+ 
+Contact: [http://sqlinthewild.co.za](http://sqlinthewild.co.za)
+ 
+Gail Shaw is a Database Specialist focusing on database performance tuning and database recovery, with a particular interest in topics such as indexing strategies, execution plans, and writing T-SQL code that performs well and scales gracefully. Gail holds a Microsoft Certified Master certification for SQL Server 2008 and is a Data Platform MVP. She's a frequent poster on the SQLServerCentral forums, a Pluralsight author, writes articles for both SQLServerCentral.com and Simple-Talk.com, and has spoken at SQLSaturdays, SQL Bits and at the PASS Community Summit. Gail has been responsible for extending the lifespan of many an application, by performance-tuning their databases and providing technical guidance on all things SQL Server related.
+ 
+**Howard Diesel**
+ 
+Twitter:  - [@howarddiesel](https://www.twitter.com/@howarddiesel)
+ 
+LinkedIn: [Howard Diesel](http://za.linkedin.com/in/howarddiesel)
+ 
+Contact: [http://www.modelwaresystems.com](http://www.modelwaresystems.com)
+ 
+Howard Diesel is a Data Management consultant, who has over a span of 30 years, serviced a host of companies from diverse sectors of business
+
+Howard studied Computer Science at the University of the Witwatersrand, completing an Honours Degree in Computer Science and a Masters Degree in Electrical Engineering. He has recently been accredited with International DAMA Certification from DAMA International.
+
+Howard is adept at identifying and implementing solutions for serious data problems. 
+ 
+**Nóra Kovács**
+ 
+LinkedIn: [Nóra Kovács](https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile)
+ 
+Contact: [https://www.yammer.com/hunpartner](https://www.yammer.com/hunpartner)
+ 
+Kov#225;cs N#243;ra, Hosting Lead, Microsoft Hungary. I have 15 years practice of Microsoft licensing, I started my  career at Microsoft Hungarian Customer Service. I learnt a lot from the questions of End Customers and Partners. I faced many interesting issues problems. I have supported Hungarian Hosters since 2012. 
+ 
+**Arnie Rowland**
+ 
+Twitter:  - [@ArnieRowland](https://www.twitter.com/@ArnieRowland)
+ 
+LinkedIn: [Arnie Rowland](https://www.linkedin.com/in/arnie)
+ 
+Contact: [http://sqlblog.com/blogs/arnie_rowland/](http://sqlblog.com/blogs/arnie_rowland/)
+ 
+Arnie long ago realized that most issues between Developer and DBA comes from incomplete communication and a misunderstanding of each other's objectives. He is a frequent Trainer and Mentor for Developers and DBAs, bringing both sets of skills to better communicate  with teams to create a working solution. For over a decade, Arnie has been a SQL Server MVP, Certified Trainer, technical editor for several publishers, including MOC, and has served as University and Community College adjunct faculty. Clients include Fortune 500 and Multi-Nationals, Federal and State agencies, Foreign governments, and local enterprises –both public and private.
+ 
+**Steve Simon**
+ 
+Twitter:  - [SQLServerBoffin](https://www.twitter.com/SQLServerBoffin)
+ 
+LinkedIn: [Steve Simon](http://www.linkedin.com/in/stephenrsimon/)
+ 
+Contact: [http://www.sqlservercentral.com/blogs/simon_says/](http://www.sqlservercentral.com/blogs/simon_says/)
+ 
+Steve Simon is a Database Solutions Architect with Business Knowledge Services Inc. He has been involved with database design and analysis for over 35 years. Steve has presented papers at numerous PASS Summits and PASS SQL Rallies. He is also regular presenter on the SQL Saturday circuit and he is a contributor on SQLShack.com
+ 
+**Toufiq Abrahams**
+ 
+Twitter:  - [https://twitter.com/ToufiqAbrahams](https://www.twitter.com/https://twitter.com/ToufiqAbrahams)
+ 
+Contact: [http://www.osmosisconsulting.co.za](http://www.osmosisconsulting.co.za)
+ 
+Toufiq Abrahams is the Principal Consultant at Osmosis Consulting and Technology Director at Plain Sight Analytics. He has a passion for turning data into business value with one foot in the cloud and the other on-prem.
+ 
+**Bhavesh Lala**
+ 
+Information Technology and Services Consultant and Contractor, Sambe Consulting (Owner
+ 
+**Howard Diesel**
+ 
+Twitter:  - [@howarddiesel](https://www.twitter.com/@howarddiesel)
+ 
+LinkedIn: [Howard Diesel](http://za.linkedin.com/in/howarddiesel)
+ 
+Contact: [http://www.modelwaresystems.com](http://www.modelwaresystems.com)
+ 
+Howard Diesel is a Data Management consultant, who has over a span of 30 years, serviced a host of companies from diverse sectors of business
+
+Howard studied Computer Science at the University of the Witwatersrand, completing an Honours Degree in Computer Science and a Masters Degree in Electrical Engineering. He has recently been accredited with International DAMA Certification from DAMA International.
+
+Howard is adept at identifying and implementing solutions for serious data problems. 
+ 
+**Neil Hambly**
+ 
+Twitter:  - [Neil_Hambly](https://www.twitter.com/Neil_Hambly)
+ 
+LinkedIn: [Neil Hambly](http://uk.linkedin.com/in/neilhambly)
+ 
+Contact: [http://dataidol.com/NeilHambly](http://dataidol.com/NeilHambly)
+ 
+Neil Hambly is a SQL Server consultant, founder and consultant at Datamovements, a Gold Microsoft Data  Analytics Consulting company.
+Neil has 20+ years in a variety of SQL Server roles and is an MCT. He is a regular presenter (200+ events) at user groups, and PASS events, including PASS Summit and SQLSaturday, and many UK events (SQLBits, SQLRelay). Neil is the leader of PASS London (UK), a Professional Development VC, a Melissa Data MVP, and a SQL Cruise Technical Lead, who loves Guinness, whisky, and dancing.
+ 
+**Toufiq Abrahams**
+ 
+Twitter:  - [https://twitter.com/ToufiqAbrahams](https://www.twitter.com/https://twitter.com/ToufiqAbrahams)
+ 
+Contact: [http://www.osmosisconsulting.co.za](http://www.osmosisconsulting.co.za)
+ 
+Toufiq Abrahams is the Principal Consultant at Osmosis Consulting and Technology Director at Plain Sight Analytics. He has a passion for turning data into business value with one foot in the cloud and the other on-prem.
+ 
+**Neil Hambly**
+ 
+Twitter:  - [Neil_Hambly](https://www.twitter.com/Neil_Hambly)
+ 
+LinkedIn: [Neil Hambly](http://uk.linkedin.com/in/neilhambly)
+ 
+Contact: [http://dataidol.com/NeilHambly](http://dataidol.com/NeilHambly)
+ 
+Neil Hambly is a SQL Server consultant, founder and consultant at Datamovements, a Gold Microsoft Data  Analytics Consulting company.
+Neil has 20+ years in a variety of SQL Server roles and is an MCT. He is a regular presenter (200+ events) at user groups, and PASS events, including PASS Summit and SQLSaturday, and many UK events (SQLBits, SQLRelay). Neil is the leader of PASS London (UK), a Professional Development VC, a Melissa Data MVP, and a SQL Cruise Technical Lead, who loves Guinness, whisky, and dancing.
+ 
+**Michael Johnson**
+ 
+Twitter:  - [MikeJohnsonZA](https://www.twitter.com/MikeJohnsonZA)
+ 
+LinkedIn: [Michael Johnson](http://za.linkedin.com/pub/michael-johnson/22/73/735)
+ 
+Contact: [http://michaeladrianjohnson.com/](http://michaeladrianjohnson.com/)
+ 
+Michael Johnson is a Microsoft data platform MVP and leader of the Johannesburg SQL User Group and Business Analytics Virtual Group. He works as an Independent Business Intelligence Consultant and regularly presents at local user groups, SQL Saturdays and PASS Virtual Chapters.
+ 
+**Sean Cremer**
+ 
+Twitter:  - [https://twitter.com/seanCremer](https://www.twitter.com/https://twitter.com/seanCremer)
+ 
+LinkedIn: [Sean Cremer](http://www.linkedin.com/profile/preview?locale=en_UStrk=prof-0-sb-preview-primary-button)
+ 
+Contact: [https://seancremer.github.io/](https://seancremer.github.io/)
+ 
+Sean Cremer is a Senior Developer at Derivco.  He has worked with SQL Server for nearly two decades on Large OLTP and Data Warehousing  Systems and has a wealth of accumulated  Database Design and Implementation knowledge.
+ 
+**Gary Hope**
+ 
+Twitter:  - [GaryHope](https://www.twitter.com/GaryHope)
+ 
+Cloud Data and AI Solution Architect at Microsoft South Africa
+ 
+**Alain Dormehl**
+ 
+Twitter:  - [@APSolutely](https://www.twitter.com/@APSolutely)
+ 
+LinkedIn: [Alain Dormehl](https://za.linkedin.com/pub/alain-dormehl/7b/903/446)
+ 
+MCSA and MCT in SQL Data Platforms, I am passionate about all things data. I also have a particular love for new innovative solutions to deal with the big data problem. 
+
+I have been using SQL for 9 years professionally from SQL 2003 and more recently SQL 2016 CTP2.1. I have also been fortunate enough to work and develop extensively on SQL 2012 Parallel Data Warehouse through a Microsoft Analytic Platforms System. 
+ 
+**Steve Simon**
+ 
+Twitter:  - [SQLServerBoffin](https://www.twitter.com/SQLServerBoffin)
+ 
+LinkedIn: [Steve Simon](http://www.linkedin.com/in/stephenrsimon/)
+ 
+Contact: [http://www.sqlservercentral.com/blogs/simon_says/](http://www.sqlservercentral.com/blogs/simon_says/)
+ 
+Steve Simon is a Database Solutions Architect with Business Knowledge Services Inc. He has been involved with database design and analysis for over 35 years. Steve has presented papers at numerous PASS Summits and PASS SQL Rallies. He is also regular presenter on the SQL Saturday circuit and he is a contributor on SQLShack.com
+ 
+**Howard Diesel**
+ 
+Twitter:  - [@howarddiesel](https://www.twitter.com/@howarddiesel)
+ 
+LinkedIn: [Howard Diesel](http://za.linkedin.com/in/howarddiesel)
+ 
+Contact: [http://www.modelwaresystems.com](http://www.modelwaresystems.com)
+ 
+Howard Diesel is a Data Management consultant, who has over a span of 30 years, serviced a host of companies from diverse sectors of business
+
+Howard studied Computer Science at the University of the Witwatersrand, completing an Honours Degree in Computer Science and a Masters Degree in Electrical Engineering. He has recently been accredited with International DAMA Certification from DAMA International.
+
+Howard is adept at identifying and implementing solutions for serious data problems. 
+ 
+**Gary Hope**
+ 
+Twitter:  - [GaryHope](https://www.twitter.com/GaryHope)
+ 
+Cloud Data and AI Solution Architect at Microsoft South Africa
+ 
+**Steve Simon**
+ 
+Twitter:  - [SQLServerBoffin](https://www.twitter.com/SQLServerBoffin)
+ 
+LinkedIn: [Steve Simon](http://www.linkedin.com/in/stephenrsimon/)
+ 
+Contact: [http://www.sqlservercentral.com/blogs/simon_says/](http://www.sqlservercentral.com/blogs/simon_says/)
+ 
+Steve Simon is a Database Solutions Architect with Business Knowledge Services Inc. He has been involved with database design and analysis for over 35 years. Steve has presented papers at numerous PASS Summits and PASS SQL Rallies. He is also regular presenter on the SQL Saturday circuit and he is a contributor on SQLShack.com
+ 
+**Clinton van Blommestein**
+ 
+LinkedIn: [Clinton van Blommestein](https://za.linkedin.com/in/clintonvb)
+ 
+Clinton is a senior developer at Derivco in Durban (South Africa), a company that is a leader in the online gaming space. He has over 16 years experience in highly transactions systems, with focus on the services and data tiers. He is a regular speaker at SQL events in South Africa, is also the co-leader for the Durban SQL User Group and has recognised as a Couchbase Champion for his contribution to their community.
+ 
+**Gary Hope**
+ 
+Twitter:  - [GaryHope](https://www.twitter.com/GaryHope)
+ 
+Cloud Data and AI Solution Architect at Microsoft South Africa
+ 
+**Sandesh Nagaraj**
+ 
+LinkedIn: [Sandesh Nagaraj](http://za.linkedin.com/in/sandeshnagaraj)
+ 
+A Certified Data Architect with around 15 years of experience in Data warehouse, Business Intelligence and Database implementation. Sandesh holds MCITP SQL Server in BI, Data Architect certified from Microstrategy etc. He has worked extensively as BI Consultant/Technical Specialist/BI Architect/Sales Engineer/Manager.  Sandesh actively participates and speaks at Johannesburg SQL Server User and SQL Saturday events.
+ 
+**Steve Simon**
+ 
+Twitter:  - [SQLServerBoffin](https://www.twitter.com/SQLServerBoffin)
+ 
+LinkedIn: [Steve Simon](http://www.linkedin.com/in/stephenrsimon/)
+ 
+Contact: [http://www.sqlservercentral.com/blogs/simon_says/](http://www.sqlservercentral.com/blogs/simon_says/)
+ 
+Steve Simon is a Database Solutions Architect with Business Knowledge Services Inc. He has been involved with database design and analysis for over 35 years. Steve has presented papers at numerous PASS Summits and PASS SQL Rallies. He is also regular presenter on the SQL Saturday circuit and he is a contributor on SQLShack.com
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Microsoft Corporation (GAP)](http://www.microsoft.com/en-us/server-cloud/products/sql-server/)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 

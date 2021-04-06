@@ -1,0 +1,515 @@
+---
+layout: "post" 
+title: "SQLSaturday #654 - Omaha 2017" 
+prettydate: "22 July 2017" 
+---
+# SQLSaturday #654 - Omaha 2017
+ 
+**Event Date**: 07/22/2017 00:00:00
+ 
+**Event Location**:
+- Mammel Hall, University of Nebraska-Omaha
+- 6708 Pine Street
+- Omaha, Nebraska
+ 
+<a href="/assets/pdf/0654.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: Things I Learned the Hard Way About Azure Data Platform Services So That You Don't Have To
+ 
+**Abstract**:
+"I feel like I've been sent back to 2005" - me after getting into my first Azure Data Factory Project.  Azure Data Platform services such as Azure Data Factory, Azure Data Lake, and Azure SQL Data Warehouse are new and exciting and continually being enhanced. But there are several things that exist in the more mature SQL Server product that are lacking or just different in Azure. That doesn't mean you should avoid Azure. But it does mean you will need to think about how to solve problems differently and use different design patterns. I'll share some things that took me a while to understand, some funny quirks in these Azure services, and some lessons learned from real implementations to help you get up to speed, understand their strengths, and avoid banging your head against a wall.
+ 
+**Speaker(s):**
+- Meagan Longoria
+ 
+*Track and Room*: Business Intelligence - 118
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Data Integration: the neglected hero of your information environment
+ 
+**Abstract**:
+Every organization struggles to ensure data is up to date and consistent across multiple systems.   Often this results in the development of layers of system to system data integrations or repetitive and manual processes intended to support operational and reporting needs.
+
+Enterprise Data Warehouses and Marts are often the only stores that provide single point access to data sourced from multiple systems - but these stores can be expensive and complicated to build and maintain and tend to lag behind business need.
+
+Data Lakes offer the promise of fast inexpensive data acquisition but without specialized tools lack the structure that makes their data accessible and useful to the business.
+
+A managed Data Integration platform can provide both efficient data management across systems and a shared, single point, store of data sourced from all participating systems.   A Data Integration platform solution is not technology or tool specific and can provide immediate and continuing value.
+ 
+**Speaker(s):**
+- Scot Reagin
+ 
+*Track and Room*: Business Intelligence - 120
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: How'd they get in there?  Utilities to map all paths users have to access data
+ 
+**Abstract**:
+Look smart and organized!!  We’ll be presenting two SQL scripts that enable DBAs and Developers alike to see all of the access paths users have into SQL Server.
+
+Script #1 will show you all of the users, groups, and roles that have access to your SQL server and what Server Roles, Database Roles, and Object-Specific permissions each has in a single tabular result.  It also provides the SQL to recreate the exact same permissions on another instance.
+
+Script #2 will show you all access paths a specific user has to data, including what AD Group Membership/s SQL sees, orphaned db users, and pretty much anything that will allow or prevent access.  As with Script #1, you can copy and paste SQL to recreate these exact permissions on another instance.
+
+This session is for the DBA or Accidental DBA who regularly fields questions about database access, why a certain user can or cannot access data, or a DBA who's curious to audit their own SQL footprint.
+ 
+**Speaker(s):**
+- Mark Marinovic
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 118
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Dammit Jim! Dr McCoy’s Field Guide to system_health (and the default trace)
+ 
+**Abstract**:
+As DBAs, we are asked all sorts of impossible questions.  Who dropped that important table last month?  Why was everything slow last week?  Who made that user a sysadmin?  You’d have to be a mind reader to know the answers to some of those, right?  Not necessarily!  SQL Server can help you find information about these and other common problems with its default trace and system_health Extended Events session, but you have to know how to collect and interpret the data they provide.  In this session, we’ll explore what system_health and the default trace are, what information they contain, and how to use them to find the answers you’re searching for.
+ 
+**Speaker(s):**
+- Ed Leighton-Dick
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 117
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Get Your Optimizer to Give up All Its Secrets
+ 
+**Abstract**:
+You know that execution plans can provide you with vital information to tune a query, but just how does that plan get generated?  In this session, we will examine details the query optimization process that are not very well known.  We will discuss how SQL Server parses a T-SQL statement then and begins applying rules to make it more efficient.  Did you know that SQL Server can be coaxed into outputting hidden structures such as parse trees and memos?  We'll do just that, and then take it a step further with a unique visualization tool that I have created.  With a better understanding of how SQL Server optimizes T-SQL (and sometimes doesn't do it as well as might be hoped), you can write more efficient SQL statements.
+ 
+**Speaker(s):**
+- Brian Hansen
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 119
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: What is Biml and why are SSIS developers excited about it?
+ 
+**Abstract**:
+This session is designed for you, the experienced SSIS developer who's been hearing about the Business Intelligence Markup Language, Biml, but has not taken the plunge. We will cover what the Biml language is and how using your familiar development tools, SQL Server Data Tools, SSDT, and BIDS Helper, you will be able to streamline the creation of SSIS packages.
+
+We will work through progressively more complex examples from a "Hello World" equivalent to a to a full fledged, audited, truncate and reload pattern based on an external metadata repository. 
+
+You will leave this session armed with the knowledge of how Biml can help you achieve a consistent and reproducible approach for the creation of SSIS solutions.
+ 
+**Speaker(s):**
+- Bill Fellows
+ 
+*Track and Room*: Business Intelligence - 118
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Transitioning from Integration Services to Azure Data Factory
+ 
+**Abstract**:
+Although SQL Server Integration Services (SSIS) and Azure Data Factory (ADF) are both used for ETL/ELT (Extract-Transform-Load) processes in the Microsoft Data Platform, they are rather different tools. SSIS performs data transformation and requires a SQL Agent job or another application to schedule and execute it. Azure Data Factory is an orchestration tool rather than a data transformation tool, and it has built-in scheduling capabilities. I'll explain the basics of Azure Data Factory, show how it is and isn't like SSIS, and share lessons learned from projects I completed that used ADF.
+ 
+**Speaker(s):**
+- Meagan Longoria
+ 
+*Track and Room*: Business Intelligence - 120
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Remote SQL Server Troubleshooting and Monitoring Using SSIS
+ 
+**Abstract**:
+We have over 3500 remote installations of SQL Server and only 3 DBAs to find and resolve issues. While some installations need daily examination others operate for months without any attention at all.
+We needed a system to keep a light, revolving set of data that we could quickly pull back and analyze when issues were escalated to us.
+This system also had to be modular so we could add or remove  queries, as needed, while always keeping the data fresh.
+In this session I'll use Glenn Berry's diagnostic queries and SSIS to show how we collect and store data on our remote systems. When problems arise we download the data and use Powershell to digest it into a simple report.
+ 
+**Speaker(s):**
+- Don St. Cyr
+ 
+*Track and Room*: Business Intelligence - 118
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Unit Testing with T-SQLt
+ 
+**Abstract**:
+Unit testing is an important part of application development and maintenance. Knowing that your latest change is not only providing the desired results but also is free from side-effects is critical to the rapid pace expected by your customers. This session will provide an introduction in to how you can easily create a library of unit tests around your database and its programmable objects.
+ 
+**Speaker(s):**
+- Kevin Trojanowski
+ 
+*Track and Room*: Cloud Application Development  Deployment - 119
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Microsoft R Explained
+ 
+**Abstract**:
+Demonstrate advanced statistical analysis performed against SQL Server data.
+ 
+**Speaker(s):**
+- Dana Stubben
+ 
+*Track and Room*: Alternative Platforms, Big Data, Machine Learning - 120
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: My Top 10+ Favorite Replication Tricks
+ 
+**Abstract**:
+Replication can be intimidating and a bit confusing. I will show you my ten (plus) favorite tricks for working with replication that will show you how you can replicate from multiple sources to multiple destinations, chose the appropriate method of replication and, if desired, put the data in a different schema with a different collation at the destination than it was at the source. I will also cover various methods of managing your publications, agent properties and distribution schedules. This presentation assumes a basic knowledge of configuring distribution and creating a basic publication and subscription.
+ 
+**Speaker(s):**
+- Marcus Hopfinger
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 119
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Weird stuff I saw ... while supporting a Java team
+ 
+**Abstract**:
+After spending more than a decade completely devoted to the Microsoft stack, I did some time supporting a Java team. Yes, sure, Java is just another language so there aren't really and issues that are absolutely unique to the Java world. But it is a different stack, different culture, and different group of folks giving bad advice to developers ... just enough different to keep life interesting. Come hear about my misadventures with server side cursors, output parameters, integrated authentication, and NOCOUNT settings.
+ 
+**Speaker(s):**
+- Rick Lowe
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 120
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Why Should I Care About ... Partitioned Views?
+ 
+**Abstract**:
+Partitioned tables are awesome and partitioned views are dead, right? Well, sure partitioned views are not sexy but there are still plenty of applications where they are critical. And not necessarily just for standard edition who aren't on the new service pack yet. If your data is time stamped, do you see different queries run against older data than new data? Do you with you could segment your data across multiple columns? Do you have data you need to partition horizontally? It's possible partitioned views may still be for you. Come hear why this is still an important topic long after cargo pants and trucker hats went away ... and possibly even after 2016 SP1.
+ 
+**Speaker(s):**
+- Rick Lowe
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 119
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Nightmares, Creativity, and You: Programming in Your Dreams
+ 
+**Abstract**:
+Research shows that there is a link between creativity and nightmares/vivid dreaming. Let’s explore that link and show how this can affect your development. You will see examples of where creativity dreaming can take you. There will be tips on how to tap into that nightmare power. Your hiring practices will change after this session. There is even evidence that teaching children to program will make them more creative. So let the dreaming begin!
+ 
+**Speaker(s):**
+- Matthew Olson
+ 
+*Track and Room*: Professional Development - 118
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Accelerating DevOps Using Data Virtualization
+ 
+**Abstract**:
+Quoting Gene Kim from the book The Theory of Constraints: "One of the most powerful things that organizations can do is to enable development and testing to get the environment they need when they need it.” 
+
+Data is so often the constraint that holds back application teams from meeting the demands of the business by releasing new features in a timely fashion. During this session we will show you how Delphix solves this problem while drastically reducing the overall cost of non production environments.
+ 
+**Speaker(s):**
+- John Manzella
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 119
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Understanding SQL Server 2016 Always Encrypted
+ 
+**Abstract**:
+Always Encrypted is a highly-touted new feature of SQL Server 2016 that promises to make encryption simple to use and transparent to applications while still protecting the data both at rest and in motion, even from high-privilege users such as developers and DBAs.  Does that sound too good to be true?  It isn’t - Always Encrypted is an incredible feature - but like any new technology, it does have some limitations.  In this session, you’ll see how to configure Always Encrypted, and we’ll talk about when you should and shouldn’t use it in your environment.
+ 
+**Speaker(s):**
+- Ed Leighton-Dick
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 117
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Agile Data Modeling with Data Vault
+ 
+**Abstract**:
+Agility and Business Intelligence are two good things that often struggle to be good together. A primary cause of this struggle is the inability of traditional Data Warehouse models to respond to change in a (business) timely manner. Data Vault is an evolution of Enterprise Data Warehouse modeling that removes the barriers to Data Warehouse agility. A Data Vault warehouse eliminates re-engineering both of the data schema and ETL as the model evolves in response to changing business needs and definitions.
+In this session we’ll compare modeling techniques in real world scenarios to understand how Data Vault can make your EDW more capable and agile.
+ 
+**Speaker(s):**
+- Scot Reagin
+ 
+*Track and Room*: Business Intelligence - 117
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Data Mining techniques with R and Azure Batch Services
+ 
+**Abstract**:
+One the unique challenges Data Science teams face is provisioning compute resources.  High core counts are required for only short bursts and sit idle for long periods thereafter.  A demonstration will show how one can overcome this using Azure Batch Services. After attending the session one will be familiar with data mining packages in R, as well as how to configure and use Azure VMs directly from an R session.
+ 
+**Speaker(s):**
+- Matthew Sharkey
+ 
+*Track and Room*: Business Intelligence - 120
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Remember Back When?  Temporal Tables in SQL Server 2016
+ 
+**Abstract**:
+SQL Server 2016 comes with its own version of a Wayback Machine: temporal tables.  With this new feature, it is easy to store and query the history of changes to data.  We will discuss the fundamentals and creating, storing data in, querying from, and maintaining these tables. We will also take a quick look under the hood to see how they work.  And yes, this is a version 1 product, so we'll also consider the current limitations that are in place.  Find out how temporal tables can benefit your system!
+ 
+**Speaker(s):**
+- Brian Hansen
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - 117
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**Marcus Hopfinger**
+ 
+Twitter:  - [DakotaDataWrang](https://www.twitter.com/DakotaDataWrang)
+ 
+LinkedIn: [Marcus Hopfinger](https://www.linkedin.com/in/marcus-hopfinger-69728121?)
+ 
+Contact: [http://dakotadatawrangler.blogspot.com/](http://dakotadatawrangler.blogspot.com/)
+ 
+Marcus has been with Daktronics, Inc. since 2001 where he started doing ColdFusion development and some SQL Server 7 database administration. In late 2003 he was activated and deployed in early 2004 to Iraq with the South Dakota Army National Guard. During this time, he served as a Battalion Communications Officer where he was responsible for redundant voice and data networks including satellite internet and secure internet routing protocol networks. Upon returning to Daktronics in 2005 he moved in into a fulltime database administration position where he gets to work on SQL Server instances on three continents. He is also a Sci-Fi Fan, History buff, Amateur Radio Operator (call sign KA0SQL), but most importantly husband and father.
+ 
+**Meagan Longoria**
+ 
+Twitter:  - [mmarie](https://www.twitter.com/mmarie)
+ 
+LinkedIn: [Meagan Longoria](http://www.linkedin.com/in/meaganlongoria/)
+ 
+Contact: [http://datasavvy.me](http://datasavvy.me)
+ 
+Meagan Longoria is a business intelligence consultant with Denny Cherry  Associates, and lives in Denver, Colorado. She is a Microsoft Data Platform MVP. Meagan spends a lot of time thinking about how to use data integration, DAX, and data visualization techniques to make data useful for people. She enjoys sharing her knowledge and experiences at conferences and user group meetings, as well as through her blog (DataSavvy.me).
+ 
+**Brian Hansen**
+ 
+Twitter:  - [tf3604](https://www.twitter.com/tf3604)
+ 
+Contact: [http://www.tf3604.com](http://www.tf3604.com)
+ 
+Brian is a database administrator at Children International in Kansas City.  He has been working with SQL Server technologies since 1998, including roles in report development, application development and database administration.
+ 
+**Scot Reagin**
+ 
+Twitter:  - [@SDIScot](https://www.twitter.com/@SDIScot)
+ 
+LinkedIn: [Scot Reagin](https://www.linkedin.com/in/sjreagin)
+ 
+Contact: [http://sensibledataintegrations.com/blog/](http://sensibledataintegrations.com/blog/)
+ 
+TDWI Certified Business Intelligence Professional
+Certified Data Vault Data Modeler
+
+More than thirty years of technology experience serving in a wide variety of roles including: Software Designer, Solution Architect, and Operations and General Manager.  Experience designing and implementing complete analytic solutions for organizations of many sizes and in diverse industries.
+
+Business intelligence specific experience encompasses all aspects of Enterprise Information solutions including: Information Quality, Enterprise Data Warehousing, Business Analysis Data Marts, and comprehensive visualization applications.
+ 
+**Matthew Sharkey**
+ 
+LinkedIn: [Matthew Sharkey](https://www.linkedin.com/in/matthew-john-sharkey/)
+ 
+Contact: [http://www.hinttank.com/](http://www.hinttank.com/)
+ 
+Matthew has ten years of IT experience, primarily working in IT Operations and Analytics.  His specialties include T-SQL querying, performance optimization, data analysis, and data visualization.  Matt has worked with all major features of the SQL Server Data Platform.  Matt holds a Data Platform MCSE and two masters degrees.
+ 
+**Bill Fellows**
+ 
+Twitter:  - [@billinkc](https://www.twitter.com/@billinkc)
+ 
+LinkedIn: [Bill Fellows](http://www.linkedin.com/in/billinkc)
+ 
+Contact: [http://blog.billfellows.net](http://blog.billfellows.net)
+ 
+Bill Fellows is a SQL Server MVP and has been a database developer for most of his career, with the past 15 years focused on ETL. He is the organizer of Kansas City's eight SQL Saturdays and a speaker at many other SQL Saturdays, User Groups and the PASS Summit. Bill is the owner of Sterling Data Consulting where he gets to solve interesting data problems.
+ 
+**Scot Reagin**
+ 
+Twitter:  - [@SDIScot](https://www.twitter.com/@SDIScot)
+ 
+LinkedIn: [Scot Reagin](https://www.linkedin.com/in/sjreagin)
+ 
+Contact: [http://sensibledataintegrations.com/blog/](http://sensibledataintegrations.com/blog/)
+ 
+TDWI Certified Business Intelligence Professional
+Certified Data Vault Data Modeler
+
+More than thirty years of technology experience serving in a wide variety of roles including: Software Designer, Solution Architect, and Operations and General Manager.  Experience designing and implementing complete analytic solutions for organizations of many sizes and in diverse industries.
+
+Business intelligence specific experience encompasses all aspects of Enterprise Information solutions including: Information Quality, Enterprise Data Warehousing, Business Analysis Data Marts, and comprehensive visualization applications.
+ 
+**Rick Lowe**
+ 
+Twitter:  - [DataFLowe](https://www.twitter.com/DataFLowe)
+ 
+LinkedIn: [Rick Lowe](http://www.linkedin.com/pub/rick-lowe/a/228/441/)
+ 
+Contact: [http://dataflowe.wordpress.com/](http://dataflowe.wordpress.com/)
+ 
+Rick is a Microsoft Certified Master with more than 20 years of SQL Server experience in a variety of roles. He currently lives in Washington state and works as an independent consultant providing remote performance DBA and performance tuning services for clients in the USA and Canada. His first exposure to SQL Server was as a database developer, but over time he became more and more interested in how the database engine operated... eventually specializing more on performance issues than code.
+
+Rick will work with all things relational, but most enjoys helping smaller companies get better performance from MSSQL, as well as smoothing over relationships between DBA and development teams.
+ 
+**Matthew Olson**
+ 
+Twitter:  - [@matthewjonolson](https://www.twitter.com/@matthewjonolson)
+ 
+Contact: [https://www.goodreads.com/author/show/8536602.Matthew_J_Olson/blog](https://www.goodreads.com/author/show/8536602.Matthew_J_Olson/blog)
+ 
+Matthew started working for ACEware Systems as a Technician in 2008. In 2010, he took over as the lead, and nearly solo, developer on Student Manager. He is also the editor in chief of the company newsletter.
+
+Matthew obtained his Bachelor's Degree in Computer Science from Kansas State University. He is also a published author.
+
+Matthew has a wife, Gena, and three kids: Jynx, a Siamese; Milo, a Jack Russell Terrier; and Zailey, a Blue Heeler. In his spare time, Matthew enjoys collecting/dealing coins, playing games, hiking with his wife and dogs, golfing, fishing, and hunting pheasant and quail.
+ 
+**Brian Hansen**
+ 
+Twitter:  - [tf3604](https://www.twitter.com/tf3604)
+ 
+Contact: [http://www.tf3604.com](http://www.tf3604.com)
+ 
+Brian is a database administrator at Children International in Kansas City.  He has been working with SQL Server technologies since 1998, including roles in report development, application development and database administration.
+ 
+**Mark Marinovic**
+ 
+LinkedIn: [Mark Marinovic](https://www.linkedin.com/in/mark-marinovic-4189214/)
+ 
+I've been in IT for 15 years, the last 11 spent as a SQL Server DBA.  I've worked in Financial Services, Management Consulting, and the Architecture/Engineering industries.  My true passion is all things data - creating solutions that solve business problems, both for myself and for the clients I serve.  The most rewarding part of my career is when clients tell me I've made a difference in their daily lives.  I enjoy a challenge, and one of my favorite phrases to hear is "that can't be done".
+ 
+**John Manzella**
+ 
+BIOS: 
+28+ Years delivering delivering Enterprise Application in many different capacities
+5+ Years Defense Industry
+10+ Years Manufacturing  Automation
+10+ Years as a BI Architect 
+3+ Years as a Delphix Solution Engineer
+
+The topic for my discussion will be:  Accelerating DevOps Using Data Virtualization
+ 
+**Rick Lowe**
+ 
+Twitter:  - [DataFLowe](https://www.twitter.com/DataFLowe)
+ 
+LinkedIn: [Rick Lowe](http://www.linkedin.com/pub/rick-lowe/a/228/441/)
+ 
+Contact: [http://dataflowe.wordpress.com/](http://dataflowe.wordpress.com/)
+ 
+Rick is a Microsoft Certified Master with more than 20 years of SQL Server experience in a variety of roles. He currently lives in Washington state and works as an independent consultant providing remote performance DBA and performance tuning services for clients in the USA and Canada. His first exposure to SQL Server was as a database developer, but over time he became more and more interested in how the database engine operated... eventually specializing more on performance issues than code.
+
+Rick will work with all things relational, but most enjoys helping smaller companies get better performance from MSSQL, as well as smoothing over relationships between DBA and development teams.
+ 
+**Meagan Longoria**
+ 
+Twitter:  - [mmarie](https://www.twitter.com/mmarie)
+ 
+LinkedIn: [Meagan Longoria](http://www.linkedin.com/in/meaganlongoria/)
+ 
+Contact: [http://datasavvy.me](http://datasavvy.me)
+ 
+Meagan Longoria is a business intelligence consultant with Denny Cherry  Associates, and lives in Denver, Colorado. She is a Microsoft Data Platform MVP. Meagan spends a lot of time thinking about how to use data integration, DAX, and data visualization techniques to make data useful for people. She enjoys sharing her knowledge and experiences at conferences and user group meetings, as well as through her blog (DataSavvy.me).
+ 
+**Ed Leighton-Dick**
+ 
+Twitter:  - [eleightondick](https://www.twitter.com/eleightondick)
+ 
+LinkedIn: [Ed Leighton-Dick](http://www.linkedin.com/in/eleightondick)
+ 
+Contact: [http://www.edleightondick.com](http://www.edleightondick.com)
+ 
+Ed Leighton-Dick is a Microsoft MVP, SQL Server performance and architecture specialist, and Founder/Principal Consultant of Kingfisher Technologies. He is a frequent volunteer with PASS, including current roles as a Regional Mentor, co-leader of I-380 PASS local group, and co-leader of the HA/DR virtual group. He can often be found teaching sessions at local, regional, and national events, including user groups, SQLSaturday, and PASS Summit.
+ 
+**Dana Stubben**
+ 
+Twitter:  - [kelsanddane](https://www.twitter.com/kelsanddane)
+ 
+LinkedIn: [Dana Stubben](https://www.linkedin.com/in/dana-stubben-411b6578)
+ 
+Contact: [http://kelsanddane.com](http://kelsanddane.com)
+ 
+Database Architect / Developer / Administrator / Mentor
+ 
+**Kevin Trojanowski**
+ 
+IT Professional with over 25 years experience across a range of technologies, specializing in data and databases including SQL Server and Redis.
+ 
+**Don St. Cyr**
+ 
+Twitter:  - [@Machiavelli_too](https://www.twitter.com/@Machiavelli_too)
+ 
+LinkedIn: [Don St. Cyr](https://www.linkedin.com/in/donstcyr)
+ 
+I am originally from Maine but I have lived in the Midwest since '95. I am married with a son and daughter, 3 dogs, 2 bunnies and a horse. I have worked in IT for the last 20+ years in various roles such as technical trainer, computer tech, systems administrator and database administrator. I have worked in numerous fields such as education (for K-12 and post secondary), the military (for the U.S. Army and the Dept of Defense) and in healthcare. I am also a U.S. Army and Desert Storm veteran.
+ 
+**Ed Leighton-Dick**
+ 
+Twitter:  - [eleightondick](https://www.twitter.com/eleightondick)
+ 
+LinkedIn: [Ed Leighton-Dick](http://www.linkedin.com/in/eleightondick)
+ 
+Contact: [http://www.edleightondick.com](http://www.edleightondick.com)
+ 
+Ed Leighton-Dick is a Microsoft MVP, SQL Server performance and architecture specialist, and Founder/Principal Consultant of Kingfisher Technologies. He is a frequent volunteer with PASS, including current roles as a Regional Mentor, co-leader of I-380 PASS local group, and co-leader of the HA/DR virtual group. He can often be found teaching sessions at local, regional, and national events, including user groups, SQLSaturday, and PASS Summit.
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Sandhills Publishing](http://www.sandhills.com)
+ 
+- [Nutanix](https://www.nutanix.com/)
+ 
+- [Farm Credit Services of America](https://www.fcsamerica.com/)
+ 
+- [Buildertrend](https://www.buildertrend.com)
+ 
+- [TEKsystems](http://www.teksystems.com/)
+ 
+- [COZYROC](http://bit.ly/cozyrocssis)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 

@@ -1,0 +1,839 @@
+---
+layout: "post" 
+title: "SQLSaturday #156 - Providence 2012" 
+prettydate: "15 September 2012" 
+---
+# SQLSaturday #156 - Providence 2012
+ 
+**Event Date**: 09/15/2012 00:00:00
+ 
+**Event Location**:
+- NEIT
+- 1408 Division Rd 
+- East Greenwich, Rhode Island
+ 
+<a href="/assets/pdf/0156.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: Biggest Loser: Database Edition
+ 
+**Abstract**:
+Fat!  That’s how you’d have to describe most databases these days.  Add up all the costs and each Terabyte ends up costing as much as $75,000.  The Biggest Looser: Database Edition presentation shows you how to put your database on a diet using the features of SQL Server:
+Compression, Filtered indexes, Sparse Columns, Maintenance, REBUILD and REORGANIZE, Index management and Application Changes.  
+
+Topics include 
+- Calculating storage for each row and measuring the actual storage.
+- Finding hidden overhead such as Snapshot Isolation bytes
+- How to recover extra space
+- Why NOT to SHRINK your database files
+- Rebuilding files to recover all the extra space
+
+Managing your data well can lead to savings in disk space as much as 75%.
+ 
+**Speaker(s):**
+- John Miner
+ 
+*Track and Room*: S212 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: The Tally Table: What it is/how it replaces loops
+ 
+**Abstract**:
+Don’t let the “Intermediate” rating scare you “Beginners” away.  This “Black Arts” session is for anyone that uses T-SQL. There are dozens of things we do in SQL that require some type of iteration. "Iteration" means "counters" and "loops" to most people and recursion to others. To those well versed in the techniques of "Set-based" programming, it means some form of a "Numbers" or "Tally" Table, instead. SQL Server MVP Jeff Moden takes the mystery out of how this wonderfully compact tool works and how it easily replaces many types of loops. This session has been updated to include additional information about what “Pseudo-Cursors” are and how they work as well discovering why “Recursive CTE’s” can be your worst enemy.
+ 
+**Speaker(s):**
+- Jeff Moden
+ 
+*Track and Room*: MPT - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Database Deployment Done Right
+ 
+**Abstract**:
+Deploying application code is easy, at least in theory: in a word, xcopy.But you can't exactly do that with databases. First and foremost, databases can only be changed through a script, and if you run a database change script that drops a column, there's no way you can bring that column (and especially its data) back without a restore… and that in and of itself is a whole mess.In this talk, we'll discuss best practices (and a few worst practices) in database change deployment, including change scripts vs. object scripts; source control and SQL; synching tools like Redgate SQL Compare and Visual Studio Database Projects; keeping track of changes; and efficient deployment and change management practices.
+ 
+**Speaker(s):**
+- Alex Papadimoulis
+ 
+*Track and Room*: S212 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: New Server in an Hour? No Problem!
+ 
+**Abstract**:
+"We need a new server before you leave on vacation!" Never mind that it's Friday at 2:00 PM and you need to be in the airport in a couple of hours. This isn't the time to panic. Mike Hillwig deploys new servers every week and has a streamlined process that allows him to deploy a new server in an hour from delivery of the Windows server. We're not talking just installing SQL Server. This is having the new server production-ready in an hour, including scripts to backup, monitor, and maintain databases. With a little bit of advanced planning, following a few simple rules, and some scripting, you can be ready for just such an emergency. And you'll still catch you flight!
+ 
+**Speaker(s):**
+- Mike Hillwig
+ 
+*Track and Room*: S214 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Full Text Indexing Basics
+ 
+**Abstract**:
+Today's large data fields (LDF) are full of unstructured information stored in varchar, text, varbinary or xml data types.  How do you write an application to search the column for patterns?  Traditional SQL techniques using a column INDEX and LIKE operator result in a query plan that contains a full table scan.  I will be introducing the brother's grimm database that has the full text of each fairy tale.  I will create a full text catalog / index, select a change tracking strategy, define optional stop list / thesaurus file, and then populate the index.  I will use CONTAINS and FREETEXT operators in SELECT queries to leverage the FTI.  This resulting query plan performs index seek. 
+ 
+**Speaker(s):**
+- John Miner
+ 
+*Track and Room*: S216 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Policy Based Management –manage consistency
+ 
+**Abstract**:
+Have you found yourself tasked with managing settings and environment definitions across a large pool of SQL Server 2008 servers and felt overwhelmed with where to start? Do changes in your environment go unnoticed and have a ripple effect within your application stack? Do you find developers and others not following standards time and time again even with the best process definitions and promises in place? Then you will benefit from understanding a powerful feature tucked neatly within SQL Server 2008; Policy Based Management. I will provide a clean overview of this management tool along with some demonstrations that help explain its usage in action.
+ 
+**Speaker(s):**
+- Scott Abrants
+ 
+*Track and Room*: MPT - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL 2012 Table Compression
+ 
+**Abstract**:
+SQL Server 2008 has introduced Table compression to the DBA toolkit.  We all know there are different kinds of compression available in SQL Server.  What some may not know is the subtleties of compression.  Such subtleties include that not all Page Compressed tables are entirely page compressed.  This session will show you how to reach into the database and discover compression states at the page level.  At the lower level, this session will also show how to determine compression settings of objects in the database.  Participants will be able to use undocumented commands as well as commands such as PIVOT to derive some interesting information from the database engine.
+ 
+**Speaker(s):**
+- Jason Brimhall
+ 
+*Track and Room*: MPT - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Scaling your Cloud Database with SQL Federations
+ 
+**Abstract**:
+With more and more companies moving to a cloud solution, the necessity to easily and efficiently scale their database solution is critical. This session will discuss how to scale SQL Azure using SQL Azure Federations, a recent addition to SQL Azure that provides the ability to build scalable, elastic, and multi-tenant solutions in SQL Azure. SQL Azzure Federations bring the sharding pattern into SQL Azure as a first class citizen as a way to achieve greater scalability and performance from the database tier of your application through horizontal partitioning at the database level. This session will look at Federations from a real-world point of view, by applying Federations to a real-life database. We will also look at performance benefits.
+ 
+**Speaker(s):**
+- Scott Klein
+ 
+*Track and Room*: S216 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Designing Custom Maintenance Plans with TSQL
+ 
+**Abstract**:
+Have you ever received a call from a client asking for help when their SQL Server database is corrupted?  You suggest that they restore the database from the last good backup.  There is a long pause on the phone as the client states that the only backups/tapes they have are bad.  Do not let this situation happen to you!  
+
+I will review how to build a custom maintenance plans from the ground up using TSQL commands.  What are the best practices for daily, weekly and monthly tasks?  This presentation includes tape rotation schemes and restoring those backups to make sure they really work.  If you company has the budget, use disk to disk backups to reduce the backup/restore times. 
+ 
+**Speaker(s):**
+- John Miner
+ 
+*Track and Room*: S214 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Getting Started with MDX: The (Very) Basics
+ 
+**Abstract**:
+In this session, led by Microsoft BI Architect and SQL Server MVP Bill Pearson, we will concentrate largely upon crafting simple MDX expressions and queries whose purposes, for the most part, are to return a set of data. We will overview the structure of a cube, using as a basis the sample Adventure Works cube that is available to anyone installing SQL Server Analysis Services 2008 R2. We will then outline the components of simple MDX syntax, and get started writing basic expressions and queries. We will expose basic member functions, introduce filters (or “slicers”), and begin exploring core MDX functionality, including calculated members, and named sets.
+ 
+**Speaker(s):**
+- Scott Klein
+ 
+*Track and Room*: S213 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Seven SQL Agent Jobs You Should be Running
+ 
+**Abstract**:
+See those things around your ankles? You hope they're your socks because no DBA wants to be caught with their pants down.
+
+Whether you're an accidental DBA, a DBA who has just inherited a bunch of servers, or someone who works in a shop that won't buy monitoring tools, this session will help you get basic monitoring in place to make sure you know what's going on in your environment.
+
+You'll learn how to implement seven simple scripts that perk their ears up and start barking like a dog after a stranger walks in the house. They are the canary in your coal mine. You'll know when backups fail, when they run longer than usual, when data files are getting full, when transaction logs have excessive VLFs, and more.
+ 
+**Speaker(s):**
+- Mike Hillwig
+ 
+*Track and Room*: S213 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Table Vars  Temp Tables - What you NEED to Know!
+ 
+**Abstract**:
+Almost every SQL Developer is familiar with Table Variables and Temporary Tables. While each of these objects represent temporary storage, there are also substantial differences between them. Understanding the differences between Table Variables and Temporary Tables, and the ramifications that those differences cause, is essential to being able to properly select the appropriate object for use in your development tasks. In this code filled session, we’ll discover the differences and similarities of Temporary Tables and Table Variables, dispel some widespread myths about each, and answer the most important questions of them all, "When do I use one or the other and what are the various impacts of doing so?"
+ 
+**Speaker(s):**
+- Wayne Sheffield
+ 
+*Track and Room*: S214 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SSIS 2012 : Keeping ahead of the curve
+ 
+**Abstract**:
+With the arrival of SSIS 2012,more learning challenges have arisen, however there are more than enough rewards for the SQL Server boffin. In this hands on presentation we shall be looking at a few SSIS solutions that we have created which take advantage of the improved functionality in SQL Server 2012. We shall also have a look at the valuable metrics that may be obtained both during and after the load process.
+
+ 
+**Speaker(s):**
+- Steve Simon
+ 
+*Track and Room*: S216 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Big Data with SQL Standard Edition - True Story
+ 
+**Abstract**:
+While SQL Server Standard Edition ships without several advanced enterprise features, it nonetheless can be used as a cost-effective data platform for many Big Data OLTP applications.  This talk will highlight what exactly SQL Standard Edition is, discuss the scale-up vs. scale-out debate, dive into techniques for ordering, splitting and joining very large tables, and present a case study.
+ 
+**Speaker(s):**
+- Robert McCauley
+ 
+*Track and Room*: S214 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: As a DBA, Where Do I Start!?
+ 
+**Abstract**:
+You've always wanted to get promoted into the DBA position. The good news is you got it - the bad news is you have no idea what to do first. What's important, what's not a big deal, and what can get you fired if you're not careful? If your answer wasn’t, “update my resume”, then this session is a good start. We’ll chat about a natural priority for the overwhelming flood waiting in our offices. By focusing on a few words ending in “ity” we’ll realize what is most important. Through the interaction, stories and examples you’ll leave feeling ready to attack your environment. Be warned – along the way to knowing where to start, you may get that feeling in your stomach that makes you log on to the VPN to check a few things out.
+ 
+**Speaker(s):**
+- Mike Walsh
+ 
+*Track and Room*: S212 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Serene Velocity: Reporting Services and SSAS Data
+ 
+**Abstract**:
+SSRS 2008 R2 provides powerful capabilities to help us develop sophisticated reports from Microsoft SQL Server Analysis Services. Unfortunately, many of these features, such as the server aggregation function, are commonly ignored by report developers. The result: redundant work in the reporting layer. In this session, BI Architect and MVP Bill Pearson exposes ways to optimize reporting from SSAS by writing MDX that leverages, rather than replicates, what the cube is designed to do best.
+ 
+**Speaker(s):**
+- William E Pearson III
+ 
+*Track and Room*: S213 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Intuitive  ad-hoc reporting: SQL 2012 Power View
+ 
+**Abstract**:
+Microsoft SQL Server 2012 Power View provides intuitive ad-hoc reporting for business users such as data analysts, business decision makers, and information workers. They can easily create and interact with views of data from tabular models based on PowerPivot workbooks published in a PowerPivot Gallery, or tabular models deployed to Analysis Services (SSAS). Power View is a browser-based Silverlight application launched from SharePoint Server 2010. In this session I will give you an overview of the key features of Power View and then I will develop some of these views and export them to interactive PowerPoint slides.
+
+ 
+**Speaker(s):**
+- Sunil Kadimdiwan
+ 
+*Track and Room*: S214 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Transitioning from SQL Trace to Extended Events
+ 
+**Abstract**:
+Extended Events were introduced with SQL Server 2008, but without a UI, which meant using T-SQL to create and manage them and using XPath and XQuery to parse the output. Microsoft has added an Extended Events UI in SQL Server 2012 and also added additional events. With the announcement that SQL Trace/Profiler is being deprecated now is the time to begin learning Extended Events. This session will go over the why, when, and how of getting started with Extended Events and converting existing traces to extended events sessions.
+ 
+**Speaker(s):**
+- Jack Corbett
+ 
+*Track and Room*: S212 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Iceberg, Dead Ahead!
+ 
+**Abstract**:
+What does a plane crash have to do with technical skills? You might be surprised. There are many lessons to be learned from disasters. Most accidents are caused not by one factor, but by a series of seemingly-small missteps; It’s the same for us. Even if a freak accident occurs, training and preparation can make all the difference; it's the same for us. In this session we’ll discuss as a group some real-life disasters and see what skills, attitudes and thought processes we can take back to our day jobs. We'll look at a handful of aviation disasters and look for patterns of behavior at fault or that saved the day. Hopefully you'll leave looking for those behaviors in yourself and on your project teams. Fasten your seatbelt!
+ 
+**Speaker(s):**
+- Mike Walsh
+ 
+*Track and Room*: S212 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server 2012 Availability Groups
+ 
+**Abstract**:
+Introduction to new availability options in SQL Server 2012 including enhancements to Failover and the new AlwaysOn Availability Groups to provide multiple readable secondaries!
+
+ 
+**Speaker(s):**
+- Andy Roberts
+ 
+*Track and Room*: S212 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Reporting Services for Mere DBAs
+ 
+**Abstract**:
+As a DBA in the modern era, you may be required from time to time to do something outside of your comfort zone.  One of these things may be to become quickly acquainted with SSRS.  Even better is that you may be required to do things you have not considered in a standard report.  In this session, you will learn how to implement a framework to help provide a common ground for your reports.  This session will delve into fun topics such as dynamic grouping and dynamic sorting.  We are not talking about the interactive sorting that your accountant may use.  Attendees will also be introduced to a few quick methods of exporting Reports from the report server - this is from a DBA perspective after-all!
+ 
+**Speaker(s):**
+- Jason Brimhall
+ 
+*Track and Room*: S216 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Get your Mining Model Predictions out to all
+ 
+**Abstract**:
+SQL Server 2012: Over the past 18 months many financial and portfolio management firms have been severely ‘hit’ by the depressed markets and poor economic conditions.This lead to risk exposure and considerable client liability.We like many firms have gone through the 'teething process'with regards to data mining model predictions and have now taken our systems from the prototype stage to our “shop floor” and are getting the 'good word' out to management via SQL Server Reporting Services .
+ 
+**Speaker(s):**
+- Steve Simon
+ 
+*Track and Room*: MPT - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: What to Look for in Execution Plans
+ 
+**Abstract**:
+You've heard often enough that you need to look at execution plans to understand what's going on with a query. But what are you supposed to look at? This session answers that question, providing a step-by-step set of considerations for evaluating your execution plans. We'll look at the aspects of an execution plan that should be immediately checked, why they should be checked, and provide some guidance for what to do about what you find. You'll be able to apply this information to your SQL Server 2012 systems as well as older versions of SQL Server.
+ 
+**Speaker(s):**
+- Grant Fritchey
+ 
+*Track and Room*: MPT - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Loading a Data Warehouse using SSIS 2012
+ 
+**Abstract**:
+In this session we will review some of the do's and don'ts of using SSIS when loading your datawarehouse.  We will also review some of the new features of SQL 2012.
+ 
+**Speaker(s):**
+- James Phillips
+ 
+*Track and Room*: S214 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Top Tips for Writing Better T-SQL Queries
+ 
+**Abstract**:
+T-SQL provides many different ways to accomplish the same task, and as you might expect, some ways are better than others. In this session, you will learn specific techniques, that if followed, will make you a better T-SQL developer. The session is jam-packed with practical examples and is designed for administrators and developers who want to bring their T-SQL skills to the next level. In fact, you will be able to immediately implement these tips in your current projects once you get back to your office.
+ 
+**Speaker(s):**
+- Grant Fritchey
+ 
+*Track and Room*: S213 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: DB Development ALM with SQL Server Data Tools
+ 
+**Abstract**:
+Transform traditional database development by using SQL Server Data Tools - a declarative, model-based experience that supports both online and offline (project-based) database development.
+
+ 
+**Speaker(s):**
+- Andy Roberts
+ 
+*Track and Room*: S213 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: The Ins  Outs of Contained Databases
+ 
+**Abstract**:
+In this session we'll talk about this new feature in SQL Server 2012 that promises to make database management easier, and the moving of databases between instances, servers or even data centers much more seamless than it is today. However there are several limitations with the feature as we'll see it in its first version.
+ 
+**Speaker(s):**
+- Aaron Bertrand
+ 
+*Track and Room*: S212 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Network or Perish
+ 
+**Abstract**:
+As IT personnel, we tend to get boxed-in, stranded on our own little island. We fail to make people aware of our activities, both within our own organization and in our wider professional circles. Just like a shipwrecked captain waiting for the rescue boat on a desert island, if you fail to communicate, your career will be stuck with no possibility of progression. This presentation will show you how to leverage networking and self-marketing techniques that will allow you to set sail off the island and into new opportunities. 
+
+
+ 
+**Speaker(s):**
+- Paresh Motiwala
+ 
+*Track and Room*: MPT - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: DBA to Project Manager in 75 minutes flat
+ 
+**Abstract**:
+As DBAs we are often stuck at the mercy of higher ups and Project Managers for completion of our assigned tasks/ projects.
+In this session we wil actually take an arbitrary application and its affiliated databases and go throught the tasks/resources needed to accomplish the task. We will think and act like a Project Manager and DBA rolled into one. This will surely help you advance your career within organization and help you think ahead of time.
+
+ 
+**Speaker(s):**
+- Paresh Motiwala
+ 
+*Track and Room*: S216 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Overcoming Barriers and Avoiding Mistakes with BI
+ 
+**Abstract**:
+A Dynamic Dialog session: Whether you’re considering implementing business intelligence for the first time, have completed projects in the past (and are perhaps looking at later phases), or are somewhere in between, an investment in this session will likely pay dividends. Business Intelligence Architect and Microsoft MVP Bill Pearson leads a dialog about common pitfalls or traps that we can encounter in designing and implementing BI. We’ll discuss, as a group, environmental and other challenges we have experienced, and share ways to avoid or minimize them, in our ongoing efforts with BI.
+ 
+**Speaker(s):**
+- William E Pearson III
+ 
+*Track and Room*: S213 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Virtualizing SQL 2012: Doing It Right
+ 
+**Abstract**:
+A database is a very resource intensive by its very nature and one of the most resource intensive applications you will ever virtualize. If it is not done correctly you will not be successful. This presentation will teach the DBA how to do it right. We will discuss why you virtualize a database, using the right hypervisor, installation, Architecting for performance, the storage layer, the processor, Memory considerations, the network layer and end with SQL Server 2012 licensing. This presentation focuses on VMware but much of the information is relevant in any virtualized environment. 
+ 
+**Speaker(s):**
+- Michael Corey
+ 
+*Track and Room*: S216 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Windowing Functions in SQL Server 2012
+ 
+**Abstract**:
+SQL Server 2012 brings with it nearly full ANSI compliance with the windowing functions. Come to this code filled session to learn about all of the windowing functions in SQL Server 2012: Ranking functions, changes for windowing in the Aggregate functions, and the new Analytic and Sequence functions. We’ll examine how this latest implementation of the windowing functions allows us to perform running and sliding aggregations; retrieve data from adjacent rows in the partition, and much more – all without self-joins back to the source table.
+ 
+**Speaker(s):**
+- Wayne Sheffield
+ 
+*Track and Room*: S216 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Cross Tabs  Pivots - Reports on Steroids
+ 
+**Abstract**:
+SQL Server MVP Jeff Moden demonstrates and explains simple methods for converting gobs of “vertical data” into horizontal numeric and textual data by date or other key using Cross Tabs and Pivots.  This session includes the “Black Arts” method of “Pre-Aggregation” for incredibly high performance and how to dynamically and automatically produce reports based on a date.  The methods learned in this session can be used to provide “dynamically pivoted” result sets to SSRS, Crystal Reports, and other reporting software. Don’t let the “Intermediate” rating scare you “Beginners” away.  This “Black Arts” session is for anyone that uses T-SQL.   
+ 
+**Speaker(s):**
+- Jeff Moden
+ 
+*Track and Room*: S213 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Introduction to SQL Azure
+ 
+**Abstract**:
+Provision, Create, Maintain and use SQL Azure Databases
+ 
+**Speaker(s):**
+- Andy Roberts
+ 
+*Track and Room*: MPT - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: T-SQL : Bad Habits to Kick
+ 
+**Abstract**:
+The session will cover a collection of minor bad habits that can occasionally lead to major problems.
+ 
+**Speaker(s):**
+- Aaron Bertrand
+ 
+*Track and Room*: S214 - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**William E Pearson III**
+ 
+Twitter:  - [@Bill_Pearson](https://www.twitter.com/@Bill_Pearson)
+ 
+LinkedIn: [William E Pearson III](https://www.linkedin.com/e/fpf/252170891)
+ 
+Contact: [https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E](https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E)
+ 
+Bill Pearson created Island Technologies Inc. in 1997, and has developed a large and diverse customer base since. Bill#39;s background as a CPA, Internal Auditor, Management Accountant, and SQL Server MVP (BI) enables him to provide value to clients as a liaison between Accounting / Finance and Information Services. Bill has implemented enterprise business intelligence systems over the years for many Fortune 500 companies and focuses his practice upon the integrated Microsoft Business Intelligence 
+ 
+**John Miner**
+ 
+Twitter:  - [JohnMiner3](https://www.twitter.com/JohnMiner3)
+ 
+LinkedIn: [John Miner](http://www.linkedin.com/pub/john-miner/a/85a/889)
+ 
+Contact: [http://www.craftydba.com](http://www.craftydba.com)
+ 
+John has over twenty years of IT experience including a Masters degree in Computer Science from the University of Rhode Island with concentrations in database technologies and programming languages. He also has Microsoft Certificates for Database Administration (MCDBA) and System Admistration (MCSA). John is currently a Senior SQL Server Developer / Administrator in charge of best practices by the IT team at Sensata Technologies. 
+ 
+**Paresh Motiwala**
+ 
+Twitter:  - [pareshmotiwala](https://www.twitter.com/pareshmotiwala)
+ 
+LinkedIn: [Paresh Motiwala](http://www.linkedin.com/in/pareshmotiwala)
+ 
+Contact: [https://pareshmotiwala.wordpress.com/wp-admin/post.php?post=2amp;action=editamp;message=6amp;postpost=v2](https://pareshmotiwala.wordpress.com/wp-admin/post.php?post=2amp;action=editamp;message=6amp;postpost=v2)
+ 
+Paresh Motiwala a Azure/Big Data enthusiast, Manager of Database Platform teams has led several large SQL implementations, migrations and upgrades. He has managed multi terabyte OLTP databases. He has also been a Sr. SQL DBA and a Solutions Architect in Fortune 100 companies.  He helps/organizes and speaks at many SQL Saturdays, Azure Bootcamp, Azure Datafests and User Groups(Boston BI UG, NESQL, PASS PD VG and PASS DBA VG).
+
+He is certified in Big Data Analytics, FinTech, PMP, Public Speaking, Business Communications. He is a avid singer, cook, open networker, and stand-up comedian. 
+He teaches public speaking, debating, interviewing and group discussion skills and mentors children around the globe via www.circlesofgrowth.com
+ 
+**Steve Simon**
+ 
+Contact: [http://www.infogoldusa.com](http://www.infogoldusa.com)
+ 
+Steve Simon is a senior BI engineer with MyWebGrocer. He has been involved with database design and analysis for over 25 years. Steve has presented papers at eight PASS Summits and one at PASS Europe 2009 and 2010. He has just recently presented a Business Intelligence paper at Oracle Open World in San Francisco . Steve has also presented 5 papers at the Information Builders' (IBI) International Summits. He is a PASS regional mentor  chair of the Oracle/SQL Server VC
+ 
+**John Miner**
+ 
+Twitter:  - [JohnMiner3](https://www.twitter.com/JohnMiner3)
+ 
+LinkedIn: [John Miner](http://www.linkedin.com/pub/john-miner/a/85a/889)
+ 
+Contact: [http://www.craftydba.com](http://www.craftydba.com)
+ 
+John has over twenty years of IT experience including a Masters degree in Computer Science from the University of Rhode Island with concentrations in database technologies and programming languages. He also has Microsoft Certificates for Database Administration (MCDBA) and System Admistration (MCSA). John is currently a Senior SQL Server Developer / Administrator in charge of best practices by the IT team at Sensata Technologies. 
+ 
+**Scott Klein**
+ 
+Twitter:  - [SQLScott](https://www.twitter.com/SQLScott)
+ 
+Contact: [http://aka.ms/sqlscott](http://aka.ms/sqlscott)
+ 
+Scott Klein is a senior consultant with SQL Solutions Group with over two decades of experience working with Microsoft SQL Server. Prior to SSG, Scott spent almost 10 years at Microsoft, traveling the globe as a technical evangelist training and speaking about SQL Server and Microsoft’s Azure data services. Scott’s recent focus has been on advanced analytics, including big data and IoT, providing real-world training to help bring intelligence to your data. Scott has authored several books focusing on data and data analytics. Scott is continuously striving and looking for ways to help developers and companies grok the wonderful world of data.
+ 
+**Jeff Moden**
+ 
+With more than 51,000 posts and 39 mostly 5 star articles, Jeff Moden is a strong contributor on SQLServerCentral.com where he coined the term “RBAR” (Row By Agonizing Row) and helped make the "Tally Table" a household name.  Jeff has more than 2 decades of experience with SQL Server and is mostly self-trained in what he calls the “Black Arts” of T-SQL.  He’s known worldwide for his informative articles, high performance T-SQL coding methods, and methods of mentoring.  His dedication to helping others earned him the MS SQL Server MVP award for nine years and the RedGate Exceptional DBA Award in 2011.  His mantra is "Performance is in the code".
+ 
+**Andy Roberts**
+ 
+Contact: [http://blogs.msdn.com/andyroberts](http://blogs.msdn.com/andyroberts)
+ 
+Andy Roberts is a Data Platform Technology Specialist for Microsoft in the Northeast district. and has spent 12 years as a consultant for Microsoft Consulting Services. As a consultant Andy assisted customers in implementing mission critical OLTP and DW/BI solutions on SQL Server. Andy wore many hats as a consultant including application developer, solution architect, mentor to development teams, mentor to DBAs, BI lead, SCRUM Master, and the guy-that-knows-a-bunch-of-stuff-about Microsoft.
+
+ 
+**Grant Fritchey**
+ 
+Twitter:  - [@gfritchey](https://www.twitter.com/@gfritchey)
+ 
+LinkedIn: [Grant Fritchey](http://www.linkedin.com/in/scarydba)
+ 
+Contact: [http://scarydba.com](http://scarydba.com)
+ 
+Grant Fritchey is a Data Platform MVP with over 20 years’ experience in IT, including time spent in support and development. He has worked with SQL Server since 6.0 back in 1995. He has also developed in VB, VB.NET, C#, and Java. Grant has written books for Apress and Simple-Talk. Grant presents at conferences and user groups, large and small, all over the world. He joined Redgate Software as a product evangelist in January 2011.
+ 
+**James Phillips**
+ 
+Twitter:  - [@JPhillips_Data](https://www.twitter.com/@JPhillips_Data)
+ 
+James Phillips is the VP Technology for Mizuho Americas and has over 20 years of experience with SQL technologies with the last 10 years focused on Business Intelligence.  He is a past Leader of the Northern NJ SQL Server User group and current Leader for SQL Saturday NYC.  He has worked in a wide array of industries including finance and insurance.  Regularly speaks about Database Performance Tuning, SSIS and Power BI topics.  Also an avid softball player and father to 5 beautiful children.
+ 
+**Jeff Moden**
+ 
+With more than 51,000 posts and 39 mostly 5 star articles, Jeff Moden is a strong contributor on SQLServerCentral.com where he coined the term “RBAR” (Row By Agonizing Row) and helped make the "Tally Table" a household name.  Jeff has more than 2 decades of experience with SQL Server and is mostly self-trained in what he calls the “Black Arts” of T-SQL.  He’s known worldwide for his informative articles, high performance T-SQL coding methods, and methods of mentoring.  His dedication to helping others earned him the MS SQL Server MVP award for nine years and the RedGate Exceptional DBA Award in 2011.  His mantra is "Performance is in the code".
+ 
+**Scott Abrants**
+ 
+I have worked in the IT field for over 20 years. I am currently employed by a SaaS provider that takes in point-of-sales data, scrubs it, cubes that data, and presents it to the end user; the Microsoft stack is heavily relied upon as part of that solution. I have written several SQL Server related articles and maintain an active presence within the SQL Server user communities. I am one of the founding officers of the Southern New England SQL Server Users Group as well as a past president. 
+ 
+**Michael Corey**
+ 
+Twitter:  - [Michael_corey](https://www.twitter.com/Michael_corey)
+ 
+LinkedIn: [Michael Corey](https://www.linkedin.com/in/michael-corey/)
+ 
+Contact: [http://michaelcorey.com/](http://michaelcorey.com/)
+ 
+Michael is a Director Cloud Computing Evangelist for Spectrum Enterprise Navisite. In 2017, was recognized as #42 of the top 100 most influential people in the “cloud industry”.  Michael's a recognized Microsoft Data Platform MVP formerly (Microsoft SQL Server MVP), recognized Oracle ACE, a recognized VMware vExpert and has worked with relational databases for over 30 years starting with Oracle Version 3. Michael is a Past President of the Independent Oracle Users Group (IOUG), A Founder of the Professional Association of SQL Server and current President of the IOUG VMware Special Interest Group. 
+Michael is the original Oracle Press author, frequent blogger http://michaelcorey.com/, a regular columnist for the Big Data Quarterly
+ 
+**Mike Walsh**
+ 
+Twitter:  - [mike_walsh](https://www.twitter.com/mike_walsh)
+ 
+LinkedIn: [Mike Walsh](http://www.linkedin.com/in/mikepwalsh)
+ 
+Contact: [https://www.straightpathsql.com](https://www.straightpathsql.com)
+ 
+Mike Walsh is an experienced SQL Server professional and has worked with SQL Server since version 6.5. He has been in the role of DBA, developer, and performance tuner, but always leans on his DBA and tuning experience. He has been awarded the SQL Server (now Data Platform) designation 6 times since 2011 and is a current MVP. He runs a SQL Server consultancy focused on DBA services and cloud enablement. He has spoken several times at PASS and regional events. In his spare time, he runs a small farm with his family in rural New Hampshire and is a call Firefighter in his small town.
+ 
+**John Miner**
+ 
+Contact: [http://www.craftydba.com](http://www.craftydba.com)
+ 
+John has twenty-five years of data processing and project management experience. His expertise encompasses all phases of the project life cycle, including design, development, implementation, and maintenance of systems. He is currently a Senior Consultant at Atrion Networking Corporation providing customers with Database and Business Intelligence solutions. When he is not busy at PASS events, he spends time with his wife and daughter enjoying outdoor activities.
+
+ 
+**Mike Hillwig**
+ 
+Twitter:  - [@mikehillwig](https://www.twitter.com/@mikehillwig)
+ 
+LinkedIn: [Mike Hillwig](http://www.linkedin.com/in/mikehillwig)
+ 
+Contact: [http://www.mikehillwig.com](http://www.mikehillwig.com)
+ 
+Veteran DBA Mike Hillwig is a native Pittsburgher and resident of the Boston Suburbs. He’s a DBA Manager for a financial software company that’s owned by one of the world’s largest bank. Mike has been working with SQL Server since version 7 and has a background in infrastructure and network. Today, he manages a team of DBAs around the globe.
+ 
+**Mike Hillwig**
+ 
+Twitter:  - [@mikehillwig](https://www.twitter.com/@mikehillwig)
+ 
+LinkedIn: [Mike Hillwig](http://www.linkedin.com/in/mikehillwig)
+ 
+Contact: [http://www.mikehillwig.com](http://www.mikehillwig.com)
+ 
+Veteran DBA Mike Hillwig is a native Pittsburgher and resident of the Boston Suburbs. He’s a DBA Manager for a financial software company that’s owned by one of the world’s largest bank. Mike has been working with SQL Server since version 7 and has a background in infrastructure and network. Today, he manages a team of DBAs around the globe.
+ 
+**William E Pearson III**
+ 
+Twitter:  - [@Bill_Pearson](https://www.twitter.com/@Bill_Pearson)
+ 
+LinkedIn: [William E Pearson III](https://www.linkedin.com/e/fpf/252170891)
+ 
+Contact: [https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E](https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E)
+ 
+Bill Pearson created Island Technologies Inc. in 1997, and has developed a large and diverse customer base since. Bill#39;s background as a CPA, Internal Auditor, Management Accountant, and SQL Server MVP (BI) enables him to provide value to clients as a liaison between Accounting / Finance and Information Services. Bill has implemented enterprise business intelligence systems over the years for many Fortune 500 companies and focuses his practice upon the integrated Microsoft Business Intelligence 
+ 
+**Sunil Kadimdiwan**
+ 
+Twitter:  - [@skadimdiwan](https://www.twitter.com/@skadimdiwan)
+ 
+LinkedIn: [Sunil Kadimdiwan](https://www.linkedin.com/in/sunilkadimdiwan)
+ 
+Contact: [http://www.infotrove.com/events.html](http://www.infotrove.com/events.html)
+ 
+Sunil Kadimdiwan Sunil Kadimdiwan has 25+ years’ experience in architecting and implementing database solutions. He has deep knowledge of the Microsoft SQL Server and Business Intelligence technology stack. He is a frequent speaker at SQL Saturdays, Code Camps, User Group meetings
+ 
+**Paresh Motiwala**
+ 
+Twitter:  - [pareshmotiwala](https://www.twitter.com/pareshmotiwala)
+ 
+LinkedIn: [Paresh Motiwala](http://www.linkedin.com/in/pareshmotiwala)
+ 
+Contact: [https://pareshmotiwala.wordpress.com/wp-admin/post.php?post=2amp;action=editamp;message=6amp;postpost=v2](https://pareshmotiwala.wordpress.com/wp-admin/post.php?post=2amp;action=editamp;message=6amp;postpost=v2)
+ 
+Paresh Motiwala a Azure/Big Data enthusiast, Manager of Database Platform teams has led several large SQL implementations, migrations and upgrades. He has managed multi terabyte OLTP databases. He has also been a Sr. SQL DBA and a Solutions Architect in Fortune 100 companies.  He helps/organizes and speaks at many SQL Saturdays, Azure Bootcamp, Azure Datafests and User Groups(Boston BI UG, NESQL, PASS PD VG and PASS DBA VG).
+
+He is certified in Big Data Analytics, FinTech, PMP, Public Speaking, Business Communications. He is a avid singer, cook, open networker, and stand-up comedian. 
+He teaches public speaking, debating, interviewing and group discussion skills and mentors children around the globe via www.circlesofgrowth.com
+ 
+**Steve Simon**
+ 
+Contact: [http://www.infogoldusa.com](http://www.infogoldusa.com)
+ 
+Steve Simon is a senior BI engineer with MyWebGrocer. He has been involved with database design and analysis for over 25 years. Steve has presented papers at eight PASS Summits and one at PASS Europe 2009 and 2010. He has just recently presented a Business Intelligence paper at Oracle Open World in San Francisco . Steve has also presented 5 papers at the Information Builders' (IBI) International Summits. He is a PASS regional mentor  chair of the Oracle/SQL Server VC
+ 
+**Scott Klein**
+ 
+Twitter:  - [SQLScott](https://www.twitter.com/SQLScott)
+ 
+Contact: [http://aka.ms/sqlscott](http://aka.ms/sqlscott)
+ 
+Scott Klein is a senior consultant with SQL Solutions Group with over two decades of experience working with Microsoft SQL Server. Prior to SSG, Scott spent almost 10 years at Microsoft, traveling the globe as a technical evangelist training and speaking about SQL Server and Microsoft’s Azure data services. Scott’s recent focus has been on advanced analytics, including big data and IoT, providing real-world training to help bring intelligence to your data. Scott has authored several books focusing on data and data analytics. Scott is continuously striving and looking for ways to help developers and companies grok the wonderful world of data.
+ 
+**Robert McCauley**
+ 
+
+ 
+**Aaron Bertrand**
+ 
+Twitter:  - [@AaronBertrand](https://www.twitter.com/@AaronBertrand)
+ 
+Contact: [https://blogs.sentryone.com/author/AaronBertrand](https://blogs.sentryone.com/author/AaronBertrand)
+ 
+Aaron, Product Manager at SentryOne, produces performance and optimization tools for the entire Microsoft data platform, as well as Plan Explorer, a free tool for SQL Server execution plan analysis. In his spare time, he is either playing volleyball, curling, blogging at sqlperformance.com and blogs.sentryone.com, or contributing to SQL Server conversations on Twitter and dba.stackexchange.com. He has worked with SQL Server since 6.5 and has been an MVP since 1997.
+ 
+**Wayne Sheffield**
+ 
+Twitter:  - [@DBAWayne](https://www.twitter.com/@DBAWayne)
+ 
+LinkedIn: [Wayne Sheffield](http://www.linkedin.com/in/WayneSheffield)
+ 
+Contact: [http://blog.waynesheffield.com/wayne](http://blog.waynesheffield.com/wayne)
+ 
+Wayne Sheffield, a Microsoft Certified Master in SQL Server and Microsoft Most Valuable Professional, started working with xBase databases in the late 80’s. With over 25 years in IT, he has worked with SQL Server (since 6.5 in the late 90’s) in various dev/admin roles, with an emphasis in performance tuning. He is the author of several articles at www.sqlservercentral.com, a co-author of “SQL Server T-SQL Recipes”, and enjoys sharing his knowledge by presenting at SQL events worldwide and blogging at http://blog.waynesheffield.com/wayne
+ 
+**Andy Roberts**
+ 
+Contact: [http://blogs.msdn.com/andyroberts](http://blogs.msdn.com/andyroberts)
+ 
+Andy Roberts is a Data Platform Technology Specialist for Microsoft in the Northeast district. and has spent 12 years as a consultant for Microsoft Consulting Services. As a consultant Andy assisted customers in implementing mission critical OLTP and DW/BI solutions on SQL Server. Andy wore many hats as a consultant including application developer, solution architect, mentor to development teams, mentor to DBAs, BI lead, SCRUM Master, and the guy-that-knows-a-bunch-of-stuff-about Microsoft.
+
+ 
+**Aaron Bertrand**
+ 
+Twitter:  - [@AaronBertrand](https://www.twitter.com/@AaronBertrand)
+ 
+Contact: [https://blogs.sentryone.com/author/AaronBertrand](https://blogs.sentryone.com/author/AaronBertrand)
+ 
+Aaron, Product Manager at SentryOne, produces performance and optimization tools for the entire Microsoft data platform, as well as Plan Explorer, a free tool for SQL Server execution plan analysis. In his spare time, he is either playing volleyball, curling, blogging at sqlperformance.com and blogs.sentryone.com, or contributing to SQL Server conversations on Twitter and dba.stackexchange.com. He has worked with SQL Server since 6.5 and has been an MVP since 1997.
+ 
+**Wayne Sheffield**
+ 
+Twitter:  - [@DBAWayne](https://www.twitter.com/@DBAWayne)
+ 
+LinkedIn: [Wayne Sheffield](http://www.linkedin.com/in/WayneSheffield)
+ 
+Contact: [http://blog.waynesheffield.com/wayne](http://blog.waynesheffield.com/wayne)
+ 
+Wayne Sheffield, a Microsoft Certified Master in SQL Server and Microsoft Most Valuable Professional, started working with xBase databases in the late 80’s. With over 25 years in IT, he has worked with SQL Server (since 6.5 in the late 90’s) in various dev/admin roles, with an emphasis in performance tuning. He is the author of several articles at www.sqlservercentral.com, a co-author of “SQL Server T-SQL Recipes”, and enjoys sharing his knowledge by presenting at SQL events worldwide and blogging at http://blog.waynesheffield.com/wayne
+ 
+**Mike Walsh**
+ 
+Twitter:  - [mike_walsh](https://www.twitter.com/mike_walsh)
+ 
+LinkedIn: [Mike Walsh](http://www.linkedin.com/in/mikepwalsh)
+ 
+Contact: [https://www.straightpathsql.com](https://www.straightpathsql.com)
+ 
+Mike Walsh is an experienced SQL Server professional and has worked with SQL Server since version 6.5. He has been in the role of DBA, developer, and performance tuner, but always leans on his DBA and tuning experience. He has been awarded the SQL Server (now Data Platform) designation 6 times since 2011 and is a current MVP. He runs a SQL Server consultancy focused on DBA services and cloud enablement. He has spoken several times at PASS and regional events. In his spare time, he runs a small farm with his family in rural New Hampshire and is a call Firefighter in his small town.
+ 
+**Alex Papadimoulis**
+ 
+Contact: [http://inedo.com/](http://inedo.com/)
+ 
+Residing in Berea, Ohio, Alex Papadimoulis is partner at Inedo and helps drive the direction of Inedo's agile release automation suite (BuildMaster) and Inedo's .NET enterprise dependency manager (ProGet). In his spare time, he's the editor of The Daily WTF, a leading how-not to guide for developing software.
+ 
+**Jason Brimhall**
+ 
+Twitter:  - [sqlrnnr](https://www.twitter.com/sqlrnnr)
+ 
+LinkedIn: [Jason Brimhall](https://www.linkedin.com/in/dbajbrimhall/)
+ 
+Contact: [http://jasonbrimhall.info](http://jasonbrimhall.info)
+ 
+Jason Brimhall has more than 20 years of experience and has worked with SQL Server 6.5 through SQL Server 2019. He has experience in performance tuning, high transaction environments, and large environments. He is currently a consultant specializing in performance tuning, server analysis, and problem resolution. Jason is a Microsoft Certified Master (MCM) and a Data Platform MVP.
+ 
+**Andy Roberts**
+ 
+Contact: [http://blogs.msdn.com/andyroberts](http://blogs.msdn.com/andyroberts)
+ 
+Andy Roberts is a Data Platform Technology Specialist for Microsoft in the Northeast district. and has spent 12 years as a consultant for Microsoft Consulting Services. As a consultant Andy assisted customers in implementing mission critical OLTP and DW/BI solutions on SQL Server. Andy wore many hats as a consultant including application developer, solution architect, mentor to development teams, mentor to DBAs, BI lead, SCRUM Master, and the guy-that-knows-a-bunch-of-stuff-about Microsoft.
+
+ 
+**Grant Fritchey**
+ 
+Twitter:  - [@gfritchey](https://www.twitter.com/@gfritchey)
+ 
+LinkedIn: [Grant Fritchey](http://www.linkedin.com/in/scarydba)
+ 
+Contact: [http://scarydba.com](http://scarydba.com)
+ 
+Grant Fritchey is a Data Platform MVP with over 20 years’ experience in IT, including time spent in support and development. He has worked with SQL Server since 6.0 back in 1995. He has also developed in VB, VB.NET, C#, and Java. Grant has written books for Apress and Simple-Talk. Grant presents at conferences and user groups, large and small, all over the world. He joined Redgate Software as a product evangelist in January 2011.
+ 
+**Jack Corbett**
+ 
+Twitter:  - [http://twitter.com/unclebiguns](https://www.twitter.com/http://twitter.com/unclebiguns)
+ 
+LinkedIn: [Jack Corbett](http://www.linkedin.com/in/jackcorbett)
+ 
+Contact: [http://www.wisemanorwiseguy.com](http://www.wisemanorwiseguy.com)
+ 
+JJack Corbett began working with SQL Server, Access, and VB in 1999, when he served an apprenticeship with a good friend who was the software development manager at the local paper mill. He found his niche and has concentrated on SQL Server development and administration since late 2000. He has worked with SQL Server through version 2017 and was a Microsoft Data Plaform MVP from October 2011 to October 2016. 
+
+Jack is passionate about helping companies architect, design, and develop high performance applications based on the Microsoft Data Platform. He also has a passion for seeing database developers get the core application code (the database) protected under source control.
+
+Jack has presented at many user groups and SQLSaturday even
+ 
+**Jason Brimhall**
+ 
+Twitter:  - [sqlrnnr](https://www.twitter.com/sqlrnnr)
+ 
+LinkedIn: [Jason Brimhall](https://www.linkedin.com/in/dbajbrimhall/)
+ 
+Contact: [http://jasonbrimhall.info](http://jasonbrimhall.info)
+ 
+Jason Brimhall has more than 20 years of experience and has worked with SQL Server 6.5 through SQL Server 2019. He has experience in performance tuning, high transaction environments, and large environments. He is currently a consultant specializing in performance tuning, server analysis, and problem resolution. Jason is a Microsoft Certified Master (MCM) and a Data Platform MVP.
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Confio](http://www.confio.com)
+ 
+- [Quest Software](https://www.quest.com/)
+ 
+- [Pragmatic Works](http://www.pragmaticworks.com)
+ 
+- [Just A Programmer](http://www.justaprogrammer.net)
+ 
+- [Ramblings of a Crafty DBA](http://craftydba.com/)
+ 
+- [SAPIEN Technologies](http://www.sapien.com)
+ 
+- [Redgate Software (GAP)](http://rd.gt/2j7SNf9)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 

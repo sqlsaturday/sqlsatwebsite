@@ -1,0 +1,467 @@
+---
+layout: "post" 
+title: "SQLSaturday #539 - Sioux Falls 2016" 
+prettydate: "23 July 2016" 
+---
+# SQLSaturday #539 - Sioux Falls 2016
+ 
+**Event Date**: 07/23/2016 00:00:00
+ 
+**Event Location**:
+- University Center
+- 4801 N Career Avenue
+- Sioux Falls, South Dakota
+ 
+<a href="/assets/pdf/0539.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: Getting Started with Extended Events
+ 
+**Abstract**:
+Few subjects in Microsoft SQL Server inspire the same amount of Fear, Uncertainty, and Doubt (FUD) as Extended Events.  Many DBA's continue to use Profiler and SQL Trace even though they have been deprecated for years.  Why is this?
+
+Extended Events started out in SQL Server 2008 with no user interface and only a few voices in the community documenting the features as they found them.  Since then it has blossomed into a full feature of SQL Server and an amazingly low-impact replacement for Profiler and Trace.
+
+Come learn how to get started - the basics of sessions, events, actions, targets, packages, and more.  We will look at some base scenarios where Extended Events can be very useful as well as considering a few gotchas along the way.  You may never go back to Profiler again!
+ 
+**Speaker(s):**
+- Andy Galbraith
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room #245
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SSIS Performance Tuning with Biml
+ 
+**Abstract**:
+You may heard that Biml can automate ETL loads, but what if your data warehouse is several terabytes with a tight load window. In this demo focused presentation, we’ll discuss how to use BimlScript to dynamically create multiple SSIS packages for a data warehouse ETL load, each following a different best practice design pattern. The included framework then automatically executes each package repeatedly, records the results for analysis, and determine which package version should be used in production.
+The only way to be sure that your SSIS packages are performing optimally is to test them against multiple patterns. Make your life easier and let BimlScript do the work for you.
+ 
+**Speaker(s):**
+- David Stein
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - Room #250
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server Foreign Keys – De-mystifying the Rest of the Story
+ 
+**Abstract**:
+Foreign key constraints are the ultimate Catch-22.  They are necessary to ensure the relationship integrity between a parent table and its child tables.  However, they may also have a significant downside effect on insert, update, and delete performance.  In this session we will describe the concept of Foreign Key constraints and how they maintain data integrity when properly maintained.  You will learn their syntax for creating, deleting, disabling, and re-enabling them.  You will also learn the possible side effects of disabling and re-enabling Foreign Keys for data modification.   We will examine the two most important Foreign Key attributes:  is_not_trusted and is_disabled and their effect on query performance.  All of these characteristics will be demonstrated with many script examples.  Attendee should have some knowledge of Management Studio and the SELECT statement.
+ 
+**Speaker(s):**
+- Mike Byrd
+ 
+*Track and Room*: Application  Database Development - Avera Hall
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SS2014/2016 In-Memory Tables:  Formula 1 Performance Unleashed?
+ 
+**Abstract**:
+Query performance is what it is all about.  SQL Server 2014 now has the new in-memory functionality that takes a completely different approach to data access and manipulation.  Google “In-Memory Tables” and you’ll get a myriad of results from white papers, blogs, webinars, etc.  This session will consolidate the relevant information from all these sources so the production DBA/Developer will be able to understand, create, use, maintain, and trouble-shoot in-memory table functionality.  This session will also examine several demo scripts showing performance gains using the in-memory tables over equivalent disk based tables.  
+This session is all about when and how to apply in-memory tables in a production environment.
+After this session you will
+1.	 Understand what in-memory tables are and how to create and maintain them including their limitations
+2.	Be able to identify performance gains over equivalent disk back tables
+3.	Comprehend the new data monitoring needed for in-memory table
+
+ 
+**Speaker(s):**
+- Mike Byrd
+ 
+*Track and Room*: Application  Database Development - Avera Hall
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Get Your Optimizer to Give up All Its Secrets
+ 
+**Abstract**:
+You know that execution plans can provide you with vital information to tune a query, but just how does that plan get generated?  In this session, we will examine details the query optimization process that are not very well known.  We will discuss how SQL Server parses a T-SQL statement then and begins applying rules to make it more efficient.  Did you know that SQL Server can be coaxed into outputting hidden structures such as parse trees and memos?  We'll do just that, and then take it a step further with a unique visualization tool that I have created.  With a better understanding of how SQL Server optimizes T-SQL (and sometimes doesn't do it as well as might be hoped), you can write more efficient SQL statements.
+ 
+**Speaker(s):**
+- Brian Hansen
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room #245
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Implementing security inside SQL Server
+ 
+**Abstract**:
+Having a good understanding of what security features are available and what configurations are considered best practice can be crucial to your  company's data security.  Learn to view security differently and how key builtin security features can be leveraged to make your systems both more maintainable and more secure.  This is very much a HOW TO session, both in terms of how to decide what feature combinations work best for your environment and how to implement those features.
+ 
+**Speaker(s):**
+- Rick Bielawski
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room #245
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Mastering queries into XML data.
+ 
+**Abstract**:
+If you've never queried an XML column you definitely want to attend.  While targeted to beginners this isn't a "Just do this" session.  After this session I'd like you to truly understand even subtle nuances of basic query syntax.  Seasoned veterans stand a fair chance of learning something new.
+ 
+**Speaker(s):**
+- Rick Bielawski
+ 
+*Track and Room*: Application  Database Development - Avera Hall
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Availability Groups:  Monitoring and Alerting
+ 
+**Abstract**:
+So you have your availability groups configured and everything reports green.  How do you measure SLA compliance? Do you know when replication is delayed? Did you know it failed over last night?
+This session will answer all these questions and more, and will show you what should you be looking at to ensure no surprises...
+We will look at the DMVs, extended event sessions, perfmon counters, SQL agent jobs and policies to show what to monitor in your AG and how to setup alerts so you know when to take action.
+
+ 
+**Speaker(s):**
+- Shawn Meyers
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room #245
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: My Top 10 Favorite Replication Tricks
+ 
+**Abstract**:
+Replication can be intimidating and a bit confusing. I will show you my ten favorite tricks for working with replication that will show you how you can replicate from multiple sources to multiple destinations, chose the appropriate method of replication and, if desired, put the data in a different schema with a different collation at the destination than it was at the source. I will also cover various methods of managing your publications, agent properties and distribution schedules. This presentation assumes a basic knowledge of configuring distribution and creating a basic publication and subscription.
+ 
+**Speaker(s):**
+- Marcus Hopfinger
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room #245
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: One approach to make SQL deployments repeatable, scalable  semi-automated
+ 
+**Abstract**:
+SQL deployments case study using Powershell, SQL, Subversion  Reporting Services to create a repeatable process able to scale for numerous developers  DBAs (30+) developing simultaneously for multiple releases across multiple development  test environments.
+ 
+**Speaker(s):**
+- Matthew Dobson
+ 
+*Track and Room*: Application  Database Development - Avera Hall
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Tackling Technical Blogging
+ 
+**Abstract**:
+Ever thought of writing a technical blog?  This session will cover the Ws (who, what, when, where, why, how) of getting a technical blog started.  Answer the question of how it can be done for free.  Discuss why pay for your own domain name.  Explain how to be on the first page of a search engine.  Learn how to determine the time commitment.  And finally determine topics to write about. 
+ 
+**Speaker(s):**
+- Mike Hays
+ 
+*Track and Room*: Professional Development - Room #250
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Tips and Tricks for Performance Troubleshooting
+ 
+**Abstract**:
+“The application is too slow”...”reports are taking too long to load”… “my queries are running slow”. These are complaints we have all heard from our end users, and as we know, it is always the database that is the issue. In this session we will talk about different things to look for when assessing performance of queries. We will examine execution plans at a high level to see where problems may lie and look at some few different “gotchas” that can affect query performance. We will talk about indexes and statistics – what are they, what to index, and how they can help query performance. Finally, we will cover a few ways to help performance while using encryption. 
+ 
+**Speaker(s):**
+- Phillip Podhradsky
+ 
+*Track and Room*: Application  Database Development - Avera Hall
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: MSSQL is coming to Linux - Are You Ready?
+ 
+**Abstract**:
+MSSQL is coming to Linux next year.  In this session, I will show you how to access MSSQL from UNIX Operating Systems (Linux, Mac OSX, Cygwin, and others) today.  If you're considering possibly using MSSQL on Linux and want to get started on migrating your application today, this is the session for you.  Yes, you can use MSSQL as your database today for your UNIX application.  I'll also show you how you easily migrate existing MySQL or SQLite databases, popular in the UNIX world, over to MSSQL using Linked Servers and the openquery() call.
+ 
+**Speaker(s):**
+- Nem Schlecht
+ 
+*Track and Room*: Application  Database Development - Avera Hall
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Agile Data Warehouse and ETL Design with Biml
+ 
+**Abstract**:
+Business Intelligence Markup Language is literally changing the way we think about Data Warehouse design and ETL. In this interactive presentation you'll see how you can rapidly iterate through the Data Warehouse Development Cycle and provide ROI almost immediately.  Learn how you can use BimlScript to automatically create staging tables, SSIS Packages, and other necessary objects during the modeling process. 
+
+ 
+**Speaker(s):**
+- David Stein
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - Room #250
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Free SQL Server Tools
+ 
+**Abstract**:
+Everybody loves a free lunch. Come to this session to learn about all the SQL Server freebees
+ 
+**Speaker(s):**
+- Cecil Spivey
+ 
+*Track and Room*: Enterprise Database Administration  Deployment - Room #245
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Building Stronger Relationships Between Us... "Data People" and Them... "End Users"
+ 
+**Abstract**:
+The role of data and IT professionals is evolving from simply responding to requests about business to one of helping shape the business strategy. The integration of these professionals into the strategy process is a transformation that presents communication challenges and requires more visibility by people typically known to be introverts. In this session we will discuss some of the barriers causing relationship pains as well as some techniques and strategies to begin building stronger relationships with the managers and end users so data can thrive and customer satisfaction can proliferate.
+ 
+**Speaker(s):**
+- Joshua Warne
+ 
+*Track and Room*: Professional Development - Room #250
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Build on-the-fly reporting with Dynamic SQL
+ 
+**Abstract**:
+Using Dynamic SQL, grouping  windowing techniques, and cursors, one  can dynamically build a report with specifications that are stored in tables. In this session, we will look at each of the techniques used in building an employee report card that is completely driven by formula and scoring calculations stored in the database. We will also look at how everything is put together to create a truly dynamic report that can be used, created and maintained by different teams.
+ 
+**Speaker(s):**
+- Dorothy Ling
+ 
+*Track and Room*: BI Platform Architecture, Development  Administration - Room #250
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**Andy Galbraith**
+ 
+Twitter:  - [https://twitter.com/DBA_ANDY](https://www.twitter.com/https://twitter.com/DBA_ANDY)
+ 
+LinkedIn: [Andy Galbraith](http://www.linkedin.com/pub/andy-galbraith/5/149/98b)
+ 
+Contact: [http://nebraskasql.blogspot.com/](http://nebraskasql.blogspot.com/)
+ 
+I’m a forty-something Microsoft SQL Server DBA of 18+ years, a devoted husband, and a father of three young boys (all aged eight and under!) I have been a DBA at a public university, at a major bank, at a healthcare system, and I now work as a consultant with customers across the United States. I write and speak primarily about the tips and tricks that I discover along my SQL Server journey.
+ 
+**Nem Schlecht**
+ 
+Twitter:  - [nemws1](https://www.twitter.com/nemws1)
+ 
+I've been a Server Administrator and DBA for 20+ years and have worked with multiple operating systems (UNIX variants, Mac OS X and Windows) and database engines (MySQL/MariaDB, Oracle, PostgreSQL, SQLite, and MSSQL).  I currently work a lot with PowerShell and automation as well as supervising a group of awesome systems administrators.  I've worked for a large state university system, a start-up company, and everything in-between (including my own consulting company).  I currently work for Border States Electric as an I.T. Supervisor.
+ 
+**Joshua Warne**
+ 
+Twitter:  - [@605sql](https://www.twitter.com/@605sql)
+ 
+LinkedIn: [Joshua Warne](https://www.linkedin.com/profile/view?id=368401119amp;trk=hp-identity-name)
+ 
+Joshua Warne is a Business Intelligence Analyst with the Fishback Financial Corporation in Brookings, SD. He has a Master’s in Economics and provides reporting and analytics for projects that involve process enhancements, product development, and customer research. Joshua is also Founder and Director of the (605) SQL User Group and is lead organizer of SQL Saturday Sioux Falls.
+ 
+**Mike Byrd**
+ 
+Twitter:  - [ByrdNest_TX](https://www.twitter.com/ByrdNest_TX)
+ 
+LinkedIn: [Mike Byrd](http://www.linkedin.com/pub/mike-byrd/1/aa0/bbb)
+ 
+Contact: [http://logicalread.solarwinds.com/?s=byrd, www.TSQLMentoring.com and SQLServerCentral.com](http://logicalread.solarwinds.com/?s=byrd, www.TSQLMentoring.com and SQLServerCentral.com)
+ 
+Former rocket scientist and USAF Fighter Pilot -- now a SQL Server geek (24 years)! Past opportunities include free-lance technical writer for PC Magazine, Senior Software Manager for government sponsored munitions effectiveness committee, and insurance company CTO.  Currently senior database engineer consultant for several Austin companies.  
+
+Presenter at many SQL Saturdays over last 6 years in United States, Europe, and Australia.
+
+Specialize in SQL Server performance tuning; database (OLTP  OLAP) architecture; trouble-shooting; teaching TSQL (Basic through Advanced).
+
+Video presentations (for local SQL Server user groups or SQL Saturdays) can be found at http://usergroup.tv/videos/category/speaker/mike-byrd
+ 
+**Cecil Spivey**
+ 
+Cecil is a DBA Engineer in the Twin Cities. He has been working in IT for over 20 years and was a consultant and a programmer/developer for many years until he was converted to the dark side.  
+ 
+**David Stein**
+ 
+Twitter:  - [@Made2Mentor](https://www.twitter.com/@Made2Mentor)
+ 
+LinkedIn: [David Stein](http://www.linkedin.com/pub/david-stein/8/ba8/705)
+ 
+Contact: [http://www.Made2Mentor.com](http://www.Made2Mentor.com)
+ 
+David Stein - Agile Data Warehouse Architect and Independent Consultant - has more than a decade of experience working in SQL Server Business Intelligence. He’s designed multi-terabyte, multi-tenant Data Warehouses from scratch as well as saved projects in serious jeopardy.
+ 
+**Mike Byrd**
+ 
+Twitter:  - [ByrdNest_TX](https://www.twitter.com/ByrdNest_TX)
+ 
+LinkedIn: [Mike Byrd](http://www.linkedin.com/pub/mike-byrd/1/aa0/bbb)
+ 
+Contact: [http://logicalread.solarwinds.com/?s=byrd, www.TSQLMentoring.com and SQLServerCentral.com](http://logicalread.solarwinds.com/?s=byrd, www.TSQLMentoring.com and SQLServerCentral.com)
+ 
+Former rocket scientist and USAF Fighter Pilot -- now a SQL Server geek (24 years)! Past opportunities include free-lance technical writer for PC Magazine, Senior Software Manager for government sponsored munitions effectiveness committee, and insurance company CTO.  Currently senior database engineer consultant for several Austin companies.  
+
+Presenter at many SQL Saturdays over last 6 years in United States, Europe, and Australia.
+
+Specialize in SQL Server performance tuning; database (OLTP  OLAP) architecture; trouble-shooting; teaching TSQL (Basic through Advanced).
+
+Video presentations (for local SQL Server user groups or SQL Saturdays) can be found at http://usergroup.tv/videos/category/speaker/mike-byrd
+ 
+**Phillip Podhradsky**
+ 
+Twitter:  - [@PhillipPod](https://www.twitter.com/@PhillipPod)
+ 
+LinkedIn: [Phillip Podhradsky](http://linkedin.com/in/phillip-podhradsky-a724a941)
+ 
+SQL Server DBA at Fishback Financial Corporation. I have been working with with SSRS, SSAS, SSIS, and the SQL server database engine from SQL 2005 on up since 2007. Some of my main focuses are to troubleshoot performance issues, disaster recovery, and support various application development initiatives.
+ 
+**Mike Hays**
+ 
+LinkedIn: [Mike Hays](https://www.linkedin.com/in/mike-hays-21097419)
+ 
+Contact: [http://www.thesqlreport.com/](http://www.thesqlreport.com/)
+ 
+Mike has been working with Microsoft SQL Server for the last twenty years.  Currently working as a Database Administrator for a diversified energy company, he has also worked in the retail, manufacturing,  banking sectors.  He holds a Master’s degree in Computer Information Science from Cleveland State University.  He currently resides in Ohio with his girlfriend Alexia, her two children and their dog Lanna.
+ 
+**Shawn Meyers**
+ 
+Twitter:  - [1dizzygoose](https://www.twitter.com/1dizzygoose)
+ 
+LinkedIn: [Shawn Meyers](http://www.linkedin.com/in/shawnmeyers42)
+ 
+Shawn Meyers is a Field CTO working at Tintri.  Shawn has worked in IT for 25+ years and specifically with SQL Server for 20+ years, beginning with version 6.5.  A frequent speaker at many events including PASS Summit, VMworld, VMUGs, Virtual Chapter sessions, and many SQL Saturday events.  Current focus is on improving DBAs lives with better infrastructure.
+ 
+**Dorothy Ling**
+ 
+LinkedIn: [Dorothy Ling](https://www.linkedin.com/in/dorothy-ling-86230a17)
+ 
+Dorothy has been a software developer her entire career. She started out with Visual Basic Windows app and, moving along with the technologies, she got into ASP and then .NET development. Around 6 years ago, she added Database and BI development to her skill-set. She is a Microsoft Certified Application Developer (MCAD) in .NET and Microsoft Certified Professional (MCP) in SQL.
+ 
+**Brian Hansen**
+ 
+Twitter:  - [tf3604](https://www.twitter.com/tf3604)
+ 
+Contact: [http://www.tf3604.com](http://www.tf3604.com)
+ 
+Brian is a database administrator at Children International in Kansas City.  He has been working with SQL Server technologies since 1998, including roles in report development, application development and database administration.
+ 
+**Rick Bielawski**
+ 
+LinkedIn: [Rick Bielawski](https://www.linkedin.com/in/richardbielawski)
+ 
+Rick has 35 years experience as a systems, applications and database architect having designed major systems for such institutions as NASDAQ, Bank of America, Blue Cross Blue Shield, Ecolab and Emperex.  He holds multiple certifications including MCITP and MCSE in Business Intelligence and Data Platform.  Rick currently designs database systems for custom software applications and likes speaking at local user groups and SQL Saturday events.
+ 
+**Marcus Hopfinger**
+ 
+Twitter:  - [DakotaDataWrang](https://www.twitter.com/DakotaDataWrang)
+ 
+LinkedIn: [Marcus Hopfinger](https://www.linkedin.com/in/marcus-hopfinger-69728121?)
+ 
+Contact: [http://dakotadatawrangler.blogspot.com/](http://dakotadatawrangler.blogspot.com/)
+ 
+Marcus has been with Daktronics, Inc. since 2001 where he started doing ColdFusion development and some SQL Server 7 database administration. In late 2003 he was activated and deployed in early 2004 to Iraq with the South Dakota Army National Guard. During this time, he served as a Battalion Communications Officer where he was responsible for redundant voice and data networks including satellite internet and secure internet routing protocol networks. Upon returning to Daktronics in 2005 he moved in into a fulltime database administration position where he gets to work on SQL Server instances on three continents. He is also a Sci-Fi Fan, History buff, Amateur Radio Operator (call sign KA0SQL), but most importantly husband and father.
+ 
+**David Stein**
+ 
+Twitter:  - [@Made2Mentor](https://www.twitter.com/@Made2Mentor)
+ 
+LinkedIn: [David Stein](http://www.linkedin.com/pub/david-stein/8/ba8/705)
+ 
+Contact: [http://www.Made2Mentor.com](http://www.Made2Mentor.com)
+ 
+David Stein - Agile Data Warehouse Architect and Independent Consultant - has more than a decade of experience working in SQL Server Business Intelligence. He’s designed multi-terabyte, multi-tenant Data Warehouses from scratch as well as saved projects in serious jeopardy.
+ 
+**Matthew Dobson**
+ 
+Twitter:  - [@MattCDobson](https://www.twitter.com/@MattCDobson)
+ 
+LinkedIn: [Matthew Dobson](http://www.linkedin.com/pub/matthew-dobson/4/b56/3b1/ )
+ 
+•	~17 years doing database development amp; support (~10 years SQL Server)
+•	8.5 years for large financial institution (Wells Fargo amp; Co.)
+•	8.5 years for major bottling amp; distribution company (Coca-Cola Enterprises)
+•	Proud supporter of (605) SQL Users group amp; committee member for Inaugural SQL Saturday Sioux Falls
+
+ 
+**Rick Bielawski**
+ 
+LinkedIn: [Rick Bielawski](https://www.linkedin.com/in/richardbielawski)
+ 
+Rick has 35 years experience as a systems, applications and database architect having designed major systems for such institutions as NASDAQ, Bank of America, Blue Cross Blue Shield, Ecolab and Emperex.  He holds multiple certifications including MCITP and MCSE in Business Intelligence and Data Platform.  Rick currently designs database systems for custom software applications and likes speaking at local user groups and SQL Saturday events.
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Microsoft Corporation (GAP)](http://www.microsoft.com/en-us/server-cloud/products/sql-server/)
+ 
+- [Pyramid Analytics](http://www.PyramidAnalytics.com)
+ 
+- [SDN Communications](https://sdncommunications.com)
+ 
+- [Omnitech Inc](http://www.omnitech-inc.com/)
+ 
+- [Sandhills Publishing](http://www.sandhills.com)
+ 
+- [House of Brick Technologies](http://www.houseofbrick.com)
+ 
+- [Xigent Solutions](http://www.xigentsolutions.com/)
+ 
+- [DocuTAP*](http://docutap.com/)
+ 
+- [CHR Solutions](http://www.chrsolutions.com)
+ 
+- [Dakota State University](http://dsu.edu/)
+ 
+- [Sanford Health](http://www.sanfordhealth.org)
+ 
+- [First Bank  Trust](https://www.bankeasy.com/)
+ 
+- [PASS](http://www.pass.org)
+ 
+- [Wells Fargo](https://www.wellsfargo.com/)
+ 
+- [COZYROC](http://bit.ly/cozyrocssis)
+ 
+- [Apex SQL](http://www.apexsql.com)
+ 
+- [SSMS Tools Pack](http://www.ssmstoolspack.com/)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 

@@ -1,0 +1,742 @@
+---
+layout: "post" 
+title: "SQLSaturday #313 - Rheinland 2014" 
+prettydate: "28 June 2014" 
+---
+# SQLSaturday #313 - Rheinland 2014
+ 
+**Event Date**: 06/28/2014 00:00:00
+ 
+**Event Location**:
+- Hochschule Bonn-Rhein-Sieg
+- Grantham-Allee 20
+- Sankt Augustin, , Germany
+ 
+<a href="/assets/pdf/0313.pdf">PDF of Schedule</a>
+ 
+This event has completed. All data shown below is from the historical XML public data available.
+<ul>
+   <li><a href="#sessions">Sessions</a></li>
+   <li><a href="#speakers">Speakers</a></li>
+   <li><a href="#sponsors">Sponsors</a></li>
+</ul>
+ 
+ 
+If there are any data quality issues or corrections needed, please contact the webmaster for this site or submit a pull request for the appropriate file(s). 
+ 
+----------------------------------------------------------------------------------- 
+ 
+# <a name="sessions"></a>Sessions
+This is a list of sessions from the event, based on the schedule in the XML files.
+ 
+----------------------------------------------------------------------------------- 
+ 
+## Title: Performancesteigerung durch Window Functions
+ 
+**Abstract**:
+Durch die Einführung von Window Functions ergeben sich viele neue Ansätze für die Lösung bestehender Aufgaben. In der Vergangenheit haben sich andere Lösungswege etabliert, die aber heute wesentlich eleganter und für die Performance deutlich positiver neu geschrieben werden können. In dieser Session wollen Uwe Ricken und Christoph Muthmann gemeinsam anhand typischer Aufgabenstellungen zeigen, welche alternativen Wege zum Einsatz kommen können. Anschließend werden die Performance-Aspekte dieser Lösungen untersucht und anhand der Ausführungspläne die Auswirkungen auf die Zugriffswege gezeigt. Ziel der Session ist zum einen ein Grundverständnis im Lesen von Ausführungsplänen zu erreichen und zum anderen anzuregen, über das Redesign einiger Queries mittels Window Functions nachzudenken.
+ 
+**Speaker(s):**
+- Christoph Muthmann
+ 
+*Track and Room*: DEV - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Anwenden u. Erweitern des SSIS CatalogDB für ein Logging Framework
+ 
+**Abstract**:
+Seit der Version SQL 2012 haben die Integration Services mit der SSISDB eine eigene Datenbank.
+Darin werden u.A. die Paketausführungen / bzw. die -Ergebnisse gespeichert.
+Im Logginglevel  VERBOSE/ASUFÜHRLICH  werden zusätzlich auch die "verarbeiteten Zeilen"
+im DataFlow-Task erfasst. Für andere Verarbeitungen z.B. im T-SQL Task ist das Logging anzupassen.
+Der Vortrag zeigt zunächst die Konfiguration, die Ausführung  sowie die Auswertung im DataFlow-Task,
+so wie das Logging "out-of-the-box" bereits enthalten ist.
+Anschließend erfolgt ein T-SQL MERGE für eine 'SlowlyChangingDimension'.
+Hierbei sind die internen SSISDB StoredProcedures aufzurufen, um das gleiche Logging-Ergebnis
+zu erhalten.
+Obgleich SQL 2012 für die .dtsx-Files bereits ein "übersichtlicheres" XML aufweist,
+sind einige xml-Queries hilfreich, um auch den Admins einen "Blick-ins-Package"
+zu ermöglichen.
+..und fürs Reporting können die 5 enthaltenen Reports mit eigenen ergänzt werden.
+ 
+**Speaker(s):**
+- Alexander Karl
+ 
+*Track and Room*: BI - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Yahoo Cloud Serving Benchmark - MS SQL Server vs. MongoDB
+ 
+**Abstract**:
+Big Data und Cloud-Anwendungen sind zwei Stichworte, die häufig mit der technischen Entwicklung der letzten Jahre in Verbindung gebracht werden. Längst machen sich die Global Player wie Google, Microsoft, Apple, Facebook oder Twitter Gedanken darüber, wie sich Terabytes der in der Cloud anfallenden Daten besonders effektiv verwalten lassen. An dieser Stelle wird zunehmend die Speichertechnik sogenannter schemaloser bzw. NoSQL-Datenbanken  nachgefragt. Ist die erreichbare Performance solcher NoSQL-Datenbanken tatsächlich so viel höher als die der traditionellen relationalen Datenbanken? Dieser Frage soll mit dem von der Firma Yahoo! entwickelten Cloud Serving Benchmark Framework (YCSB) nachgegangen werden. Im Benchmark soll MongoDB als Vertreter der NoSQL-Familie gegen den SQL Server als Kandidat der traditionellen relationalen Systeme antreten. Der Benchmark und die Ergebnisse der Messungen werden erläutert und hinsichtlich der Performance bewertet, verglichen und interpretiert.
+ 
+**Speaker(s):**
+- Harm Knolle
+ 
+*Track and Room*: Open - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SSIS Custom Data Flow Components
+ 
+**Abstract**:
+SQL Server Integration Services (SSIS) include several most important components required in data acquisition, transformation, and load operations. If the problem at hand demands a solution that cannot be solved using the built-in components alone, you can resort to the freely extensible Script Component, but when the circumstances also call for a more complex, and more robust solution, that will be deployed to more than one destination server, the more appropriate alternative is to design a Custom Component.In this session you will learn how this can be achieved, what advantages it provides, and how to perform even the most complex data transformations in a standardised and reliable environment.
+ 
+**Speaker(s):**
+- Matija Lah
+ 
+*Track and Room*: BI - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Unit Testing and Continuous Deployment for DB-Development?
+ 
+**Abstract**:
+Unit Testing and Continous Deployment/Integration are techniques quite commonly used by application developers. When it comes to database development things look a bit different. This session aims to familiarize the interested database developer with these topics. It also provides the basic tools to take your database development to the next level.
+ 
+**Speaker(s):**
+- Constantin Klein
+ 
+*Track and Room*: DEV - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SSIS und HDInsight - Zwei Welten treffen aufeinander?
+ 
+**Abstract**:
+HDInsight ist der auf Hadoop basierende Dienst von Microsoft, der eine 100-prozentige Apache Hadoop-Lösung in der Cloud zur Verfügung stellt. Mit HDInsight steht eine Cloud-basierte Big Data Plattform zur Verfügung, die Daten jeden Typs und beliebiger Größe, ob strukturiert oder unstrukturiert verwalten kann. Während mit Hadoop Petabytes von unstrukturierten Daten in einigen Stunden verarbeitet werden können, können mit dem SQL Server Terrabytes von strukturierten Daten in wenigen Sekunden verarbeitet werden. Was liegt da näher als die beiden Welten miteinander zu verbinden und Daten zwischen HDInsight und SQL Server zu transferieren?
+ 
+**Speaker(s):**
+- Oliver Engels
+ 
+*Track and Room*: Open - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Columnstore, In-Memory, Page oder Row-Compressed, OLTP vs OLAP – SQL Server 2014 Speichertypen
+ 
+**Abstract**:
+Mit dem SQL Server 2014 kommt eine komplett neue Storage-Engine in den SQL Server: XTP mit Memory-optimierten Tabellen  Indexen. Seit der Version ist auch das ColumnStore-Format in die Engine integriert, welche in 2014 entscheidende Verbesserungen erfährt. Und dann gibt es auch noch Kompression in 2 Varianten. Alle Speicherformen haben ihre Vorzüge und optimale Anwendungsgebiete. In dieser Session sehen wir die Performance- Vor- und Nachteile der jeweiligen Techniken in Action und Hintergründe zu deren Funktionsweise.
+ 
+**Speaker(s):**
+- Andreas Wolter
+ 
+*Track and Room*: Mixed  - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: ROLAP mit der PDW - Endlich der nötige Performanceboost
+ 
+**Abstract**:
+Seit vielen Jahren wird ROLAP als eine Möglichkeit zur Cubebereitstellung angeboten. Die eigentliche Herausforderung, welche wir im jedem Projekt antreffen, ist die Daten auch schnell genug bereitstellen zu können. Mit dem SQL Server 2012 kam ein erster Schritt in die richtige Richtung dank des Column Store. Dieses Feature brachte einen erheblichen Performance-Gewinn. Mit der Einführung der PDW V2 steht dem praktischen Einsatz nichts mehr im Wege. Innerhalb dieser Session möchten wir demonstrieren für welche Zwecke ROLAP sinnvoll ist und für welche nicht. 
+ 
+**Speaker(s):**
+- Stephan Köppen
+ 
+*Track and Room*: Mixed  - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Siena calling! Project Siena a RBID App?
+ 
+**Abstract**:
+With Project Siena Microsoft has introduced a beta release of a new technology for business experts, business analysts, consultants, and other app imagineers. This session will review if Siena is useful for Business analysts. We will show how to combine simple app development with different data sources from Excel Sheets (Power Query driven) , RSS Feeds, SharePoint Lists or Windows Azure Tables and how to deploy your little app in minutes. We will discuss the use cases of Siena from a BI perspective, what you can do already and what is missing.
+ 
+**Speaker(s):**
+- Oliver Engels
+ 
+*Track and Room*: Mixed  - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Agile Datawarehousing: tips and tricks to deliver your BI solution using Agile methodolgy like SCRUM
+ 
+**Abstract**:
+Now that we all master the delivery of a BI solution using traditional waterfall or V-model software development cycle and SQL Server components, it's time to enter the 21st century and adopt Agile Methodologies:
+- Respecting Agile values
+- Iterative on functional scopes and not technical ones
+- Inscribed in a cycle of continuous improvement for people and solutions
+In this session we’ll quickly present what is Agile, and we’ll demo mockup iterations to see how it goes in real life.
+
+ 
+**Speaker(s):**
+- Florian Eiden
+ 
+*Track and Room*: BI - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server 2014 Top 5 - Hybrid Features
+ 
+**Abstract**:
+Microsoft SQL Server 2014 brings to market new capabilities to simplify cloud adoption and help you unlock new hybrid scenarios. This demo-filled session will highlight these top features and show how you can use these features to lower your TCO and help manage your mission-critical applications by leveraging the cloud  by providing new disaster recovery and backup solutions.
+ 
+**Speaker(s):**
+- Scott Klein
+ 
+*Track and Room*: DEV - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: From XML to Nested Sets: Handling Hierarchies with SQL Server
+ 
+**Abstract**:
+With all that in memory and big data stuff the bread and butter SQL problems are easily forgotten. This sessions deals with one common problem: How can I effectively handle hierarchies in SQL Server.
+ 
+**Speaker(s):**
+- Christoph Seck
+ 
+*Track and Room*: BI - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Always ON 2014
+ 
+**Abstract**:
+In dieser einführenden Session werden Frank Geisler und Klaus Höltgen einen Blick auf die Hochverfügbarkeits- und Desaster Reovery-Möglichkeiten des SQL Servers 2014 werfen. Dabei steht Always ON im Mittelpunkt. Es werden sowohl AlwaysOn Availibility Groups wie auch die Failover Cluster Instance behandelt.  Neben einer theoretischen Diskussion der Themen wird es auch die ein oder andere Demo zu sehen geben.
+ 
+**Speaker(s):**
+- Frank Geisler
+ 
+*Track and Room*: DBA - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: MongoDB on Windows Azure
+ 
+**Abstract**:
+This session will discuss MongoDb on Windows Azure. We will begin with an overview of MongoDb followed by a quick overview of Windows Azure and its great benefits. We will then spend the remainder of the session demoing how to run MongoDb in Windows Azure and the exciting things you can do! 
+ 
+**Speaker(s):**
+- Scott Klein
+ 
+*Track and Room*: Open - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SQL Server 2014 - New Cardinality Estimator
+ 
+**Abstract**:
+In SQL Server 2014 query processing has been improved. What we can expect from new cardinality estimator? Does it really estimate better? Will our execution plans be better after migration to 2014? All of them? Is the key ascending column statistics problem solved in new version? Do we finally can have more than 200 steps in the statistics histogram per table? What about column correlation and cardinality estimates - are the predicates still completely independent?
+
+This session will answers all these questions and will demonstrate new query processing capabilities and compare them with those from SQL Server2012.
+ 
+**Speaker(s):**
+- Miloš Radivojević
+ 
+*Track and Room*: DBA - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Analyzing Text with SQL Server 2014
+ 
+**Abstract**:
+Text mining is becoming more and more popular. Everybody would like to understand data from blogs, Web sites, and social media.
+Microsoft SQL Server in versions 2012 and 2014 enhances full-text search support that was substantially available in previous editions. Semantic Search, a new component in Full-Text Search, can help you understanding the meaning of documents. The Term Extraction and Term Lookup components from SQL Server Integration Services also help with text analysis. However, the question arises: is all this enough? This presentation unveils the good and the bad side of text mining with SQL Server tools.
+ 
+**Speaker(s):**
+- Dejan Sarka
+ 
+*Track and Room*: Mixed  - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Clustered Columnstore Deep Dive
+ 
+**Abstract**:
+When it comes to clustered columnstore indexes, you may already understand row groups, delta stores, and compression methods, but come see how clustered columnstore indexes work with locking and blocking and when using different compression methods and techniques. We will also dive deep into Dictionaries creation and different methods for ETL processes.
+ 
+**Speaker(s):**
+- Niko Neugebauer
+ 
+*Track and Room*: Mixed  - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: PowerShell 101 für SQL Administratoren
+ 
+**Abstract**:
+In dieser Session werden die essentiellen Kenntnisse für die Arbeit in komplexeren und größeren SQL Server Umgebungen vermittelt. Es werden die grundlegenden Techniken für Administratoren unter PowerShell vorgestellt, dabei wird auf zahlreiche Erfahrungen aus der Praxis referenziert. 
+ 
+**Speaker(s):**
+- Sascha Lorenz
+ 
+*Track and Room*: DBA - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Data Corruption: how to detect, resolve and prevent
+ 
+**Abstract**:
+Once upon a time… You had already encountered with data corruption. If not, you definitely will! You cannot avoid it, you can only prepare for this moment in your DBA career. I will tell you why it happens, what tools are available to you to detect it in time, how to prevent it and what to do when you see it to minimize or avoid data loss.
+ 
+**Speaker(s):**
+- Sergey Olontsev
+ 
+*Track and Room*: DBA - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Power Query vs. SSIS, which one is the most powerful?
+ 
+**Abstract**:
+Is Power Query as powerful as SSIS ? That session will show all the capabilities of Power Query to manipulate data and compare it to SSIS.Warning M-code inside. 100% demos
+ 
+**Speaker(s):**
+- Jean-Pierre Riehl
+ 
+*Track and Room*: BI - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Beware of the Dark Side - A Guided Tour of Oracle for the SQL Server DBA
+ 
+**Abstract**:
+Today, SQL Server DBAs are more than likely at some point in their careers to come across Oracle and Oracle DBAs.To the unwary this can be very daunting and, at first glance, Oracle can look completely different with little obvious similarities to SQL Server.This talk sets out to explain some of the terminology, the differences and the similarities between Oracle and SQL Server and hopefully make Oracle not look quite so intimidating.At the end of this session you will have a better understanding of Oracle and the differences between the Oracle RDBMS and SQL Server. Although you won’t be ready to be an Oracle DBA it will give you a foundation to build on.
+ 
+**Speaker(s):**
+- David Postlethwaite
+ 
+*Track and Room*: Open - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: SAP HANA, Power Pivot, SQL Server - In-Memory-Technologien im Vergleich
+ 
+**Abstract**:
+Das Thema In-Memory ist an sich kein Neues Thema, wir kennen es bereits aus OLAP-Datenbanken. Neu ist aber, dass In-Memory-Technologien in die relationalen Datenbanken oder auch ins Excel Einzug erhalten. SAP hat mit der HANA-Plattform in den letzten Monaten viel Werbung gemacht. Darum möchte ich in dem Vortrag die verschiedenen Plattformen SAP HANA, SQL Server und Power Pivot gegenüberstellen und einen tieferen Einblick geben.
+ 
+**Speaker(s):**
+- Marcel Franke
+ 
+*Track and Room*: Open - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: The nightmare of locking, blocking and isolation levels!
+ 
+**Abstract**:
+I am sure you all know that troubleshooting problems related to locking and blocking (hey, sometimes there are deadlocks too) can be a real nightmare! In this session, you will be able to see and understand why and how locking actually works, what problems it causes and how can we use isolation levels and various other techniques to resolve them!
+ 
+**Speaker(s):**
+- Boris Hristov
+ 
+*Track and Room*: DEV - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Node.js for Microsoft SQLServer Nerds
+ 
+**Abstract**:
+This session is to all SQL Server and Windows Azure developers, who want to build sclabble applications using Node.js and MS SQLServer / Windows Azure SQL Database.
+Node.js came onto the scene four years ago, offering yet another tool for creating server-side software systems that support scalable Internet applications. 
+With the continued support from Microsoft for Nodejs on both Windows and Windows Azure, it is bound to reach great levels. Don't worry if you don't know Node.js - this will not be necessary to understand the session.
+ 
+**Speaker(s):**
+- Mihail Mateev
+ 
+*Track and Room*: Open - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Column Store Index 2012 vs. 2014
+ 
+**Abstract**:
+In dieser Session wird auf die Neuigkeiten und die Verbesserungen vom Column Store Index 2014 eingegangen. 
+
+Der Column Store Index wurde mit der Version 2012 vom SQL Server erstmals eingeführt. Bei vielen ist er in der Praxis noch nicht wirklich angekommen. Dabei bietet er einige Vorzüge. Diese werden vorgestellt und die Versionen 2012 und 2014 werden anhand praktischer Beispiele verglichen.
+ 
+**Speaker(s):**
+- Martin Kopp
+ 
+*Track and Room*: Mixed  - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Session Details not available
+ 
+**Abstract**:
+Session Details not available
+ 
+**Speaker(s):**
+- n/a n/a
+ 
+*Track and Room*: DBA - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Database Replication - What, How and Why
+ 
+**Abstract**:
+Database replication doesn't get much attention, especially now that the AlwaysOn features have been released into the wild.  
+
+However, replication offers another way to make data available on multiple servers/locations that steps outside of "normal" HA/DR scenarios.
+
+This session will explain what database replication is, what the different parts are that make up the replication architecture and when/why you would use replication.
+
+The content will be valid for all versions of SQL Server from 2005 onward.
+ 
+**Speaker(s):**
+- William Durkin
+ 
+*Track and Room*: DBA - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: MapReduce in der Praxis
+ 
+**Abstract**:
+Das Programmiermodel MapReduce, welches vor einigen Jahren von Google veröffentlicht wurde, hat Einzug in zahlreiche Systeme erhalten. Dabei wurde es sowohl als eigenständiges System, wie beispielweise bei Hadoop, Disco oder Amazon Elastic MapReduce, aber auch als Abfragesprache innerhalb größerer Systeme, wie beispielweise bei MongoDB, Greenplum DB oder Aster Data, implementiert.
+Diese Session stellt gängige Problemstellungen aus der Praxis vor und wie diese mit dem MapReduce Framework von Microsoft HDInsight umgesetzt werden können.
+ 
+**Speaker(s):**
+- Sascha Dittmann
+ 
+*Track and Room*: DEV - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+ 
+## Title: Datenzugriff mit Entity Framework – brauchbar oder einfach nur langsam?
+ 
+**Abstract**:
+Microsoft bietet mit dem ADO.NET Entity Framework einen Objekt-Relationalen Mapper für den Zugriff auf  SQL Server und andere Datenbanksysteme. Dieser Vortrag stellt Entity Framework vor und zeigt wie das Laufzeitverhalten von Entity Framework in typischen CRUD-Szenarien ist. Dr. Holger Schwichtenberg hat in den letzten Jahren sehr viel Erfahrung mit Entity Framework gesammelt – auch in Projekten mit mehreren Milliarden Datensätzen. Er wird Tricks zur Optimierung von Entity Framework aufzeigen aber auch die Grenzen benennen: Die Fälle, in denen man doch besser SQL verwendet. 
+ 
+**Speaker(s):**
+- Dr. Holger Schwichtenberg
+ 
+*Track and Room*: DEV - N/A
+ 
+----------------------------------------------------------------------------------- 
+ 
+## <a name="#speakers"></a>Speakers
+This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.
+ 
+ 
+**Martin Kopp**
+ 
+Contact: [https://www.xing.com/profile/Martin_Kopp3](https://www.xing.com/profile/Martin_Kopp3)
+ 
+Dipl.-Wirt.-Inf. Martin Kopp ist Geschäftsführer der arelium GmbH. Seine Kunden unterstützt er in diversen Projekten rund um den SQL Server, Power BI, Azure und SharePoint. Dabei steht neben der Implementierung und Projektleitung die Data Warehouse-Architektur in seinem Fokus. Inzwischen kann er auf mehr als 15 Jahre Erfahrung in diversen Projekten zurückgreifen. Als Sprecher ist er bei SQL Pass in den Regionalgruppen Bonn/Köln/Düsseldorf und Mittelrhein vertreten. Darüber hinaus stellt er immer wieder neue Technologien auf unterschiedlichen Konferenzen vor.
+ 
+**Scott Klein**
+ 
+Twitter:  - [SQLScott](https://www.twitter.com/SQLScott)
+ 
+Contact: [http://aka.ms/sqlscott](http://aka.ms/sqlscott)
+ 
+Scott Klein is a senior consultant with SQL Solutions Group with over two decades of experience working with Microsoft SQL Server. Prior to SSG, Scott spent almost 10 years at Microsoft, traveling the globe as a technical evangelist training and speaking about SQL Server and Microsoft’s Azure data services. Scott’s recent focus has been on advanced analytics, including big data and IoT, providing real-world training to help bring intelligence to your data. Scott has authored several books focusing on data and data analytics. Scott is continuously striving and looking for ways to help developers and companies grok the wonderful world of data.
+ 
+**Mihail Mateev**
+ 
+Twitter:  - [mihailmateev](https://www.twitter.com/mihailmateev)
+ 
+LinkedIn: [Mihail Mateev](http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1)
+ 
+Contact: [https://mmateev.wordpress.com/](https://mmateev.wordpress.com/)
+ 
+Mihail Mateev is a technical consultant, community enthusiast, PASS Regional Mentor for CEE, chapter lead, Microsoft Azure MVP, Microsoft Regional Director. He works as a Senior Solutions Architect at EPAM Systems, focused on Data Platform, IoT and cloud related solutions. He also worked many years like a Technical evangelist in the Infragistics. Last years Mihail was focused on various areas related to technology Microsoft: Data Platform, Visual Studio, ASP.Net, Windows client apps, Data Platform, and Microsoft Azure. Michael also has a PhD in cloud computing area. He is a university lecturer on Smart Homes and Smart Energy IoT Solutions.
+ 
+**David Postlethwaite**
+ 
+Twitter:  - [@postledm](https://www.twitter.com/@postledm)
+ 
+LinkedIn: [David Postlethwaite](http://www.linkedin.com/in/davidpostlethwaite)
+ 
+Contact: [http://www.gethynellis.com/](http://www.gethynellis.com/)
+ 
+David Postlethwaite has been a DBA for Liverpool Victoria in Bournemouth, England since 2008
+He supports both Oracle and SQL Server from 2000 to 2017, DBMS, SSIS, SSAS and Reporting Services.
+In 2015 David built and deployed the company's first cloud solution using Microsoft Azure SQL Database and web services 
+
+Before becoming a DBA David was a .NET developer and way back in history a Windows and Netware administrator. 
+
+He is an occasional blogger on www.gethynellis.com
+
+David is a regular speaker for SQL Saturday.
+Most of his presentations can be found on his YouTube channel www.youtube.com/c/DavidPostlethwaiteSQL
+ 
+**Alexander Karl**
+ 
+Twitter:  - [sqlfabrik](https://www.twitter.com/sqlfabrik)
+ 
+Alexander Karl is database-developer and certified MCT for Windows and SQL Server with .net-CDE GmbH. For more than 18 years he has been working with Database-, Datawarehouse- and Reporting-Solutions for companies from medium-sized enterprises to Group level. His spectrum includes Serversizing, Programming to optimize performances as well as Report- and Chartdesign; in trainings and seminars he conveys participants well-founded theoretical knowledge complemented with his practical.
+ 
+**Andreas Wolter**
+ 
+Twitter:  - [AndreasWolter](https://www.twitter.com/AndreasWolter)
+ 
+LinkedIn: [Andreas Wolter](http://www.linkedin.com/in/andreaswolter)
+ 
+Contact: [http://www.andreas-wolter.com/blog/](http://www.andreas-wolter.com/blog/)
+ 
+Andreas Wolter is a Program Manager for SQL Server- and Azure Security at Microsoft. In this role he is working on Security features of SQL Server, Azure SQL Database and Managed Instance. He is currently focusing on “Separation of Duties”-concepts and RBAC-Integration. He has 18 years of experience with SQL Server before joining Microsoft and is the founder of Sarpedon Quality Lab, the Germany-based company specialized on SQL Server HA, Performance and Security. He is Microsoft Certified Master (MCM) for SQL Server and Microsoft Certified Solutions Master for the Data Platform (MCSM) and was recognized as MVP for multiple years in row.
+ 
+**Dejan Sarka**
+ 
+Twitter:  - [DejanSarka](https://www.twitter.com/DejanSarka)
+ 
+Contact: [http://blogs.solidq.com/dsarka/Home.aspx](http://blogs.solidq.com/dsarka/Home.aspx)
+ 
+Dejan Sarka, MCT and Data Platform MVP, is an independent trainer and consultant that focuses on development of database and business intelligence applications. Besides projects, he spends about half of his time on training and mentoring. He is the founder of the Slovenian SQL Server and .NET Users Group. Dejan Sarka is the main author or co-author of eighteen books about databases and SQL Server. Dejan Sarka has also developed many courses and seminars for Microsoft, Radacad, SolidQ, and Pluralsight.
+ 
+**Scott Klein**
+ 
+Twitter:  - [SQLScott](https://www.twitter.com/SQLScott)
+ 
+Contact: [http://aka.ms/sqlscott](http://aka.ms/sqlscott)
+ 
+Scott Klein is a senior consultant with SQL Solutions Group with over two decades of experience working with Microsoft SQL Server. Prior to SSG, Scott spent almost 10 years at Microsoft, traveling the globe as a technical evangelist training and speaking about SQL Server and Microsoft’s Azure data services. Scott’s recent focus has been on advanced analytics, including big data and IoT, providing real-world training to help bring intelligence to your data. Scott has authored several books focusing on data and data analytics. Scott is continuously striving and looking for ways to help developers and companies grok the wonderful world of data.
+ 
+**n/a n/a**
+ 
+
+ 
+**William Durkin**
+ 
+Twitter:  - [@sql_williamd](https://www.twitter.com/@sql_williamd)
+ 
+LinkedIn: [William Durkin](http://www.linkedin.com/in/wdurkin)
+ 
+Contact: [http://williamdurkin.com](http://williamdurkin.com)
+ 
+William Durkin is a DBA, Data Platform MVP, and Data Platform Architect for Data Masterminds (http://datamasterminds.io). He uses his decade of experience with SQL Server to help multinational corporations achieve their data management goals. Born in the UK and now based in Germany, William has worked as a Database Developer and DBA on projects ranging from single server installations, up to environments spanning 5 continents, using a range of high availability solutions. William is a regular speaker at conferences around the globe, organizes the popular event SQLGrillen (http://sqlgrillen.com).
+ 
+**Frank Geisler**
+ 
+Twitter:  - [@Frank Geisler](https://www.twitter.com/@Frank Geisler)
+ 
+LinkedIn: [Frank Geisler](https://www.linkedin.com/profile/view?id=4839367)
+ 
+Contact: [http://www.gdsbi.de](http://www.gdsbi.de)
+ 
+Frank Geisler is owner and CEO of GDS Business Intelligence GmbH. He is SQL Server MVP, MCT,  MCSE – Business Intelligence, MCSE – Data Plattform and MCSE - Azure Solutions Architect. In his Job he is building Business Intelligence Systems based on Microsoft Technology, mainly on SQL Server and SharePoint.
+ 
+**Christoph Muthmann**
+ 
+LinkedIn: [Christoph Muthmann](https://www.linkedin.com/profile/preview?vpa=pubamp;locale=en_US)
+ 
+Contact: [http://www.insidesql.org/blogs/cmu/](http://www.insidesql.org/blogs/cmu/)
+ 
+Christoph Muthmann ist seit vielen Jahren mit dem Design und der Administration von Datenbanken besch#228;ftigt. Sein Schwerpunkt ist die Weiterentwicklung und Administration der SQL Server mit #252;ber 600 Datenbanken, welche er seit ca. 1996, beginnend mit der Version 6.5 betreut. Seit 2008 ist er SQL Server MVP, berichtet in seinem Blog auf insidesql.org #252;ber SQL Server und PASS und seit 2010 unterst#252;tzt er aktiv die PASS Regionalgruppe K#246;ln/Bonn/D#252;sseldorf.
+ 
+**Dr. Holger Schwichtenberg**
+ 
+Contact: [http://www.IT-Visions.de](http://www.IT-Visions.de)
+ 
+Dr. Holger Schwichtenberg ist Leiter des renommierten .NET-Expertennetzwerks www.IT-Visions.de (http://www.IT-Visions.de), das zahlreiche Unternehmen in Europa durch Beratung, Schulung, Coaching und Support unterstützt. Er gehört durch seine Auftritte auf nationalen und internationalen Fachkonferenzen sowie zahlreiche Fachbücher für Addison-Wesley, Microsoft Press und den Hanser Verlag zu den bekanntesten .NET-Experten in Deutschland. Von Microsoft ist seit 11 Jahren als MVP ausgezeichnet.
+ 
+**Oliver Engels**
+ 
+Twitter:  - [@oengels](https://www.twitter.com/@oengels)
+ 
+Contact: [http://www.ssis-components.net](http://www.ssis-components.net)
+ 
+Oliver Engels is CEO of oh22data AG, a Microsoft Gold Partner in Germany specializing in CRM and BI. His special interests are Azure, Data Governance and Integration, Visualisation Tools like SSRS, Power BI, Tableau, R, and SharePoint. He has worked with SQL Server since version 6.5 and is a founder and Board member of PASS Germany, a PASS Regional Mentor, and runs the Frankfurt PASS Local Group. For more than seven years he is a Microsoft Data Platform MVP and a Microsoft pTSP.
+ 
+**Florian Eiden**
+ 
+Twitter:  - [@fleid_bi](https://www.twitter.com/@fleid_bi)
+ 
+LinkedIn: [Florian Eiden](https://www.linkedin.com/in/fleid)
+ 
+Contact: [http://fleid.fr](http://fleid.fr)
+ 
+Data Platform Solution Architect for Microsoft in Western Canada
+ 
+**Harm Knolle**
+ 
+Der Spezialist für Datenmodellierung und Datenbankoptimierung war 15 Jahre lang Professor für Datenbanksysteme an der Hochschule Schmalkalden, bevor er 2013 an die Hochschule Bonn Rhein-Sieg gewechselt ist. Vor seiner Zeit als Hochschullehrer war er mehrere Jahre in der Datenbankforschung sowie als Daten- und Datenbankadministrator tätig. Zu seinem besonderen Anliegen gehört die studienbegleitende Integration und Vernetzung von Studierenden in praxisorientierte Kooperationsprojekte der Hochschule zusammen mit Unternehmen.
+ 
+**Sascha Dittmann**
+ 
+Twitter:  - [SaschaDittmann](https://www.twitter.com/SaschaDittmann)
+ 
+LinkedIn: [Sascha Dittmann](http://de.linkedin.com/in/saschadittmann)
+ 
+Contact: [http://www.sascha-dittmann.de/](http://www.sascha-dittmann.de/)
+ 
+Sascha Dittmann is working as a Data Solution Architect at Microsoft. In his role he supports customers to implement successful cloud solutions. His focus is on Microsoft Azure, SQL Server Business Intelligence, Big Data as well as Data Science. 
+Before he joined Microsoft in 2015, he was working for Ernst  Young as a Software Developer (13 years) and Solution Architect (3 years). During this time he founded the community websites cloudbloggers.de and cloudbloggers.net as well as the user groups .NET Stammtischs Rheinhessen and Xamarin User Group Frankfurt. He's an author of several technical articles and a regular speaker at user groups and conferences. Between 2012 and 2015 he received 4 Microsoft MVP awards for Microsoft Azure.
+ 
+**Niko Neugebauer**
+ 
+Twitter:  - [NikoNeugebauer](https://www.twitter.com/NikoNeugebauer)
+ 
+LinkedIn: [Niko Neugebauer](http://pt.linkedin.com/in/webcaravela/)
+ 
+Contact: [http://www.nikoport.com](http://www.nikoport.com)
+ 
+Niko Neugebauer is a Data Platform Consultant. A SQL Server MVP with over 20 years of experience in IT, he is passionate about the Microsoft Data Platform and community. Founder of the Portuguese SQL Server User Group and the main organizer of the first SQLSaturday event outside of North America (#78 Portugal), Niko speaks regularly at events such as PASS Summit, SQLRally, SQLBits, and SQLSaturday events around the world. Niko loves sharing information and knowledge and has authored over 130 blog posts on Columnstore Indexes, and regularly contributes to the open-sourced CISL library focused on Columnstore Indexes.
+ 
+**Stephan Köppen**
+ 
+Contact: [http://www.oraylis.de](http://www.oraylis.de)
+ 
+Die Vortragenden, Dennis Mausbach und Stephan Köppen, sind Berater beim BI Dienstleister ORAYLIS. Seit über 7 Jahren beschäftigen sie sich mit MS SQL-Server und dem zugehörigen BI-Stack. In den letzten 2 Jahren haben sie ihren Fokus auf PDW getriebenen Datawarehouse Lösungen gelegt, welche sie zu seiner Zeit beim ersten deutschen Kunden E-Plus implementiert haben.
+ 
+**Oliver Engels**
+ 
+Twitter:  - [@oengels](https://www.twitter.com/@oengels)
+ 
+Contact: [http://www.ssis-components.net](http://www.ssis-components.net)
+ 
+Oliver Engels is CEO of oh22data AG, a Microsoft Gold Partner in Germany specializing in CRM and BI. His special interests are Azure, Data Governance and Integration, Visualisation Tools like SSRS, Power BI, Tableau, R, and SharePoint. He has worked with SQL Server since version 6.5 and is a founder and Board member of PASS Germany, a PASS Regional Mentor, and runs the Frankfurt PASS Local Group. For more than seven years he is a Microsoft Data Platform MVP and a Microsoft pTSP.
+ 
+**Matija Lah**
+ 
+Twitter:  - [@MatijaLah](https://www.twitter.com/@MatijaLah)
+ 
+LinkedIn: [Matija Lah](http://si.linkedin.com/in/matijalah/)
+ 
+Contact: [http://milambda.blogspot.com](http://milambda.blogspot.com)
+ 
+Matija Lah has more than a decade of experience working with Microsoft SQL Server, mostly architecting data-centric solutions in the legal domain. His contributions to the SQL Server community have led to the Microsoft Most Valuable Professional award in 2007 (Data Platform), which he held until 2017. In 2008 Matija joined SolidQ as a Mentor, located in Central and Eastern Europe. He spends most of his time on projects involving advanced information management, and natural language processing.
+ 
+**Sergey Olontsev**
+ 
+Twitter:  - [SergeyOlontsev](https://www.twitter.com/SergeyOlontsev)
+ 
+LinkedIn: [Sergey Olontsev](http://linkedin.com/in/sergeyolontsev)
+ 
+Contact: [http://SergeyOlontsev.com/](http://SergeyOlontsev.com/)
+ 
+I have been working with SQL Server since SQL Server 2000 version as a database administrator, developer, consultant and trainer, focusing on high availability and disaster recovery solutions, ETL, troubleshooting and performance tuning, developing high performance solutions . I'm a regular speaker at SQL Server user group meetings, SQL Saturday events and other conferences. An owner of MCM certification and MVP award on SQL Server.
+ 
+**Jean-Pierre Riehl**
+ 
+Twitter:  - [djeepy1](https://www.twitter.com/djeepy1)
+ 
+LinkedIn: [Jean-Pierre Riehl](http://fr.linkedin.com/in/djeepy1)
+ 
+Contact: [http://blog.djeepy1.net](http://blog.djeepy1.net)
+ 
+Architect, Consultant, Trainer and also Manager, Jean-Pierre leads the Data  BI Practice at AZEO, a French Microsoft "pure-player" partner. 
+Jean-Pierre is MVP Data Platform since 2008 and speaks at many events in France and in Europe. JP leads the local community (GUSS) and organize events in France since 2011 : MS Cloud Summit, Les Journées SQL Server, SQLSaturday, etc. 
+JP is passionate by data concerns in business like Data Governance, Data Quality or Data Vizualisation and since 2010, he’s specialized in Self-Service BI. His favorite topic is Power BI and business usages and technical architectures that go with.
+ 
+**Christoph Seck**
+ 
+Christoph works as a BI Architect for KI Performance.  With SQL Server and its BI Stack he is dealing for more than 15 years.
+He is cofounder and chapter leader of the German PASS chapter of Hannover, Visiting Lecturer at the University of Hildesheim and regular speaker at conferences and German PASS events on DWH topics and agile project management.
+ 
+**Boris Hristov**
+ 
+Twitter:  - [https://twitter.com/BorisHristov](https://www.twitter.com/https://twitter.com/BorisHristov)
+ 
+LinkedIn: [Boris Hristov](http://bg.linkedin.com/in/borishristov)
+ 
+Contact: [http://borishristov.com/blog/](http://borishristov.com/blog/)
+ 
+Boris is a SQL Server Consultant, but also an Author for Pluralsight and a SQL Server MVP. He is frequently speaking at conferences all accross Europe and is heavily involved in training students and organizations in what he calls quot;The Art of SQL Serverquot;. Boris is frequently blogging and is the host of SQLHangouts.
+ 
+**Constantin Klein**
+ 
+Twitter:  - [KostjaKlein](https://www.twitter.com/KostjaKlein)
+ 
+Contact: [http://kostjaklein.wordpress.com](http://kostjaklein.wordpress.com)
+ 
+Constantin is working at Syntax Systems GmbH  Co. KG. He mainly deals with the design and development of solutions based on Microsoft products and technologies. Since 2010 he was each year designated Most Valuable Professional (MVP) for the Microsoft Data Platform. In addition he is member of the board of Just Community e.V. (http://www.justcommunity.de) and PASS Deutschland e.V. (http://www.sqlpass.de). He also leads the .NET User Group Frankfurt/Germany (http://dnug-frankfurt.de). Find his blog at: http://kostjaklein.wordpress.com
+ 
+**Marcel Franke**
+ 
+Contact: [http://dwjunkie.wordpress.com](http://dwjunkie.wordpress.com)
+ 
+Marcel Franke is a Practice Lead based in Germany with around 10 years of experiences in building and designing Data Warehouse amp; Big Data solutions based on the Microsoft platform. His focuses are Advanced Analytics, Data Science, and large scale BI Applications. Marcel is part of an advisory and research team supporting the largest Analytical installations on SQL Server and Open Source software in the German speaking area (Germany, Austria, and Switzerland). 
+ 
+**Miloš Radivojević**
+ 
+Twitter:  - [MilosSQL](https://www.twitter.com/MilosSQL)
+ 
+LinkedIn: [Miloš Radivojević](http://at.linkedin.com/pub/milos-radivojevic/1b/7bb/290/de)
+ 
+Contact: [https://milossql.wordpress.com/](https://milossql.wordpress.com/)
+ 
+Miloš Radivojević is a database consultant located in Vienna, Austria. He is Data Platform MVP and specializes in SQL Server for application developers and performance and query tuning. Currently, he works as a principal database consultant in bwin GVC (the largest regulated online gaming company in the world). He is co-founder of the SQL Pass Austria and speaks regularly at local and international database conferences. He is also co-author of the books SQL Server 2016 Developer's Guide, SQL Server 2017 Developer's Guide and Mastering SQL Server 2017.
+ 
+**Sascha Lorenz**
+ 
+Twitter:  - [saschalorenz](https://www.twitter.com/saschalorenz)
+ 
+LinkedIn: [Sascha Lorenz](https://www.linkedin.com/in/saschalorenz/)
+ 
+Contact: [http://saschalorenz.blogspot.com](http://saschalorenz.blogspot.com)
+ 
+Sascha works for the PSG GmbH since 1994 as a Principal Consultant focusing on the Microsoft Data Platform. He is active in the SQL community as an organizer of the Hamburg (Germany) PASS Chapter, as a speaker on SQL Server related events and rewarded as a former Data Platform MVP.
+ 
+ 
+ 
+## <a name="sponsors"></a>Sponsors
+The following is a list of sponsors that helped fund the event:
+ 
+- [Microsoft Corporation (GAP)](http://www.microsoft.com/en-us/server-cloud/products/sql-server/)
+ 
+- [ApexSQL LLC](http://www.apexsql.com/?utm_source=SQLSaturdaysutm_medium=sponsorlinkutm_campaign=%5BSQLSaturdays-Homepage%5D)
+ 
+- [Quest SOFTWARE GmbH](https://www.quest.com/de-de/)
+ 
+- [Attunity](http://www.attunity.com)
+ 
+- [Redgate Software (GAP)](http://rd.gt/2j7SNf9)
+ 
+- [SIOS Technology](http://us.sios.com/company/)
+ 
+- [HSO Enterprise Solutions GmbH](http://www.hso.com/)
+ 
+- [Melissa Data GmbH](http://www.melissadata.de)
+ 
+- [Idera](http://www.idera.com/Content/Home.aspx)
+ 
+- [inovex GmbH](http://www.inovex.de)
+ 
+- [Sarpedon Quality Lab](http://www.sarpedonqualitylab.com/)
+ 
+- [ORBIT IT-Solutions](http://www.orbit.de)
+ 
+- [Theobald Software GmbH](http://theobald-software.com/)
+ 
+- [Cozy Roc](http://www.cozyroc.com)
+ 
+- [O'Reilly Verlag GmbH  Co. KG](http://www.oreilly.de)
+ 
+- [Galileo Press GmbH](http://www.galileo-press.de/)
+ 
+- [Visual Studio One](http://www.visualstudio1.de)
+ 
+- [Software  Support Media GmbH](http://windowsdeveloper.de)
+ 
+- [Fusion IO a SanDisk Company](http://www.fusionio.com/)
+ 
+[Back to the SQL Saturday Event List](/past)
+ 
+[Back to the home page](/index)
+ 
