@@ -90,6 +90,7 @@ layout: base
   {% endif %}
 
   {% if pagedata.social.pinterest %}
+  Pinterest
     <a href="https://pinterest.com/{{ pagedata.social.pinterest }}"
       class="btn btn-social-icon btn-pinterest" title="Share on Pinterest">
       <span class="fab fa-fw fa-pi" aria-hidden="true"></span>
@@ -98,6 +99,7 @@ layout: base
   {% endif %}
 
   {% if pagedata.social.instagram %}
+    Instagram
     <a href="https://instagram.com/{{ pagedata.social.instagram }}"
       class="btn btn-social-icon btn-instagram" title="Share on Instagram">
       <span class="fab fa-fw fa-lg" aria-hidden="true"></span>
@@ -163,7 +165,7 @@ layout: base
          <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>   
       {% else %}
        <p>You can submit a session by clicking the link below</p>
-       <p>
+       <p align="center">
        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.speakerlisturl}}">Submit your session</a>
        </p>
       {% endif %}                         
@@ -175,8 +177,8 @@ layout: base
       <div id="sponsors">
         <h2 align="center"><A name="sponsor"></A>Sponsors</h2>
         <p>Here are a list of the current sponsors:</p>
-        <p>{{pagedata.sponsors.link[1] }}</p>
-        {% for sponsor in pagedate.sponsors %}
+        {% assign sponsorlist = pagedata.sponsors}
+        {% for sponsor in pagedata.sponsors %}
           <a href="{{sponsor.link}}" target="_blank">
              <img src="{{sponsor.image}}" height="{{sponsor.height}}"/>
           </a>
