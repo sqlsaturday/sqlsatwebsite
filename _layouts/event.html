@@ -21,6 +21,8 @@ layout: base
 
     <!-- Event -->
       {% assign eventdate = pagedata.date %}
+      <img src="{{pagedata.logo}}"/>
+      <br/>
       <p>Event Date: {{ eventdate | date_to_long_string }}
       </p>
       <p>{{pagedata.description}}</p>
@@ -42,6 +44,71 @@ layout: base
       <p>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
       </p>
+<!-- Social -->      
+<!-- Check if any share-links are active -->
+{% assign any-share-links = false %}
+{% for links in pagedata.social %}
+  {% if links[1] == true %}
+    {% assign any-share-links = true %}
+  {% endif %}
+{% endfor %}
+
+{% if any-share-links %}
+<section id = "event-share-section">
+  <span class="sr-only">Share: </span>
+
+  {% if pagedata.social.twitter %}
+    <a href="https://twitter.com/@{{ pagedata.social.twitter }}"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  {% endif %}
+
+  {% if pagedata.social.facebook %}
+    <a href="https://www.facebook.com/{{ pagedata.social.facebook }}"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  {% endif %}
+
+  {% if pagedata.social.linkedin %}
+    <a href="{{ pagedata.social.linkedin }}"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  {% endif %}
+
+  {% if pagedata.social.pinterest %}
+    <a href="https://pinterest.com/{{ pagedata.social.pinterest }}"
+      class="btn btn-social-icon btn-pintrest" title="Share on Pinterest">
+      <span class="fab fa-fw fa-pi" aria-hidden="true"></span>
+      <span class="sr-only">Pinterest</span>
+    </a>
+  {% endif %}
+
+  {% if pagedata.social.instagram %}
+    <a href="https://instagram.com/{{ pagedata.social.instagram }}"
+      class="btn btn-social-icon btn-instagram" title="Share on Instagram">
+      <span class="fab fa-fw fa-lg" aria-hidden="true"></span>
+      <span class="sr-only">instagram</span>
+    </a>
+  {% endif %}
+
+  {% if pagedata.social.tiktok %}
+    <a href="https://tiktok.com/@{{ pagedata.social.tiktok }}"
+      class="btn btn-social-icon btn-tiktok" title="Share on Tiktok">
+      <span class="fab fa-fw fa-tt" aria-hidden="true"></span>
+      <span class="sr-only">tiktok</span>
+    </a>
+  {% endif %}
+
+</section>
+
+{% endif %}
+
       {% if pagedata.eventlocation %}
       <h3>Location</h3>
       <p>
@@ -106,9 +173,16 @@ layout: base
       <!-- Sponsors -->
       <div id="sponsors">
         <h2 class="section-heading">Sponsors</h2>
-           <p>
+        {% if pagedata.sponsors %}
+        {% for sponsor in pagedate.sponsors %}
+          <a href="{{sponsor.link}}" target="_blank">
+             <img src="{{sponsor.image}}" height="{{sponsor.height}}"/>
+          </a>
+        {% endfor %}
+        {% endif %}                         
+        <p>
            {% if pagedata.sponsors.contacturl %}
-             For sponsor information follow <a href="{{pagedata.sponsors.contacturl}}">this link</a>.
+             For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
            {% else %}
              <p><a href="#contact">Contact the organizers</a> for information about sponsoring this event.</p>
            {% endif %}                         
