@@ -174,14 +174,12 @@ layout: base
       <!-- Sponsors -->
       <div id="sponsors">
         <h2 align="center"><A name="sponsor"></A>Sponsors</h2>
-        {% if pagedata.sponsors %}
         <p>Here are a list of the current sponsors:</p>
         {% for sponsor in pagedate.sponsors %}
           <a href="{{sponsor.link}}" target="_blank">
              <img src="{{sponsor.image}}" height="{{sponsor.height}}"/>
           </a>
         {% endfor %}
-        {% endif %}                         
         <p>
            {% if pagedata.sponsors.contacturl %}
              For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
