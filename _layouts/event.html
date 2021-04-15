@@ -164,7 +164,11 @@ layout: base
        <p>The call for speakers is now closed. You can see a list of the speakers:</p>
          <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>   
       {% else %}
-       <p>You can submit a session by clicking the link below</p>
+       <p>You can submit a session by clicking the link below.
+       {% if pagedata.callforspeakersenddate %}
+        The call for speakers ends on {{ pagedata.callforspeakersenddate }}
+       {% endif %}
+       </p>
        <p align="center">
        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.speakerlisturl}}">Submit your session</a>
        </p>
@@ -179,9 +183,10 @@ layout: base
         <p>Here are a list of the current sponsors:</p>
         {% assign sponsorlist = pagedata.sponsors %}
         {% for sponsor in pagedata.sponsors %}
-          <a href="{{sponsor.link}}" target="_blank">
+          <p><a href="{{sponsor.link}}" target="_blank">
              <img src="{{sponsor.image}}" height="{{sponsor.height}}"/>
           </a>
+          </p>
         {% endfor %}
         <p>
            {% if pagedata.sponsors.contacturl %}
