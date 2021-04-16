@@ -26,6 +26,11 @@ layout: base
       <p>Event Date: {{ eventdate | date_to_long_string }}
       </p>
       <p>{{pagedata.description}}</p>
+
+      {% if pagedata.officialwebsite %}
+      <p>The official website is: <a href="{{ pagedata.officialwebsite }}">{{ pagedata.officialwebsite }}</a></p>
+      {% endif %}
+
       <p>This event is:
          <ul>
          {% if pagedata.virtual == true %}
