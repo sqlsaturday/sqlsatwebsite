@@ -63,21 +63,30 @@ layout: base
 
       <!-- Countdown clock -->
       {% if pagedata.eventcountdown %}
+      <p align="center">
         {{ pagedata.eventcountdown }}
+      </p>
       {% endif %}
 
       
 
-     <!-- Social -->      
+     <!-- Social -->
+     <p>
      {% if pagedata.social.twitter %}
-       <a href="https://twitter.com/intent/tweet?text=#SQLSatLA-{{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
-         class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+       <a href="{{ pagedata.social.twitter }}"
+         class="btn btn-social-icon btn-twitter" title="Follow us on Twitter">
          <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
          <span class="sr-only">Twitter</span>
        </a>
      {% endif %}
-
-     <iframe src="free.timeanddate.com/countdown/i7rs…" allowtransparency="true" frameborder="0" width="320" height="135"></iframe>
+     {% if pagedata.social.linkedin %}
+       <a href="{{ pagedata.social.linkedin }}"
+       class="btn btn-social-icon btn-linkedin" title="Follow us on LinkedIn">
+       <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+       <span class="sr-only">LinkedIn</span>
+        </a>
+     {% endif %}
+     </p>
 
       <!-- Location for event -->
       {% if pagedata.eventlocation %}
