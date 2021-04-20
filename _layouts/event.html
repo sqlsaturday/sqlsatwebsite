@@ -199,6 +199,24 @@ layout: base
             <p>&nbsp;</p>
             <p>&nbsp;</p>
       
+
+      <!-- Rooms -->
+      <h2 align="center"><A name="rooms"></A>Rooms</h2>
+      {% if pagedata.join.description %}
+        <p> {{pagedata.join.description}}
+        </p>
+        <p>
+          {%- for room in pagedata.join.rooms -%}
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mr-4" target="_blank" href="{{room.url}}">{{room.name}}</a>
+          {%- endfor %}
+        </p>
+        {% else %}
+        <p>The rooms are not available for this event.</p>
+      {% endif %}
+      <p> &nbsp;</p>
+      <p> &nbsp;</p>
+
+
       <!-- Speakers -->
       <div id="speakers">
       <h2 align="center"><A name="speaker"></A>Speakers</h2>
