@@ -141,6 +141,7 @@ layout: base
    
       <!-- Sponsors -->
       <h2 align="center"><A name="sponsor2"></A>Please Visit Our Sponsors</h2>
+      <p>&nbsp;</p>
       {% if pagedata.sponsorcarousel %}
         {% assign sponsorlist = pagedata.sponsors %}
         <div id="SponsorCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -161,14 +162,13 @@ layout: base
         </div>
       {% else %}
         {% for sponsor in pagedata.sponsors %}
-        <p>
+        <p align="center">
           <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
           <img src="{{ sponsor.image }}" height="{{ sponsor.height }}">
           </a>
         </p>
         {% endfor %}
       {% endif %}
-      <p> </p>
         <p>
            {% if pagedata.sponsors.contacturl %}
              For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
@@ -225,8 +225,7 @@ layout: base
       {% endif %}                         
       </p>
       {% if pagedata.callforspeakers == false %}
-       <p>The call for speakers is now closed. You can see a list of the speakers on the submission page:</p>
-         <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>   
+       <p>The call for speakers is now closed. You can see a list of the speakers on <a href="{{pagedata.speakerlisturl}}">the submission page</a>.</p>
       {% else %}
        <p>You can submit a session by clicking the link below.
        {% if pagedata.callforspeakersenddate %}
