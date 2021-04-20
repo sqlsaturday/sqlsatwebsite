@@ -205,13 +205,13 @@ layout: base
       {% if pagedata.join.description %}
         <p> {{pagedata.join.description}}
         </p>
-        <p>
+        <p style="text-align: center;">
           {%- for room in pagedata.join.rooms -%}
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mr-4" target="_blank" href="{{room.url}}">{{room.name}}</a>
           {%- endfor %}
         </p>
         {% else %}
-        <p>The rooms are not available for this event.</p>
+        <p style="text-align: center;">The rooms are not available for this event.</p>
       {% endif %}
       <p> &nbsp;</p>
       <p> &nbsp;</p>
@@ -250,7 +250,7 @@ layout: base
        </p>
        {% endif %}                         
         {% if pagedata.volunteers.volunteerurl %}
-           <p>
+           <p style="text-align: center;">
             <a href="{{pagedata.volunteers.volunteerurl}}">Volunteer information</a>.
           </p>
           {% endif %}                         
