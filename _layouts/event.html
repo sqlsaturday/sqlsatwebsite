@@ -31,6 +31,13 @@ layout: base
       <p>The official website is: <a href="{{ pagedata.officialwebsite }}">{{ pagedata.officialwebsite }}</a></p>
       {% endif %}
 
+      <!-- Countdown clock -->
+      {% if pagedata.eventcountdown %}
+      <p style="text-align: center;">
+        {{ pagedata.eventcountdown }}
+      </p>
+      {% endif %}
+
       <p>This event is:
          <ul>
          {% if pagedata.virtual == true %}
@@ -69,14 +76,7 @@ layout: base
         <a href="#contact">Contact the organizers</a>
       </p>
 
-      <!-- Countdown clock -->
-      {% if pagedata.eventcountdown %}
-      <p style="text-align: center;">
-        {{ pagedata.eventcountdown }}
-      </p>
-      {% endif %}
-
-      
+ 
 
      <!-- Social -->
      <p style="text-align: center;">
@@ -140,9 +140,9 @@ layout: base
       {% endif %}
    
       <!-- Sponsors -->
+      <h2 align="center"><A name="sponsor2"></A>Please Visit Our Sponsors</h2>
       {% if pagedata.sponsorcarousel %}
         {% assign sponsorlist = pagedata.sponsors %}
-        <h2 align="center"><A name="sponsor2"></A>Please Visit Our Sponsors</h2>
         <div id="SponsorCarousel" class="carousel slide" data-bs-ride="carousel">
       
         <!-- Wrapper for slides -->
