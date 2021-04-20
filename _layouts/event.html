@@ -142,10 +142,10 @@ layout: base
         {% assign first = 0 %}
         {% for sponsor in pagedata.sponsors %}
             {% if first == 0 %}
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-bs-interval="1000">
               {% assign first = 1 %}
             {% else %}
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="1000">
               {% endif %}
             <img src="{{sponsor.image}}" class="d-block w-100" alt="{{sponsor.name}}">
           </div>
