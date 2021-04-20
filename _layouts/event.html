@@ -185,6 +185,14 @@ layout: base
           </div>
           {% endfor %}
         </div>
+      {% else %}
+        {% for sponsor in pagedata.sponsors %}
+        <p>
+          <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
+          <img src="{{ sponsor.image }}" height="{{ sponsor.height }}">
+          </a>
+        </p>
+        {% endfor %}
       {% endif %}
       <p> </p>
         <p>
