@@ -61,6 +61,12 @@ layout: base
         <a href="#contact">Contact the organizers</a>
       </p>
 
+      <!-- Countdown clock -->
+      {% if pagedata.eventcountdown %}
+        {{ pagedata.eventcountdown }}
+      {% endif %}
+
+      
 
      <!-- Social -->      
      {% if pagedata.social.twitter %}
