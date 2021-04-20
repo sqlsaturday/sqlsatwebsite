@@ -143,23 +143,7 @@ layout: base
       <h2 align="center"><A name="sponsor2"></A>Please Visit Our Sponsors</h2>
       <p>&nbsp;</p>
       {% if pagedata.sponsorcarousel %}
-        {% assign sponsorlist = pagedata.sponsors %}
-        <div id="SponsorCarousel" class="carousel slide" data-bs-ride="carousel">
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-        {% assign first = 0 %}
-        {% for sponsor in pagedata.sponsors %}
-            {% if first == 0 %}
-              <div class="carousel-item active" data-bs-interval="1000">
-              {% assign first = 1 %}
-            {% else %}
-            <div class="carousel-item" data-bs-interval="1000">
-              {% endif %}
-            <img src="{{sponsor.image}}" class="d-block w-100" alt="{{sponsor.name}}">
-          </div>
-          {% endfor %}
-        </div>
+      {% include carousel.html name="Sponsorlist"}
       {% else %}
         {% for sponsor in pagedata.sponsors %}
         <p align="center">
