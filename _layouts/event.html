@@ -52,6 +52,10 @@ layout: base
       <p align="center">
         <a href="#schedule">Schedule</a> 
         &#x25CF 
+        {% if pagedata.eventlocation %}
+        <a href="#location">Location</a> 
+        &#x25CF 
+        {% endif %}
         <a href="#schedule">Speakers</a> 
         &#x25CF 
         <a href="#sponsor">Sponsors</a> 
@@ -71,7 +75,7 @@ layout: base
       
 
      <!-- Social -->
-     <p>
+     <p style="text-align: center;">
      {% if pagedata.social.twitter %}
        <a href="https://www.twitter.com/{{ pagedata.social.twitter }}" target="_blank"
          class="btn btn-social-icon btn-twitter" title="Follow us on Twitter">
@@ -87,24 +91,31 @@ layout: base
         </a>
      {% endif %}
      {% if pagedata.social.instagram %}
-       <a href="{{ pagedata.social.instagram }}" 
+       <a href="https://www.instagram.com/{{ pagedata.social.instagram }}" 
        class="btn btn-social-icon btn-instagram" title="Follow us on Instagram">
        <span class="fab fa-fw fa-instagram" aria-hidden="true"></span>
        <span class="sr-only">Instagram</span>
         </a>
      {% endif %}
      {% if pagedata.social.youtube %}
-       <a href="{{ pagedata.social.youtube }}" 
+       <a href="https://www.youtube.com/{{ pagedata.social.youtube }}" 
        class="btn btn-social-icon btn-youtube" title="Follow us on YouTube">
        <span class="fab fa-fw fa-youtube" aria-hidden="true"></span>
        <span class="sr-only">YouTube</span>
         </a>
      {% endif %}
      {% if pagedata.social.pinterest %}
-       <a href="{{ pagedata.social.pinterest }}" 
+       <a href="https://www.pinterest.com/{{ pagedata.social.pinterest }}" 
        class="btn btn-social-icon btn-pinterest" title="Follow us on Pinterest">
        <span class="fab fa-fw fa-pinterest" aria-hidden="true"></span>
        <span class="sr-only">Pinterest</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.facebook %}
+       <a href="https://www.facebook.com/{{ pagedata.social.facebook }}" 
+       class="btn btn-social-icon btn-facebook" title="Follow us on Facebook">
+       <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+       <span class="sr-only">Facebook</span>
         </a>
      {% endif %}
      </p>
@@ -124,47 +135,6 @@ layout: base
       <p>&nbsp;</p>
       {% endif %}
    
-
-    <!-- Schedule -->
-          <h2 align="center"><A name="schedule"></A>Schedule</h2>
-            {% if pagedata.scheduleurl%}
-            <p>
-              <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
-              </iframe>
-            </p>
-            {% else %}
-              <p>
-                 The schedule has not been announced yet. 
-              </p>
-              {% if pagedata.callforspeakers == true %}
-              <p>
-                 If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.
-              </p>
-              {% endif %}
-            {% endif %}
-      
-      <!-- Speakers -->
-      <div id="speakers">
-      <h2 align="center"><A name="speaker"></A>Speakers</h2>
-      {% if pagedata.speakertext %}
-      <p>{{pagedata.speakertext}}</p>
-      {% endif %}                         
-      </p>
-      {% if pagedata.callforspeakers == false %}
-       <p>The call for speakers is now closed. You can see a list of the speakers on the submission page:</p>
-         <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>   
-      {% else %}
-       <p>You can submit a session by clicking the link below.
-       {% if pagedata.callforspeakersenddate %}
-        The call for speakers ends on {{ pagedata.callforspeakersenddate }}
-       {% endif %}
-       </p>
-       <p align="center">
-       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.speakerlisturl}}">Submit your session</a>
-       </p>
-      {% endif %}                         
-    </div>
-
       <!-- Sponsors -->
       {% if pagedata.sponsorcarousel %}
         {% assign sponsorlist = pagedata.sponsors %}
@@ -204,10 +174,51 @@ layout: base
            </p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-      </div>
+
+    <!-- Schedule -->
+          <h2 align="center"><A name="schedule"></A>Schedule</h2>
+            {% if pagedata.scheduleurl%}
+            <p>
+              <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+              </iframe>
+            </p>
+            {% else %}
+              <p>
+                 The schedule has not been announced yet. 
+              </p>
+              {% if pagedata.callforspeakers == true %}
+              <p>
+                 If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.
+              </p>
+              {% endif %}
+            {% endif %}
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+      
+      <!-- Speakers -->
+      <div id="speakers">
+      <h2 align="center"><A name="speaker"></A>Speakers</h2>
+      {% if pagedata.speakertext %}
+      <p>{{pagedata.speakertext}}</p>
+      {% endif %}                         
+      </p>
+      {% if pagedata.callforspeakers == false %}
+       <p>The call for speakers is now closed. You can see a list of the speakers on the submission page:</p>
+         <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>   
+      {% else %}
+       <p>You can submit a session by clicking the link below.
+       {% if pagedata.callforspeakersenddate %}
+        The call for speakers ends on {{ pagedata.callforspeakersenddate }}
+       {% endif %}
+       </p>
+       <p align="center">
+       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.speakerlisturl}}">Submit your session</a>
+       </p>
+      {% endif %}                         
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+     </div>
   
       <!-- Volunteers -->
       <div id="volunters">
