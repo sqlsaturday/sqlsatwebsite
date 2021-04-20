@@ -63,20 +63,19 @@ layout: base
 
 
      <!-- Social -->      
-     <a href="{{ pagedata.social.twitter }}" aria-label="Twitter: {{ pagedata.social.twitter }}"  class="class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a> 
-     <a href="{{ pagedata.social.linkedin }}" aria-label="LinkedIn: {{ pagedata.social.linkedin }}"  class="class="btn btn-social-icon btn-linkedin"><span class="fa fa-linkedin"></span></a> 
      {% if pagedata.social.twitter %}
-       <a href="{{ pagedata.social.twitter }}" aria-label="Twitter: {{ pagedata.social.twitter }}"  class="class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a> 
+       <a href="https://twitter.com/intent/tweet?text=#SQLSatLA-{{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
+         class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+         <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+         <span class="sr-only">Twitter</span>
+       </a>
      {% endif %}
-     {% if pagedata.social.youtube %}
-     <a href="{{ pagedata.social.youtube }}" aria-label="YouTube: {{ pagedata.social.youtube }}"  class="class="btn btn-social-icon btn-youtube"><span class="fa fa-youtube"></span></a> 
-     {% endif %}
-     {% if pagedata.social.pinterest %}
-     <a href="{{ pagedata.social.pinterest }}" aria-label="Pinterest: {{ pagedata.social.pinterest }}"  class="class="btn btn-social-icon btn-pinterest"><span class="fa fa-pinterest"></span></a> 
-     {% endif %}
-  
+
+     <iframe src="free.timeanddate.com/countdown/i7rs…" allowtransparency="true" frameborder="0" width="320" height="135"></iframe>
+
+      <!-- Location for event -->
       {% if pagedata.eventlocation %}
-      <h3>Location</h3>
+      <h3><a name="location"></a>Location</h3>
       <p>
       The event is taking place at:<br/>
       {{pagedata.eventlocation}}
@@ -155,18 +154,6 @@ layout: base
         </div>
       {% endif %}
       <p> </p>
-      <hr>
-      <p> </p>
-      <div id="sponsors">
-        <h2 align="center"><A name="sponsor"></A>Sponsors</h2>
-        <p>Here are a list of the current sponsors:</p>
-        {% assign sponsorlist = pagedata.sponsors %}
-        {% for sponsor in pagedata.sponsors %}
-          <p><a href="{{sponsor.link}}" target="_blank">
-             <img src="{{sponsor.image}}" height="{{sponsor.height}}"/>
-          </a>
-          </p>
-        {% endfor %}
         <p>
            {% if pagedata.sponsors.contacturl %}
              For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
@@ -181,7 +168,7 @@ layout: base
         <p>&nbsp;</p>
       </div>
   
-      <!-- Sponsors -->
+      <!-- Volunteers -->
       <div id="volunters">
         <h2 class="section-heading"><A name="volunteer"></A>Volunteers</h2>
         {% if pagedata.volunteers.description %}
@@ -246,12 +233,12 @@ layout: base
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
         <li class="page-item previous">
-          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Event</a>
         </li>
         {% endif %}
         {% if page.next.url %}
         <li class="page-item next">
-          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Event &rarr;</a>
         </li>
         {% endif %}
       </ul>
