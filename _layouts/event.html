@@ -141,9 +141,9 @@ layout: base
         <div class="carousel-inner">
         {% assign first = 0 %}
         {% for sponsor in pagedata.sponsors %}
-            {% if first = 1 %}
+            {% if first == 0 %}
               <div class="carousel-item active">
-              {% assign first = 0 %}
+              {% assign first = 1 %}
             {% else %}
             <div class="carousel-item">
               {% endif %}
