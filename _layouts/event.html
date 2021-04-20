@@ -23,7 +23,7 @@ layout: base
       {% assign eventdate = pagedata.date %}
       <img src="{{pagedata.logo}}"/>
       <br/>
-      <p>Event Date: {{ eventdate | date_to_long_string }}
+      <p><b>Event Date:</b> {{ eventdate | date_to_long_string }}
       </p>
       <p>{{pagedata.description}}</p>
 
@@ -34,7 +34,7 @@ layout: base
       <p>This event is:
          <ul>
          {% if pagedata.virtual == true %}
-         <li>Virtual</li>
+          <li>Virtual</li>
          {% endif %}
          {% if pagedata.physical == true %}
          <li>Live and in-person</li>
@@ -73,17 +73,38 @@ layout: base
      <!-- Social -->
      <p>
      {% if pagedata.social.twitter %}
-       <a href="{{ pagedata.social.twitter }}"
+       <a href="https://www.twitter.com/{{ pagedata.social.twitter }}" target="_blank"
          class="btn btn-social-icon btn-twitter" title="Follow us on Twitter">
          <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
          <span class="sr-only">Twitter</span>
        </a>
      {% endif %}
      {% if pagedata.social.linkedin %}
-       <a href="{{ pagedata.social.linkedin }}"
+       <a href="{{ pagedata.social.linkedin }}" 
        class="btn btn-social-icon btn-linkedin" title="Follow us on LinkedIn">
        <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
        <span class="sr-only">LinkedIn</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.instagram %}
+       <a href="{{ pagedata.social.instagram }}" 
+       class="btn btn-social-icon btn-instagram" title="Follow us on Instagram">
+       <span class="fab fa-fw fa-instagram" aria-hidden="true"></span>
+       <span class="sr-only">Instagram</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.youtube %}
+       <a href="{{ pagedata.social.youtube }}" 
+       class="btn btn-social-icon btn-youtube" title="Follow us on YouTube">
+       <span class="fab fa-fw fa-youtube" aria-hidden="true"></span>
+       <span class="sr-only">YouTube</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.pinterest %}
+       <a href="{{ pagedata.social.pinterest }}" 
+       class="btn btn-social-icon btn-pinterest" title="Follow us on Pinterest">
+       <span class="fab fa-fw fa-pinterest" aria-hidden="true"></span>
+       <span class="sr-only">Pinterest</span>
         </a>
      {% endif %}
      </p>
