@@ -47,7 +47,11 @@ layout: base
       <p>The capacity limit for this event is {{ pagedata.capacity }}
       </p> 
       <p align="center">
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+        {% if pagedata.eventbriteembed %}
+          {{ pagedata.eventbriteembed }}
+        {% else %}
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+        {% endif %}
       </p>
       <p align="center">
         <a href="#schedule">Schedule</a> 
