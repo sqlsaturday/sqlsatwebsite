@@ -243,7 +243,7 @@ layout: base
   
       <!-- Volunteers -->
       <div id="volunters">
-        <h2 class="section-heading"><A name="volunteer"></A>Volunteers</h2>
+        <h2 align="center"><A name="volunteer"></A>Volunteers</h2>
         {% if pagedata.volunteers.description %}
         <p>
          {{pagedata.volunteers.description}}
@@ -299,9 +299,11 @@ layout: base
       {% endif %}
 
       {% if page.social-share %}
+      <br />
         {% include social-share.html %}
         <br/>
       {% endif %}
+      <br />
 
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
