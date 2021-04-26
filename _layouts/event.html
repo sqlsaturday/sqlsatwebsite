@@ -34,7 +34,7 @@ layout: base
       <!-- Countdown clock -->
       {% if pagedata.eventcountdown %}
       <p style="text-align: center;">
-        {{ pagedata.eventcountdown }}
+        {% include countdown.liquid {{ pagedata.eventdate }} %}
       </p>
       {% endif %}
 
