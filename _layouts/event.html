@@ -34,7 +34,12 @@ layout: base
       <!-- Countdown clock -->
       {% if pagedata.eventcountdown %}
       <p style="text-align: center;">
-        {% include countdown.liquid {{ pagedata.eventdate }} %}
+        <div class="countdown" data-role="countdown" data-blink="false" style="font-size: 20px"></div>
+        <div class="countdown inverse" data-role="countdown"></div>
+        <div class="countdown" data-role="countdown" data-style-background="bg-lightBlue"></div>
+        <div class="countdown" data-role="countdown" data-style-background="bg-teal" data-style-foreground="fg-yellow"></div>
+        <div class="countdown" data-role="countdown" data-style-divider="fg-red"></div>
+        <div class="countdown" data-role="countdown" data-stoptimer="2021-06-12 08:00"></div>
       </p>
       {% endif %}
 
