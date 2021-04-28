@@ -31,28 +31,21 @@ layout: base
       <p>The official website is: <a href="{{ pagedata.officialwebsite }}">{{ pagedata.officialwebsite }}</a></p>
       {% endif %}
 
-      <!-- Countdown clock -->
-      {% if pagedata.eventcountdown %}
-      <p style="text-align: center;">
-        <div class="countdown" data-role="countdown" data-blink="false" style="font-size: 20px"></div>
-        <div class="countdown inverse" data-role="countdown"></div>
-        <div class="countdown" data-role="countdown" data-style-background="bg-lightBlue"></div>
-        <div class="countdown" data-role="countdown" data-style-background="bg-teal" data-style-foreground="fg-yellow"></div>
-        <div class="countdown" data-role="countdown" data-style-divider="fg-red"></div>
-        <div class="countdown" data-role="countdown" data-stoptimer="2021-06-12 08:00"></div>
-      </p>
+    
       {% endif %}
 
-      <p>This event is:
-         <ul>
+      <p>This event is: 
          {% if pagedata.virtual == true %}
-          <li>Virtual</li>
+          Virtual
          {% endif %}
          {% if pagedata.physical == true %}
-         <li>Live and in-person</li>
-         {% endif %}
+           {% if pagedata.virtual == true %}
+           , 
+           {% endif %}
+           Live and in-person
+           {% endif %}
          {% if pagedata.hybrid == true %}
-         <li>Hybrid (streamed and live)</li>
+         Hybrid (streamed and live)
          {% endif %}
          </ul>
       </p>
@@ -65,6 +58,10 @@ layout: base
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
         {% endif %}
       </p>
+      {% if pagedata.eventcountdown %}
+          {{ pagedata.countdownscript }}
+      {% endif %}
+
       <p align="center">
         <a href="#schedule">Schedule</a> 
         &#x25CF 
