@@ -300,7 +300,21 @@ layout: base
       <!-- Contact -->
           <div class="container">
             <h2 align="center"><A name="contact"></A>Contact the Organizers</h2>
-            <p>The organizers of this event are: {{ pagedata.organizers.orgname }}
+            <p>The organizers of this event are: 
+              <ul>
+              {% for organiser in pagedata.organizers %}   
+                <li>{{ organizer.name }} 
+                  (
+                  {% if organizer.email %}
+                  <a href="mailto:{{organizer.email}}">email</a>
+                  {% endif %}
+                  {% if organizer.twitter %}
+                  <a href="https://www.twitter.com/{{organizer.twitter}}">@{{organizer.twitter}}</a>
+                  {% endif %}
+                  )
+                </li>
+              <{% endfor %}
+              </ul>
             </p>
             {% if pagedata.organizers.twitter %}
             <p>Twitter: <a href="https://www.twitter.com/{{ pagedata.organizers.twitter }}">@{{ pagedata.organizers.twitter }}</a></p>
