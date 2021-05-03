@@ -1,0 +1,498 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQLSaturday SQLSaturday #166 - Olympia 2012" />
+        <meta name="author" content=" />
+        <title>SQLSaturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #166 - Olympia 2012
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQLSaturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #166 - Olympia 2012</div>
+        <div class="masthead-subheading">This event was held on 2012-11-10</div>
+        <p><b>Event Location</b>:</p>
+        <p>South Puget Sound Community College</p>
+        <p>2011 Mottman Road SW</p>
+        <p>Olympia, Washington</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0166.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Partition Magic: Metadata and Partition Switching</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>There are many reasons for partitioning your data and indexes in SQL Server, and one of those is because moving data in and out of a partition can be more efficient than any other type of data movement. This is because the way SQL Server keeps track of the internal storage of partitioned data allows data to be moved as a metadata only operation. In this session we’ll look at the metadata for table, index and partition storage to explore exactly what happens when a partition is moved. Looking at the internals of partition storage will also allow us to understand the reasons for some of the restrictions on how and when partitions can be moved, and allow us to design our data movement processes most efficiently.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kalen Delaney</b>, 
+</p>
+<hr>
+ 
+<h3>UDFs, or: How to kill performance in one easy step</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>User-defined functions in SQL Server are very much like custom methods and properties in .Net languages. At first sight, they seem to be the perfect tool to introduce code encapsulation and reuse in T-SQL. So why is this feature mostly avoided by all T-SQL gurus?
+The reason is performance. In this session, you will learn how user-defined functions feed the optimizer with misleading and insufficient information, how the optimizer fails to use even what little information it has, and how this can lead to shocking query performance.
+However, you will also see that there is a way to avoid the problems. With just a little extra effort, you can reap the benefits of SQL Server and still get good performance.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Hugo Kornelis</b>, 
+</p>
+<hr>
+ 
+<h3>Troubleshooting SQL Server with PowerShell</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>It is normal for us to have to face poorly performing queries or even complete failure in our SQL server environments. This can happen for a variety of reasons including poor Database Designs, hardware failure, improperly-configured systems and OS Updates applied without testing. As Database Administrators, we need to take precaution to minimize the impact of these problems when they occur, and so we need the tools and methodology required to identify and solve issues quickly. In this Session we will use PowerShell to explore some common troubleshooting techniques used in our day-to-day work as s DBA. This will include a variety of such activities including Gathering Performance Counters in several servers at the same time in async mode.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Laerte Junior</b>, 
+</p>
+<hr>
+ 
+<h3>Running SQL Server 2012 on Server Core: Why  How</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Security and Performance are always two of the top issues for SQL Server DBAs.  Until recently the cost of the Operating System was something that you had almost no control over, but with SQL Server 2012 (Denali) you now have the option of running on the Core edition of Windows Server.  While Core edition has been used primarily for infrastructure servers like Domain Controllers and DNS servers, SQL Server 2012 now brings support for running the database engine on it.  This session will talk about when you may want to consider running SQL on Server Core and will guide you through the task of installing and configuring your server when you no longer have most of the Windows configuration tools that you may be used to.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Michael Wells</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Azure vs. Azure Tables –Clearing The Confusion</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The Azure platform is quickly gaining momentum and acceptance, in part due to the relational database capabilities of SQL Azure as well as the inexpensive and high-capacity storage capabilities of Azure Tables. Yet, there seems to be some confusion as to why and when you would use SQL Azure vs. Azure Tables. One is relational, and one is not, yet there has been a tendency to use Azure Storage Tables as a replacement for SQL Azure, with poor results. This session will provide a deep look at the difference between SQL Azure and Azure Storage Tables, and show the performance differences when querying each. We will look at how each stores data and the pros and cons of using each as a storage mechanism, and discuss how and why you would choose.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Scott Klein</b>, 
+</p>
+<hr>
+ 
+<h3>Quickstart BI: Building a BI Solution in 5 Days</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A Quickstart BI project is a 5-day engagement where we start with a set of real business data and then fast-track a solution using Microsoft BI tools like PowerPivot, Power View, BI Semantic Tabular Models, Multidimensional SSAS, SSRS, SharePoint, PerformancePoint and Excel Services.  Getting real business value in a few short days of investment is tricky.  We’ve done several of these for different organizations and learned some interesting lessons about tool choices, design best practices and project scope management.  Some of these projects were throw-away proof-of-concepts but many of them became the foundation for production-ready, decision-support solutions and executive dashboards.  </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Paul Turley</b>, 
+</p>
+<hr>
+ 
+<h3>Exploring the TSQL Enhancements in SQL Server 2012</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2012 adds many new enhancements to TSQL. Learn how to use the windowing functionality of the OVER clause to create sliding aggregation. Find out about the new SEQUENCE object and when you should or should not use it to replace an IDENTITY.  Learn the IIF function and CHOOSE function to replace a common simple CASE functions.  OFFSET / FETCH will be covered to show you how to eliminate cursors or CTEs for data paging.  With CONCAT you have an easier time building strings in your TSQL statements independent of the data type, and without concern over nulls.  With these and other new TSQL enhancements you will be able to take full advantage of the power of TSQL in SQL Server 2012.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Steve Stedman</b>, 
+</p>
+<hr>
+ 
+<h3>Unleashing Common Table Expressions in SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Have you ever wanted to create a recursive query, but didn't see how to do it. With the Common Table Expressions class you will learn everything needed to start using CTE's for recursive queries, as temporary views, and to use the result set multiple times in the same query. Learn how simplify query syntax using CTE's. One of the most overlooked features of SQL Server is the CTE which not only simplifies the query, but gives you the ability to do things that would otherwise be impossible (or at least very challenging) with SQL Server.  Learn how recursive CTE’s perform better than other methods to create hierarchical results.  See how CTE’s compare to SQL Server 2012 offset and fetch paging techniques.  </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Steve Stedman</b>, 
+</p>
+<hr>
+ 
+<h3>Power View: A Peek Behind the Curtain</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Power View is the new data visualization and self-service BI tool that will debut in SQL Server 2012. To successfully roll-out this technology to your user community, you need to understand its architecture and data dependencies. Come to this session to get past the razzle dazzle that most Power View sessions offer, and peek behind the curtain to learn how to properly configure your environment to support Power View and how to prepare data for user consumption within Power View .
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Stacia Varga</b>, 
+</p>
+<hr>
+ 
+<h3>Taking BI to the Next Level: Collaboration</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Self-service BI is usually an independent activity. But when individuals discover interesting information that they want to share, they need a centralized location to do that. When people work together, new insights are possible, and that’s what collaboration is all about. As more people see the benefits of the solution, they become more likely to use it. As individual products, SQL Server 2008 R2, SharePoint 2010, and Excel 2010 expand your options for enabling BI in your organization, but collectively they create a solid platform for collaborative BI. Knowing which tool to use for which job can be tricky. Come to this session to learn how to use these tools to foster collaboration.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Stacia Varga</b>, 
+</p>
+<hr>
+ 
+<h3>Extend Your Knowledge with Extended Events!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server Extended Events can be used to gather a wide range of performance information, and in troubleshooting in SQL Server.  Extended Events use less system resources and provide better information than SQL Profiler and they allow for correlation of SQL Server event data along side of OS or Application event data. This presentation will explore what Extended Events are, how to set them up and use them in several case studies.
+
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Janis Griffin</b>, 
+</p>
+<hr>
+ 
+<h3>Oh, so Tabular!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Relational, multidimensional,  now Tabular... how many ways can you bend your data (and your brain)?
+It took some work to get our heads around cubes, MDX  OLAP concepts; and now the next generation of analytical data technology from Microsoft is not so radical.  Learn how to enable deep analytics  BI in your environment without popping brain cells learning yet another foriegn technology.  The magic of VertiPaq: PowerPivot on the desktop  BISM Tabular models leverage modern computing power in a new way.  Gain insight about how to choose among all these options and build compelling dashboards  reports with SharePoint, Reporting Services  Power View.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Paul Turley</b>, 
+</p>
+<hr>
+ 
+<h3>Query Plans and Indexes in SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Data access can be easy to set up in your applications with wizards and ORMs, but sometimes your queries are just not as fast as you think they should be – especially on those tables that are getting bigger and bigger. In this session, we will take a peek under the hood and see how SQL server answers the questions you ask of it. This is an introductory session, but it will be jam-packed with demos and useful tips that you will be able to use to make your applications more responsive.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Michael DeFehr</b>, 
+</p>
+<hr>
+ 
+<h3>Do SQL XML queries have to scare me?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>I have seen days of amazing C# XML library coding work replaced by 2 lines of a FOR XML statement in SQL. Built into SQL is the power to make XML do pretty much whatever you need it to. Learn how to use the XML data type and built-in XQuery functions. You will also see how to join (or “bind”) a SQL table to an XML stream to produce a single result set. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rick  Morelan</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to the XML source</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>XML is all over the place.  But how do you get that data into SQL Server?  SSIS provides an XML Source, but it is not easy to use.  In this session we will handle increasingly complex XML documents.  After an introduction to using the XML Source with a single set of elements, we will look at how to work with multiple element sets.  This includes hierarchically structured XML documents.
+
+Attendees will be able to import simple XML using SSIS.  They will be able to create import routines that pull data from different elements of more complex XML.  They will understand the role the XML Schema plays in defining the XML data they import. 
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Russel Loski</b>, 
+</p>
+<hr>
+ 
+<h3>What’s Simple About SIMPLE Recovery?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>There is a common misconception that SIMPLE Recovery means no logging, and this is a very dangerous myth to propagate. SQL Server does log database changes in SIMPLE Recovery, but some (not all) operations are minimally logged. In this presentation, I'll tell you what minimal logging means in conjunction with each of the three different recovery models. In addition, I’ll describe the benefits and dangers of the SIMPLE Recovery Model. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kalen Delaney</b>, 
+</p>
+<hr>
+ 
+<h3>Transactional Replication Beginner to Expert</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Learn what use cases you can use transactional replication for and then dive in to tuning and troubleshooting techniques that can work for all replication types. We will cover best practices for DB and drive setup and the use of custom agent profiles. See examples of custom monitoring emails so you don't have to watch replication monitor all the time.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Chuck Lathrope</b>, 
+</p>
+<hr>
+ 
+<h3>Top Features of SQL 2012 Nobody Told You About</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This isn't the same old AlwaysOn demo that everyone else is doing. This is the stuff that almost nobody is talking about, but they are very important features that will save you time, frustration, and even money. These are the top features of SQL Server 2012 that you may not even be aware of. Come learn about these really cool features and see them in action.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Robert Davis</b>, 
+</p>
+<hr>
+ 
+<h3>Advanced Indexing</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>So you know all about heaps, clustered indexes, and nonclustered indexes, but are still not satisfied? Then this is just the session for you!
+Hugo will explore advanced features such as included columns, indexed views, and filtered indexes. You will find out how they are stored on disk, and how SQL Server uses them to satisfy queries. Then, you will see the tools SQL Server itself hands you to help identify just the right subset of indexes. And finally, you will get an stunning demonstration of just how bad you can hurt performance by following all those recommendations and creating too many indexes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Hugo Kornelis</b>, 
+</p>
+<hr>
+ 
+<h3>Power View for Geographical Analysis </h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Geographical Analysis is now made easy with Power View and Excel 2013. Simple yet powerful data exploration and segmentation analysis on geography can be performed, without the need of expensive hardware or software. In this session, you’ll learn how to create visually appealing and meaningful maps using Power View.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Julie Koesmarno</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Robert Davis
+ - <a href="https://www.twitter.com/@SQLSoldier">@SQLSoldier</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/robertldavis/">http://www.linkedin.com/in/robertldavis/</a></p>
+ 
+<p>Contact: <a href="http://www.sqlsoldier.com">http://www.sqlsoldier.com</a></p>
+ 
+<p>Robert is a SQL Server Certified Master, MVP, and has spent 17+ years honing his skills in security, performance tuning, SQL development, high availability, and disaster recovery. He served as PM for the SQL Server Certified Master Program at Microsoft Learning, and in various roles at Microsoft specializing in SQL Server administration, development, and architecture. He currently works as a Database Engineer at BlueMountain Capital Management where he spends a vast majority of his time tuning massively parallel queries. Robert feeds his passion for security by acting as co-leader of the PASS Security Virtual Chapter.</p>
+ 
+<h3 class="section-heading">Russel Loski
+ - <a href="https://www.twitter.com/sqlmovers">sqlmovers</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/russloski">http://www.linkedin.com/in/russloski</a></p>
+ 
+<p>Contact: <a href="http://www.sqlmovers.com">http://www.sqlmovers.com</a></p>
+ 
+<p>Russ Loski is a SQL Server BI Developer based in Dallas-Fort Worth.  He current works as a Data Analytics Engineer for Navisite, a remote managed IT services company.   Twenty years ago, he began working with SQL Server 6.5. He has since continued to develop applications connected to all of the versions of SQL Server. He has worked with clients in industries from insurance to healthcare, from movie theaters to American football.  Russ is a regular speaker at SQLSaturday events, as well as the SQL Server Users Groups in the North Texas region. Russ likes working with data in various shapes.</p>
+ 
+<h3 class="section-heading">Hugo Kornelis
+
+</h3>
+<p>Contact: <a href="http://sqlblog.com/blogs/hugo_kornelis/default.aspx">http://sqlblog.com/blogs/hugo_kornelis/default.aspx</a></p>
+ 
+<p>Hugo is co-founder and RD lead of perFact BV, a Dutch company that improves analysis methods and develops computer-aided tools to generate completely functional applications from the analysis deliverable. The platform for this development is SQL Server. In his spare time, Hugo likes to share and enhance his knowledge of SQL Server by frequenting newsgroups and forums, reading and writing books and blogs, and attending and speaking at conferences.
+Hugo is also a SQL Server MVP since 2006.</p>
+ 
+<h3 class="section-heading">Paul Turley
+ - <a href="https://www.twitter.com/paul_turley">paul_turley</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/pturley">https://www.linkedin.com/in/pturley</a></p>
+ 
+<p>Contact: <a href="http://www.sqlserverbiblog.com">http://www.sqlserverbiblog.com</a></p>
+ 
+<p>Paul is a Principal Consultant for Pragmatic Works, a Mentor and Microsoft Data Platform MVP. He consults, writes, speaks, teaches  blogs about business intelligence and reporting solutions. He works with companies around the world to model data, visualize and deliver critical information to make informed business decisions; using the Microsoft data platform and business analytics tools. He is a Director of the Oregon Data Community PASS chapter  user group, the author  and lead author of Professional SQL Server 2016 Reporting Services and 14 other titles from Wrox  Microsoft Press.  He holds several certifications including MCSE for the Data Platform and BI.</p>
+ 
+<h3 class="section-heading">Kalen Delaney
+ - <a href="https://www.twitter.com/sqlqueen">sqlqueen</a>
+</h3>
+<p>Kalen Delaney is a Data Platform MVP who has worked with SQL Server for more than 32 years. She has provided performance consulting services and taught advanced courses on SQL Server to thousands of people and organizations. In addition to her courseware development, Kalen has been writing about SQL Server for decades. She is the primary author of SQL Server Internals and the Inside SQL Server series. Kalen is also one of the primary editors for the Red Gate SQL Server Stairways tutorials.</p>
+ 
+<h3 class="section-heading">Paul Turley
+ - <a href="https://www.twitter.com/paul_turley">paul_turley</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/pturley">https://www.linkedin.com/in/pturley</a></p>
+ 
+<p>Contact: <a href="http://www.sqlserverbiblog.com">http://www.sqlserverbiblog.com</a></p>
+ 
+<p>Paul is a Principal Consultant for Pragmatic Works, a Mentor and Microsoft Data Platform MVP. He consults, writes, speaks, teaches  blogs about business intelligence and reporting solutions. He works with companies around the world to model data, visualize and deliver critical information to make informed business decisions; using the Microsoft data platform and business analytics tools. He is a Director of the Oregon Data Community PASS chapter  user group, the author  and lead author of Professional SQL Server 2016 Reporting Services and 14 other titles from Wrox  Microsoft Press.  He holds several certifications including MCSE for the Data Platform and BI.</p>
+ 
+<h3 class="section-heading">Janis Griffin
+ - <a href="https://www.twitter.com/DoBoutAnything">DoBoutAnything</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/janis-griffin/0/914/aba">http://www.linkedin.com/pub/janis-griffin/0/914/aba</a></p>
+ 
+<p>Janis Griffin has over 30 years of DBA/database experience including design, development and implementation of many critical database applications. Before coming to Quest Software, Janis primarily worked in the Telecom/Network Industry, working with both real-time network routing databases and OLTP business to business applications.  Janis also held positions as a Principal Architect and Senior Manager, mentoring other DBAs on best practices in database performance tuning.</p>
+ 
+<h3 class="section-heading">Kalen Delaney
+ - <a href="https://www.twitter.com/sqlqueen">sqlqueen</a>
+</h3>
+<p>Kalen Delaney is a Data Platform MVP who has worked with SQL Server for more than 32 years. She has provided performance consulting services and taught advanced courses on SQL Server to thousands of people and organizations. In addition to her courseware development, Kalen has been writing about SQL Server for decades. She is the primary author of SQL Server Internals and the Inside SQL Server series. Kalen is also one of the primary editors for the Red Gate SQL Server Stairways tutorials.</p>
+ 
+<h3 class="section-heading">Stacia Varga
+ - <a href="https://www.twitter.com/@_StaciaV_">@_StaciaV_</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/staciavarga">http://www.linkedin.com/in/staciavarga</a></p>
+ 
+<p>Contact: <a href="http://blog.datainspirations.com">http://blog.datainspirations.com</a></p>
+ 
+<p>Stacia Varga is a Microsoft Data Platform MVP and SSAS Maestro with a Bachelor’s Degree in Social Sciences. A consultant, educator, author, and principal of Data Inspirations, her career spans more than 30 years, with a focus on improving business practices through technology.
+
+Since 2000, Stacia has provided consulting and education services for Microsoft's Business Intelligence technologies. As Stacia Misner, she also authored several books covering the Microsoft BI stack.</p>
+ 
+<h3 class="section-heading">Rick  Morelan
+
+</h3>
+<p>Rick has worked more than 12 years at Microsoft and has attained over 30 Microsoft technical including certifications in applications, networking, databases and .NET development (MCDBA, MCTS, MCITP, MCAD, MOE, MCSE, MCSE+I). He has also provided training for NW University, Volt Technical Education, The DigiGirlz, and Microsoft. Rick is the Author of the 5 volume SQL Joes 2 Pros book series.</p>
+ 
+<h3 class="section-heading">Hugo Kornelis
+
+</h3>
+<p>Contact: <a href="http://sqlblog.com/blogs/hugo_kornelis/default.aspx">http://sqlblog.com/blogs/hugo_kornelis/default.aspx</a></p>
+ 
+<p>Hugo is co-founder and RD lead of perFact BV, a Dutch company that improves analysis methods and develops computer-aided tools to generate completely functional applications from the analysis deliverable. The platform for this development is SQL Server. In his spare time, Hugo likes to share and enhance his knowledge of SQL Server by frequenting newsgroups and forums, reading and writing books and blogs, and attending and speaking at conferences.
+Hugo is also a SQL Server MVP since 2006.</p>
+ 
+<h3 class="section-heading">Michael Wells
+ - <a href="https://www.twitter.com/@SqlTechMike">@SqlTechMike</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/mikewells">http://www.linkedin.com/in/mikewells</a></p>
+ 
+<p>Contact: <a href="http://sqltechmike.com">http://sqltechmike.com</a></p>
+ 
+<p>Michael Wells is a Microsoft Specialist at Dell EMC covering enterprise customers. He has worked in IT since 2000 and has supported all versions of SQL Server from SQL Server 2000 to SQL Server 2014. Michael has been presenting  since 2007 for local user groups, CodeCamps, SQLSaturday events, IT Pro Camps, and large conferences like PASS Summit and Oracle OpenWorld.</p>
+ 
+<h3 class="section-heading">Scott Klein
+ - <a href="https://www.twitter.com/SQLScott">SQLScott</a>
+</h3>
+<p>Contact: <a href="http://aka.ms/sqlscott">http://aka.ms/sqlscott</a></p>
+ 
+<p>Scott Klein is a senior consultant with SQL Solutions Group with over two decades of experience working with Microsoft SQL Server. Prior to SSG, Scott spent almost 10 years at Microsoft, traveling the globe as a technical evangelist training and speaking about SQL Server and Microsoft’s Azure data services. Scott’s recent focus has been on advanced analytics, including big data and IoT, providing real-world training to help bring intelligence to your data. Scott has authored several books focusing on data and data analytics. Scott is continuously striving and looking for ways to help developers and companies grok the wonderful world of data.</p>
+ 
+<h3 class="section-heading">Steve Stedman
+ - <a href="https://www.twitter.com/@sqlemt">@sqlemt</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/stevestedman">http://www.linkedin.com/in/stevestedman</a></p>
+ 
+<p>Contact: <a href="http://SteveStedman.com">http://SteveStedman.com</a></p>
+ 
+<p>Steve Stedman is the Leader of a PASS Local Group in Bellingham WA USA. Steve runs his own SQL consulting firm Stedman Solutions, LLC. He has 29 years of programming and SQL experience.  He has written the book on SQL Common Table Expressions.  He teaches, speaks at conferences, writes, and has taught SQL server classes at Western Washington University.  Steve has previously spoken at PASS Summit, TechEd, DevTeach Vancouver, many SQLSaturdays, and more.</p>
+ 
+<h3 class="section-heading">Chuck Lathrope
+ - <a href="https://www.twitter.com/@sqlguychuck">@sqlguychuck</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/chucklathrope">https://www.linkedin.com/in/chucklathrope</a></p>
+ 
+<p>Contact: <a href="http://www.sqlwebpedia.com">http://www.sqlwebpedia.com</a></p>
+ 
+<p>Chuck Lathrope is a data architect for Limeade, a SaaS health and wellness platform. Chuck is a two-time SQLSaturday event speaker on replication, was a Top 5 nominee of Red-Gate Exceptional DBA Award in 2009 and often shares his 20 years of IT knowledge on twitter under the name @SQLGuyChuck and his website www.sqlwebpedia.com.</p>
+ 
+<h3 class="section-heading">Julie Koesmarno
+ - <a href="https://www.twitter.com/@mssqlgirl">@mssqlgirl</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/juliekoesmarno">http://www.linkedin.com/in/juliekoesmarno</a></p>
+ 
+<p>Contact: <a href="http://www.mssqlgirl.com">http://www.mssqlgirl.com</a></p>
+ 
+<p>Julie Koesmarno, MCSE Data Platform, and MCSE Business Intelligence, MCT, is a Senior Program Manager at Microsoft, with a Bachelor’s degree in IT. She has over 10 years of experience working with SQL Server for large-scale and multi-million-dollar OLTP and ETL projects as a SQL Server developer and system analyst/designer. Her past projects include delivering a SQL Server 2012 data warehouse and BI solutions in the US and Australia. She now works with hybrid, cloud and on-prem SQL projects.</p>
+ 
+<h3 class="section-heading">Stacia Varga
+ - <a href="https://www.twitter.com/@_StaciaV_">@_StaciaV_</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/staciavarga">http://www.linkedin.com/in/staciavarga</a></p>
+ 
+<p>Contact: <a href="http://blog.datainspirations.com">http://blog.datainspirations.com</a></p>
+ 
+<p>Stacia Varga is a Microsoft Data Platform MVP and SSAS Maestro with a Bachelor’s Degree in Social Sciences. A consultant, educator, author, and principal of Data Inspirations, her career spans more than 30 years, with a focus on improving business practices through technology.
+
+Since 2000, Stacia has provided consulting and education services for Microsoft's Business Intelligence technologies. As Stacia Misner, she also authored several books covering the Microsoft BI stack.</p>
+ 
+<h3 class="section-heading">Steve Stedman
+ - <a href="https://www.twitter.com/@sqlemt">@sqlemt</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/stevestedman">http://www.linkedin.com/in/stevestedman</a></p>
+ 
+<p>Contact: <a href="http://SteveStedman.com">http://SteveStedman.com</a></p>
+ 
+<p>Steve Stedman is the Leader of a PASS Local Group in Bellingham WA USA. Steve runs his own SQL consulting firm Stedman Solutions, LLC. He has 29 years of programming and SQL experience.  He has written the book on SQL Common Table Expressions.  He teaches, speaks at conferences, writes, and has taught SQL server classes at Western Washington University.  Steve has previously spoken at PASS Summit, TechEd, DevTeach Vancouver, many SQLSaturdays, and more.</p>
+ 
+<h3 class="section-heading">Michael DeFehr
+ - <a href="https://www.twitter.com/@mdefehr">@mdefehr</a>
+</h3>
+<p>LinkedIn: <a href="http://ca.linkedin.com/in/mdefehr">http://ca.linkedin.com/in/mdefehr</a></p>
+ 
+<p>Contact: <a href="http://mikedefehr.com">http://mikedefehr.com</a></p>
+ 
+<p>Michael DeFehr is an independent SQL Server consultant based in Winnipeg, Canada. He is focused on database administration and development using Microsoft SQL Server.
+A SQL Server MVP, Professional Engineer and MCITP in both Database Development and Administration, Mike has spent the past 15 years producing and maintaining database solutions. Mike specializes in the relational and storage engines and his solutions emphasize performance and simplicity.</p>
+ 
+<h3 class="section-heading">Laerte Junior
+ - <a href="https://www.twitter.com/@laertesqldba">@laertesqldba</a>
+</h3>
+<p>LinkedIn: <a href="http://br.linkedin.com/in/laertejunior/">http://br.linkedin.com/in/laertejunior/</a></p>
+ 
+<p>Contact: <a href="https://www.red-gate.com/simple-talk/author/laerte-junior/">https://www.red-gate.com/simple-talk/author/laerte-junior/</a></p>
+ 
+<p>Laerte Junior is a  Windows PowerShell MVP Reconnect, PASS PowerShell VC Co-lead and, through his  simple-talk articles, an active member of the Microsoft Community  around the world. He also is a huge Star Wars fan (yes, he has the Darth Vader#180;s Helmet with the voice changer). He has a passion for DC comics and living the simple life.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.melissadata.com">Melissa Data Corp.</a></p>
+ 
+<p><a href="http://www.confio.com">Confio</a></p>
+ 
+<p><a href="http://www.idera.com/Content/Home.aspx">Idera</a></p>
+ 
+<p><a href="http://rd.gt/2j7SNf9">Redgate Software (GAP)</a></p>
+ 
+<p><a href="https://www.quest.com/">Quest Software</a></p>
+ 
+<p><a href="http://DatabaseHealth.SteveStedman.com">Steve Stedman</a></p>
+ 
+<p><a href="http://mkp.com/">Morgan Kaufmann Publishers</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQLSaturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,471 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #870 - Memphis 2019" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #870 - Memphis 2019
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #870 - Memphis 2019</div>
+        <div class="masthead-subheading">This event was held on 2019-10-5</div>
+        <p><b>Event Location</b>:</p>
+        <p>FedEx Institute of Technology</p>
+        <p>365 Innovation Drive</p>
+        <p>Memphis, Tennessee</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0870.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Intro to Graph Databases</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Recent years have seen an uptick in the adoption of alternative data storage methods.  While the traditional RDBMS is still the de-facto Swiss Army knife for backing applications, technologies such as NoSQL and time series databases are increasingly used due to their performance and usability characteristics in certain use cases.
+
+One of the latest entrants on the scene is the graph database.  In this session we’ll discuss what they are and how they are used.  The introduction of graph database support in MSSQL 2017 provides us with a convenient mechanism for presenting our existing data through a graph.
+
+•	What is a Graph Database?
+•	Basic Graph Theory
+•	Relational vs Graph data models
+•	Graph Databases in MSSQL
+•	Use cases</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Pete Brown</b>, 
+</p>
+<hr>
+ 
+<h3>SQL DevOps Simplified with Production Databases</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>DevOps is based on building an application binary (immutable artifact) that supports a highly reliable, repeatable engineering process.  In the case of SQL Server, however, a database is already in production, and isn’t simply replaced (as an app binary), but is upgraded.   Current SQL Server DevOps methods use source control to build a “development” database, with schema and objects and static data needed for functional testing.  "Near production data" is used in Staging, and finally production is upgraded.  This approach involves complexity, and breaks the principle of working with immutable artifacts throughout the process.  Our session introduces a new approach to SQL Server DevOps, with production databases used in all stages.   Production database clones are delivered more quickly than "built" databases, are more easily integrated with source control, and produces higher fidelity outcomes.  Learn how leading enterprises are simplifying SQL DevOps.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Paul Stanton</b>, 
+</p>
+<hr>
+ 
+<h3>Exploring the latest T-SQL enhancements</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>With the most recent release of SQL Server 2017 and the upcoming release of SQL Server 2019, there are several enhancements that were introduced for the T-SQL language. This includes new string functions, bulk access options and approximate query processing among others that address several challenges that SQL developers have to confront.  
+
+In this demo heavy session, we will go over several of the new features, provide a demonstration of how you can use them, and share any considerations that you may need to consider before doing so. This session is intended for anyone interested in what’s new in the T-SQL language and will focus primarily just on enhancements to traditional T-SQL for the database engine.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dustin Dorsey</b>, 
+</p>
+<hr>
+ 
+<h3>Get Your Optimizer to Give up All Its Secrets</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You know that execution plans can provide you with vital information to tune a query, but just how does that plan get generated?  In this session, we will examine details the query optimization process that are not very well known.  We will discuss how SQL Server parses a T-SQL statement then and begins applying rules to make it more efficient.  Did you know that SQL Server can be coaxed into outputting hidden structures such as parse trees and memos?  We'll do just that, and then take it a step further with a unique visualization tool that I have created.  With a better understanding of how SQL Server optimizes T-SQL (and sometimes doesn't do it as well as might be hoped), you can write more efficient SQL statements.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Brian Hansen</b>, 
+</p>
+<hr>
+ 
+<h3>Get your Git on with Source Control</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Have you tried implementing source control? How has your continuous integration (CI) process gone? 
+
+This session is for developers, database administrators, database engineers, and data architects that want to automate their database deployments. Particularly for those individuals that have hit roadblocks along that way. We will discuss the differences between migration and stated-based deployment methods. We will also discuss options with branching and merging. 
+
+At the end of the session, attendees will know how to select the best deployment method for their environment. In addition, attendees will be familiar with branching and merging strategies that can be used as part of their continuous integration strategy.
+
+Attendees should be familiar with general concepts about source control and be comfortable with Visual Studio or VS Code.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Elizabeth Noble</b>, 
+</p>
+<hr>
+ 
+<h3>Relational Design Critique</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The process of designing a relational database is not overly complex, and may be done by almost anyone on the development team. The process requires one to take the time to understand the requirements, when they exist, and apply a straightforward set of transforms to produce table structures that meets the needs. The tough part is that the process requires time and experience, neither of which anyone has enough of. In this session, to help the attendee differentiate right-enough designs from overly simple or overly complex designs, we will look at a variety of database snippets, each inspired from a real life design. We will discuss the pros and cons of the approach taken, and consider possible remediations to learn from a failure that was made by someone else.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Louis Davidson</b>, 
+</p>
+<hr>
+ 
+<h3>That's So Metadata: Discover Your Database From The Inside</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Have you ever needed to learn a new database design and don't know where to begin? Or are trying to find out why a query doesn't perform well?  Or need to provide security information to auditors or your security team?
+
+SQL Server has numerous metadata facilities available to help you with these tasks and more. Functions, dynamic management views, and system stored procedures can illuminate details from a single column up through an entire SQL Server instance. We will demonstrate metadata techniques to help you:
+
+- Document your database schema objects such as procedures, functions, tables, columns and indexes
+- Investigate performance and look for bottlenecks and tuning opportunities
+- Discover metadata to administer your databases backups, index maintenance, and security
+- Apply your own metadata using extended properties
+
+We will also cover the official Microsoft documentation on these features and other resources on how to use them.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rob Volk</b>, 
+</p>
+<hr>
+ 
+<h3>The Community Speaks: WIT, LGBTQ, diversity and inclusion.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Join us as we (yes, including attendees) discuss incidents and look for ways as victims, as by-standers and as event host to react.  Let’s enable each other to do what is right, speak up and support one another. It’s time for the community to come together, make their voice be heard and share ways and tools to deal with these difficult situations. Although some stores are inspired in part by a true incident, they are fictional and do not depict any actual person or event.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tamera Clark</b>, 
+</p>
+<hr>
+ 
+<h3>The Modern Power BI approach</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Power BI continues to become one of the best ways to report and analyze business data.   With recent announcements in Power BI roadmap around Dataflows, Composite models, AI integration, Common Data Service and Power Suite integration there are many more ways to add value to your existing Power BI environment.   Come learn about all the key new features in Power BI you should be using and what new features are coming down the roadmap so you can increase value and usage of Power BI across the organization.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dan Evans</b>, 
+</p>
+<hr>
+ 
+<h3>Inside the Database Engine</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session is for the absolute beginner to learn the basic components of the Database Engine (Relational Engine, Storage Engine, and SQLOS) and what is the purpose of each of these three components in the execution of a simple query. The relational engine to process a query, the storage engine to access data and the SQLOS to manage resource access. The session is led by an expert Microsoft Certified Trainer (MCT) and former Microsoft MVP who regularly teaches SQL Server certification courses.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>John Deardurff</b>, 
+</p>
+<hr>
+ 
+<h3>The Future of Database Development with Containers</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Containers are dramatically changing the way that application developers design and build their systems. Databases will need to be a part of this revolution as every application needs a data store. Come see a future vision of how full stack application development might look in the next few years.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Steve Jones</b>, 
+</p>
+<hr>
+ 
+<h3>Become a T-SQL Pivoting Ninja in 59.5 Minutes Or Less</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Would you like to create Pivot Tables in SQL with ease? 
+
+Become a query writing ninja who uses the Pivot operator to move unique column values into multiple column names for better data insight. In this demo-heavy presentation, you will learn how to create pivot tables enhanced with multiple aggregate columns and column totals using Rollup and Cube operators, and the grouping function. Attendees will also learn to use the Unpivot Operator.
+
+Come join me, and by the end of this session, you will have the knowledge to level up your pivoting skills to that of a ninja or maybe even *Chuck Norris.
+*Not Possible</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Peter Doyle</b>, 
+</p>
+<hr>
+ 
+<h3>D.R.E.A.M. (Data Rules Everything Around Me) - Creating a data-driven business culture</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Deploying a new Big Data initiative is a daunting undertaking in it's own right, which can lead many business leaders to forget a crucial piece of the puzzle - changing company culture. What good is new technology if it does not align with the way the organization actually makes decisions? This session dives into strategies to obtain stakeholder buy-in and get organization members not just tolerant of, but EXCITED about new technology initiatives.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Lena Winfree</b>, 
+</p>
+<hr>
+ 
+<h3>User Experience Brilliance in Power BI Dashboards</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>User Experience (UX) and Design Thinking are common buzz words around the office. What do these words have to do with BI and Dashboards, anyway? 
+Sure, Power BI itself is intuitive and user friendly, but are YOU building dashboards that give the best user experience? 
+In this session we will explore in a hands-on exercise what UX and Design thinking is, how to apply the methodologies to our daily work and then how we could apply it to BI to make kick ass dashboards and reporting for our internal and external customers.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Hilary Wilkie</b>, 
+</p>
+<hr>
+ 
+<h3>Goin' Fishin' on the Azure Data Lake</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Get yer queries ready we're goin' fishin' on the Azure Data Lake. Azure Data Lake is hyper-scale storage service that serves as the foundation for a Modern Data Warehouse. We'll explore what makes this service unique, the pricing structure, and how to start storing data. Then we'll open our tackle boxes to learn how to use tools such as HDInsight, Azure SQL DW, and Data Lake Analytics (U-SQL) to access data for processing, analytics, and machine learning.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Spencer Swindell</b>, 
+</p>
+<hr>
+ 
+<h3>Managing Your Schema with Database Projects in Visual Studio</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Integrating databases schema changes into a Software Development Lifecycle Management (SDLC) process can be a  daunting and often tedious proposition. Adding the complexity of version control to the mix complicates this scenario. Fortunately, Database Projects in Visual Studio add a bit of an "easy" button to this process. In this session, you will learn about the features and capabilities of VS Database Projects and how to use them to improve the lifecycle of your database structures, even if your organization does no code management.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kerry Tyler</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Data Factory V2</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Moving data around in On-Prem databases is easy. 
+
+Moving data around when involving Azure - may be not. Especially if you don't have a VM or an On-Prem server to move things around on. 
+
+We'll look at moving data around from On-Prem to Azure, moving files to Azure, and moving data between Azure databases.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Wilkie</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Rob Volk
+ - <a href="https://www.twitter.com/sql_r">sql_r</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/rob-volk-134ba81">https://www.linkedin.com/in/rob-volk-134ba81</a></p>
+ 
+<p>Contact: <a href="http://weblogs.sqlteam.com/robv/">http://weblogs.sqlteam.com/robv/</a></p>
+ 
+<p>Rob Volk is a SQL Server DBA in the Metro Atlanta area since 2001. He also moderates and answers the forums on SQLTeam.com. While an old-time cranky DBA, he no longer considers quot;business intelligencequot; an oxymoron or quot;the cloudquot; as merely atmospheric moisture, and is delightedly dipping his toes into both of these new oceans, and loves to do things in new and and unusual ways.</p>
+ 
+<h3 class="section-heading">Steve Jones
+ - <a href="https://www.twitter.com/way0utwest">way0utwest</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/way0utwest">http://www.linkedin.com/in/way0utwest</a></p>
+ 
+<p>Contact: <a href="http://www.voiceofthedba.com/">http://www.voiceofthedba.com/</a></p>
+ 
+<p>Steve Jones is a Microsoft SQL Server MVP and has been working with SQL Server since version 4.2 on OS/2. After working as a DBA and developer for a variety of companies, Steve co-founded the community website SQLServerCentral.com in 2001.
+Since 2004, Steve has been the full-time editor of the site, ensuring it continues to be a great resource for SQL Server professionals. Over the last decade, Steve has written hundreds of articles about SQL Server for SQLServerCentral.com, SQL Server Standard magazine, SQL Server Magazine, and Database Journal.</p>
+ 
+<h3 class="section-heading">Paul Stanton
+ - <a href="https://www.twitter.com/https://twitter.com/Paul_E_Stanton">https://twitter.com/Paul_E_Stanton</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/paulstan/">https://www.linkedin.com/in/paulstan/</a></p>
+ 
+<p>Contact: <a href="https://www.windocks.com/blog-2">https://www.windocks.com/blog-2</a></p>
+ 
+<p>Co-founder of Windocks, Paul is a former Microsoft engineer who is focused on delivering solutions for SQL Server development and test, including SQL Server containers and database cloning.</p>
+ 
+<h3 class="section-heading">Lena Winfree
+ - <a href="https://www.twitter.com/RachelWinfree">RachelWinfree</a>
+</h3>
+<p>Contact: <a href="https://www.RachelWinfree.com">https://www.RachelWinfree.com</a></p>
+ 
+<p>Lena Winfree is the co-founder/CEO of Rachel + Winfree Data Analytics Consulting firm. She is a Data Scientist with experience in Data wrangling, curation, analysis, mining, etc. Recent projects include the implementation of an infrastructure build for the newly launched MMC Data Science Institute. Rachel + Winfree specializes in data strategy design and implementation for small businesses, and data warehousing.</p>
+ 
+<h3 class="section-heading">Peter Doyle
+ - <a href="https://www.twitter.com/https://twitter.com/thepeterdoyle">https://twitter.com/thepeterdoyle</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/thepeterdoyle/">https://www.linkedin.com/in/thepeterdoyle/</a></p>
+ 
+<p>On Jan 12, 2019, Peter attended his first SQL Saturday and experienced an engaging and uplifting community that encouraged everyone regularly to give back. That experience resulted in teaching eleven sessions and delivering a SQL Fundamentals pre-conference the last six months of the year.  He is passionate about sharing knowledge on building a solid T-SQL foundation without wasting time. 
+
+Peter's journey from minimal Excel knowledge to writing Dynamic SQL all started from watching Youtube videos for three hours every morning before work. Managers took notice of the results and transferred him to the reporting department. A few months later, a co-worker suggested he should learn SQL Server and his world of data has never been the same.</p>
+ 
+<h3 class="section-heading">Hilary Wilkie
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/hilary-wilkie-a795209/">https://www.linkedin.com/in/hilary-wilkie-a795209/</a></p>
+ 
+<p>Hilary Wilkie has worked with prominent companies like Home Depot and small solo entrepreneurs. She is a Business Analyst with a Six Sigma Black Belt and currently working at AutoVIN, a division of KAR Auction Services. Hilary has worked with professionals at all levels of business including C-level, managers, and even the warehouse person! She believes behind all good processes and software are great people; often we get so passionate about the technology we forget about the people.</p>
+ 
+<h3 class="section-heading">Pete Brown
+ - <a href="https://www.twitter.com/https://twitter.com/jpbrown1">https://twitter.com/jpbrown1</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/pete-brown-4b735040/">https://www.linkedin.com/in/pete-brown-4b735040/</a></p>
+ 
+<p>Pete Brown is a Memphis based infrastructure technologist. He supported various functional areas for over 15 years before learning the dark arts of object oriented programming. When he’s not working on a software project he can be found cycling, playing a VR game or shuttling his 5 kids to their respective activities.</p>
+ 
+<h3 class="section-heading">Dan Evans
+ - <a href="https://www.twitter.com/@danthebiman">@danthebiman</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/drevans02">http://www.linkedin.com/in/drevans02</a></p>
+ 
+<p>Dan Evans is a Data and Analytics evangelist with over 25 years’ experience deploying strategic and innovative analytic solutions.  He’s focused on Microsoft technologies including Data Platform, Advanced Analytics and Business Applications.  Current focuses include SQL Server, Power Suite, Cognitive Services, Artifical Inteligence and other Data Platform related topics in Azure.   Dan presents at many local, regional and national events including SQL PASS, DAMA, TDWI, TechEd and Ignite and supports best practices in Microsoft data and analytics across North America.</p>
+ 
+<h3 class="section-heading">Tamera Clark
+ - <a href="https://www.twitter.com/https://twitter.com/tameraclark">https://twitter.com/tameraclark</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/tameraclark/">http://www.linkedin.com/in/tameraclark/</a></p>
+ 
+<p>Contact: <a href="http://tameraclark.com">http://tameraclark.com</a></p>
+ 
+<p>Tamera Clark has been involved in the IT industry for greater than ten years, with experiences ranging from systems analysis/engineering to SQL Server and SSRS administration/development. She is an active member of the SQL Server community, participating in the Women in Technology Virtual Chapter, Co-leading the Nashville BI Chapter, assisting the Nashville PASS Chapter and serving as a Regional Mentor.  Tamera is also the event chair of SQLSaturday Nashville.</p>
+ 
+<h3 class="section-heading">Dustin Dorsey
+ - <a href="https://www.twitter.com/sql_dd">sql_dd</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dustindorsey">https://www.linkedin.com/in/dustindorsey</a></p>
+ 
+<p>Contact: <a href="https://dustindorsey.com/">https://dustindorsey.com/</a></p>
+ 
+<p>Dustin Dorsey has been architecting and managing SQL Server solutions for companies for well over a decade. While Dustin is skilled in many areas, he has a unique specialization in cost management and architecture around the data platform both on-premise and in the cloud that he has used to provide significant savings for multiple organizations and loves sharing information about this. Dustin is an avid speaker and can be seen writing articles on popular SQL websites, as well as, on his own blog at DustinDorsey.com.  He is also active in the Nashville community as a local user group leader and co-organizer of his local SQLSaturday. Dustin currently serves as Director of Data Management at Lifepoint Health.</p>
+ 
+<h3 class="section-heading">John Deardurff
+ - <a href="https://www.twitter.com/SQLMCT">SQLMCT</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/JohnDeardurff">http://www.linkedin.com/in/JohnDeardurff</a></p>
+ 
+<p>Contact: <a href="https://www.sqlmct.com">https://www.sqlmct.com</a></p>
+ 
+<p>John has been a Microsoft Certified Trainer (MCT) for over 20 years teaching Azure, SQL Server, Exchange Server, and Windows Server networking courses. He is currently a SQL Premier Field Engineer for Microsoft. He is an MCT Regional Lead for the Eastern United States and a former Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Brian Hansen
+ - <a href="https://www.twitter.com/tf3604">tf3604</a>
+</h3>
+<p>Contact: <a href="http://www.tf3604.com">http://www.tf3604.com</a></p>
+ 
+<p>Brian is a database administrator at Children International in Kansas City.  He has been working with SQL Server technologies since 1998, including roles in report development, application development and database administration.</p>
+ 
+<h3 class="section-heading">Spencer Swindell
+ - <a href="https://www.twitter.com/@SpencerSwindell">@SpencerSwindell</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/spencerswindell/">https://www.linkedin.com/in/spencerswindell/</a></p>
+ 
+<p>Spencer Swindell is the Lead Architect with Think Data Insights, LLC. Think Data Insights a consulting group based out of Nashville, TN that works with companies to implement and maintain their Enterprise Data Platform. Since graduating from Tennessee Tech in 2011, he has built and delivered solutions for numerous organizations in the Nashville area utilizing SQL Server and the Microsoft BI Toolset. Spencer lives in Mount Juliet with his wife and son.</p>
+ 
+<h3 class="section-heading">Kerry Tyler
+ - <a href="https://www.twitter.com/AirborneGeek">AirborneGeek</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kerrytyler">https://www.linkedin.com/in/kerrytyler</a></p>
+ 
+<p>Contact: <a href="http://airbornegeek.com">http://airbornegeek.com</a></p>
+ 
+<p>Kerry Tyler is a SQL Server, Business Intelligence, and Azure consultant. His initial IT experience was in network engineering and Windows system administration before moving into the data realm. This infrastructure background builds a firm foundation for performance tuning and cloud infrastructure design and implementation. Kerry has full-time DBA experience in SQL Server since version 2000 and business intelligence architecture since SQL Server 2005. In addition to consulting work, he delivers presentations and training on SQL Server administration, business intelligence, and Azure data and infrastructure components.</p>
+ 
+<h3 class="section-heading">Kevin Wilkie
+ - <a href="https://www.twitter.com/Oskaruth">Oskaruth</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kevinwilkie">https://www.linkedin.com/in/kevinwilkie</a></p>
+ 
+<p>Contact: <a href="http://sherpaofdata.com">http://sherpaofdata.com</a></p>
+ 
+<p>Kevin has 15+ years experience with SQL Server and has worked with the product since version 6.5, although he remembers with distaste the early versions of the product. He started working with SQL Server as an "Accidental" DBA, and has moved up through the ranks as a SQL Developer, a BI Associate, and Production DBA at various parts of his career. Currently, he works as a Lead Data Analyst spreading the gospel of how great data can be to anyone and everyone who will listen.</p>
+ 
+<h3 class="section-heading">Elizabeth Noble
+ - <a href="https://www.twitter.com/SQLZelda">SQLZelda</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/elizabeth-a-noble">https://www.linkedin.com/in/elizabeth-a-noble</a></p>
+ 
+<p>Elizabeth Noble is a Director of Database Development in the metro Atlanta area. When she was introduced to her first database over 10 years ago, it was love at first sight. Her passion is to help others improve the quality and speed of deploying database changes through automation. When she is not trying to automate all of the things, she can be found spending time with her dogs, playing disc golf, or taking a walk at the gym.</p>
+ 
+<h3 class="section-heading">Louis Davidson
+ - <a href="https://www.twitter.com/drsql">drsql</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/louisdavidson">http://www.linkedin.com/in/louisdavidson</a></p>
+ 
+<p>Contact: <a href="https://www.red-gate.com/simple-talk/author/louis-davidson/">https://www.red-gate.com/simple-talk/author/louis-davidson/</a></p>
+ 
+<p>Louis Davidson has worked in the IT industry for over 25 years as a corporate database developer and architect. He has been a Microsoft SQL Server MVP for 15 years and has written five books on database design, and contributed to many other SQL Server books as an author and tech editor. He has a bachelor's degree in Computer Science from the University of Tennessee at Chattanooga. You can read more about Louis at http://drsql.org.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="https://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation</a></p>
+ 
+<p><a href="https://www.bgstaffing.com/executive-recruitment/zycron/">Zycron</a></p>
+ 
+<p><a href="http://www.roberthalf.com/technology/">Robert Half Technology</a></p>
+ 
+<p><a href="https://www.memphis.edu/fedex/">University of Memphis</a></p>
+ 
+<p><a href="https://www.sentryone.com/">SentryOne</a></p>
+ 
+<p><a href="http://www.lbmc.com/datainsights">LBMC Data Insights</a></p>
+ 
+<p><a href="https://www.data-blue.com/">Data Blue</a></p>
+ 
+<p><a href="http://www.red-gate.com/">Redgate Software</a></p>
+ 
+<p><a href="https://www.youtube.com/channel/UCc1u_C8ukXd1Lkd9uF-Tj4w/videos?view=0sort=pview_as=subscriberflow=grid">SQLCoop.com, LLC</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

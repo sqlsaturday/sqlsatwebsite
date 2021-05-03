@@ -1,0 +1,568 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQLSaturday SQLSaturday #82 - Indianapolis 2011" />
+        <meta name="author" content=" />
+        <title>SQLSaturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #82 - Indianapolis 2011
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQLSaturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #82 - Indianapolis 2011</div>
+        <div class="masthead-subheading">This event was held on 2011-6-25</div>
+        <p><b>Event Location</b>:</p>
+        <p>The University of Indianapolis</p>
+        <p>1400 E. Hanna Ave</p>
+        <p>Indianapolis, Indiana</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0082.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Find Performance Problems by Reading the Waits</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Start with a simple proposition: a process is either working or waiting. You can tune the working part, but are you seeing the whole picture? There are many different resources on which your process could be waiting – a lock, memory, disk, CPU, and much more. When a process must wait, SQL Server will log it. There are hundreds of different wait types, and they are a gold mine of data for finding and solving performance problems – and proving the changes worked. After attending this session, you will be able to gather wait stats, use them to zero in on performance issues, and solve a variety of problems affecting your databases. Stop guessing, start knowing!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Eddie Wuerch</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Internals and Architecture</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Let’s face it.  You can effectively do many IT jobs related to SQL Server without knowing the internals of how SQL Server works.  Many great developers, DBAs, and designers get their day-to-day work completed on time and with reasonable quality while never really knowing what’s happening behind the scenes.  But if you want to take your skills to the next level, it’s critical to know SQL Server’s internal processes and architecture.  This session will answer questions like:
+What’s different about 32- and 64-bit systems?
+What are the various areas of memory inside of SQL Server?
+How are queries handled behind the scenes?
+What does SQL Server do with procedural code, like functions, procedures, and triggers?
+What happens during checkpoint</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Kline</b>, 
+</p>
+<hr>
+ 
+<h3>Top 10 Admin Mistakes on SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft SQL Server is easier to administrate than any other relational database on the market.  But “easier than everyone else” doesn’t mean it’s easy.  And it doesn’t mean that database administration on SQL Server is problem free.  And since SQL Server is constantly growing from small, home-grown applications, many IT professionals end up encountering issues that others had tackled and solved years ago.  Why not learn from those who first blazed the trails of database administration, so that we don’t make the same mistakes over and over again.  In fact, wouldn’t you like to learn about those mistakes before they ever happen?  
+
+This session will answer questions like:
+What’s the most common Transact-SQL programming mistake and how do</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Kline</b>, 
+</p>
+<hr>
+ 
+<h3>Back to basics - How does the Algebrizer work</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we’ll look at the operations and transformations of relational algebra in order to understand how query plans are computed.
+Relational algebra represents the foundation of relational databases. Any valid SQL query is transformed after parsing into a parse tree in which the internal nodes are operators, leaves are relations (data sets) and subtrees are subexpressions. The primary goal of the query optimizer  is to transform query trees into equivalent expression trees, where the average size of the resultsets yielded by subexpressions in the tree are smaller than they were before the optimization. The query optimizer uses a set of rules, to generate equivalent parse trees and then applies proportional costs for operators and</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Luke Jian</b>, 
+</p>
+<hr>
+ 
+<h3>Creating a Metadata Mart w/ SSIS - Data Governance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Recently I have had a client that required migrating and re hosting a data warehouse from the Oracle environment to the Netezza Appliance. The application had hundreds of tables and almost 2900 Source to Target Mappings. This would have taken 1000's of hours of manual coding. For this client we implemented a reusable data driven architecture , via SSIS, that relys on a metadata mart. The end result a greatly reduced TCO(developemnt effort) for generating the code required vs manual cosing. In addition the process leaves behind a metadata mart to report on for auditing and other Data Governance efforts. We generated over 100,000 lines of code and over 3000 load scripts
+
+
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ira Warren</b>, 
+</p>
+<hr>
+ 
+<h3>Getting Started with MDX </h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session, led by Microsoft BI Architect and SQL Server MVP Bill Pearson, we will concentrate largely upon crafting simple MDX expressions and queries whose purposes, for the most part, are to return a set of data. We will overview the structure of a cube, using as a basis the sample Adventure Works cube that is available to anyone installing SQL Server Analysis Services 2008 R2. We will then outline the components of simple MDX syntax, and get started writing basic expressions and queries. We will expose basic member functions, introduce filters (or “slicers”), and begin exploring core MDX functionality, including calculated members, and named sets. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>William E Pearson III</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Forensics: Tracking your users</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>If your SQL Server was hacked, would you know? Would you know how to track down who attacked your SQL Server? What was compromised? When? How? Thankfully most DBAs are not fighting off criminals on a daily basis, but understanding SQL Server forensics will allow you to better understand your SQL Servers and will give you the ability to answer that frequent question “What happened?”  This session will walk you through the process of how to determine what happened on your server without the use of expensive third-party tools, using only features available in all editions of Windows and SQL Server.  You will learn how to parse the various Windows, SQL Server and database transaction logs.  We will also explore the wealth of information availab</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sarah Barela</b>, 
+</p>
+<hr>
+ 
+<h3>Performance Management – 2008 MDW - How  Why</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Management Data Warehouse (MDW) which was introduced in 2008 can provide DBAs with useful performance information about Disk Usage, Server Activity and Query Statistics. This presentation will explore how to set up MDW, look at its underlying schema / statistics and point out some of its shortcomings in comparison with other performance tools.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Janis Griffin</b>, 
+</p>
+<hr>
+ 
+<h3>NoSQL- What is it and why do I care? </h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>NoSQL (or, more correctly NoRel) is a moniker applied to a family of non relational software systems for storing data and/or documents that powers some of the largest sites on the internet.  Amazingly enough, some of these platforms have been around a very long time. A high level discussion of some of the pros and cons of this technology compared to traditional systems like Oracle and SQL Server.  A survey of the most popular "NoSQL" platforms and who uses them. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Craig Purnell</b>, 
+</p>
+<hr>
+ 
+<h3>Take Control of Your Databases with PBM!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A large majority of a modern DBA's workload consists of managing their policies and procedures to ensure that their systems are consistent and in many cases compliant with certain governmental requirements. SQL Server 2008 provides Policy Based Management (PBM) as a tool for the DBA to manage system policies in a very structured way. In this session, we will show you how to configure, monitor, and administer these features to help lower your anxiety levels while increasing your system’s availability. We'll also learn how you can leverage the PBM system across not only your 2008 environment but also all those down-level instances as well!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Arie Jones</b>, 
+</p>
+<hr>
+ 
+<h3>Advanced TSQL Solutions</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The range of real-world queries that can be performed using set-based TSQL solutions is astounding, but many of these are not well known and if you haven't been shown the light you might never realize what is possible. Come and join me as we delve into the inner recesses and corners of the TSQL envelope using a wide variety of expressions, clauses and techniques.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Boles</b>, 
+</p>
+<hr>
+ 
+<h3>Multi-Tenant Database Model with SQL Azure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This talk will focus on the benefits, features, and ease of use of SQL Azure. Learn how your projects can benefit from a hosted data storage and query processing service. See by example how to design your program to use SQL Azure. Real world topics and use cases will be covered including data sync and staying vendor independent while hosting your data in the cloud.  When you use the Multi-Tenant Database Model and SQL Azure together you can create a very powerful solution.  We'll start from scratch and go from design to deployment in this session.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Aaron King</b>, 
+</p>
+<hr>
+ 
+<h3>Exploring Data Privacy</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Somewhere out there someone is storing data about you. What defines sensitive and personally identifiable data? What should you, as a consumer, expect in regard to the protection of this data? What should you as a database professional do to ensure that your customer's data is protected? In this session we will explore these and other dimensions of the increasingly critical topic of data privacy.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>John Magnabosco</b>, 
+</p>
+<hr>
+ 
+<h3>PowerShell, the New SQL Hammer</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You've seen all the amazing scripts that use PowerShell, but writing your own is raising more questions. This session will help fill in the gaps by explaining all the moving parts of PowerShell 2.0, the integration with SQL Server and answer the following questions as well as others. Why is Invoke-Sqlcmd necessary? What is and why is there a Minishell for SQL Server? What makes the SQLSERVER: PS Drive so powerful? How does a remote SQL Server get added to the SQLSERVER: PS Drive?</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Norman Kelm</b>, 
+</p>
+<hr>
+ 
+<h3>Reporting Services Greatness!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server Reporting Services is still one of the more underused aspects of the SQL Server stack of technologies. Most of this comes from organizations that don't understand how to properly implement the technology in a way that will bring them a return on investment. In this session, we'll show you how to set up everything for standard to data driven subscriptions, security, export features, and how your developers can even interact with the Reporting Services webs ervice stack. If you have been itching to get your organization on the fast track to reporting success then this session is definitely for you!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Arie Jones</b>, 
+</p>
+<hr>
+ 
+<h3>Database Mirroring in the Real World</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Review of Database Mirroring in the context of operations in the real world. A high level look at the key modes of mirroring; specific analysis of setup and configuration problems; various real time monitoring techniques of the mirrored databases; discussion of the pros and cons of WAN hardware acceleration devices to improve performance; using mirroring to perform a rolling upgrades or to move large databases to a different location.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Craig Purnell</b>, 
+</p>
+<hr>
+ 
+<h3>An Overview of PowerPivot for Excel </h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft BI Architect and SQL Server MVP Bill Pearson overviews PowerPivot for Excel, the client side of Microsoft’s foray into self-service BI. The targeted audience includes BI professionals who are seeking an introduction to what PowerPivot offers their organizations. Among others interested will be Excel power users who are fluent with PivotTables and want to understand the new capabilities.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>William E Pearson III</b>, 
+</p>
+<hr>
+ 
+<h3>Tuning Analysis Services Processing Performance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You’ve got your Analysis Services cube created, and deployed in production. However, you notice that every night, the cube is taking longer and longer to process, and users are starting to complain about their data not being ready when they arrive in the morning. If you’ve found yourself in this situation, or want to avoid being in it in the first place, come to this session. We’ll cover how to benchmark processing performance, track down bottlenecks, and how to tune things to get the best performance for processing your cube.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>John Welch</b>, 
+</p>
+<hr>
+ 
+<h3>Looney Tuner? No, there IS a method to my madness</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server query tuning is often more art than science and it can quickly eat up a lot of DBA and/or Developer time. This presentation will outline a method for determining the best approach for tuning queries by utilizing response time analysis and SQL diagramming techniques. Regardless of the complexity of the statement, this quick, systematic approach will lead you down the correct tuning path with no guessing. If you are a beginner or expert, this approach will save you countless hours tuning a query.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Janis Griffin</b>, 
+</p>
+<hr>
+ 
+<h3>TempDB Performance Troubleshooting and Optimizing</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Every SQL Server instance relies on the tempdb database. Whether through explicit use with #temp tables or @table variables, or implicit use through working space for many other operations, most tempdb databases get quite a workout. This session will dig into many of the otherwise-hidden issues that can kill server performance. After this session, you will be able to spot tempdb performance issues, drill into the causes, and take the steps necessary to solve them.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Eddie Wuerch</b>, 
+</p>
+<hr>
+ 
+<h3>Getting Started With Service Broker</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Since SQL Server 2005, Microsoft has implemented a feature known as Service Broker that provides a very sophisticated message queuing service. In this session, we will unearth what is one of the least used features in your SQL Server toolbox and show you how you can implement it in your own environment through a series of real world examples. Along the way, you'll learn how to leverage the technology not only for single server queuing but also for server to server database queuing as well. This is sure to be a real eye opener for some whom have never had the time to dig into this fascinating piece of technology.  </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Arie Jones</b>, 
+</p>
+<hr>
+ 
+<h3>Do More (ETL) with Less (Effort) - Automating SSIS</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SSIS is a great tool for transferring data from one data source to another, and for implementing complex ETL processes. However, for simple, straightforward data transfer tasks or packages that adhere to a pattern, creating SSIS packages by hand can be time-consuming and repetitious. By attending this session, you'll learn how to automate package creation in SSIS, including the dynamic generation of data flows. We’ll cover some of the free and open source tools available for this, and discuss “roll your own” options.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>John Welch</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Memory Deep Dive</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Like the title says, be prepared to get really down and dirty with memory allocations and usage in SQL Server. RAM is one of the three pillars of server performance and understanding how it is used, how you can analyze what is going on with it and how to properly adjust the the few knobs you have at your disposal are very important topics for both your server's health and performance.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Boles</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Janis Griffin
+ - <a href="https://www.twitter.com/DoBoutAnything">DoBoutAnything</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/janis-griffin/0/914/aba">http://www.linkedin.com/pub/janis-griffin/0/914/aba</a></p>
+ 
+<p>Janis Griffin has over 30 years of DBA/database experience including design, development and implementation of many critical database applications. Before coming to Quest Software, Janis primarily worked in the Telecom/Network Industry, working with both real-time network routing databases and OLTP business to business applications.  Janis also held positions as a Principal Architect and Senior Manager, mentoring other DBAs on best practices in database performance tuning.</p>
+ 
+<h3 class="section-heading">Arie Jones
+ - <a href="https://www.twitter.com/@programmersedge">@programmersedge</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/ariejones">http://www.linkedin.com/in/ariejones</a></p>
+ 
+<p>Contact: <a href="http://www.programmersedge.com">http://www.programmersedge.com</a></p>
+ 
+<p>Arie Jones (quot;AJquot;) is one of the owners and Vice President of Emerging Technologies for Indy Data Partners, Inc. in Indianapolis, IN. AJ is a frequent speaker at national conferences and local user groups. With over 15 years of experience in application development and database administration on various platforms, he specializes in developing cross-platform solutions with an emphasis on .NET and SQL Server technologies. He blogs extensively at http://www.programmersedge.com.</p>
+ 
+<h3 class="section-heading">Eddie Wuerch
+ - <a href="https://www.twitter.com/@EddieW">@EddieW</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/eddiewuerch">http://www.linkedin.com/in/eddiewuerch</a></p>
+ 
+<p>Contact: <a href="http://www.indydba.com">http://www.indydba.com</a></p>
+ 
+<p>Eddie Wuerch has 20 years of experience as a SQL Server specialist in a much-longer IT career. A Microsoft Certified Master, Eddie spends his days in the Salesforce Marketing Cloud, focusing on performance, scale, and uptime for the massive SQL Server backend. These SQL Servers churn billions of transactions daily against trillions of rows of data in a 24x7 continuously-available online system accessed by millions worldwide every day.</p>
+ 
+<h3 class="section-heading">Arie Jones
+ - <a href="https://www.twitter.com/@programmersedge">@programmersedge</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/ariejones">http://www.linkedin.com/in/ariejones</a></p>
+ 
+<p>Contact: <a href="http://www.programmersedge.com">http://www.programmersedge.com</a></p>
+ 
+<p>Arie Jones (quot;AJquot;) is one of the owners and Vice President of Emerging Technologies for Indy Data Partners, Inc. in Indianapolis, IN. AJ is a frequent speaker at national conferences and local user groups. With over 15 years of experience in application development and database administration on various platforms, he specializes in developing cross-platform solutions with an emphasis on .NET and SQL Server technologies. He blogs extensively at http://www.programmersedge.com.</p>
+ 
+<h3 class="section-heading">Aaron King
+
+</h3>
+<p>Contact: <a href="http://www.aaronstanleyking.com">http://www.aaronstanleyking.com</a></p>
+ 
+<p>Aaron King is a application architect specializing in enterprise web applications and very large databases.</p>
+ 
+<h3 class="section-heading">Kevin Boles
+ - <a href="https://www.twitter.com/@TheSQLGuru">@TheSQLGuru</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/thesqlguru">http://www.linkedin.com/in/thesqlguru</a></p>
+ 
+<p>Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.</p>
+ 
+<h3 class="section-heading">Ira Warren
+
+</h3>
+<p> Over 35 years experiences in Software Sevelopemt, IT Management and BI Architecture.</p>
+ 
+<h3 class="section-heading">Kevin Kline
+
+</h3>
+<p>Contact: <a href="http://KevinEKline.com">http://KevinEKline.com</a></p>
+ 
+<p>Kevin Kline is the Director of Engineering Services at SQL Sentry. A Microsoft SQL Server MVP, Kevin is a founding board member of PASS, editor-in-chief of SQLServerPedia.com and the author of popular IT books like “SQL in a Nutshell” (O’Reilly  Associates). His twitter handle is @kekline and he blogs at http://KevinEKline.com. Kevin is a top-rated speaker at industry trade shows and has been active in the IT industry for over 20 years.</p>
+ 
+<h3 class="section-heading">Luke Jian
+ - <a href="https://www.twitter.com/@sensware">@sensware</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/ljian">http://www.linkedin.com/in/ljian</a></p>
+ 
+<p>Contact: <a href="http://blog.sqlpositive.com">http://blog.sqlpositive.com</a></p>
+ 
+<p>Luke Jian is an experienced database architect with a leading healthcare information company. A frequent speaker at conferences and local user groups he has  15+ years of experience in database design, development and optimization on SQL Server and Big Data  projects.</p>
+ 
+<h3 class="section-heading">Janis Griffin
+ - <a href="https://www.twitter.com/DoBoutAnything">DoBoutAnything</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/janis-griffin/0/914/aba">http://www.linkedin.com/pub/janis-griffin/0/914/aba</a></p>
+ 
+<p>Janis Griffin has over 30 years of DBA/database experience including design, development and implementation of many critical database applications. Before coming to Quest Software, Janis primarily worked in the Telecom/Network Industry, working with both real-time network routing databases and OLTP business to business applications.  Janis also held positions as a Principal Architect and Senior Manager, mentoring other DBAs on best practices in database performance tuning.</p>
+ 
+<h3 class="section-heading">Eddie Wuerch
+ - <a href="https://www.twitter.com/@EddieW">@EddieW</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/eddiewuerch">http://www.linkedin.com/in/eddiewuerch</a></p>
+ 
+<p>Contact: <a href="http://www.indydba.com">http://www.indydba.com</a></p>
+ 
+<p>Eddie Wuerch has 20 years of experience as a SQL Server specialist in a much-longer IT career. A Microsoft Certified Master, Eddie spends his days in the Salesforce Marketing Cloud, focusing on performance, scale, and uptime for the massive SQL Server backend. These SQL Servers churn billions of transactions daily against trillions of rows of data in a 24x7 continuously-available online system accessed by millions worldwide every day.</p>
+ 
+<h3 class="section-heading">John Welch
+ - <a href="https://www.twitter.com/@john_welch">@john_welch</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/johncwelch/">http://www.linkedin.com/in/johncwelch/</a></p>
+ 
+<p>Contact: <a href="http://agilebi.com/jwelch">http://agilebi.com/jwelch</a></p>
+ 
+<p>John Welch joined SentryOne in spring 2018 as VP of Engineering with the acquisition by SentryOne of the software division of Pragmatic Works. John leads the development of a suite of products that make developing, managing, and documenting data solutions easier. John has been successfully delivering IT solutions to business problems since 1994, and has been focused on business intelligence and data warehousing technologies since 2001. He is a Microsoft Most Valued Professional (MVP), and a frequent presenter on SQL Server and data topics. He also contributes to several open source projects and community initiatives targeted toward making data professionals work more productive.</p>
+ 
+<h3 class="section-heading">Craig Purnell
+ - <a href="https://www.twitter.com/@CraigPurnell">@CraigPurnell</a>
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/craigpurnell">http://linkedin.com/in/craigpurnell</a></p>
+ 
+<p>Contact: <a href="http://www.craigpurnell.com/">http://www.craigpurnell.com/</a></p>
+ 
+<p>Craig Purnell is a career database professional, trainer, and community activist. He has spent over 10 years as the Database Administrator at a large Midwestern law firm. He has been in IT for 15 years and has spent his entire career working with enterprise databases and ERP systems. Craig is an active member of the Ohio North SQL Server User Group and has presented at many user groups, SQLSaturdays, and the PASS Summit in 2012 and 2013</p>
+ 
+<h3 class="section-heading">William E Pearson III
+ - <a href="https://www.twitter.com/@Bill_Pearson">@Bill_Pearson</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/e/fpf/252170891">https://www.linkedin.com/e/fpf/252170891</a></p>
+ 
+<p>Contact: <a href="https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E">https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E</a></p>
+ 
+<p>Bill Pearson created Island Technologies Inc. in 1997, and has developed a large and diverse customer base since. Bill#39;s background as a CPA, Internal Auditor, Management Accountant, and SQL Server MVP (BI) enables him to provide value to clients as a liaison between Accounting / Finance and Information Services. Bill has implemented enterprise business intelligence systems over the years for many Fortune 500 companies and focuses his practice upon the integrated Microsoft Business Intelligence </p>
+ 
+<h3 class="section-heading">Kevin Kline
+
+</h3>
+<p>Contact: <a href="http://KevinEKline.com">http://KevinEKline.com</a></p>
+ 
+<p>Kevin Kline is the Director of Engineering Services at SQL Sentry. A Microsoft SQL Server MVP, Kevin is a founding board member of PASS, editor-in-chief of SQLServerPedia.com and the author of popular IT books like “SQL in a Nutshell” (O’Reilly  Associates). His twitter handle is @kekline and he blogs at http://KevinEKline.com. Kevin is a top-rated speaker at industry trade shows and has been active in the IT industry for over 20 years.</p>
+ 
+<h3 class="section-heading">Sarah Barela
+ - <a href="https://www.twitter.com/@sarahspace">@sarahspace</a>
+</h3>
+<p>Contact: <a href="http://www.sqlsarah.net">http://www.sqlsarah.net</a></p>
+ 
+<p>Sarah Barela is a Senior Manager at CBeyond Cloud Services, formerly MaximumASP. She has a Master’s degree in Information Science from the University of Texas, where she specialized in Database Management Systems. Sarah has spent over 15 years focusing on the administration of enterprise environments with large numbers of SQL Servers. Sarah is currently responsible for a rapidly growing environment with more than 2000 SQL Server instances. Her latest interests are in applying cloud technologies to SQL Server environments. Sarah has been a guest speaker at a number of PASS Chapter meetings, SSWUG Virtual Conferences, SQL Connections, SQLSaturday events, and the 2007, 2009, and 2010 PASS Summits.</p>
+ 
+<h3 class="section-heading">William E Pearson III
+ - <a href="https://www.twitter.com/@Bill_Pearson">@Bill_Pearson</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/e/fpf/252170891">https://www.linkedin.com/e/fpf/252170891</a></p>
+ 
+<p>Contact: <a href="https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E">https://mvp.support.microsoft.com/profile=02C5CD07-7511-4151-A678-3A4A3451F85E</a></p>
+ 
+<p>Bill Pearson created Island Technologies Inc. in 1997, and has developed a large and diverse customer base since. Bill#39;s background as a CPA, Internal Auditor, Management Accountant, and SQL Server MVP (BI) enables him to provide value to clients as a liaison between Accounting / Finance and Information Services. Bill has implemented enterprise business intelligence systems over the years for many Fortune 500 companies and focuses his practice upon the integrated Microsoft Business Intelligence </p>
+ 
+<h3 class="section-heading">Norman Kelm
+
+</h3>
+<p>Contact: <a href="http://www.gerasus.com/">http://www.gerasus.com/</a></p>
+ 
+<p>Norman Kelm is the owner of Gerasus Software, http://www.gerasus.com/, the maker of SSIS-DTS Package Search the only utility that can search SSIS and DTS packages. Norman has been working in IT for over 20 years. He worked as a FORTRAN and C developer for 8 years before making the jump to databases with Sybase. He then moved on to SQL Server working as a production and development DBA on SQL Server since version 6.5. He is also a founding member of the Tampa Bay SQL Server User Group. </p>
+ 
+<h3 class="section-heading">Craig Purnell
+ - <a href="https://www.twitter.com/@CraigPurnell">@CraigPurnell</a>
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/craigpurnell">http://linkedin.com/in/craigpurnell</a></p>
+ 
+<p>Contact: <a href="http://www.craigpurnell.com/">http://www.craigpurnell.com/</a></p>
+ 
+<p>Craig Purnell is a career database professional, trainer, and community activist. He has spent over 10 years as the Database Administrator at a large Midwestern law firm. He has been in IT for 15 years and has spent his entire career working with enterprise databases and ERP systems. Craig is an active member of the Ohio North SQL Server User Group and has presented at many user groups, SQLSaturdays, and the PASS Summit in 2012 and 2013</p>
+ 
+<h3 class="section-heading">John Magnabosco
+
+</h3>
+<p>Contact: <a href="http://www.simple-talk.com/community/blogs/johnm/default.aspx">http://www.simple-talk.com/community/blogs/johnm/default.aspx</a></p>
+ 
+<p>John Magnabosco is the Data Services Manager at Defender Direct; although he prefers the title "Data Coach". He also is a co-founder of IndyPASS and IndyTechFest. He is also the author of the book "Protecting SQL Server Data" and contributing author of the soon to be released "SQL Server MVP Deep Dives, Vol. 2".</p>
+ 
+<h3 class="section-heading">Arie Jones
+ - <a href="https://www.twitter.com/@programmersedge">@programmersedge</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/ariejones">http://www.linkedin.com/in/ariejones</a></p>
+ 
+<p>Contact: <a href="http://www.programmersedge.com">http://www.programmersedge.com</a></p>
+ 
+<p>Arie Jones (quot;AJquot;) is one of the owners and Vice President of Emerging Technologies for Indy Data Partners, Inc. in Indianapolis, IN. AJ is a frequent speaker at national conferences and local user groups. With over 15 years of experience in application development and database administration on various platforms, he specializes in developing cross-platform solutions with an emphasis on .NET and SQL Server technologies. He blogs extensively at http://www.programmersedge.com.</p>
+ 
+<h3 class="section-heading">Kevin Boles
+ - <a href="https://www.twitter.com/@TheSQLGuru">@TheSQLGuru</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/thesqlguru">http://www.linkedin.com/in/thesqlguru</a></p>
+ 
+<p>Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.</p>
+ 
+<h3 class="section-heading">John Welch
+ - <a href="https://www.twitter.com/@john_welch">@john_welch</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/johncwelch/">http://www.linkedin.com/in/johncwelch/</a></p>
+ 
+<p>Contact: <a href="http://agilebi.com/jwelch">http://agilebi.com/jwelch</a></p>
+ 
+<p>John Welch joined SentryOne in spring 2018 as VP of Engineering with the acquisition by SentryOne of the software division of Pragmatic Works. John leads the development of a suite of products that make developing, managing, and documenting data solutions easier. John has been successfully delivering IT solutions to business problems since 1994, and has been focused on business intelligence and data warehousing technologies since 2001. He is a Microsoft Most Valued Professional (MVP), and a frequent presenter on SQL Server and data topics. He also contributes to several open source projects and community initiatives targeted toward making data professionals work more productive.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.perptech.com">Perpetual Technologies, Inc.</a></p>
+ 
+<p><a href="http://www.idstorage.com/">Integrated Data Storage</a></p>
+ 
+<p><a href="http://www.exacttarget.com/">ExactTarget</a></p>
+ 
+<p><a href="http://www.melissadata.com">Melissa Data Corp.</a></p>
+ 
+<p><a href="http://www.confio.com">Confio</a></p>
+ 
+<p><a href="http://www.cozyroc.com">Cozy Roc</a></p>
+ 
+<p><a href="http://www.karlalandrum.wordpress.com">Karla Landrum</a></p>
+ 
+<p><a href="http://www.simple-talk.com/community/blogs/rodney/default.aspx">Rodney Landrum</a></p>
+ 
+<p><a href="http://www.programmersedge.com">Silverwing Technologies, Inc.</a></p>
+ 
+<p><a href="http://noelmckinney.com/">Noel McKinney</a></p>
+ 
+<p><a href="http://sqlvariant.com/">SQLvariant</a></p>
+ 
+<p><a href="http://www.sqljoe.com">SQLJoe.com</a></p>
+ 
+<p><a href="http://blog.infoadvisors.com">InfoAdvisors</a></p>
+ 
+<p><a href="http://www.aaronstanleyking.com">Aaron Stanley King</a></p>
+ 
+<p><a href="http://shannonlowder.com">Shannon Lowder</a></p>
+ 
+<p><a href="http://www.gerasus.com/">Gerasus Software</a></p>
+ 
+<p><a href="http://www.apparatus.net">Apparatus</a></p>
+ 
+<p><a href="http://www.idera.com/Content/Home.aspx">Idera</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQLSaturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

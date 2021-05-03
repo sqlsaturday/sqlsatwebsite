@@ -1,0 +1,807 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #643 - Louisville 2017" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #643 - Louisville 2017
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #643 - Louisville 2017</div>
+        <div class="masthead-subheading">This event was held on 2017-8-5</div>
+        <p><b>Event Location</b>:</p>
+        <p>Indiana Wesleyan University</p>
+        <p>1500 Alliant Avenue </p>
+        <p>Louisville, Kentucky</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0643.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Let Me Finish... Isolating Write Operations</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>OLTP databases can be constantly written to and reporting databases are written to at least periodically. In order to ensure consistent results, connections must be isolated from one another while executing, ideally with the lowest possible cost to concurrency.  How this isolation is handled is based on the isolation level, whether the classic lock based or the newer optimistic scheme of the in-memory OLTP engine is used, or even if both engines are enlisted in the same transaction. In this session we will look at examples of how SQL Server isolates reading and writing operations from other writing operations to explore how this may affect your application through error messages and performance hits.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Louis Davidson</b>, 
+</p>
+<hr>
+ 
+<h3>Extending DevOps To SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Most organizations are under pressure to speed up the software delivery cycle, whether that’s to respond more quickly to the needs of the business, the needs of your customers or just to keep up with the competition.  Unfortunately the database is commonly considered a bottleneck.  Without the right processes in place, database change management can slow things down, adding risk, uncertainty, and getting in the way of development and operations working together to deliver.  Any organization that wants to fully benefit from a DevOps approach is going to have to overcome some specific challenges presented by the database. This session will teach you how to take DevOps principles and practices and apply them to SQL Server so that you can speed up the database delivery cycle at the same time you protect the information contained within.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Grant Fritchey</b>, 
+</p>
+<hr>
+ 
+<h3>Demystifying Data Compression</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2016 SP1 makes data compression available in all editions. Data compression can reduce storage costs, and provide a performance boost—and now compression is available without the added cost of Enterprise Edition. Whether you are a developer or a DBA, it's important to know how to use compression to save money and improve speed.
+
+Come learn about how data compression actually works, the differences between ROW and PAGE compression, and learn how to pick the best compression level for your data. This session will cover the details of the compression algorithms, and the costs and benefits associated with each type of compression. 
+
+By the end of this session, you'll have a better idea of how the different compression algorithms work, when compression is the right solution, as well as what type of compression to use.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andy Mallon</b>, 
+</p>
+<hr>
+ 
+<h3>Let Her Finish: Supporting Women's Voices from meetings to the board room</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Next time you attend a meeting, watch what happens when women at the table offer ideas. If your office is like most in America, you’ll notice women are interrupted almost three times as often as men. Some interruptions are to assert dominance but sometimes people do it to be helpful  offer affirmation. Regardless of the intent, the results are the same. Women are being left out of the conversation. The consequences are real. Male executives that speak more frequently in meetings are rewarded with 10% higher competence ratings from peers  better performance reviews from bosses. This translates into $ when raises and bonuses are handed out.
+ This discussion will cover positive solutions that help women’s voices be heard. Women need to be more assertive. We need to learn to say “Stop interrupting me.” and “I just said that.” However, men can be, no HAVE to be, part of the solution. They can help women become part of the conversation.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rie Irish</b>, 
+</p>
+<hr>
+ 
+<h3>Oracle vs. SQL Server Indexing-  The Good, the Bad and the Ugly</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session is based off research performed on objects, design and code built to be as similar as possible to see how Oracle and SQL Server compare in performance, usage and storage of indices.  Based off trusted measurements in each platform, we’ll dig into how the use case was built, the similarities and the differences in each.  What we can admire about how each product has matured in the way of managing index data, statistics and how the optimizer hinders and enhances index availability.
+
+Takeaways are:
+1.	Receive a strong education on platform differences between Oracle and SQL Server.
+2.	Discover hidden insight on index storage and costs.
+3.	Learn about great tips on maintaining index health and how one platform may perform better than the other and how.
+4.	Translation of common features in both platforms</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kellyn Pot'Vin-Gorman</b>, 
+</p>
+<hr>
+ 
+<h3>Tame Your Unruly Data With Constraints</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Bad data comes in many forms: duplicate rows, wrong data type, invalid values, and orphaned or missing foreign keys. Time is wasted cleansing, reviewing and correcting data, not to mention the potential hazards bad data can cause. This introductory presentation will explain the data types and constraints available in SQL Server, and how they can replace or augment business rules that would otherwise be written in application or procedure code. Performance benefits provided by constraints will be demonstrated. We will examine the various system views and procedures that describe constraints and how to use them to document your databases. You will be able to apply this knowledge to your database environments and see significant improvements in data quality, performance, and reliability.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rob Volk</b>, 
+</p>
+<hr>
+ 
+<h3>The Anatomy of Select</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>TSQL is one of the most valuable tools any SQL Server professional can add to their tool-set. More aptly, TSQL is a whole chest of tools for the SQL Server professional. One of the most important tools in that TSQL chest is a good understanding of the SELECT statement.
+
+When was the last time you sat down to evaluate a SELECT statement? What actually goes into the processing of that teeny little word? There might be a fair bit more to this simple term than just fetching data from the database. This session covers the simplicity of the select. Then we take it a step further to dive into some of the complexities tied directly to this particular statement.
+
+This session will help the attendee better understand the Select statement. With a more solid understanding of this statement, the attendee can return and implement some of this new knowledge to help improve processing and query response times in their own environments.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jason Brimhall</b>, 
+</p>
+<hr>
+ 
+<h3>Bare Naked Skinny on SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Ever feel like there are just too many layers with SQL Server? You peel off a layer and behold there is yet another layer. SQL Server is rather complex. The complexities can be rather frustrating from time to time. 
+
+Join this NSFW (not safe for whining) session as we strip SQL down to the bare bones. I will help you undress the complexities of a few of the basic SQL Server concepts. These concepts will include locks, principals, query directives and deadlocks.
+
+In this session I will disrobe misunderstandings related to the aforementioned topics. I will show the different types of principals in SQL Server. I will also show various scenarios involving locks and deadlocks along with some of their effects with and without query directives. The goal is to better understand these topics and to hopefully stop using and perpetuating common mis-uses of terminology and common misconceptions about the technology.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jason Brimhall</b>, 
+</p>
+<hr>
+ 
+<h3>Data Cleansing With SQL And R</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>On a given project, data scientists can spend upwards of 80% of their time preparing, cleaning, and correcting data. In this session, we will look at different data cleansing and preparation techniques using both SQL Server and R. We will investigate the concept of tidy data and see how we can use tools in both languages to simplify research and analysis of a small but realistic data set.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Feasel</b>, 
+</p>
+<hr>
+ 
+<h3>Choose Your Own Adventure:  Troubleshooting</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this 100% interactive session, Microsoft engineer and MCM Tim Chapman will present you with a problem workload on a SQL Server instance and it will be up to you, the audience, to solve the problem.  You'll be guided along the way in what will be a great, and fun, SQL Server troubleshooting session.  Come prepared to learn and take notes as there will only be slides that detail the problem symptoms.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tim Chapman</b>, 
+</p>
+<hr>
+ 
+<h3>Stretch Database and Managed Backups: Cloud Services for your SQL Servers</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Utilizing Azure cloud services does not mean moving all of your data or control away from your on-premises SQL Servers.  In this session we will cover the new SQL 2016 Stretch Database and the SQL 2014 Managed Backups to Azure features.  We will look at use-cases and limitations of both features to illustrate how these cloud services may fit into your current SQL Server environment.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrew Loree</b>, 
+</p>
+<hr>
+ 
+<h3>Emergency! Are You Ready for Disaster to Strike?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Most of the time pilots are learning to fly, they're actually learning how to recover from emergency conditions. While we as Database Administrators focus on taking backups, how much time do we actually spend practicing recovering with those backups? This session will focus on the kinds of situations that can dramatically affect a data center, and how to use checklists to practice recovery processes to assure business continuity.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Allen White</b>, 
+</p>
+<hr>
+ 
+<h3>Measure Twice, cut once: Intro to unit testing with tSQLt</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Unit testing allows database code to be consistently tested during the development process, but it can be challenging to get unit testing setup for database development. This session will give an overview on the purpose of unit testing, the installation of the tSQLt framework, and the design of unit tests. I will use general concepts of test driven design to create and run unit tests to confirm that objects exist and to test single and multiple test cases. Learn how to implement unit testing in a development environment and create and run your own units tests</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Elizabeth Noble</b>, 
+</p>
+<hr>
+ 
+<h3>Parameter Sniffing the Good, the Bad, and the Ugly</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Parameter sniffing is something that more than often helps performance on your servers; however, there are times when it can hinder performance as well. In this session we will define exactly what parameter sniffing is, and examine when it is good and when it is bad. Lastly, we will explore the different options available to fix bad parameter sniffing. After this session, you will be able to locate and fix bad parameter sniffing when it occurs on your servers.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Lance Tidwell</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server and PowerShell: Let's Get Serious</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Whether you've dabbled in PowerShell or wondered what all the fuss is about, make no mistake: PowerShell is something worth learning to make your life as a SQL Server professional easier. Whether you're a DBA, a SSIS developer, or security professional, In this session you'll see practical, real world examples of how you can blend SQL Server and PowerShell together, and not just a bunch of regular T-SQL tasks that have been made more complicated.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Drew Furgiuele</b>, 
+</p>
+<hr>
+ 
+<h3>DBA 101 – Let’s Get It Started</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We've all installed SQL Server and, most of the times, the default settings work just fine.  This is a beginner session that will help you to understand what those settings mean along with why there might be times that you want to use something other than the defaults and how that might impact your server.  We'll also go through unattended installs, both with and without a config file.  This can really help to standardize your SQL Server installations and save you some precious keystrokes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Lori Edwards</b>, 
+</p>
+<hr>
+ 
+<h3>Everyday Extended Events</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>As a DBA or developer, you want to know what is happening inside SQL Server. Extended Events are the modern framework for finding and interpreting SQL Server's actions. In this session, you'll see practical examples to solve everyday problems. Many useful features will be shown, such as the depth of events, filtering, and multiple target types!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jes Schultz</b>, 
+</p>
+<hr>
+ 
+<h3>Managing Very Large Databases with SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>If some of your databases have grown to over 1TB and it has become a challenge to maintain them - or if you are anticipating what to do in the future when they do - then this talk is for you! In this session, I will provide some practical advice on managing VLDBs with SQL server, focusing on common problem areas for new and experienced DBAs alike, including index maintenance, integrity checks, archival, backups and restores. New features available in SQL 2016 and SQL 2017 to make managing large databases easier will be highlighted.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Brian Carrig</b>, 
+</p>
+<hr>
+ 
+<h3>Wait Statistics - The Top 5 Waits You Should Know</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Wait statistics are a great tool for troubleshooting performance problems in SQL Server. However, there are so many different wait types in SQL Server, it can be challenging to determine what to focus on and what can be ignored. Even after discovering that SQL Server is waiting for something, most DBAs don't know where to look next. In this session, we'll examine 5 of the most frequently seen wait types in SQL Server and how to troubleshoot each of them. You'll learn how to determine the root cause of a particular wait type, and how to avoid common mistakes made when troubleshooting with wait statistics.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>David Maxwell</b>, 
+</p>
+<hr>
+ 
+<h3>Query Store Primer</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session will take a look at the new Query Store feature in SQL Server 2016.  Query Store tracks changes in execution plans, allowing you to easily view performance differences and revert to older plans with a few clicks of the mouse. We will take a hands on look at how to use Query Store to troubleshoot problems as well as some of the new DMVs you can use to find issues as they arise.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tracy Boggiano</b>, 
+</p>
+<hr>
+ 
+<h3>The Basics of Manipulating Data</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session is an introduction into writing INSERT, UPDATE, and DELETE statements. We will also discuss how to work with IDENTITY columns and exactly what is the difference between DELETE, DROP, and TRUNCATE. The session is led by an expert Microsoft Certified Trainer (MCT) and Microsoft MVP who regularly teaches the SQL Server certification courses.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>John Deardurff</b>, 
+</p>
+<hr>
+ 
+<h3>Data Visualization:  How to truly tell a great story!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We have more information available to us today than ever before.  So much so that we run the risk of not being able to tell concise stories.  There's a lot more to creating that story than just getting the correct information.  Come learn not just the do's and don'ts, but the whys…</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jonathan Stewart</b>, 
+</p>
+<hr>
+ 
+<h3>Learn History from Temporal Tables</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2016 came out with a bucket full of cool new features. One of them is Temporal Tables. They are basically history tables of the normal tables; that allow us to retrieve data from any point in time for every change such as updates and deletes. It does this all without any change to application code and without using any behind the scene triggers. In this session, we will see what the requirements of creating temporal tables are. We will see the demo on insert and update functionality and how to query historical information using new TSQL clause. This session is full of demos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ameena Lalani</b>, 
+</p>
+<hr>
+ 
+<h3>Using Your On-prem Data in a Cloud World</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft Power BI, Flow, and PowerApps are powerful cloud tools that can take your on-premises data to new heights. Using your data where it is now gives you the ability to invest in improving processes, instead of focusing on a data migration strategy.
+
+In this session, we will discover the benefits of using the cloud tools, how those benefits translate to being on-prem, and how we can use the data in Office 365 as well. We will setup a data gateway, connect to on-prem data sources, and use that data in Office 365 and SharePoint Server 2016.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Daniel Glenn</b>, 
+</p>
+<hr>
+ 
+<h3>New Instance, Now what?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Congratulations, you’re now our DBA!   A new SQL instance is like a blank canvas, you stare at it and wonder where to start.  As an accidental dba, this session will help you learn how to survive in your new role.
+
+In this session, you will be supplied with the beginning brush strokes to make your server a master piece. To do so, we will review best practices for standard configurations, backups, maintenance, and disaster recovery. 
+
+By the end of this session, you will have developed a pallet of tools to help you create your SQL Server Masterpiece and be able to use it as a print for others.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jim Donahoe</b>, 
+</p>
+<hr>
+ 
+<h3>Transitioning from Integration Services to Azure Data Factory</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Although SQL Server Integration Services (SSIS) and Azure Data Factory (ADF) are both used for data management processes in the Microsoft Data Platform, they are rather different tools. SSIS performs data transformation and requires a SQL Agent job or another application to schedule and execute it. ADF is an orchestration tool rather than a data transformation tool, and it has built-in scheduling capabilities. I'll explain the basics of Azure Data Factory, show how it is and isn't like SSIS, and share lessons learned from ADF projects I have completed.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Meagan Longoria</b>, 
+</p>
+<hr>
+ 
+<h3>Sorcerer's Apprentice Guide to SQL Server Configuration Options</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>From it's early beginnings SQL Server has been touted as "self-tuning, yet you've heard there are a variety of knobs and switches available to impact performance. Are you curious to know what they are, what they do, and when to use them? In this session you will learn about server and database configuration options that can impact performance and ease administration, including new options in SQL Server 2016.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Justin Randall</b>, 
+</p>
+<hr>
+ 
+<h3>How to Keep Your Database Servers Out of the News</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Every few months the headlines are filled with news of yet another system outage inconveniencing customers and users. As data platform professionals, the systems and servers for which we are responsible generally form the foundation of our companies’ customer-facing applications. In this fast-paced session, we’ll discuss the differences between high availability and disaster recovery as well as the tools and technologies Microsoft provides us within SQL Server to keep our databases up, our users happy, and our DBAs well rested.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Matt Gordon</b>, 
+</p>
+<hr>
+ 
+<h3>Medicating Tempdb Headaches</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Tempdb can be a mystery to some and it can be one of the biggest performance pains in an environment. Knowing how to configure and troubleshoot tempdb is critical. In this session, we will walk through best practices for its configuration, techniques on how to identify specific tempdb performance bottlenecks and ways to resolve them.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kat Edrington</b>, 
+</p>
+<hr>
+ 
+<h3>Crash Course on Better SQL Development</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Development is a broad subject with many roads to choose from. Often times SQL Developers feel overwhelmed and unsure which areas they need to focus on. The purpose of this session is to give a high-level overview and present paths for further study and growth. Subjects reviewed in this session will include coding patterns, error handling, and execution plans. Demonstrations of free tools will also help developers find ways of simplifying their daily tasks. Attendees will leave this session empowered with knowledge and directions for further growth.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vladimir Oselsky</b>, 
+</p>
+<hr>
+ 
+<h3>Making your existing hardware work for you</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Many of us have to deal with hardware that doesn’t meet our standards or contributes to performance problems. This session will cover how to work around hardware issues when it isn’t in the budget for newer, faster, stronger, better hardware.  It’s time to make that existing hardware work for us. Learn tips and tricks on how to reduce IO, relieve memory pressure, and reduce blocking.  Let’s see how compression, statistics, and indexes bring new life into your existing hardware.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Monica Rathbun</b>, 
+</p>
+<hr>
+ 
+<h3>Battle Scars: Porting a SQL Server app to an MPP system</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Battle scars are proof of the struggles endured and won.  Find out about one particular battle in porting a SQL Server application to Netezza.  In this session, we’ll review Big Data platform options and the differences between them.  We’ll see how Massively Parallel Processor (MPP) systems (like Netezza) are different from Symmetric Multi-Processor (SMP) systems (like SQL Server) and witness the lessons learned in the struggle.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Aaron Cutshall</b>, 
+</p>
+<hr>
+ 
+<h3>Show me whatcha workin' with: Big Data Edition</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Congratulations. You've setup your Big Data environment with all the fun toys. You have Pig, Sqoop, and Hive all on your Hadoop cluster. You even got your data flowing in there properly. Now what? In this session we're gonna go over Data Mining tools to help you gain some insight from your data. Then, to bring it all together, we'll go over some easy ways to use common tools to show off all of this Big Data of yours, using tools that most have access to.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Josh Luedeman</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to Azure Streaming Analytics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session will cover what is Streaming Analytics and the various use cases.  We will demonstrate the creation of a Streaming Analytics process which will output the data to a dashboard for review.  The intention is to provide insights in how this technology can potentially be leveraged by the SQL community.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Warren Sifre</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Jes Schultz
+ - <a href="https://www.twitter.com/http://twitter.com/grrl_geek">http://twitter.com/grrl_geek</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/jesborland">http://www.linkedin.com/in/jesborland</a></p>
+ 
+<p>Contact: <a href="https://blogs.lessthandot.com/author/jes-borland">https://blogs.lessthandot.com/author/jes-borland</a></p>
+ 
+<p>Jes Schultz is a Software Engineer with Microsoft who has experience with a wide range of SQL Server features from version 2005 through 2019, and is on the cutting edge with Azure technologies. Since graduating Fox Valley Technical College with an IT-Programmer/Analyst degree, Jes has worked as an SSRS developer, DBA, and consultant. Before joining Microsoft, Jes was a six-time Data Platform MVP, recognized for her community work. Jes tackles every project and problem with tenacity and her enthusiasm is unmatched in the SQL Server community. In her free time, Jes never stops moving, and counts fitness, coffee, cooking, and travel as essentials in life.</p>
+ 
+<h3 class="section-heading">Gareth Swanepoel
+ - <a href="https://www.twitter.com/@GarethSwan">@GarethSwan</a>
+</h3>
+<p>Contact: <a href="http://mygareth.com">http://mygareth.com</a></p>
+ 
+<p>Gareth Swanepoel is a sysadmin-turned-SQL Server DBA. He has been working in the IT industry doing support and administration for over 25 years. He enjoys solving the complex problems that customers encounter when performance tuning SQL Server or when deploying SQL Server in large data warehouse environments. He is originally from South Africa and is currently a Dedicated Support Engineer (PFE) with Microsoft. He is a passionate member of the SQL Server community and is an accomplished author and speaker having presented at various user groups, SQL Saturdays, the PASS Summit and other technical conferences.</p>
+ 
+<h3 class="section-heading">Meagan Longoria
+ - <a href="https://www.twitter.com/mmarie">mmarie</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/meaganlongoria/">http://www.linkedin.com/in/meaganlongoria/</a></p>
+ 
+<p>Contact: <a href="http://datasavvy.me">http://datasavvy.me</a></p>
+ 
+<p>Meagan Longoria is a business intelligence consultant with Denny Cherry  Associates, and lives in Denver, Colorado. She is a Microsoft Data Platform MVP. Meagan spends a lot of time thinking about how to use data integration, DAX, and data visualization techniques to make data useful for people. She enjoys sharing her knowledge and experiences at conferences and user group meetings, as well as through her blog (DataSavvy.me).</p>
+ 
+<h3 class="section-heading">Tim Chapman
+
+</h3>
+<p>Tim Chapman is a Microsoft Certified Master (MCM) and works as a dedicated field engineer (PFE) at Microsoft specializing in performance tuning and high availability. Tim is from Louisville, KY and has over 12 years of database architecture, programming, and administration experience.
+
+</p>
+ 
+<h3 class="section-heading">Allen White
+ - <a href="https://www.twitter.com/SQLRunr">SQLRunr</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/allen-white-sql-server-mvp/5/784/b08/">http://www.linkedin.com/pub/allen-white-sql-server-mvp/5/784/b08/</a></p>
+ 
+<p>Contact: <a href="http://dataperfpro.com/blog/">http://dataperfpro.com/blog/</a></p>
+ 
+<p>Allen White is a Data Platform consultant. He has been both a developer and an administrator, so he understands both perspectives towards database technology. He loves sharing his experiences and helping people learn how to use SQL Server. Allen has spent over 40 years in IT, using SQL Server since 1992, and has been awarded Microsoft’s MVP Award for the last 13 years. Allen was a PASS Director from 2016 - 2018.</p>
+ 
+<h3 class="section-heading">David Maxwell
+ - <a href="https://www.twitter.com/https://twitter.com/dmmaxwell">https://twitter.com/dmmaxwell</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/davidmmaxwell">https://www.linkedin.com/in/davidmmaxwell</a></p>
+ 
+<p>Contact: <a href="https://dmmaxwell.wordpress.com/">https://dmmaxwell.wordpress.com/</a></p>
+ 
+<p>David Maxwell has almost 20 years of experience with SQL Server, with a keen interest in performance tuning, monitoring, and troubleshooting. He has experience in environments as diverse as health care institutions, auto manufacturers, and insurance companies. David has been a frequent presenter at SQLSaturday events around the United States since 2012, as well as a presenter for the DBA Fundamentals Virtual Group, the Performance Virtual Group, 24 Hours of PASS, and the annual PASS Summit. David participates in his local Columbus Ohio PASS Local Group, where he serves on the board of directors as SQLSaturday coordinator.</p>
+ 
+<h3 class="section-heading">Kat Edrington
+ - <a href="https://www.twitter.com/RxSQLKat">RxSQLKat</a>
+</h3>
+<p>Kat is a Database Administrator at Dynaxys, LLC in Silver Spring, Maryland. Kat has 8 years of experience with both systems and database administration. She holds degrees from the UMUC and the University of Maryland School of Pharmacy along with multiple industry certifications.</p>
+ 
+<h3 class="section-heading">Kellyn Pot'Vin-Gorman
+ - <a href="https://www.twitter.com/DBAKevlar">DBAKevlar</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kellynpotvin">https://www.linkedin.com/in/kellynpotvin</a></p>
+ 
+<p>Contact: <a href="http://dbakevlar.com">http://dbakevlar.com</a></p>
+ 
+<p>Kellyn Pot’Vin-Gorman is a member of the Oak Table Network and an Idera ACE and Oracle ACE Director alumnus. She is a Data Platform Architect in Power BI with AI in the EdTech group at Microsoft. Kellyn is known for her extensive work with multi-database platforms, DevOps, cloud migrations, virtualization, visualizations, scripting, environment optimization tuning, automation, and architecture design. 
+
+Kellyn has spoken at numerous technical conferences for Oracle, Big Data, DevOps, testing, and SQL Server. Her blog (http://dbakevlar.com) and social media activity under her handle, DBAKevlar, is well respected for her insight and content.</p>
+ 
+<h3 class="section-heading">Lance Tidwell
+ - <a href="https://www.twitter.com/@Lance_LT">@Lance_LT</a>
+</h3>
+<p>Contact: <a href="http://lancetidwell.com">http://lancetidwell.com</a></p>
+ 
+<p>Lance Tidwell, from the Austin, TX, area, has worked as a SQL Server DBA for the last 11 years. During his time as a DBA he has found his passion for all things SQL, but specifically for performance tuning. He has a life-long quest to always be learning new things; currently this quest has lead him to explore more about the Data Analytics/ Data Science areas.</p>
+ 
+<h3 class="section-heading">John Deardurff
+ - <a href="https://www.twitter.com/SQLMCT">SQLMCT</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/JohnDeardurff">http://www.linkedin.com/in/JohnDeardurff</a></p>
+ 
+<p>Contact: <a href="https://www.sqlmct.com">https://www.sqlmct.com</a></p>
+ 
+<p>John has been a Microsoft Certified Trainer (MCT) for over 20 years teaching Azure, SQL Server, Exchange Server, and Windows Server networking courses. He is currently a SQL Premier Field Engineer for Microsoft. He is an MCT Regional Lead for the Eastern United States and a former Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Justin Randall
+ - <a href="https://www.twitter.com/jh_randall">jh_randall</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</a></p>
+ 
+<p>Contact: <a href="http://blogs.sqlsentry.com/justinrandall">http://blogs.sqlsentry.com/justinrandall</a></p>
+ 
+<p>Justin Randall is a Senior Consultant at SQL Sentry, LLC. He has over 30 years of data management experience in a variety of roles from Enterprise Data Modeler to DBA, supporting development in DB2, Sybase, and SQL Server. Justin frequently speaks at SQL Server User Group meetings and SQL Saturdays, and has presented at several SQLintersection conferences. His current professional interests are SQL Server performance monitoring and tuning, and career development.</p>
+ 
+<h3 class="section-heading">Jason Brimhall
+ - <a href="https://www.twitter.com/sqlrnnr">sqlrnnr</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dbajbrimhall/">https://www.linkedin.com/in/dbajbrimhall/</a></p>
+ 
+<p>Contact: <a href="http://jasonbrimhall.info">http://jasonbrimhall.info</a></p>
+ 
+<p>Jason Brimhall has more than 20 years of experience and has worked with SQL Server 6.5 through SQL Server 2019. He has experience in performance tuning, high transaction environments, and large environments. He is currently a consultant specializing in performance tuning, server analysis, and problem resolution. Jason is a Microsoft Certified Master (MCM) and a Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Drew Furgiuele
+ - <a href="https://www.twitter.com/pittfurg">pittfurg</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/pittfurg">http://www.linkedin.com/in/pittfurg</a></p>
+ 
+<p>Contact: <a href="http://www.port1433.com">http://www.port1433.com</a></p>
+ 
+<p>Drew Furgiuele is a senior DBA that lives in Dublin, Ohio who is passionate about SQL Server and PowerShell. He's been working with SQL Server since 2002. When he’s not accidentally dropping tables in production, he likes writing automation scripts, blogging about SQL Server Replication, wiring electronics, playing board games, and spending time with his dog. He's also not embarrassed by his Spotify playlists.</p>
+ 
+<h3 class="section-heading">Tracy Boggiano
+ - <a href="https://www.twitter.com/TracyBoggiano">TracyBoggiano</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/tracyboggiano">https://www.linkedin.com/in/tracyboggiano</a></p>
+ 
+<p>Contact: <a href="http://databasesuperhero.com">http://databasesuperhero.com</a></p>
+ 
+<p>Tracy Boggiano is a Senior Database Administrator for DocuSIgn. She has spent over 20 years in IT, using SQL Server since 1999, and is currently certified as an MCSE Data Platform. Tracy has worked on SQL Server since 6.5. She has spoken at local user groups and numerous SQLSaturdays. She is currently a co-leader of a TriPASS Local Group in Raleigh, NC.   
+
+Tracy also tinkered with databases in middle school to keep her sports card collection organized. She blogs at databasesuperhero.com. 
+
+Her passion outside of SQL Server is volunteering with foster children as their advocate in court through volunteerforgal.org and being a mental health advocate as part of the PAIMI NC Advisory Council.</p>
+ 
+<h3 class="section-heading">Brian Carrig
+ - <a href="https://www.twitter.com/@briancarrig">@briancarrig</a>
+</h3>
+<p>Brian Carrig is a Microsoft Certified Master of SQL Server and is currently a Senior Program Manager on the SQL Server Tiger Team at Microsoft focusing primarily on persistent memory technology and replication. In a previous life, Brian spent some time as an academic and holds a PhD in Computer Science. He is a native of Dublin, Ireland but now lives with his wife and two daughters in Redmond, Washington. If he is not talking about, thinking about or working with technology you will usually find him watching Chelsea FC.</p>
+ 
+<h3 class="section-heading">Jonathan Stewart
+ - <a href="https://www.twitter.com/sqllocks">sqllocks</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sqllocks/">https://www.linkedin.com/in/sqllocks/</a></p>
+ 
+<p>Contact: <a href="https://sqllocks.net/">https://sqllocks.net/</a></p>
+ 
+<p>Jonathan Stewart is a Business Intelligence consultant specializing in data visualization, data warehousing, and data management technologies. An advocate for educating others, he is a public speaker, teacher and blogger, continually teaching people about the Microsoft BI Stack. Since 2000, he has been working in the database field with industry leaders in healthcare, manufacturing, financial, insurance and federal, state and local governments.
+
+Jonathan is very active in the community. He has presented on SQL Server, SSIS, Reporting Services, Power BI and Business Intelligence at numerous SQLSaturday events, local user groups, and conferences throughout the United States and around the world. He participates in webcasts, podcasts, and on</p>
+ 
+<h3 class="section-heading">Andrew Loree
+ - <a href="https://www.twitter.com/@LowOnDiskSpace">@LowOnDiskSpace</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/andrewloree">https://www.linkedin.com/in/andrewloree</a></p>
+ 
+<p>Contact: <a href="http://www.andyloree.com">http://www.andyloree.com</a></p>
+ 
+<p>Andrew Loree has over nineteen years of database experience with roles in architecture, design, development, and implementation of enterprise-scale SQL Server data solutions, supporting industries from legal e-discovery to manufacturing. Areas of expertise since SQL 
+Server 2000 include data migration and ETL/ELT solutions, disaster recovery planning, high availability service design, licensing and virtualization. Andrew holds fourteen Microsoft certifications, has both a  Bachelor and Masters of Science in Computer Science from Wright State University and is a Columbus (Ohio) PASS board member.</p>
+ 
+<h3 class="section-heading">Louis Davidson
+ - <a href="https://www.twitter.com/drsql">drsql</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/louisdavidson">http://www.linkedin.com/in/louisdavidson</a></p>
+ 
+<p>Contact: <a href="https://www.red-gate.com/simple-talk/author/louis-davidson/">https://www.red-gate.com/simple-talk/author/louis-davidson/</a></p>
+ 
+<p>Louis Davidson has worked in the IT industry for over 25 years as a corporate database developer and architect. He has been a Microsoft SQL Server MVP for 15 years and has written five books on database design, and contributed to many other SQL Server books as an author and tech editor. He has a bachelor's degree in Computer Science from the University of Tennessee at Chattanooga. You can read more about Louis at http://drsql.org.</p>
+ 
+<h3 class="section-heading">Aaron Cutshall
+ - <a href="https://www.twitter.com/sqlrv">sqlrv</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sqlrv">https://www.linkedin.com/in/sqlrv</a></p>
+ 
+<p>Contact: <a href="http://sqlrv.com">http://sqlrv.com</a></p>
+ 
+<p>Aaron N. Cutshall is an Enterprise Data Architect with 20 years of experience in analysis, design and development for applications and databases in manufacturing and warehousing plus over 15 years in the Healthcare Informatics field.  His primary focus is in designing and developing solutions for extremely large data sets that perform quite well in SQL Server.  He is active in the SQL Server community and speaks at SQL Saturday sessions across the country.</p>
+ 
+<h3 class="section-heading">Lori Edwards
+ - <a href="https://www.twitter.com/www.twitter.com/loriaedwards">www.twitter.com/loriaedwards</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/loriedwards/">http://www.linkedin.com/in/loriedwards/</a></p>
+ 
+<p>Contact: <a href="http://www.sqlservertimes2.com">http://www.sqlservertimes2.com</a></p>
+ 
+<p>Lori Edwards currently holds the position of Solutions Engineer for SentryOne. Prior to working with SQLSentry, she spent 11 years working as a production DBA.  She also has volunteered for PASS since 2009 on the Program Committee, ERC, Nomination Committee and speaking at SQL Saturdays.</p>
+ 
+<h3 class="section-heading">Jim Donahoe
+ - <a href="https://www.twitter.com/SQLFlipFlopsDBA">SQLFlipFlopsDBA</a>
+</h3>
+<p>Contact: <a href="http://www.sqlflipflopsdba.com">http://www.sqlflipflopsdba.com</a></p>
+ 
+<p>Jim is a Premier Field Engineer for Microsoft in the Data/AI space.  He lives in Pittsburgh in a small suburb.  He loves working with all things Azure(ARM templates, DBaaS, SQL on IaaS).  He is an avid collector of retro video games! He is a member of the Idera ACE program for 2018.</p>
+ 
+<h3 class="section-heading">Vladimir Oselsky
+ - <a href="https://www.twitter.com/@VladyOselsky">@VladyOselsky</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/voselsky">https://www.linkedin.com/in/voselsky</a></p>
+ 
+<p>Vladimir Oselsky (Vlady) is an IT Professional with over 15 years of experience in various IT Jobs. Born and raised in Siberia, moved to United States in late 90s. Passion for computer and programming started with DOS games and learning Borland Paschal in 8th grade as a hobby.  IT career consisted of everything from hardware and software support to server administration. Current focus on SQL Server Database Development and .NET programming</p>
+ 
+<h3 class="section-heading">Ameena Lalani
+ - <a href="https://www.twitter.com/SQLHands">SQLHands</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ameena">https://www.linkedin.com/in/ameena</a></p>
+ 
+<p>Ameena Lalani is a SQL Server veteran and started her journey with SQL Server 2000. She is a Microsoft Certified Solution Associate on SQL Server 2016 and also hold Azure Administrator Associate certification. Ameena works at Microsoft as a Premier Field engineer. She has implemented numerous High Availability and Disaster Recovery solutions at various companies. Ameena loves to share her technical knowledge and speaks at local user groups and SQL Saturday events throughout the United States.</p>
+ 
+<h3 class="section-heading">Elizabeth Noble
+ - <a href="https://www.twitter.com/SQLZelda">SQLZelda</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/elizabeth-a-noble">https://www.linkedin.com/in/elizabeth-a-noble</a></p>
+ 
+<p>Elizabeth Noble is a Director of Database Development in the metro Atlanta area. When she was introduced to her first database over 10 years ago, it was love at first sight. Her passion is to help others improve the quality and speed of deploying database changes through automation. When she is not trying to automate all of the things, she can be found spending time with her dogs, playing disc golf, or taking a walk at the gym.</p>
+ 
+<h3 class="section-heading">Josh Luedeman
+ - <a href="https://www.twitter.com/http://www.twitter.com/joshluedeman">http://www.twitter.com/joshluedeman</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/joshluedeman">http://www.linkedin.com/in/joshluedeman</a></p>
+ 
+<p>Contact: <a href="http://www.joshluedeman.com">http://www.joshluedeman.com</a></p>
+ 
+<p>Josh is a Sr FastTrack Engineer with the FastTrack team in the Azure Engineering Group at Microsoft. Josh focuses on Microsoft's Cloud Scale Analytics Solutions in Azure using products like HDInsight, Data Lake, Data Factory, and DataBricks. He has worked in IT for over 10 years holding positions in Application Support, Database Administration, and Business Intelligence, in industries like Higher Education, Consulting, Manufacturing, and Software Development.</p>
+ 
+<h3 class="section-heading">Daniel Glenn
+ - <a href="https://www.twitter.com/DanielGlenn">DanielGlenn</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/danielglenn">https://www.linkedin.com/in/danielglenn</a></p>
+ 
+<p>Contact: <a href="https://DanielGlenn.com">https://DanielGlenn.com</a></p>
+ 
+<p>Daniel is a Microsoft MVP with 15 years' experience building technology solutions, intranets and extranets. As Practice Leader for the Nashville-based InfoWorks Inc., Daniel helps organizations of all sizes solve complex data challenges by implementing Office 365 and SharePoint without the need of customization and costly investments.
+
+Daniel is passionate about giving back and building the Microsoft technical community. Daniel holds leadership roles in various local user groups, serves as an organizer for Microsoft 365 Nashville, and is a co-host for the popular podcast 365 Message Center Show on https://MessageCenter.Show. You can follow Daniel online at https://DanielGlenn.com and @DanielGlenn on Twitter.</p>
+ 
+<h3 class="section-heading">Rie Irish
+ - <a href="https://www.twitter.com/IrishSQL">IrishSQL</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/rie-irish/2/34a/78/">http://www.linkedin.com/pub/rie-irish/2/34a/78/</a></p>
+ 
+<p>Rie lives with her family just north of Atlanta, Georgia.  She worked as a SQL Server DBA, manager  director for over 20 years.  She's worked in many industries including the non-profit sector, education, big pharma, and e-commerce. She was awarded the MVP in the Data Platform 3 times beginning in 2017 and gave that up to accept her role as a Senior Program Manager with Microsoft in 2019.  She is very involved with the Atlanta MDF User Group, SQL Saturday Atlanta and is co-leader of the PASS Women in Tech virtual group.</p>
+ 
+<h3 class="section-heading">Monica Rathbun
+ - <a href="https://www.twitter.com/SQLEspresso">SQLEspresso</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sqlespresso">https://www.linkedin.com/in/sqlespresso</a></p>
+ 
+<p>Contact: <a href="http://www.sqlespresso.com">http://www.sqlespresso.com</a></p>
+ 
+<p>Monica Rathbun lives in Virginia, is a Microsoft MVP for Data Platform and Microsoft Certified Solutions Expert. She has nearly two decades of experience working with a wide variety of database platforms with a focus on SQL Server and the Microsoft Data Platform. She is a frequent speaker at IT industry conferences on topics including performance tuning and configuration management. She is the Leader of the Hampton Roads SQL Server User Group and a Mid‐Atlantic PASS Regional Mentor. She is passionate about SQL Server and the SQL Server community, doing anything she can to give back. Monica can always be found on Twitter (@sqlespresso) handing out helpful tips. You can find Monica blogging at sqlespresso.com</p>
+ 
+<h3 class="section-heading">Grant Fritchey
+ - <a href="https://www.twitter.com/@gfritchey">@gfritchey</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/scarydba">http://www.linkedin.com/in/scarydba</a></p>
+ 
+<p>Contact: <a href="http://scarydba.com">http://scarydba.com</a></p>
+ 
+<p>Grant Fritchey is a Data Platform MVP with over 20 years’ experience in IT, including time spent in support and development. He has worked with SQL Server since 6.0 back in 1995. He has also developed in VB, VB.NET, C#, and Java. Grant has written books for Apress and Simple-Talk. Grant presents at conferences and user groups, large and small, all over the world. He joined Redgate Software as a product evangelist in January 2011.</p>
+ 
+<h3 class="section-heading">Josh Luedeman
+ - <a href="https://www.twitter.com/http://www.twitter.com/joshluedeman">http://www.twitter.com/joshluedeman</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/joshluedeman">http://www.linkedin.com/in/joshluedeman</a></p>
+ 
+<p>Contact: <a href="http://www.joshluedeman.com">http://www.joshluedeman.com</a></p>
+ 
+<p>Josh is a Sr FastTrack Engineer with the FastTrack team in the Azure Engineering Group at Microsoft. Josh focuses on Microsoft's Cloud Scale Analytics Solutions in Azure using products like HDInsight, Data Lake, Data Factory, and DataBricks. He has worked in IT for over 10 years holding positions in Application Support, Database Administration, and Business Intelligence, in industries like Higher Education, Consulting, Manufacturing, and Software Development.</p>
+ 
+<h3 class="section-heading">Warren Sifre
+ - <a href="https://www.twitter.com/WAS_SQL">WAS_SQL</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/wsifre">http://www.linkedin.com/in/wsifre</a></p>
+ 
+<p>Contact: <a href="http://www.broadstrokeconsulting.com/blog/, http://www.allegient.com">http://www.broadstrokeconsulting.com/blog/, http://www.allegient.com</a></p>
+ 
+<p>Warren Sifre has been in the IT community since 1998 and has worked in a variety of industries deploying solutions utilizing MS SQL Server in one capacity or another. In 2003, he decided to make SQL Server his mastery and has since developed skills in most defined disciplines of MS SQL.  Currently he is a Principal Consultant and Technology Leader with Moser Consulting.  He is responsible for BI Solution Architecture and the mentorship of team members.  He has been a SQL Saturday Speaker since 2012, Azure Global Bootcamp, and many user groups in 2015 alone.  He has a passion for knowledge transfer and solutions architecture, with a keen interested in Info Security.</p>
+ 
+<h3 class="section-heading">Rob Volk
+ - <a href="https://www.twitter.com/sql_r">sql_r</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/rob-volk-134ba81">https://www.linkedin.com/in/rob-volk-134ba81</a></p>
+ 
+<p>Contact: <a href="http://weblogs.sqlteam.com/robv/">http://weblogs.sqlteam.com/robv/</a></p>
+ 
+<p>Rob Volk is a SQL Server DBA in the Metro Atlanta area since 2001. He also moderates and answers the forums on SQLTeam.com. While an old-time cranky DBA, he no longer considers quot;business intelligencequot; an oxymoron or quot;the cloudquot; as merely atmospheric moisture, and is delightedly dipping his toes into both of these new oceans, and loves to do things in new and and unusual ways.</p>
+ 
+<h3 class="section-heading">Jason Brimhall
+ - <a href="https://www.twitter.com/sqlrnnr">sqlrnnr</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dbajbrimhall/">https://www.linkedin.com/in/dbajbrimhall/</a></p>
+ 
+<p>Contact: <a href="http://jasonbrimhall.info">http://jasonbrimhall.info</a></p>
+ 
+<p>Jason Brimhall has more than 20 years of experience and has worked with SQL Server 6.5 through SQL Server 2019. He has experience in performance tuning, high transaction environments, and large environments. He is currently a consultant specializing in performance tuning, server analysis, and problem resolution. Jason is a Microsoft Certified Master (MCM) and a Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Kevin Feasel
+ - <a href="https://www.twitter.com/feaselkl">feaselkl</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/pub/kevin-feasel/7/716/504">https://www.linkedin.com/pub/kevin-feasel/7/716/504</a></p>
+ 
+<p>Contact: <a href="http://www.catallaxyservices.com">http://www.catallaxyservices.com</a></p>
+ 
+<p>Kevin Feasel is a Microsoft Data Platform MVP and CTO at Envizage, where he specializes in data analytics with T-SQL and R, forcing Spark clusters to do his bidding, fighting with Kafka, and pulling rabbits out of hats on demand. He is the lead contributor to Curated SQL (https://curatedsql.com), president of the Triangle Area SQL Server Users Group (https://www.meetup.com/tripass), and author of PolyBase Revealed (https://www.apress.com/us/book/9781484254608). A resident of Durham, North Carolina, he can be found cycling the trails along the triangle whenever the weather's nice enough.</p>
+ 
+<h3 class="section-heading">Andy Mallon
+ - <a href="https://www.twitter.com/AMtwo">AMtwo</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/amtwo">http://www.linkedin.com/in/amtwo</a></p>
+ 
+<p>Contact: <a href="http://www.AM2.co">http://www.AM2.co</a></p>
+ 
+<p>Andy is a Data Platform MVP and SQL Server DBA that has managed databases in the healthcare, finance, e-commerce, and non-profit sectors. He has been supporting high-volume, highly-available OLTP environments with demanding performance needs since 2003.
+
+Andy is the founder of the BostonSQL User Group, and previous co-organizer of SQL Saturday events in Boston. He blogs at am2.co. 
+
+Andy lives just outside Boston, Massachusetts, USA with his husband and their two dogs.</p>
+ 
+<h3 class="section-heading">Matt Gordon
+ - <a href="https://www.twitter.com/sqlatspeed">sqlatspeed</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sqlatspeed">https://www.linkedin.com/in/sqlatspeed</a></p>
+ 
+<p>Contact: <a href="http://www.sqlatspeed.com">http://www.sqlatspeed.com</a></p>
+ 
+<p>Matt is a Microsoft Data Platform MVP and has worked with SQL Server since 2000. He is the leader of the Lexington, KY PASS local group and a frequent domestic and international community speaker. He's an IDERA ACE alumnus and 2020 Friend of Redgate. His original data professional role was as a database developer, which quickly evolved into query tuning work that further evolved into being a full-fledged DBA in the healthcare realm. He has supported several critical systems utilizing SQL Server and managed dozens of 24/7/365 SQL Server implementations. He currently utilizes that real world experience as a data platform consultant helping clients design solutions that meet their ever-changing business needs.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.rubrik.com">Rubrik</a></p>
+ 
+<p><a href="http://www.e-farmcredit.com">Farm Credit Mid-America</a></p>
+ 
+<p><a href="http://www.idera.com/Content/Home.aspx">Idera</a></p>
+ 
+<p><a href="http://www.purestorage.com">Pure Storage</a></p>
+ 
+<p><a href="http://www.teksystems.com">TEKsystems, Inc.</a></p>
+ 
+<p><a href="https://www.sentryone.com/">SentryOne</a></p>
+ 
+<p><a href="http://bit.ly/cozyrocssis">COZYROC</a></p>
+ 
+<p><a href="http://www.atlantamdf.com/">SQL Saturday Atlanta</a></p>
+ 
+<p><a href="http://rd.gt/2j7SNf9">Redgate Software (GAP)</a></p>
+ 
+<p><a href="https://www.tintri.com/">Tintri - Great Lakes</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

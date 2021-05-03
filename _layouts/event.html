@@ -21,7 +21,12 @@ layout: base
 
     <!-- Event -->
       {% assign eventdate = pagedata.date %}
-      <img src="{{pagedata.logo}}"/>
+      {% if pagedata.logo %}
+        <img src="{{pagedata.logo}}"/>
+      {% endif %}
+      {% if pagedata.logocredit %}
+        <i>{{pagedata.logocredit}}</i>
+      {% endif %}
       <br/>
       <p><b>Event Date:</b> {{ eventdate | date_to_long_string }}
       </p>
@@ -47,8 +52,10 @@ layout: base
          {% endif %}
          </ul>
       </p>
+      {% if pagedata.capacity %}
       <p>The capacity limit for this event is {{ pagedata.capacity }}
       </p> 
+      {% endif %}
       <p align="center">
         {% if pagedata.eventbriteembed %}
           {{ pagedata.eventbriteembed }}
@@ -63,17 +70,19 @@ layout: base
       <p align="center">
         <a href="#schedule">Schedule</a> 
         &#x25CF 
+        <a href="#rooms">Rooms</a> 
+        &#x25CF 
         {% if pagedata.eventlocation %}
         <a href="#location">Location</a> 
         &#x25CF 
         {% endif %}
-        <a href="#schedule">Speakers</a> 
+        <a href="#speakers">Speakers</a> 
         &#x25CF 
         <a href="#sponsor">Sponsors</a> 
         &#x25CF 
         <a href="#volunteer">Volunteers</a> 
         &#x25CF 
-        <a href="#contact">Contact the organizers</a>
+        <a href="#contact">Contact</a>
       </p>
 
  
@@ -134,7 +143,6 @@ layout: base
       {% endif %}
       {% if pagedata.googlemapurl %}
       <iframe src="{{pagedata.googlemapurl}}"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       {% endif %}
@@ -214,7 +222,6 @@ layout: base
            {% endif %}                         
            </p>
         <p>&nbsp;</p>
-        <p>&nbsp;</p>
 
     <!-- Schedule -->
           <h2 align="center"><A name="schedule"></A>Schedule</h2>
@@ -224,7 +231,7 @@ layout: base
               </iframe>
             </p>
             {% else %}
-              <p>
+              <p style="text-align: center;">
                  The schedule has not been announced yet. 
               </p>
               {% if pagedata.callforspeakers == true %}
@@ -233,7 +240,6 @@ layout: base
               </p>
               {% endif %}
             {% endif %}
-            <p>&nbsp;</p>
             <p>&nbsp;</p>
       
 
@@ -251,19 +257,23 @@ layout: base
         <p style="text-align: center;">The rooms are not available for this event.</p>
       {% endif %}
       <p> &nbsp;</p>
-      <p> &nbsp;</p>
 
 
       <!-- Speakers -->
       <div id="speakers">
-      <h2 align="center"><A name="speaker"></A>Speakers</h2>
+      <h2 align="center"><A name="speakers"></A>Speakers</h2>
       {% if pagedata.speakertext %}
       <p>{{pagedata.speakertext}}</p>
       {% endif %}                         
       </p>
       {% if pagedata.callforspeakers == false %}
-       <p>The call for speakers is now closed. You can see a list of the speakers on <a href="{{pagedata.speakerlisturl}}">the submission page</a>.</p>
+       <p>The call for speakers is now closed. 
+        {% if pagedata.speakerlisturl %}
+          You can see a list of the speakers on <a href="{{pagedata.speakerlisturl}}">the submission page</a>.
+        {% endif %}
+        </p>
       {% else %}
+      
        <p>You can submit a session by clicking the link below.
        {% if pagedata.callforspeakersenddate %}
         The call for speakers ends on {{ pagedata.callforspeakersenddate }}
@@ -292,9 +302,6 @@ layout: base
           {% endif %}                         
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
       </div>
 
       <!-- Contact -->
@@ -303,13 +310,16 @@ layout: base
             <p>The organizers of this event are: 
               <ul>
               {% for organizer in pagedata.organizers %}   
-                <li>{{ organizer.name }} 
+                <li>{{ organizer.name }} - Contact:
                   (
                   {% if organizer.email %}
-                  <a href="mailto:{{organizer.email}}">email</a>
+                  <a href="mailto:{{organizer.email}}">email</a> &#x25CF
                   {% endif %}
                   {% if organizer.twitter %}
-                  <a href="https://www.twitter.com/{{organizer.twitter}}">@{{organizer.twitter}}</a>
+                  <a href="https://www.twitter.com/{{organizer.twitter}}">@{{organizer.twitter}}</a> &#x25CF
+                  {% endif %}
+                  {% if organizer.url %}
+                  <a href="{{organizer.url}}">{{organizer.url}}</a>
                   {% endif %}
                   )
                 </li>
@@ -319,12 +329,7 @@ layout: base
             {% if pagedata.organizers.twitter %}
             <p>Twitter: <a href="https://www.twitter.com/{{ pagedata.organizers.twitter }}">@{{ pagedata.organizers.twitter }}</a></p>
             {% endif %}
-            You can reach them via <a href="mailto:{{pagedata.organizers.email}}">email</a>
             </div>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
             <p>&nbsp;</p>
 
         <br/>

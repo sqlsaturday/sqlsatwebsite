@@ -1,0 +1,682 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQLSaturday SQLSaturday #365 - Melbourne 2015" />
+        <meta name="author" content=" />
+        <title>SQLSaturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #365 - Melbourne 2015
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQLSaturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #365 - Melbourne 2015</div>
+        <div class="masthead-subheading">This event was held on 2015-2-7</div>
+        <p><b>Event Location</b>:</p>
+        <p>Monash University, Caulfield Campus</p>
+        <p>888 Dandenong Road</p>
+        <p>Caulfield East , Victoria, Australia</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0365.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Visualizing performance tuning data</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Just staring at the output from for instance sys.dm_io_virtual_file_stats is usualy not very helpful. Creating delta's from the data and then representing it as a graph helps to understand that data. Over the years I've tried various ways to look at output from SQL Server for performance tuning reasons. In this session I will share a couple of them with you. We will look at virtual_file_stats, waitstats, the buffer cache etc. and we will visualize them in various ways to make it easier to draw conclusions. The visualisation techniques vary from simple graphs that combine throughput and latency to more complicated scenarios that I saw being used by Formula 1 on tv, which translate well to Waitstats and Buffer pool cache usage.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Kamman</b>, 
+</p>
+<hr>
+ 
+<h3>Automate your Data Profiling insights using Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Data profiling is a critical input task to any database initiative that incorporates source data from external systems. With the right data profiling, it’s possible to gain a huge amount of insight into the data quality in your systems, and as a result, be able to make radically more accurate estimates of the cost to go from the "as is" to the "to be". The Data Profiling task in SSIS can be very powerful, but it is tricky to use and time consuming to review the findings, until now. 
+In this session I will demonstrate how you can automate data profiling of any SQL Server Database using Integration Services, and use the output of the data profiling task to populate a Power Pivot data model. 
+This data model can then be used to analyse table structures, data quality and identify problems with your data. By using the different profiles you can determine how to clean up your incoming data prior to loading it into your database. 
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Craig Bryden</b>, 
+</p>
+<hr>
+ 
+<h3>The Care  Feeding of Analysis Services in Production</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A lot of the information you'll find on Analysis Services is focused around the initial creation of databases and models, but once you have a solution deployed to production then what?
+
+In this session we will look at what it takes to run an Analysis Services server in production. What are the basics that you need to know about how the server works. Including things like threading, memory usage and locking. How can you monitor the health of your server? What tools can you use to find out what's happening on your server? We'll have a look at what you should be monitoring to make sure your system is running properly and run through what to investigate went things don't run as smoothly as you'd like.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Darren Gosbell</b>, 
+</p>
+<hr>
+ 
+<h3>How to build an Activty based modelling system with SSAS Tabular and Power Pivot</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The ability to distribute costs, including overheads, to activities in an organisation allows profitability to be calculated down to an individual activity, hence the ability to calculate the *real* client and product profitability.
+
+In this session we take a look how you can create an Activity Based Modelling system using SSAS Tabular for the allocation model, and Power Pivot (over the Tabular Model) for end-user reporting.  Having the final report model in Power Pivot gives the end user the ultimate control over reporting, including adding other information possibly not even held with Information Technology.
+
+I'll show you an example health care model where we replaced an expensive, difficult to understand and maintain SAS system, with a simple elegant solution (auditable) based on the Microsoft stack. The rules are table driven with allocated costs handling built in.
+
+Having build the model with one of the finance team power users, they now own and understand the new system.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Grant Paisley</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI - Beyond the Basics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Power BI is a Microsoft's self-service BI platform for both on-premise and cloud-based data. It enables business Power Users to make the most of their data by using the new data discovery, analysis and visualisation features in Excel and Office 365, in an easy to use environment that they are already familiar with.
+
+In this session we will go through the main features and capabilities of Power BI using an end-to-end scenario. We will also discuss best practices and tips along the way that will enable you to get the best out of this exciting technology.
+
+Topics include: Overview, real-life demo, hybrid-cloud scenarios with Data Management Gateway, DMG tips and tricks, custom map demo, QA tips, licensing overview, Power BI roles in an enterprise environment, how this could fit your organisation, lessons learned from our 1.5 year journey, etc.  </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Iman Eftekhari</b>, 
+</p>
+<hr>
+ 
+<h3>10 Handy Tips On SQL Server Dates</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Are you working with an application supporting different time zones and international date formats? How does your choice of storing date / time values differ if you are using Windows Azure SQL Database instead of on-prem SQL Server database? Did you know that SQL Server Database Engine, Integration Services (SSIS) and Analysis Services (SSAS) all have slightly different date / time data types? How can you bullet proof your system for the ever growing data in your organization with much more date and time data to come?  
+ 
+With time being the one thing that constantly changes, date and time calculations are widely used and essential to all business transactions. Yet, most systems only use one or two date data types; Is this a wise decision? Quite often data retrieval relating to a period of time does performs poorly, or worst of all, is not accurate. These 10 tips will help you bridge the gap, and provide the techniques to build bulletproof systems the users demand and DESERVE! </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Julie Koesmarno</b>, 
+</p>
+<hr>
+ 
+<h3>Thinking Out of the Box: Manage SQL Server Using Built-in Tools</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>It’s often the case that your budget doesn’t stretch far enough for all the great third party tools that help manage your SQL Servers. So, how can the in-built components of SQL Server help you with your daily tasks?
+
+Policy Management, Data Collector and Extended Events, all included in both Enterprise and Standard Editions, provide a framework to keep your configurations consistent and give you some insights into the performance of your SQL Server instances. In this session, we will see how to make use of these components to formalize your configuration and track some performance attributes.
+
+After this session you’ll be able to build out an effective management and monitoring toolkit using only “out-of-the-box” features.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Martin Cairney</b>, 
+</p>
+<hr>
+ 
+<h3>TOP GUN SQL SERVER: Why piloting jets and flying SQL Servers requires similar psychology!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>THE PSYCHOLOGY OF A DBA - Why piloting tactical jets and flying SQL Servers requires similar psychology and composure to ensure mission success during emergencies!
+
+Let's face it, being a DBA is a stressful job.  Your performance in production environments matters greatly, even on the easiest of days. But when things go wrong, that’s when you really earn your money and discover the depth of your knowledge and your poise in emergency response.  
+
+This training focuses on improving your successful handling of critical situations.  Content is based upon the collective knowledge gained by many people over many years in high performance aircraft.  Nick will share examples of how to, and how not to, handle stress in extremely difficult situations.  We will look at tried and true techniques that will help DBAs perform better when there is an actual emergency.  You will also learn about the teamwork and crew coordination often required to handle time-critical scenarios.  
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Nicholas Loghides</b>, 
+</p>
+<hr>
+ 
+<h3>Building Hybrid BI Solutions with Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>As organizations look to lower infrastructure costs and increase worker productivity, two industry trends have emerged: the shift to the cloud and self-service. How will these trends change the way we build BI solutions, without compromising on security, manageability and governance? Join this session and find out!
+
+We will explore the following questions: What is Power BI? What do you need to run Power BI? How does Power BI differ to traditional BI? Where does Power BI fit in a broader enterprise BI strategy? And, finally, how can on-premises data sources be used in cloud-based Power BI solutions?
+
+In addition to answering these questions, we will build a Power BI solution from scratch using both on-premises and cloud-based data sources. We will use Power Query, Power Pivot, Power View and Power Map, before deploying the solution to a Power BI site in the cloud, and interacting with it using Q  A, the new natural language query technology.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rod Colledge</b>, 
+</p>
+<hr>
+ 
+<h3>Load a Staging Environment from Scratch in an Hour with Biml</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Business Intelligence Markup Language (Biml) automates your BI patterns and eliminates the manual repetition that consumes most of your SSIS development time. During this hour long presentation, Peter Avenant from Varigence Australia will use the free BIDSHelper add-in for BIDS and SSDT to introduce Biml and use to automatically generate large quantities of custom SSIS packages. The session will be largely demonstration driven, and reusable sample code will be distributed for you to use in your own projects. Using a live-typing approach, Peter will start from scratch and by the end of the session create a full-blown staging environment. This will include the creation of *hundreds* of target table creation scripts, data load packages, data scrubbing rules, logging, and more. The best part is that you can freely reuse the code in your own environment just by changing the connection strings - or make small changes to implement your own data load patterns.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Peter Avenant</b>, 
+</p>
+<hr>
+ 
+<h3>Perception, Heuristics  Visualisation Cues</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>It’s the end of the day you’re tired – there’s no shame in that.  Still, your presentation needs to make an impact so that the audience understands and remembers your content.  How do you display that data so that it is effectively absorbed?
+
+This presentation looks at the display mechanisms for information.  We delve into our visual cues and our cognitive patterns to understand how our minds interpret what we see so that, when we choose a graphic, we can choose the most effective visualization for our content and meaning of information being presented. 
+ 
+We look at which visualization techniques work and why less is sometimes more.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Paul te Braak</b>, 
+</p>
+<hr>
+ 
+<h3>Using Azure Machine Learning to Predict Melbourne House Prices</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>House prices are a topic of conversation at every BBQ and dinner table across Melbourne.  Have you ever wondered what drives house prices or wanted to predict an outcome in advance?  This interactive session firstly introduces the What, How  Why of Predictive Analytics and then provides an overview of using Azure Machine Learning (Azure ML) for making predictions in the context of Melbourne House Price data.  The session explores using Azure ML regression algorithms and other statistical techniques to build an Azure ML experiment to first discover what features influence prices and then builds an Azure ML predictive Web Service solution based on those features.  In the process of learning Azure ML regression, and with a bit of luck, we may even come up with a model that works!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rolf Tesmer</b>, 
+</p>
+<hr>
+ 
+<h3>A Few Of My Favourite Query Plan Operators</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Without feeling any need to resort to any kind of Julie Andrews rendition... 
+
+Query plan operators do all the work when you run a query, and some of them are more significant than others. You may have learned about Seeks and Lookups, and about different Join operators, but when I look at a plan and see certain operators, some of them convey a lot more information than you may realise. This talk will look at operators such as "Merge Join (Concat)", "Top N Sort", "Filter", "Hash Match (Distinct Sort)", and more, exploring the significance of some of some of their properties, and helping you raise your game when it comes to performance tuning.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rob Farley</b>, 
+</p>
+<hr>
+ 
+<h3>Help me Availability Groups, You're the only 1 who can save me</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Data Recovery is a major part of a DBA’s job. As a DBA how can we ensure our mission critical data is available and recoverable in a timely manner when disaster strikes. As a production support DBA how can you ensure you’re mission critical data is protected? With the release of SQL Server 2014, changes were made to the AlwaysOn Availability Group feature set. In this session Warwick will introduce you to what Availability Groups are, breaking the confusion of DB Mirroring, FCI’s and AG’s, Introduce the new AG functionality and show you how this feature set can be used to extend your mission critical disaster recovery capabilities to cloud city.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Warwick Rudd</b>, 
+</p>
+<hr>
+ 
+<h3>Are You Safe from Prying Eyes?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In our connected society, there are many avenues by which databases can be accessed by unauthorised people from both inside and outside your organisation. Even if your database does not contain sensitive information, it can still be damaging to your organisation if it is leaked, so care must be taken to ensure that both your SQL Server infrastructure and the data stored within the database has been appropriately secured. In this session, Jim McLeod explores the features available for encrypting data, securing the database instance, and options for auditing who has been looking or changing your data.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jim McLeod</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Injection and Other Forms of Attacks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Injection is still one of the biggest reasons various websites and applications get hacked. In this session we'll look at how would an attacker go about using SQL Injection to gain full access to your server. But there are also other forms of attacks like XSS, CSRF and social engineering attacks. We'll see how those works too.  This is usually an eye opening session for developers as to what is possible and how to exploit it.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mladen Prajdić</b>, 
+</p>
+<hr>
+ 
+<h3>Batch Mode Parallel Query Execution</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A completely new model for parallel query execution known as "batch mode" was introduced in SQL Server 2012 and significantly enhanced in
+SQL Server 2014. This session will describe the benefits of batch mode parallel execution, how it works, how to analyze the execution plans
+it produces, and how to write queries and design databases to take full advantage of this new technology.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Paul White</b>, 
+</p>
+<hr>
+ 
+<h3>Get Into Evaluation Context with DAX, the Language of PowerPivot</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Data Analysis Expressions (DAX) is the language of PowerPivot and the Analysis Services Tabular engine. Review the basics of the DAX language and get introduced to evaluation context: including row and filter context. Learn why different cells return different results based on the same formula.  Understanding evaluation context is the driving force behind releasing the potential to create truly dynamic DAX formulas. The demo will walk through various examples the DAX query language and demonstrate row and filter context.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Reeves Smith</b>, 
+</p>
+<hr>
+ 
+<h3>Cloudy with a Chance of SQL</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Clearing to a better understanding of SQL Server and Microsoft Azure.  This session will cover Azure concepts, options for moving your database to the cloud, feature support and hybrid scenarios with SQL Server 2014. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Heidi Wilson</b>, 
+</p>
+<hr>
+ 
+<h3>MDX, it is not that hard!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>My first experience with MDX was: good, it looks like SQL: SELECT .. FROM .. WHERE. On my second glance it turned out to be completely different than SQL. But after a while SQL and MDX started to feel similar. In this session I bring you to the point of seeing the similarities instead of the differences. We will use your SQL experience to give you a head start with MDX. The session is also good for those with a bit of experience who want to know a bit more about the background. Of course all theory is backed by demo’s.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Peter ter Braake</b>, 
+</p>
+<hr>
+ 
+<h3>MDS</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Can talk about
+Basics
+- install
+- models,entities,view,attributes,attribute groups
+Advanced
+- security
+-deployment
+-environments
+-data migration
+-data standards
+
+let me know I can do a beginner or more advanced demo.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Olof Szymczak</b>, 
+</p>
+<hr>
+ 
+<h3>SQL and the cloud</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A look at all the cloud technologies, how they bolt together, and what business benefits are the result</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kristina Rumpff</b>, 
+</p>
+<hr>
+ 
+<h3>A Trip Through The Transaction Log All The Way to Delayed Durability.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>During this session Martin and co-presenter Rob Douglas will focus on Delayed Durability. However, before we get there, we'll take a brief tour through the log and remind ourselves of some of the things that the log is used for - with some quite innovative demos. Then we'll move on to the define how Delayed Durability may be able to help you - if you can afford to pay the price.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Martin Catherall</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Internals for the Database Developer</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Understanding the architecture and "internals" of SQL Server can help the developer develop optimal database solutions and troubleshoot performance problems.
+
+In this session Victor Isakov (MCA, MCM, MCT, MVP) will cover the practical internals of tables, indexes, transaction logs, query optimization and query execution. Importantly, he will translate how this knowledge can be used in database solution optimization and troubleshooting. This should prove to be a very practical session that all developers, team-leaders and managers should benefit from.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Victor Isakov</b>, 
+</p>
+<hr>
+ 
+<h3>Agile Development with SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Agile methodologies require a test driven development approach and continuous integration.  In this session we will look at how TDD and CI can be achieved for SQL Server development.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Stefan Riedel</b>, 
+</p>
+<hr>
+ 
+<h3>SQLSaturday Retro</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Come along and participate in a retrospective of the SQLSaturday event. Session will include introduction to Agile retros and a chance to participate in a discussion on how to improve SQLSaturday</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kelly Broekstra</b>, 
+</p>
+<hr>
+ 
+<h3>Predictive Analytics using Azure Machine Learning </h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Session to provide an introduction to Microsoft Azure Machine Learning and allied services, and build / deploy predictive models as machine learning web services in this process. Will touch on some practical predictive analytics problems like customer churn analysis and product recommendation.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vikas Rajput</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Victor Isakov
+ - <a href="https://www.twitter.com/@victorisakov">@victorisakov</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/victorisakov">http://www.linkedin.com/in/victorisakov</a></p>
+ 
+<p>Contact: <a href="http://www.victorisakov.com">http://www.victorisakov.com</a></p>
+ 
+<p>Victor Isakov (MCA, MCM, MCSM, MCT, MVP) is a Database Architect and trainer who provides consulting and training services to various organizations in the public, private, and NGO sectors globally. He regularly speaks at international conferences such as Microsoft TechEd/Ignite, PASS Summit, IT/Dev Connections, and SQLSaturdays.
+Victor has written a number of books on SQL Server and has worked with Microsoft to develop the SQL Server exams and certification. In 2017 he authored "Exam Ref 70-764 Administering a SQL Database Infrastructure (1st Edition)".
+He is one of only three non-Microsoft, Microsoft Certified Architects in the world.</p>
+ 
+<h3 class="section-heading">Darren Gosbell
+ - <a href="https://www.twitter.com/darrengosbell">darrengosbell</a>
+</h3>
+<p>LinkedIn: <a href="https://au.linkedin.com/in/darrengosbell">https://au.linkedin.com/in/darrengosbell</a></p>
+ 
+<p>Contact: <a href="http://darren.gosbell.com">http://darren.gosbell.com</a></p>
+ 
+<p>Darren Gosbell has been working with the Microsoft Data Platform since 1999. He has practical experience implementing data warehousing and business intelligence solutions for some of Australia’s largest corporations. Darren has been awarded as a Microsoft MVP SQL Server since 2006 in recognition of his contribution to the community specially in the areas of Analysis Services, MDX and DAX. Darren is a contributor to a number of open source projects including BIDS Helper, DAX Studio and ASStoredProcedures.</p>
+ 
+<h3 class="section-heading">Paul White
+ - <a href="https://www.twitter.com/@SQL_Kiwi">@SQL_Kiwi</a>
+</h3>
+<p>Contact: <a href="http://sqlblog.com/blogs/paul_white/default.aspx">http://sqlblog.com/blogs/paul_white/default.aspx</a></p>
+ 
+<p>Paul White is an independent SQL Server technical consultant, specializing in performance tuning. He lives in Paraparaumu, New Zealand, and has worked with SQL Server since version 6. Paul writes a highly-regarded SQL Server technical blog and has been a SQL Server MVP since 2011.</p>
+ 
+<h3 class="section-heading">Heidi Wilson
+
+</h3>
+<p>Contact: <a href="http://sqlskirt.com">http://sqlskirt.com</a></p>
+ 
+<p>Heidi Wilson is an independent SQL Server Consultant and Microsoft Certified Trainer.  Heidi has over 10 years of experience working with SQL Server and specialises in the design and implementation of highly available and disaster recoverable SQL Server solutions.  Heidi regularly presents and volunteers at various events including SQLSaturday and SQL Server User Groups across Australia.</p>
+ 
+<h3 class="section-heading">Paul te Braak
+ - <a href="https://www.twitter.com/@paultebraak">@paultebraak</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/paultebraak">http://www.linkedin.com/in/paultebraak</a></p>
+ 
+<p>Contact: <a href="http://www.paultebraak.wordpress.com">http://www.paultebraak.wordpress.com</a></p>
+ 
+<p>Paul te Braak is the principle consultant of abaX Data and has over a decade of experience in delivering reporting and business intelligence solutions across a variety of verticals.  This experience includes systems auditing, planning and business simulation models that predict activity through heuristic rules imbedded into the model.  He holds several qualifications including MCT, CA, MIT, MComm. </p>
+ 
+<h3 class="section-heading">Peter ter Braake
+ - <a href="https://www.twitter.com/@pbraake">@pbraake</a>
+</h3>
+<p>LinkedIn: <a href="https://nl.linkedin.com/pub/peter-ter-braake/1/b87/1aa?">https://nl.linkedin.com/pub/peter-ter-braake/1/b87/1aa?</a></p>
+ 
+<p>Peter ter Braake, SQL Server MVP, co-founder of the Dutch PASS Chapter and organizer of the Dutch SQLSaturday, teaches SQL Server since 2002. Teaching is for Peter the perfect opportunity to share his SQL Server knowledge and his enthusiasm for the product. Since 2008 he works as an independent contractor giving him the opportunity to use his classroom experience in the real world and use his real world experience in the classroom. </p>
+ 
+<h3 class="section-heading">Olof Szymczak
+
+</h3>
+<p>Have been using MDS since the first release. I have customized the MDS backend database to meet our business needs such as replicating MDS using MS SQL peer to peer. I have developed MDS Admin tool https://mdsadministration.codeplex.com/ that I use for schema and data migration.</p>
+ 
+<h3 class="section-heading">Jim McLeod
+ - <a href="https://www.twitter.com/@Jim_McLeod">@Jim_McLeod</a>
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/jimmcleodaustralia">http://linkedin.com/in/jimmcleodaustralia</a></p>
+ 
+<p>Contact: <a href="http://www.jimmcleod.net">http://www.jimmcleod.net</a></p>
+ 
+<p>Jim McLeod is a Canberra-based SQL Server consultant with Ignia. Coming from a software development background, Jim chose to specialise in SQL Server in 2005, with a particular focus on database performance. Since then, Jim has worked with most aspects of SQL Server on databases of all sizes across a large number of industries, with the focus in the past few years on data warehousing, Azure and Analytics.</p>
+ 
+<h3 class="section-heading">Kristina Rumpff
+ - <a href="https://www.twitter.com/krumpff">krumpff</a>
+</h3>
+<p>LinkedIn: <a href="https://au.linkedin.com/in/krumpff">https://au.linkedin.com/in/krumpff</a></p>
+ 
+<p>Kristina has been a DBA for the past 15 years, with a number of companies including IBM, and Telstra.  She made the move over to Microsoft, and now gets to play with technology and tell others about how it can help them!</p>
+ 
+<h3 class="section-heading">Stefan Riedel
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/stefan-riedel-59b0278">https://www.linkedin.com/in/stefan-riedel-59b0278</a></p>
+ 
+<p>Stefan Riedel has been working with databases for more than 15 years, the last 10 of which have been focused on Microsoft SQL Server.  Stefan has led and contributed to the implementation of many data warehouse and business intelligence solutions built using the Microsoft BI stack.  To support these projects Stefan has designed and implemented automated testing and deployment tooling to support agile BI development methodologies.  Stefan has presented at previous SQLSaturday events in Melbourne, Brisbane and Singapore.</p>
+ 
+<h3 class="section-heading">Martin Cairney
+ - <a href="https://www.twitter.com/martin_cairney">martin_cairney</a>
+</h3>
+<p>LinkedIn: <a href="http://au.linkedin.com/in/martincairney">http://au.linkedin.com/in/martincairney</a></p>
+ 
+<p>Martin has 20 years’ experience in SQL Server technologies. His experience spans both the Database Engine and infrastructure requirements, and Data Warehousing and BI implementations. 
+He has worked across many industry sectors including London’s global financial institutions and both State and Federal Government Departments. 
+He is a SQL Server MVP, MCT and an experienced conference presenter, having presented at PASS Summit, SQLBits, and SQLSaturday events and User Groups round the world</p>
+ 
+<h3 class="section-heading">Vikas Rajput
+
+</h3>
+<p>LinkedIn: <a href="https://au.linkedin.com/in/rajputsvikas">https://au.linkedin.com/in/rajputsvikas</a></p>
+ 
+<p>Vikas is passionate about anything data. He has worked in consulting and core software development roles, and delivered solutions ranging from few MB sized Master Data to multi-billion 100+TB scalable data systems using Microsoft and other Data Technologies. Other than data, Vikas enjoys trekking, long walks, mentoring, visualization and automation (in no particular order!).</p>
+ 
+<h3 class="section-heading">Mladen Prajdić
+ - <a href="https://www.twitter.com/@MladenPrajdic">@MladenPrajdic</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/mladenprajdic">https://www.linkedin.com/in/mladenprajdic</a></p>
+ 
+<p>Contact: <a href="http://weblogs.sqlteam.com/mladenp">http://weblogs.sqlteam.com/mladenp</a></p>
+ 
+<p>Mladen Prajdić is a Data Platform MVP from Slovenia. He's been programming for 20 years, developing diﬀerent types of applications in .Net (C#) and SQL Server, ranging from standard line-of-business, image-processing applications to high performace and IoT applications. He's a regular speaker at various conferences and usergroup meetings, really likes to optimize slow SQL statements, analyze performance, and find unconventional solutions to difficult SQL Server problems. In his free time, he also develops a very popular add-in for SSMS, called the SSMS Tools Pack (www.ssmstoolspack.com).</p>
+ 
+<h3 class="section-heading">Grant Paisley
+ - <a href="https://www.twitter.com/@angrykoala">@angrykoala</a>
+</h3>
+<p>Grant Paisley is a Data Platform MVP and founder of Angry Koala, a Microsoft Business Intelligence partner based in Sydney, Australia. Grant is president of the SQL Server Usergroup Sydney and created http://reportsurfer.com, a community built around reporting, where you can also run the reports. He was contributing author for quot;SQL Server 2008 Analysis Services with MDXquot; and quot;Microsoft SQL Server Reporting Services Recipesquot;.</p>
+ 
+<h3 class="section-heading">André Kamman
+ - <a href="https://www.twitter.com/@andrekamman">@andrekamman</a>
+</h3>
+<p>Contact: <a href="http://andrekamman.com">http://andrekamman.com</a></p>
+ 
+<p>André Kamman is a DBA and SQL Server Solutions Architect for CloudDBA. He has done a lot of DBA work on 1000’s of servers where he discovered his love for Powershell, architecting SQL Server solutions, building and tuning ETL processes (with BIML). He also likes to work with MPP platforms APS and AzureDW. André is a Data Platform MVP, Dutch PASS Chapter Leader and organiser of SQLSaturday Holland.</p>
+ 
+<h3 class="section-heading">Warwick Rudd
+ - <a href="https://www.twitter.com/@warwick_Rudd">@warwick_Rudd</a>
+</h3>
+<p>LinkedIn: <a href="http://au.linkedin.com/pub/warwick-rudd/0/956/718">http://au.linkedin.com/pub/warwick-rudd/0/956/718</a></p>
+ 
+<p>Contact: <a href="http://www.sqlmastersconsulting.com.au/Blog">http://www.sqlmastersconsulting.com.au/Blog</a></p>
+ 
+<p>Warwick Rudd is a Microsoft Certified Master – SQL Server 2008 and Principal Consultant at SQL Master Consulting. He is a frequent speaker at local SQL Server User Groups and SQLSaturday events in Australia. When not playing with the SQL stack, Warwick likes to get away to the cold and spend time snowboarding.</p>
+ 
+<h3 class="section-heading">Rolf Tesmer
+
+</h3>
+<p>Rolf has 18 years IT experience with more than 15 years across all facets of SQL Server/Windows BI platforms, operating in both freelance consulting roles and within large multi-nationals, including Dimension Data, BHP Biliton, Honda and Australia Post.Rolf’s SQL experience covers SQL BI architecture/design, MS  Qlik business intelligence (BI), disaster recovery (DR), performance management, security and compliance, consolidation/strategy, licencing and virtualisation.</p>
+ 
+<h3 class="section-heading">Peter Avenant
+ - <a href="https://www.twitter.com/@BimlDownunder">@BimlDownunder</a>
+</h3>
+<p>Contact: <a href="http://www.varigence.com.au">http://www.varigence.com.au</a></p>
+ 
+<p>Peter Avenant is the Technical Director at Varigence Australia, an SSIS Developer, Trainer and Consultant, and SQL Server data warehouse specialist. His background includes developing a cloud metadata framework that integrates with BimlScript to create both data vault and dimensional data warehouses.
+</p>
+ 
+<h3 class="section-heading">Kelly Broekstra
+ - <a href="https://www.twitter.com/kellybroekstra">kellybroekstra</a>
+</h3>
+<p>LinkedIn: <a href="http://au.linkedin.com/in/KellyBroekstra">http://au.linkedin.com/in/KellyBroekstra</a></p>
+ 
+<p>Kelly is an Information Management, Business Intelligence, and Project Management specialist with over fifteen years' experience in data warehouse development and a passion for understanding a client's need to create the most fit for purpose solution achievable.
+Kelly has considerable practice utilising and adapting best practice principles to extensive BI and data warehousing projects at large and small organisations. Her desire for simplifying the development process while providing the best solution for the client is perfectly suited to the fast-moving BI world.</p>
+ 
+<h3 class="section-heading">Iman Eftekhari
+
+</h3>
+<p>LinkedIn: <a href="https://au.linkedin.com/in/ieftekhari">https://au.linkedin.com/in/ieftekhari</a></p>
+ 
+<p>Contact: <a href="http://www.agilebi.com.au">http://www.agilebi.com.au</a></p>
+ 
+<p>Iman Eftekhari (MCSE BI, MCITP, CSP) has been involved in many successful BI implementations mainly with financial services, health and the public sectors. 
+
+He has presented at number of events such as PASS SQLSaturday Sydney, Brisbane, Melbourne, Copenhagen,Sydney BI User Group, SQL Server User Group, etc.
+
+Iman is the co-founder of the Agile BI consulting, co-organiser of the Sydney BI Social group (SYBIS) and Sydney Power BI User Group (PUG).</p>
+ 
+<h3 class="section-heading">Nicholas Loghides
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/loghides">https://www.linkedin.com/in/loghides</a></p>
+ 
+<p>Cross a former Navy tactical jet pilot, Combat Air Medal recipient, Jet flight instructor, adversary pilot, and Certified Airline Transport Pilot with a current MCSE DP, SQL Server DBA and consultant with 15 years of technical experience and the result is … Nick, a seasoned DBA with nerves of steel and a unique perspective who blends the paradigms of aviation with DBA work, bringing lessons learned (some in blood) from both worlds to bear on critical situation handling. </p>
+ 
+<h3 class="section-heading">Craig Bryden
+ - <a href="https://www.twitter.com/@cbryden">@cbryden</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/craigbryden/">https://www.linkedin.com/in/craigbryden/</a></p>
+ 
+<p>Craig has been working with SQL Server for over 20 years and currently holds several SQL Server based certifications. He has also previously held an MCT certification. Craig's contribution to the SQL Server community was recognised in 2018 with a Microsoft MVP award. He was involved with Microsoft Learning to set some of the current SQL server Exams. Craig is the Chief Data Strategist at BiTQ. Craig is an organiser of the QLD Power BI User Group</p>
+ 
+<h3 class="section-heading">Rod Colledge
+ - <a href="https://www.twitter.com/@rodcolledge">@rodcolledge</a>
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/rodcolledge">http://linkedin.com/in/rodcolledge</a></p>
+ 
+<p>Contact: <a href="http://www.rodcolledge.com">http://www.rodcolledge.com</a></p>
+ 
+<p>Rod Colledge is the national BI practice lead for DWS, a leading publicly listed Australian IT Services company. With 15+ years of SQL Server experience, Rod#39;s commitment and depth of knowledge was recognized in 2010 with a Microsoft MVP award for SQL Server. This is Rod#39;s 6th consecutive year as an MVP. Rod has authored or contributed to three books, including the “SQL Server MVP Deep Dives” series. He#39;s a sought-after speaker at both local and international SQL Server conferences.</p>
+ 
+<h3 class="section-heading">Reeves Smith
+ - <a href="https://www.twitter.com/SQLReeves">SQLReeves</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/reevessmithiii/">http://www.linkedin.com/in/reevessmithiii/</a></p>
+ 
+<p>Contact: <a href="http://reevessmith.wordpress.com">http://reevessmith.wordpress.com</a></p>
+ 
+<p>Reeves Smith, owner and principal architect of Macer Consulting, is passionate about applying data technologies that empower organizations. Reeves wields his knowledge and experience to lead, design, architect, and teach, working with both data center and business project teams. He approaches every project by first understanding the organization’s business challenges, and then developing a unique approach that targets those business needs accurately and effectively.
+
+Reeves Smith has more than 20 years of experience working on the SQL Server stack. He is a Microsoft Data Platform MVP and Microsoft Certified Master, and regularly delivers technical presentations at international, regional, and local conferences and user groups.</p>
+ 
+<h3 class="section-heading">Julie Koesmarno
+ - <a href="https://www.twitter.com/@mssqlgirl">@mssqlgirl</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/juliekoesmarno">http://www.linkedin.com/in/juliekoesmarno</a></p>
+ 
+<p>Contact: <a href="http://www.mssqlgirl.com">http://www.mssqlgirl.com</a></p>
+ 
+<p>Julie Koesmarno, MCSE Data Platform, and MCSE Business Intelligence, MCT, is a Senior Program Manager at Microsoft, with a Bachelor’s degree in IT. She has over 10 years of experience working with SQL Server for large-scale and multi-million-dollar OLTP and ETL projects as a SQL Server developer and system analyst/designer. Her past projects include delivering a SQL Server 2012 data warehouse and BI solutions in the US and Australia. She now works with hybrid, cloud and on-prem SQL projects.</p>
+ 
+<h3 class="section-heading">Rob Farley
+ - <a href="https://www.twitter.com/rob_farley">rob_farley</a>
+</h3>
+<p>LinkedIn: <a href="http://au.linkedin.com/in/robfarley/">http://au.linkedin.com/in/robfarley/</a></p>
+ 
+<p>Contact: <a href="http://blogs.lobsterpot.com.au">http://blogs.lobsterpot.com.au</a></p>
+ 
+<p>Rob Farley runs LobsterPot Solutions in Australia, where he's a consultant in the Microsoft Data Platform and Analytics space. He's been an MVP since 2006, probably because of his blogging, his presentations around the world, and his dedication to the Adelaide Data  Analytics User Group which he has led since before the release of SQL Server 2005. He's on Twitter at @rob_farley, but you can always email him using rob@lobsterpot.com.au</p>
+ 
+<h3 class="section-heading">Martin Catherall
+ - <a href="https://www.twitter.com/MartyCatherall">MartyCatherall</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/martincatherall">https://www.linkedin.com/in/martincatherall</a></p>
+ 
+<p>Contact: <a href="http://martincatherall.com">http://martincatherall.com</a></p>
+ 
+<p>Martin is a data consultant in Melbourne, Australia, a Microsoft Data Platform MVP, and PASS Regional Mentor for the Asia Pacific (APAC) region.
+Martin founded the Christchurch, New Zealand PASS Local Group and lead the group for a number of years before relocating to Melbourne.
+He has been using SQL Server in various roles since 2000. In addition to anything data related, he enjoys playing the guitar and having fun with his family.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://lobsterpot.com.au">LobsterPot Solutions</a></p>
+ 
+<p><a href="http://www.melissadata.com">Melissa Data Corp.</a></p>
+ 
+<p><a href="http://www.wardyit.com">WARDY IT Solutions</a></p>
+ 
+<p><a href="http://rd.gt/2j7SNf9">Redgate Software (GAP)</a></p>
+ 
+<p><a href="http://www.perspectiveilm.com">Perspective Information Lifecycle Management</a></p>
+ 
+<p><a href="http://www.sqlmastersconsulting.com.au">SQL Masters Consulting</a></p>
+ 
+<p><a href="http://www.sqlsentry.com/">SQL Sentry</a></p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://www.violin-memory.com">Violin Memory</a></p>
+ 
+<p><a href="http://www.varigence.com.au">Varigence Australia</a></p>
+ 
+<p><a href="http://www.krollontrack.com/">Kroll Ontrack</a></p>
+ 
+<p><a href="https://www.quest.com/">Quest Software</a></p>
+ 
+<p><a href="http://www.profisee.com">Profisee</a></p>
+ 
+<p><a href="http://kimballgroup.com">Kimball Group</a></p>
+ 
+<p><a href="http://www.pluralsight.com">PluralSight</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQLSaturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

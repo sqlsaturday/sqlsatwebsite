@@ -1,0 +1,914 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #927 - Edinburgh 2020" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #927 - Edinburgh 2020
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #927 - Edinburgh 2020</div>
+        <div class="masthead-subheading">This event was held on 2020-2-1</div>
+        <p><b>Event Location</b>:</p>
+        <p>Edinburgh Training and Conference Venue</p>
+        <p>16 St Mary's St, Edinburgh </p>
+        <p>Edinburgh, Scotland, United Kingdom</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0927.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Choose Your Own Adventure - Performance Edition</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Remember those "choose your own adventure" books from when we were younger? Yep, that's what we're doing in this session.
+
+We're going to start with a poorly performing query and choose which route we're going to take to see if we can make it better.
+
+You don't need any previous experience in performance tuning for this session, we'll briefly cover each topic as it's chosen.
+
+Potential topics include;
+- Indexes
+- Query Design
+- Settings that might affect performance
+- Scalar Functions
+- SARGability
+- Temp Tables
+
+We'll be voting on where we go at each step to see where our journey takes us.
+
+In the session we'll cover each topic a little but I will also provide a more in-depth explanation of everything we go through after the session if you want to learn more.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rich Benner</b>, 
+</p>
+<hr>
+ 
+<h3>When Things go Wrong - Error Handling in SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Most modern programming environments offers exception handling in some form, and SQL Server provides the popular TRY-CATCH concept. However, error handling in SQL Server is not as straightforward as one may wish, but it is marred with inconsistencies and surprises. This session starts off by displaying the some of the surprises you can encounter, both when you use TRY-CATCH and when you don't.
+
+The session presents a recipe for writing CATCH block where focus is on keeping things simple and you will learn why it is not a good idea to make your error handling "fancy", although it may seem to be a good idea in theory. The session also covers a few things to think of on client level.
+
+Once we have learnt how to handle unanticipated errors, we can start to look at how to handle errors we know can occur and in which case we want to take an alternate action. We will also learn how to - and if - to implement retries on deadlocks.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Erland Sommarskog</b>, 
+</p>
+<hr>
+ 
+<h3>An Introduction to Terraform, Infrastructure as Code</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>With ever increasing complexity in data platform and application solutions, it is becoming ever more important to take people out of the loop when it comes to system provisioning. Infrastructure as code is the way forward with Azure Resource Manager Templares, Google Deployment Manager, or AWS Cloud Formation.
+
+This is where Terraform from Hashicorp can step in, one solution that has a provider model that will interact with Azure, AWS, Google, and others. Meaning that you only need to learn one syntax. Add that to the automation potential and now we have something that can really help get us down the road to infratructure as code.
+
+This session will take an introductory look at how infrastructure can be defined as code and be shipped to standardise the deployment process and minimise the chance of mistakes creeping in when deployed by different memebers of Development or Operations.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>John Martin</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Cosmos DB for Dummies</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure Cosmos DB is Microsoft’s premier NoSQL Cloud-based globally distributed database offering, providing scalable performance and resiliency, customizable consistency guarantees, multiple data models APIs, and comprehensive service level agreements.
+
+In this session, we will explain how to get started in Cosmos DB and demonstrate simple administrative and development operations so you can learn how to go from zero to hero in no time. We will cover many fundamental topics which include:
+* Cosmos DB APIs
+* Accounts, Databases, and Containers
+* Geo-Replication
+* Partitioning and indexing
+* Consistency and throughput
+
+Azure Cosmos DB is not just the future for Online-Transaction Processing, it is the present!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mark Broadbent</b>, 
+</p>
+<hr>
+ 
+<h3>Database Adventure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Aimed mostly at administration and based on real life scenarios, this popular audience interactive session we will go through some scenarios DBA's might encounter whilst dealing with SQL Server databases and you will be provided with some options about what to do. 
+
+Members of the audience can then select from the options provided and we will follow that path and see what the outcome is from there. Similar to a role-playing game.
+
+Each selection will have a different outcome, and along the way you will probably learn some new things.
+
+As some of you may have seen on the blog www.KevinRChant.com I've already had dealing with SQL Server 2019. Therefore, this session has been updated to include SQL Server 2019 content.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Chant</b>, 
+</p>
+<hr>
+ 
+<h3>Rebooting your SME Data Analysis Strategy</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>For many businesses out there, adopting a progressive data analysis strategy is the domain of the big players. You need a budget, you need investment and with only a small number of users, the costs are off-putting. Hard to justify some costs when your user base may only be a few or a few dozen users. This is no longer the case with the PowerBI Platform. 
+
+This session is based on real-life customer implementations where they were taken away from their Excel and Microsoft Access and LOB based reporting solutions towards the Power Platform. We show how we started with Power BI and evolved into a comprehensive solution that combines SharePoint Online with PowerBI to provide an end to end reporting solution. Further phases of these project introduced Power Apps and Flow to further enhance the analytical capabilities of the company.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mark Hayes</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server  Kubernetes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Running SQL Server in containers has huge benefits for Data Platform professionals but there are challenges to running SQL Server in stand alone containers. Orchestrators provide a platform and the tools to overcome these challenges.
+
+This session will provide an overview of running SQL Server in Kubernetes, which is the leading orchestrator.
+
+Topics covered will be: -
+An overview of Kubernetes.
+Definition of pods and services.
+Deploying SQL Server containers to Kubernetes.
+Persisting data for SQL Server in Kubernetes.
+An introduction to Helm
+Chaos engineering for SQL Server in Kubernetes using Space Invaders!
+
+This session is aimed at SQL Server DBAs and Developers who want to learn the what, the why, and the how to run SQL Server in Kubernetes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrew Pruski</b>, 
+</p>
+<hr>
+ 
+<h3>Driven by the 9s - I need a highly available Microsoft Data Platform – what features should I use?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft’s data platform and SQL Server comes with a plethora of High Availability features. Some of these features can work hand-in glove with each other to allow you to configure your SQL Servers to be both Highly-Available and recoverable in the event of the worst happening. 
+
+If you are driven by the '9s', have strict SLAs and up time is key to you and your business, then combining SQL Server’s high availability features is something you should consider. 
+
+In this session we will look at how we can combine SQL Server Availability Groups and SQL Server Failover cluster instances to keep our servers both highly available and maintain a secondary disaster recovery.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gethyn Ellis</b>, 
+</p>
+<hr>
+ 
+<h3>How to be awesome at getting your next job</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Finding that job you desire and want can be hard work.  Writing that CV that gets your name on the interview list.  Making the first good impression at the the interview, handling those tough questions with ease. 
+
+In this session I will share some of the tips and techniques I have used to get roles over my career.  You will get some insider tips on how to deal with those difficult interview questions.  How to work with recruitment agents.  Ways to get your name to the top of the recruiters list.  When you leave this session you have techniques and tips you can use as soon as you leave the session to help you in your search for that role you want</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Robert French</b>, 
+</p>
+<hr>
+ 
+<h3>Shadow prediction: SQL spatial data types and astronomy well mixed</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Can you use GEOGRAPHY data types to calculate and display celestial phenomena and does it make sense? 
+It needs some math and the willingness to use SQL objects for purposes, they haven’t been designed for.
+This session is a (hopefully) entertaining exercise to combine scarcely used data types with a bit of astronomy and math to calculate and visualize the relationship between sun and wind turbines (i.e. moving shadows that may annoy the neighbors) solely by using SQL Management Studio.
+Only GEOGRAPHY data type will be used to show the richness and beauty of its functionality. 
+ Apart from 2-3 formulas everything will be handled in SQL.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Arne Bartels</b>, 
+</p>
+<hr>
+ 
+<h3>Creating ETL/ELT Data Flows for the Modern Data Warehouse</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>One major challenge in the age of "Big Data" is keeping up with the volume and velocity of data with respect to moving it to the Data Warehouse. In this session, attendees will learn about Microsoft's answer to this problem; Azure Data Factory (ADF), and specifically, Mapping Data Flows. ADF Mapping Data Flows enables data engineers to construct, execute, and monitor data pipelines, based on the highly scalable Azure Databricks Spark Engine, with little to no code.
+
+This session will be very demo-heavy, with demonstrations of effective patterns and practices that have been deployed by some of Microsoft's largest customers throughout the world.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ted Malone</b>, 
+</p>
+<hr>
+ 
+<h3>Data scientists have left ... How will I deploy their work?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Description
+That's it, data scientists have left the house! Behind them, some scripts written in Python or R, thousands of CSV files, three sheets and two whiteboards of mathematical equations, many PowerPoint presentations and a clear instruction from the CEO: go to production ASAP! Unfortunately, no trace of a deployment procedure. Hopefully, this session, will explain how to industrialize data scientists' scripts. How to import and refactor code written in Jupyter Notebooks within VS Code, How to put in place the best practices of DevOps and apply them to Machine Learning with Azure Pipelines and some other tips and tricks for a successful go-live.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Cédric Charlier</b>, 
+</p>
+<hr>
+ 
+<h3>10 Steps Towards Global Data Compliance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Data compliance in the modern technology landscape feels like a constantly moving target as more and different laws, rules and regulations are passed locally, nationally and internationally. The days when only some organizations or certain countries had to worry about data compliance are gone. It’s everyone’s problem.
+
+However, it is possible to define a core set of processes that will help to enable your ability to assist your business, or government agency, in meeting these compliance requirements. This session will walk you through the 10 steps you need to implement in order to move your organization towards full compliance with any, or all, of the regulations we all now face. From identifying where your data lives to monitoring for compliance and all the steps in between, you can meet this challenge.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Grant Fritchey</b>, 
+</p>
+<hr>
+ 
+<h3>Turn insight into action using Power automate and Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>By combining the power of Power BI data alerts with the hundreds of actions available for Flow, we’re making it easier than ever to go from insight to deep, meaningful action.
+
+Microsoft Flow is a SaaS offering for automating workflows across the growing number of applications and services that business users rely on. You can set up Flows to take care of the important, repeating tasks that take place daily in your organization. For example, you can create a Flow to text you via SMS when your manager sends you an e-mail marked as  “high importance.” Or, automatically create a to-do item in Wunderlist when a customer e-mails your support line.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Isabelle Van Campenhoudt</b>, 
+</p>
+<hr>
+ 
+<h3>DevOps 101 for Data Folks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>DevOps has fundamentally changed the way we manage IT. Those practicing DevOps well aren't just outpacing their competitors, they are annihilating them. DevOps brings a whole host of new practices, tools and buzzwords. It has made some roles and  tasks redundant, while new opportunities have been created.
+
+We all need to learn to survive in this new reality.
+
+In this session we'll cut through the hype and look at the key concepts and findings from the Puppet State of DevOps Reports,  The DevOps Handbook and Microsoft's work in this space.
+
+We will finish with an overview of an Azure DevOps Services project that automatically tests and deploys the code from a SQL Server Data Tools (SSDT) project in a public GitHub repo.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alex Yates</b>, 
+</p>
+<hr>
+ 
+<h3>Azure DevOps duet (90 minutes version)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Welcome to Azure DevOps Duet, a tale about how a development team and an operations team have to bond together and start using Azure DevOps for SQL Server related deployments.
+
+This session will cover the process of developing a CI/CD process starting at getting the team on board and ending with making an actual release.
+
+We will discuss
+
+- the challenges of implementing DevOps
+- setting up a database solution project
+- getting started with source control
+- testing your database releases using tSQLt
+- setting up your Azure Devops pipelines
+
+After this session you will have the tools and knowledge to get started with DevOps and get your development process to the next level.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Chant</b>, 
+</p>
+<hr>
+ 
+<h3>Machine Learning in Azure Databricks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Databricks is the Swiss Army Knife of the Azure Data Analytics environment. Databricks implements Apache Spark, a robust in-memory cluster data processing framework. Spark Core supports SQL, DataFrames, Streaming, Graph Processing and Machine Learning.
+
+In this session we focus on how Spark implements Machine Learning at Scale with Spark ML. Spark ML can do a lot, but not everything. In this session we go end-to-end, building a model in an iterative way, monitoring our improvements in MLFlow, training, testing and evaluating a Machine Learning pipeline. We will also discuss how to migrate your models to perform at scale. If you're working with Deep Learning, then let me know and we can discuss how Databricks can scale Deep Learning.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Terry McCann</b>, 
+</p>
+<hr>
+ 
+<h3>Persistence is Futile - Implementing Delayed Durability in SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The concurrency model of most Relational Database Systems are defined by the ACID properties but as they aim for ever increasing transactional throughput, those rules are bent, ignored, or even broken.
+
+In this session, we will investigate how SQL Server implements transactional durability in order to understand how Delayed Durability bends the rules to remove transactional bottlenecks and achieve improved throughput. We will take a look at how this can be used to compliment In-Memory OLTP performance, and how it might impact or compromise other things.
+
+Attend this session and you will be assimilated!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mark Broadbent</b>, 
+</p>
+<hr>
+ 
+<h3>Advancing Analytics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Saturday Edinburgh (SQLSat927) GOLD sponsor session.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>SQLSat927 Gold Sponsor</b>, 
+</p>
+<hr>
+ 
+<h3>How to establish control when it's all going wrong!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>At some point in time, whether in the past or in the future, we will experience being in a situation where there is a major outage or problem that needs to be dealt with. But how can we ensure that it does not decend into chaos and make the problem worse?
+
+Join me as I share a number of tips and tricks about how to take control of the situation. We will cover establishing a control structure, commuincations, and documentation. All of which when done well can result in a calm and controlled resolution and faciliate root cause analysis. We will also look at ways to prepare for such situations and how you can lay the groundwork so that if something does go wrong you are ready for it.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>John Martin</b>, 
+</p>
+<hr>
+ 
+<h3>From Docker to Big Data Clusters: a new era for SQL server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Starting with version 2017, SQL server was supported on Docker and Linux. With SQL Server 2019, you will be able to run a container, or a whole AlwaysOn Availability Group on Kubernetes.
+This session will drive DBAs on their path to modernize their skills. Starting with a single container on a Docker host, the session will also cover Big Data Cluster creation and usage though T-SQL and basic Python scripts.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Christophe Laporte</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Synapse Analytics : Evolving Azure SQL Data Warehouse</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure Synapse is a limitless analytics service that brings together enterprise data warehousing and Big Data analytics. It gives you the freedom to query data on your terms, using either serverless on-demand or provisioned resources—at scale.
+
+In this session we explore Azure Synapse Analytics, we will dive into this limitless analytics service and explore how it brings together enterprise data warehousing and Big Data analytics.
+
+We will explore;
+*Data ingestion
+*SQL Pools - Data Warehouses
+*Spark Pools 
+*SQL-on-Demand
+*PowerBI</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mark Pryce-Maher</b>, 
+</p>
+<hr>
+ 
+<h3>A Masters view on Locking and blocking</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>How do the wait stats show you that you have a locking issue?
+This session will show you how to detect and view blocking and lock waits, and understand the cause of it.
+An extensive walkthrough of the different isolation levels and their respective benefits and drawbacks.
+And finally a real-world quick list of suggestions on what you can do to solve some of the common issues I come across in my daily work.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mikael Wedham</b>, 
+</p>
+<hr>
+ 
+<h3>Investigate TempDB like Sherlock Holmes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The system database TempDB has often been called a dumping ground, even the public toilet of SQL Server. (There has to be a joke about spills in there somewhere). In this session you will learn to find those criminal activities that are going on deep in the depths of SQL Server that are causing performance issues, not just for one session, but that affects everybody on that instance.
+You will learn what you can do to reduce issues by investigating your hardware, your SQL Server configurations, and your coding techniques.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Lord Richard Douglas</b>, 
+</p>
+<hr>
+ 
+<h3>Exploiting Artificial Intelligence within Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Artificial Intelligence is dominating the world and not most of them had any chance to experience these features, due to various complicated reasons. How about if this can be made very easy and to exploit these AI features to visualise in our day to day Power BI? This AI session will cover all AI capabilities within Power BI and also using Azure Cognitive Services to build a live BOT  QnA, Vision (Face API), Language (Text Analytics).</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dr. Subramani Paramasivam</b>, 
+</p>
+<hr>
+ 
+<h3>"Kubernetify" your SQL Server Containers</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We have all now had a play around with Docker and Containers or at least heard about them.
+
+This demo heavy session will walk through some of the challenges around managing container environments and how Kubernetes orchestration can help alleviate some of the pain points. 
+
+We will be talking about what Kubernetes is and how it works and through the use of demos we will:
+
+- Highlight some of the issues with getting setup (Specifically Minikube on Ubuntu), 
+- Deploying/Updating containers in Kubernetes (on-Prem as well as AKS using Azure DevOps)
+- Persisting data
+- How to avoid making the same mistakes as I have</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Chris Taylor</b>, 
+</p>
+<hr>
+ 
+<h3>Creating an Enterprise Datalake without an Enterprise budget</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we will look at a couple of approaches to create a datalake on a budget. The samples will use Python, Spark and some Databricks. It will all be done in Azure, but we will discuss how you could set this up on-prem as well.
+
+You get to decide how far you want to go, from cost-effective to penny pinching. Don't worry if you've never used any of these technologies, I will start at the beginning.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Kamman</b>, 
+</p>
+<hr>
+ 
+<h3>Why Synapse Analytics is beyond Azure SQL Datawarehouse</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Synapse Analytics is being announced as the new name of Azure SQL Datawarehouse, but it's not only that. There is a broader view in Synapse analytics, beyond Azure SQL Datawarehouse. Let's see in this session what was improved, what changed, and how synapse analytics fits in the data platform.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dennes Torres</b>, 
+</p>
+<hr>
+ 
+<h3>Azure AI with Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure Artificial Intelligence and Machine learning models are invoked as functions within Power BI dataflow to create a powerful dataset for your Power BI Reports.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Shreeya Subramani</b>, 
+</p>
+<hr>
+ 
+<h3>SentryONE</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Saturday Edinburgh (SQLSat927) GOLD sponsor session.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>SQLSat927 Gold Sponsor</b>, 
+</p>
+<hr>
+ 
+<h3>Best Practices for building a Data Lake with Azure Databricks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Databricks is a Unified Analytics Platform making it easier than ever to do big data analytics on cloud. However, there are a lot of things you need to know and take into account before diving head first into a Data Lake. This session is intended for architects and developers who are looking to build a massive scale data storing and processing solution. I will go through the Best Practices for the purpose. In addition, I will demonstrate how to unify real-time and batch processing using Azure Databricks. As a result, you should feel comfortable building your own Data Lake for your big data processing needs.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Oskari Heikkinen</b>, 
+</p>
+<hr>
+ 
+<h3>GethyEllis.com (GE)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Saturday Edinburgh (SQLSat927) GOLD sponsor session.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>SQLSat927 Gold Sponsor</b>, 
+</p>
+<hr>
+ 
+<h3>SIOS</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Saturday Edinburgh (SQLSat927) GOLD sponsor session.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>SQLSat927 Gold Sponsor</b>, 
+</p>
+<hr>
+ 
+<h3>QUORUM Network Resources</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Saturday Edinburgh (SQLSat927) GOLD sponsor session.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>SQLSat927 Gold Sponsor</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Notebooks in Azure Data Studio for the DBA</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>An Azure Data Studio recent release introduced SQL Notebooks as a capability. While you might have read about notebooks being used for Data Science, this session is primarily for DBAs. 
+
+We will cover installing Azure Data Studio.
+What a SQL Notebooks is.
+Numerous use cases for you to use SQL Notebooks in your daily workload such as creating a Notebook for Glenn Berry's Diagnostic queries.
+
+and some gifs ;-)</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rob Sewell</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Mark Broadbent
+ - <a href="https://www.twitter.com/@retracement">@retracement</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/retracement">http://www.linkedin.com/in/retracement</a></p>
+ 
+<p>Contact: <a href="http://tenbulls.co.uk">http://tenbulls.co.uk</a></p>
+ 
+<p>Mark Broadbent is a Data Platform MVP and SQL Server MCM with more than 20 years of experience working with SQL Server and principal of SQLCloud, a consultancy specializing in concurrency control and highly available solutions. He is the founder of the UK's SQLSaturday Cambridge (its first and largest), SharePoint Saturday Cambridge, the Hybrid Virtual Chapter and the East Anglia SQL User Group.</p>
+ 
+<h3 class="section-heading">Dr. Subramani Paramasivam
+ - <a href="https://www.twitter.com/https://twitter.com/dageop">https://twitter.com/dageop</a>
+</h3>
+<p>LinkedIn: <a href="http://uk.linkedin.com/in/dageop">http://uk.linkedin.com/in/dageop</a></p>
+ 
+<p>Contact: <a href="http://www.yoursqlman.com/index.php/blogs">http://www.yoursqlman.com/index.php/blogs</a></p>
+ 
+<p>Dr.SubraMANI Paramasivam is a Microsoft MVP, PhD, Microsoft Certified Trainer and Head of Data  AI at DAGEOP Ltd having 21 years of DB, BI, Analytics and AI experience. Mani has also spoken in various events like MS IGNITE, PASS Summit, MS Inspire, SQLBITS, Power Platform Summit, Global AI Bootcamp, Data  BI Summit, SQLRelay,  Power BI World Tour, Data Platform Summit, INSIDESQL UK, Global AI Nights, SQLServerGeeks Summit, MCT Global Summits, Data Day Events and various user group events. Mani also believes in Empowering Every Person in the planet and spreads the awareness on Global challenges via www.EmpoweringEveryPerson.com. He is also a co-owner of 1 Global AI Meetup and 3 Power BI PUG  PASS local / user groups.</p>
+ 
+<h3 class="section-heading">André Kamman
+ - <a href="https://www.twitter.com/@andrekamman">@andrekamman</a>
+</h3>
+<p>Contact: <a href="http://andrekamman.com">http://andrekamman.com</a></p>
+ 
+<p>André Kamman is a DBA and SQL Server Solutions Architect for CloudDBA. He has done a lot of DBA work on 1000’s of servers where he discovered his love for Powershell, architecting SQL Server solutions, building and tuning ETL processes (with BIML). He also likes to work with MPP platforms APS and AzureDW. André is a Data Platform MVP, Dutch PASS Chapter Leader and organiser of SQL Saturday Holland.</p>
+ 
+<h3 class="section-heading">Isabelle Van Campenhoudt
+ - <a href="https://www.twitter.com/@thesqlgrrrl">@thesqlgrrrl</a>
+</h3>
+<p>LinkedIn: <a href="http://be.linkedin.com/pub/isabelle-van-campenhoudt/2/558/52b/">http://be.linkedin.com/pub/isabelle-van-campenhoudt/2/558/52b/</a></p>
+ 
+<p>Contact: <a href="http://thesqlgrrrl.wordpress.com">http://thesqlgrrrl.wordpress.com</a></p>
+ 
+<p>Isabelle Van Campenhoudt is a system engineer (MCSE; MVP SQL Server) who has been working for more than 15 years in the world of databases; she lives in Belgium; Isabelle has strong experience in Business Intelligence. Trainer (Microsoft Certified Trainer), speaker and consultant, she used to collaborate with developers; infra (design and performance). She is also a teacher at EPHEC (Brussels) for the Bachelor of Computer Science curriculum. Isabelle is co-founder of CLUG; V-chapter Francophone</p>
+ 
+<h3 class="section-heading">Cédric Charlier
+ - <a href="https://www.twitter.com/@Seddryck">@Seddryck</a>
+</h3>
+<p>LinkedIn: <a href="http://be.linkedin.com/in/cedriccharlier">http://be.linkedin.com/in/cedriccharlier</a></p>
+ 
+<p>Contact: <a href="http://seddryck.wordpress.com">http://seddryck.wordpress.com</a></p>
+ 
+<p>Cédric is a talented architect and Data Platform MVP active in the domain of Business Intelligence and Data warehousing. He has more than 10 years of successful experiences with SQL Server in European industrial groups and services companies. Driven by quality and reliability, he is the main developer of an open-source solution for testing BI solutions (cubes, etl, reports) named NBi (www.nbi.io). Cedric also advocates for the introduction and general usage of agile practices in BI’s world.</p>
+ 
+<h3 class="section-heading">Grant Fritchey
+ - <a href="https://www.twitter.com/@gfritchey">@gfritchey</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/scarydba">http://www.linkedin.com/in/scarydba</a></p>
+ 
+<p>Contact: <a href="http://scarydba.com">http://scarydba.com</a></p>
+ 
+<p>Grant Fritchey is a Data Platform MVP with over 20 years’ experience in IT, including time spent in support and development. He has worked with SQL Server since 6.0 back in 1995. He has also developed in VB, VB.NET, C#, and Java. Grant has written books for Apress and Simple-Talk. Grant presents at conferences and user groups, large and small, all over the world. He joined Redgate Software as a product evangelist in January 2011.</p>
+ 
+<h3 class="section-heading">Terry McCann
+ - <a href="https://www.twitter.com/@SQLShark">@SQLShark</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/in/tpmccann">https://uk.linkedin.com/in/tpmccann</a></p>
+ 
+<p>Contact: <a href="https://www.advancinganalytics.co.uk/blog">https://www.advancinganalytics.co.uk/blog</a></p>
+ 
+<p>Microsoft MVP. Principal Consultant and Owner of Advancing Analytics Limited, an Advanced Analytics consultancy in the UK. Advancing Analytics helps businesses advance their analytical capabilities. Our focus is on Data Science, Data Engineering, DataOps and applied AI. Terry holds a Master's degree in Data Science - with a focus on DataOps for Machine Learning. Speaker at conferences across the world and the host of the Data Science in Production Podcast.</p>
+ 
+<h3 class="section-heading">Gethyn Ellis
+ - <a href="https://www.twitter.com/gethyn_ellis">gethyn_ellis</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/in/gethynellis">https://uk.linkedin.com/in/gethynellis</a></p>
+ 
+<p>Contact: <a href="http://www.gethtynellis.com">http://www.gethtynellis.com</a></p>
+ 
+<p>Gethyn is a SQL Server consultant and trainer and has worked with SQL Server for nearly 20  years. He specialises in version mIgration,  performance, security, architecture and design including Azure and virtualisation solutions. He is working with private and public sector organisations in the UK, Europe and USA.
+
+Gethyn delivers a range of SQL Server training, including the Microsoft Official Curriculum. He is the author of three training courses and two published books on SQL Server and Azure. You can find his blog at www.gethynellis.com</p>
+ 
+<h3 class="section-heading">Dennes Torres
+ - <a href="https://www.twitter.com/Dennes">Dennes</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dennestorres/">https://www.linkedin.com/in/dennestorres/</a></p>
+ 
+<p>Contact: <a href="https://www.red-gate.com/simple-talk/author/dennes-torres/">https://www.red-gate.com/simple-talk/author/dennes-torres/</a></p>
+ 
+<p>Dennes Torres is a Data Platform MVP with more than 25 years of experience in the IT area. He improves Data Platform Architectures and turns data into knowledge. As a Brazilian living in Malta, Dennes works as a software developer and leads the Malta MDP User Group. Having the MCSE Data Platform, Business Intelligence, and Microsoft Certified Trainer (MCT) certifications, Dennes has been in love with database servers since he was  introduced to SQL Server 6.5, more years ago than he would like to admit.</p>
+ 
+<h3 class="section-heading">Lord Richard Douglas
+ - <a href="https://www.twitter.com/SQLRich">SQLRich</a>
+</h3>
+<p>LinkedIn: <a href="http://uk.linkedin.com/in/richardpdouglas">http://uk.linkedin.com/in/richardpdouglas</a></p>
+ 
+<p>Contact: <a href="http://SQL.RichardDouglas.co.uk">http://SQL.RichardDouglas.co.uk</a></p>
+ 
+<p>Lord Richard Douglas is a Principal Solutions Engineer at SentryOne, where he specialises in the SQL Server product range. He has worked with SQL Server since version 7.0 in various developer and DBA roles and holds a number of Microsoft certifications. Richard is a keen member of the SQL Server community, having run a PASS Chapter in the UK and having served on the organizing committee for SQLRelay.
+Richard is on Twitter as @SQLRich.</p>
+ 
+<h3 class="section-heading">SQLSat927 Gold Sponsor
+
+</h3>
+<p>SQL Saturday Edinburgh event gold sponsor</p>
+ 
+<h3 class="section-heading">Robert French
+ - <a href="https://www.twitter.com/sql_bob">sql_bob</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/rwlpfrench/">https://www.linkedin.com/in/rwlpfrench/</a></p>
+ 
+<p>Contact: <a href="http://www.sqlbob.uk/">http://www.sqlbob.uk/</a></p>
+ 
+<p>Data Shepherd, Data Plumber, and Data Dance Teacher.
+From the first day at university when Robert was introduced to a mainframe computer, it was love at first sight. Since then he has worked hard to establish a career in Business Intelligence. Having worked in a diverse range of industries such as Banking, Retail, Architecture, and now Grant Management software. Currently the co-organizer of the Glasgow SQL Server user group and always on the lookout for more computer mischief.</p>
+ 
+<h3 class="section-heading">Mikael Wedham
+ - <a href="https://www.twitter.com/@wedham">@wedham</a>
+</h3>
+<p>Contact: <a href="http://www.wedham.com">http://www.wedham.com</a></p>
+ 
+<p>Mikael Wedham is the first SQL Server MCM in Sweden and the only one who also is a Microsoft Certified Trainer. He has been paid to do things in SQL Server since 1993. His long experience makes him an appreciated speaker at events and conferences all over Europe. To be prepared for deep dives, he is also certified as an Open Water Scuba Instructor.</p>
+ 
+<h3 class="section-heading">Erland Sommarskog
+
+</h3>
+<p>Contact: <a href="http://www.sommarskog.se">http://www.sommarskog.se</a></p>
+ 
+<p>Erland Sommarskog is an independent consultant based in Stockholm, working with SQL Server since 1991. He was first awarded SQL Server MVP in 2001, and has been re-awarded every year since. His focus is on systems development with the SQL Server Database Engine and his passion is to help people to write better SQL Server applications.</p>
+ 
+<h3 class="section-heading">Andrew Pruski
+ - <a href="https://www.twitter.com/https://twitter.com/DBAFromTheCold">https://twitter.com/DBAFromTheCold</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/andrewpruski">https://www.linkedin.com/in/andrewpruski</a></p>
+ 
+<p>Contact: <a href="https://dbafromthecold.com/">https://dbafromthecold.com/</a></p>
+ 
+<p>SQL Server DBA with over 10 year's experience. Originally from Wales but now living in Ireland</p>
+ 
+<h3 class="section-heading">SQLSat927 Gold Sponsor
+
+</h3>
+<p>SQL Saturday Edinburgh event gold sponsor</p>
+ 
+<h3 class="section-heading">John Martin
+ - <a href="https://www.twitter.com/SQLDiplomat">SQLDiplomat</a>
+</h3>
+<p>LinkedIn: <a href="http://uk.linkedin.com/in/johnqmartin/">http://uk.linkedin.com/in/johnqmartin/</a></p>
+ 
+<p>Contact: <a href="https://www.mssqltips.com/sqlserverauthor/291/john-martin/">https://www.mssqltips.com/sqlserverauthor/291/john-martin/</a></p>
+ 
+<p>John Martin is a Data Platform Engineer working in the financial sector, as well as Vice President Marketing for the PASS organization and currently a Microsoft Data Platform MVP. Previously John has worked as a product manager for SentryOne and a Premier Field Engineer with Microsoft UK.
+
+John has over a decade of experience working with SQL Server and the Microsoft Data Platform. Working as a DBA, developer and consultant for Microsoft, he has been lucky enough to see how best, and how not, to use SQL Server and the Data Platform effectively.</p>
+ 
+<h3 class="section-heading">Kevin Chant
+ - <a href="https://www.twitter.com/kevchant">kevchant</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kevin-chant/">https://www.linkedin.com/in/kevin-chant/</a></p>
+ 
+<p>Contact: <a href="https://www.KevinRChant.com/">https://www.KevinRChant.com/</a></p>
+ 
+<p>Senior Database Architect originally from the UK and now living in the Netherlands. 
+
+Over 23 years experience in the IT sector, and has supported databases for companies in the top 10 of the fortune 500 list.
+
+In addition to a lot of SQL Server experience also has a fair few Microsoft Certifications. In addition, was probably the last ever person in the world to gain the MCSD Azure Architect certification and has gained the latest Microsoft DevOps Engineer Expert certification. 
+
+Has real life experience with SQL Server and Azure Devops. Currently SQL Server Product Owner of around 1,900 instances. 
+
+In addition, done various things over the years for the Data Platform Community.</p>
+ 
+<h3 class="section-heading">Shreeya Subramani
+
+</h3>
+<p>Shreeya Subramani is just 10 years old, and has a huge passion to share her knowledge and expertise that she has learnt so far from her father, Dr.Subramani Paramasivam (Microsoft MVP, MCT). Shreeya started speaking alongside her father when she was 6 years old. Since then, she started contributing to build and conduct Data Science classes for Kids.</p>
+ 
+<h3 class="section-heading">Mark Pryce-Maher
+ - <a href="https://www.twitter.com/tsqltidy">tsqltidy</a>
+</h3>
+<p>Contact: <a href="http://tsqltidy.blogspot.com">http://tsqltidy.blogspot.com</a></p>
+ 
+<p>Mark Pryce-Maher is an Azure SQL Data Warehouse Architect at Microsoft with lots of database /azure experience.</p>
+ 
+<h3 class="section-heading">John Martin
+ - <a href="https://www.twitter.com/SQLDiplomat">SQLDiplomat</a>
+</h3>
+<p>LinkedIn: <a href="http://uk.linkedin.com/in/johnqmartin/">http://uk.linkedin.com/in/johnqmartin/</a></p>
+ 
+<p>Contact: <a href="https://www.mssqltips.com/sqlserverauthor/291/john-martin/">https://www.mssqltips.com/sqlserverauthor/291/john-martin/</a></p>
+ 
+<p>John Martin is a Data Platform Engineer working in the financial sector, as well as Vice President Marketing for the PASS organization and currently a Microsoft Data Platform MVP. Previously John has worked as a product manager for SentryOne and a Premier Field Engineer with Microsoft UK.
+
+John has over a decade of experience working with SQL Server and the Microsoft Data Platform. Working as a DBA, developer and consultant for Microsoft, he has been lucky enough to see how best, and how not, to use SQL Server and the Data Platform effectively.</p>
+ 
+<h3 class="section-heading">Alex Yates
+ - <a href="https://www.twitter.com/@_alexyates_">@_alexyates_</a>
+</h3>
+<p>LinkedIn: <a href="http://uk.linkedin.com/in/alexanderyates">http://uk.linkedin.com/in/alexanderyates</a></p>
+ 
+<p>Contact: <a href="http://www.workingwithdevs.com">http://www.workingwithdevs.com</a></p>
+ 
+<p>Alex Yates has been helping organisations to apply DevOps principles to relational database development and deployment since 2010. He’s most proud of helping Skyscanner develop the ability to deploy 95 times a day. Originally for Redgate, later for DLM Consultants, Alex has worked with clients on every continent except Antarctica – so he’s keen to meet anyone who researches penguins. 
+
+A keen community member, he co-organises SQL Relay, is the founder of www.SpeakingMentors.com and has been recognised as a Microsoft Data Platform MVP since 2017.</p>
+ 
+<h3 class="section-heading">Christophe Laporte
+ - <a href="https://www.twitter.com/conseilit">conseilit</a>
+</h3>
+<p>LinkedIn: <a href="http://fr.linkedin.com/in/christophelaporte">http://fr.linkedin.com/in/christophelaporte</a></p>
+ 
+<p>Contact: <a href="http://conseilit.wordpress.com/">http://conseilit.wordpress.com/</a></p>
+ 
+<p>Christophe Laporte is based in Toulouse, France and has worked with SQL Server since 1997, starting with SQL Server 6.5. Focusing on high availability, VLDBs, and virtualization, Christophe also delivers performance audits on SQL Server and helps companies in choosing the appropriate architectures (Cloud, OnPremise, or Hybrid). 
+In addition to his MCM certification, Christophe is also a SQL MVP, speaker, and Microsoft Certified Trainer since 2000.</p>
+ 
+<h3 class="section-heading">SQLSat927 Gold Sponsor
+
+</h3>
+<p>SQL Saturday Edinburgh event gold sponsor</p>
+ 
+<h3 class="section-heading">Rob Sewell
+ - <a href="https://www.twitter.com/sqldbawithbeard">sqldbawithbeard</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/in/robsewellsqldba">https://uk.linkedin.com/in/robsewellsqldba</a></p>
+ 
+<p>Contact: <a href="http://sqldbawithabeard.com">http://sqldbawithabeard.com</a></p>
+ 
+<p>Rob was once a production SQL Server DBA, but is now generally found automating the Data Platform and providing training for clients. He has a passion for PowerShell, Data, and DevOps. He is an MVP, an officer for the DevOps PowerShell VG, and has spoken and volunteered at many PowerShell and Data events. He is a member of the committee that organises Data In Devon and the European PowerShell Conference. He is a proud supporter of the Data and PowerShell communities. 
+ 
+He relishes sharing and learning and can be found doing both via Twitter @sqldbawithbeard and his blog sqldbawithabeard.com. He spends most of his time looking at a screen and loves to solve problems.</p>
+ 
+<h3 class="section-heading">SQLSat927 Gold Sponsor
+
+</h3>
+<p>SQL Saturday Edinburgh event gold sponsor</p>
+ 
+<h3 class="section-heading">Chris Taylor
+ - <a href="https://www.twitter.com/@SQLGeordie">@SQLGeordie</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/in/jarrinuk2000">https://uk.linkedin.com/in/jarrinuk2000</a></p>
+ 
+<p>Contact: <a href="http://www.chrisjarrintaylor.co.uk">http://www.chrisjarrintaylor.co.uk</a></p>
+ 
+<p>Chris (@SQLGeordie) is a Principal Consultant working at Jarrin Consultancy providing SQL Server and Microsoft Azure consultancy to clients worldwide in a variety of industries ranging from Financial to Healthcare. He has been working with SQL Server since 2001 and during that time has become extremely strong in all areas of SQL Server but specialises in Security, System Optimisation and SQL Server Internals.</p>
+ 
+<h3 class="section-heading">Kevin Chant
+ - <a href="https://www.twitter.com/kevchant">kevchant</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kevin-chant/">https://www.linkedin.com/in/kevin-chant/</a></p>
+ 
+<p>Contact: <a href="https://www.KevinRChant.com/">https://www.KevinRChant.com/</a></p>
+ 
+<p>Senior Database Architect originally from the UK and now living in the Netherlands. 
+
+Over 23 years experience in the IT sector, and has supported databases for companies in the top 10 of the fortune 500 list.
+
+In addition to a lot of SQL Server experience also has a fair few Microsoft Certifications. In addition, was probably the last ever person in the world to gain the MCSD Azure Architect certification and has gained the latest Microsoft DevOps Engineer Expert certification. 
+
+Has real life experience with SQL Server and Azure Devops. Currently SQL Server Product Owner of around 1,900 instances. 
+
+In addition, done various things over the years for the Data Platform Community.</p>
+ 
+<h3 class="section-heading">Mark Broadbent
+ - <a href="https://www.twitter.com/@retracement">@retracement</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/retracement">http://www.linkedin.com/in/retracement</a></p>
+ 
+<p>Contact: <a href="http://tenbulls.co.uk">http://tenbulls.co.uk</a></p>
+ 
+<p>Mark Broadbent is a Data Platform MVP and SQL Server MCM with more than 20 years of experience working with SQL Server and principal of SQLCloud, a consultancy specializing in concurrency control and highly available solutions. He is the founder of the UK's SQLSaturday Cambridge (its first and largest), SharePoint Saturday Cambridge, the Hybrid Virtual Chapter and the East Anglia SQL User Group.</p>
+ 
+<h3 class="section-heading">SQLSat927 Gold Sponsor
+
+</h3>
+<p>SQL Saturday Edinburgh event gold sponsor</p>
+ 
+<h3 class="section-heading">Rich Benner
+ - <a href="https://www.twitter.com/https://twitter.com/RichBennerSQL">https://twitter.com/RichBennerSQL</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/richard-benner-856a0b47/">https://www.linkedin.com/in/richard-benner-856a0b47/</a></p>
+ 
+<p>Contact: <a href="https://richbenner.com">https://richbenner.com</a></p>
+ 
+<p>A performance tuning DBA that loves optimising SQL Servers. I've had enough poorly servers thrown at me that I've gotten pretty good at fixing them quickly.</p>
+ 
+<h3 class="section-heading">Oskari Heikkinen
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/oskariheikkinen/">https://www.linkedin.com/in/oskariheikkinen/</a></p>
+ 
+<p>I have several years of experience in using Azure for data analytics at large scale. I have been implementing numerous projects for some of the largest companies in the Nordics.
+
+I am a Microsoft MVP, and I currently hold the MCSE: Data Management and Analytics certification. As a Microsoft Certified Trainer (MCT), I hold classes for subject-matter experts and consultants internally as well as give external customer training sessions. I am also an active speaker on community events.</p>
+ 
+<h3 class="section-heading">Arne Bartels
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=207669359amp;trk=nav_responsive_tab_profile">https://www.linkedin.com/profile/view?id=207669359amp;trk=nav_responsive_tab_profile</a></p>
+ 
+<p>Master of physic in Germany 2000, worked as MS Flightsimulator Expert on the side. Employed at OLTEC Windamp;Solar as C++/Web/PHP/MySQL -Programmer. Company bought by Vestas 2004 shifting to MS-SQL,SSIS until now.</p>
+ 
+<h3 class="section-heading">Mark Hayes
+ - <a href="https://www.twitter.com/MarkDataGuy">MarkDataGuy</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/markhayes/">https://www.linkedin.com/in/markhayes/</a></p>
+ 
+<p>Mark Hayes (Certified Business Intelligence Professional (CBIP), MPP - Data Science, MPP - Big Data) is a freelance Microsoft Data Platform consultant and has worked with Microsoft data technologies since 2000 with a wide range of national and international companies. He is a regular speaker on Microsoft Data Platform topics and co-leader of the Cork SQL User Group and the Cork SQL Saturday.</p>
+ 
+<h3 class="section-heading">Ted Malone
+ - <a href="https://www.twitter.com/@tedmalone">@tedmalone</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/temalone/">https://www.linkedin.com/in/temalone/</a></p>
+ 
+<p>Contact: <a href="http://blog.sqltrainer.com">http://blog.sqltrainer.com</a></p>
+ 
+<p>Ted is currently a Data and AI Solution Architect with Microsoft's Customer Success organization. In this role, he works with large organizations to ensure that they properly and efficiently apply AI, Machine Learning, Data Analytics, and Business Intelligence technologies to achieve their business goals. Prior to taking this role, Ted worked with the US Federal Government to help solve "Big Data" problems through the use of cloud technologies.
+
+Prior to joining Microsoft, Ted was an architect in EMC's CTO organization, and led data development teams for a variety of startup organizations.
+
+Ted has worked with SQL Server since it's inception, and focuses on applying new technologies and techniques to age-old problems.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="https://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation</a></p>
+ 
+<p><a href="https://www.advancinganalytics.co.uk/">Advancing Analytics</a></p>
+ 
+<p><a href="http://us.sios.com/company/">SIOS Technology</a></p>
+ 
+<p><a href="https://www.gethynellis.com/">gethynellis.com</a></p>
+ 
+<p><a href="https://www.sentryone.com/">SentryOne</a></p>
+ 
+<p><a href="https://www.qnrl.com/">Quorum</a></p>
+ 
+<p><a href="http://dlmconsultants.com/">DLM Consultants</a></p>
+ 
+<p><a href="https://PowerBISentinel.com">Power BI Sentinel</a></p>
+ 
+<p><a href="http://rd.gt/2j7SNf9">Redgate Software (GAP)</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

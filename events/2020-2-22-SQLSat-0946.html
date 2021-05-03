@@ -1,0 +1,782 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #946 - South Florida - BI Edition 2020" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #946 - South Florida - BI Edition 2020
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #946 - South Florida - BI Edition 2020</div>
+        <div class="masthead-subheading">This event was held on 2020-2-22</div>
+        <p><b>Event Location</b>:</p>
+        <p>Microsoft FLL</p>
+        <p>6750 N Andrews Ave, Suite #400</p>
+        <p>Fort Lauderdale, Florida</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0946.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>"There Be Whales Here!" -- Big Data in SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Due to varying definitions of Big Data which confuse data volume and data organization, the common perception is that Big Data requires the use of Hadoop, MongoDB, or another NoSQL database.  SQL Server can easily store and manipulate very large volumes of data and perform quite well provided the database is properly set up and tuned.  In this session we'll cover some of the definitions and misconceptions of Big Data, look at some Big Data solutions that went horribly wrong and review a case where Big Data was successfully implemented in SQL Server.  Finally, we'll take a peek under the covers to see how SQL Server best handles Big Data through proper data models, table designs, performance tuning, and T-SQL techniques.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Aaron Cutshall</b>, 
+</p>
+<hr>
+ 
+<h3>Data Virtualization with PolyBase</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>PolyBase is Microsoft's data virtualization technology, allowing you to integrate SQL Server with external systems such as Hadoop and Azure Blob Storage.  As of SQL Server 2019, PolyBase also allows you to connect to diverse systems such as Oracle, MongoDB, Cosmos DB, Teradata, Apache Spark, and even other SQL Server instances.  In this talk, we will walk through the mechanics of PolyBase, showing how we can write T-SQL queries to access data from heterogeneous sources.  We will investigate the Dynamic Management Views (DMVs) and other resources needed to tease out what the PolyBase engine is doing behind the scenes and where to go when things break down.  Finally, we will look at several interesting use cases for PolyBase in the modern data environment.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Feasel</b>, 
+</p>
+<hr>
+ 
+<h3>What is the Power Query Editor?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>How often do you get data that is perfectly tailored and ready to use in a Power BI report?
+Less often than you could hope. There is a rule of thumb that says 80% of the work required to 
+create a report (or a dashboard) involves cleaning and prepping the data. This is accentuated 
+when you consider that 90% of the time, if you are having a problem with a visual in a report, 
+it is because something is awry in the data model. In other words, it all starts with clean, well prepared data. This is why you need to become familiar with the Power Query Editor. 
+In this session, we will cover:
+--What is the Power Query Editor?
+--How do you access it?
+--What does it do that nothing else does?
+--When would you use it?
+--How hard is it to use? 
+--A quick demo of PQE's capabilities</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jessica Jolly</b>, 
+</p>
+<hr>
+ 
+<h3>Architecting a Modern Business Intelligence Data Platform</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The power of cloud storage and compute power has made data warehousing and big data possible for businesses of all sizes. What was once a large capital expenditure and multi-year implementation can now be deployed and ready to use within minutes and allow any organization to collect, query and discover insights from their structured and unstructured data sources. 
+
+With tightly integrated services and a user-centric approach, a cloud-native data platform can fit transparently into your business data strategy and leverage already existing and familiar development and management skills.
+ 
+In this session we will look at the main components and reference architectures for building a modern business intelligence platform that includes data warehousing, big data and analytics with examples using Microsoft Azure. We will talk about ways to integrate with on-premises systems as well as lessons learned from building these Enterprise BI Data Platforms for multiple clients.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Warner Chaves</b>, 
+</p>
+<hr>
+ 
+<h3>Build a Modern Data Warehouse with Apache Spark and SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A data warehouse (DW) is a core component of business intelligence and a central data repository for different sources. This poses many challenges as the schema definition for those sources may be completely different from one another. In this presentation, we discuss how to create a data warehouse model that can support data from multiple systems. Oscar Garcia shows how to build a dimensional model which can enable us to import the data with different shapes into a data warehouse. We then create processes to transform and load the data using Apache Spark. We finally use Power BI to visualize the data from our data warehouse and Spark.
+
+
+Learning Objectives:
+
+Challenges when using disparate data sources (different models)
+
+Define a common model to support the different model shapes (Star Schema)
+
+Apache Spark Overview
+
+Strategy for loading the different data-sets into the common model
+
+Data analysis and visualization with Power BI</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>oscar garcia</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI creating reports with Visio diagrams and Cognitive Servi</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This presentation main goal is  to show the connectivity of Power BI and Microsoft Visio to create reports  that can generate  valuable Insights  for a company. Along with that I will show through Azure SQL Data and Azure Cognitive Services  how to  create a  Sentiment Analysis Report</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mahesh Caroicar</b>, 
+</p>
+<hr>
+ 
+<h3>Automated Machine Learning (AutoML) in Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>AutoML was proposed as an artificial intelligence-based solution to the ever-growing challenge of applying machine learning. Business analysts can build Machine Learning models to solve business problems that once required data scientists. In this session, Hector will explain the principles of Machine Learning and AutoML (Automated machine learning) and he will demo AutoML PowerBI features end-to-end and show How to interpret and extract the optimum results based on specific business problems.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Hector Villafuerte</b>, 
+</p>
+<hr>
+ 
+<h3>Dare to change, the path of a peak performance professional</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>For centuries the humans have been looking for the way to improve their bodies, mental capacity, and the ways to acquiring knowledge and techniques to improve their personal and professional lives.
+In other words, a different outlook of the concept of wellbeing and perform better on whatever is the activity their doing.
+During this session you will discover, thru the assessment of the peak performance, your status and preparedness to change and the tools available to make quick changes and tweaks, like techniques for speed reading, biohacking, how to be mindful instead of mindfull, how to achieve a flow state, and much more.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Patricia Monica Ojeda</b>, 
+</p>
+<hr>
+ 
+<h3>BI against Azure Synapse Analytics or Azure Analysis Services. What architecture to be considered?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure Analysis Services at times is collocated with Azure Synapse Analytics as Business Intelligence  back-end layer. This session will help the audience determine what architecture should be chosen for a given enterprise requirement. Session will also provide features and advantages from each PaaS offering.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Oscar Zamora</b>, 
+</p>
+<hr>
+ 
+<h3>Level-up your Power BI Reports</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You've been working with Power BI, building fantastic reports and dashboards. Let's take a look at some of the cool features that will help you make your reports more appealing and add more functionalities.
+This session is 100% demos: shortcuts, visuals interactions, drilling down/up/through data , custom tooltips, buttons  bookmarks.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Cecilia Brusatori</b>, 
+</p>
+<hr>
+ 
+<h3>Networking 101: Getting Ready for a SQL Event</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Looking to get the most out of your SQL Saturday, PASS Summit, or local user group meeting? Plan ahead!  Events aren't just about learning new things, they're about meeting new people, networking with peers, and learning different approaches to common issues.
+
+In this session, we'll go over steps you can take before, during and after the event to maximize the amount of great stuff you'll take away at the end (besides cool vendor swag).  Not just keeping up on new technologies, but meeting new people, getting leads on solutions/opportunities, and an appreciation for the community you're in and what it has to offer.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Matt Cushing</b>, 
+</p>
+<hr>
+ 
+<h3>User Experience Brilliance in Power BI Dashboards</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>User Experience (UX) and Design Thinking are common buzz words around the office. What do these words have to do with BI and Dashboards, anyway? 
+Sure, Power BI itself is intuitive and user friendly, but are YOU building dashboards that people will actually use. If you want to get the business off of their beloved excel and onto your dashboards, this is how you will do it. 
+In this session, we will explore how to start using UX and the psychology behind it to empower you with intel that will make YOUR dashboards Kick Booty! We will show examples and arm with the tools/strategies to make the best dashboards your business has ever used.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Hilary Wilkie</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI Dataset Tuning</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Most Power BI reports rely on a small dataset. And due to a lighting fast data engine most data model mistakes are shadowed by the speed of the service. When the dataset gets bigger then best data modeling practices are required. The trick here is Power BI data engine is not relational and therefore most data modeling techniques either don’t apply or don’t deliver. In this session we will go over how to model and measure performance for larger Power BI datasets.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Armando Lacerda</b>, 
+</p>
+<hr>
+ 
+<h3>An introduction to utilizing SSIS for Business Intelligence</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Want to learn how to create an SSIS package? With no prior experience we will dive into the world of ETL. How to create a package and build the intelligence based on your business needs. 
+Join me to this introductory class.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Candace Thompson</b>, 
+</p>
+<hr>
+ 
+<h3>Keynote - Women in Technology Panel</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Come and join us for the keynote and Women in Technology Panel
+
+"The art of creating Allies to grow your career"
+
+Panelists:
+Barkha Herman 
+Diana Betancourt
+Gilda Alvarez
+Dave Noderer
+
+Moderator:
+Cecilia Brusatori</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>SQL Saturday South Florida</b>, 
+</p>
+<hr>
+ 
+<h3>How to build a Virtual Data Warehouse with SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this talk we will discuss the principles of a virtual data warehouse, how you can reduce or eliminate ETL jobs, and how to combine the power of SQL Server and Enzo to build a data warehouse that can deliver near-time and real-time SaaS data to PowerBI, data integration, AI integration, and more.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Herve Roggero</b>, 
+</p>
+<hr>
+ 
+<h3>Azure SQL DB Hyperscale, the game has changed.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>There is a new Azure SQL DB option: Hyperscale. It introduces a redesigned architecture under the hood not comparable to the other SQL DB PaaS options. 
+In this session you will learn and see how it works and the best scenarios where it fits in. And how it blends in a cloud based BI solution arctecture.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Armando Lacerda</b>, 
+</p>
+<hr>
+ 
+<h3>Design your Power BI with inclusive intelligence</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Your Power BI looks awesome! but have you thought if it is accessible enough for people with disabilities? Or better yet for people with visual impairments?
+Do you know what tools do you have available to make your app. ADA ready?
+Let's work together on a hands-on journey to learn the statistics that affect our customers and to walk away with real tools to make our apps Intelligent ready for ALL!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Diana Betancourt</b>, 
+</p>
+<hr>
+ 
+<h3>Pattern Recognition: Unlock Data’s Potential using Azure Cognitiv</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Every day, 2.5 quintillion bytes of data is produced, and 80% of it is unstructured. Go beyond reports and dashboards by leveraging new data sources, infusing AI into your applications, and harnessing cognitive capabilities to streamline every day tasks within your organization.  In this demo-heavy session, we’ll walk through what Azure Cognitive Services are, use cases, and real-world scenarios.  You do not have to be a data scientist to take advantage of AI!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Audrey Hammonds</b>, 
+</p>
+<hr>
+ 
+<h3>Session in Spanish Coming soon [reserved slot]</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Session in Spanish Coming soon [reserved slot]</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>SQL Saturday South Florida</b>, 
+</p>
+<hr>
+ 
+<h3>DAX for Beginners - Learn the basics for Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>If you want to use PowerBI, you'll want to learn the DAX language.  We will go over what, when and how to use it along with where to get help!  If you are an excel person, this might be an easy shift.  If you are not, then you will definitely want to understand this language if you or your teams are using PowerBI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Katie Schmidt</b>, 
+</p>
+<hr>
+ 
+<h3>Using Python In Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Python is a powerful general purpose programming language that has emerged as one of the main tools of data scientists. Python was added to Power BI in June of 2018. This session will demonstrate the three points of entry for python inside the Power BI desktop-- how to leverage python scripts inside the Power BI query editor and how to use python visuals in Power BI reports.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Julie Smith</b>, 
+</p>
+<hr>
+ 
+<h3>An Intro to Databricks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Unlock insights from all your data and build artificial intelligence (AI) solutions with Azure Databricks, set up your Apache Spark™ environment in minutes, autoscale, and collaborate on shared projects in an interactive workspace. Azure Databricks supports Python, Scala, R, Java, and SQL, as well as data science frameworks and libraries including TensorFlow, PyTorch, and scikit-learn.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Barkha Herman</b>, 
+</p>
+<hr>
+ 
+<h3>Networking Clinic</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Networking is key for your professional career!
+
+You would like to meet people but don't know how? 
+Are you an introvert?
+You go to events and not sure how to break the ice?
+
+If you answered yes to at least one of the questions above, don't worry, you're not alone! 
+Join the networking clinic, we will have activities and discussions to help</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>SQL Saturday South Florida</b>, 
+</p>
+<hr>
+ 
+<h3>Surviving the digital transformation</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Technology is moving faster than we can grasp but we must continue to grow our careers and skills. Join me to unravel the emerging technologies and how we can bulletproof our careers and adapt to these changes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gilda Alvarez</b>, 
+</p>
+<hr>
+ 
+<h3>The Psychology of Better Power BI Reporting</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this course we identify some common mistakes that we see in the business world using Power BI.  We will identify the psychology behind the reporting techniques needed to create powerful and effective reports.  The attendee will leave the class ready to write better reports using Power BI in the real world.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ed Watson</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Data Factory for Beginners</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Whether you have worked with SSIS or are new to data pipelines, come and learn about Azure Data Factory (ADF), what it is, how to deploy it, integrate with Git for source control, create and monitor data pipelines.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Darius Liktorius</b>, 
+</p>
+<hr>
+ 
+<h3>Designing BI Architectures in the world of Azure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>For the traditional administrator of Microsoft Data Platform Architectures, Azure brings new ways to deploy services for Business Intelligence, Big Data, and AI solutions. 
+So many options can be overwhelming and there is no single solution that can be applied to every requirement.  In this session, we will cover the different options available in Azure to deploy Data Platform components, without leaving the performance, costs, and migration complexity aspects.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mariano Kovo</b>, 
+</p>
+<hr>
+ 
+<h3>Are you a Power BI Newbie?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Want to learn Power BI, and not sure where to start? This session will teach you all the basics you need to know to get started. We will discuss some of the parts of Power BI Desktop such as Power Query, Data Model, and the Report Canvas. I will also teach you where to go to follow the latest updates, and give you a few recommended books and websites to get to the next level.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Priscilla Camp</b>, 
+</p>
+<hr>
+ 
+<h3>Data and DevOps: Joining the CI/CD Fun</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>For too long, data developers have been left in the dark on the power of DevOps. From creating entire new environments with infrastructure and configuration as code to maintaining consistency on existing systems with source control and automated builds and deployments, DevOps tools are as accessible to data platforms as to application developers. In this session, we will focus on the benefits and concepts of continuous integration and continuous delivery with PowerBI. Using AzureDevOps, we will deal with maintaining reports in source control, triggering automated builds, and publishing to multiple environments.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kelly Tabler</b>, 
+</p>
+<hr>
+ 
+<h3>Getting Involved and Getting Ahead</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Learn how getting involved in the SQL Community can help you get ahead within your organization, improve your skill set, as well as help provide career stability.  PASS and other organizations practically give you all the tools you need to succeed in the data field. Come learn about those events and opportunities that help make this possible as well as how you can get involved to help others who are starting out.  The rewards of the SQL Community are endless.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tim Radney</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Audrey Hammonds
+ - <a href="https://www.twitter.com/@DataAudrey">@DataAudrey</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/audreyhammonds/">https://www.linkedin.com/in/audreyhammonds/</a></p>
+ 
+<p>Contact: <a href="http://datachix.com">http://datachix.com</a></p>
+ 
+<p>Audrey Hammonds is a Data Platform Specialist for Microsoft in South Florida. Twenty-one years ago, she volunteered for database training to escape the clutches of COBOL and has never looked back. A firm believer in good fundamentals and solid design, she gets her kicks from making data do nifty things.  These days, she gets her kicks from helping customers adopt data services in Azure.</p>
+ 
+<h3 class="section-heading">Oscar Zamora
+ - <a href="https://www.twitter.com/ZamoraO">ZamoraO</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ozamora">https://www.linkedin.com/in/ozamora</a></p>
+ 
+<p>Contact: <a href="https://ozamora.com">https://ozamora.com</a></p>
+ 
+<p>For the past 20 years, I have led and executed complex data and analytics migrations into cloud and on-premises deployments. I help enterprises discover opportunities by enabling cloud services that improves their efficiency, reduce operational tasks, increase quality and help making strategic decisions that impact their bottom line. I work directly with Senior Management to establish and execute roadmaps and strategies, and mentor engineers with best practices for data processing and development.</p>
+ 
+<h3 class="section-heading">Cecilia Brusatori
+ - <a href="https://www.twitter.com/CeBrusa">CeBrusa</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/cebrusa/">https://www.linkedin.com/in/cebrusa/</a></p>
+ 
+<p>Contact: <a href="https://www.magnadatasolutions.com">https://www.magnadatasolutions.com</a></p>
+ 
+<p>Cecilia is a Consultant at Magna Data, with over 15 years as Business Intelligence and Data Analytics Professional, experienced in LawEnforcement, Finance, Retail, Events  Marketing, Medicine, Accounting, Forensics, Fraud, Corporate Investigations.
+
+Microsoft Certified Professional in SQL Server and Power BI. Passionate and curious, uses Data to solve simple to complex business scenarios and deliver high-value solutions.
+
+She is very active and engaged with the community, leveraging activities and content to provide free forums of education, networking and professional growth.
+Leader of PASS South Florida SQL Server User Group (SFSSUG),
+Leader Organizer SQL Saturday South Florida,
+Leader Microsoft Data and AI (Official)</p>
+ 
+<h3 class="section-heading">Candace Thompson
+ - <a href="https://www.twitter.com/CATSQL1">CATSQL1</a>
+</h3>
+<p>LinkedIn: <a href="https://linkedin.com/in/candacehurlburtthompson">https://linkedin.com/in/candacehurlburtthompson</a></p>
+ 
+<p>My name is Candace Thompson.  I am a Senior Developer at SNI Companies, a former Senior BI Data Analysis in Data Platform and in Business Intelligence since the tail end of SQL 2000.  Here is a little about my SQL Server work history created over the years custom database solutions and implementations still in operations for Finance, Aeronautics, health care, ecommerce, and now Electronic Toll Collections.  my favorite where I have spent a great deal amount of time implementing data management, data staging and data cleansing systems.   I am an active member of PASS (Professional Association of SQL Server) and I am a Girl Scouts Leader for Daisy's and Brownies.  I have presented at a variety of SQL Training opportunities and enjoy learning.</p>
+ 
+<h3 class="section-heading">Hector Villafuerte
+ - <a href="https://www.twitter.com/optimumclick">optimumclick</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/hector-v">http://www.linkedin.com/in/hector-v</a></p>
+ 
+<p>Contact: <a href="http://www.hectorv.com">http://www.hectorv.com</a></p>
+ 
+<p>Hector Villafuerte is a Microsoft Certified Professional and is currently the BI Solutions Architect at Starwood Property Trust in Miami Beach, Florida. 
+He has over twenty years of experience working in all areas of the Software Development Life Cycle. Current focuses include Power BI, SQL Server, SharePoint, Dynamics CRM, Office 365, Azure SQL, SSAS, No SQL, Machine Learning and other Azure Development Technologies as full stack developer.</p>
+ 
+<h3 class="section-heading">Hilary Wilkie
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/hilary-wilkie-a795209/">https://www.linkedin.com/in/hilary-wilkie-a795209/</a></p>
+ 
+<p>Hilary Wilkie has worked with prominent companies like Home Depot and small solo entrepreneurs. She is a Business Analyst with a Six Sigma Black Belt and currently working at AutoVIN, a division of KAR Auction Services. Hilary has worked with professionals at all levels of business including C-level, managers, and even the warehouse person! She believes behind all good processes and software are great people; often we get so passionate about the technology we forget about the people.</p>
+ 
+<h3 class="section-heading">Matt Cushing
+ - <a href="https://www.twitter.com/Sqlkohai">Sqlkohai</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/mattcushing/">https://www.linkedin.com/in/mattcushing/</a></p>
+ 
+<p>Contact: <a href="http://sqlkohai.com">http://sqlkohai.com</a></p>
+ 
+<p>Matt started out his career in Accounting and quickly realized he liked data a whole lot more!  Starting as a help desk associate, he's moved through support, development, data, and management positions before settling back to his passion for data.
+
+Currently working for Applegate Farms in NJ, he loves the people he works with and for, and the company as a whole.  Thanks to the input and help from the SQL community, he was able to be ready for the right opportunity in his current position as a BI developer.  He also teaches a Database Management class at Rutgers University.
+
+Ask him about the Red Sox sometime if you want your ear talked off ;).</p>
+ 
+<h3 class="section-heading">Mahesh Caroicar
+ - <a href="https://www.twitter.com/caroicar">caroicar</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/maheshcaroicar/">https://www.linkedin.com/in/maheshcaroicar/</a></p>
+ 
+<p>Contact: <a href="https://www.youtube.com/c/BusinessIntelligence">https://www.youtube.com/c/BusinessIntelligence</a></p>
+ 
+<p>IT Engineer, IT Trainer of several  MS Products since 1993, Senior Developer, DBA, IT Consultant of many Mining, Banking, Food and Salmon Companies in Chile to name a few. 
+Speaker of many companies and events about Digital Transformation and Power BI.
+English and Spanish are spoken</p>
+ 
+<h3 class="section-heading">Armando Lacerda
+ - <a href="https://www.twitter.com/arlacerda">arlacerda</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/armando-lacerda">http://www.linkedin.com/in/armando-lacerda</a></p>
+ 
+<p>Over 30 years in the computing field as a developer and system integrator; over 20 years working with SQL Server since version 6; cross platform experience with Oracle and IBM SQL/DS and DB2; Microsoft Certified Trainer for over 20 years.</p>
+ 
+<h3 class="section-heading">Diana Betancourt
+ - <a href="https://www.twitter.com/dianabeta">dianabeta</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/dianabeta">http://www.linkedin.com/in/dianabeta</a></p>
+ 
+<p>Former graduate of the quot;Universidad Santa Maria La Antiguaquot; School of Computer Science. I have been involved in the IT world since 1992, since then I have been working with many OS platforms, development languages and databases, among them Unix, Oracle, SUN, Informix, FoxPro, Microsoft SQL Server, just to mention a few. Diana enjoys solving complex performance tuning issues, examining your data using Databricks, designing in Azure SQL Datawarehouse, developing cool visuals using Power Bi, or evangelizing about Microsoft Data technologies at community events like SQL Saturday and local user group meetings.</p>
+ 
+<h3 class="section-heading">Patricia Monica Ojeda
+ - <a href="https://www.twitter.com/pm_ojeda">pm_ojeda</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/patriciamonicaojeda/">https://www.linkedin.com/in/patriciamonicaojeda/</a></p>
+ 
+<p>I'm a Bilingual Management Consultant and Executive Coach, with 20+ years of experience in the fields of Information Technology, Marketing, and Operations. 
+I help companies have successful projects, professionals with their personal brands, Millennials with their social communication, and Women to discovering their full potential. 
+I have extensive experience building professional networks, I am known by the identification of opportunities, analyzing operations, and the development of winning solutions.</p>
+ 
+<h3 class="section-heading">Armando Lacerda
+ - <a href="https://www.twitter.com/arlacerda">arlacerda</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/armando-lacerda">http://www.linkedin.com/in/armando-lacerda</a></p>
+ 
+<p>Over 30 years in the computing field as a developer and system integrator; over 20 years working with SQL Server since version 6; cross platform experience with Oracle and IBM SQL/DS and DB2; Microsoft Certified Trainer for over 20 years.</p>
+ 
+<h3 class="section-heading">SQL Saturday South Florida
+ - <a href="https://www.twitter.com/@sfssug">@sfssug</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/company/south-florida-sql-server-user-group">https://www.linkedin.com/company/south-florida-sql-server-user-group</a></p>
+ 
+<p>Contact: <a href="https://www.sfssug.org">https://www.sfssug.org</a></p>
+ 
+<p>PASS CHAPTER - SOUTH FLORIDA SQL SERVER USER GROUP
+
+https://www.sfssug.org</p>
+ 
+<h3 class="section-heading">Mariano Kovo
+ - <a href="https://www.twitter.com/Mariano_Kovo">Mariano_Kovo</a>
+</h3>
+<p>LinkedIn: <a href="https://ar.linkedin.com/in/marianokovo">https://ar.linkedin.com/in/marianokovo</a></p>
+ 
+<p>Contact: <a href="https://precisionit.com.ar/blogs/marianokovo/">https://precisionit.com.ar/blogs/marianokovo/</a></p>
+ 
+<p>Precision IT Founder 
+SQL Server Specialist
+Data Platform  BI Consultant
+Microsoft MVP Data Platform</p>
+ 
+<h3 class="section-heading">Aaron Cutshall
+ - <a href="https://www.twitter.com/sqlrv">sqlrv</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sqlrv">https://www.linkedin.com/in/sqlrv</a></p>
+ 
+<p>Contact: <a href="http://sqlrv.com">http://sqlrv.com</a></p>
+ 
+<p>Aaron N. Cutshall is an Enterprise Data Architect with 20 years of experience in analysis, design and development for applications and databases in manufacturing and warehousing plus over 15 years in the Healthcare Informatics field.  His primary focus is in designing and developing solutions for extremely large data sets that perform quite well in SQL Server.  He is active in the SQL Server community and speaks at SQL Saturday sessions across the country.</p>
+ 
+<h3 class="section-heading">Kelly Tabler
+ - <a href="https://www.twitter.com/kellytabler">kellytabler</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kelly-tabler-799ab91/">https://www.linkedin.com/in/kelly-tabler-799ab91/</a></p>
+ 
+<p>Kelly comes from a wide variety of application development technologies ranging from embedded video processing to network quality testing to custom web applications. This diversity of experience has led her to a love of finding practical solutions and just plain "getting it done", with a focus on technical team leadership and DevOps practice implementation. As a member of the Improving Atlanta team for nearly 8 years, Kelly regularly helps clients understand process including Scrum and DevOps and the tools to implement both. Originally hailing from Northern Virginia, Kelly moved to Atlanta 19 years ago for her computer science degree and hasn't left since. Ask her about Georgia Tech football, terrible gardening, and funny cat videos.</p>
+ 
+<h3 class="section-heading">oscar garcia
+ - <a href="https://www.twitter.com/https://twitter.com/ozkary">https://twitter.com/ozkary</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/oscardgarcia/">https://www.linkedin.com/in/oscardgarcia/</a></p>
+ 
+<p>Contact: <a href="https://ozkary.com">https://ozkary.com</a></p>
+ 
+<p>Oscar Garcia is a Principal System Architect, Company Founder, Microsoft MVP and certified solutions engineer with many years of experience building solutions using .Net framework and multiple open source frameworks. Currently, he specializes in building cloud solutions using technologies like Azure, AWS data platforms. He enjoys sharing his technical experiences by maintaining a blog and delivering presentations. You can follow Oscar on Twitter via @ozkary or visiting his blog at ozkary.com.</p>
+ 
+<h3 class="section-heading">Jessica Jolly
+ - <a href="https://www.twitter.com/JBJ2110">JBJ2110</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/jessicabjolly/">http://www.linkedin.com/in/jessicabjolly/</a></p>
+ 
+<p>Contact: <a href="https://www.altentertraining.com/bitybybyteblog/">https://www.altentertraining.com/bitybybyteblog/</a></p>
+ 
+<p>I am a Microsoft Certified Trainer with an MCSE in Data Analytics, with a practice focused on Power BI specifically, and the Power Platform more generally.  I focus my training on teaching business analysts the practical uses of the features and functionality in Microsoft Office applications, with a special focus on Power BI, Excel, Power Pivot (Excel 2016), and the Power Query Editor. 
+I speak regularly at Power Platform events (both World Tour and Summit) and SQL Saturdays.
+I blog at www.altentertraining.com. I tweet at @JBJ2110 when I am at professional seminars and conferences. You can connect with me on LinkedIn at https://www.linkedin.com/in/jessicabjolly/ and on Facebook at https://www.facebook.com/ALTEnter/.</p>
+ 
+<h3 class="section-heading">Herve Roggero
+ - <a href="https://www.twitter.com/@hroggero">@hroggero</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/herveroggero">https://www.linkedin.com/in/herveroggero</a></p>
+ 
+<p>Contact: <a href="http://www.herveroggero.com">http://www.herveroggero.com</a></p>
+ 
+<p>Strategist. Catalyst. Storyteller. Herve Roggero is recognized for his thought leadership and passion for providing accessibility to data in the tech space. Herve’s knack for distilling complex real-time data consumption challenges and presenting digestible solutions make him the ideal speaker, teacher, and teammate.
+
+His leadership skills and passion of Microsoft Azure are a testament to his commitment to ultimately increasing operational efficiency - so much so that Herve has been an Microsoft Azure MVP for over 7 years.
+
+Herve is the Co-Author of PRO SQL Azure, PRO Windows Azure SQL Database and PRO SQL Server 2012 Practices (from APress), a PluralSight author, and runs the Azure Florida Association.</p>
+ 
+<h3 class="section-heading">Kevin Feasel
+ - <a href="https://www.twitter.com/feaselkl">feaselkl</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/pub/kevin-feasel/7/716/504">https://www.linkedin.com/pub/kevin-feasel/7/716/504</a></p>
+ 
+<p>Contact: <a href="http://www.catallaxyservices.com">http://www.catallaxyservices.com</a></p>
+ 
+<p>Kevin Feasel is a Microsoft Data Platform MVP and CTO at Envizage, where he specializes in data analytics with T-SQL and R, forcing Spark clusters to do his bidding, fighting with Kafka, and pulling rabbits out of hats on demand. He is the lead contributor to Curated SQL (https://curatedsql.com), president of the Triangle Area SQL Server Users Group (https://www.meetup.com/tripass), and author of PolyBase Revealed (https://www.apress.com/us/book/9781484254608). A resident of Durham, North Carolina, he can be found cycling the trails along the triangle whenever the weather's nice enough.</p>
+ 
+<h3 class="section-heading">SQL Saturday South Florida
+ - <a href="https://www.twitter.com/@sfssug">@sfssug</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/company/south-florida-sql-server-user-group">https://www.linkedin.com/company/south-florida-sql-server-user-group</a></p>
+ 
+<p>Contact: <a href="https://www.sfssug.org">https://www.sfssug.org</a></p>
+ 
+<p>PASS CHAPTER - SOUTH FLORIDA SQL SERVER USER GROUP
+
+https://www.sfssug.org</p>
+ 
+<h3 class="section-heading">Warner Chaves
+ - <a href="https://www.twitter.com/@warchav">@warchav</a>
+</h3>
+<p>LinkedIn: <a href="http://ca.linkedin.com/in/warnerchaves/">http://ca.linkedin.com/in/warnerchaves/</a></p>
+ 
+<p>Contact: <a href="http://sqlturbo.com">http://sqlturbo.com</a></p>
+ 
+<p>Warner is a SQL Server MCM, Data Platform MVP and Principal Consultant at Pythian, a global Canada-based company specialized in DBA services. A brief stint in .NET programming led to his early DBA formation working for enterprise customers in Hewlett-Packard ITO organization. From there he transitioned to his current position at Pythian, building and managing data solutions in many industry verticals while leading a highly talented team of Data Platform consultants.</p>
+ 
+<h3 class="section-heading">Katie Schmidt
+ - <a href="https://www.twitter.com/k_t_schmidt">k_t_schmidt</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/jillofalltradeskatie/">https://www.linkedin.com/in/jillofalltradeskatie/</a></p>
+ 
+<p>Katie Schmidt has many years experience in SQL and started in the SQL PASS community as a professional student in 2011.</p>
+ 
+<h3 class="section-heading">Gilda Alvarez
+ - <a href="https://www.twitter.com/@Latina_DBA">@Latina_DBA</a>
+</h3>
+<p>She graduated from the University of Central Florida with MIS and Computer science degrees. She has over a decade of experience in Enterprise Information Technology solutions for several Fortune 500 companies. In depth and applied knowledge of database administration with emphasis on high availability and disaster recovery solutions, security audits, database health checks, capacity planning, resource utilization analysis and enterprise database migrations. She is a big advocate of technical and leadership education in her community. She loves to spend time with her family, friends and dance Latin music.</p>
+ 
+<h3 class="section-heading">SQL Saturday South Florida
+ - <a href="https://www.twitter.com/@sfssug">@sfssug</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/company/south-florida-sql-server-user-group">https://www.linkedin.com/company/south-florida-sql-server-user-group</a></p>
+ 
+<p>Contact: <a href="https://www.sfssug.org">https://www.sfssug.org</a></p>
+ 
+<p>PASS CHAPTER - SOUTH FLORIDA SQL SERVER USER GROUP
+
+https://www.sfssug.org</p>
+ 
+<h3 class="section-heading">Julie Smith
+ - <a href="https://www.twitter.com/@juliechix">@juliechix</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/juliesmith0503/">http://www.linkedin.com/in/juliesmith0503/</a></p>
+ 
+<p>Contact: <a href="http://datachix.com">http://datachix.com</a></p>
+ 
+<p>Julie Smith is a Microsoft Data Platform MVP and a BI consultant for Innovative Architects in Atlanta, GA. She#39;s implemented increasingly complex Business Intelligence solutions for over a decade at various organizations. She#39;s also worn many other database “hats” in her career – production DBA and database developer--but data integration and BI are her true passions. Julie holds a BA from the University of South Carolina. She and Audrey Hammonds co-created The Datachix.com blog.</p>
+ 
+<h3 class="section-heading">Tim Radney
+ - <a href="https://www.twitter.com/@tradney">@tradney</a>
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/tradney">http://linkedin.com/in/tradney</a></p>
+ 
+<p>Contact: <a href="http://www.timradney.com">http://www.timradney.com</a></p>
+ 
+<p>Tim is a Data Platform MVP and has a whole collection of Microsoft and other industry certifications. His experience includes HA/DR, virtualization, SSIS, SSRS, and performance tuning, among everything else SQL Server-related.
+Tim is very active and passionate in the SQL Community. He runs the Columbus GA SQL Users Group, has been a PASS Regional Mentor for a number of years, was named a PASS Outstanding Volunteer in 2012, and is a frequent speaker at user groups, SQL Saturdays and PASS Summits. Tim is one of the top ranked in karma on ask.sqlservercentral.com, answers questions as @tradney on Twitter, and blogs at http://timradney.com and SQLskills blog at http://www.SQLskills.com/blogs/tim.</p>
+ 
+<h3 class="section-heading">Ed Watson
+ - <a href="https://www.twitter.com/http://twitter.com/SQLGator">http://twitter.com/SQLGator</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/watsoned">http://www.linkedin.com/in/watsoned</a></p>
+ 
+<p>Contact: <a href="http://sqlgator.com">http://sqlgator.com</a></p>
+ 
+<p>Ed Watson is a Principal Data Platform Consultant for Improving Enterprises, a full-stack Microsoft consulting firm in Atlanta.  Ed is a Microsoft Data Platform MVP since 2014 and like most children, Ed was born at an early age. Today, Ed specializes in the Business Intelligence stack and enjoys specializing in Power BI immensely.  He currently lives in Atlanta and is active with the Atlanta MDF and Atlanta BI user groups and is an organizer for SQL Saturday Atlanta, Atlanta BI, and Pensacola.</p>
+ 
+<h3 class="section-heading">Barkha Herman
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/barkha-herman-3980721/">https://www.linkedin.com/in/barkha-herman-3980721/</a></p>
+ 
+<p>I love solving problems and helping people. In that order. As a passionate problem solver and people helper, I have found myself in the world of technology and consulting for the past twenty-plus years. I currently work at Microsoft as a Senior Cloud Solution Architect, focusing on Data and AI. My career allows my "shiny syndrome" afflicted brain enough distractions, opportunities to learn and have an endless set of problems to solve. It has also led me to create a couple of passion projects that focus on improving education, parenting, women in technology, work culture and health.</p>
+ 
+<h3 class="section-heading">Darius Liktorius
+ - <a href="https://www.twitter.com/https://twitter.com/dliktorius">https://twitter.com/dliktorius</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dariusliktorius/">https://www.linkedin.com/in/dariusliktorius/</a></p>
+ 
+<p>Contact: <a href="http://www.liktorius.com">http://www.liktorius.com</a></p>
+ 
+<p>Darius has over twenty years of hands-on technical and managerial experience in Solutions Architecture, Performance Optimization, Database Administration  Optimization, Infrastructure Engineering, Software Development and Cloud Solutions (both Azure and AWS).  He has advanced numerous organizations from startups to non-profits and Fortune 100 enterprises through the use of technology, and mentored hundreds of developers, DBAs and engineers.</p>
+ 
+<h3 class="section-heading">Priscilla Camp
+ - <a href="https://www.twitter.com/ITDataDiva">ITDataDiva</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/itdatadiva/">https://www.linkedin.com/in/itdatadiva/</a></p>
+ 
+<p>Contact: <a href="https://itdatadiva.com">https://itdatadiva.com</a></p>
+ 
+<p>Priscilla Camp is a Business Intelligence and Analytics Specialist at the University of Central Florida. She has over 9 years of experience in the field of IT working as a Business Intelligence Analyst. Priscilla started her career working for a startup small business in 2010 and several years later moved over to the Higher Education Industry where she currently resides. Priscilla's focus is T-SQL, Data Warehousing, MS Power BI, and B.I. Strategy. She is also the Leader of the Orlando Power BI User Group.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="https://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation</a></p>
+ 
+<p><a href="http://www.enzounified.com">Enzo Unified</a></p>
+ 
+<p><a href="http://www.magnadatasolutions.com/">Magna Data</a></p>
+ 
+<p><a href="https://www.precisionit.com.ar">Precision IT Tech</a></p>
+ 
+<p><a href="https://improving.com/location/atlanta">Improving-Atlanta</a></p>
+ 
+<p><a href="https://www.netcorpinc.com">NetCorp</a></p>
+ 
+<p><a href="https://www.it-certification-courses.com/">The Academy, Computer Training Centers</a></p>
+ 
+<p><a href="https://www.meetup.com/Microsoft-Data-and-AI/">Microsoft Data and AI SoFLa</a></p>
+ 
+<p><a href="https://www.sfssug.org">SFSSUG</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

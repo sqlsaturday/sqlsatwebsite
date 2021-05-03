@@ -1,0 +1,627 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #816 - Iceland 2019" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #816 - Iceland 2019
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #816 - Iceland 2019</div>
+        <div class="masthead-subheading">This event was held on 2019-3-16</div>
+        <p><b>Event Location</b>:</p>
+        <p>Háskólinn í Reykjavík</p>
+        <p>Menntavegur 1</p>
+        <p>Reykjavík, Gullbringusysla, Iceland</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0816.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>New Security Features in SQL Server 2016</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>It seems like that every month we hear about another company having a major data breach. GDPR raises the stakes with huge fines for those that lose or don't keep data safe.
+Ensuring that your data is secure has become more important than ever.
+
+With this in mind, in SQL Server 2016, Microsoft gave us three new features that have the potential to improve the security of your SQL database, either on premises or in the cloud.
+These are:
+Dynamic Data Masking which allows us to obfuscate data in real time
+Always Encrypted which helps protect data both at rest and in motion with a master key 
+Row Level Security that gives us control over who can see which rows in a table based on the user's rights
+
+In this session we will have an overview of these important security features and demos on how to configure them and make them work.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>David Postlethwaite</b>, 
+</p>
+<hr>
+ 
+<h3>Continuous Integration Pipelines With Jenkins, Docker and SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Docker has taken the world of IT by storm and looks to be ushering in the greatest platform paradigm shift since virtualisation and the public cloud. The transient nature of Docker containers makes them the perfect fit for spinning up and then tearing down SQL Server instances as part of continuous integration pipelines. Jenkins is the most popular build automation engine in the open source community, it has phenomenal plugin support, it is used by the likes of Netflix and eBay and excels in its ability to handle build pipelines as code. In this session you will learn how a simple build pipeline that takes a SQL Server data tools project checked out from source code control, built into a DACPAC which is then deployed to a SQL Server instance can be extended to use containers, multi-branch build pipelines, tSQt testing and much much more.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Christopher Adkin</b>, 
+</p>
+<hr>
+ 
+<h3>Execution plans ... where do I start?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL (the language) is not a third generation language, where the developer tells the computer every step it needs to take. It is a declarative language that specifies the required results. SQL Server itself will figure out what steps it takes to get to those results. Most of the time, that works very well.
+
+But sometimes it doesn't. Sometimes a query takes too much time. You need to find out why, so you can fix it. That's where the execution plan comes in. In the execution plan, SQL Server exposes exactly which steps it took for your query, so you can see why it's slow.
+
+However, execution plans can be daunting to the uninitiated. Especially for complex queries. Where do you even start?
+
+In this session you will learn how to obtain execution plans. and how to start reading and understanding them.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Hugo Kornelis</b>, 
+</p>
+<hr>
+ 
+<h3>T-SQL User-Defined Functions, or: How to kill performance in one, easy step</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>User-defined functions in SQL Server are very much like custom methods and properties in .Net languages. At first sight, they seem to be the perfect tool to introduce code encapsulation and reuse in T-SQL. So why is this feature mostly avoided by all T-SQL gurus?
+The reason is performance. In this session, you will learn how user-defined functions feed the optimizer with misleading and insufficient information, how the optimizer fails to use even what little information it has, and how this can lead to shocking query performance.
+However, you will also see that there is a way to avoid the problems. With just a little extra effort, you can reap the benefits of code encapsulation and reuse, and still get good performance.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Hugo Kornelis</b>, 
+</p>
+<hr>
+ 
+<h3>What to Do When SQL Server is Unusually Slow</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>“Is something going on with the SQL Server right now?” You hear those words, and your heart starts to race a little faster. You try to connect to the SQL Server, and it responds, but you can tell it’s a little slow. You open up Activity Monitor, look at recent expensive queries, and maybe open up the Windows event logs to see if anything’s happened recently.
+
+There’s gotta be a better way, right?
+
+Good news – there is, and you’re about to learn how the pros do it. In one all-demo session, you’ll watch Brent Ozar use sp_WhoIsActive, sp_BlitzFirst, and sp_BlitzCache to solve several common emergencies. You’ll walk away with a written checklist to solve typical performance emergencies.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Brent Ozar</b>, 
+</p>
+<hr>
+ 
+<h3>Improving data quality with Data Science and Machine Learning (no math required!)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Data Quality is one of those things that we don't pay attention to until it comes and bites us, and when it does, its usually a customer that notices it. As always, the poor beleaguered dev/database guys pay the price and work long hours and over the weekend to track things down and sort things out.
+
+In the good old days we could rely on things like MS Data Quality Services to come to the rescue, however, now we operate in the cloud with a mixture of Vendor products, database types and at different scale, so what are the options open to us, especially on a limited budget?
+
+This session will examine using basic Data Science and AI techniques along with open source solutions and tools, to help improve your data quality, no matter the format of the data and where it is stored. It will also demonstrate a new Open Source Data Validation/Quality toolkit Allen is developing that runs naively in the cloud for both data at rest and live streaming data at rest and live streaming data in moti</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Allen ONeill</b>, 
+</p>
+<hr>
+ 
+<h3>Python Pipeline Primer: Data Engineering with Azure DataBricks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure DataBricks brings a PaaS offering of Apache Spark, which allows for blazing fast data processing, interactive querying and hosting of ML models all in one place! Most of the buzz is around Data Science  AI - what about the humble data engineer who wants to harness the in-memory processing power within their ETL pipelines?
+
+This session focuses on Azure DataBricks as your data ingestion, transformation and curation tool of choice. We will:
+
+	• Introduce the DataBricks service  why we use Python
+	• Discuss the hosting  compute options available
+	• Demonstrate a sample data processing task
+	• Compare against alternative approaches using SSIS, U-SQL and HDInsight
+	• Demonstrate pipeline management  orchestration
+	• Review the wider architectures and extension patterns
+	• Compare and contrast to new Azure Data Factory Data Flows
+
+The session is aimed at Data Engineers seeking to put the Azure DataBricks technology in the right context and learn how to use the service. We will not</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Simon Whiteley</b>, 
+</p>
+<hr>
+ 
+<h3>Revenge: The SQL!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Pop quiz DBA: Your developers are running rampant in production. Logic, reason, and threats have all failed. You're on the edge. What do you do? WHAT DO YOU DO?
+Hint: You attend Revenge: The SQL! 
+This session will show you how to "correct" all those bad practices. Everyone logging in as sa? Running huge cursors? Using SELECT * in ad-hoc SQL? Stop them dead, without actually killing them. Ever dropped a table, or database, or WHERE clause? You can prevent that! And if you’re tired of folks ignoring your naming conventions, make them behave with Unicode…and take your revenge!
+Revenge: The SQL! is fun and educational and may even have some practical use, but you’ll want to attend simply to indulge your Dark Side. Revenge: The SQL! assumes no liability and is not available in all 50 states. Do not taunt Revenge: The SQL! or Happy Fun Ball.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rob Volk</b>, 
+</p>
+<hr>
+ 
+<h3>Deploying Power BI in the Enterprise</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Power BI started out as a set of Self-Service BI tools in Excel and has now been merged into Power BI Desktop with the possibility to deploy reports to the Power BI cloud service. At the same time Power BI has become a grownup Corporate BI platform.
+
+This session will give you the full overview of all the different ways to bring and use Power BI in the enterprise including how to setup content workflow, security, auditing and governance. The session will cover on-premises only and hybrid scenarios and how to combine Self-Service BI with Enterprise Reporting with the benefit of both control and agility.
+
+The session is build from experience from implementing Power BI in several large Danish enterprises</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Just Blindbaek</b>, 
+</p>
+<hr>
+ 
+<h3>Don't Cross the Streams! A Closer Look at Azure Stream Analytics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure is ready to receive all your event and device data for storage and analysis. But which options in the Azure message handling portfolio should you use to receive and manage your data? In this session I will explain the different options, take a closer look at how they work and what this means for you. Furthermore, I will take a closer look at the Azure Stream Analytics (ASA) language. You will learn how to develop both simple and complex ASA queries, and how to debug. We will look at the possibilities, limitations and pitfalls in the Azure Stream Analytics language. And finally, look at the different input and output choices and when to use which one. This includes a look at how to build a live stream dashboard with Stream Analytics data in PowerBI. The session is based on real world project experiences and will use real world data in the demos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Johan Ludvig Brattås</b>, 
+</p>
+<hr>
+ 
+<h3>Analyzing Performance Problems Using XEvents, DMVs  Query Store</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Extended Events, Dynamic Management Views, and Query Store are highly useful tools that give you a lot of data when analyzing performance problems. The challenge is which tool to use for which problems and how to correlate the data.
+
+You are troubleshooting a performance problem in a business-critical database, a query is not completing, the users are complaining, and you are trying to understand what is happening. You have data from Extended Events, you are looking in the execution related DMVs, and now you are trying to find the query in Query Store. How do you put it all together?
+
+In this session, we will look at how the tools work in different scenarios, how to correlate the data, and how you can use them in your performance troubleshooting.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ola Hallengren</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server  Kubernetes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Running SQL Server in containers has huge benefits for Data Platform professionals but there are challenges to running SQL Server in stand alone containers. Orchestrators provide a platform and the tools to overcome these challenges.
+
+This session will provide an overview of running SQL Server in Kubernetes, which is the leading orchestrator.
+
+Topics covered will be: -
+An overview of Kubernetes.
+Definition of deployments, pods, and services.
+Deploying SQL Server containers to Kubernetes.
+Persisting data for SQL Server in Kubernetes.
+
+This session is aimed at SQL Server DBAs and Developers who want to learn the what, the why, and the how to run SQL Server in Kubernetes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrew Pruski</b>, 
+</p>
+<hr>
+ 
+<h3>Choosing your Data Platform fit: SQL database, Managed Instance, VM or Hybrid?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>On the current Microsoft Data Platform we have several options to move our data to the cloud.
+However, finding the right fit for your environment is not that straightforward.
+During this session, we will be showing you all the options you have for choosing your own cloud data strategy.
+We will be handling Azure SQL databases, Azure Managed Instances, Azure VM’S and hybrid solutions.
+We will show you what options you have and how you can move your on-prem systems to the cloud.
+After this session you will be ready to start moving your environment to the cloud in an efficient manner.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Stijn Wynants</b>, 
+</p>
+<hr>
+ 
+<h3>Permission Granted... Oh, No!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Working as a DBA, I came across some creepy things in what comes to database user (abusive) rights! 
+From users that were database owners, simply because they had to be able to truncate tables and read/write data to users that were Sysadmin because they needed to Bulk Insert into one table in one database!!!!
+Yes... Creepy things as I said!
+This is a very sensitive and (sadly) common issue, so in this session I'll be speaking about Permissions Management and demonstrate how we can address it in the best way, i.e. giving the necessary permissions without incurring into the risk of compromising the security of an entire database or SQL Server instance!
+I will also show how easily this can be done ;)</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Etienne Lopes</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction To Dataflows In Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Dataflows are an important new data preparation and loading feature in Power BI. In this session you will learn:
+•	What dataflows are and when you might want to use them
+•	The advantages and disadvantages of using them over Power BI Desktop's data loading features
+•	Configuring incremental refresh
+•	Additional features available in Power BI Premium
+•	Integration with Azure Data Lake Store, the Common Data Model, AI-related services and other Microsoft services</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Chris Webb</b>, 
+</p>
+<hr>
+ 
+<h3>Be a dynamic SQL dynamo!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session will cover the basics of dynamic SQL; how, why and when you may wish to use it with demos of use cases and scenarios where it can really save the day (trying to perform a search with a variable number of optional search terms, anyone?). We will also cover the performance and security impacts touching on the effect on query plans, index usage and security (SQL injection!) along with some best practices.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Joanna Wolthuis</b>, 
+</p>
+<hr>
+ 
+<h3>Azure IoT, Windows 10 Core  Raspberry PI (DIY)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session will begin, with a high level introduction to Azure Internet of Things, Windows 10 Core and Raspberry PI. Once we have established the basics about the technology, we will be connecting the dots with a live demo on some of the parts. The focus during the demo, will mainly be on Azure IoT Hub, Windows 10 Core and the Raspberry PI and how to DIY. As visualization we will be using Power BI to present the data.
+This session is not for the Enterprise rather has a more DIY approach.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jens Vestergaard</b>, 
+</p>
+<hr>
+ 
+<h3>The DBA Survival Guide for In-Memory OLTP</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Deploying In-Memory OLTP affects the database ecosystem, including monitoring, data migration, logging, capacity planning, backup, restore, recovery, and more.
+
+DBAs need to know optimal methods of migrating large data sets from disk to In-Memory, the differences between restore and recovery for memory-optimized databases, and many other facets of the In-Memory world.  
+Attendees will gain a clear understanding of the knowledge and skills required to administer In-Memory OLTP environments.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ned Otter</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to Azure Data Lake</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Aure Data Lake is an umbrella term consisting of multiple Azure services, most notably Azure Data Lake Store and Azure Data Lake Analytics. As the name implies, these services are built for big data processing purposes. During this session, you will gain the understanding of the use cases you should consider using these in particular. I will introduce both Data Lake Store and Data Lake Analytics, and how they have been built under the hood. In addition, I will do a couple of demos to show you how you actually can get started with them.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Oskari Heikkinen</b>, 
+</p>
+<hr>
+ 
+<h3>BI in Azure one year live</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>How can you bring your existing on prime data warehouse and reporting into the cloud? That is precisely what the question was more than a year ago. The aim was to use everything as a service. Azure offers many possibilities with Azuer SQL DB / Azuer SQL DW / Azure Data Factory / Logic Apps / Streamanalytics / Power BI. 
+
+Now, after more than a year in live operation, a short summary and evaluation on the subject of BI in Azure.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alexander Klein</b>, 
+</p>
+<hr>
+ 
+<h3>Building low-cost back-end app services with SQL Express and .Net Core on Linux</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Learn how to leverage the latest SQL and .Net Core offerings to develop and deploy low-cost (including potentially license free), effective back-end application services on contemporary Linux platforms.
+
+This session will provide an overview of challenges and opportunities, notably including:
+- migrating existing SQL databases to Linux platforms
+- working with Entity Framework (EF) Core
+- simplified webAPI development on .Net Core with EF Core and SQL</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Peter Willmot</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Etienne Lopes
+
+</h3>
+<p>Contact: <a href="https://sqland.wordpress.com">https://sqland.wordpress.com</a></p>
+ 
+<p>Etienne Lopes currently works as a SQL Server DBA at Celfinet.
+Working with SQL Server since 1997, member of sqlport community (www.sqlport.com), regular speaker since 2012 at SQL Server events such as: SQL Saturday and 24 Hours of Pass.
+Blog: http://sqland.wordpress.com/</p>
+ 
+<h3 class="section-heading">Oskari Heikkinen
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/oskariheikkinen/">https://www.linkedin.com/in/oskariheikkinen/</a></p>
+ 
+<p>I have several years of experience in using Azure for data analytics at large scale. I have been implementing numerous projects for some of the largest companies in the Nordics.
+
+I am a Microsoft MVP, and I currently hold the MCSE: Data Management and Analytics certification. As a Microsoft Certified Trainer (MCT), I hold classes for subject-matter experts and consultants internally as well as give external customer training sessions. I am also an active speaker on community events.</p>
+ 
+<h3 class="section-heading">Hugo Kornelis
+ - <a href="https://www.twitter.com/Hugo_Kornelis">Hugo_Kornelis</a>
+</h3>
+<p>LinkedIn: <a href="http://nl.linkedin.com/in/hugokornelis">http://nl.linkedin.com/in/hugokornelis</a></p>
+ 
+<p>Contact: <a href="http://sqlblog.com/blogs/hugo_kornelis/default.aspx">http://sqlblog.com/blogs/hugo_kornelis/default.aspx</a></p>
+ 
+<p>Hugo Kornelis is an established SQL Server community expert who spends a lot of time at various conferences. He is author of "the Execution Plan Reference" (sqlserverfast.com/epr), blogger, technical editor of Grant Fritchey's "SQL Server Execution Plans, 3rd edition" and some other books, and Pluralsight author. He was awarded SQL Server MVP and Data Platform MVP 12 times (2006 - 2016, and 2019-present).
+
+When not working for the community, he is busy at his day job: freelance database developer/consultant.
+
+Hugo has over 20 years of SQL Server experience in various roles. He loves to write and tune complex queries, but he also has a strong database design background.
+
+When not working for the community, he is busy at his day job: freelance database developer/consultant.
+
+Hugo has over 20 years of SQL Server experience in various roles. He loves to write and tune complex queries, but he also has a strong database design background.</p>
+ 
+<h3 class="section-heading">Just Blindbaek
+ - <a href="https://www.twitter.com/justblindbaek">justblindbaek</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=5113407">http://www.linkedin.com/profile/view?id=5113407</a></p>
+ 
+<p>Contact: <a href="http://blog.justb.dk">http://blog.justb.dk</a></p>
+ 
+<p>Independent BI consultant with extensive experience in all phases of BI development on Microsoft SQL Server, Azure and Power BI. Founder and coordinator of Microsoft Business Intelligence Professionals Denmark (MsBIP.dk) and Power BI UG Denmark (PowerBI.dk). Is a Microsoft Certified Trainer at Orange Man.</p>
+ 
+<h3 class="section-heading">Ned Otter
+ - <a href="https://www.twitter.com/@NedOtter">@NedOtter</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ned-otter-3627b712">https://www.linkedin.com/in/ned-otter-3627b712</a></p>
+ 
+<p>Contact: <a href="http://www.nedotter.com">http://www.nedotter.com</a></p>
+ 
+<p>DBA with vast experience administering Microsoft SQL Server since version 4.21 to the present.
+
+Certifications:  
+MCSE SQL Server 2012 Data Platform
+MCTS SQL Server 2008
+Overall computer experience: 25 years 
+SQL Server experience: 23 years 
+
+Currently obsessed with In-Memory technology.
+
+Please see LinkedIn profile for more details.</p>
+ 
+<h3 class="section-heading">Chris Webb
+ - <a href="https://www.twitter.com/@cwebb_bi">@cwebb_bi</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/chriswebb6/">https://www.linkedin.com/in/chriswebb6/</a></p>
+ 
+<p>Contact: <a href="https://blog.crossjoin.co.uk/">https://blog.crossjoin.co.uk/</a></p>
+ 
+<p>Chris Webb is a member of the Power BI CAT team. He is the author of "Power Query for Power BI and Excel" and a co-author of "SQL Server Analysis Services 2012: The BISM Tabular Model", "Expert Cube Development with SQL Server 2008 Analysis Services", and "MDX Solutions with Microsoft SQL Server Analysis Services 2005 and Hyperion Essbase".</p>
+ 
+<h3 class="section-heading">Ola Hallengren
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/olahallengren">https://www.linkedin.com/in/olahallengren</a></p>
+ 
+<p>Contact: <a href="https://ola.hallengren.com">https://ola.hallengren.com</a></p>
+ 
+<p>Ola Hallengren is a database architect from Sweden. Currently he's working in an investment bank in Copenhagen.
+
+Ola is the author of the popular maintenance solution at https://ola.hallengren.com and a Microsoft MVP.</p>
+ 
+<h3 class="section-heading">Brent Ozar
+ - <a href="https://www.twitter.com/BrentO">BrentO</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/brentozar">https://www.linkedin.com/in/brentozar</a></p>
+ 
+<p>Contact: <a href="https://www.BrentOzar.com">https://www.BrentOzar.com</a></p>
+ 
+<p>Brent Ozar loves to make SQL Server faster. He created sp_Blitz and the SQL Server First Responder Kit. He shares what he's learned at BrentOzar.com.</p>
+ 
+<h3 class="section-heading">Rob Volk
+ - <a href="https://www.twitter.com/sql_r">sql_r</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/rob-volk-134ba81">https://www.linkedin.com/in/rob-volk-134ba81</a></p>
+ 
+<p>Contact: <a href="http://weblogs.sqlteam.com/robv/">http://weblogs.sqlteam.com/robv/</a></p>
+ 
+<p>Rob Volk is a SQL Server DBA in the Metro Atlanta area since 2001. He also moderates and answers the forums on SQLTeam.com. While an old-time cranky DBA, he no longer considers quot;business intelligencequot; an oxymoron or quot;the cloudquot; as merely atmospheric moisture, and is delightedly dipping his toes into both of these new oceans, and loves to do things in new and and unusual ways.</p>
+ 
+<h3 class="section-heading">Alexander Klein
+ - <a href="https://www.twitter.com/@SQL_Alex">@SQL_Alex</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/alexander-klein-13a04b3a">http://www.linkedin.com/in/alexander-klein-13a04b3a</a></p>
+ 
+<p>Alexander Klein is a senior Business Intelligence consultant with more than 15 years of experience. He focuses on Business Intelligence and Data Warehouse projects with Microsoft technologies like SQL Server, Power BI, Azure ML or Cortana Intelligence. 
+
+Since 2008, he has been a self-employed consultant in large and medium-sized projects in all sectors across Europe. He has been visiting SQL Saturdays and other Data Conference all over Europe since 2013. Speaker at national and international events since 2017.</p>
+ 
+<h3 class="section-heading">Joanna Wolthuis
+ - <a href="https://www.twitter.com/ochthenoodle">ochthenoodle</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/joannawolthuis/">https://www.linkedin.com/in/joannawolthuis/</a></p>
+ 
+<p>Joanna Wolthuis is an independent contractor specialising in T-SQL database development and reporting using SSRS and Excel based solutions for the last 8 years. She is passionate about data and learning everything about anything. 
+Aside from SQL Joanna enjoys traveling, nice food and attempting to be an acrobat (not at the same time!).</p>
+ 
+<h3 class="section-heading">Hugo Kornelis
+ - <a href="https://www.twitter.com/Hugo_Kornelis">Hugo_Kornelis</a>
+</h3>
+<p>LinkedIn: <a href="http://nl.linkedin.com/in/hugokornelis">http://nl.linkedin.com/in/hugokornelis</a></p>
+ 
+<p>Contact: <a href="http://sqlblog.com/blogs/hugo_kornelis/default.aspx">http://sqlblog.com/blogs/hugo_kornelis/default.aspx</a></p>
+ 
+<p>Hugo Kornelis is an established SQL Server community expert who spends a lot of time at various conferences. He is author of "the Execution Plan Reference" (sqlserverfast.com/epr), blogger, technical editor of Grant Fritchey's "SQL Server Execution Plans, 3rd edition" and some other books, and Pluralsight author. He was awarded SQL Server MVP and Data Platform MVP 12 times (2006 - 2016, and 2019-present).
+
+When not working for the community, he is busy at his day job: freelance database developer/consultant.
+
+Hugo has over 20 years of SQL Server experience in various roles. He loves to write and tune complex queries, but he also has a strong database design background.
+
+When not working for the community, he is busy at his day job: freelance database developer/consultant.
+
+Hugo has over 20 years of SQL Server experience in various roles. He loves to write and tune complex queries, but he also has a strong database design background.</p>
+ 
+<h3 class="section-heading">Stijn Wynants
+ - <a href="https://www.twitter.com/SQLStijn">SQLStijn</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/stijn-wynants-ba528660?trk=hp-identity-name">https://www.linkedin.com/in/stijn-wynants-ba528660?trk=hp-identity-name</a></p>
+ 
+<p>Contact: <a href="http://swyssql.wordpress.com">http://swyssql.wordpress.com</a></p>
+ 
+<p>Stijn is a Microsoft Premier Field Engineer on Data  AI and a DataMinds core member. He is also one of the organizers of the local user group sessions  the yearly event called DataMinds Connect (SQL Server Days). He is a speaker at various international events (SQL Saturday,PASS Summit,Difinity,...).  He spends his days tuning SQL Servers  solving problems with the full data platform. His focus is primarily on sql server core, but has also done various BI  ETL projects. He gets his kicks out of Columnstore indexes  tuning queries but shivers at the sight of an SSAS cube.
+
+When Stijn is not working with SQL Server, you can probably find him enjoying the local cuisine  local beers or enjoying time with his wife and his dog.</p>
+ 
+<h3 class="section-heading">Andrew Pruski
+ - <a href="https://www.twitter.com/https://twitter.com/DBAFromTheCold">https://twitter.com/DBAFromTheCold</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/andrewpruski">https://www.linkedin.com/in/andrewpruski</a></p>
+ 
+<p>Contact: <a href="https://dbafromthecold.com/">https://dbafromthecold.com/</a></p>
+ 
+<p>SQL Server DBA with over 10 year's experience. Originally from Wales but now living in Ireland</p>
+ 
+<h3 class="section-heading">David Postlethwaite
+ - <a href="https://www.twitter.com/@postledm">@postledm</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/davidpostlethwaite">http://www.linkedin.com/in/davidpostlethwaite</a></p>
+ 
+<p>Contact: <a href="http://www.gethynellis.com/">http://www.gethynellis.com/</a></p>
+ 
+<p>David Postlethwaite has been a DBA for Liverpool Victoria in Bournemouth, England since 2008
+He supports both Oracle and SQL Server from 2000 to 2017, DBMS, SSIS, SSAS and Reporting Services.
+In 2015 David built and deployed the company's first cloud solution using Microsoft Azure SQL Database and web services 
+
+Before becoming a DBA David was a .NET developer and way back in history a Windows and Netware administrator. 
+
+He is an occasional blogger on www.gethynellis.com
+
+David is a regular speaker for SQL Saturday.
+Most of his presentations can be found on his YouTube channel www.youtube.com/c/DavidPostlethwaiteSQL</p>
+ 
+<h3 class="section-heading">Allen ONeill
+ - <a href="https://www.twitter.com/@ajsondev">@ajsondev</a>
+</h3>
+<p>Contact: <a href="https://www.c-sharpcorner.com/members/allen-oneill">https://www.c-sharpcorner.com/members/allen-oneill</a></p>
+ 
+<p>Allen is a Chartered Engineer, Microsoft MVP, and Fellow of the British Computing Society. His current obsessions are IoT, Big Data and Machine Learning. He specialises in systems architecture, digital transformation and scaling for big data, and is currently completing a Masters in AI. In his spare time (lol!) Allen attempts to make/fix stuff, plays music badly, and is a ball throwing slave to his family dogs. He speaks and shares his knowledge wherever folk will listen, and writes for CodeProject, CSharp Corner and DZone. Aware of his privilege, as a white male in the tech world, Allen is concerned about diversity, equality  inclusion in tech and would love to talk to you about practical ways to address the imbalance – please ask </p>
+ 
+<h3 class="section-heading">Peter Willmot
+
+</h3>
+<p>Peter has been writing software (and teaching folk how to write software) for over 30 years. He has worked with SQL Server as an architect and developer for more than 20 years (since SQL 4.2) and has also worked extensively with the .Net and various other development platforms.
+
+Peter is a past MSDN Regional Director and was also an MVP (SQL Server and Architecture) for many years. He is a passionate and regular speaker and various industry events around the world.</p>
+ 
+<h3 class="section-heading">Jens Vestergaard
+ - <a href="https://www.twitter.com/@vestergaardj">@vestergaardj</a>
+</h3>
+<p>LinkedIn: <a href="http://dk.linkedin.com/in/jvestergaard">http://dk.linkedin.com/in/jvestergaard</a></p>
+ 
+<p>Contact: <a href="http://www.t-sql.dk">http://www.t-sql.dk</a></p>
+ 
+<p>Jens performs the traditional BI disciplines from imports in Integration Services through data consolidation in Analysis Services, to report in Power BI or Reporting Services. Jens has worked with The Stack since SQL 2000 and has a core competence in Integration Services and Analysis Services. Along with the certified skills in Microsoft SQL Server, Jens has also worked with Microsoft .Net platform for more than 15 years and currently manages a BI Platform in Azure for the CatMan Solution application(s).</p>
+ 
+<h3 class="section-heading">Simon Whiteley
+ - <a href="https://www.twitter.com/MrSiWhiteley">MrSiWhiteley</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/pub/simon-whiteley/32/994/aa8">https://uk.linkedin.com/pub/simon-whiteley/32/994/aa8</a></p>
+ 
+<p>Contact: <a href="http://blogs.adatis.co.uk/blogs/simonwhiteley/">http://blogs.adatis.co.uk/blogs/simonwhiteley/</a></p>
+ 
+<p>Simon Whiteley is the Director of Engineering for Advancing Analytics Ltd and a Microsoft Data Platform MVP. Simon is a seasoned solution architect and technical lead with well over a decade of Microsoft Analytics experience. A deep techie with a focus on emerging cloud technologies and applying "big data" thinking to traditional analytics problems, Simon also has a passion for bringing it back to the high level and making sense of the bigger picture. When not tinkering with tech, Simon is a death-dodging London cyclist, a sampler of craft beers, an avid chef, and a generally nerdy person.</p>
+ 
+<h3 class="section-heading">Johan Ludvig Brattås
+ - <a href="https://www.twitter.com/intoleranse">intoleranse</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/johanludvig/">https://www.linkedin.com/in/johanludvig/</a></p>
+ 
+<p>Contact: <a href="http://brattas.org/sqlmusings">http://brattas.org/sqlmusings</a></p>
+ 
+<p>Johan Ludvig Brattås is a managing consultant at Capgemini, and a dedicated community guy. He has worked with MS SQL server since late 1999, mostly with BI in one form or another. The last 6 years, most of his work has been in Azure working on data platforms, Power BI and the last three years expanding to Azure IoT and Stream Analytics.
+
+Combining his passion for Microsoft SQL Server with his passion for sharing knowledge, he has spoken at various events in the SQL Community. This is also a way to give back to the community for all the things he has learned over the years. When not working, Johan Ludvig either spends his time with his kids, playing with new technology, or teaching coeliacs how to bake glutenfree food.</p>
+ 
+<h3 class="section-heading">Christopher Adkin
+ - <a href="https://www.twitter.com/ChrisAdkin8">ChrisAdkin8</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/wollatondba">https://www.linkedin.com/in/wollatondba</a></p>
+ 
+<p>Contact: <a href="http://www.chrisadkin.io">http://www.chrisadkin.io</a></p>
+ 
+<p>Chris is a freelance SQL consultant who has been working with SQL Server since 2000, his passion is for squeezing every last drop of performance out of SQL Server and understanding the database engine at a level which conventional tools cannot provide any insights on.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="https://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

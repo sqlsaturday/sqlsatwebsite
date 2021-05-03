@@ -1,0 +1,724 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #878 - Sofia 2019" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #878 - Sofia 2019
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #878 - Sofia 2019</div>
+        <div class="masthead-subheading">This event was held on 2019-10-12</div>
+        <p><b>Event Location</b>:</p>
+        <p>Sofia Tech Park</p>
+        <p>Boulevard "Tsarigradsko shose" 111B</p>
+        <p>Sofia, Sofiya, Bulgaria</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0878.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Climbing the SQL Server Index B-Tree</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You’ll find a lot of Word of Mouth (WOM) advice out there about SQL Server performance, especially
+when it comes to indexes. Some of the things you have probably heard are:
+ keep clustered index width small
+ unique indexes perform better
+ keep non-clustered index width small
+ compressed indexes have fewer logical reads
+ add one index for each column
+
+But how do you know if this advice is good or bad? Did you know that there is a way to look under the hood at the actual index pages to see how the data is stored, and how it’s stored differently when data is compressed? Using this information, you can prove or disprove the WOM advice.
+Attend this demo-heavy session to learn how the SQL Server optimizer uses indexes. It’s all about
+performance, and the right indexes will give your application a big performance advantage.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mike Byrd</b>, 
+</p>
+<hr>
+ 
+<h3>Driven by the 9s - I need a highly available Microsoft Data Platform – what features should I use?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft’s data platform and SQL Server comes with a plethora of High Availability features. Some of these features can work hand-in glove with each other to allow you to configure your SQL Servers to be both Highly-Available and recoverable in the event of the worst happening. 
+
+If you are driven by the '9s', have strict SLAs and up time is key to you and your business, then combining SQL Server’s high availability features is something you should consider. 
+
+In this session we will look at how we can combine SQL Server Availability Groups and SQL Server Failover cluster instances to keep our servers both highly available and maintain a secondary disaster recovery.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gethyn Ellis</b>, 
+</p>
+<hr>
+ 
+<h3>The intelligent Firing Range (Building Server-less python applications)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>How to build an automatic score calculator for a nerf gun firing range using various Microsoft technologies. 
+In this session we will explore how to implement an end to end solution to detect nerf darts fired at a target, the challenges involved and how to overcome them.   
+The technologies involved will  range from Power Apps for user interaction and orchestration, Azure SQL DB for information storage, Azure Storage for file storage, Azure functions to ensure automation and provide a server-less environment for the python script and, last but not least, PowerBI to display the results. 
+At the end of the session you'll have an understanding of how to set up these different technologies to work together seamlessly.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Francesco Sbrescia</b>, 
+</p>
+<hr>
+ 
+<h3>The Maths Behind Machine Learning</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The new world of Machine Learning can sound quite overwhelming! Do I need a PhD in Machine Learning to get involved? The answer, thankfully, is no. But what you do need, which is often neglected, is a solid understanding of the theory behind the models. 
+
+This session will look to do just that, looking at some of the most popular algorithms used today, we will explore the maths involved, to help us understand our problems and get the best results possible. We will be also diving into practical examples, using Databricks to consume a dataset and to visualise results, with R  Python scripts to execute the Machine Learning models. 
+
+If you would like an introduction to the world of Machine Learning and to acquire a solid grounding that will help you develop the skill, then this is the session for you.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Matt Willis</b>, 
+</p>
+<hr>
+ 
+<h3>ML in PowerBI for Business and Pros</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Machine Learning is approaching a peak of inflated expectations, although we see AI daily and in all contexts. Media pressure is high, governments are overly optimistic, plenty of ventures are putting money in nonviable ideas or some brilliant engineers fail to reach business users. ​
+
+But Microsoft bring all of this under the same roof and unleash the power of AI by integrating Power BI ecosystem with Azure ML and Cognitive services. The result is as simple and effective as great technology at end-user's hand.​
+This session is not about learning how to do AI but how to make AI usable and add value. Integrating ML models and sophisticated cognitive services in reports, understanding concealed relations and bringing automated ML empowers any business user to exploit AI for better decisions, regardless of his technical skills.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ivelin Andreev</b>, 
+</p>
+<hr>
+ 
+<h3>Microsoft PowerApps: Creating apps with less time  effort</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we will show how to use PowerApps to build YOUR next customized business application! As part of Microsoft’s Power Platform, this cloud-based suite can allow the design and development of your application in minutes – without requiring extensive coding background and with no need to worry about where to host the application! Apart from easy integration with other Microsoft technologies, it also allows integrations with third-party services with minor setup required, through out-of-the-box connectors!
+
+During this session we will go through some examples of how an application can be built from scratch, using connections to other data-sources and highlighting some important tips to keep in mind during development – learnt through our real-life projects! 
+
+It might also be worth keeping in mind one thing: PowerApps could also be part of your modern data warehouse architecture! So, if you’re thinking “applications are not for me”, then think twice!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jason Bonello</b>, 
+</p>
+<hr>
+ 
+<h3>Elasticsearch with Azure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Elasticsearch Service on Elastic Cloud now supports deployments on Microsoft Azure. This session will demonstrate how users on Azure can now deploy fully hosted Elasticsearch and Kibana from the creators of the software all with the click of a button. The Elasticsearch Service on Elastic Cloud is the official hosted Elasticsearch and Kibana service, created and supported by Elastic. It offers features — like Elastic APM, SIEM, Maps, Canvas, machine learning and more — and tech support expertise you simply won’t find anywhere else. Users can wield Elasticsearch and Kibana with confidence, knowing they always have the latest release and security patches and can upgrade their deployments with a single click and zero downtime.
+Users can start with a free 14-day trial by only email registration.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Miroslav Lessev</b>, 
+</p>
+<hr>
+ 
+<h3>Successful Enterprise Roll-out of Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Many enterprise organisations bought into the self-service gold rush and rolled Power BI out to their users and let them loose. They now find themselves with a mass of uncontrolled workspaces, hundreds of duplicated reports and the kind of conflicting KPI definitions that started the whole warehousing movement in the first place.
+
+A self service environment for most organisations, is a big cultural and business shift,
+this session looks to address how Power BI should be deployed and managed in an Enterprise scenario, along with how to manage business change and what we can do with Power BI to ensure a smooth transition into a the new world of self-service reporting.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Lazaros Viastikopoulos</b>, 
+</p>
+<hr>
+ 
+<h3>Practical Adaptive Query Processing in SQL Server 2019</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We are so existed to find the new wave of adaptive query processing improvements to handle the more intractable cardinality estimation issues that often result in a poor query performance. Join me in this demo rich session to find what’s in 2019 Adaptive QP for you and how it affects your queries and your workload. You will find answers of questions like is there a reason to migrate my database to SQL Server 2017 or 2019, what it will bring for my workload.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Margarita Naumova</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Big Data Cluster</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Another new SQL Server version, another great new feature. SQL Server big data cluster (BDC) is here. In fact, it is not just a feature, it is a whole platform. BDC combines multiple technologies, deployed as containers, orchestrated by Kubernetes. Its sole purpose is to offer a unified platform that allows us to easily combine and analyze our high-value relational data with high-volume big data.
+During this session we will go over the architecture of the platform and we will see it in action.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rozalina Zaharieva</b>, 
+</p>
+<hr>
+ 
+<h3>Performance troubleshooting in the Analysis Services Tabular and PowerBI world</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Have you ever wondered what sits behind the powerful tabular engine (the same, used in PowerBI)? How it achieves that blazing performance over billion and even trillion records? What are the compression algorithms? Or have you ever wondered what happens in the background when you visualize your reports? Well, I have, and I've gathered number of topics I want to share with you - from the engine internals, through tracing expensive queries (including PowerBI Gateway) and querying metadata, to optimizing your model for the best performance, model size and scalability.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ivan Donev</b>, 
+</p>
+<hr>
+ 
+<h3>Make sense of real-time data using Elasticsearch</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Elasticsearch is a data store built for addressing various data challenges using the foundations of speed, scale and relevance. It provides advanced querying, search and real-time analytics capabilities. Throughout this talk, we will introduce Elasticsearch and the Elastic Stack, demonstrate different use cases of using it as a main data store, or alongside with your current databases, using the polyglot persistence architectural approach. We'll have a look at a few real-time use cases, build some architectural castles in the sky and show a short introductory demo of how to get started with Apache Kafka and the Elastic Stack for your own real-time data applications.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Emanuil Tolev</b>, 
+</p>
+<hr>
+ 
+<h3>Database Adventure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Aimed mostly at administration and based on real life scenarios, in this audience interactive session we will go through some scenarios you might encounter whilst dealing with SQL Server databases and you will be provided with some options about what to do. Members of the audience will then select from these options what to do and we will follow that path and see what the outcome is from there.
+
+Each selection will have a different outcome, and along the way you will probably learn some new things.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Chant</b>, 
+</p>
+<hr>
+ 
+<h3>ML on the Edge</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Or options in running TensorFlow on Pi or similar class devices. My idea was (a bit born from need), to run TensorFlow on Pi class device. And this presentation is born from my adventures, showing pro and cons of each approach. From running directly on Pi to Azure IoT Edge on to Intel Neural Stick, and the list most probably is in “works” you will see the challenges and results of implementing TensorFlow using these technologies. Remark: Kinder chocolates have nothing to do with ML but will be present.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Catalin Gheorghiu</b>, 
+</p>
+<hr>
+ 
+<h3>Embedding Power BI in your application</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Power BI is great tool and reports we made are always beautiful and catchy, right? But sometimes forcing users to open their browser to go to Power BI Service web site isn't so nice. In this session we will explore the various ways to embed Power BI reports, dashboards and tiles. We will learn what is needed to do this, what it will costs us and what architecture decisions must be taken to build an embedded solution.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrey Nikolov</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Graph Databases: Beyond Relational</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Since SQL Server 2017 the Graph Database feature was released, enabling us to mix the relational model with a Graph model. Some existing flaws in this release are being fixed in SQL Server 2019, bringing graph objects closer to SQL Serve reality. 
+
+In this session, you will discover how Graph Databases in SQL Server works and what's new for them in SQL Server 2019</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dennes Torres</b>, 
+</p>
+<hr>
+ 
+<h3>Learn how to build a real-time analytics solution</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Real time is fundamental for the life of an organization and to the decision making process, therefore, building a real-time analytical model becomes a business need.
+
+In this session we will learn which processes are required to build a real-time analytical model and how to achieve our goal by either using the Lambda or Databricks Delta architecture.
+
+At the end of the session, you will have learned how to ingest, store, prepare and serve the data with Apache Kafka for HDInsight, Azure Data Lake Store Gen 2, Azure Databricks, SQL Data Warehouse and Power BI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jose Mendes</b>, 
+</p>
+<hr>
+ 
+<h3>Hidden gems of SQL Server 2017</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2017 is full of new features and improvements. The main "Killer" feature of SQL Server 2017 is SQL Server on Linux, but there are some more big and interesting features: Adaptive Query Processing, Graph Processing, Automatic Tuning and many others which you are aware of. And in this session we will not talk  about them. We will not do that just because there are a lot of cool features in SQL Server 2017, which are more hidden from our sight and have not get enough attention. 
+
+In this session, we will learn a lot about these features and improvements. Which features? This is a secret :) Come to the session and discover them with me!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Denis Reznik</b>, 
+</p>
+<hr>
+ 
+<h3>A star is born - a.k.a. Power BI data modeling</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Power BI is broadly marketed as a self-service BI tool which could be easily mastered even by a non-technical user. Often the focus of the development is not on the data model but on the reports and the respective measures needed for the analytical solution. However, if the data model, even a simple one, does not follow some fundamental design rules, the potential analyses are seriously hampered. In this session we will see the most important design concepts for a good BI data model.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Diana Tisheva</b>, 
+</p>
+<hr>
+ 
+<h3>Possiblities and Limitations of System-Versioned Temporal Tables beyond the Basics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This technical presentation shows how to manipulate data with versioning switched off, what to consider when building queries referencing multiple temporal tables and building views.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Reinhard Flügel</b>, 
+</p>
+<hr>
+ 
+<h3>Time intelligence function in DAX</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session provide data using time periods and explain some tips and tricks with custom periods, build and compare calculations over those periods.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Boriana Petrova</b>, 
+</p>
+<hr>
+ 
+<h3>Connecting IoT data with artificial intelligence at scale</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This talk is about intersection of IoT and artificial intelligence.
+IoT solutions to generate more data than traditional systems and users can analyse.
+Nowadays, AI enabled software solutions that optimize equipment and process performance for large industrial customers. These solutions use large volumes of real-time, batch data from equipment and processes in real time, and apply AI/ML algorithms to predict failures and anomalies as well as optimize performance.
+The concept is explained in the context of Azure IoT and Azure AI platforms.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mihail Mateev</b>, 
+</p>
+<hr>
+ 
+<h3>BI Powers - The A.I. Who Tagged Me</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>So everyone knows how to make some nice graphs in Power BI from Excel or SQL Server... But what about getting "intelligent" results from unusual data sources?
+Disclaimer: A.I. will eventually take over the world. Unlike Doctor Evil, it won't ask for a ransom.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Melancia</b>, 
+</p>
+<hr>
+ 
+<h3>Hidden force of the PowerQuery. Powerful ETL  AI integration</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>PowerQuery is widespread tool with own language in Microsoft BI stack. Namely Power BI reports, Excel, SSAS Tabular, SSIS, Microsoft Flow, Power BI dataflows. ETL of this tool is powerful but you are not limited by it, because you can expand it in different ways. I will show you several examples, which may be unexpected for you, including AI integration.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ruslan Zolotukhin</b>, 
+</p>
+<hr>
+ 
+<h3>The Date Conspiracy</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Do you really understand dating? 
+In this session you will learn a new way to look at dates and how to handle them gracefully.
+After this session you will master new smooth tricks about dates.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Peter Larsson</b>, 
+</p>
+<hr>
+ 
+<h3>Practical Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The "Practical Power BI" session will show you three, particularly practical uses of Power BI for various fields in life. You will learn how Power BI can help you save money  time, how it can help you organize your work better and finally, what job opportunities are available. This session is suitable for both beginners and intermediate users of Power BI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vitali Burla</b>, 
+</p>
+<hr>
+ 
+<h3>An evolution of the database: Scalable and Distributed SQL</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>CockroachDB delivers resilient, consistent, distributed SQL at your scale. It is a new SQL database, designed for the cloud and horizontal scalability. We will have a look at some of the key features of the database and how easy is to deploy, use and scale.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Boris Simandoff</b>, 
+</p>
+<hr>
+ 
+<h3>Use forecasting in your application with ML. NET</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>ML.NET lets you re-use all the knowledge, skills, code, and libraries you already have as a .NET developer so ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application. This presentation explains the basics of machine learning in ML.NET.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Daniel Joskovski</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Boris Simandoff
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/simandoff/">https://www.linkedin.com/in/simandoff/</a></p>
+ 
+<p>Involved in product engineering management for large-scale projects for the mobility as a service industries, visualization industries, 3D ray tracing, cloud computing. He has more than 20 years of experience in software design, code optimization, high performance computing and distributed network systems.</p>
+ 
+<h3 class="section-heading">Jason Bonello
+ - <a href="https://www.twitter.com/bonello_jason">bonello_jason</a>
+</h3>
+<p>Jason Bonello is a Data Analytics/ BI Consultant at Adatis UK. Jason has 10 years of experience, working in different roles in information systems, BI and data. 
+
+During this time, he has been part of projects delivering SQL-based, information systems and data solutions in various industries, using both on-premise technology and through on-cloud solutions.
+
+In his spare time Jason enjoys travelling and following the world of football.</p>
+ 
+<h3 class="section-heading">Dennes Torres
+ - <a href="https://www.twitter.com/Dennes">Dennes</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dennestorres/">https://www.linkedin.com/in/dennestorres/</a></p>
+ 
+<p>Contact: <a href="https://www.red-gate.com/simple-talk/author/dennes-torres/">https://www.red-gate.com/simple-talk/author/dennes-torres/</a></p>
+ 
+<p>Dennes Torres is a Data Platform MVP with more than 25 years of experience in the IT area. He improves Data Platform Architectures and turns data into knowledge. As a Brazilian living in Malta, Dennes works as a software developer and leads the Malta MDP User Group. Having the MCSE Data Platform, Business Intelligence, and Microsoft Certified Trainer (MCT) certifications, Dennes has been in love with database servers since he was  introduced to SQL Server 6.5, more years ago than he would like to admit.</p>
+ 
+<h3 class="section-heading">Margarita Naumova
+
+</h3>
+<p>Contact: <a href="http://www.inspirit.bg">http://www.inspirit.bg</a></p>
+ 
+<p>Margarita Naumova is a very well-known SQL Expert. Magi holds the highest possible SQL Server Technical Certification in the field – Microsoft Certified Master, making her one of the best SQL Server Experts Worldwide. Magi is also a Microsoft Data Platform MVP (Most Valuable Professional). She has more than 15 years of SQL Server and BI technologies consulting and training experience and is a trusted advisor for many large companies in SQL Server Platform Area.
+Currently she works as a Managing Partner and Chief SQL Architect of Inspirit, her own Data Platform Consulting Company with offices in Bulgaria (Inspirit) and Norway (Inspir-it AS). Margarita is a regular speaker at the largest IT events, SQLBits, SQL Saturday in Europe.</p>
+ 
+<h3 class="section-heading">Vitali Burla
+ - <a href="https://www.twitter.com/Vitali_Burla">Vitali_Burla</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/vitaliburla/">https://www.linkedin.com/in/vitaliburla/</a></p>
+ 
+<p>A Power BI aficionado, an Excel enthusiast, a voracious reader.</p>
+ 
+<h3 class="section-heading">Kevin Chant
+ - <a href="https://www.twitter.com/kevchant">kevchant</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kevin-chant/">https://www.linkedin.com/in/kevin-chant/</a></p>
+ 
+<p>Contact: <a href="https://www.KevinRChant.com/">https://www.KevinRChant.com/</a></p>
+ 
+<p>Senior Database Architect originally from the UK and now living in the Netherlands. 
+
+Over 23 years experience in the IT sector, and has supported databases for companies in the top 10 of the fortune 500 list.
+
+In addition to a lot of SQL Server experience also has a fair few Microsoft Certifications. In addition, was probably the last ever person in the world to gain the MCSD Azure Architect certification and has gained the latest Microsoft DevOps Engineer Expert certification. 
+
+Has real life experience with SQL Server and Azure Devops. Currently SQL Server Product Owner of around 1,900 instances. 
+
+In addition, done various things over the years for the Data Platform Community.</p>
+ 
+<h3 class="section-heading">Ruslan Zolotukhin
+ - <a href="https://www.twitter.com/zoloturu">zoloturu</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/zoloturu/">https://www.linkedin.com/in/zoloturu/</a></p>
+ 
+<p>Contact: <a href="https://www.zoloturu.com">https://www.zoloturu.com</a></p>
+ 
+<p>BI Engineer at Jabil Software Services
+Power BI Consultant
+MCT, MSCA: BI Reporting
+Speaker at SQL Saturday, Data Monsters and UNETA, PUG and PASS UG Meetups
+Advisor at Power BI Community Forum
+Leader of Kharkiv Power BI User Group
+Former DAX, Excel  VBA trainer
+Blog: www.zoloturu.com
+
+My passion is:
+* to learn new technologies in data management, analytics and science
+* to wrangle data and provide meaningful output
+* to automate routine processes and to build reporting systems
+* to share my experience and knowledge in all these areas</p>
+ 
+<h3 class="section-heading">Denis Reznik
+ - <a href="https://www.twitter.com/https://twitter.com/DenisReznik">https://twitter.com/DenisReznik</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/denis-reznik/3/502/234">http://www.linkedin.com/pub/denis-reznik/3/502/234</a></p>
+ 
+<p>Contact: <a href="http://reznik.uneta.com.ua">http://reznik.uneta.com.ua</a></p>
+ 
+<p>Denis Reznik is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design, and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains MVP status today. Apart from his professional career, Denis actively participates in the development of the Ukrainian Data Community.</p>
+ 
+<h3 class="section-heading">Ivelin Andreev
+
+</h3>
+<p>LinkedIn: <a href="https://bg.linkedin.com/in/ivelin">https://bg.linkedin.com/in/ivelin</a></p>
+ 
+<p>Contact: <a href="https://www.slideshare.net/ivoandreev">https://www.slideshare.net/ivoandreev</a></p>
+ 
+<p>Ivelin is a Microsoft Azure MVP and software architect in one of the leading and highly innovative Bulgarian IT brands - Interconsult Bulgaria Ltd. He is an external ICT expert in the European Commission, Eurostars-Eureka programme and Innovation Fund Denmark, Microsoft professional developer, senior project manager and Data Platform specialist.
+With 17+ years of strong experience in design and development of web systems, SOA, enterprise integration, machine learning, web security and data management, he is a practical man who always tries to balance between risk and flexibility. Never scared of work he has turned the weighing of pros and cons into own marked style that urges to make conscious decisions.</p>
+ 
+<h3 class="section-heading">Catalin Gheorghiu
+ - <a href="https://www.twitter.com/MrSmersh">MrSmersh</a>
+</h3>
+<p>LinkedIn: <a href="?https://ro.linkedin.com/in/catalingheorghiu?">?https://ro.linkedin.com/in/catalingheorghiu?</a></p>
+ 
+<p>Contact: <a href="http://ronua.ro/author/catalin/">http://ronua.ro/author/catalin/</a></p>
+ 
+<p>Catalin Gheorghiu is a solution architect from Romania. He has more than 15 years of experience in developing solutions, especially on Microsoft technologies in very demanding environments. Is contributing articles and blogs to several user groups (MrSmersh), lecturing all over Romania and abroad, is also RONUA Timisoara (PASS Chapter) user group leader. Since 2011, every year he was awarded the Microsoft MVP Award.</p>
+ 
+<h3 class="section-heading">Boriana Petrova
+ - <a href="https://www.twitter.com/borianapetrova">borianapetrova</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/borianapetrova/">https://www.linkedin.com/in/borianapetrova/</a></p>
+ 
+<p>Contact: <a href="http://itraining.bg/category/itraining-blog/">http://itraining.bg/category/itraining-blog/</a></p>
+ 
+<p>Microsoft Certified Trainer with over 10 years experience as an IT instructor and Consultant. She has many qualifications and professional certifications, including: Excel MVP, MCT, MCITP, MCTS, MOS Master. In 2008 she is among the TOP 25 of the best instructors in Microsoft World Company business evaluation and measurement - Knowledge Advisors.</p>
+ 
+<h3 class="section-heading">Gethyn Ellis
+ - <a href="https://www.twitter.com/gethyn_ellis">gethyn_ellis</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/in/gethynellis">https://uk.linkedin.com/in/gethynellis</a></p>
+ 
+<p>Contact: <a href="http://www.gethtynellis.com">http://www.gethtynellis.com</a></p>
+ 
+<p>Gethyn is a SQL Server consultant and trainer and has worked with SQL Server for nearly 20  years. He specialises in version mIgration,  performance, security, architecture and design including Azure and virtualisation solutions. He is working with private and public sector organisations in the UK, Europe and USA.
+
+Gethyn delivers a range of SQL Server training, including the Microsoft Official Curriculum. He is the author of three training courses and two published books on SQL Server and Azure. You can find his blog at www.gethynellis.com</p>
+ 
+<h3 class="section-heading">Rozalina Zaharieva
+ - <a href="https://www.twitter.com/RozenceZ">RozenceZ</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/rozalina-zaharieva-35402761/">https://www.linkedin.com/in/rozalina-zaharieva-35402761/</a></p>
+ 
+<p>SQL expert in Microsoft’s Data Platform Solution. Enthusiast with more than 10 years of experience in support, implementation, design and architecture of small and large projects for SQL Core – Consolidations and Migrations. Passionate speaker in SQL Master Academy and events like SQL Saturday and community events. Experience in Financial Sector Data platform Operations.</p>
+ 
+<h3 class="section-heading">Jose Mendes
+ - <a href="https://www.twitter.com/ZeMiguelMendes">ZeMiguelMendes</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/mendesjose/">https://www.linkedin.com/in/mendesjose/</a></p>
+ 
+<p>Contact: <a href="http://blogs.adatis.co.uk/josemendes/">http://blogs.adatis.co.uk/josemendes/</a></p>
+ 
+<p>A Principal Data Analytics Consultant working for Adatis Consulting with experience in delivering Microsoft Azure/ SQL Data Analytics solutions. Presented for the first time in 2017 and since then has been blogging and speaking about the Bot Framework, Power BI, Data Lakes, Databricks  and other cool Azure services. Co-organizer of the Surrey Data Platform Group.</p>
+ 
+<h3 class="section-heading">André Melancia
+ - <a href="https://www.twitter.com/AndyPT">AndyPT</a>
+</h3>
+<p>LinkedIn: <a href="http://LinkedIn.COM/in/AndreMelancia">http://LinkedIn.COM/in/AndreMelancia</a></p>
+ 
+<p>Contact: <a href="http://Andy.PT">http://Andy.PT</a></p>
+ 
+<p>Owner / Principal Consultant at LunarCat.PT
+Microsoft Certified Trainer (MCT) focusing on SQL Server, Azure, IoT and Security.
+
+19+ years' fun developing information and multimedia systems, DBA, project and IT management.
+
+Data Community Portugal, IT Pro Portugal and PowerShell Portugal communities organiser.
+IPv6 Portugal, DNSSec Portugal and Windows Development Portugal online communities moderator.
+Actively volunteering, organising, speaking or just participating at community meetings and events around the world.
+
+Proud uncle and food devouring expert, with dangerous рuϧϧy cat as companion.
+
+Go to http://Andy.PT and you'll know the same as the NSA...</p>
+ 
+<h3 class="section-heading">Miroslav Lessev
+
+</h3>
+<p>LinkedIn: <a href="https://bg.linkedin.com/pub/miroslav-lessev/62/238/34">https://bg.linkedin.com/pub/miroslav-lessev/62/238/34</a></p>
+ 
+<p>I am a PhD candidate at Faculty of Economics and Business Administration, University of Sofia quot;St. Kliment Ohridskiquot; in Implementation of modern computer engineering in economic studies at. I have study on cloud computing and its effect on economics and people. I have more than 20 years of experience in designing, developing, implementing and supporting databases. At the moment I#39;m a Big Data Developer in DataCore Software.</p>
+ 
+<h3 class="section-heading">Reinhard Flügel
+
+</h3>
+<p>Started as an application developer in the early 90’s using C++, Access and SQL-Server. 
+Since around 2010 focusing on Database Development mainly SQL-Server.
+Holding several Microsoft certifications such as: MCSE Data Platform, Business Intelligence and Data Management and Analytics (Charter).</p>
+ 
+<h3 class="section-heading">Ivan Donev
+ - <a href="https://www.twitter.com/https://twitter.com/ikdonev">https://twitter.com/ikdonev</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ivandonev/">https://www.linkedin.com/in/ivandonev/</a></p>
+ 
+<p>I am a Data platform MVP with more than 10 years of real-life experience with SQL Server and its stack of services. Besides the support and project work, I am also a trainer, conference speaker and user group organizer (and volunteer).</p>
+ 
+<h3 class="section-heading">Mike Byrd
+ - <a href="https://www.twitter.com/ByrdNest_TX">ByrdNest_TX</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/mike-byrd/1/aa0/bbb">http://www.linkedin.com/pub/mike-byrd/1/aa0/bbb</a></p>
+ 
+<p>Contact: <a href="http://logicalread.solarwinds.com/?s=byrd, www.TSQLMentoring.com and SQLServerCentral.com">http://logicalread.solarwinds.com/?s=byrd, www.TSQLMentoring.com and SQLServerCentral.com</a></p>
+ 
+<p>Former rocket scientist and USAF Fighter Pilot -- now a SQL Server geek (24 years)! Past opportunities include free-lance technical writer for PC Magazine, Senior Software Manager for government sponsored munitions effectiveness committee, and insurance company CTO.  Currently senior database engineer consultant for several Austin companies.  
+
+Presenter at many SQL Saturdays over last 6 years in United States, Europe, and Australia.
+
+Specialize in SQL Server performance tuning; database (OLTP  OLAP) architecture; trouble-shooting; teaching TSQL (Basic through Advanced).
+
+Video presentations (for local SQL Server user groups or SQL Saturdays) can be found at http://usergroup.tv/videos/category/speaker/mike-byrd</p>
+ 
+<h3 class="section-heading">Daniel Joskovski
+
+</h3>
+<p>Daniel Joskovski work in IT since 1985, he is a database-centric application developer and architect, instructor, course author, user group leader. Over the Past 17 Years as MCT he#39;s been teaching Microsoft SQL Server and .NET Development courses to premier customers in Macedonia, Serbia, Norway, Kosovo and Albania. From 2009 He is being awarded with Microsoft MVP award for SQL Server 8 times in a row. At the moment Daniel works for CloudCoder DOOEL Skopje.</p>
+ 
+<h3 class="section-heading">Peter Larsson
+ - <a href="https://www.twitter.com/SwePeso">SwePeso</a>
+</h3>
+<p>Contact: <a href="http://www.sqltopia.com">http://www.sqltopia.com</a></p>
+ 
+<p>Peter Larsson is a key player for performance written code. He can turn a 10 hour query into a 3 minute piece of code. Peter is also a SQL Server MVP since 2009. He often hangs out at SQLTeam.com (27k+ posts) and other various sites where he helps all people understand SQL Server.</p>
+ 
+<h3 class="section-heading">Mihail Mateev
+ - <a href="https://www.twitter.com/mihailmateev">mihailmateev</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1">http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1</a></p>
+ 
+<p>Contact: <a href="https://mmateev.wordpress.com/">https://mmateev.wordpress.com/</a></p>
+ 
+<p>Mihail Mateev is a technical consultant, community enthusiast, PASS Regional Mentor for CEE, chapter lead, Microsoft Azure MVP, Microsoft Regional Director. He works as a Senior Solutions Architect at EPAM Systems, focused on Data Platform, IoT and cloud related solutions. He also worked many years like a Technical evangelist in the Infragistics. Last years Mihail was focused on various areas related to technology Microsoft: Data Platform, Visual Studio, ASP.Net, Windows client apps, Data Platform, and Microsoft Azure. Michael also has a PhD in cloud computing area. He is a university lecturer on Smart Homes and Smart Energy IoT Solutions.</p>
+ 
+<h3 class="section-heading">Lazaros Viastikopoulos
+ - <a href="https://www.twitter.com/Data_Laz">Data_Laz</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/lazaros-viastikopoulos-9b3aaa95/">https://www.linkedin.com/in/lazaros-viastikopoulos-9b3aaa95/</a></p>
+ 
+<p>Contact: <a href="http://blogs.adatis.co.uk/lazarosviastikopoulos/">http://blogs.adatis.co.uk/lazarosviastikopoulos/</a></p>
+ 
+<p>Young, passionate #BI enthusiast/professional (#data -INSIGHTS- maniac) swimming in a World Full of: #PowerBI #Python #Coffee #Fitness #Fashion #HealthyEating</p>
+ 
+<h3 class="section-heading">Matt Willis
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/mattdwillis/">https://www.linkedin.com/in/mattdwillis/</a></p>
+ 
+<p>Matt Willis is the Head of People at Adatis as well as a Senior Data Analytics Consultant. Matt has 9 years of experience in data analytics and Machine Learning and 6 years delivering data analytics solutions using the Microsoft BI stack in both on-prem and cloud based solutions.
+
+Matt is a prolific speaker, presenting all over Europe including SQLBits. Matt is also lecturing at universities and has provided insight and industry experience in addition to helping to run a module.
+
+Matt is passionate about machine learning and data, and has a love of communicating ideas. In his spare time he enjoys listening to music, attempting to keep fit and exploring the world.</p>
+ 
+<h3 class="section-heading">Emanuil Tolev
+ - <a href="https://www.twitter.com/emanuil_tolev">emanuil_tolev</a>
+</h3>
+<p>LinkedIn: <a href="https://linkedin.com/in/emanuil-tolev">https://linkedin.com/in/emanuil-tolev</a></p>
+ 
+<p>Emanuil is a Community Engineer with Elastic, the company behind the open source Elastic Stack (Elasticsearch, APM, Kibana, Beats, and Logstash). He's based in London. He used to be a freelance web developer + ops lead and ran a small open science web dev consultancy with partners for several years. Interested in mentorship, inclusion, small businesses, archery and always curious about how the world works in detail.</p>
+ 
+<h3 class="section-heading">Diana Tisheva
+
+</h3>
+<p>LinkedIn: <a href="https://bg.linkedin.com/in/diana-tisheva-991b605">https://bg.linkedin.com/in/diana-tisheva-991b605</a></p>
+ 
+<p>Diana Tisheva is an university lecturer and a data professional with an extensive experience in the IT industry, working for enterprise clients from different sectors using versatile technologies in the area of Datawarehousing and Business Intelligence.</p>
+ 
+<h3 class="section-heading">Andrey Nikolov
+
+</h3>
+<p>Andrey is MCSA for SQL Server 2012/2014 with almost 20 years of experience in designing and implementing applications for Windows. He is working with various database platforms, but SQL Server is his favorite. He is also a leader of Plovdiv Power BI User Group and active member of local .NET, Power BI and SQL Server communities.</p>
+ 
+<h3 class="section-heading">Francesco Sbrescia
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/chicco-sbrescia-4253a56/">https://www.linkedin.com/in/chicco-sbrescia-4253a56/</a></p>
+ 
+<p>Contact: <a href="http://blogs.adatis.co.uk/francescosbrescia/">http://blogs.adatis.co.uk/francescosbrescia/</a></p>
+ 
+<p>I'm a BI consultant with experience in both data visualization using D3 and data warehousing using Microsoft BI Stack.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="https://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation</a></p>
+ 
+<p><a href="http://www.adatis.co.uk">Adatis</a></p>
+ 
+<p><a href="http://www.bg.adastragrp.com/">Adastra Bulgaria</a></p>
+ 
+<p><a href="http://www.icb.bg">ICB-InterConsult Bulgaria Ltd.</a></p>
+ 
+<p><a href="http://www.sqlmasteracademy.com">Inspirit EOOD</a></p>
+ 
+<p><a href="http://www.starsgroup.com/">The Stars Group</a></p>
+ 
+<p><a href="https://www.bicaservices.com">BICA Services</a></p>
+ 
+<p><a href="http://www.sbtech.com/">SBTECH</a></p>
+ 
+<p><a href="https://sofiatech.bg/">Sofia Tech Park</a></p>
+ 
+<p><a href="http://www.pass.org">PASS</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

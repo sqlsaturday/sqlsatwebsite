@@ -4,7 +4,7 @@ title: New Event Resources
 permalink: /newevent/
 ---
 
-This page is designed to help you setup and request a new SQL Saturday event. As with the rest of the site, this is a work in progress and under construction.
+This page is designed to help you setup and request a new SQLSaturday event. As with the rest of the site, this is a work in progress and under construction.
 
 ![Under Construction](assets/img/Page_Under_Construction.png)
 
@@ -12,19 +12,19 @@ There are a few simple steps to get your event set up on the site:
 
 - Gather information about the event (see our checklist below)
 - Submit this to this site
-- Sign the contract for using the SQL Saturdy name
+- Sign the contract for using the SQLSaturday name
 
 That's it. Once you have the signed agreement and the information submitted, we will update this site with your event.
 
-Note that the contract is a temporary one with Redgate Software until the SQL Saturday Foundation is legally established.
+Note that the contract is a temporary one with Redgate Software until the SQLSaturday Foundation is legally established.
 
 Numbers for new events are assigned on a first come basis once the event is added to the system. Once an administrator adds a pull request for your event, the number is assigned and used for your event. Future events will get subsequent numbers. 
 
-You can, however, name your event anything after the SQL Saturday #xxx part. For example if you want an edition, you can so something like:
-- SQL Saturday #2000 - Atlanta - BI Edition
-- SQL Saturday #2000 - Denver Azure Edition
-- Data Saturday #10/SQL Saturday #2000 - LA
-- SQL Saturday #2000 - Diversity and Inclusion Edition
+You can, however, name your event anything after the SQLSaturday #xxx part. For example if you want an edition, you can so something like:
+- SQLSaturday #2000 - Atlanta - BI Edition
+- SQLSaturday #2000 - Denver Azure Edition
+- Data Saturday #10/SQLSaturday #2000 - LA
+- SQLSaturday #2000 - Diversity and Inclusion Edition
 
 You can even theme these events without a city or physical location, such as the last item in the list above.
 
@@ -38,7 +38,7 @@ These items are kept in an [Excel spreadsheet](./assets/EventChecklist.xlsx) to 
 
 The basic information required to set up an event is:
 
-- Event Title (required) - We will prepend this with "SQL Saturday #xxx - ", based on the number assigned.
+- Event Title (required) - We will prepend this with "SQLSaturday #xxx - ", based on the number assigned.
 - Event Date (required)
 - Event Time (optional) - In local time or UTC. Please specify which you use. We will publish the initial event without a time, but this needs to be updated at some point prior to the event.
 - Event description (required) - The text to be used on your event page.
@@ -108,7 +108,7 @@ Return to the [list of recommendations](#recommend).
 
 While the costs for a virtual event might be small, there may be some expenses. Raising money for events is a skill, and will be a necessity for most live, physical events.
 
-The old SQL Saturday plans are gone, but <a href="https://datadriventechnologies.org/2021/02/22/2021-data-sql-saturday-sponsorship-plan/">a sample sponsorship plan</a> from the Data.SQLSaturday.LA event is available.
+The old SQLSaturday plans are gone, but <a href="https://datadriventechnologies.org/2021/02/22/2021-data-sql-saturday-sponsorship-plan/">a sample sponsorship plan</a> from the Data.SQLSaturday.LA event is available.
 
 You might consider using [EventBrite](https://www.eventbrite.com/organizer/overview/) to create an event for sponsors, with paid plans. This is an easy way to get started.
 

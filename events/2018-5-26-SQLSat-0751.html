@@ -1,0 +1,583 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #751 - Santiago 2018" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #751 - Santiago 2018
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #751 - Santiago 2018</div>
+        <div class="masthead-subheading">This event was held on 2018-5-26</div>
+        <p><b>Event Location</b>:</p>
+        <p>Duoc Sede Antonio Varas</p>
+        <p>Antonio Varas 666, Providencia</p>
+        <p>Santiago, Región Metropolitana, Chile</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0751.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>SQL Server Query Tuning and Optimization</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>El Práctico de SQL Server es un seminario de día completo en que con teoría y ejemplos prácticos se tratan distintas materias y técnicas que te permitirán analizar y mejorar el desempeño de tus consultas SQL Server 2008 y versiones posteriores.
+
+El desempeño de una consulta depende de distintos factores, entre los cuales están algunas configuraciones del servidor, los índices que utilizamos y su mantención, cómo escribimos nuestras consultas, y cómo utilizamos los recursos que SQL Server pone a nuestra disposición, tales como tablas en memoria (Hekaton) para cargas OLTP o índices columnstore, para consultas de tipo analítico. Los temas son:
+
+Configurando SQL Server para performance
+Principales Índices para performance
+Interpretando planes de ejecución
+Cómo hacer buenas queries
+Acelerando OLTP con tablas en memoria</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kamal Valero</b>, 
+</p>
+<hr>
+ 
+<h3>Encontrando el origen del problema</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>¿Recibiste una llamada a medianoche por inconvenientes de performance? O peor aún, recibes en la madrugada un correo de alerta de errores pero lo lees recién al día siguiente y la evidencia desapareció. Muchas veces no recibes la notificación en el momento preciso en que el problema sucede y te enteras después de que el proceso fue ejecutado otra vez o después de que falló. 
+ 
+Necesitas saber qué pasó y evitar que el mismo error suceda otra vez. Como un DBA de Producción o como Desarrollador, es importante conocer qué buscar cuando pasan los problemas de Performance o las ejecuciones fallidas. Necesitas buscar como un forense y tener la habilidad de decir precisamente quién fue el asesino. 
+ 
+Además...olvídate completamente de reiniciar el servidor para "solucionar" el problema</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>PABLO JAVIER FERNANDEZ</b>, 
+</p>
+<hr>
+ 
+<h3>Inicia Performance Tuning con Wait Stats</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>¿Las alertas te despiertan a medianoche para preguntar qué hacer cuando el proceso se sigue ejecutando? ¿Parece un query tan simple pero nunca termina? Necesitas darle velocidad a tu servidor pero no estás seguro por dónde empezar la revisión. 
+
+Ya sea en los procesos de Desarrollo o en una revisión en Producción cuando las alertas vienen por todo lado, es vital obtener información que pueda dar una guía respecto a qué es lo que causa tiempo adicional en la ejecución de nuestros programas. 
+
+En esta sesión nos preguntaremos qué hace que un query no sea más rápido y qué factores pueden influir en su desempeño. Traduzcamos los WAITS STATS de SQL Server y entendamos lo que nos quieren decir para iniciar un camino del Performance Tuning.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>PABLO JAVIER FERNANDEZ</b>, 
+</p>
+<hr>
+ 
+<h3>From Zero to Cosmos</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure Cosmos DB was built from the ground up with global distribution and horizontal scale at its core. It offers turnkey global distribution across any number of Azure regions by transparently scaling and replicating your data wherever your users are. Elastically scale throughput and storage worldwide, and pay only for what you need. Azure Cosmos DB provides native support for NoSQL choices, offers multiple well-defined consistency models, guarantees single-digit-millisecond latencies at the 99th percentile, and guarantees high availability with multi-homing capabilities and low latencies anywhere in the world— all backed by industry-leading, comprehensive service level agreements (SLAs).</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Patricio Cofre</b>, 
+</p>
+<hr>
+ 
+<h3>Impementing CD with SQL Server on Linux, Docker  Kubernetes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>DevOps is everywhere now days. Short development cycles with continuous delivery is the new black, leveraged by container based development. Nevertheless, relational databases were always a pain point when configuring an effective CD pipeline.... until now. 
+In this session we will show you how can easily take advantage of the new SQL Server on Linux, to setup a high availability set with persistent storage on Kubernetes and put all this infrastructure as part of a CD pipeline.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sergio Borromei</b>, 
+</p>
+<hr>
+ 
+<h3>Connecting SQL Server to R</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This presentation is about sharing my experience connecting SQL server to different procedure using R. How to interact as a data scientist, from R with SQL and how to interact from SQL with R and some good practices.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Daniel Fischer</b>, 
+</p>
+<hr>
+ 
+<h3>Working with Azure Data, BIG Data Services and Azure SQL for your Applications</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A Guide to Working with Data Services and Azure SQL for your Applications Although Microsoft Azure and the concept of Cloud Computing has been around for a while it is still a mystery to many.This talk takes a look at Azure Data storage – what it is, the types of storage options available and their advantages and disadvantages. 
+ We’ll take a look at the different options available for your SQL applications to see how to create and manage SQL databases in the Cloud. By the end of this talk you will be ready to get straight into Azure and start taking advantage of what it has to offer</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Adnan Hendricks</b>, 
+</p>
+<hr>
+ 
+<h3>From SQL to Graph Databases</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Las bases de datos orientadas a grafos han crecido mucho en popularidad, y han demostrado ser de gran utilidad en escenarios de datos altamente jerárquicos, evolutivos e inter-conectados.
+
+Si vienes desde las bases de datos relacionales y te interesa explorar las bases de datos orientadas a grafos esta sesión te será de mucha utilidad, pues haremos un paralelo entre consultas a ambos esquemas. Revisaremos ejemplos en Azure Cosmos DB (Gremlin) y SQL Server 2017 (Graph).
+
+Azure Cosmos DB cuenta con una GRAPH API, basada en el Gremlin, lenguaje Open Source para bases de datos orientadas a grafos, desarrollada por APACHE. SQL Server 2017 incluye soporte para bases orientadas a grafos en base a una extensión del T-SQL.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Patricio Cofre</b>, 
+</p>
+<hr>
+ 
+<h3>Midiendo el exito en una implementacion Corporate de Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Mostraremos un reporte generado para el area de TI que permita capturar medidas e informacion acerca del uso y despliegue de Power BI. Listado de Wokspaces, usuarios por Workspace, reportes mas compartidos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gaston Cruz</b>, 
+</p>
+<hr>
+ 
+<h3>AzureML Services, Workbench and Model Management Service.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This presentation that provides you the knowledge and tools necessary to understand the latest capabilities and usage new version of Azure Machine Learning Services "AzureML Services" and help you to get familiar with AzureML Workbench and Experimentation Service and learn how create a Machine Learning solution, understand how works Azure Machine Learning Workbench, capabilities with R and Python Packages for consumption and configuring and projects project for local, SQL Server 2017, Docker and HDInsight Spark environments.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Adrian Fernandez</b>, 
+</p>
+<hr>
+ 
+<h3>Microsoft - Plataforma de Datos e Inteligencia Artificial</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Visión de Microsoft en la plataforma de Datos e Inteligencia Artificial, roadmap de los productos mas relevantes y las innovaciones en SQL Server, Big Data, Servicios Cognitivos y Deep Learning.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Adrian Fernandez</b>, 
+</p>
+<hr>
+ 
+<h3>PreCon - Move your database to the Cloud</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Este PreCon de Azure SQL Database le proporciona el conocimiento y las herramientas necesarias para comprender las capacidades y el uso de las bases de datos en la nube. Le ayudará a familiarizarse con los conceptos de la Base de datos SQL de Azure. También le ayudará a aprender a migrar, administrar, monitorear y solucionar problemas de su solución Azure SQL Database
+
+Más info y registro en:
+https://welcu.com/metric-learning/mueva-su-base-de-datos-a-la-nube-entienda-disene-migre-administre-y-monitoree-la-base-de-datos-sql-de-azure?utm_source=directory</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Roberto Cavalcanti</b>, 
+</p>
+<hr>
+ 
+<h3>La evolución de SQL Server - Azure SQL Database Managed Instance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Daremos una mirada al futuro de SQL Server como Servicio. 
+Azure SQL Database Managed Instance es un nuevo servicio PaaS que nos permitira tener compatibiliad de casi el 100% con la plataforma SQL Server On-Premise, permitiendonos migrar rapidamente hacia la nube todas nuestras aplicaciones</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Javier Villegas</b>, 
+</p>
+<hr>
+ 
+<h3>Text analytics con R y Term extraction Tool</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>La minería de textos es un tema muy interesante que se utiliza para detectar patrones y analizar el texto. En la minería de textos, analiza, resume y obtiene información del texto, como comentarios, reclamos, noticias u otras fuentes de texto.
+
+Usaremos una herramienta simple llamada Term extraction tool de SQLServer y R para analizar los reclamos de una cadena de comida rápida.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Juan Pablo Moraga</b>, 
+</p>
+<hr>
+ 
+<h3>PreCon - Dashboard in a Day</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>DIAD - From Zero to Dashboard. A PreCon where the participant is going to create a Dashboard from scratch. ETL's, M-Language, Visualizations, and Publish to Power BI Service
+
+Más info y registro en:
+https://welcu.com/metric-learning/power-bi-day-2018?utm_source=directory</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gaston Cruz</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server in Docker a new defaince Linux</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>En el nuevo desafío de implementar servicios de base de datos en la nube, SQL nos invita a explorar tecnologías emergentes como lo es Docker y Linux.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Carlos Aravena</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI in the New Age !</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>La idea de esta sesión es mostrar las nuevas bondades que tiene Power BI tanto en seguridad, usabilidad y desarrollo.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Cristobal Ibarra</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2017 Adaptive Query Processing and Automatic Tunning</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2017 nos da la posibilidad de tener Intelligence Query Processing. Analizaremos y veremos en funcionamiento estas nuevas caracteresticas del motor de base de datos</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Javier Villegas</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2017 Automatic Tuning</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>En esta sesión revisaremos el nuevo feature de SQL Server 2017 llamado Automatic Tuning. Revisaremos como ha evolucionado el proceso para mejora de rendimiento, desde las formas tradicionales, avanzando a la utilización del Query Store y terminando en el nuevo Automatic tuning. Una sesión para desarrolladores de T-SQL y DBAs en general.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alejandro Cordero</b>, 
+</p>
+<hr>
+ 
+<h3>Azure SQL Database - Lessons learned from the trenches</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session you will learn the best practices, tips and tricks on how to successfully use Azure SQL Database on production environments. You will learn how to monitor and improve Azure SQL Database query performance. I will cover how Microsoft CSS has been using Query Store, Extended Events, DMVs to help customers monitor and improve query response times when running their databases in the Microsoft Azure cloud. These learnings are fruit of Microsoft CSS support cases, and customer field engagements. This session includes several demos</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jose Manuel Jurado Diaz</b>, 
+</p>
+<hr>
+ 
+<h3>TSQL Query Analytics  Dashboard para DBA</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>TSQL Query Analytics es un dashboard de PowerBI muy sencillo, donde los DBAs pueden identificar de forma rápida y sencilla donde enfocar sus esfuerzos de optimización de código TSQL. TSQL Query Analytics no te dice la solución del problema, sino te muestra qué consultas son las que causan la perdida de rendimiento en tu servidor.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Carlos Farias</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Gaston Cruz
+ - <a href="https://www.twitter.com/gastonfcruz">gastonfcruz</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/gaston-cruz-01bb434b/">https://www.linkedin.com/in/gaston-cruz-01bb434b/</a></p>
+ 
+<p>Contact: <a href="http://www.gastoncruz.com">http://www.gastoncruz.com</a></p>
+ 
+<p>Especialista en implementacion de soluciones en Inteligencia de Negocios, con pasion para disenar soluciones corporativas trabajando en equipos distribuidos.
+
+Microsoft Most Valuable Professional (MVP) in Data Platform.
+
+Business Intelligence (BI) - Consultorias Estrategicas
+BI Arquitectura
+Technology Feasibility Analysis 
+Data Management /Governance Roadmap 
+BI Program Management 
+Data Quality Management and Analy
+
+Especializaciones: Business Intelligence Solution / Technical Architect , SSIS , SSRS ,SSAS, SQL Server 2008 R2, 2012 , 2014, Power BI, Power View, Office 365, SharePoint 2013, Power View, Power Pivot ,Power Query, Power Map
+
+Ultimas experiencias en tecnologias Microsoft:
+Power BI, Power View, Power Pivot, Power Qu</p>
+ 
+<h3 class="section-heading">Adrian Fernandez
+ - <a href="https://www.twitter.com/adrianfz10">adrianfz10</a>
+</h3>
+<p>LinkedIn: <a href="https://ar.linkedin.com/in/adrianfz">https://ar.linkedin.com/in/adrianfz</a></p>
+ 
+<p>Adrián Fernández, especializado en bases de datos y analítica avanzada, graduado en tecnología Informática, postgraduado en Big Data y científico de datos I.T.B.A (Instituto Tecnológico Buenos Aires), cursando Magister Data Science UDD.
+Especialista de Soluciones Microsoft en plataforma de datos e Inteligencia Artificial.
+Scope: SQL Server, Azure Machine Learning, Cognitive Services, Business Intelligence, Power BI, Big Data, (Python / R / Julia / Scala).
+Data Science: experto Microsoft R Server (MRS), colaborando con proyectos de investigación avanzada como científico de datos y participando en discusiones de grupo Microsoft Data Scientist en la búsqueda de desarrollo de nuevos productos y resolución de casos de negocio.</p>
+ 
+<h3 class="section-heading">Juan Pablo Moraga
+ - <a href="https://www.twitter.com/@jp_moraga">@jp_moraga</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/juanpablomoraga">http://www.linkedin.com/in/juanpablomoraga</a></p>
+ 
+<p>I am an expert in Business Intelligence and conceptualization, development and implementation of BI projects. My 10 plus years of experience in the area allowed me to specialize in the management of data mining tools and data management, as well as procedure management of change for the generation of useful information for decision-making and increasing value of the business processes of the companies I’ve worked for</p>
+ 
+<h3 class="section-heading">Alejandro Cordero
+ - <a href="https://www.twitter.com/@ale_corderocr">@ale_corderocr</a>
+</h3>
+<p>LinkedIn: <a href="https://cr.linkedin.com/in/alejandrocorderocr">https://cr.linkedin.com/in/alejandrocorderocr</a></p>
+ 
+<p>Contact: <a href="http://sqlturbo.com">http://sqlturbo.com</a></p>
+ 
+<p>DBA with Over 10 years of experience. Focused on SQL Server development , performance tuning, High Availability. Scrum Master Certified, MCTS, MCSA, Entrepreneur and Author at SQLTurbo.com. Currently working as technical leader for database consultants in Pythian Company.
+
+Regular speaker at SQL Saturdays in Latin America ( Costa Rica, Guatemala, Colombia)  and virtual chapters( In-Memory chapter, Spanish Chapter). Have presented in SQL Saturday Ottawa in Canada.</p>
+ 
+<h3 class="section-heading">Gaston Cruz
+ - <a href="https://www.twitter.com/gastonfcruz">gastonfcruz</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/gaston-cruz-01bb434b/">https://www.linkedin.com/in/gaston-cruz-01bb434b/</a></p>
+ 
+<p>Contact: <a href="http://www.gastoncruz.com">http://www.gastoncruz.com</a></p>
+ 
+<p>Especialista en implementacion de soluciones en Inteligencia de Negocios, con pasion para disenar soluciones corporativas trabajando en equipos distribuidos.
+
+Microsoft Most Valuable Professional (MVP) in Data Platform.
+
+Business Intelligence (BI) - Consultorias Estrategicas
+BI Arquitectura
+Technology Feasibility Analysis 
+Data Management /Governance Roadmap 
+BI Program Management 
+Data Quality Management and Analy
+
+Especializaciones: Business Intelligence Solution / Technical Architect , SSIS , SSRS ,SSAS, SQL Server 2008 R2, 2012 , 2014, Power BI, Power View, Office 365, SharePoint 2013, Power View, Power Pivot ,Power Query, Power Map
+
+Ultimas experiencias en tecnologias Microsoft:
+Power BI, Power View, Power Pivot, Power Qu</p>
+ 
+<h3 class="section-heading">Sergio Borromei
+
+</h3>
+<p>Con mas de 20 años de experiencia en las ciencias de la computación, Sergio ocupa el cargo de CTO en Lagash, una factoría de productos digitales con mas de 600 empleados y filiales en toda America.
+Siempre apasionado por la programación funcional, sus años de experiencia los convirtieron en especialista de arquitecturas de microservicios y sistemas altamente escalables basados en tecnologías de contenedores.
+Actualmente en su rol de CTO, lidera un equipo cuya misión principal es la generación de las capacidades estratégicas para llevar a cabo los procesos de transformación digital en los clientes de Lagash. 
+#DigitalFactories #DesignThinking #DevOps #Kubernetes #Microservices #Serverless #GoLang #NodeJS #NoSQL #Containers #Docker</p>
+ 
+<h3 class="section-heading">Javier Villegas
+ - <a href="https://www.twitter.com/https://www.twitter.com/javier_vill">https://www.twitter.com/javier_vill</a>
+</h3>
+<p>LinkedIn: <a href="https://ar.linkedin.com/in/javiervillegas">https://ar.linkedin.com/in/javiervillegas</a></p>
+ 
+<p>Contact: <a href="http://sql-javier-villegas.blogspot.com.ar/">http://sql-javier-villegas.blogspot.com.ar/</a></p>
+ 
+<p>Javier Villegas is a Database Administrator Manager for Mediterranean Shipping Company. Javier has more than 20 years working with SQL Server on every version from 6.5 to SQL Server 2019, Including SQL Azure Database and SQL Azure Managed Instance. His specialization is Administration, Performance Tuning and High Availability.
+He is a Microsoft MVP in Data Platform.
+Javier is a frequent speaker in conferences and events such as SQL Saturday , PASS Virtual Groups, 24 Hours SQL PASS , vOpen(NetConf), GroupBy and DataPlatformGeeks.
+@sqlargentina</p>
+ 
+<h3 class="section-heading">PABLO JAVIER FERNANDEZ
+ - <a href="https://www.twitter.com/https://twitter.com/PabloJavier911">https://twitter.com/PabloJavier911</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/PabloJavier911">https://www.linkedin.com/in/PabloJavier911</a></p>
+ 
+<p>Contact: <a href="https://www.datoptim.com">https://www.datoptim.com</a></p>
+ 
+<p>Pablo Fernández as Data Management and Analytics MCSE has dedicated his professional time to SQL Server Databases and Security Analysis. As a senior DBA who has finished the IT Security Master degree, he worked at banking business for the last 9 years. He has a big passion for knowledge and for sharing it with no limits. With this idea he worked as a teacher at high school, university and as a private consultant for the last 13 years also with a special focus on SQL Server during the last 8 years as a Microsoft Certified Trainer. Pablo loves spending time on Performance Tuning and making webcasts with students and friends. His goal is to make his local community bigger and be an influence around the world.</p>
+ 
+<h3 class="section-heading">Adnan Hendricks
+ - <a href="https://www.twitter.com/@Microspecialist">@Microspecialist</a>
+</h3>
+<p>LinkedIn: <a href="https://nl.linkedin.com/in/ahendricks">https://nl.linkedin.com/in/ahendricks</a></p>
+ 
+<p>Adnan is co-founder www.AzurePlatformExperts.com and one of the world’s leading infrastructure experts a Microsoft MVP ,MCT (Regional Lead in NL 2014-2017)Member Microsoft Onedrive Experts Program (MODE), Microsoft Windows Technical Experts Program
+Follow him on twitter @Microspecialist</p>
+ 
+<h3 class="section-heading">Carlos Aravena
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/cfranciscoj">https://www.linkedin.com/in/cfranciscoj</a></p>
+ 
+<p>Consultor y Asesor Senior que en la actualidad se desempeña como Director de Negocios y asesor, del área de servicios, principalmente en los ámbitos de ecommerce y el desarrollo e implementación de medios de pago electrónico, con una trayectoria paralela en Consultoría de Gestión de Servicios, Riesgo y Tecnologías de la Información.
+
+Profesional con estudios en Ingeniería Informática, desde 2001 ha estado apoyando grandes empresas, que se desenvuelven en diversos sectores productivos, entre los que destacan telecomunicaciones, energético, retail, financiero y la banca.</p>
+ 
+<h3 class="section-heading">Carlos Farias
+ - <a href="https://www.twitter.com/ChilePass">ChilePass</a>
+</h3>
+<p>Contact: <a href="http://chile.pass.org">http://chile.pass.org</a></p>
+ 
+<p>Profesional con 10 años de experiencia en TI, en donde a desarrollado en la administracion de base de datos, gestion de proyecto y gestion de operaciones en las Tecnologías de la Información (accenture, sonda, eds)
+Transporte Marítimo/Portuario (CSAV, Hapag Lloyd) Retail (johnson) Banca (banco estado) Manufactura (CMPC S.a)</p>
+ 
+<h3 class="section-heading">Patricio Cofre
+ - <a href="https://www.twitter.com/pcofre">pcofre</a>
+</h3>
+<p>LinkedIn: <a href="https://cl.linkedin.com/in/pcofre">https://cl.linkedin.com/in/pcofre</a></p>
+ 
+<p>Contact: <a href="http://www.metricarts.com/noticias/">http://www.metricarts.com/noticias/</a></p>
+ 
+<p>Microsoft Data Platform MVP  Regional Director. PASS Chile User Group Leader. Master of Engineering Management, Northwestern University and Master of Engineering Sciences, Catholic University of Chile. He has developed and led projects of Analytics for various companies in Latam, mainly in the areas of financial services and retail. He has specialized in Data Warehousing, and Machine Learning. He is co-founder and CEO of Metric Arts. He is also lecturer at the Catholic University of Chile, University of Chile, Catholic University of Peru, Louisville University in Panama, INCAE Costa Rica and FIU in USA</p>
+ 
+<h3 class="section-heading">Daniel Fischer
+
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/danielfischerm">http://linkedin.com/in/danielfischerm</a></p>
+ 
+<p>Contact: <a href="http://geekosas.com">http://geekosas.com</a></p>
+ 
+<p>I'm Daniel Fischer, I'm a very passionate data scientist, the kind of data scientist that liked working with data before it was cool.
+I have experience in Telco and Portfolio Management building models and processes in Python and R usually backed by SQL Server.
+Since I was in university, I have been doing consultancy using SQL Server. I got vast experience using it and connecting to the server from different platforms like: Linux, Python, R.
+I have worked on projects like: VaR, Performance Attribution, CHURN prediction, Real Time Campaigns triggered by events, Customer Segmentation, Customer Valuation, Multiple Dashboards.
+Noways I work full time in Entel (Telco) and I participate as speaker in courses and events about data science.</p>
+ 
+<h3 class="section-heading">Patricio Cofre
+ - <a href="https://www.twitter.com/pcofre">pcofre</a>
+</h3>
+<p>LinkedIn: <a href="https://cl.linkedin.com/in/pcofre">https://cl.linkedin.com/in/pcofre</a></p>
+ 
+<p>Contact: <a href="http://www.metricarts.com/noticias/">http://www.metricarts.com/noticias/</a></p>
+ 
+<p>Microsoft Data Platform MVP  Regional Director. PASS Chile User Group Leader. Master of Engineering Management, Northwestern University and Master of Engineering Sciences, Catholic University of Chile. He has developed and led projects of Analytics for various companies in Latam, mainly in the areas of financial services and retail. He has specialized in Data Warehousing, and Machine Learning. He is co-founder and CEO of Metric Arts. He is also lecturer at the Catholic University of Chile, University of Chile, Catholic University of Peru, Louisville University in Panama, INCAE Costa Rica and FIU in USA</p>
+ 
+<h3 class="section-heading">Cristobal Ibarra
+
+</h3>
+<p>LinkedIn: <a href="https://cl.linkedin.com/in/cristobal-ibarra-4755b42a">https://cl.linkedin.com/in/cristobal-ibarra-4755b42a</a></p>
+ 
+<p>Professional Profile
+Empathetic, proactive and with a strong knowledge profile in the area of information technology (IT). Highlighting the skills of analysis, design, management and evaluation of technology solutions in both software development and Business Intelligence.
+Objectives
+My goal is to belong to an organization where I can develop and enhance my skills, where I can contribute with my strengths (such as academic skills and experience) and provide all my knowledge to the management processes of the organization.</p>
+ 
+<h3 class="section-heading">Adrian Fernandez
+ - <a href="https://www.twitter.com/adrianfz10">adrianfz10</a>
+</h3>
+<p>LinkedIn: <a href="https://ar.linkedin.com/in/adrianfz">https://ar.linkedin.com/in/adrianfz</a></p>
+ 
+<p>Adrián Fernández, especializado en bases de datos y analítica avanzada, graduado en tecnología Informática, postgraduado en Big Data y científico de datos I.T.B.A (Instituto Tecnológico Buenos Aires), cursando Magister Data Science UDD.
+Especialista de Soluciones Microsoft en plataforma de datos e Inteligencia Artificial.
+Scope: SQL Server, Azure Machine Learning, Cognitive Services, Business Intelligence, Power BI, Big Data, (Python / R / Julia / Scala).
+Data Science: experto Microsoft R Server (MRS), colaborando con proyectos de investigación avanzada como científico de datos y participando en discusiones de grupo Microsoft Data Scientist en la búsqueda de desarrollo de nuevos productos y resolución de casos de negocio.</p>
+ 
+<h3 class="section-heading">Kamal Valero
+ - <a href="https://www.twitter.com/kamalvalero">kamalvalero</a>
+</h3>
+<p>LinkedIn: <a href="https://cl.linkedin.com/pub/kamal-valero/5/790/28b">https://cl.linkedin.com/pub/kamal-valero/5/790/28b</a></p>
+ 
+<p>Gerente de Business Intelligence en Punto Ticket. Microsoft MVP en Data Platform</p>
+ 
+<h3 class="section-heading">Jose Manuel Jurado Diaz
+ - <a href="https://www.twitter.com/jmjuradodiaz">jmjuradodiaz</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/jose-manuel-jurado-diaz-5a586014/">https://www.linkedin.com/in/jose-manuel-jurado-diaz-5a586014/</a></p>
+ 
+<p>José Manuel Jurado currently works as SQL Escalation Engineer and Subject Matter Expert in Azure SQL Database at Microsoft Spain. With over 20+ years of experience in SQL Server environments (administration and database development), he is a speaker for internal events at Microsoft and for public events such as SQLSaturday, SQL Nexus, SQLBits, Pass Summit, SQL Server Konferenze, TechReady, DotNetConference, and Azure BootCamp. In the past, he worked as Project Manager for large global retail company for more than 10 years developing projects using different Microsoft Technologies.</p>
+ 
+<h3 class="section-heading">Roberto Cavalcanti
+ - <a href="https://www.twitter.com/rocavalc">rocavalc</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/robertocavalcanti">https://www.linkedin.com/in/robertocavalcanti</a></p>
+ 
+<p>Roberto Cavalcanti is an Azure Cloud Solution Architect with the Customer Architecture and Engineering team at Microsoft. He is a database specialist with 20+ years of experience. He focuses on helping customers to be successful in Microsoft's Azure cloud and on improving Microsoft Azure products. Roberto has written many articles about SQL Server/Azure SQL DB for MSDN/TechNet, SQL Magazine, and has been a speaker in events such as TechReady, Microsoft Insights/TechEd, SQL Saturday. He has delivered Azure training in multiple countries in the Americas, and in Europe. Roberto is based on the Microsoft Las Colinas, Texas, USA office.</p>
+ 
+<h3 class="section-heading">PABLO JAVIER FERNANDEZ
+ - <a href="https://www.twitter.com/https://twitter.com/PabloJavier911">https://twitter.com/PabloJavier911</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/PabloJavier911">https://www.linkedin.com/in/PabloJavier911</a></p>
+ 
+<p>Contact: <a href="https://www.datoptim.com">https://www.datoptim.com</a></p>
+ 
+<p>Pablo Fernández as Data Management and Analytics MCSE has dedicated his professional time to SQL Server Databases and Security Analysis. As a senior DBA who has finished the IT Security Master degree, he worked at banking business for the last 9 years. He has a big passion for knowledge and for sharing it with no limits. With this idea he worked as a teacher at high school, university and as a private consultant for the last 13 years also with a special focus on SQL Server during the last 8 years as a Microsoft Certified Trainer. Pablo loves spending time on Performance Tuning and making webcasts with students and friends. His goal is to make his local community bigger and be an influence around the world.</p>
+ 
+<h3 class="section-heading">Javier Villegas
+ - <a href="https://www.twitter.com/https://www.twitter.com/javier_vill">https://www.twitter.com/javier_vill</a>
+</h3>
+<p>LinkedIn: <a href="https://ar.linkedin.com/in/javiervillegas">https://ar.linkedin.com/in/javiervillegas</a></p>
+ 
+<p>Contact: <a href="http://sql-javier-villegas.blogspot.com.ar/">http://sql-javier-villegas.blogspot.com.ar/</a></p>
+ 
+<p>Javier Villegas is a Database Administrator Manager for Mediterranean Shipping Company. Javier has more than 20 years working with SQL Server on every version from 6.5 to SQL Server 2019, Including SQL Azure Database and SQL Azure Managed Instance. His specialization is Administration, Performance Tuning and High Availability.
+He is a Microsoft MVP in Data Platform.
+Javier is a frequent speaker in conferences and events such as SQL Saturday , PASS Virtual Groups, 24 Hours SQL PASS , vOpen(NetConf), GroupBy and DataPlatformGeeks.
+@sqlargentina</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://www.metricarts.com">Metric Arts</a></p>
+ 
+<p><a href="http://www.softwareone.com">SoftwareONE</a></p>
+ 
+<p><a href="http://www.eychile.cl/">EY Chile</a></p>
+ 
+<p><a href="http://www.puntoticket.cl">Punto Ticket</a></p>
+ 
+<p><a href="https://www.newsreport.io/">NewsReport</a></p>
+ 
+<p><a href="http://www.cuatroi.com">CUATROi</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

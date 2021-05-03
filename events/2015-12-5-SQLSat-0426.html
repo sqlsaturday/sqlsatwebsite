@@ -1,0 +1,420 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQLSaturday SQLSaturday #426 - Lviv 2015" />
+        <meta name="author" content=" />
+        <title>SQLSaturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #426 - Lviv 2015
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQLSaturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #426 - Lviv 2015</div>
+        <div class="masthead-subheading">This event was held on 2015-12-5</div>
+        <p><b>Event Location</b>:</p>
+        <p>Hotel Volter</p>
+        <p>60A Lypynskoho str.</p>
+        <p>Lviv, L'vivs'ka Oblast', Ukraine</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0426.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Complex Event Processing with Azure Stream Analytics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure Stream Analytics targets complex event streams (CEP’s) to deduce meaningful patterns. Most of the typical use cases for this product is when various devices and sensors are sending data for further processing.
+
+This technology uses a T-SQL like syntax to express its intents. A language that most data-power users will be familiar with.
+
+The biggest advantage of Stream Analytics is when events are being published to the Stream Analytics, the only thing that event publishers needs to know is which Event Bus or Blob storage to place the data. Stream Analytics will then fetch the data.
+
+This talk is about the main concepts and solution architecture when using Azure Stream Analytics, and also how to use this technology together with MS SQL Server, Azure SQL Database and Power BI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mihail Mateev</b>, 
+</p>
+<hr>
+ 
+<h3>Инструменты резервирования и репликации реляционных баз данных</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Будут освещены две темы:
+1) Способы разгрузки продуктивных серверов баз данных при построении кроссплатформенной репликации. В примере будет затронута связка Oracle gt; SQL Server. Построение репликации с помощью Dell SharePlex.
+2) Основные проблемы и нюансы, на которые стоит обратить внимание при построении резервного копирования  SQL Server. Например, влияние компрессии на производительность сервера БД и методика оптимизации - построение динамических заданий, которые в зависимости от нагрузки на сервер БД будут определять необходимый уровень компрессии без потери производительности. Автоматизация проверки резервных копий и т.д. Инструментом анализа и оптимизации заданий резервного копирования рассматривается Dell LiteSpeed for SQL Server.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ivan Rudnytskyi</b>, 
+</p>
+<hr>
+ 
+<h3>SSAS Multidimensional Databases optimization</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We will talk about processing optimization (partitioning, parallel processing, attribute keys, indexes etc), work on users queries performance (playing with rigid and flexible attributes relations, aggregations and scopes) and try to figure out how to improve MDX code readability.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alex Peshekhonov</b>, 
+</p>
+<hr>
+ 
+<h3>Metadata-driven Automatic Package Creation with Biml - Notes From The Field</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We already know what Biml is. But how do we leverage its power to create next generation ETL? In this session we want to show you different approaches to package creation with Biml, based on user-specified metadata. We'd like to show you advanced scenarios, some lightweight metadata storages, and MDS. We'll also cover live database discovery, automatic database object creation, automatic data type normalization, flexible incremental stage loading, and more.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marcin Szeliga</b>, 
+</p>
+<hr>
+ 
+<h3>Hidden gems of SQL Server 2014</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2014 is full of new features and improvements. Some of them are "Killer" features like InMemory OLTP, Clustered Columnstore Indexes, Buffer Pool Extensions, etc., which are discussed a lot and we always can get a lot of information about them. And in the same time, SQL Server 2014 have several fantastic features and improvements, which are more hidden from our sight. In this session we will talk in details about these features and improvements. Query Fingerprints, Cardinality Estimator, Tempdb improvements, and more features will be covered in this session.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Denis Reznik</b>, 
+</p>
+<hr>
+ 
+<h3>Practical X:  ML, Path, Query</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Small session about your friend XML - why, when and how to use it without being hurt.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Oleksii Kovalov</b>, 
+</p>
+<hr>
+ 
+<h3>Dive into HDInsight: common Big Data analysis scenarios on Microsoft Azure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft Azure HDInsight is a big data solution based on the open-source Apache Hadoop framework, and is an integral part of the Microsoft Business Intelligence (BI) and Analytics product range. We will review the various methods of programming with HDInsight, including how to use the HDInsight cmdlets in Windows PowerShell to work with the HDInsight cluster, how to use the HDInsight Software Development Kit (SDK) to develop applications, how to use Hive, Pig, Excel Power Query, Sqoop to work with data. We will explore common Big Data analysis scenarios and their implementations with Azure HDInsight.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vitalii Bondarenko</b>, 
+</p>
+<hr>
+ 
+<h3>Failover Clustering та High Availability</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Під час даної доповіді ми поговоримо про Windows Failover Clustering у взаємодії з СУБД Microsoft SQL Server. Також буде розкрито тему масштабування та забезпечення доступності баз даних за допомогою механізму AlwaysOn High Availability. 
+Розуміння матеріалу потребує володіння базовими знаннями з побудови компютерних мереж, механізму роботи SQL-транзакцій та реплікації.
+Доповідь буде в першу чергу цікава адміністраторам та архітекторам баз даних, та ІТ-керівникам. Також вона буде корисною проектувальникам сховищ даних, BI-аналітикам та розробникам високонавантажених систем. 
+Мова: українська
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Yevhen Nedashkivskyi</b>, 
+</p>
+<hr>
+ 
+<h3>@Table vs #Table: шаблони використання, спільні характеристики, міфи</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>MS SQL Server надає дві можливості для зберігання тимчасових наборів даних: тимчасові табиці та табличні змінні. Вважається, що табличні треба використовувати для маленьких об'ємів даних (бо вони  живуть в оперативній пам'яті), а тимчасові таблиці - для великих. Подивимося, чи дійсно це так; чи можна за такими характеристиками порівнювати ці об'єкти.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrii Zrobok</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2016 CTP 3 review</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2016 is coming bringing a lot of new innovations. During this session we will have a look at some of them, including: always encrypted (great think if you want to keep sensitive data encrypted at all times with ability to query), row-level security (finally, DBAs can apply fine-grained access control to table rows), temporal database support (yes, you can query data as points in time), and operational analytics (architecture to run analytics queries concurrently with operational workloads using the same schema). Stay ahead of the game!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marcin Szeliga</b>, 
+</p>
+<hr>
+ 
+<h3>Managing Database Changes in Source Control</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>There are a number of challenges while collaborating on database development. When someone in a team changes database objects in a shared database, another team member may overwrite those changes. This will lead to the valid changes and data loss. The best way to resolve such challenges is to start using database version control. In this session, we will talk about the source control basics, and also have a look at how to start source controlling your SQL Server databases.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrey Langovoy</b>, 
+</p>
+<hr>
+ 
+<h3>MDX:  а давайте взорвем мозг?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Что это за зверь MDX? Как с ним работать? Как писать запросы? Вы думаете он похож на Transact Sql, ошибаетесь. Он сам по себе - язык многомерных данных.  Некоторые запросы на нем пишутся в течении минуты, некоторые пишутся в течении месяцев.  В общем, хотите взорвать мозг - приходите будем взрывать вместе. Доклад начнется с level 100, а  закончится level 300</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Eugene Polonichko</b>, 
+</p>
+<hr>
+ 
+<h3>Database monitoring, tuning and optimization using Dell Software tools</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Ensure optimal database performance with non-stop data collection and instant metric-sensitive alerts. Speed through your work with intuitive interfaces, built-in expert guidance and easy-to-follow workflows. Get an enterprise-level view of database health and automated performance analysis to quickly identify and fix problem servers and resource areas. Maximize database performance and availability with these robust SQL Server monitoring and optimization tools.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vladislav Samoylenko</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Query Store</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>В докладе мы поговорим о SQL Server Query Store</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vitaliy Popovych</b>, 
+</p>
+<hr>
+ 
+<h3>Database corruption</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this sessions you will learn how to detect and avoid common problems related to database corruption. There will be description of the data structures in SQL Server and how it can affect avaialbility of SQL Server during curruption. On the session there will be not only theoretical knowledge but many real life examples with demos. 
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Michal Sadowski</b>, 
+</p>
+<hr>
+ 
+<h3>Inside Transaction Logging</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This  session covers the main principles and internals of transaction logging mechanism and focuses on different factors, which influence the process of transaction logging.  It also contains several general recommendations for Developers, Application Support engineers and DBA's on dealing with different transaction log issues and, possibly, avoiding them.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Taras Bobrovytskyi</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Eugene Polonichko
+ - <a href="https://www.twitter.com/https://twitter.com/EvgenPolonichko">https://twitter.com/EvgenPolonichko</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/eugenepolonichko/">https://www.linkedin.com/in/eugenepolonichko/</a></p>
+ 
+<p>Contact: <a href="https://msolapblog.wordpress.com/">https://msolapblog.wordpress.com/</a></p>
+ 
+<p>Leader of PASS Local Chapter in Donetsk (Ukraine). I work  as DWH/BI architect.  Responsible for designing and developing Data Warehouse and BI solutions with using Microsoft  BI Stack products.</p>
+ 
+<h3 class="section-heading">Andrey Langovoy
+ - <a href="https://www.twitter.com/langovoyandrey">langovoyandrey</a>
+</h3>
+<p>LinkedIn: <a href="https://ua.linkedin.com/in/andreylangovoy">https://ua.linkedin.com/in/andreylangovoy</a></p>
+ 
+<p>Contact: <a href="http://codingsight.com">http://codingsight.com</a></p>
+ 
+<p>Andrey Langovoy is a team leader at Devart. He takes part in development and testing database management tools for SQL Server, writes articles about SQL Server and contributes to open source projects, MSDN and MDN.</p>
+ 
+<h3 class="section-heading">Taras Bobrovytskyi
+
+</h3>
+<p>LinkedIn: <a href="https://ua.linkedin.com/in/tbobrovytskyi">https://ua.linkedin.com/in/tbobrovytskyi</a></p>
+ 
+<p>Started working with SQL Server in 2007 as consultant, eventually becoming a MIcrosoft Certified Trainer. Participated in consulting projects in Ukraine, Belarus, Georgia, Kazakhstan 
+Since 2012 working as a database developer/data architect at DieboldNixdorf SSI team</p>
+ 
+<h3 class="section-heading">Vitaliy Popovych
+ - <a href="https://www.twitter.com/https://twitter.com/PopovychVitaliy">https://twitter.com/PopovychVitaliy</a>
+</h3>
+<p>LinkedIn: <a href="https://ua.linkedin.com/in/vitaliipopovych">https://ua.linkedin.com/in/vitaliipopovych</a></p>
+ 
+<p>Senior Database Developer at  TFG an Intapp Company. Опыт работы с MS SQL Server — более 5 лет.</p>
+ 
+<h3 class="section-heading">Ivan Rudnytskyi
+
+</h3>
+<p>Ivan Rudnytskyi has more than 8 years of experience in IT. He has been working as the Sales Engineer at BAKOTECH Group since 2012. Ivan is the expert in Dell Software database solutions. Prior to joining BAKOTECH team, Ivan worked as the Lead Engineer of the Development and Implementation Department at one of the largest system integrators in Ukraine, and was responsible for infrastructure systems architecture.</p>
+ 
+<h3 class="section-heading">Marcin Szeliga
+
+</h3>
+<p>LinkedIn: <a href="https://pl.linkedin.com/in/marcinszeliga">https://pl.linkedin.com/in/marcinszeliga</a></p>
+ 
+<p>Data Philosopher. Since 2006 invariably awarded Microsoft Most Valuable Professional title in the Data Platform category. A speaker at numerous conferences across Europe, as well as at user groups meetings. The author of many books and articles devoted to Microsoft Data Platform. An independent consultant, database-centric application practitioner and architect totally focused on SQL Server and Azure. Huge fan of Data Science and Machine Learning.</p>
+ 
+<h3 class="section-heading">Yevhen Nedashkivskyi
+
+</h3>
+<p>LinkedIn: <a href="https://ua.linkedin.com/in/nedash">https://ua.linkedin.com/in/nedash</a></p>
+ 
+<p>Yevhen Nedashkivskyi is a professional DBA and a database developer with more than 10 years of experience. MSCP, MSCA, MSCE, MVP.</p>
+ 
+<h3 class="section-heading">Denis Reznik
+ - <a href="https://www.twitter.com/https://twitter.com/DenisReznik">https://twitter.com/DenisReznik</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/denis-reznik/3/502/234">http://www.linkedin.com/pub/denis-reznik/3/502/234</a></p>
+ 
+<p>Contact: <a href="http://reznik.uneta.com.ua">http://reznik.uneta.com.ua</a></p>
+ 
+<p>Denis Reznik is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design, and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains MVP status today. Apart from his professional career, Denis actively participates in the development of the Ukrainian Data Community.</p>
+ 
+<h3 class="section-heading">Marcin Szeliga
+
+</h3>
+<p>LinkedIn: <a href="https://pl.linkedin.com/in/marcinszeliga">https://pl.linkedin.com/in/marcinszeliga</a></p>
+ 
+<p>Data Philosopher. Since 2006 invariably awarded Microsoft Most Valuable Professional title in the Data Platform category. A speaker at numerous conferences across Europe, as well as at user groups meetings. The author of many books and articles devoted to Microsoft Data Platform. An independent consultant, database-centric application practitioner and architect totally focused on SQL Server and Azure. Huge fan of Data Science and Machine Learning.</p>
+ 
+<h3 class="section-heading">Andrii Zrobok
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/azrobok/">https://www.linkedin.com/in/azrobok/</a></p>
+ 
+<p>25+ years of experience in database development: development data-centric applications from scratch, support of legacy databases/applications, data migration tasks, performance tuning,  consulting, database trainer. I have experience with wide range of databases such as  FoxPro for DOS (Fox Software), MS SQL Server (started from version 6.5) , Oracle, Sybase ASE, MySQL, PostgreSQL.
+Co-Leader of PASS Local Chapter in Lviv.
+Speaker at PASS SQLSaturday conferences (since 2013); PASS Lviv/Vinnitsa/Virtual SQL Server User Group, EPAM IT Week (2015-2017), AIBig Data Day 2019.</p>
+ 
+<h3 class="section-heading">Mihail Mateev
+ - <a href="https://www.twitter.com/mihailmateev">mihailmateev</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1">http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1</a></p>
+ 
+<p>Contact: <a href="https://mmateev.wordpress.com/">https://mmateev.wordpress.com/</a></p>
+ 
+<p>Mihail Mateev is a technical consultant, community enthusiast, PASS Regional Mentor for CEE, chapter lead, Microsoft Azure MVP, Microsoft Regional Director. He works as a Senior Solutions Architect at EPAM Systems, focused on Data Platform, IoT and cloud related solutions. He also worked many years like a Technical evangelist in the Infragistics. Last years Mihail was focused on various areas related to technology Microsoft: Data Platform, Visual Studio, ASP.Net, Windows client apps, Data Platform, and Microsoft Azure. Michael also has a PhD in cloud computing area. He is a university lecturer on Smart Homes and Smart Energy IoT Solutions.</p>
+ 
+<h3 class="section-heading">Alex Peshekhonov
+
+</h3>
+<p>LinkedIn: <a href="https://ua.linkedin.com/pub/alexander-peshekhonov/90/166/35">https://ua.linkedin.com/pub/alexander-peshekhonov/90/166/35</a></p>
+ 
+<p>Programmer, guitar player</p>
+ 
+<h3 class="section-heading">Vladislav Samoylenko
+
+</h3>
+<p>More than 10 years in IT working with Microsoft products, all around data migration and Application Performance Management (APM)</p>
+ 
+<h3 class="section-heading">Vitalii Bondarenko
+
+</h3>
+<p>I've been designing data-centric systems for last 20 years and have gained huge experience in developing BI, AI and Big Data solutions. For the last 5 years I've mostly been focused on enterprise platform designing and implementing different innovative approaches for Fast Data Processing. At the moment I'm responsible for building Processional Services in Cloud Solutions for Enterprise Customers.</p>
+ 
+<h3 class="section-heading">Oleksii Kovalov
+
+</h3>
+<p>DBA and DB developer with more than 10 year expirience. SQLSat/SSUG speaker. MCTS, MCITP.
+Author of pet-projects ExpressProfiler and SQL Code Guard
+</p>
+ 
+<h3 class="section-heading">Michal Sadowski
+ - <a href="https://www.twitter.com/SadowskiMichal">SadowskiMichal</a>
+</h3>
+<p>LinkedIn: <a href="https://pl.linkedin.com/pub/michal-sadowski/4/b33/717">https://pl.linkedin.com/pub/michal-sadowski/4/b33/717</a></p>
+ 
+<p>Contact: <a href="https://sqlplayer.net/michal-sadowski">https://sqlplayer.net/michal-sadowski</a></p>
+ 
+<p>Senior Database Platform Engineer, leader of Krakow chapter of Data Community Krakow (former Polish SQL Server User Group) - PASS Chapter. With more than 10 years of experience in Microsoft technology, helps in advisory for performance optimization on database and application levels. Active speaker on SQL Server related events like SQLSaturday, SQLDay, MCT Global Summit etc. Holds many Microsoft certificates including MCSE: Data Platform, MCSA: SQL Server 2012/2014/2016, MCSA: Windows Server 2008/2012/2016 and MCT.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://bakotech.ua/vendor/quest-software/">БАКОТЕК</a></p>
+ 
+<p><a href="http://www.pass.org">PASS</a></p>
+ 
+<p><a href="http://www.dbbest.com">DB Best Technologies</a></p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://www.devart.com/">Devart</a></p>
+ 
+<p><a href="http://www.epam.com/">EPAMSystems</a></p>
+ 
+<p><a href="http://eleks.com/?utm_source=SQLSaturday_Lvivutm_medium=partner_pageutm_content=site-linkutm_campaign=ua_events">ELEKS</a></p>
+ 
+<p><a href="http://www.softserveinc.com">SoftServe</a></p>
+ 
+<p><a href="http://www.pluralsight.com">PluralSight</a></p>
+ 
+<p><a href="http://www.apexsql.com">Apex SQL</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQLSaturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

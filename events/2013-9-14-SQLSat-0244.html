@@ -1,0 +1,374 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQLSaturday SQLSaturday #244 - Johannesburg 2013" />
+        <meta name="author" content=" />
+        <title>SQLSaturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #244 - Johannesburg 2013
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQLSaturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #244 - Johannesburg 2013</div>
+        <div class="masthead-subheading">This event was held on 2013-9-14</div>
+        <p><b>Event Location</b>:</p>
+        <p>Microsoft Office</p>
+        <p>3201 William Nicol Drive</p>
+        <p>Bryanston, Gauteng, South Africa</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0244.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>T-SQL Fundamentals: Logical Processing Order</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>“Column dbo.xyz' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.” Seen it; fixed it, but can we explain why we’re getting a syntax in the first place? The optimizer must follow a very specific hierarchy in order to generate a plan. When you understand the hierarchy, then you better understand the behavior of the optimizer.
+ 
+This all-demo session will explain the logical processing hierarchy, giving you the foundation knowledge you need to build well-structured queries that keep the optimizer happy. Learn how the FROM clause is processed, why a calculated column’s alias can’t be addressed in the JOIN, why WHERE isn’t the only filter, and why NULL confuses everything. When you leave, you will think very differently about how you build your queries, and the query optimizer will love you for learning to speak its language.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Christina Leo</b>, 
+</p>
+<hr>
+ 
+<h3>Windows Azure SQL Database Troubleshooting and Query Tuning </h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Windows Azure SQL Database is a fully-managed, scalable service based on SQL Server technology. It is also a shared-environment service which means that you can’t and shouldn’t avoid best practices when it comes to query tuning. Microsoft has put mechanisms in place to ensure that your queries and processes don’t use up too many resources which could seriously impact performance of not only your database, but the database of other organizations as well. This demo-filled session will look at tools and options available to help identify poor performing queries, such as dynamic management views. This session will help identify problem queries and help you understand why a query is running slow through execution plans and other tools in the SQL Database Portal. Ultimately, you will be enabled to find and fix your poorly performing queries and do it all in the cloud.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Scott Klein</b>, 
+</p>
+<hr>
+ 
+<h3>An Introduction to Indexes and How to Use Them for Maximum Performance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Do you find yourself battling to describe the difference between a clustered and a non-clustered index. Do you struggle with unhappy users and bad performance. Do you want to know how to identify missing indexes or duplicate indexes? Indexes are a vital cog in the SQL Server engine and getting them right is one of the best performance tuning techniques available. A simple index can make the difference between a sub-second result or waiting 30 minutes for data. A simple index can also make the difference between happy and unhappy users. So what are indexes exactly and why do they make my life so much easier? Find out here.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sean Pearce</b>, 
+</p>
+<hr>
+ 
+<h3>Enhance SQL Performance by Messaging and Queuing Applications</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>When you think of SQL Server, the first thing you think about is probably not SQL as host for messaging / queuing applications. However, in certain scenarios it definitely makes sense to implement messaging inside the SQL engine. In this session we will see the benefits of messaging applications inside SQL as well as what options you have when implementing it and their respective performance implications.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Niels Berglund</b>, 
+</p>
+<hr>
+ 
+<h3>Getting started with your first tabular cube</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we will look at how you can easily get started with your first tabular cube. We will importing multiple data sources and creating relationships between them. This data will then be enriched through the use of calculated columns, and custom calculations.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Michael Johnson</b>, 
+</p>
+<hr>
+ 
+<h3>Microsoft BI - Smart Analytics for a Smarter Future</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>With a wide variety of products  services, Microsoft has really changed the game with their new BI capabilities. In this session Greg will take you through Microsoft Business Intelligence (SQL 2012/2014, SharePoint 2013 and Office 2013) providing useful insights into the present and the future of Microsoft Business Intelligence 
+
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Greg  Fibiger</b>, 
+</p>
+<hr>
+ 
+<h3>Dos and don’ts of database corruption</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Database corruption is one of the worst things you can encounter as a DBA. It can result in downtime, data loss, and unhappy users. What’s scary about corruption is that it can strike out of the blue and with no warning, and without having some 
+In this session we’ll look at
+•	Easy maintenance operations you should be running right now to ensure the fastest possible identification and resolution of corruption
+•	Best practices for handling a database that you suspect may be corrupted
+•	Actions that can worsen the problem
+•	Appropriate steps to take and methods of recovery
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gail Shaw</b>, 
+</p>
+<hr>
+ 
+<h3>Divide and Conquer - Scale out using Federated Database in Azure </h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Creating a Federated Sql Database in Azure can allow your data to scale out as it grows. Session will primarily be demos cover Setting up and configuring a Federated Sql Database in Azure as well as how to monitor growth of federations and how to split federations. Will also cover some limitations and disadvantages that need to be taken into consideration when deciding if using a Federated Sql Database is suitable for your business. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Martin Phelps</b>, 
+</p>
+<hr>
+ 
+<h3>I wish I knew that yesterday!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL server 2012 functions and techniques you wish you knew about before writing that 1000 line UDF.
+In this session we will explore some interesting and useful tips,tricks, functions and DMVs.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Matt Horn</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to the PDW: Gary Hope and Laura Kotlinksi</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Introduction to the PDW: Gary Hope and Laura Kotlinksi</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gary Hope Laura Kotlinski</b>, 
+</p>
+<hr>
+ 
+<h3>Off with his head!!!! - 10 SQL coding mistakes that can lead to death.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>in this session I will cover 10 mistakes I see developers make on a regular basis. sometimes simple to fix other times just plain stupid.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jacques Mostert</b>, 
+</p>
+<hr>
+ 
+<h3>Master Data Services Role as Dimension Manager</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This Session is an introduction to Master Data Services and the role it can play in Data Management and Data Warehouse. 
+Session Highlights:
+* Managing Slowly Changing Dimensions (SCD)
+* Managing Hierarchies relationships
+* managing Version control etc...</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sandesh Nagaraj</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to PowerBI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Overview and introduction to Microsoft's latest self-service BI offering - PowerBI</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Geoffrey Smith</b>, 
+</p>
+<hr>
+ 
+<h3>The Microsoft "Big Data" and "In Memory" Data Management Story.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The Microsoft "Big Data" and "In Memory" Data Management Story.
+
+A 360' view of Microsoft's latest investments in scale out, unstructured and high speed transaction processing technologies that form the new Microsoft Data Platform (including PDW, Polybase, HDInsight and Hekaton)</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gary Hope</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Scott Klein
+ - <a href="https://www.twitter.com/SQLScott">SQLScott</a>
+</h3>
+<p>Contact: <a href="http://aka.ms/sqlscott">http://aka.ms/sqlscott</a></p>
+ 
+<p>Scott Klein is a senior consultant with SQL Solutions Group with over two decades of experience working with Microsoft SQL Server. Prior to SSG, Scott spent almost 10 years at Microsoft, traveling the globe as a technical evangelist training and speaking about SQL Server and Microsoft’s Azure data services. Scott’s recent focus has been on advanced analytics, including big data and IoT, providing real-world training to help bring intelligence to your data. Scott has authored several books focusing on data and data analytics. Scott is continuously striving and looking for ways to help developers and companies grok the wonderful world of data.</p>
+ 
+<h3 class="section-heading">Niels Berglund
+ - <a href="https://www.twitter.com/nielsberglund">nielsberglund</a>
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/niels-berglund-0122593">https://za.linkedin.com/in/niels-berglund-0122593</a></p>
+ 
+<p>Contact: <a href="https://nielsberglund.com">https://nielsberglund.com</a></p>
+ 
+<p>Niels works as Software Architect at Derivco, where he develops software as well as "dreaming" up new and innovative ways to use existing and new technology. Before joining Derivco, Niels worked as researcher/instructor at Developmentor where he was responsible for the database curriculum. He was a co-author of the first SQL Server 2005 book for developers: quot; A First Look at SQL 2005 for Developersquot;. He has presented at all leading technical conferences; Tech-ED, SQL PASS, DevWeek, Ignite the Tour, etc., and is also a Microsoft Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Gary Hope Laura Kotlinski
+
+</h3>
+<p>Introduction to the PDW: Gary Hope and Laura Kotlinksi</p>
+ 
+<h3 class="section-heading">Sean Pearce
+
+</h3>
+<p>Contact: <a href="http://thesqlguy.blogspot.com/">http://thesqlguy.blogspot.com/</a></p>
+ 
+<p>Sean Pearce is a SQL Server consultant with a background in application development. Sean started his career in 1996 with exposure to SQL Server 6.5. By SQL Server 2000, Sean found a database mentor and never looked back. Stepping into a SQL Server focused role, Sean took to SQL Server like a duck to water. His thorough understanding of the architecture and process driving SQL Server allows him to focus on performance and problem solving for clients. He also writes some mean SQL.</p>
+ 
+<h3 class="section-heading">Michael Johnson
+
+</h3>
+<p>Michael Johnson is an independent Business intelligence consultant from Johannesburg South Africa</p>
+ 
+<h3 class="section-heading">Greg  Fibiger
+
+</h3>
+<p>Contact: <a href="http://www.paradat.co.za">http://www.paradat.co.za</a></p>
+ 
+<p>More than 15 years of IT experience with 12 years Technical Consulting in Data Warehousing/Business Intelligence; 15 years’ experience of designing and delivering Microsoft Certified Learning programs; International Microsoft Technology Speaker - Tech-Ed Africa 2008 to 2013
+Senior Microsoft Business Intelligence Developer;  Co-Founder  CEO of Paradigm Data</p>
+ 
+<h3 class="section-heading">Gail Shaw
+ - <a href="https://www.twitter.com/@SQLInTheWild">@SQLInTheWild</a>
+</h3>
+<p>Contact: <a href="http://sqlinthewild.co.za">http://sqlinthewild.co.za</a></p>
+ 
+<p>Gail Shaw is a Database Specialist focusing on database performance tuning and database recovery, with a particular interest in topics such as indexing strategies, execution plans, and writing T-SQL code that performs well and scales gracefully. Gail holds a Microsoft Certified Master certification for SQL Server 2008 and is a Data Platform MVP. She's a frequent poster on the SQLServerCentral forums, a Pluralsight author, writes articles for both SQLServerCentral.com and Simple-Talk.com, and has spoken at SQLSaturdays, SQL Bits and at the PASS Community Summit. Gail has been responsible for extending the lifespan of many an application, by performance-tuning their databases and providing technical guidance on all things SQL Server related.</p>
+ 
+<h3 class="section-heading">Geoffrey Smith
+
+</h3>
+<p>Contact: <a href="http://www.aphelion.bi/">http://www.aphelion.bi/</a></p>
+ 
+<p>Business Intelligence consultant at Aphelion Software</p>
+ 
+<h3 class="section-heading">Martin Phelps
+ - <a href="https://www.twitter.com/https://twitter.com/mphelps1968">https://twitter.com/mphelps1968</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/phelpsm">http://www.linkedin.com/in/phelpsm</a></p>
+ 
+<p>Martin Phelps is database architect at MiX Telematics. Specialising in Solution Architecture across their OLTP and DW databases. With 20 years of in-the-trenches experience with Sql Server he has provided solutions using Sql Server since version 4.2. Has previously done work for Insurance, ICT, Marketing and Mining companies.
+
+</p>
+ 
+<h3 class="section-heading">Sandesh Nagaraj
+
+</h3>
+<p>LinkedIn: <a href="http://za.linkedin.com/in/sandeshnagaraj">http://za.linkedin.com/in/sandeshnagaraj</a></p>
+ 
+<p>A Certified Data Architect with around 15 years of experience in Data warehouse, Business Intelligence and Database implementation. Sandesh holds MCITP SQL Server in BI, Data Architect certified from Microstrategy etc. He has worked extensively as BI Consultant/Technical Specialist/BI Architect/Sales Engineer/Manager.  Sandesh actively participates and speaks at Johannesburg SQL Server User and SQLSaturday events.</p>
+ 
+<h3 class="section-heading">Jacques Mostert
+
+</h3>
+<p>Contact: <a href="http://sqlinbuddy.wordpress.com/">http://sqlinbuddy.wordpress.com/</a></p>
+ 
+<p>A family man, Christian, starcraft addict with some SQL on the side.
+
+Working on SQL for a long time, started on V6.5. I have seen way to many versions of SQL/BI tools for any sane person. ‘There is evil here that does not sleep” and as far as I can will help where I can. As the “about” title says I wear sandals (Afrikaans: Plakkies) do not like shoes to my wifes/boss dismay. I enjoy going off-road with my “toyota” and when I am not “sql”ing I will be constructing something from wood.</p>
+ 
+<h3 class="section-heading">Matt Horn
+
+</h3>
+<p>Matt Horn is a senior consultant with Aphelion software and a regular speaker at SQLSaturdays and other community events.
+
+He has been  the co lead of the BIDN BI user group in Johannesburg
+and an active member of  SQLCape and the JHB SQL Usergroup.
+</p>
+ 
+<h3 class="section-heading">Gary Hope
+
+</h3>
+<p>Gary is a legend</p>
+ 
+<h3 class="section-heading">Christina Leo
+ - <a href="https://www.twitter.com/christinaleo">christinaleo</a>
+</h3>
+<p>Contact: <a href="http://christinaleo.net">http://christinaleo.net</a></p>
+ 
+<p>Christina Leo is a Cloud Solution Architect at Microsoft specialising in the Data and AI Platform. Prior to joining Microsoft in 2016, she worked as an independent consultant focusing on T-SQL and BI development, as well as database performance tuning in the finance and investment banking sector. When she isn't sharing her 18 years of technical experience with the data community, you can find her racing around the Solent on a 40' sailboat or often in the Thames on a little Laser.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://modelwaresystems.com">Modelware Systems</a></p>
+ 
+<p><a href="http://www.eoh.co.za">EOH</a></p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://Aphelion.BI">Aphelion</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQLSaturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,556 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #537 - Puerto Rico 2016" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #537 - Puerto Rico 2016
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #537 - Puerto Rico 2016</div>
+        <div class="masthead-subheading">This event was held on 2016-6-25</div>
+        <p><b>Event Location</b>:</p>
+        <p>Universidad Metropolitana</p>
+        <p>1399, Avenida Ana G. Mendez</p>
+        <p>San Juan, San Juan, Puerto Rico</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0537.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>TempDB- More permanent impact than you think</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>As a DBA you hear different theories and "gospel truths" about TempDB from many people. Frankly there is no single version of the truth except that if you don't use and manage it well, it will make your life a real h*ll.
+What works for you in one situation may not work for you in another situation. What works for a situation today, might not guarantee its success for a similar situation tomorrow.
+
+We will talk about 
+Temporary User Objects, 
+Work Tables, Interim Results
+Version Store for Data
+Standards for its configuration
+Contention
+Data Files Per CPU - Myth or Reality?
+Dynamic Growth or Pre Sized?
+Trace Flags to Manage Tempdb?
+Should we store the entire Tempdb on SSDs?
+Should we shrink TempDB or not?
+
+Hopefully at the end of the session your knowledge on Tempdb won't be Temp.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Paresh Motiwala</b>, 
+</p>
+<hr>
+ 
+<h3>T-SQL: Tips and Tricks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Queries are running longer than expected? Your database server isn't performing as well as it should? There are many reason that this could be happening and one of them is the T-SQL being executed on the system. T-SQL offers various ways to get the information that you need but sometimes the option you choose might return the data that you want but may not be the best query structure or logic to use. 
+This session will share insight on how basic query structure and logic works so you can avoid wasting too much time on trial and error when writing queries. It will also show you some tips and tricks to avoid some bad T-SQL coding habits and help you write better queries. This session is for Developers and Database Administrators. 
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Nigel Sammy</b>, 
+</p>
+<hr>
+ 
+<h3>Copy Data Management and Virtualization</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>As DBAs, Developers, Infrastructure professionals, CIOs and IT Directors we are straddled with multiple issues pertaining to Copy Data sprawl. 
+
+Just imagine, it is 4:30 PM on Friday evening, you need a 10 TB database restored, thirty minutes after restore is complete, you are asked to do it again. What can you do?
+In any conventional method for providing copy data, you would run into any or all of the issues of providing space, bandwidth consumption, time to complete, the lead time to complete, security, masking and the key question "Which server does this go to"?
+
+We will also discuss the pros and cons of methods that are currently used for copy data including replication, mirroring, transaction log shipping, block level replication etc.  We will learn about "Copy Data Virtualization" a relatively new concept; and how it can help us overcome all these issues. 
+We will examine what technologies/products are available that help us mitigate such a massive problem of Copy Data. 
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Paresh Motiwala</b>, 
+</p>
+<hr>
+ 
+<h3>Preparing Data with Power BI: Scripts, Tips  Tricks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You may have already seen a lot of Power BI, but have you look deeper into its capabilities to get, merge and shape data?
+Power BI comes with great functionality that allow us to explore, collect an combine data in a powerful and easy way. In this session, we will use Power BI to solve data challenges that used to require a lot of coding and more complex solutions in a quick and effective way.
+This session is loaded with practical examples that will help you getting a better understanding of Power Query data preparation capabilities and provides you with a good share of hands-on tips and scripts in scenarios such as:  Cleansing address data, consume Odata Feeds, APIs calls , execute SSIS packages on demand and more.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rafael Salas</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2016 Hybrid Scenarios</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft has invested heavily in building cloud capabilities into SQL Server. SQL Server 2016 is architected to work smoothly with the cloud in a hybrid environment that helps organizations realize the benefits of hyperscale cloud. And SQL Server and Microsoft Azure work better together because the Microsoft hybrid cloud technology provides a consistent set of tools and processes between on-premises and cloud-based environments. This means that SQL Server 2016 is designed to work in a hybrid cloud environment in which data and services reside in various locations.
+ 
+As a result, it is now much easier to move databases to the cloud. Learn about the hybrid scenarios supported in SQL Server 2016, which include Stretch Database, Always Encrypted, faster hybrid backups and high availability, and disaster recovery scenarios to back up and restore on-premises databases to Microsoft Azure and place SQL Server AlwaysOn secondaries in Azure.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ramon Ponte</b>, 
+</p>
+<hr>
+ 
+<h3>Everything you want to know about SQL Server 2016 Analysis Services</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2016 Analysis Services (SSAS) includes many new enhancements providing improved performance, easier solution authoring, automated database management, enhanced relationships with bi-directional cross filtering, parallel partition processing, and much more. In this session we will look at how Analysis services tabular models simplify solving complex business problems using over 50 new DAX functions and how new relationship types can help solve many to many issues. At the same time improved performance allows faster loading and analyzing of data. Come and join this session lo learn more about of these on other updates in the latest version of the heart of the Microsoft Business Intelligence platform.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alan Koo</b>, 
+</p>
+<hr>
+ 
+<h3>Real-time Operational Analytic with SQL Server 2016</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>En esta sesi#243;n estaremos viendo la funcionalidad de SQL Server 2016 llamada Operational Analytics que nos permite analizar las operaciones y transacciones de una base de datos sin la necesidad de ETLs o la construcci#243;n de Bodegas de Datos (Data Warehouses).</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jose L. Rivera</b>, 
+</p>
+<hr>
+ 
+<h3>Unlock Productivity and Freedom with Windows Containers</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Have you ever struggled with deployment speed? Or maybe application security issues? Look no further, Windows Containers are here. We will Describe what containers are, their purpose, and how they evolved. We will also have a technical overview of containers, their requirements, and their architecture and integration. We will describe the benefit of containers to developers. Finally, we will wrap up with some demos and use cases.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Juan Ortiz</b>, 
+</p>
+<hr>
+ 
+<h3>Windows 2016 + SQL: Better Together</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Explore the new features of Windows Server 2016 which make the operating system chosen for the execution of SQL Server 2016. Topics such as performance, high availability, integration with Azure, among other topics will touch.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Isaias Martinez</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI Data Visualization Tips and Tricks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this talk we will give best-practice recommendations and work-arounds for common data visualization scenarios in Power BI reports.  We will show how to configure several of the built-in visuals for best results, share some ways to creatively use measures, give hints on how to make reports visually appealing, introduce some of the most interesting custom visuals, and share many other tips and tricks that you can use right away in your designs.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Adolfo Socorro</b>, 
+</p>
+<hr>
+ 
+<h3>Xamarin.Forms – The rising hero!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Have you ever been walking on the dark alley of mobile development?  Where many different gangs of technology wonder around the area. You been a simple .Net-er walk in fear of been assaulted by the shadow of the Swift ninjas, or falling on the Java Latte family.  Fear no more!  Because now with the Xamarin.Forms you will have the great power of creating amazing mobile apps using the .Net skills that you already know.  Becoming the mobile hero, we need to live without fear!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Juan Martí</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2016 un vistazo a todo lo nuevo!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Con la disponibilidad de SQL Server 2016 se han podido ver las nuevas capacidades que tendr#225; la pr#243;xima versi#243;n de SQL Server, en esta sesi#243;n veremos los cambios que est#225;n proceso de desarrollo y c#243;mo pueden ser utilizados para crear mejores escenarios de aplicaciones y arquitecturas de soluciones de negocios.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Eduardo Castro</b>, 
+</p>
+<hr>
+ 
+<h3>Hered#233; una base de datos, y ahora que hago?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Si estas o reciente mente has estado en esta situaci#243;n en la que has heredado la base de datos o simplemente cambiaste de trabajo, y llegaste cuando la base de datos ya estaba creada, y se te hace familiar la frase de "Y ahora que hago?", en esta sencion te dare ciertos guias que te puede ayudar a comenzar a levantar el desempe#241;o de tu base de dfatos actual y verificar el estado de tus erstrategia de recuperaci#243;n de desastres.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kenneth Urena</b>, 
+</p>
+<hr>
+ 
+<h3>UFC #1433 In-Memory tables 2014 vs. 2016</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we will check the advantages of performance that In-Memory tables provides and how they evolved in SQL Server 2016. If you are planning to implement IN-Memory tables, check a performance comparison between 2014 and 2016, or just get to know how this technology works, this is the session you don#180;t want to miss. Let's Get Ready To Rumble!!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alejandro Cordero</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server: Indexing Fundamentals</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We all have indexes in our databases or at least should have indexes in them, but the question is, do we have the right types of indexes? Do we have too many or not enough? Are my indexes beneficial to my database? This session will leave you with the ability to answer these questions and more. We’ll review the different types of indexes in SQL Server and also discuss the structure of some of the main ones. I will show you how to verify if your indexes are being used, if they are being duplicated and finally how to maintain your indexes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Nigel Sammy</b>, 
+</p>
+<hr>
+ 
+<h3>Advance Analytics with SQL Server R Services</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server R Services provides a platform for developing intelligent applications that uncover new insights. In this session we will show how to get started with SQL Server R Services to operationalize R solutions or to create powerful data exploration and predictive modeling solutions.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jose L. Rivera</b>, 
+</p>
+<hr>
+ 
+<h3>Building a Modern Reporting Solution with SQL Server 2016</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>With the evolution of the Data Platform and as more tools become available, it is necessary to understand which will help us provide a stable, scalable and rich reporting experience to our end users. The new version of SQL Server and PowerBI brings us up to date with modern business intelligence trends. Join us for a technical overview of the new reporting and business intelligence capabilities in SQL Server 2016. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Guillermo Caicedo Santiago</b>, 
+</p>
+<hr>
+ 
+<h3>How I got my Scorecard - Measuring to Succeed (from MSFT Humacao, PR)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In today's data-driven world, we are compelled to devise new ways to measure and portray the results of what we manage in an effective manner. Allow us to share a story on how we are able to provide detailed and timely insight on Microsoft Product Keys worldwide from our Product Release and Security Services center at our Humacao, PR office, enabling our stakeholders to make better decisions.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Wilson Diaz</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Query Processor</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>El Query Processor de SQL Server es la parte primordial del motor de base de datos, est#225; involucrado en tareas tales como Query Execution y Query Optimization, en esta sesi#243;n veremos los detalles internos del procesador de consultas de SQL Server y c#243;mo ha cambiado a trav#233;s del tiempo, tambi#233;n nos enfocamos en c#243;mo entender su funcionamiento para mejorar el rendimiento de SQL Server.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Eduardo Castro</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2016 - Stretch Databases</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>En esta session vamos a ver como configurar la nueva funcionalidad de SQL Server 2016 Stretch Databases, y los beneficios que podemos obtener de ella en nuestra estrategia de alta disponibilidad.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kenneth Urena</b>, 
+</p>
+<hr>
+ 
+<h3>Accurate and Faster DBA: Start Creating Your Own DBA Toolbox Using Scripts</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>(Presented in Spanish) Are you planning a long database maintenance window? Are you experiencing performance issues? Do you need to evaluate or do changes in multiple SQL instances? In all these scenarios you want tools that may help you do your work accurately, but also faster. Solution? Start creating your own DBA Toolbox scripts. This session will explain and demonstrate day-to-day script samples.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jorge Sanchez</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Alejandro Cordero
+ - <a href="https://www.twitter.com/@ale_corderocr">@ale_corderocr</a>
+</h3>
+<p>LinkedIn: <a href="https://cr.linkedin.com/in/alejandrocorderocr">https://cr.linkedin.com/in/alejandrocorderocr</a></p>
+ 
+<p>Contact: <a href="http://sqlturbo.com">http://sqlturbo.com</a></p>
+ 
+<p>DBA with Over 10 years of experience. Focused on SQL Server development , performance tuning, High Availability. Scrum Master Certified, MCTS, MCSA, Entrepreneur and Author at SQLTurbo.com. Currently working as technical leader for database consultants in Pythian Company.
+
+Regular speaker at SQL Saturdays in Latin America ( Costa Rica, Guatemala, Colombia)  and virtual chapters( In-Memory chapter, Spanish Chapter). Have presented in SQL Saturday Ottawa in Canada.</p>
+ 
+<h3 class="section-heading">Paresh Motiwala
+ - <a href="https://www.twitter.com/pareshmotiwala">pareshmotiwala</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/pareshmotiwala">http://www.linkedin.com/in/pareshmotiwala</a></p>
+ 
+<p>Contact: <a href="https://pareshmotiwala.wordpress.com/wp-admin/post.php?post=2amp;action=editamp;message=6amp;postpost=v2">https://pareshmotiwala.wordpress.com/wp-admin/post.php?post=2amp;action=editamp;message=6amp;postpost=v2</a></p>
+ 
+<p>Paresh Motiwala a Azure/Big Data enthusiast, Manager of Database Platform teams has led several large SQL implementations, migrations and upgrades. He has managed multi terabyte OLTP databases. He has also been a Sr. SQL DBA and a Solutions Architect in Fortune 100 companies.  He helps/organizes and speaks at many SQL Saturdays, Azure Bootcamp, Azure Datafests and User Groups(Boston BI UG, NESQL, PASS PD VG and PASS DBA VG).
+
+He is certified in Big Data Analytics, FinTech, PMP, Public Speaking, Business Communications. He is a avid singer, cook, open networker, and stand-up comedian. 
+He teaches public speaking, debating, interviewing and group discussion skills and mentors children around the globe via www.circlesofgrowth.com</p>
+ 
+<h3 class="section-heading">Rafael Salas
+ - <a href="https://www.twitter.com/@RafSalas">@RafSalas</a>
+</h3>
+<p>Contact: <a href="http://www.rafael-salas.com">http://www.rafael-salas.com</a></p>
+ 
+<p>Rafael Salas is a recognized speaker and published author with more than 17 years of experience in business intelligence and information architecture. He is the recipient of multiple industry recognition, including the Microsoft MVP Award and The Data Warehouse Institute Best Practices Award. Rafael is also an active member of the SQL Server technical community and blogs regularly at www.rafael-salas.com.</p>
+ 
+<h3 class="section-heading">Jorge Sanchez
+
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/jorgesanchezpr">http://www.linkedin.com/in/jorgesanchezpr</a></p>
+ 
+<p>Mr. Jorge S#225;nchez brings +27 years of experience in the IT industry, currently working for Rock Solid Technologies as IT Manager. Previously, Mr. Sanchez worked 8 years in Microsoft Puerto Rico as SQL Server Regional Specialist for Caribbean and Central America with direct focus in Puerto Rico, Costa Rica, Dominican Republic, and Trinidad. Before that, he worked 14 years as Senior Consultant, Developer, and SQL Server Certified Instructor within the Microsoft Partners Ecosystem.</p>
+ 
+<h3 class="section-heading">Nigel Sammy
+ - <a href="https://www.twitter.com/@NigelSammy">@NigelSammy</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/nigelpsammy">http://www.linkedin.com/in/nigelpsammy</a></p>
+ 
+<p>Contact: <a href="http://www.nigelpsammy.com/">http://www.nigelpsammy.com/</a></p>
+ 
+<p>Nigel Peter Sammy is a Microsoft Data Platform MVP with over 15 years of technical experience which includes 12 years of database and SQL Server experience. Nigel previously worked at Microsoft as an Account Technology Strategist where he was responsible for providing pre-sales technical/architectural support for Commercial and Public Sector customers. He was also responsible for delivering technical presentations and proof of concepts using SQL Server, Azure and Power BI . He is a co-author of Microsoft’s SQL Server 2012 Upgrade Technical Guide and a technical editor of Wrox’s Microsoft SQL Server 2012 and 2016 Reporting Services books. For the last 9 years he has been presenting for conferences locally and internationally.</p>
+ 
+<h3 class="section-heading">Ramon Ponte
+
+</h3>
+<p>Ramon Ponte has over 19 years of experience delivering enterprise architecture and advisory services to medium and large size organizations in Puerto Rico, the Caribbean and Central America. Industries of expertise include government, education, financial services, insurance, and the telecommunication sector. Ramon#39;s area of specialization is Enterprise Application Platforms. This includes SOA, BI, BPM, ALM, Data Management and Enterprise Architecture.</p>
+ 
+<h3 class="section-heading">Adolfo Socorro
+ - <a href="https://www.twitter.com/@AdolfoSocorro">@AdolfoSocorro</a>
+</h3>
+<p>LinkedIn: <a href="https://pr.linkedin.com/in/adolfosocorro">https://pr.linkedin.com/in/adolfosocorro</a></p>
+ 
+<p>Contact: <a href="http://AdolfoSocorro.com">http://AdolfoSocorro.com</a></p>
+ 
+<p>Adolfo J. Socorro is a seasoned software professional experienced in the design, development, and implementation of custom-software solutions for public and private organizations.  He has been a project leader for many successful and high-impact projects, which have included mobile and web technologies, database design, data analysis, business intelligence, data warehouses, reporting, and data integration.  Dr. Socorro is a Microsoft Certified Professional and holds a Ph.D. in Computer Science from the University of Oxford.</p>
+ 
+<h3 class="section-heading">Nigel Sammy
+ - <a href="https://www.twitter.com/@NigelSammy">@NigelSammy</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/nigelpsammy">http://www.linkedin.com/in/nigelpsammy</a></p>
+ 
+<p>Contact: <a href="http://www.nigelpsammy.com/">http://www.nigelpsammy.com/</a></p>
+ 
+<p>Nigel Peter Sammy is a Microsoft Data Platform MVP with over 15 years of technical experience which includes 12 years of database and SQL Server experience. Nigel previously worked at Microsoft as an Account Technology Strategist where he was responsible for providing pre-sales technical/architectural support for Commercial and Public Sector customers. He was also responsible for delivering technical presentations and proof of concepts using SQL Server, Azure and Power BI . He is a co-author of Microsoft’s SQL Server 2012 Upgrade Technical Guide and a technical editor of Wrox’s Microsoft SQL Server 2012 and 2016 Reporting Services books. For the last 9 years he has been presenting for conferences locally and internationally.</p>
+ 
+<h3 class="section-heading">Kenneth Urena
+ - <a href="https://www.twitter.com/@sqlcr">@sqlcr</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sqlcr">https://www.linkedin.com/in/sqlcr</a></p>
+ 
+<p>Contact: <a href="http://www.sqlcr.com">http://www.sqlcr.com</a></p>
+ 
+<p>Kenneth Ureña is an experienced technologist with 17 years of experience, including 14 years of experience in SQL server. He has worked on versions from SQL Server 7.0 to SQL server 2016. 
+
+Kenneth has performed the role of Database Developer, Database Architect and Database Administrator, always relying on his disaster recovery and performance tuning skills.
+
+He co-leads the Global Spanish Virtual chapter of PASS. PASS LatAm Regional Mentor, he speaks at multiple SQL Server events in both Spanish and English. Kenneth holds multiple SQL server certifications.</p>
+ 
+<h3 class="section-heading">Juan Ortiz
+
+</h3>
+<p>Juan Ortiz is a Security Architect in Integration Technology#39;s Puerto Rico. He has specialized in executing and managing information technology risk consulting engagements. His expertise includes evaluating the risks and controls related to managing a company’s enterprise-wide technical processes, performing detail security assessments, and implementing business continuity solutions. He is also a leader in Microsoft based Cloud Services, Virtualization, Software Development and IT Infrastructure since 2008. He has experience in various industries, but has specific expertise in the insurance and banking services areas.</p>
+ 
+<h3 class="section-heading">Jose L. Rivera
+ - <a href="https://www.twitter.com/SQLConqueror">SQLConqueror</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=189422534">http://www.linkedin.com/profile/view?id=189422534</a></p>
+ 
+<p>Contact: <a href="http://sqlconqueror.com">http://sqlconqueror.com</a></p>
+ 
+<p>Jose L. Rivera is a seasoned data professional, speaker, homebrewer, trainer (former MCT), Data Platform MVP and community leader based in Puerto Rico working as Senior Financial Analyst for MCS. He shares his knowledge and experiences throughout his community work as Chapter Leader for the PASS Global Spanish VC (facebook.com/SpanishPASSVC), Vice-President of the Puerto Rico PASS (prpass.org), Mentor of GDG Puerto Rico (facebook.com/gdgpuertorico) and LATAM Regional Mentor at PASS. Jose L is a frequent speaker in SQL Saturday events throughout US and Latin America. He loves data, analytics, teaching, learning, having fun with his family, craft beer (a lot) and everything in between.</p>
+ 
+<h3 class="section-heading">Paresh Motiwala
+ - <a href="https://www.twitter.com/pareshmotiwala">pareshmotiwala</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/pareshmotiwala">http://www.linkedin.com/in/pareshmotiwala</a></p>
+ 
+<p>Contact: <a href="https://pareshmotiwala.wordpress.com/wp-admin/post.php?post=2amp;action=editamp;message=6amp;postpost=v2">https://pareshmotiwala.wordpress.com/wp-admin/post.php?post=2amp;action=editamp;message=6amp;postpost=v2</a></p>
+ 
+<p>Paresh Motiwala a Azure/Big Data enthusiast, Manager of Database Platform teams has led several large SQL implementations, migrations and upgrades. He has managed multi terabyte OLTP databases. He has also been a Sr. SQL DBA and a Solutions Architect in Fortune 100 companies.  He helps/organizes and speaks at many SQL Saturdays, Azure Bootcamp, Azure Datafests and User Groups(Boston BI UG, NESQL, PASS PD VG and PASS DBA VG).
+
+He is certified in Big Data Analytics, FinTech, PMP, Public Speaking, Business Communications. He is a avid singer, cook, open networker, and stand-up comedian. 
+He teaches public speaking, debating, interviewing and group discussion skills and mentors children around the globe via www.circlesofgrowth.com</p>
+ 
+<h3 class="section-heading">Juan Martí
+ - <a href="https://www.twitter.com/@jmarti326">@jmarti326</a>
+</h3>
+<p>LinkedIn: <a href="https://pr.linkedin.com/in/juan-marti-31a64564">https://pr.linkedin.com/in/juan-marti-31a64564</a></p>
+ 
+<p>Contact: <a href="http://polybits.io">http://polybits.io</a></p>
+ 
+<p>Passionate Software Developer in mobile and web technologies.  Leader of the Google Developers Group Puerto Rico Chapter and collaborator of various other developers communities in the US and Puerto Rico.</p>
+ 
+<h3 class="section-heading">Wilson Diaz
+
+</h3>
+<p>10 years experience designing, optimizing and leading in Business Intelligence environments across financial, telecommunications and software industries. </p>
+ 
+<h3 class="section-heading">Eduardo Castro
+ - <a href="https://www.twitter.com/edocastro">edocastro</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=7313296amp;authType=NAME_SEARCHamp;authToken=pBHMamp;locale=en_USamp;srchid=73132961426368749508amp;srchindex=1amp;srchtotal=50amp;trk=vsrp_people_res_nameamp;trkInfo=VSRPsearchId%3A73132961426368749508%2CVSRPtargetId%3A7313296%2CVSRPcmpt%3Aprimary%2CVSRPnm%3A">https://www.linkedin.com/profile/view?id=7313296amp;authType=NAME_SEARCHamp;authToken=pBHMamp;locale=en_USamp;srchid=73132961426368749508amp;srchindex=1amp;srchtotal=50amp;trk=vsrp_people_res_nameamp;trkInfo=VSRPsearchId%3A73132961426368749508%2CVSRPtargetId%3A7313296%2CVSRPcmpt%3Aprimary%2CVSRPnm%3A</a></p>
+ 
+<p>Contact: <a href="http://ecastrom.blogspot.com">http://ecastrom.blogspot.com</a></p>
+ 
+<p>Eduardo Castro, Microsoft Data Platform MVP and PASS Board of Advisor for LATAM, is well known LATAM SQL Server Expert and focuses on architecture, Business Intelligence and Data Analytics, Eduardo has an specialization and master degree in Data Analysis and Big Data. I have been speaker at PASS Summit delivering session about R and Data Science.
+
+Eduardo Castro has presented in United States, Costa Rica, Colombia, Guatemala, Mexico, Panama, El Salvador and South Korea.</p>
+ 
+<h3 class="section-heading">Isaias Martinez
+
+</h3>
+<p>LinkedIn: <a href="http://pr.linkedin.com/in/isaiasrma">http://pr.linkedin.com/in/isaiasrma</a></p>
+ 
+<p>Contact: <a href="http://www.isaiasmartinez.com">http://www.isaiasmartinez.com</a></p>
+ 
+<p>Awarded as MVP C# for 7 consecutive years. Over 20 years of extensive experience in management, design and implementation of information technology projects aimed to automate processes to minimize time, save resources and improve operational efficiency. This to enhance the vision and mission of the organizations. The experience has been gathered in projects performed in various countries such as: Venezuela, Bolivia, Panama, Colombia, and Puerto Rico. In the last 6 years, I have specialized as Cloud Architect, leading the implementation of Microsoft Azure Solutions in Puerto Rico. My certifications include Microsoft MCP, MCSD, MCSE, MCT, MCDBA.#160;</p>
+ 
+<h3 class="section-heading">Jose L. Rivera
+ - <a href="https://www.twitter.com/SQLConqueror">SQLConqueror</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=189422534">http://www.linkedin.com/profile/view?id=189422534</a></p>
+ 
+<p>Contact: <a href="http://sqlconqueror.com">http://sqlconqueror.com</a></p>
+ 
+<p>Jose L. Rivera is a seasoned data professional, speaker, homebrewer, trainer (former MCT), Data Platform MVP and community leader based in Puerto Rico working as Senior Financial Analyst for MCS. He shares his knowledge and experiences throughout his community work as Chapter Leader for the PASS Global Spanish VC (facebook.com/SpanishPASSVC), Vice-President of the Puerto Rico PASS (prpass.org), Mentor of GDG Puerto Rico (facebook.com/gdgpuertorico) and LATAM Regional Mentor at PASS. Jose L is a frequent speaker in SQL Saturday events throughout US and Latin America. He loves data, analytics, teaching, learning, having fun with his family, craft beer (a lot) and everything in between.</p>
+ 
+<h3 class="section-heading">Kenneth Urena
+ - <a href="https://www.twitter.com/@sqlcr">@sqlcr</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sqlcr">https://www.linkedin.com/in/sqlcr</a></p>
+ 
+<p>Contact: <a href="http://www.sqlcr.com">http://www.sqlcr.com</a></p>
+ 
+<p>Kenneth Ureña is an experienced technologist with 17 years of experience, including 14 years of experience in SQL server. He has worked on versions from SQL Server 7.0 to SQL server 2016. 
+
+Kenneth has performed the role of Database Developer, Database Architect and Database Administrator, always relying on his disaster recovery and performance tuning skills.
+
+He co-leads the Global Spanish Virtual chapter of PASS. PASS LatAm Regional Mentor, he speaks at multiple SQL Server events in both Spanish and English. Kenneth holds multiple SQL server certifications.</p>
+ 
+<h3 class="section-heading">Rodney Landrum
+ - <a href="https://www.twitter.com/@SQLBeat">@SQLBeat</a>
+</h3>
+<p>Contact: <a href="https://www.simple-talk.com/blogs/author/2133-rodney-landrum/">https://www.simple-talk.com/blogs/author/2133-rodney-landrum/</a></p>
+ 
+<p>Rodney Landrum has been architecting solutions for SQL Server for over 12 years. He has worked with and written about many SQL Server technologies, including DTS, Integration Services, Analysis Services, and Reporting Services. He has co-authored 4 books on Reporting Services. He is been a regular contributor to SQL Server magazine, sqlservercentral.com and Simple-talk.com. Rodney is also SQL Server MVP</p>
+ 
+<h3 class="section-heading">Alan Koo
+ - <a href="https://www.twitter.com/alan_koo">alan_koo</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/alankoo">https://www.linkedin.com/in/alankoo</a></p>
+ 
+<p>Contact: <a href="http://www.alankoo.com">http://www.alankoo.com</a></p>
+ 
+<p>Alan Koo is a 6th time Microsoft MVP in SQL Server with over 15 years of technical experience architecting and developing solutions oriented to increase businesses performance in both public and private sectors. Alan joined Nagnoi, LLC. in 2005 as the technical lead in the Performance Management amp; Business Intelligence Practice.  Alan Koo is the co-founder and former President of Puerto Rico PASS. He shares his knowledge through his quot;Microsoft Business Intelligence y mas...quot; blog and the the MSDN Forums.</p>
+ 
+<h3 class="section-heading">Eduardo Castro
+ - <a href="https://www.twitter.com/edocastro">edocastro</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=7313296amp;authType=NAME_SEARCHamp;authToken=pBHMamp;locale=en_USamp;srchid=73132961426368749508amp;srchindex=1amp;srchtotal=50amp;trk=vsrp_people_res_nameamp;trkInfo=VSRPsearchId%3A73132961426368749508%2CVSRPtargetId%3A7313296%2CVSRPcmpt%3Aprimary%2CVSRPnm%3A">https://www.linkedin.com/profile/view?id=7313296amp;authType=NAME_SEARCHamp;authToken=pBHMamp;locale=en_USamp;srchid=73132961426368749508amp;srchindex=1amp;srchtotal=50amp;trk=vsrp_people_res_nameamp;trkInfo=VSRPsearchId%3A73132961426368749508%2CVSRPtargetId%3A7313296%2CVSRPcmpt%3Aprimary%2CVSRPnm%3A</a></p>
+ 
+<p>Contact: <a href="http://ecastrom.blogspot.com">http://ecastrom.blogspot.com</a></p>
+ 
+<p>Eduardo Castro, Microsoft Data Platform MVP and PASS Board of Advisor for LATAM, is well known LATAM SQL Server Expert and focuses on architecture, Business Intelligence and Data Analytics, Eduardo has an specialization and master degree in Data Analysis and Big Data. I have been speaker at PASS Summit delivering session about R and Data Science.
+
+Eduardo Castro has presented in United States, Costa Rica, Colombia, Guatemala, Mexico, Panama, El Salvador and South Korea.</p>
+ 
+<h3 class="section-heading">Guillermo Caicedo Santiago
+ - <a href="https://www.twitter.com/@sqltitan">@sqltitan</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/gcaicedo/">http://www.linkedin.com/in/gcaicedo/</a></p>
+ 
+<p>Contact: <a href="http://www.sqltitan.com">http://www.sqltitan.com</a></p>
+ 
+<p>Guillermo Caicedo es un profesional de bases de datos y tecnolog#237;a trabajando como Consultor en Nagnoi, LLC. Ha ayudado a numerosas empresas a obtener conocimiento sobre sus datos por desarrollar e implementar soluciones de inteligencia empresarial en sus organizaciones. El Sr. Caicedo tambi#233;n tiene una amplia experiencia desarrollando aplicaciones web y m#243;viles. Guillermo es un Data Platform MVP y l#237;der del Cap#237;tulo PASS para Puerto Rico (PRPASS).</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.nagnoi.com">Nagnoi, LLC</a></p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Puerto Rico</a></p>
+ 
+<p><a href="http://www.pass.org">PASS</a></p>
+ 
+<p><a href="http://www.experis.com">Experis Puerto Rico</a></p>
+ 
+<p><a href="http://www.facebook.com/ComunidadWindows">Comunidad Windows</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

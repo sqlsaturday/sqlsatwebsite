@@ -1,0 +1,525 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #566 - Parma 2016" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #566 - Parma 2016
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #566 - Parma 2016</div>
+        <div class="masthead-subheading">This event was held on 2016-11-26</div>
+        <p><b>Event Location</b>:</p>
+        <p>Università degli Studi di Parma, Dipartimento di Ingegneria dell'Informazione</p>
+        <p>Viale Usberti, 181</p>
+        <p>Parma, Emilia-Romagna, Italy</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0566.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Troubleshooting delle prestazioni delle query con SQL Server 2016 Query Store</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Query Data Store è la nuova funzionalità di SQLServer 2016 che permette la storicizzazione nel tempo delle prestazioni delle query in termini di consumo delle risorse e dei relativi piani di esecuzione, oltre i riavvii della macchina.
+La sessione entra nel dettaglio di Query Store e mostra come questo meccanismo permetta di effettuare analisi sofisticate del comportamento delle query e delle loro prestazioni. Illustra come sia possibile correlare il cambiamento delle performances ed il consumo delle risorse a quello del piano di esecuzione oppure seguire nel tempo l’evoluzione di un piano di esecuzione in funzione di eventi quali cambio delle statistiche, modifiche dello schema o presenza di indici. Inoltre, analizzare le prestazioni di determinate porzioni del codice, individuare regressioni e identificare le query che hanno degradato nelle ultime esecuzioni tra tutte quelle eseguite. 
+Più in generale, la sessione mostra come trarre il massimo vantaggio da questa funzionalità in un’</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Saverio Lorenzini</b>, 
+</p>
+<hr>
+ 
+<h3>Giving Permissions through Stored Procedures</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You probably know that with a stored procedure you can permit users to access or update data even if they have no direct permissions on the table. But you may have noticed that this does not work when the SP uses dynamic SQL. 
+
+In this session you will learn why it is so and techniques how you can use to overcome this. You will also learn that the same techniques can be to permit users to perform specific actions they need to do without granting them general high-level permissions on database or server level by packaging these actions into a stored procedure. You will also learn why should should be careful with setting a database TRUSTWORTHY.
+
+The session should be of interest both to DBAs and application developers that need to consider advanced permissions in their stored procedures.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Erland Sommarskog</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Extended Events: monitoring  tuning (IT)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Extended Events è un sistema per la raccolta di eventi generati dai vari componenti di SQL Server a scopo diagnostico. Introdotto in SQL Server 2008 è stato inizialmente considerato da molti unicamente come futuro sostituto di SQL Trace con il pregio di avere un minore impatto sul sistema tracciato. In realtà Extended Events ha sempre offerto funzionalità uniche per la raccolta e la correlazione di alcuni eventi tramite un singolo strumento. In questa sessione vedremo come utilizzare al meglio questo sistema che con il tempo è diventato un componente sempre più importante dell'infrastruttura diagnostica anche per l'ottimizzazione delle prestazioni.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gianluca Hotz</b>, 
+</p>
+<hr>
+ 
+<h3>Upload data on Azure SQL Database with Azure Service Bus amp; Azure Logic Apps</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Sempre pi#249; spesso le infrastrutture applicative includono piattaforme dati in esecuzione sul cloud. Uno dei problemi con cui ci si scontra riguarda la modalit#224; di integrazione con queste nuove piattaforme. Questa sessione mostra alcune tecniche per trasferire dati da sistemi e applicazioni presenti nella propria farm verso il cloud. Vedremo come #232; possibile trasferire dati provenienti da database relazionali o flat file verso Azure SQL Database, utilizzando servizi come Azure Service Bus, Azure Stream Analytics e Azure Logic Apps.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Salvatore Pellitteri</b>, 
+</p>
+<hr>
+ 
+<h3>Continuous integration for BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Team Foundation Server (TFS) is a collaboration platform to manage the lifecycle of your BI Solution. In this session, we are going to focus on the interaction between SSDT, SSIS, TFS and automated testing. 
+
+I will demonstrative how to do develop, test and publish and publishing the changes to an on-premises instance of SQL Server. We will look at how we can do continuous integration of Databases and other BI elements between development and diffrent environments in a seamless manner upon successful build of the solution. 
+
+Testing will cover different aspects of SQL, SSAS and execution of SSIS packages for test-purposes to ensure simple setup of test-cases and both manual and automated execution.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Bent Pedersen</b>, 
+</p>
+<hr>
+ 
+<h3>Crate your own Data Pipeline with Spark on HDInsight</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>HDInsight is a powerfull tool for the process of big amount of data such as web/application log, sensor data and many other scalable datasources.
+During this session we will handle:
+* Create manually and programmatically an HDInsight Cluster
+* Work on a python noteook for the creation of a prototype
+* Create a simple Spark application that manage your logs
+* Aggregate your data on SQL Azure
+* Create a simple powerbi dashboard
+
+At the end of the session you will be able to create data pipeline on the cloud.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Roberto Grandi</b>, 
+</p>
+<hr>
+ 
+<h3>Common non-configured options on a Database Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Una soluzione database ha performance ottimali quando l'applicazione scala all'aumentare dei dati, e il database server #232; configurato (e dimensionato) correttamente. In questa sessione verranno esaminate alcune opzioni che se lasciate "by default" non permetteranno di ottenere le massime prestazioni dal vostro database server. Verranno trattate opzioni del sistema operativo, dell'istanza SQL Server fino ad arrivare alla configurazione del piano di manutenzione. Se pensate che il vostro database server sia configurato correttamente, non perdete questa sessione!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sergio Govoni</b>, 
+</p>
+<hr>
+ 
+<h3>T-SQL Error Handling - Perchè gestire gli errori è importante</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Perchè dovrei gestire gli errori nel codice T-SQL ? Cosa succede se in una transazione si verifica un errore ?
+La gestione degli errori è spesso sottovalutata nella scrittura del codice T-SQL e questo potrebbe porre i dati in serio pericolo. 
+Tutto quello che c'è da sapere per scrivere codice T-SQL, e non solo, robusto ed affidabile.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Luca Ferrari</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2016 Temporal Database Support - Focus on Retention and Performance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Dopo alcuni mesi di utilizzo delle tabelle temporali potremmo trovarci con milioni di record nelle tabelle "storiche" che (forse) non ci serviranno poi così spesso oppure non ci serviranno mai. Dopo una adeguata introduzione rivolta a chi non avesse ancora approcciato questa nuova feature di SQL Server 2016 di procederà all'analisi delle tecniche per fare della adeguata manutenzione in scenari critici.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Pasquale Ceglie</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Infernals: Worst Practices in Action</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Let’s face it: Best Practices are too many to really know them all and choose which ones should be applied first. Does your telephone ring all the time? Do your users ask for that “quick report” that instead takes ages and keeps changing every time you think it’s done? 
+
+Have you ever thought that in dire times avoiding Worst Practices could be a good starting point and you can leave fine tuning for a better future? If the answer is “yes”, then this session is for you: we will discover together how not to torture a SQL Server instance and we will see how to avoid making choices that in the long run could turn out to be not as smart as they looked initially.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gianluca Sartori</b>, 
+</p>
+<hr>
+ 
+<h3>Cortana Intelligence Suite overview</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Che cos’è “Cortana Intelligence Suite”? Quali sono i servizi e le tecnologie che mette a disposizione? Perché e come ci può essere utile? Queste sono alcune delle domande a cui cercheremo di dare riposta in questa sessione che fornirà una overview dell’intera Suite di Microsoft. Si tratta di una sessione per “beginners” il cui obiettivo è quello di fornire una comprensione di base dell’architettura di Cortana Intelligence Suite e delle infinite potenzialità che essa ci mette a disposizione.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Francesco De Chirico</b>, 
+</p>
+<hr>
+ 
+<h3>Elastic Database, going to the infinity *</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Elastic Database features enables you to use the virtually unlimited database resources of Azure SQL Database to create solutions for transactional workloads, and especially Software as a Service (SaaS) applications. Honors and duties to use this feature: in this session we will try to understand how it works, when to use it and when it becomes necessary. * Depends on your wallet ;D</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Emanuele Zanchettin</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server tuning in pillole</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>E' capitato anche a voi di avere a che fare con l'ottimizzazione delle prestazioni di SQL Server ? Magari quella query che certi giorni va come una fucilata e altri lentissima ? In questa sessione, di taglio pratico, vedremo quali sono le metodologie di analisi e tuning delle query, attraverso piccoli esempi mirati (pillole, appunto), che forniscano, se non proprio una soluzione, almeno uno spunto di riflessione per migliorare l'uso di SQL Server ed ottimizzarne le performance.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Danilo Dominici</b>, 
+</p>
+<hr>
+ 
+<h3>APPLY operator in action</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>APPLY operator is a T-SQL table operator that allows to boost query perfomance and to solve complex calculation problems in an very efficient way. 
+But it isn't easy to understandt how does it work and how it can be applied to our queries. 
+In this session, we will examine the various types of APPLY operator (CROSS APPLY, OUTER APPLY) to understand it's behaviour and the power it holds.
+We will go through many real world cases to show how we can use the APPLY operator when writing queries instead of JOINs 
+and we will show how performances can be improved by using this operator the right way.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrea Martorana Tusa</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI: basic data modelling with DAX</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session will introduce you to the concept of basic data modeling with some practical examples that you will be able to reproduce on the hands-on-lab PC. This introduction covers basic calculations and an overview of all the scalar and table functions in DAX</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marco Pozzan</b>, 
+</p>
+<hr>
+ 
+<h3>State of Azure SQL Database</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure is an evolving Cloud as each service increase functionalities on a daily basis. Azure Sql Database, the SQL Server executed as Platform as a Service is one of the most important services and is not excluded from this evolution, also with new features that comes from SQL Server 2016. Let's see how to use, manage, develop with SQL in the cloud.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marco Parenzan</b>, 
+</p>
+<hr>
+ 
+<h3>Configurare Always On Availability Group in Azure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure offre due differenti modelli di deployment per creare e gestire risorse: Resource Manager e "classic".
+In entrambe le modalità è possibile e conveniente allestire un ambiente Always On Availability group. 
+SQL Server 2016 trova in Azure un contesto di elevata efficienza e relativa semplicità. In questa sessione 
+si introducono le novità relative ad Always On e si illustrano alcuni tra i possibili metodi per l'implementazione 
+della farm di server adibiti alla replica Always On dei nostri database.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gilberto Zampatti</b>, 
+</p>
+<hr>
+ 
+<h3>Using R in the Azure ML platform</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure ML, Microsoft’s machine learning service in the cloud, enables you to easily build, deploy and share advanced analytics solutions. Azure ML provides many machine learning algorithms and data preparation tasks. In addition, Azure Machine Learning supports R. You can bring in your existing R codes in to Azure Machine Learning and run it in the same experiment with the built-in learners and publish this as web service. R code can be used to prepare and manipulate the data, to train machine learning models and to make predictions on new data. This session shows how to use R  in order to maximize the benefits of Azure ML.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alessandro Rezzani</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Alessandro Rezzani
+ - <a href="https://www.twitter.com/@alerezzani">@alerezzani</a>
+</h3>
+<p>LinkedIn: <a href="https://it.linkedin.com/in/alessandrorezzani">https://it.linkedin.com/in/alessandrorezzani</a></p>
+ 
+<p>Contact: <a href="http://www.dataskills.it/blog">http://www.dataskills.it/blog</a></p>
+ 
+<p>I#39;m a senior Business Intelligence consultant and I#39;m specialized in data mining and big data applications.
+Since 2004, I’ve designed and developed Business Intelligence and Data Mining solutions based mainly on the Microsoft platform.  The main activities I’m involved in are: 
+-  Data Mining amp; Machine Learning projects.
+ - Data warehouse, OLAP cubes, ETL design and implementation 
+- Training on BI amp; Data minign topics
+- Lecturing at Univesit#224; Bocconi
+- Writing Books</p>
+ 
+<h3 class="section-heading">Francesco De Chirico
+ - <a href="https://www.twitter.com/http://twitter.com/fdechirico">http://twitter.com/fdechirico</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/fdechirico">http://www.linkedin.com/in/fdechirico</a></p>
+ 
+<p>Contact: <a href="http://francescodechirico.wordpress.com/">http://francescodechirico.wordpress.com/</a></p>
+ 
+<p>Francesco De Chirico is a consultant, trainer and speaker specialized in modeling and developing complex BI solutions with the Microsoft BI stack. He has been working with SSAS since 2001 and has a strong knowledge of the MDX, DAX and M. He focused on all the Microsoft Data Platform especially on Power BI. Co-leader of the PASS Global Italian Virtual Group and Milan Power BI User Group, regular speaker at events like PASS SQLSaturday, Microsoft Certified Trainer for many years, Francesco holds several Microsoft certifications including the prestigious SSAS Maestro for BI certification (2012) and the Microsoft Professional Program Data Science certification (2017). He is the project creator of the Analysis Services Query Analyzer tool.</p>
+ 
+<h3 class="section-heading">Saverio Lorenzini
+ - <a href="https://www.twitter.com/sqlSavelor">sqlSavelor</a>
+</h3>
+<p>LinkedIn: <a href="https://it.linkedin.com/in/saveriolorenzini">https://it.linkedin.com/in/saveriolorenzini</a></p>
+ 
+<p>Saverio Lorenzini is a Principal Engineer at the Premier Field Engineering division in Microsoft Italy. He has a master degree in Computer Science Engineering from University of Pisa, and joined Microsoft in 1998, where he started working on SQL Server from version 7.0.
+With more than 20 years of experience on SQL Server, he works on customer projects, focusing on performance tuning and optimization, solution development. He recently designed and developed SQL Monitoring Dashboard, a monitoring and performance analysis Web solution for SQL Server farms, sold by Microsoft Italy to Premier customers. He is a speaker at Microsoft events (TechReady), SQLPASS Summit and at PASS SQL Saturday community conferences, where he is an active member.</p>
+ 
+<h3 class="section-heading">Marco Pozzan
+ - <a href="https://www.twitter.com/@marcopozzan">@marcopozzan</a>
+</h3>
+<p>LinkedIn: <a href="https://it.linkedin.com/in/marcopozzan">https://it.linkedin.com/in/marcopozzan</a></p>
+ 
+<p>Contact: <a href="http://www.marcopozzan.it">http://www.marcopozzan.it</a></p>
+ 
+<p>Consultant and trainer in business intelligence, analytics and data mining on Methode . Teacher for ITS courses of data warehouse at the University of Pordenone.</p>
+ 
+<h3 class="section-heading">Salvatore Pellitteri
+ - <a href="https://www.twitter.com/@pellittsa">@pellittsa</a>
+</h3>
+<p>LinkedIn: <a href="http://it.linkedin.com/pub/salvatore-pellitteri/2a/184/719/">http://it.linkedin.com/pub/salvatore-pellitteri/2a/184/719/</a></p>
+ 
+<p>Contact: <a href="https://pellitterisbiztalkblog.wordpress.com">https://pellitterisbiztalkblog.wordpress.com</a></p>
+ 
+<p>Salvatore Pellitteri lives in Italy. He is Developer Team Manager in Microsys Srl. He works on integration application projects using Microsoft Integration stack and on data platform projects using SQL Server.
+Salvatore works with BizTalk Server and Azure Integration technologies since the first version and has worked in many big integration project with several Italian enterprise organizations using many technologies like SAP, Oracle, SQL Server, Salesforce, Microsoft Dynamics 365/CRM/AX/NAV, AS400, J.D. Edwards, EDI and HL7.
+
+He is Microsoft P-Seller for Data Platform and Microsoft Most Valuable Professional (MVP) for Microsoft Application Integration / Azure for three years.</p>
+ 
+<h3 class="section-heading">Andrea Martorana Tusa
+ - <a href="https://www.twitter.com/bruco441">bruco441</a>
+</h3>
+<p>Andrea Martorana Tusa is a Business Intelligence Team Manager at Würth Phoenix,  the IT and consulting company of the Würth-Group. 
+He is awarded as MVP in the Data Platform category
+
+Former BI Specialist at Widex, a Danish manufacturing company, and BI Developer in the IT department of an Italian banking group. 20+ years of experience working with data. 
+He is focused on the entire BI stack: database development, data warehousing, data analysis, reporting, etc. 
+Andrea is a usual speaker at many events: SQLSaturdays, conferences in Europe and PASS Summit, and for PASS Virtual Groups. 
+
+Andrea is an author for sqlshack.com, sqlservercentral.com, and UGISS (User Group Italiano SQL Server).</p>
+ 
+<h3 class="section-heading">Gianluca Hotz
+ - <a href="https://www.twitter.com/glhotz">glhotz</a>
+</h3>
+<p>LinkedIn: <a href="http://it.linkedin.com/in/ghotz">http://it.linkedin.com/in/ghotz</a></p>
+ 
+<p>Contact: <a href="http://www.ghotz.com">http://www.ghotz.com</a></p>
+ 
+<p>Gianluca Hotz is an independent consultant, trainer, speaker and Mentor specialized in architecture, database design, high availability, capacity planning, performance tuning, system integration and migrations for Microsoft SQL Server. He has been working as a consultant in the IT field since 1993 and with SQL Server since 1996. He is among the original founders of ugiss.org, where he served as vice-president from 2001 to 2016 and he is now serving as president, for his contribution to the community he has been a SQL Server MVP since 1998.</p>
+ 
+<h3 class="section-heading">Bent Pedersen
+ - <a href="https://www.twitter.com/https://twitter.com/SQLBent">https://twitter.com/SQLBent</a>
+</h3>
+<p>LinkedIn: <a href="https://dk.linkedin.com/in/bentnissenpedersen">https://dk.linkedin.com/in/bentnissenpedersen</a></p>
+ 
+<p>Contact: <a href="http://www.biblog.eu">http://www.biblog.eu</a></p>
+ 
+<p>Bent is a Data Platform MVP and working as Senior Business Analytics Architect at Kapacity A/S, where he have been working with enterprise customers on solutions with SSAS Tabular, SQL Server and in general Azure Data Platform services for the last years. During the past years, he concentrated on working with architecturing, devOps, Automation, testing and simplifying development processes for the Azure Data Platform.</p>
+ 
+<h3 class="section-heading">Gilberto Zampatti
+
+</h3>
+<p>Time ago (a lot of time ago…) an excellent IT pro brought me with him and became my Mentor in the IT wonderland…it was a world full of mainframes…
+I met the Relational theory when there were no commercial RDBMS, and I was spellbound by that “magic”. When Microsoft appeared in the IT market, I felt finally which trek I had to follow. I’m still walking on such road, and in my rucksack I’ve ben putting some other stuff (like SharePoint, for example). My sole regret:  I’ve left the College to consecrate all my time to my job; curiously, since then, I’ve never stop learning…</p>
+ 
+<h3 class="section-heading">Luca Ferrari
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=101837495amp;authType=NAME_SEARCHamp;authToken=i4Ctamp;locale=it_ITamp;srchid=1018374951435910175159amp;srchindex=1amp;srchtotal=284amp;trk=vsrp_people_res_nameamp;trkInfo=VSRPsearchId%3A1018374951435910175159%2CVSRPtargetId%3A101837495%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue">https://www.linkedin.com/profile/view?id=101837495amp;authType=NAME_SEARCHamp;authToken=i4Ctamp;locale=it_ITamp;srchid=1018374951435910175159amp;srchindex=1amp;srchtotal=284amp;trk=vsrp_people_res_nameamp;trkInfo=VSRPsearchId%3A1018374951435910175159%2CVSRPtargetId%3A101837495%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue</a></p>
+ 
+<p>Contact: <a href="http://tipsandtrickssqlserver.blogspot.com">http://tipsandtrickssqlserver.blogspot.com</a></p>
+ 
+<p>Luca Ferrari lavora in Microsoft Italia come PFE Engineer.
+Lavora con Sql server dalla versione 2000 ed ha seguito con attenzione tutte le evoluzioni del prodotto.
+Si occupa principalmente di:
+MPP  SMP Design
+Troubleshooting
+Performance Tuning
+SSIS e SSRS, Azure SQL Database, Azure DataWarehouse.</p>
+ 
+<h3 class="section-heading">Emanuele Zanchettin
+ - <a href="https://www.twitter.com/@_thinkIT_">@_thinkIT_</a>
+</h3>
+<p>LinkedIn: <a href="http://it.linkedin.com/pub/emanuele-zanchettin/18/921/34/">http://it.linkedin.com/pub/emanuele-zanchettin/18/921/34/</a></p>
+ 
+<p>Emanuele Zanchettin, after studying in Computer Engineering, began his career with DB2 in the banking sector in 1998. After a few years and a change of scope of application, he encountered Access and Oracle with which he subsequently worked for several years in data access tuning and database design for new application features. Since 2007 he has also launched into the SQLServer world 2K, 2005, 2008* and 201* and more importantly, since 2011, into Azure SQL Database (SQL Azure). In order to have a greater capacity for assessment and familiarity with the various technologies that the market offers, he has deepened his knowledge to include MySQL and DocumentDB. Today Emanuele is mainly involved in IT projects and database management.</p>
+ 
+<h3 class="section-heading">Marco Parenzan
+ - <a href="https://www.twitter.com/@marco_parenzan">@marco_parenzan</a>
+</h3>
+<p>LinkedIn: <a href="https://it.linkedin.com/in/marcoparenzan">https://it.linkedin.com/in/marcoparenzan</a></p>
+ 
+<p>Contact: <a href="https://www.linkedin.com/in/marcoparenzan/">https://www.linkedin.com/in/marcoparenzan/</a></p>
+ 
+<p>Marco Parenzan is an independent Cloud and IoT Architect and .NET Developer. 
+He has been awarded as a MVP on Microsoft Azure since 2014. 
+He is a speaker in major community events in Italy about Azure and .NET development.
+He is a community lead for 1nn0va, an official Microsoft community in Pordenone, Italy. 
+He has written a book on Azure in 2016. 
+He loves developing retrogames and reading comix.
+
+Marco Parenzan è professionista per le architetture Cloud e IoT e lo sviluppo in .NET. 
+Ha ricevuto il titolo di MVP su Microsoft Azure dal 2014. 
+È uno speaker in Italia su Azure e lo sviluppo di .NET. 
+E' un community lead per 1nn0va, una community ufficiale Microsoft a Pordenone, in Italia. 
+Ha scritto un libro su Azure nel 2016.</p>
+ 
+<h3 class="section-heading">Sergio Govoni
+ - <a href="https://www.twitter.com/@segovoni">@segovoni</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/sgovoni">http://www.linkedin.com/in/sgovoni</a></p>
+ 
+<p>Contact: <a href="https://mvp.microsoft.com/it-it/PublicProfile/4029181?fullName=Sergio%20Govoni">https://mvp.microsoft.com/it-it/PublicProfile/4029181?fullName=Sergio%20Govoni</a></p>
+ 
+<p>Since 1999 Sergio Govoni has been a software developer; in 2000 he got a degree in Computer Science at "Università degli Studi" in Ferrara (Italy). He has worked for over 18 years in Centro Software, a software house that produces the best ERP for manufacturing companies that are export oriented. Now, he manages the development product team and he is constantly involved on several team projects, where he focues his attention on the architecture and the mission-critical technical details. Since 2016 he is the vice president of the UGISS (www.ugiss.org). For the provided help to technical communities and for sharing his own experience, since 2010 he has received the Microsoft Data Platform MVP award.</p>
+ 
+<h3 class="section-heading">Pasquale Ceglie
+ - <a href="https://www.twitter.com/@pceglie">@pceglie</a>
+</h3>
+<p>LinkedIn: <a href="https://it.linkedin.com/in/pasqualeceglie">https://it.linkedin.com/in/pasqualeceglie</a></p>
+ 
+<p>MCSE - Data Management and Analytics</p>
+ 
+<h3 class="section-heading">Erland Sommarskog
+
+</h3>
+<p>Contact: <a href="http://www.sommarskog.se">http://www.sommarskog.se</a></p>
+ 
+<p>Erland Sommarskog is an independent consultant based in Stockholm, working with SQL Server since 1991. He was first awarded SQL Server MVP in 2001, and has been re-awarded every year since. His focus is on systems development with the SQL Server Database Engine and his passion is to help people to write better SQL Server applications.</p>
+ 
+<h3 class="section-heading">Gianluca Sartori
+ - <a href="https://www.twitter.com/http://twitter.com/#!/spaghettidba">http://twitter.com/#!/spaghettidba</a>
+</h3>
+<p>LinkedIn: <a href="http://it.linkedin.com/pub/gianluca-sartori/23/50b/a12">http://it.linkedin.com/pub/gianluca-sartori/23/50b/a12</a></p>
+ 
+<p>Contact: <a href="http://spaghettidba.com">http://spaghettidba.com</a></p>
+ 
+<p>Gianluca Sartori is a Data Platform MVP, independent consultant and performance tuning specialist. He has been working in the software industry since 1999 and has been working with SQL Server ever since. He also works as a SQL Server trainer and in his spare time he writes technical articles and participates the SQL Server forums. Gianluca enjoys presenting SQL Server topics at conferences in Europe and in Italy in particular. He is currently working as lead DBA at a famous Formula 1 team.</p>
+ 
+<h3 class="section-heading">Roberto Grandi
+ - <a href="https://www.twitter.com/@grandirob">@grandirob</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/roberto-grandi-7957444">https://www.linkedin.com/in/roberto-grandi-7957444</a></p>
+ 
+<p>I am an enthusiast about MS technlologies. I started working on SQL Server 2000 and now I am working on the latest version of Azure HDInsight.
+I love my work and I like to share what I have discovered and learned.</p>
+ 
+<h3 class="section-heading">Danilo Dominici
+ - <a href="https://www.twitter.com/@danilo_dominici">@danilo_dominici</a>
+</h3>
+<p>Danilo Dominici, lavora con SQL Server sin dalla versione 6.5. Si occupa principalmente di progettazione, implementazione ed ottimizzazione architetturale, monitoring e performance tuning.  Alterna le attivit#224; di consulenza a quelle di formatore, speaker ed autore. Microsoft Certified Trainer dal 2000 e SQL Server MVP dal 2014, #232; anche co-leader del PASS Global Italian Virtual Chapter, lo user group quot;virtualequot; in lingua italiana dedicato a SQL Server.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.apexsql.com">Apex SQL</a></p>
+ 
+<p><a href="http://www.afterspellstudios.it/">After Spell Studios</a></p>
+ 
+<p><a href="http://www.sqlsentry.net">SQL Sentry, Inc.</a></p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://www.elfo.net/">Elfo srl</a></p>
+ 
+<p><a href="http://www.engageitservices.it">Engage IT Services</a></p>
+ 
+<p><a href="http://www.dataskills.it/">DataSkills</a></p>
+ 
+<p><a href="https://www.msys.it/Pages/default.aspx">Microsys</a></p>
+ 
+<p><a href="http://www.cstv.it/">Centro Sistemi Treviso</a></p>
+ 
+<p><a href="http://rd.gt/2j7SNf9">Redgate Software (GAP)</a></p>
+ 
+<p><a href="http://www.danielamalvisi.com/">DanielaMalvisi.Com</a></p>
+ 
+<p><a href="http://www.dotnetpodcast.com">DotNetPodcast</a></p>
+ 
+<p><a href="http://www.getlatestversion.it/">GetLatestVersion.it</a></p>
+ 
+<p><a href="http://www.ugiss.org">Ugiss</a></p>
+ 
+<p><a href="http://www.dotnetmarche.org/">DotNetMarche</a></p>
+ 
+<p><a href="http://www.windowserver.it/">WindowServer.it</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

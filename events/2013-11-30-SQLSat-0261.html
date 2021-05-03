@@ -1,0 +1,496 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQLSaturday SQLSaturday #261 - Moscow 2013" />
+        <meta name="author" content=" />
+        <title>SQLSaturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #261 - Moscow 2013
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQLSaturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #261 - Moscow 2013</div>
+        <div class="masthead-subheading">This event was held on 2013-11-30</div>
+        <p><b>Event Location</b>:</p>
+        <p>Business park "Krylatskye hill" (office Microsoft)</p>
+        <p>Krylatskaya str 17/1 </p>
+        <p>Moscow, , Russian Federation</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0261.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Почему «тормозит» запрос: анализ задержек с помощью XEvents</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Общее время выполнения запроса складывается из двух частей: во-первых какое-то время запрос собственно выполняется процессором, а во-вторых запрос может ждать получения тех или иных ресурсов: это может быть выделение памяти для выполнения запроса, чтение данных с диска, ожидание блокировок, или даже ожидание доступного процессора. Очень часто запросы выполняются медленно именно потому, что тратят время на ожидание ресурсов.
+
+Уже в SQL Server 2005 у администратора появилась возможность оценить, какие типы ожиданий являются наиболее частыми на сервере. С выходом SQL Server 2008 эти возможности значительно расширились за счет механизма XEvents. Сейчас мы можем подробно проанализировать, на что именно тратится время при выполнении отдельного запроса. К сожалению при этом возникает ряд проблем, связанных как со сложностью работы с XEvents, так и со сложностью интерпретации результатов.
+
+В докладе будут рассмотрены возможности анализа статистики ожиданий в различных версиях SQL Server.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Арсений Бирюков</b>, 
+</p>
+<hr>
+ 
+<h3>Azure SQL Database Tips and Tricks for Beginners</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft released SQL Azure more than two years ago - that's enough time for testing (I hope!). So, are you ready to move your data to the Cloud? If you’re considering a business (i.e. a production environment) in the Cloud, you need to think about methods for backing up your data, a backup plan for your data and, eventually, restoring with Red Gate Cloud Services (and not only). In this session, you’ll see the differences, functionality, restrictions, and opportunities in SQL Azure and On-Premise SQL Server 2008/2008 R2/2012. We’ll consider topics such as how to be prepared for backup and restore, and which parts of a cloud environment are most important: keys, triggers, indexes, prices, security, service level agreements, etc.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tobias Koprowski</b>, 
+</p>
+<hr>
+ 
+<h3>Improving performance and scalability using Fusion ioMemory and Microsoft SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Seen as an increasingly cost effective alternative to disk,  flash storage technologies have allowed for dramatic improvements in performance, workload and scalability; resulting in accelerated business intelligence on far less infrastructure than legacy disk-based solutions. As flash is more readily adopted into enterprise architectures, it is important to understand that not all flash should be considered equal. When striving for consistent, low latency performance, it is critical to recognise  how to implement flash to best serve the needs of the database. Join Fusion-io to understand the benefits of accessing Flash natively, whilst physically placing the flash on the PCI bus, where it is closest to the CPU.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sergey Olontsev</b>, 
+</p>
+<hr>
+ 
+<h3>MDS + DQS + SSIS = EIM, или Как построить свою систему управления информацией</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Можете ли вы назвать, хотя бы приблизительно, цену ошибки в одной букве в справочнике, который используется на вашем предприятии? Если нет, постарайтесь ответить на следующие вопросы: Насколько хорошо вы представляете, из каких источников появляется информация на вашем предприятии? Знаете ли вы, кто её заносит, когда она изменяется и где она используется? Чтобы решить проблемы качества и достоверности данных вам нужны две вещи - грамотно построенный процесс ведения информации и набор инструментов, который позволяет автоматизировать этот процесс. В докладе мы рассмотрим, как с помощью служб Microsoft SQL сервера (MDS, DQS и SSIS) можно создать решение для управления информацией предприятия.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrey Zavadskiy</b>, 
+</p>
+<hr>
+ 
+<h3>Архитектура и функциональность аналитических хранилищ SQL Server Parallel Data Warehouse 2012</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft SQL Server Parallel Data Warehouse (PDW) – это высокопроизводительная платформа для организации аналитического хранилища данных (DWH). Parallel Data Warehouse использует архитектуру обработки больших объемов данных, состоящую в распределении данных и параллельной обработки на разных серверах. Такой подход называется обработкой с массовым параллелизмом (MPP). В докладе рассмотрены базовые принципы, архитектура новой версии Parallel Data Warehouse 2012, а также интеграция с Hadoop.   </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Андрей Резник</b>, 
+</p>
+<hr>
+ 
+<h3>Common TSQL Mistakes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We are going to examine a variety of oopsies MANY developers fall prey too - some obvious, some pretty subtle and some down right sneaky! Lots of code examples with the bad AND good code presented. I GUARANTEE that you will find things here that will either prevent you from getting bad data, throwing unwanted errors or vastly improving your database application's performance.  I have given this talk over FIFTY times now and it is always very highly rated!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Boles</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Reporting Services - нестандартно о стандартном</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Все привыкли, что отчёты в SSRS получаются статическими. Но использование встраиваемого программного кода позволяет не только упростить последующее внесение изменений в отчёты, но и создать интерактивные отчёты. Например, можно реализовать функционал, похожий на срезы в Excel 2010.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrey Korshikov</b>, 
+</p>
+<hr>
+ 
+<h3>Конкуренция за ресурсы в многоядерных системах.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>В настоящее время все больше старых серверов с небольшим количеством ядер выводятся из эксплуатации и заменяются современными многоядерными системами, основанными на архитектуре NUMA.  В таких системах все чаще можно наблюдать конкуренцию при доступе к различным системным объектам в связи с параллельным выполнением большого количества запросов. В докладе пойдет речь о LATCHах и SPINLOCKах, основных типах проблем, связанных с конкурентным доступом, и методах их решения.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Evgeny Khabarov</b>, 
+</p>
+<hr>
+ 
+<h3>HA  DR with SQL Server AlwaysOn Availability Group</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The AlwaysOn Availability Groups feature is a high-availability and disaster-recovery solution that provides an enterprise-level alternative to database mirroring. Introduced in SQL Server 2012, AlwaysOn Availability Groups maximizes the availability of a set of user databases for an enterprise. In this session we will talk about what’s coming with Always On, and how does it help to improve high availability and disaster recovery solutions.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Turgay Sahtiyan</b>, 
+</p>
+<hr>
+ 
+<h3>Microsoft SQL Server Database Development with SQL Server Data Tools(SSDT)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server Data Tools (SSDT) provides an integrated environment for database developers to carry out all their database design work for any SQL Server platform (both on and off premise) within Visual Studio. This session will demonstrate features of SSDT such as database snapshots, localdb, code navigation, IntelliSense, language support, platform-specific validation, debugging and declarative editing in the TSQL Editor, Table Designer for both database projects  online database instances and much more.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Belkis Ozhorasan</b>, 
+</p>
+<hr>
+ 
+<h3>Top 10 Performance Tips for SQL Server Developers</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Performance of a SQL Server depends on many factors and due to the nature of development SQL Server developers sometimes miss basic performance tips. Easily implemented tips such as using an appropriate index or solving a data mismatch problem on where conditions could affect the application performance significantly. In this session, we will cover the top 10 tips to improve the performance of your SQL Server with real life examples. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Turgay Sahtiyan</b>, 
+</p>
+<hr>
+ 
+<h3>Deadlock detected! Всё пропало или ещё рано бить тревогу?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Страшное слово Deadlock, согласитесь. Но так ли это страшно как звучит? Из-за чего они возникают и как могут повлиять на работу приложения? И самое главное, что с ними делать? Ответы на эти вопросы, а также фундаментальные принципы ,необходимые для понимания этого процесса будут рассмотрены на докладе</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Denis Reznik</b>, 
+</p>
+<hr>
+ 
+<h3>Практика и особенности конфигурирования оборудования HP для решений MS SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>На сессии для администраторов SQL специалисты HP расскажут об особенностях конфигурирования оборудования HP для Microsoft SQL Server. Будут рассмотрены вопросы оптимизации серверов и дисковых хранилищ HP под различные задачи Microsoft SQL. Будут даны рекомендации по использованию Референсной документации HP-Microsoft.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sergey Olontsev</b>, 
+</p>
+<hr>
+ 
+<h3>Я построю свой профайлер, с гридами и кнопками!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Давайте напишем целую пачку маленьких, простых, но умных и полезных приложений, которые помогут нам решить ежедневные задачи наблюдения за сервером.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Oleksii Kovalov</b>, 
+</p>
+<hr>
+ 
+<h3>Работа транзакционных механизмов SQL Server на примерах</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>В докладе будет рассмотрена архитектура работы буфер-кэша и транзакционного лога, процессов Lazy Writer и Checkpoint, отличия в разных моделях восстановления и нововведения SQL Server 2012. Сообщение будет проиллюстрировано примерами с использованием представлений динамического управления (DMV), счетчиков производительности, Extended Events и недокументированных возможностей SQL Server. В демонстрациях будет использована последняя доступная версия SQL Server 2014 CTP2.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Михаил Гурьянов</b>, 
+</p>
+<hr>
+ 
+<h3>In-Memory OLTP (Hekaton) в SQL Server 2014: архитектура и практическое применение</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Одно из самых ожидаемых нововведений в SQL Server 2014 - это технология In-Memory OLTP, ранее известная под кодовым именем Hekaton. В этом докладе мы подробно рассмотрим ее архитектуру, особенности и ограничения. Также уделим внимание некоторым аспектам практического применения In-Memory OLTP.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sergey Olontsev</b>, 
+</p>
+<hr>
+ 
+<h3>2 AM. A Disaster just began...</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>2AM. We sleeping well. And our mobile ringing and ringing. Message: DISASTER! In this session (on slides) we are NOT talk about potential disaster (such BCM); we talk about: What happened NOW? Which tasks should have been finished BEFORE. Is virtual or physical SQL matter? We talk about systems, databases, peoples, encryption, passwords, certificates and users. In this session (on few demos) I'll show which part of our SQL Server Environment are critical and how to be prepared to disaster. In some documents I'll show You how to be BEST prepared.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tobias Koprowski</b>, 
+</p>
+<hr>
+ 
+<h3>Внутри оптимизатора: кардинальность и планы выполнения</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Одним из наиболее важных этапов в процессе построения плана запроса является оценка предполагаемого числа строк (кардинальности). От правильной оценки зависит качество плана и скорость выполнения запроса. В докладе будет рассмотрен процесс вычисления кардинальности, приведены примеры неудачных оценок, и планов на их основе, а также даны советы по улучшению их качества с целью повышения производительности.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dmitry Pilugin</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2014 Column Store Index vNEXT</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The Column Store Index functionality released in SQL 2012 did allow for stunning performance gains for OLAP-style queries, but as a v1.0 release it suffered from a number of caveats, limitations, provisos, etc.  The one BIGGIE was that it made it's underlying table NON-UPDATABLE.  Well, that often implementation-killing restriction has been addressed, along with a huge number of other fixes and enhancements.  We will cover what those are and also see actual usage with some nice demos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Boles</b>, 
+</p>
+<hr>
+ 
+<h3>Кнопка "Turbo" возвращается. Новый механизм в SQL2014 - Buffer Pool Extension</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>В новом выпуске SQL Server реализован механизм расширения буферного пула (каша данных) – Buffer pool extension на быстрый носитель информации (SSD), позволяющий существенно ускорить обработку OLTP нагрузки на базы данных. Рассмотрим возможности и ограничения данной технологии.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dmitriy Kostylev</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Tobias Koprowski
+ - <a href="https://www.twitter.com/@KoprowskiT">@KoprowskiT</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/in/koprowskit">https://uk.linkedin.com/in/koprowskit</a></p>
+ 
+<p>Contact: <a href="http://koprowskit.eu/geek/">http://koprowskit.eu/geek/</a></p>
+ 
+<p>Founder of Shadowland Consulting. In January 2015 decided to permanently leave Poland and discover new worlds. Actually settled in Hucknall (The Last home of The Byron Family). Community leader focused on SQL Server, SharePoint, security, collaboration and ITIL, DR, BCM, and SLA. Love licensing stuff. 
+
+Microsoft Certified Trainer, freelancer, and consultant. Subject Matter Expert at Microsoft. Member of Microsoft Terminology Community, Friends of RedGate PLUS, PASS, ISSA, ACM and more. Since 1st July 2010 Data Platform MVP. Creator of SQLDAY Conference and Conference CEO 2009-2011. Co-Leader of PASS East Midlands Group. Speaker at group meetings and conferences. STEM Ambassador. 
+
+Traveler. Coffee Addicted.</p>
+ 
+<h3 class="section-heading">Turgay Sahtiyan
+ - <a href="https://www.twitter.com/https://twitter.com/turgaysahtiyan">https://twitter.com/turgaysahtiyan</a>
+</h3>
+<p>LinkedIn: <a href="http://tr.linkedin.com/pub/turgay-sahtiyan/15/b46/682">http://tr.linkedin.com/pub/turgay-sahtiyan/15/b46/682</a></p>
+ 
+<p>Contact: <a href="http://www.turgaysahtiyan.com/">http://www.turgaysahtiyan.com/</a></p>
+ 
+<p>Turgay Sahtiyan has been working in IT industry over a decade and he currently works as a PMC (Premier Mission Critical) Solution Engineer at Microsoft.He is based in Turkey and primarily giving proactive and reactive services with solution based approach to top enterprise customer in the MEA region.Before joined to Microsoft, he was one of the SQL Server MVP in Turkey,in addition he is founder and former president of SQLPass Turkey Chapter.(Detailed BIO http://www.turgaysahtiyan.com/about.aspx)</p>
+ 
+<h3 class="section-heading">Tobias Koprowski
+ - <a href="https://www.twitter.com/@KoprowskiT">@KoprowskiT</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/in/koprowskit">https://uk.linkedin.com/in/koprowskit</a></p>
+ 
+<p>Contact: <a href="http://koprowskit.eu/geek/">http://koprowskit.eu/geek/</a></p>
+ 
+<p>Founder of Shadowland Consulting. In January 2015 decided to permanently leave Poland and discover new worlds. Actually settled in Hucknall (The Last home of The Byron Family). Community leader focused on SQL Server, SharePoint, security, collaboration and ITIL, DR, BCM, and SLA. Love licensing stuff. 
+
+Microsoft Certified Trainer, freelancer, and consultant. Subject Matter Expert at Microsoft. Member of Microsoft Terminology Community, Friends of RedGate PLUS, PASS, ISSA, ACM and more. Since 1st July 2010 Data Platform MVP. Creator of SQLDAY Conference and Conference CEO 2009-2011. Co-Leader of PASS East Midlands Group. Speaker at group meetings and conferences. STEM Ambassador. 
+
+Traveler. Coffee Addicted.</p>
+ 
+<h3 class="section-heading">Turgay Sahtiyan
+ - <a href="https://www.twitter.com/https://twitter.com/turgaysahtiyan">https://twitter.com/turgaysahtiyan</a>
+</h3>
+<p>LinkedIn: <a href="http://tr.linkedin.com/pub/turgay-sahtiyan/15/b46/682">http://tr.linkedin.com/pub/turgay-sahtiyan/15/b46/682</a></p>
+ 
+<p>Contact: <a href="http://www.turgaysahtiyan.com/">http://www.turgaysahtiyan.com/</a></p>
+ 
+<p>Turgay Sahtiyan has been working in IT industry over a decade and he currently works as a PMC (Premier Mission Critical) Solution Engineer at Microsoft.He is based in Turkey and primarily giving proactive and reactive services with solution based approach to top enterprise customer in the MEA region.Before joined to Microsoft, he was one of the SQL Server MVP in Turkey,in addition he is founder and former president of SQLPass Turkey Chapter.(Detailed BIO http://www.turgaysahtiyan.com/about.aspx)</p>
+ 
+<h3 class="section-heading">Арсений Бирюков
+
+</h3>
+<p>Последние 7 лет я занимаюсь различными задачами, так или иначе связанными с SQL Server. Я занимался администрированием SQL Server, читал различные курсы, разрабатывал бизнес-аналитику, а сейчас работаю в российском подразделении Microsoft и занимаюсь техническим пресейлом все того же SQL Server.</p>
+ 
+<h3 class="section-heading">Sergey Olontsev
+ - <a href="https://www.twitter.com/SergeyOlontsev">SergeyOlontsev</a>
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/sergeyolontsev">http://linkedin.com/in/sergeyolontsev</a></p>
+ 
+<p>Contact: <a href="http://SergeyOlontsev.com/">http://SergeyOlontsev.com/</a></p>
+ 
+<p>I have been working with SQL Server since SQL Server 2000 version as a database administrator, developer, consultant and trainer, focusing on high availability and disaster recovery solutions, ETL, troubleshooting and performance tuning, developing high performance solutions . I'm a regular speaker at SQL Server user group meetings, SQLSaturday events and other conferences. An owner of MCM certification and MVP award on SQL Server.</p>
+ 
+<h3 class="section-heading">Andrey Zavadskiy
+ - <a href="https://www.twitter.com/@AndreyZavadskiy">@AndreyZavadskiy</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/zavadskiy">https://www.linkedin.com/in/zavadskiy</a></p>
+ 
+<p>Contact: <a href="https://andreyzavadskiy.com">https://andreyzavadskiy.com</a></p>
+ 
+<p>Andrey has been leading the development of corporate information system for realty estate business based on MS SQL Server, ASP.NET and Sharepoint. He works with SQL Server since version 7.0. Currently holds MCSE certification for SQL Server, MCSD for Web development and active Microsoft trainer status. 
+He loves to design enterprise-scale application architecture, take part in database development and optimization.</p>
+ 
+<h3 class="section-heading">Andrey Korshikov
+
+</h3>
+<p>Работать с SQL Server начал в 2003 году. Довелось работать и сдавать сертификационные экзамены по версиям SQL Server от 2000 до 2012. Участник конференций SQLSaturday, Платформа, DevCon и TechEd. География выступлений от Тампы до Красноярска, от Санкт-Петербурга до Тбилиси. Основатель сообществ Krasnodar SQLamp;BI Usergroup и Global Russian Virtual Chapter. На данный момент являюсь PASS Regional Mentor for Central Eastern Europe. </p>
+ 
+<h3 class="section-heading">Kevin Boles
+ - <a href="https://www.twitter.com/@TheSQLGuru">@TheSQLGuru</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/thesqlguru">http://www.linkedin.com/in/thesqlguru</a></p>
+ 
+<p>Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.</p>
+ 
+<h3 class="section-heading">Dmitry Pilugin
+ - <a href="https://www.twitter.com/https://twitter.com/SomewereSomehow">https://twitter.com/SomewereSomehow</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/pilugin-dmitry-somewheresomehow/2b/210/277">http://www.linkedin.com/pub/pilugin-dmitry-somewheresomehow/2b/210/277</a></p>
+ 
+<p>Contact: <a href="http://www.queryprocessor.com/">http://www.queryprocessor.com/</a></p>
+ 
+<p>Dmitry Pilugin, is a SQL Server DB developer from Russia, Moscow. He works with SQL Server for more than ten years. Currently he works as a database developer lead, responsible for the development of production databases in the media research company. 
+
+Dmitry holds a blog about SQL Server query processing: QueryProcessor.com, where he writes about a query optimization and execution, and also likes to share his knowledge about it speaking at various community events and tech conferences. Data Platform Microsoft MVP since 2014.</p>
+ 
+<h3 class="section-heading">Belkis Ozhorasan
+
+</h3>
+<p>-</p>
+ 
+<h3 class="section-heading">Kevin Boles
+ - <a href="https://www.twitter.com/@TheSQLGuru">@TheSQLGuru</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/thesqlguru">http://www.linkedin.com/in/thesqlguru</a></p>
+ 
+<p>Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.</p>
+ 
+<h3 class="section-heading">Dmitriy Kostylev
+
+</h3>
+<p>Работает в Лаборатории Касперского ведущим разработчиком баз данных. С SQL Server работает с 2000 года, участвуя в разнообразных проектов - от небольшого производства до одной из крупнейших баз знаний о программном обеспечении. Сконцентрирован на эффективности применяемых решений - от отдельных запросов и архитектуры решений до методологии разработки ПО. Активно участвует в жизни SQL-сообщества, выступая на конференциях с докладами об эффективном применении SQL Server.</p>
+ 
+<h3 class="section-heading">Sergey Olontsev
+ - <a href="https://www.twitter.com/SergeyOlontsev">SergeyOlontsev</a>
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/sergeyolontsev">http://linkedin.com/in/sergeyolontsev</a></p>
+ 
+<p>Contact: <a href="http://SergeyOlontsev.com/">http://SergeyOlontsev.com/</a></p>
+ 
+<p>I have been working with SQL Server since SQL Server 2000 version as a database administrator, developer, consultant and trainer, focusing on high availability and disaster recovery solutions, ETL, troubleshooting and performance tuning, developing high performance solutions . I'm a regular speaker at SQL Server user group meetings, SQLSaturday events and other conferences. An owner of MCM certification and MVP award on SQL Server.</p>
+ 
+<h3 class="section-heading">Андрей Резник
+
+</h3>
+<p>Работаю в Microsoft CEE, занимаюсь решениями для разработки хранилищ данных на базе SQL Server PDW</p>
+ 
+<h3 class="section-heading">Oleksii Kovalov
+
+</h3>
+<p>DBA and DB developer with more than 10 year expirience. SQLSat/SSUG speaker. MCTS, MCITP.
+Author of pet-projects ExpressProfiler and SQL Code Guard
+</p>
+ 
+<h3 class="section-heading">Evgeny Khabarov
+
+</h3>
+<p>Разработчик и администратор SQL Server. Область применения знаний в основном устранение проблем с производительностью систем, в основе которых лежит SQL Server.</p>
+ 
+<h3 class="section-heading">Denis Reznik
+ - <a href="https://www.twitter.com/https://twitter.com/DenisReznik">https://twitter.com/DenisReznik</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/denis-reznik/3/502/234">http://www.linkedin.com/pub/denis-reznik/3/502/234</a></p>
+ 
+<p>Contact: <a href="http://reznik.uneta.com.ua">http://reznik.uneta.com.ua</a></p>
+ 
+<p>Denis Reznik is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design, and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains MVP status today. Apart from his professional career, Denis actively participates in the development of the Ukrainian Data Community.</p>
+ 
+<h3 class="section-heading">Sergey Olontsev
+ - <a href="https://www.twitter.com/SergeyOlontsev">SergeyOlontsev</a>
+</h3>
+<p>LinkedIn: <a href="http://linkedin.com/in/sergeyolontsev">http://linkedin.com/in/sergeyolontsev</a></p>
+ 
+<p>Contact: <a href="http://SergeyOlontsev.com/">http://SergeyOlontsev.com/</a></p>
+ 
+<p>I have been working with SQL Server since SQL Server 2000 version as a database administrator, developer, consultant and trainer, focusing on high availability and disaster recovery solutions, ETL, troubleshooting and performance tuning, developing high performance solutions . I'm a regular speaker at SQL Server user group meetings, SQLSaturday events and other conferences. An owner of MCM certification and MVP award on SQL Server.</p>
+ 
+<h3 class="section-heading">Михаил Гурьянов
+
+</h3>
+<p>Contact: <a href="http://www.specialist.ru/trainer/%D0%B3%D1%83%D1%80%D0%BC">http://www.specialist.ru/trainer/%D0%B3%D1%83%D1%80%D0%BC</a></p>
+ 
+<p>Ведущий преподаватель ЦКО “Специалист”
+В сфере IT с 1994 года. Работал в качестве инженера-программиста, ведущего инженера, технического консультанта. 
+С Microsoft SQL Server начал работать с версии SQL Server 6.5. 
+Проводит тренинги по Microsoft SQL Server начиная с версии SQL Server 2000. 
+МСТ, MCDBA, MCSE с 2006 года.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.fusionio.com/solutions/microsoft-sql-server/">FusionIO</a></p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://www.hp.com">Hewlett-Packard</a></p>
+ 
+<p><a href="http://www.apexsql.com/?utm_source=SQLSaturdaysutm_medium=sponsorlinkutm_campaign=%5BSQLSaturdays-Homepage%5D">ApexSQL LLC</a></p>
+ 
+<p><a href="http://www.xsql.com">xSQL Software</a></p>
+ 
+<p><a href="http://www.apress.com/">Apress</a></p>
+ 
+<p><a href="https://forerunnersw.com/Home">Forerunner Software</a></p>
+ 
+<p><a href="http://www.pluralsight.com">PluralSight</a></p>
+ 
+<p><a href="http://interface.ru/">Interface</a></p>
+ 
+<p><a href="http://rd.gt/2j7SNf9">Redgate Software (GAP)</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQLSaturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,607 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #602 - Iceland 2017" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #602 - Iceland 2017
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #602 - Iceland 2017</div>
+        <div class="masthead-subheading">This event was held on 2017-3-18</div>
+        <p><b>Event Location</b>:</p>
+        <p>Reykjavik University</p>
+        <p>Menntavegur 1</p>
+        <p>Reykjavik, Gullbringusysla, Iceland</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0602.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Advanced insides into System Versioned Temporal Tables</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2016 introduces support for system-versioned temporal tables as a database feature that brings built-in support for providing information about data stored in the table at any point in time rather than only the data that is correct at the current moment in time. 
+
+This session takes you behind the basics of Temporal Tables and answers - after a short introduction - the following questions:
+- How to handle the change of NULL constraints?
+- Can Temporal Tables be renamed and what happens to the System Versioned table?
+- What will happen if you change meta data (data length, data type, ...)?
+- What happens if you drop a column or add another column to the Temporal Table?
+- what about security for the  system versioned table?
+- what about calculated columns in the temporal table?
+- ...
+
+You are interested in the answers to all the above questions (and more). This session will answer EVERY question about Temporal Tables.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Uwe Ricken</b>, 
+</p>
+<hr>
+ 
+<h3>Mastering DML Operations like a master</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>DML operations mean lot of work for the database engine of Microsoft SQL Server. Understanding the details of a DML transaction may give you great benefits when planning workloads for INSERT, UPDATE and DELETE operations.
+
+Come and learn the differences of space allocation/deallocation between Clustered Indexes and Heaps in this demo oriented session. It will answer these questions:
+
+What is the difference of data page allocation for heaps and clustered indexes?
+What is the amount of transaction log when you update data in a heap and/or in a clustered index?
+What are the differences when data are delete from a heap and clustered index?
+Can ETL processes be improved by usage of the right strategy for INSERTS and DELETES?
+What performance drawbacks have Page Splits and Forwarded Records for my application design?</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Uwe Ricken</b>, 
+</p>
+<hr>
+ 
+<h3>The Next Frontier-  Opportunities When Migrating to the Cloud with Virtualization</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Cloud is everywhere and the database administrator is caught in the middle. How do you know where to start and what to migrate first? How do you perform consolidation planning and ensure data security? This session builds on a full demonstration, along with tips and tricks to show how the DBA can secure their environment to allow a self-service option so they no longer are the constraints to projects! The attendee will leave with a clear understanding of:
+* Principles of virtualization and why it’s the answer to so many challenges we face today.
+* How easy it is to secure data in the cloud using data masking features.
+* The ease of connecting to the cloud and migrating environments.
+* How to troubleshoot when issues arise and the tools available to diagnose issues.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kellyn Pot'Vin-Gorman</b>, 
+</p>
+<hr>
+ 
+<h3>Deep Dive into the Azure-Powered Power BI Twitter Brand Campaign Solution</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>With the introduction of Microsoft Solution Templates, you can create an amazing Power BI Brand and Campaign Management solution leveraging Twitter data in just minutes. The solution includes several components, including a pre-built impressive Power BI Dashboard, backed by Azure Cognitive Services, Azure Logic Apps, App Service Plan, Azure Functions running C# code, and several other components. 
+
+In this talk, we'll explore the Power BI Dashboard, getting started with the setup, and a deep dive into the technical components that power this solution. We'll also cover the pricing model and suggestions for right-sizing the components that I've used to help several customers with this amazing solution.   
+
+Solution details can be found here:
+https://powerbi.microsoft.com/en-us/solution-templates/brand-management-twitter/</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sam Lester</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server  Containers</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session aims to give attendees an introduction into containers running SQL Server on Windows Server 2016.
+Attendees will be taken through the following: -
+
+Defining what containers are (benefits and limitations)
+Configuring Windows Server 2016 to run containers
+Installing the docker engine
+Pulling SQL images from the docker respository
+Running SQL Server containers
+Committing new SQL Server images
+Exploring 3rd party options to run containers on previous versions of Windows Server (real world example)
+
+This sessions assumes that attendees have a good background in SQL Server administration and a basic knowledge of
+Windows Server administration</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrew Pruski</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Problem Tombola</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>During this session we will be having a tombola which contain several SQL Server issues you might face. After a volunteer has picked a problem, we will continue by handling this issue. We will show you how it appears, what impact is has on your performance and the way you are able to solve the issue. The issues inside the tombola will consist out of the top 10 most found issues on SQL Server.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Stijn Wynants</b>, 
+</p>
+<hr>
+ 
+<h3>NSA Secrets - Hacking SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>How easy is it to hack a SQL Server? 
+In this session we'll see a few examples on how to exploit SQL Server, modify data and take control, while at the same time not leaving a trace.
+We'll start by gaining access to a SQL Server (using some "creative" ways of making man-in-the-middle attacks), escalating privileges and tampering with data at the TDS protocol level (e.g. changing your income level and reverting without a trace after payment), and more. 
+Most importantly, we'll also cover recommendations on how to avoid these attacks, and take a look at the pros and cons of new security features in SQL Server 2016.
+This is a demo-driven session, suited for DBAs, developers and security consultants (Jedi level). 
+Disclaimer: No actual state secrets will be revealed. Please do not send agents to my house again.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Melancia</b>, 
+</p>
+<hr>
+ 
+<h3>Getting release management right for SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You are ahead of the curve. You’ve learned that you need to put your database in source control and you’ve set up some sort of automated build and regression testing process. (Or you’ve been to my continuous integration session.)
+
+However, your deployments are still expensive and risky. You find it hard to keep track of what has been deployed to each environment. You don’t have a great deal of confidence that the production database is still in line with source control. You may have heard of the automated deployment functionality in VSTS or Octopus Deploy but you haven’t tried it yet… at least not for SQL Server.
+
+In this session I’ll automate a deployment pipeline in a couple of different ways. I’ll discuss the importance of your database model as well as repeatable upgrade scripts and discuss the pros and cons of different approaches to automation. I’ll also discuss how to monitor for and protect yourself from database drift.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alex Yates</b>, 
+</p>
+<hr>
+ 
+<h3>Scripting tabular models</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Introducing the new scripting language for tabular models. Before SQL Server 2016 tabular models was wrapped into a multidimensional constructs. TMSL is the new native language for tabular which is build on JSON - this makes it easy to understand, modify and deploy.
+
+During this session I will go through and explain some examples on generating a SSAS tabular model by using the new TSML. I will spend some time showing and about explaining a real world example on pushing measure creation to the key business stakeholders to ensure quick time to market.
+
+The last thing i will show is how you speed up your development free up up to 50% of the time you spend building tabular models with the simple an advanced features of Tabular Editor 2.0</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Bent Pedersen</b>, 
+</p>
+<hr>
+ 
+<h3>Real-Time Analytics: OLAP  OLTP in the mix!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we will talk about the Operational analytics possibilities using ColumnStore indexes with SQL Server 2016. This will be a deep-dive on how this works, and will give you an explanation on the new Columnstore features. We will also talk about the difference between hot  warm data, and how to make this fit for your environment.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Stijn Wynants</b>, 
+</p>
+<hr>
+ 
+<h3>Cloud BI with Azure Analysis Services</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>With Azure Analysis Services (Azure AS) we have full set of PAAS and SAAS services like Azure SQL DWH, Azure AS and Power BI for creating our BI solutions in the cloud. In this session I will introduce Azure AS and how we can use it together with other Azure services for creating complete BI solution in the cloud.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sergiy Lunyakin</b>, 
+</p>
+<hr>
+ 
+<h3>SQL 2016 New Feature: An introduction to Query Store</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Query Store is an exciting new feature in SQL Server 2016. It can automatically capture and store a history of queries, query execution plans and execution statistics that makes troubleshooting performance problems caused by query plan changes much easier.
+In this session we will examine Query Store, it's architecture, configuration and how it can be used to solve performance problems.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>David Postlethwaite</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server on Linux</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Hell frezes over... Microsoft released SQL Server on Linux in 2016. In his talk German Data Platform MVP Frank Geisler will give an overview on SQL Server on Linux. He will show how to install SQL Server on Ubuntu and give advice on how to use it. Besides this he will explain which Non-Windows based tools can be used. At the end he will show a scenario where a SQL Server is operated in a Docker Container completely without Windows Operating System on the server and on the client.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Frank Geisler</b>, 
+</p>
+<hr>
+ 
+<h3>Azure ML vs Cognitive Services Recommendations</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Anyone who has already gained experience with Azure ML knows how hard it is to find a suitable algorithm that fits the task.
+Cognitive services are becoming increasingly powerful and easy to address. With the focus on suggestions (Customers who bought this product also bought ...) I compare Azure ML and Cognitive Servies Recommendations. The result is the same for both, a proposal which could also be interesting. Only the how is for the developer significantly different.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alexander Klein</b>, 
+</p>
+<hr>
+ 
+<h3>Big Data with Azure: where to begin? Concepts and best practices</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In order to ascertain the abilities of cloud computing platform, let us overview what is available  offered on Microsoft Azure.
+
+Microsoft Azure has the ability to move, store and analyze data within the cloud. It is essential to evaluate multiple opportunities and options with Microsoft Azure data insights. In this session let us talk about strategies on data storage, data partitioning and availability options with Azure. A tour on how best these Azure components can help you achieve success for your Big Data platform.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Satya Jayanty</b>, 
+</p>
+<hr>
+ 
+<h3>Building Business Apps with Power BI, PowerApps and Flow</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Recently Microsoft released PowerApps and Flow. Together with Power BI these tools can be used to build data centric Apps for desktop and mobile. In his demo packed session German Dataplatform MVP Frank Geisler will show how to build a simple App for iPhone that can be used to store data in a SQL Server. There will be some automation with Microsoft Flow. The data that is entered through the App will be analyzed with Power BI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Frank Geisler</b>, 
+</p>
+<hr>
+ 
+<h3>Bioinformatics on Azure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>If people think about big data, they always think about Twitter or Facebook. But there are other areas where much more data amounts incurred and the analyzes are more complex. In this talk, we talk about a real example from bioinformatics. We will explain the actual scenario and how the various Microsoft platforms from SQL Server to Azure Data Lake and Power BI could help us – or not.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tillmann Eitelberg</b>, 
+</p>
+<hr>
+ 
+<h3>Elegant T-SQL Solutions for Real World Problems</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>T-SQL can help solve many problems you are faced with at your job.
+Each problem can have many solutions, but not every solution is simple to write, understand and maintain, and not every solution is good in terms of performance.
+In this session, we will look at real world problems and solve them using T-SQL. We won’t settle for just A solution, but show elegant, simple solutions that will yield optimal performance.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Matan Yungman</b>, 
+</p>
+<hr>
+ 
+<h3>Transact-SQL traps and nasty surprises</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>At times, T-SQL can exhibit unexpected and even nasty behavior. There are hidden pitfalls in which you might fall into if you are not aware. This session will provide you with the necessary warning signs to help you avoid them. Among other things, you will encounter the implicit conversion surprise, the parameter sniffing ambush, the cardinality estimate attack, … Expect baffling demos!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rudi Bruchez</b>, 
+</p>
+<hr>
+ 
+<h3>If a machine can learn, why can't YOU learn Azure Machine Learning?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Are you a DBA or Developer and would like to get started with AzureML the EASY WAY?
+AzureML isn't just for "data scientists"... Anyone can use it! And after this session you'll be using it too...
+Disclaimer: Sadly, AzureML still can't predict what's on your girlfriend's mind. Nothing ever will.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Melancia</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">André Melancia
+ - <a href="https://www.twitter.com/AndyPT">AndyPT</a>
+</h3>
+<p>LinkedIn: <a href="http://LinkedIn.COM/in/AndreMelancia">http://LinkedIn.COM/in/AndreMelancia</a></p>
+ 
+<p>Contact: <a href="http://Andy.PT">http://Andy.PT</a></p>
+ 
+<p>Owner / Principal Consultant at LunarCat.PT
+Microsoft Certified Trainer (MCT) focusing on SQL Server, Azure, IoT and Security.
+
+19+ years' fun developing information and multimedia systems, DBA, project and IT management.
+
+Data Community Portugal, IT Pro Portugal and PowerShell Portugal communities organiser.
+IPv6 Portugal, DNSSec Portugal and Windows Development Portugal online communities moderator.
+Actively volunteering, organising, speaking or just participating at community meetings and events around the world.
+
+Proud uncle and food devouring expert, with dangerous рuϧϧy cat as companion.
+
+Go to http://Andy.PT and you'll know the same as the NSA...</p>
+ 
+<h3 class="section-heading">Uwe Ricken
+ - <a href="https://www.twitter.com/https://twitter.com/dbBerater">https://twitter.com/dbBerater</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro">http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro</a></p>
+ 
+<p>Contact: <a href="http://www.sqlmaster.de">http://www.sqlmaster.de</a></p>
+ 
+<p>Uwe Ricken is working with IT systems since the 90’s. The primary passion for developments with Microsoft SQL Server expanded in 2007 with his engagement as a DBA for Deutsche Bank AG in Frankfurt am Main. After 6 years of operational experiences as a DBA and over 14 years as a developer of complex database models he achieved the “Microsoft Certified Master – SQL Server 2008” certification which “was” the highest technical certification. In the same year he earned his first award as a Data Platform MVP for his support to the Microsoft SQL Server community in Germany and Europe. Uwe Ricken is a speaker on many international conferences and events and preferred topics are “Database Internals”, “Indexing” and “Development”.</p>
+ 
+<h3 class="section-heading">Satya Jayanty
+ - <a href="https://www.twitter.com/sqlmaster">sqlmaster</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/sqlmaster">https://uk.linkedin.com/sqlmaster</a></p>
+ 
+<p>Contact: <a href="http://www.sqlserver-qa.net">http://www.sqlserver-qa.net</a></p>
+ 
+<p>My experience surrounded with high focus on the data platform with a track record of defining strategy, designing and delivering digital transformation  migrations with major enhancements to current working methods.  Worked in a capacity of Head of Data Engineering, Enterprise Data Architect and Solutions 
+
+Key career accomplishment  recognition as an industry expert  technical excellence from the Microsoft as Data Platform Most Valuable Professional (MVP) recognition since the year 2006 (13 years as MVP and counting), which recognizes exceptional technical community leaders worldwide who actively deliver, present  share their extraordinary contributions, high quality, and real-world expertise.
+Twitter pod (http://twitter.com/sqlmast</p>
+ 
+<h3 class="section-heading">Andrew Pruski
+ - <a href="https://www.twitter.com/https://twitter.com/DBAFromTheCold">https://twitter.com/DBAFromTheCold</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/andrewpruski">https://www.linkedin.com/in/andrewpruski</a></p>
+ 
+<p>Contact: <a href="https://dbafromthecold.com/">https://dbafromthecold.com/</a></p>
+ 
+<p>SQL Server DBA with over 10 year's experience. Originally from Wales but now living in Ireland</p>
+ 
+<h3 class="section-heading">Stijn Wynants
+ - <a href="https://www.twitter.com/SQLStijn">SQLStijn</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/stijn-wynants-ba528660?trk=hp-identity-name">https://www.linkedin.com/in/stijn-wynants-ba528660?trk=hp-identity-name</a></p>
+ 
+<p>Contact: <a href="http://swyssql.wordpress.com">http://swyssql.wordpress.com</a></p>
+ 
+<p>Stijn is a Microsoft Premier Field Engineer on Data  AI and a DataMinds core member. He is also one of the organizers of the local user group sessions  the yearly event called DataMinds Connect (SQL Server Days). He is a speaker at various international events (SQL Saturday,PASS Summit,Difinity,...).  He spends his days tuning SQL Servers  solving problems with the full data platform. His focus is primarily on sql server core, but has also done various BI  ETL projects. He gets his kicks out of Columnstore indexes  tuning queries but shivers at the sight of an SSAS cube.
+
+When Stijn is not working with SQL Server, you can probably find him enjoying the local cuisine  local beers or enjoying time with his wife and his dog.</p>
+ 
+<h3 class="section-heading">Tillmann Eitelberg
+ - <a href="https://www.twitter.com/@_Tillmann">@_Tillmann</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/tillmanneitelberg">https://www.linkedin.com/in/tillmanneitelberg</a></p>
+ 
+<p>Contact: <a href="http://www.ssis-components.net">http://www.ssis-components.net</a></p>
+ 
+<p>Tillmann Eitelberg is CEO and co-founder of oh22information services GmbH, which specializes in data integration and data management. Tillmann is an active blogger at www.ssis-components.net, writing regularly about data quality topics and his passion: spatial data. In addition, he has published several SSIS components on Codeplex and GitHub. Tillmann is a Data Platform MVP, a board member of PASS Germany e.V., a PASS CL for the Cologne/Bonn region, and a PASS RM.</p>
+ 
+<h3 class="section-heading">Stijn Wynants
+ - <a href="https://www.twitter.com/SQLStijn">SQLStijn</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/stijn-wynants-ba528660?trk=hp-identity-name">https://www.linkedin.com/in/stijn-wynants-ba528660?trk=hp-identity-name</a></p>
+ 
+<p>Contact: <a href="http://swyssql.wordpress.com">http://swyssql.wordpress.com</a></p>
+ 
+<p>Stijn is a Microsoft Premier Field Engineer on Data  AI and a DataMinds core member. He is also one of the organizers of the local user group sessions  the yearly event called DataMinds Connect (SQL Server Days). He is a speaker at various international events (SQL Saturday,PASS Summit,Difinity,...).  He spends his days tuning SQL Servers  solving problems with the full data platform. His focus is primarily on sql server core, but has also done various BI  ETL projects. He gets his kicks out of Columnstore indexes  tuning queries but shivers at the sight of an SSAS cube.
+
+When Stijn is not working with SQL Server, you can probably find him enjoying the local cuisine  local beers or enjoying time with his wife and his dog.</p>
+ 
+<h3 class="section-heading">André Melancia
+ - <a href="https://www.twitter.com/AndyPT">AndyPT</a>
+</h3>
+<p>LinkedIn: <a href="http://LinkedIn.COM/in/AndreMelancia">http://LinkedIn.COM/in/AndreMelancia</a></p>
+ 
+<p>Contact: <a href="http://Andy.PT">http://Andy.PT</a></p>
+ 
+<p>Owner / Principal Consultant at LunarCat.PT
+Microsoft Certified Trainer (MCT) focusing on SQL Server, Azure, IoT and Security.
+
+19+ years' fun developing information and multimedia systems, DBA, project and IT management.
+
+Data Community Portugal, IT Pro Portugal and PowerShell Portugal communities organiser.
+IPv6 Portugal, DNSSec Portugal and Windows Development Portugal online communities moderator.
+Actively volunteering, organising, speaking or just participating at community meetings and events around the world.
+
+Proud uncle and food devouring expert, with dangerous рuϧϧy cat as companion.
+
+Go to http://Andy.PT and you'll know the same as the NSA...</p>
+ 
+<h3 class="section-heading">Uwe Ricken
+ - <a href="https://www.twitter.com/https://twitter.com/dbBerater">https://twitter.com/dbBerater</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro">http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro</a></p>
+ 
+<p>Contact: <a href="http://www.sqlmaster.de">http://www.sqlmaster.de</a></p>
+ 
+<p>Uwe Ricken is working with IT systems since the 90’s. The primary passion for developments with Microsoft SQL Server expanded in 2007 with his engagement as a DBA for Deutsche Bank AG in Frankfurt am Main. After 6 years of operational experiences as a DBA and over 14 years as a developer of complex database models he achieved the “Microsoft Certified Master – SQL Server 2008” certification which “was” the highest technical certification. In the same year he earned his first award as a Data Platform MVP for his support to the Microsoft SQL Server community in Germany and Europe. Uwe Ricken is a speaker on many international conferences and events and preferred topics are “Database Internals”, “Indexing” and “Development”.</p>
+ 
+<h3 class="section-heading">Þröstur "Spörri" Jónasson
+ - <a href="https://www.twitter.com/@sporri">@sporri</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sporri/">https://www.linkedin.com/in/sporri/</a></p>
+ 
+<p>Contact: <a href="http://www.sporri.net">http://www.sporri.net</a></p>
+ 
+<p>Dad, Database, Dork. 
+Working bee at Miracle</p>
+ 
+<h3 class="section-heading">Matan Yungman
+ - <a href="https://www.twitter.com/MatanYungman">MatanYungman</a>
+</h3>
+<p>LinkedIn: <a href="http://il.linkedin.com/in/matanyungman/">http://il.linkedin.com/in/matanyungman/</a></p>
+ 
+<p>Matan Yungman is a Data Engineering Team Lead at Taboola</p>
+ 
+<h3 class="section-heading">Kellyn Pot'Vin-Gorman
+ - <a href="https://www.twitter.com/DBAKevlar">DBAKevlar</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kellynpotvin">https://www.linkedin.com/in/kellynpotvin</a></p>
+ 
+<p>Contact: <a href="http://dbakevlar.com">http://dbakevlar.com</a></p>
+ 
+<p>Kellyn Pot’Vin-Gorman is a member of the Oak Table Network and an Idera ACE and Oracle ACE Director alumnus. She is a Data Platform Architect in Power BI with AI in the EdTech group at Microsoft. Kellyn is known for her extensive work with multi-database platforms, DevOps, cloud migrations, virtualization, visualizations, scripting, environment optimization tuning, automation, and architecture design. 
+
+Kellyn has spoken at numerous technical conferences for Oracle, Big Data, DevOps, testing, and SQL Server. Her blog (http://dbakevlar.com) and social media activity under her handle, DBAKevlar, is well respected for her insight and content.</p>
+ 
+<h3 class="section-heading">Bent Pedersen
+ - <a href="https://www.twitter.com/https://twitter.com/SQLBent">https://twitter.com/SQLBent</a>
+</h3>
+<p>LinkedIn: <a href="https://dk.linkedin.com/in/bentnissenpedersen">https://dk.linkedin.com/in/bentnissenpedersen</a></p>
+ 
+<p>Contact: <a href="http://www.biblog.eu">http://www.biblog.eu</a></p>
+ 
+<p>Bent is a Data Platform MVP and working as Senior Business Analytics Architect at Kapacity A/S, where he have been working with enterprise customers on solutions with SSAS Tabular, SQL Server and in general Azure Data Platform services for the last years. During the past years, he concentrated on working with architecturing, devOps, Automation, testing and simplifying development processes for the Azure Data Platform.</p>
+ 
+<h3 class="section-heading">David Postlethwaite
+ - <a href="https://www.twitter.com/@postledm">@postledm</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/davidpostlethwaite">http://www.linkedin.com/in/davidpostlethwaite</a></p>
+ 
+<p>Contact: <a href="http://www.gethynellis.com/">http://www.gethynellis.com/</a></p>
+ 
+<p>David Postlethwaite has been a DBA for Liverpool Victoria in Bournemouth, England since 2008
+He supports both Oracle and SQL Server from 2000 to 2017, DBMS, SSIS, SSAS and Reporting Services.
+In 2015 David built and deployed the company's first cloud solution using Microsoft Azure SQL Database and web services 
+
+Before becoming a DBA David was a .NET developer and way back in history a Windows and Netware administrator. 
+
+He is an occasional blogger on www.gethynellis.com
+
+David is a regular speaker for SQL Saturday.
+Most of his presentations can be found on his YouTube channel www.youtube.com/c/DavidPostlethwaiteSQL</p>
+ 
+<h3 class="section-heading">Frank Geisler
+ - <a href="https://www.twitter.com/@Frank Geisler">@Frank Geisler</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=4839367">https://www.linkedin.com/profile/view?id=4839367</a></p>
+ 
+<p>Contact: <a href="http://www.gdsbi.de">http://www.gdsbi.de</a></p>
+ 
+<p>Frank Geisler is owner and CEO of GDS Business Intelligence GmbH. He is SQL Server MVP, MCT,  MCSE – Business Intelligence, MCSE – Data Plattform and MCSE - Azure Solutions Architect. In his Job he is building Business Intelligence Systems based on Microsoft Technology, mainly on SQL Server and SharePoint.</p>
+ 
+<h3 class="section-heading">Alexander Klein
+ - <a href="https://www.twitter.com/@SQL_Alex">@SQL_Alex</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/alexander-klein-13a04b3a">http://www.linkedin.com/in/alexander-klein-13a04b3a</a></p>
+ 
+<p>Alexander Klein is a senior Business Intelligence consultant with more than 15 years of experience. He focuses on Business Intelligence and Data Warehouse projects with Microsoft technologies like SQL Server, Power BI, Azure ML or Cortana Intelligence. 
+
+Since 2008, he has been a self-employed consultant in large and medium-sized projects in all sectors across Europe. He has been visiting SQL Saturdays and other Data Conference all over Europe since 2013. Speaker at national and international events since 2017.</p>
+ 
+<h3 class="section-heading">Sam Lester
+
+</h3>
+<p>Contact: <a href="http://blogs.msdn.com/b/samlester">http://blogs.msdn.com/b/samlester</a></p>
+ 
+<p>Sam Lester has spent the past 14 years working for Microsoft in various SQL Server related roles.  After nearly 12 years working in the SQL Server development team in Redmond, WA, he has recently made the switch to a consulting role to work hands-on with European customers.  While in the product group, Sam worked on numerous features including setup, migration, SSMS/manageability, Utility Control Point, Data-Tier Application Component, SSDT, Intellisense, amp; TSQL Debugger.  </p>
+ 
+<h3 class="section-heading">Rudi Bruchez
+ - <a href="https://www.twitter.com/nepasderanger">nepasderanger</a>
+</h3>
+<p>LinkedIn: <a href="https://fr.linkedin.com/in/rudibruchez">https://fr.linkedin.com/in/rudibruchez</a></p>
+ 
+<p>Contact: <a href="http://www.babaluga.com/">http://www.babaluga.com/</a></p>
+ 
+<p>(same as before)</p>
+ 
+<h3 class="section-heading">Alex Yates
+ - <a href="https://www.twitter.com/@_alexyates_">@_alexyates_</a>
+</h3>
+<p>LinkedIn: <a href="http://uk.linkedin.com/in/alexanderyates">http://uk.linkedin.com/in/alexanderyates</a></p>
+ 
+<p>Contact: <a href="http://www.workingwithdevs.com">http://www.workingwithdevs.com</a></p>
+ 
+<p>Alex Yates has been helping organisations to apply DevOps principles to relational database development and deployment since 2010. He’s most proud of helping Skyscanner develop the ability to deploy 95 times a day. Originally for Redgate, later for DLM Consultants, Alex has worked with clients on every continent except Antarctica – so he’s keen to meet anyone who researches penguins. 
+
+A keen community member, he co-organises SQL Relay, is the founder of www.SpeakingMentors.com and has been recognised as a Microsoft Data Platform MVP since 2017.</p>
+ 
+<h3 class="section-heading">Frank Geisler
+ - <a href="https://www.twitter.com/@Frank Geisler">@Frank Geisler</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=4839367">https://www.linkedin.com/profile/view?id=4839367</a></p>
+ 
+<p>Contact: <a href="http://www.gdsbi.de">http://www.gdsbi.de</a></p>
+ 
+<p>Frank Geisler is owner and CEO of GDS Business Intelligence GmbH. He is SQL Server MVP, MCT,  MCSE – Business Intelligence, MCSE – Data Plattform and MCSE - Azure Solutions Architect. In his Job he is building Business Intelligence Systems based on Microsoft Technology, mainly on SQL Server and SharePoint.</p>
+ 
+<h3 class="section-heading">Sergiy Lunyakin
+ - <a href="https://www.twitter.com/slunyakin">slunyakin</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/slunyakin">https://www.linkedin.com/in/slunyakin</a></p>
+ 
+<p>Contact: <a href="https://slunyakin.wordpress.com">https://slunyakin.wordpress.com</a></p>
+ 
+<p>Sergiy Lunyakin (MCSA, MCSE, MCTS) is a Big Data Architect at SoftServe, Inc.
+He has extensive experience in designing and developing Big Data Analytics, Data Warehouse, and BI solutions, using both on-premises and cloud products. In 2016, Sergiy became Microsoft Data Platform MVP and has since maintained his MVP status. Sharing knowledge is another one of his passions. He regularly speaks at international conferences such as SQLSaturday, SQLDay, SQLNexus, and SQLBits. He also runs the Lviv SQL Server User Group in Ukraine and organizes SQLSaturday Lviv.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.profisee.com">Profisee</a></p>
+ 
+<p><a href="https://www.advania.is/">Advania</a></p>
+ 
+<p><a href="http://www.miracle.is">Miracle ehf.</a></p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://lsretail.com">LS Retail</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

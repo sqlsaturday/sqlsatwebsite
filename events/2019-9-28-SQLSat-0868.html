@@ -1,0 +1,457 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #868 - Kharkiv 2019" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #868 - Kharkiv 2019
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #868 - Kharkiv 2019</div>
+        <div class="masthead-subheading">This event was held on 2019-9-28</div>
+        <p><b>Event Location</b>:</p>
+        <p>Fabrika</p>
+        <p>Blagovischenska str. 1</p>
+        <p>Kharkiv, Kharkiv Oblast, Ukraine</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0868.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>What is CI/CD for databases or how to automate DB changes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In the world of agile software development, the database development process introduces some challenges to the application development process. The delivery of changes at database level tends to be a different and separated process of the application delivery process or even an entirely manual process. This contributes to the perspective that the database is a bottleneck in the agile process.
+In this session, I will show how to build a deployment pipeline capable of delivering database and application changes. The pipeline includes the following steps: source control, continuous integration and continuous delivery. I will share methods and strategies that allow bringing together databases and applications in the delivery process reducing the delivery pain. 
+The main goal is to understand that applications and databases can and should share the same deployment pipeline and that this pipeline will allow you not be afraid of making database changes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Taras Kloba</b>, 
+</p>
+<hr>
+ 
+<h3>Don't Bite Off More Than You Can Chew - Take It in Chunks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Any SQL programmer with some experience knows that loops are bad and that you should work with all data at once in set-based statements. However, you may have experienced situations where this strategy did not work out well and you ran into problems like out-growing the transaction log or blocking other users.
+
+You can solve this by operating on the data in chunks. Implementing chunking is not that difficult, but there are still pitfalls you can run into. In this session, I will discuss in what situations you may want to use chunking. I will give some best practices for how to implement chunking for good performance and I will highlight some things you need keep in mind, for instance, recovering from interruptions. 
+
+I will also look at how you can use chunking for error handling: You want process many rows and you want the good rows to succeed even if some rows yield errors – something you cannot do in a single set-based statement.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Erland Sommarskog</b>, 
+</p>
+<hr>
+ 
+<h3>Architecture of modern data warehouse</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The modern DWH brings together all kinds of data, at any scale, without much effort and time, to get insight through operational reports, analytical dashboards, and advanced analytics for all users.
+Microsoft Azure provides a set of fully managed services, which allow you to build modern DWH in a few minutes. All Azure services support a fully cloud based solution, or a mix of cloud and on-premise based solutions, to meet the business need. A modern Data Warehouse can be designed to meet business need and accommodate change in data behavior using the latest technology components such as cloud based scalable data storage for big data, real time analytics, predictive analysis and machine learning, global distribution of data, high availability, etc.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Eugene Polonichko</b>, 
+</p>
+<hr>
+ 
+<h3>Don't Use Cursors or Why You Maybe Should Use a Cursor After All</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You might have heard "don't use cursors, they are slow!". In this presentation, you will learn what it actually means: you should normally write set-based statements instead and I will explain why they generally are faster than writing your own loops. But I will also look at situations where using a loop for one reason or another is preferable, and you will learn that the best way to run a loop in most cases is exactly a cursor, provided that you implement it properly. The presentation also gives some tips how you can troubleshoot performance problems with loops.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Erland Sommarskog</b>, 
+</p>
+<hr>
+ 
+<h3>SQL database on IoT devices, could you? should you? would you?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The current IoT devices are pretty powerful, so could very well run a version of SQL engine.
+It would be a good idea?  What will be the use of it? How to make it work and make the most of it? 
+How does all fit with the field gateway concept?  During the presentation, we will take a real word scenario, real hardware, and together we will try to answer these questions</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Catalin Gheorghiu</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI. Benefits and Pitfalls of DAX.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>В докладе Я расскажу о преимуществах использования DAX,  и том какие сложности могут возникнуть при работе с этим языком.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Artur Konstantynov</b>, 
+</p>
+<hr>
+ 
+<h3>Узгодженість, паралелізм та блокування в сучасних базах даних</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Давайте поговоримо про теорію та практичну реалізацію багатопоточної обробки даних в сучасних СУБД та розберемо кілька практичних прикладів.
+Спробуємо розібратися та обійти потенційні проблеми та на прикладі Microsoft SQL Server.
+Під час доповіді ми торкнемось тем паралелізму, затримок, блокувань та взаємоблокувань, а також різних рівнів ізоляції.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Yevhen Nedashkivskyi</b>, 
+</p>
+<hr>
+ 
+<h3>Hidden force of the PowerQuery. Powerful ETL  AI integration</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>PowerQuery is widespread tool with own language in Microsoft BI stack. Namely Power BI reports, Excel, SSAS Tabular, SSIS, Microsoft Flow, Power BI dataflows. ETL of this tool is powerful but you are not limited by it, because you can expand it in different ways. I will show you several examples, which may be unexpected for you, including AI integration.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ruslan Zolotukhin</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Columnstore Indexes: Practical recipes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Columnstore is a special type of index first introduced in SQL Server 2012 and greatly improved in SQL Server 2016/2017. It's a column-based index geared toward increasing query performance for workloads that involve large amounts of data, typically found in data warehouse fact tables.
+
+In this session, we will look at several tips how to improve performance of our work scenarios with using columnstore indexes. Also will discover in this session how to make incredible magics with data storage.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sergey Syrovatchenko</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Curiosities: Цікавість згубила кішку</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>There are weird things in life. Even weirder for developers... "It should work!"... What you see is NOT what you get... There's a bug, a feature, a workaround...
+Disclaimer: No feline was harmed in the making of this session. Please do not report it to the Kyiv Society for the Protection of Animals...</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Melancia</b>, 
+</p>
+<hr>
+ 
+<h3>Slowly Changing Dimensions types 0 through 7 and their ETL implementation (SSIS exmples)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Slowly Changing Dimensions types 0 through 7 and their ETL implementation (SSIS exmples)
+Explanation of every SCD type. Analytical value, pros and cons of each will be investigated, SSIS package examples provided. Power BI will be used as a client application to demonstrate the results.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dmytro Polishchuk</b>, 
+</p>
+<hr>
+ 
+<h3>Build Modern Cloud Applications with Net Core 3.0, entity framework and CosmosDB.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Net Core 3.0 will bring entity framework for CosmosDB. 
+What this will bring us?
+Let's look the possible architectures of modern cloud applications and the impact of the different database solutions.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mihail Mateev</b>, 
+</p>
+<hr>
+ 
+<h3>MS SQLServer 2019 Intelligent Query Processing</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The Intelligent query processing feature family includes features with broad impact that improve the performance of existing workloads with minimal implementation effort.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrii Zrobok</b>, 
+</p>
+<hr>
+ 
+<h3>Hidden gems of SQL Server 2017</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2017 is full of new features and improvements. The main "Killer" feature of SQL Server 2017 is SQL Server on Linux, but there are some more big and interesting features: Adaptive Query Processing, Graph Processing, Automatic Tuning and many others which you are aware of. And in this session we will not talk  about them. We will not do that just because there are a lot of cool features in SQL Server 2017, which are more hidden from our sight and have not get enough attention. 
+
+In this session, we will learn a lot about these features and improvements. Which features? This is a secret :) Come to the session and discover them with me!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Denis Reznik</b>, 
+</p>
+<hr>
+ 
+<h3>Hacking SQL Server Is Not Enough</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>You already know how easy it is to hack SQL Server… But how do you protect your local and cloud servers against enemy agent attacks?
+This is a demo-driven session, suited for DBAs, developers and security consultants. Both exploits and security recommendations to avoid them will be covered.
+Disclaimer: No actual crimes will be committed. Please do not send agents to my house again.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Melancia</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Denis Reznik
+ - <a href="https://www.twitter.com/https://twitter.com/DenisReznik">https://twitter.com/DenisReznik</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/denis-reznik/3/502/234">http://www.linkedin.com/pub/denis-reznik/3/502/234</a></p>
+ 
+<p>Contact: <a href="http://reznik.uneta.com.ua">http://reznik.uneta.com.ua</a></p>
+ 
+<p>Denis Reznik is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design, and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains MVP status today. Apart from his professional career, Denis actively participates in the development of the Ukrainian Data Community.</p>
+ 
+<h3 class="section-heading">Eugene Polonichko
+ - <a href="https://www.twitter.com/https://twitter.com/EvgenPolonichko">https://twitter.com/EvgenPolonichko</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/eugenepolonichko/">https://www.linkedin.com/in/eugenepolonichko/</a></p>
+ 
+<p>Contact: <a href="https://msolapblog.wordpress.com/">https://msolapblog.wordpress.com/</a></p>
+ 
+<p>Leader of PASS Local Chapter in Donetsk (Ukraine). I work  as DWH/BI architect.  Responsible for designing and developing Data Warehouse and BI solutions with using Microsoft  BI Stack products.</p>
+ 
+<h3 class="section-heading">Ruslan Zolotukhin
+ - <a href="https://www.twitter.com/zoloturu">zoloturu</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/zoloturu/">https://www.linkedin.com/in/zoloturu/</a></p>
+ 
+<p>Contact: <a href="https://www.zoloturu.com">https://www.zoloturu.com</a></p>
+ 
+<p>BI Engineer at Jabil Software Services
+Power BI Consultant
+MCT, MSCA: BI Reporting
+Speaker at SQL Saturday, Data Monsters and UNETA, PUG and PASS UG Meetups
+Advisor at Power BI Community Forum
+Leader of Kharkiv Power BI User Group
+Former DAX, Excel  VBA trainer
+Blog: www.zoloturu.com
+
+My passion is:
+* to learn new technologies in data management, analytics and science
+* to wrangle data and provide meaningful output
+* to automate routine processes and to build reporting systems
+* to share my experience and knowledge in all these areas</p>
+ 
+<h3 class="section-heading">Taras Kloba
+ - <a href="https://www.twitter.com/klioba">klioba</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kloba/">https://www.linkedin.com/in/kloba/</a></p>
+ 
+<p>Contact: <a href="http://sql.ua">http://sql.ua</a></p>
+ 
+<p>✅ Senior DBA and developer;
+✅ Senior database architect;
+✅ Business solutions expert;
+✅ 9+ years of experience.
+
+Senior database administrator and programmer. Consultant and certified database administrator and developer with 9+ years of experience working with SQL Server 2016, 2014, 2012, 2008, 2005, 2000 and SQL Azure. MySQL, PostgreSQL and MS SQL database performance tuning expert. Business solutions consultant and implementer. With many years of extensive experience in the IT and other business industries in a variety of roles. My objective is to use my experience to bring creative and top-level solutions to businesses that require SQL Databases.</p>
+ 
+<h3 class="section-heading">Erland Sommarskog
+
+</h3>
+<p>Contact: <a href="http://www.sommarskog.se">http://www.sommarskog.se</a></p>
+ 
+<p>Erland Sommarskog is an independent consultant based in Stockholm, working with SQL Server since 1991. He was first awarded SQL Server MVP in 2001, and has been re-awarded every year since. His focus is on systems development with the SQL Server Database Engine and his passion is to help people to write better SQL Server applications.</p>
+ 
+<h3 class="section-heading">André Melancia
+ - <a href="https://www.twitter.com/AndyPT">AndyPT</a>
+</h3>
+<p>LinkedIn: <a href="http://LinkedIn.COM/in/AndreMelancia">http://LinkedIn.COM/in/AndreMelancia</a></p>
+ 
+<p>Contact: <a href="http://Andy.PT">http://Andy.PT</a></p>
+ 
+<p>Owner / Principal Consultant at LunarCat.PT
+Microsoft Certified Trainer (MCT) focusing on SQL Server, Azure, IoT and Security.
+
+19+ years' fun developing information and multimedia systems, DBA, project and IT management.
+
+Data Community Portugal, IT Pro Portugal and PowerShell Portugal communities organiser.
+IPv6 Portugal, DNSSec Portugal and Windows Development Portugal online communities moderator.
+Actively volunteering, organising, speaking or just participating at community meetings and events around the world.
+
+Proud uncle and food devouring expert, with dangerous рuϧϧy cat as companion.
+
+Go to http://Andy.PT and you'll know the same as the NSA...</p>
+ 
+<h3 class="section-heading">Catalin Gheorghiu
+ - <a href="https://www.twitter.com/MrSmersh">MrSmersh</a>
+</h3>
+<p>LinkedIn: <a href="?https://ro.linkedin.com/in/catalingheorghiu?">?https://ro.linkedin.com/in/catalingheorghiu?</a></p>
+ 
+<p>Contact: <a href="http://ronua.ro/author/catalin/">http://ronua.ro/author/catalin/</a></p>
+ 
+<p>Catalin Gheorghiu is a solution architect from Romania. He has more than 15 years of experience in developing solutions, especially on Microsoft technologies in very demanding environments. Is contributing articles and blogs to several user groups (MrSmersh), lecturing all over Romania and abroad, is also RONUA Timisoara (PASS Chapter) user group leader. Since 2011, every year he was awarded the Microsoft MVP Award.</p>
+ 
+<h3 class="section-heading">Erland Sommarskog
+
+</h3>
+<p>Contact: <a href="http://www.sommarskog.se">http://www.sommarskog.se</a></p>
+ 
+<p>Erland Sommarskog is an independent consultant based in Stockholm, working with SQL Server since 1991. He was first awarded SQL Server MVP in 2001, and has been re-awarded every year since. His focus is on systems development with the SQL Server Database Engine and his passion is to help people to write better SQL Server applications.</p>
+ 
+<h3 class="section-heading">Andrii Zrobok
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/azrobok/">https://www.linkedin.com/in/azrobok/</a></p>
+ 
+<p>25+ years of experience in database development: development data-centric applications from scratch, support of legacy databases/applications, data migration tasks, performance tuning,  consulting, database trainer. I have experience with wide range of databases such as  FoxPro for DOS (Fox Software), MS SQL Server (started from version 6.5) , Oracle, Sybase ASE, MySQL, PostgreSQL.
+Co-Leader of PASS Local Chapter in Lviv.
+Speaker at PASS SQLSaturday conferences (since 2013); PASS Lviv/Vinnitsa/Virtual SQL Server User Group, EPAM IT Week (2015-2017), AIBig Data Day 2019.</p>
+ 
+<h3 class="section-heading">Mihail Mateev
+ - <a href="https://www.twitter.com/mihailmateev">mihailmateev</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1">http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1</a></p>
+ 
+<p>Contact: <a href="https://mmateev.wordpress.com/">https://mmateev.wordpress.com/</a></p>
+ 
+<p>Mihail Mateev is a technical consultant, community enthusiast, PASS Regional Mentor for CEE, chapter lead, Microsoft Azure MVP, Microsoft Regional Director. He works as a Senior Solutions Architect at EPAM Systems, focused on Data Platform, IoT and cloud related solutions. He also worked many years like a Technical evangelist in the Infragistics. Last years Mihail was focused on various areas related to technology Microsoft: Data Platform, Visual Studio, ASP.Net, Windows client apps, Data Platform, and Microsoft Azure. Michael also has a PhD in cloud computing area. He is a university lecturer on Smart Homes and Smart Energy IoT Solutions.</p>
+ 
+<h3 class="section-heading">Sergey Syrovatchenko
+
+</h3>
+<p>DBA</p>
+ 
+<h3 class="section-heading">Dmytro Polishchuk
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dmytro-polishchuk-166908b1/">https://www.linkedin.com/in/dmytro-polishchuk-166908b1/</a></p>
+ 
+<p>Highly motivated BI Developer</p>
+ 
+<h3 class="section-heading">Yevhen Nedashkivskyi
+
+</h3>
+<p>LinkedIn: <a href="https://ua.linkedin.com/in/nedash">https://ua.linkedin.com/in/nedash</a></p>
+ 
+<p>Yevhen Nedashkivskyi is a professional DBA and a database developer with more than 10 years of experience. MSCP, MSCA, MSCE, MVP.</p>
+ 
+<h3 class="section-heading">Artur Konstantynov
+
+</h3>
+<p>Power BI developer</p>
+ 
+<h3 class="section-heading">André Melancia
+ - <a href="https://www.twitter.com/AndyPT">AndyPT</a>
+</h3>
+<p>LinkedIn: <a href="http://LinkedIn.COM/in/AndreMelancia">http://LinkedIn.COM/in/AndreMelancia</a></p>
+ 
+<p>Contact: <a href="http://Andy.PT">http://Andy.PT</a></p>
+ 
+<p>Owner / Principal Consultant at LunarCat.PT
+Microsoft Certified Trainer (MCT) focusing on SQL Server, Azure, IoT and Security.
+
+19+ years' fun developing information and multimedia systems, DBA, project and IT management.
+
+Data Community Portugal, IT Pro Portugal and PowerShell Portugal communities organiser.
+IPv6 Portugal, DNSSec Portugal and Windows Development Portugal online communities moderator.
+Actively volunteering, organising, speaking or just participating at community meetings and events around the world.
+
+Proud uncle and food devouring expert, with dangerous рuϧϧy cat as companion.
+
+Go to http://Andy.PT and you'll know the same as the NSA...</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="https://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation</a></p>
+ 
+<p><a href="http://www.devart.com/">Devart</a></p>
+ 
+<p><a href="https://www.infopulse.com/">Infopulse Ukraine</a></p>
+ 
+<p><a href="http://www.dbbest.com">DB Best Technologies</a></p>
+ 
+<p><a href="https://allstars-it.com/ukraine/">AllStars-IT Ukraine</a></p>
+ 
+<p><a href="https://www.visiquate.com">VisiQuate</a></p>
+ 
+<p><a href="http://www.softserveinc.com">SoftServe</a></p>
+ 
+<p><a href="https://zone3000.net/">ZONE3000</a></p>
+ 
+<p><a href="http://www.codeit.com.ua/">CodeIT</a></p>
+ 
+<p><a href="http://www.pass.org">PASS</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

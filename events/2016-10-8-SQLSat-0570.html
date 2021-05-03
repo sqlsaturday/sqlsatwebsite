@@ -1,0 +1,1030 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQLSaturday SQLSaturday #570 - São Paulo 2016" />
+        <meta name="author" content=" />
+        <title>SQLSaturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #570 - São Paulo 2016
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQLSaturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #570 - São Paulo 2016</div>
+        <div class="masthead-subheading">This event was held on 2016-10-8</div>
+        <p><b>Event Location</b>:</p>
+        <p>UNIP Tatuapé</p>
+        <p>Rua Antônio Macedo, 505</p>
+        <p>São Paulo, São Paulo, Brazil</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0570.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Quando as boas pr#225;ticas n#227;o s#227;o boas</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Certo, ent#227;o voc#234; habilitou “auto create statistics”, "page life expectancy" est#225; abaixo de 300, est#225; usando "transparent data encryption", "snapshot isolation level" tem minimizado seus bloqueios, est#225; trabalhando com tabelas com poucas linhas? ent#227;o voc#234; usa vari#225;veis do tipo table, tem um SSD e por isso n#227;o se preocupa com fragmenta#231;#227;o, voc#234; usa os novos comandos de windowing functions pois eles s#227;o "mais eficientes", e mais, est#225; prestes a configurar o lindo AlwaysOn para distribuir a carga de leitura entre v#225;rios bancos... 
+Mesmo assim, seguindo as boas pr#225;ticas, voc#234; percebe que tem tido problemas de performance e tem a impress#227;o de que uma dessas boas pr#225;ticas n#227;o #233; boa... 
+Nesta sess#227;o o consultor e MVP Fabiano Amorim ir#225; falar sobre "casos extremos" onde boas pr#225;ticas podem te causar problemas e o que fazer com isso. Essa ser#225; uma daquelas sess#245;es</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Fabiano Amorim</b>, 
+</p>
+<hr>
+ 
+<h3>Solução de failover automático para ambientes AlwaysOn com commit assincrono</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Há cenários em que a longa distância geográfica entre os data centers inviabiliza a utilização de commit síncrono 
+para grupos de disponibilidade do SQL Server devido a alta latência de transferência dos dados. Com commit assíncrono não é possível habilitar o failover automático de forma nativa.
+Ambientes críticos não podem esperar o coitado do DBA entrar no meio da madrugada para realizar o failover manualmente.
+
+Como garantir o failover automático de forma a reduzir o tempo de indisponibilidade do banco de dados sem ter que adquirir novos nós em localidades mais próximas? 
+
+Nessa sessão irei apresentar a solução que desenvolvi utilizando Powershell para resolver esse problema.
+O script será disponibilizado ao final da sessão gratuitamente.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Igor Santos de Paula</b>, 
+</p>
+<hr>
+ 
+<h3>Otimizando a Performance com In-Memory no SQL 2016</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Esta sessão é dedicada a Feature In-Memory OLTP (aka Hekaton) do Microsoft SQL Server. A apresentação abordará os principais conceitos com ênfase na linha de evolução do produto desde seu lançamento e então falaremos sobre alguns cenários práticos de utilização do In-Memory, onde realizaremos algums comparações como: In-Memory vs Disk Based Tables e Procedures T-SQL vs Nativamente Compiladas. O foco destas demonstrações será colocar a funcionalidade em prática e assim visualizar seu real potencial quando implementada no ambiente. Por fim, apresentaremos casos reais onde o In-Memory OLTP foi aplicado e quais foram os impactos no ambiente, assim como seus principais benefícios, ganhos obtidos e também os principais desafios enfrentados, tudo isso utilizando SQL Server 2016.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Luiz Henrique Garetti</b>, 
+</p>
+<hr>
+ 
+<h3>Corrup#231;#227;o de dados e perda acidental - O que fazer ?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A eficaz administra#231;#227;o de banco de dados zela para que todos os dados estejam dispon#237;veis e protegidos para os usu#225;rios, aplica#231;#245;es e demais consumidores. Por mais cuidados que um ambiente possa ter, n#227;o raras #224;s vezes o banco de dados pode sofrer incidentes que comprometam o seu conte#250;do (e muitas vezes sem um ponto de restaura#231;#227;o dispon#237;vel).
+
+Se alguma vez voc#234; j#225; teve de lidar com corrup#231;#227;o de dados ou perda acidental em ambientes cr#237;ticos ou tem curiosidade sobre as melhores formas de faz#234;-lo bem como prevenir que problemas dessa natureza ocorram, essa sess#227;o poder#225; ambient#225;-los em t#233;cnicas que lidem com esse tipo de situa#231;#227;o. S#227;o tratadas situa#231;#245;es pr#225;ticas de problemas e resolu#231;#227;o</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gustavo Maia Aguiar</b>, 
+</p>
+<hr>
+ 
+<h3>Entendendo a Distribui#231;#227;o de Dados entre V#225;rios Arquivos do Database</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Uma pr#225;tica muito comum no SQL Server est#225; em criar v#225;rios arquivos para um mesmo Banco de Dados, seja para distribuir melhor os I/Os entre v#225;rios arquivos/discos ou apenas para contornar um problema de falta de espa#231;o em disco.  Nesta sess#227;o Nilton Pinheiro mostrar#225; como funciona o algor#237;timo utilizado pelo SQL Server para distribuir os dados entre v#225;rios arquivos  de um banco de dados e voc#234; ver#225; que a distribui#231;#227;o pode n#227;o estar funcionando como voc#234; gostaria, principalmente se v#225;rios arquivos forem criados pensando em distribuir melhor os I/Os.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Nilton Pinheiro</b>, 
+</p>
+<hr>
+ 
+<h3>Passo a Passo para realizar uma Consultoria de Tuning em um Cliente</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nessa sess#227;o irei mostrar um passo a passo que lhe permitir#225; realizar um Tuning em um cliente ou na sua pr#243;pria empresa.
+
+S#227;o rotinas que sempre crio e me ajudam a analisar e melhorar a performance dos clientes que atendo na minha consultoria.
+
+J#225; realizei esse passo a passo em mais de 50 clientes com 100% de sucesso deixando os clientes satisfeitos.
+
+N#227;o perca!!!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Fabrício Lima</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Azure DB Vs. Amazon RDS</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Sendo as duas maiores empresa de Hosting do mundo Amazon e Microsoft Azure possuem servi#231;os em comum para empresas que desejam hospedar qualquer tipo de sistema na nuvem. O termo DBaaS (Database as a Service) #233; um conceito novo para banco de dados, basicamente as empresas devem garantir que seu banco de dados (SQL Server), seja auto gerenciado pela pr#243;pria Cloud, n#227;o tendo mais que se preocupar com toda parte administrativa e gerencial de banco de dados, isso passa a ser responsabilidade deles agora. Ness#227;o sess#227;o iremos entender a diferen#231;a desse servi#231;o em ambas nuvens, quais pontos positivos, negativos e melhores pr#225;ticas de implementa#231;#227;o.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Luan Moreno Medeiros Maciel</b>, 
+</p>
+<hr>
+ 
+<h3>Introdução à Storage</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sess#227;o ser#227;o apresentados os tipos de Storage, principais caracter#237;sticas e conceitos como RAID, Tieriza#231;#227;o, cache, IO, lat#234;ncia, cluster size, sector size, entre outras caracter#237;sticas que influenciam diretamente no SQL Server.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Luiz Mercante</b>, 
+</p>
+<hr>
+ 
+<h3>O dia a dia de um Administrador de Banco de Dados</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sess#227;o voc#234; vai compreender os desafios de se tornar um DBA SQL Server e como vencer a crise, vamos falar dos desafios do dia a dia, estudos e como alavancar sua carreira. Irei realizar algumas demonstra#231;#245;es do que podem levar um DBA ao auge, quais os erros mas comuns do dia a dia e as ferramentas que lhe dar#227;o um sono tranquilo.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Thiago Cruz</b>, 
+</p>
+<hr>
+ 
+<h3>Acesso a dados com ADO.NET e Entity Framework</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Esta sess#227;o tem por objetivo analisar caracter#237;sticas do ADO.NET e Entity Framework ao acessar o SQL Server, sugerindo melhores pr#225;ticas no uso destes. Iremos discutir aspectos como pool de conex#245;es, transa#231;#245;es locais e distribu#237;das, parametriza#231;#227;o de comandos, pagina#231;#227;o, lazy loading, cuidados com proje#231;#227;o, consultas gen#233;ricas, entre outros aspectos. Uma sess#227;o de n#237;vel intermedi#225;rio que pode ajudar o desenvolvedor e o DBA a se entenderem melhor…</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Luciano Moreira</b>, 
+</p>
+<hr>
+ 
+<h3>10 Dicas Para Otimizar o C#243;digo T-SQL</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Escrever c#243;digos transact SQL pode ser uma tarefa complicada e algumas vezes ca#237;mos em pequenas armadilhas que deterioram a performance ou complicam o debug de problemas. Esta sess#227;o apresentar#225; 10 dicas de como melhorar o c#243;digo T-SQL para que ele se comporte com melhor performance.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rodrigo Crespi</b>, 
+</p>
+<hr>
+ 
+<h3>Somos o Big Brother</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Quer saber tudo o que acontece na sua inst#226;ncia SQL ou em uma base espec#237;fica? Quer saber qual usu#225;rio acessou o que #233; quando? Quem criou/alterou/apagou algum objeto? 
+Vamos habilitar auditoria! Mas vamos fazer isso em v#225;rias inst#226;ncias e vamos automatizar o consumo dos arquivos para facilitar a monitora#231;#227;o do ambiente.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ricardo Leka</b>, 
+</p>
+<hr>
+ 
+<h3>Novidades do SSRS 2016 - O poder da an#225;lise de dados</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>O SQL Server Reporting Services passou por uma revolu#231;#227;o. Esse #233; o momento de entender todos os benef#237;cios. Interface moderna, relat#243;rios paginados com visualiza#231;#245;es ricas para consumo em browsers modernos, al#233;m de BI M#243;vel para qualquer plataforma de dispositivos m#243;veis.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marcos Vinicius Oliveira Schardong</b>, 
+</p>
+<hr>
+ 
+<h3>Fora Hackers: Prote#231;#227;o em camadas do SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Uma prote#231;#227;o de 100% contra hackers #233; imposs#237;vel, mas #233; poss#237;vel minimizar os riscos usando m#250;ltiplas camadas. SQL Server tem v#225;rios recursos de seguran#231;a, desde a configura#231;#227;o de um Firewall a modelos de permissionamento de entidades.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Fabricio Catae</b>, 
+</p>
+<hr>
+ 
+<h3>Azure SQL Database - Como gerenciar um ambiente de banco de dados na nuvem</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sess#227;o discutiremos as boas pr#225;ticas para a administra#231;#227;o de um ambiente de banco de dados criado no Azure, quais as ferramentas de monitora#231;#227;o dispon#237;veis para um processo de troubleshooting e como encontrar e resolver poss#237;veis problemas de performance.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vitor Fava</b>, 
+</p>
+<hr>
+ 
+<h3>Porque minha query est#225; lenta? - Iniciando um troubleshooting</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Durante os anos de experiencia percebi que  grande parte dos desenvolvedores possuem dificuldade em iniciar o troubleshooting de suas queries, muitas vezes sobrecarregando o DBA em muitos dos casos com queries simples. O intuito desta palestrar #233; mostrar o "caminho das pedras" para despertar nos  desenvolvedores a necessidade de se conhecer o funcionamento  da ferramenta utilizada e visando os desenvolvimentos futuros j#225; com o pensamento em performance do c#243;digo escrito.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Suellen Moraes</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2016 - It Just Runs Faster</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nessa sess#227;o falaremos de mudan#231;as internas do SQL Server 2016, fazendo com que ele seja muito mais r#225;pido que as vers#245;es anteriores do SQL Server. Abordaremos conceitos sobre Log Threads, Partcionamento de Mem#243;ria, Scheduling entre outros.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andre Rodrigues</b>, 
+</p>
+<hr>
+ 
+<h3>Criando ambientes hibridos de alta disponibilidade (On Premises e Cloud)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sess#227;o apresentaremos a uni#227;o do ambiente local mais o ambiente na cloud e mostraremos  intregra#231;#227;o dos ambientes.
+A cloud ja #233; realidade e ainda temos diversos ambites que devem permanecer em ambientes locais devidos a legisla#231;#227;o ou normas da empresa. nesta sess#227;o voc#234; ver#225; que #233; possivel manter os dois ambientes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marcelo Fernandes</b>, 
+</p>
+<hr>
+ 
+<h3>Bring your data to life with Microsoft Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Essa sess#227;o ir#225; demonstrar como manipular dados de fontes distintas com Power BI, criar relat#243;rios com visualiza#231;#227;o rica e compartilha-los com outros usu#225;rios.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Castro</b>, 
+</p>
+<hr>
+ 
+<h3>Particionamento -  Estrat#233;gias e Performance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Vamos abordar um pouco sobre conceitos e estruturas de particionamento de tabelas. Estrat#233;gias de manipula#231;#227;o de dados, otimizando inser#231;#245;es e d#250;vidas sobre alinhamentos de #237;ndices. A ideia #233; trazer exemplos do cotidiano e tamb#233;m ambientes de alta criticidade com alto volume transacional.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Lucas Souza</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server na nuvem: IaaS ou PaaS? Eis a questão?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Antes de colocar um SQL Server na nuvem, é preciso analisar o melhor modelo de serviço para o seu cenário. O Azure oferta o SQL Server nos modelos IaaS e PaaS. Quais as principais diferenças entre eles? Qual o modelo ideal para o seu cenário?</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Silas Mendes</b>, 
+</p>
+<hr>
+ 
+<h3>Analisando o Always Encrypted</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sess#227;o, iremos conhecer uma das novas features do SQL Server 2016, o Always Encrypted. Entenderemos como funciona este recurso e implantaremos essa funcionalidade simulando um ambiente real. Depois, iremos um pouco mais fundo e analisaremos as informa#231;#245;es protegidas pelo Always Encrypted enquanto trafegam pela rede e enquanto est#227;o em mem#243;ria.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gustavo Moura Fé</b>, 
+</p>
+<hr>
+ 
+<h3>Alta disponibilidade com Azure SQL Database</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nessa sessão o MVP em SQL Server Marcos Freccia ira mostrar os recursos de alta disponibilidade presentes no Azure SQL Database. Todos os passos desde a criação de um simples banco de dados até a garantia de disponibilidade serão cobertos nessa sessão repleta de demos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marcos Freccia</b>, 
+</p>
+<hr>
+ 
+<h3>Pare de reinventar a roda. Use window functions</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Esta sess#227;o mostrar#225; exemplos pr#225;ticos de como podemos, ao mesmo tempo,  diminuir a complexidade de nossos c#243;digos e aumentar a velocidade de sua execu#231;#227;o usando  window functions.  Venha aprender a desenvolver c#243;digos mais leg#237;veis, enxutos e perform#225;ticos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dhiego Piroto</b>, 
+</p>
+<hr>
+ 
+<h3>Guia do Mochileiro Powershell v.1</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sess#227;o vamos ver como um DBA come#231;a a trabalhar com powershell.
+Quais os princ#237;pios, recursos, possibilidades e benef#237;cios em utilizar powershell no seu dia a dia.
+Uma sess#227;o para dar in#237;cio a jornada do Powershell for SQL e come#231;ar a automatizar algumas tarefas de forma simples e r#225;pida com poucas ou at#233; mesmo uma linha de de comando.
+Quem nunca utilizou powershell, tem interesse em saber por onde come#231;ar, quais os benef#237;cios, o que devo estudar...
+Esta #233; a sess#227;o voltada para auxiliar o dba identificar diversos benef#237;cios do uso do powershell no seu dia-a-dia.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marcus Vinícius Bittencourt</b>, 
+</p>
+<hr>
+ 
+<h3>Como se tornar um DBA EXCEPCIONAL</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Apresentação baseada no livro "How to become an Exceptional DBA" do renomado Autor americano Brad McgGehee.
+Discutiremos aspectos não técnicos de como se tornar um DBA EXCEPCIONAL, pois já existem muitos recursos disponíveis, com relação aos aspectos técnicos.
+O foco desta apresentação será em discutir o que você pode fazer para se diferenciar no meio profissional, para não ser apenas mais um, e sim um DBA Excepcional e com oportunidades e reconhecimento.
+
+OBS.: A adaptação deste conteúdo para palestra teve autorização expressa do Autor. (A ser comprovada na palestra).</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>EDVALDO CASTRO</b>, 
+</p>
+<hr>
+ 
+<h3>SSIS 2016 - New features and improvements</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nessa sess#227;o abordaremos as novidades do Integration Services 2016. Vamos falar dos novos recursos de conectividade, melhorias no processo de desenvolvimento e deploy, al#233;m das novas features de seguran#231;a.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Wasley Portes</b>, 
+</p>
+<hr>
+ 
+<h3>Modelagem Multidimensional</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sessão serão apresentados os conceitos e estrutura de um Data Warehouse, desde a entrevista de negócio com o cliente até a entrega do projeto para consumo de cubos e ferramentas de reporting.
+Serão esclarecidos conceitos importantes como fatos, dimensões, granularidade, modelos Star Schema e Snowflake Schema e também algumas dicas do prof. Ralph Kimball que facilitam decisões na modelagem.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vitor Ferreira</b>, 
+</p>
+<hr>
+ 
+<h3>Performance Tuning of Tabular Models in SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sessão vamos conhecer melhor a arquitetura do modelo Tabular do SSAS, além de conhecer boas práticas e técnicas de tunning para este modelo de implementação do SSAS.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alexandre Soteras</b>, 
+</p>
+<hr>
+ 
+<h3>Cortana Intelligence + Spark + PowerBI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Transforme a forma como a sua empresa conecta com seus clientes e parceiros fazendo uso de Cortana Intelligence Suite, Spark e PowerBI! Ao longo dessa sessão vamos explorar os serviços que compõe a suite Cortana Analytics e a integração presente destes componentes com o PowerBI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Viviane Ribeiro</b>, 
+</p>
+<hr>
+ 
+<h3>Advanced Analytics using SQL Server R Services</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sesão vamos ver uma introdução da linguagem mais popular no meio dos cientistas de dados e também no Microsoft R Server, integrado ao SQL Server sob o nome de R Services.
+R é uma linguagem aberta com foco em análise estatística e está integrada nativamente ao SQL Server 2016, sob o nome de SQL Server R Services.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Thiago Zavaschi</b>, 
+</p>
+<hr>
+ 
+<h3>Aprendizado de Máquina com Azure Machine Learning</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>O termo Machine Learning (ML) vem ganhando cada vez mais espaço no mercado e possui seus conceitos fundamentados nas áreas de estatística, computação e engenharia. Nesta palestra abordaremos o ML por meio de alguns exemplos, fazendo uso da ferramenta da Microsoft, o AzureML</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Guilherme Ferraudo</b>, 
+</p>
+<hr>
+ 
+<h3>Super ETL's com as novidades do SSIS 2016</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Veja o que há de novo do SSIS 2016 para tornar seus pacotes ETL muito melhores e facilitar seu trabalho. 
+
+Conexão com Azure Storage, integração com HDInsight para construção de clusters, package parts e muito mais.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dennes Torres</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Heterogêneo - Como integrar meu banco de dados relacional com NoSQL e BigData</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Desde que o SQL Server começou a suportar XML já sabíamos que estávamos entrando em uma nova era dos sistemas de banco de dados. Com a consolidação das arquiteturas em Nuvem e Big Data os sistemas tradicionais estão cada vez mais integrados e interagindo com sistemas não estruturados. 
+Nessa sessão o MVP Rodrigo Dornel irá mostrar como integrar o SQL Server com novas tecnologias, através de PolyBase, External Tables, JSON, SSIS e Stretch Database.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rodrigo Dornel</b>, 
+</p>
+<hr>
+ 
+<h3>SQL SERVER e ORACLE: Semelhan#231;as e Diferen#231;as para o DBA</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta se#231;#227;o veremos as semelhan#231;as e diferen#231;as nas arquiteturas do SQL SERVER e ORACLE. Veremos tamb#233;m as diferentes abordagens e ferramentas utilizadas para administrar cada tecnologia e as principais raz#245;es para conhecer as duas tecnologias.
+A ideia #233; mostrar como os recursos do SQL SERVER equivalem aos de Oracle e vice versa, permitindo ao Administrador criar uma boa base para compara#231;#227;o entre ambas as tecnologias.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marcelo Adade</b>, 
+</p>
+<hr>
+ 
+<h3>Como um DBA deve atuar com desenvolvedores</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta palestra, usando o bom humor e a sinceridade, vou falar sobre a eterna briga entre desenvolvedores e DBAs, principalmente quando mexemos com a zona de conforto das pessoas.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Fabio Cotrim</b>, 
+</p>
+<hr>
+ 
+<h3>Obtenha maior produtividade: desenvolvimento e administra#231;#227;o do SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Monitoring: Top SQLs Statements consumption detection, identifying fragmented indexes
+Analyzing: Locks and Blocks detections and actions to avoid this
+Rewriting: SQL Codes - changing executing plan
+Migrations:  database comparison, schema comparison and data comparison</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gustavo Carneiro</b>, 
+</p>
+<hr>
+ 
+<h3>In Memory OLTP Internals</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Essa sess#227;o tem por objetivo dar uma vis#227;o de "internals" de como funciona o mecanismo de inmemory internamente no SQL Server</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Frederico Santos</b>, 
+</p>
+<hr>
+ 
+<h3>Quero ser um DBA. O que devo aprender ?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nessa sess#227;o, voc#234; que acabou de assumir um cargo de DBA ou que ainda pretende se tornar um DBA, vai conhecer o m#237;nimo que voc#234; precisa aprender para administrar com seguran#231;a um ambiente SQL Server. 
+Darei um direcionamento de funcionalidades do SQL Server que voc#234; precisa aprender para atuar como um DBA no seu Dia a Dia de trabalho. Com essas dicas voc#234; poder#225; se aprofundar nesses assuntos e conseguir ser um #243;timo DBA para a sua empresa.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tiago Neves</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server - Extended Events</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nessa sess#227;o ser#225; apresentado a cria#231;#227;o e configura#231;#227;o do Extended Events, para auxiliar o DBA no monitoramento e an#225;lise de de eventos no SQL Server.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sulamita Dantas</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2016 New Security Features</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We will talk about new features regarding security released in SQL Server 2016. Obs: This session includes demos.
+
+Agenda
+
+Dynamic Data Masking
+Row-level Security
+Always Encrypted
+Additional Investments for SQL Server 2016 regarding security</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Diego Miranda</b>, 
+</p>
+<hr>
+ 
+<h3>Realizando Limpeza de dados com Data Quality Services</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nesta sessão será possível aprender sobre a utilização da ferramenta Data Quality Services da suite do SQL Server para realização de Data Cleansing (Limpeza) and Data Matching (deduplicação) dos dados da sua organização. Serão abordados alguns conceitos sobre a arquitetura de geração de um Master Data e Data Warehouse. Será possível também entender como realizar a automação do Data Cleansing usando a ferramenta de ETL Integration Services.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Arthur Luz</b>, 
+</p>
+<hr>
+ 
+<h3>Criando Custom Visuals no Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>O Power BI possui v#225;rios visuais prontos para o uso, por#233;m, em alguns casos, seria interessante poder criar e personalizar seu pr#243;prio visual. Nesta sess#227;o, iremos abordar algumas formas de criar e usar Custom Visuals no Power BI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Demetrio Silva</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Demetrio Silva
+ - <a href="https://www.twitter.com/@demetriosqldba">@demetriosqldba</a>
+</h3>
+<p>LinkedIn: <a href="Change photo Edit nameDem#233;trio Silva Edit headlineSharePoint Especialista - DBA SQL Server Edit location and industryRecife Area, BrazilComputer Software Current	 Edit current experienceLanlink Inform#225;tica Ltda. Previous	 Edit previous experienceCIEE-PE, Faculdade de Ci#234;ncias Humanas ESUDA Education	 Edit educationFIR – FACULDADES INTEGRADAS DO RECIFE 500+ connectionsView profile asMore options Public Profilehttps://br.linkedin.com/in/demetrioi">Change photo Edit nameDem#233;trio Silva Edit headlineSharePoint Especialista - DBA SQL Server Edit location and industryRecife Area, BrazilComputer Software Current	 Edit current experienceLanlink Inform#225;tica Ltda. Previous	 Edit previous experienceCIEE-PE, Faculdade de Ci#234;ncias Humanas ESUDA Education	 Edit educationFIR – FACULDADES INTEGRADAS DO RECIFE 500+ connectionsView profile asMore options Public Profilehttps://br.linkedin.com/in/demetrioi</a></p>
+ 
+<p>Contact: <a href="http://demetriosilva.wordpress.com">http://demetriosilva.wordpress.com</a></p>
+ 
+<p>Atua no ramo de Tecnologia da Informa#231;#227;o h#225; mais de 11 anos, #233; bacharel em Sistemas de Informa#231;#227;o com #234;nfase em Desenvolvimento de Software, pela FIR-Recife. Instrutor oficial Microsoft, trabalha com SQL Server h#225; mais de 10 anos, com Desenvolvimento, BI e Administra#231;#227;o. Tamb#233;m #233; consultor SharePoint e possui as certifica#231;#245;es MCTS/MCITP/MCSA/MCSE/MCT - SharePoint, SQL Server e Windows Server. #201; palestrante ativo da comunidade Microsoft e j#225; fez v#225;rios webcasts Microsoft sobre SQL Server e Powershell. Autor dos livros SQL Server Al#233;m do Conceito Volumes 1 e 2 https://demetriosilva.wordpress.com/2016/05/19/lanamento-do-livro-sql-server-alm-do-conceito-volume-2/
+</p>
+ 
+<h3 class="section-heading">Vitor Fava
+ - <a href="https://www.twitter.com/sqlservermaniacs">sqlservermaniacs</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/vitorfava">https://br.linkedin.com/in/vitorfava</a></p>
+ 
+<p>Contact: <a href="https://www.vitorfava.com">https://www.vitorfava.com</a></p>
+ 
+<p>I'm a DBA with extensive experience in the areas of Database and Information Technology, working on planning, implementation, and maintenance of large corporate database servers. 
+I have several professional certifications and good experience in development activities and management of entrepreneurial environments using SQL SERVER. 
+I'm a speaker at various technology events such as SQLSaturday, The Developers Conference, InteropMix and also in various discussion groups focused on database technology.
+I teach advanced training in SQL Server and Azure SQL Database and also acting as MCT in Microsoft official training.
+I'm the Chapter Leader of SQLManiacs PASS chapter.</p>
+ 
+<h3 class="section-heading">Wasley Portes
+ - <a href="https://www.twitter.com/wasleyportes">wasleyportes</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/wasleyportes">https://br.linkedin.com/in/wasleyportes</a></p>
+ 
+<p>Wasley is a BI Developer in Ryanair and has been working with SQL Server since 2011. In Brazil, he was the founder of one of PASS local user groups and presented in many conferences (SQLSaturday, DBA Brasil, The Developer's Conference) and meetups.</p>
+ 
+<h3 class="section-heading">Fabrício Lima
+ - <a href="https://www.twitter.com/fabriciodba">fabriciodba</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=85776885">https://www.linkedin.com/profile/view?id=85776885</a></p>
+ 
+<p>Contact: <a href="http://fabriciolima.net/blog/">http://fabriciolima.net/blog/</a></p>
+ 
+<p>Bacharel em Ciência da Computação pela Universidade Federal do Espírito Santo, trabalha com SQL Server desde 2006 e possui certificações desde a versão do SQL Server 2000. Em 2017 foi reconhecido pela Microsoft como MVP Data Platform.
+
+Após trabalhar por 10 anos como funcionário de uma grande empresa, em 2014 fundou a Power Tuning,  que se tornou uma consultoria referência no Brasil na plataforma de dados da Microsoft (DBA e BI).
+
+Também mantem um blog sobre SQL Server em: www.fabriciolima.net/blog</p>
+ 
+<h3 class="section-heading">Luiz Mercante
+ - <a href="https://www.twitter.com/@sqldicas">@sqldicas</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/luizmercante">https://br.linkedin.com/in/luizmercante</a></p>
+ 
+<p>Contact: <a href="http://sqldicas.com.br/">http://sqldicas.com.br/</a></p>
+ 
+<p>Luiz Mercante (@sqldicas) e Coordenador do time DBA no Grupo Recovery, MCTS em Windows, MTA em Databases, MCITP em SQL Server, autor do SQL Dicas! com mais de 100 contribuicoes, palestrante nos SQLSaturdays, moderador do grupo SQL Server Brasil do Facebook e moderador do forum Microsoft Technet – SQL Server Infra Geral.</p>
+ 
+<h3 class="section-heading">Thiago Zavaschi
+ - <a href="https://www.twitter.com/@zavaschi">@zavaschi</a>
+</h3>
+<p>Contact: <a href="http://www.zavaschi.com">http://www.zavaschi.com</a></p>
+ 
+<p>Thiago is master in computer science (pattern recognition area).
+Worked for a Microsoft Partner as SQL Server group lead, implementing BI solutions (PowerPivot, SSAS, etc) and another consulting tasks related to SQL Server like query tuning and clustering.
+Now works for a Microsoft as Premier Field Engineer (BI/DW) and is a former SQL Server MVP.</p>
+ 
+<h3 class="section-heading">Arthur Luz
+ - <a href="https://www.twitter.com/@arthurjosemberg">@arthurjosemberg</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/arthurjosemberg">https://br.linkedin.com/in/arthurjosemberg</a></p>
+ 
+<p>MCSE - Data Managment and Analytics, Especialista na suite de BI da Micorsoft, Analista Sênior em Modelagem e implementação de projetos de BI, Instrutor Oficial Microsoft [MCT], Desenvolvedor de Soluções usando tecnologias de Big Data, Articulista técnico da revista SQL Magazine e blog Data's Light e Palestrante da comunidade Microsoft vinculado ao PASS. Atua hoje como Chief Data Officer at Data's Light.</p>
+ 
+<h3 class="section-heading">Frederico Santos
+ - <a href="https://www.twitter.com/https://twitter.com/freddie_sql">https://twitter.com/freddie_sql</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/fredguis?">https://br.linkedin.com/in/fredguis?</a></p>
+ 
+<p>Contact: <a href="https://blogs.msdn.microsoft.com/apsblog/">https://blogs.msdn.microsoft.com/apsblog/</a></p>
+ 
+<p>Freddie Santos is an SQL Database Senior Support Engineer with Microsoft CSS. He is a database specialist with over 15 years of experience, and joined Microsoft team in 2012, Freddie has been working SQL customer support firstly as PFE doing proactive support, training, health checks and onsite support, recently joined  APS, formerly knows as PDW team on CSS Organization,  where he has been supporting Forbes 500 companies for APS, SQL Server and Azure SQL DW products. He also presented for Microsoft is some events such as Microsoft Insights/TechEd, SQLSaturdays, Data Driven etc. Besides Microsoft Freddie also worked in enterprise support com companies such as IBM, CSC. Nowadays he is based at Microsoft Support Center in Charlotte, NC.</p>
+ 
+<h3 class="section-heading">Evilázaro Alves
+ - <a href="https://www.twitter.com/@evilazaro">@evilazaro</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/evilázaro-alves-34035417">https://br.linkedin.com/in/evilázaro-alves-34035417</a></p>
+ 
+<p>Contact: <a href="http://www.evilazaro.com.br">http://www.evilazaro.com.br</a></p>
+ 
+<p>Possui 15 anos de experiência em desenvolvimento de software. Fundador e CTO – Chief Technology Officer da BR Soluções Integradas, onde atua na definição de Arquitetura de Soluções baseadas na plataforma Microsoft. Fundou em 2008 a comunidade WCF Brasil, dedicada ao estudo e divulgação de tecnologias Microsoft com foco na arquitetura SOA e Cloud Computing, contando atualmente, com mais de 1000 participantes. Estão entre estas tecnologias: Windows Communication Foundation, Windows Azure, Windows Server AppFabric, Windows Azure AppFabric, Windows Workflow Foundation . Foi nomeado como Microsoft Most Valuable Professional – Connected Developer Systems nos anos de 2009/2010/2011 e 2012 pela suas atuações na comunidade técnica Microsoft. Palestr</p>
+ 
+<h3 class="section-heading">Andre Rodrigues
+ - <a href="https://www.twitter.com/https://twitter.com/andrecesar_r">https://twitter.com/andrecesar_r</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/pub/andr#233;-c#233;sar-rodrigues/72/890/5b8">https://br.linkedin.com/pub/andr#233;-c#233;sar-rodrigues/72/890/5b8</a></p>
+ 
+<p>Contact: <a href="http://sqlmagu.blogspot.com.br/">http://sqlmagu.blogspot.com.br/</a></p>
+ 
+<p>Bacharel em Sistemas de Informação (2012) e com formação MBA na faculdade IBTA (2014), trabalha com o produto SQL Server desde 2010. Sua carreira de DBA começou no setor financeiro e depois seguiu para o setor público. No inicio de 2016 teve a oportunidade de ingressar na Microsoft Brasil, para atuar como PFE junto ao Suporte Premier, especializado em SQL Server, com foco em performance, alta disponibilidade e migração. Desde 2010 detém os títulos de MCP, MCITP, MCSA/MCSE SQL Server 2016.</p>
+ 
+<h3 class="section-heading">Dennes Torres
+ - <a href="https://www.twitter.com/Dennes">Dennes</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dennestorres/">https://www.linkedin.com/in/dennestorres/</a></p>
+ 
+<p>Contact: <a href="https://www.red-gate.com/simple-talk/author/dennes-torres/">https://www.red-gate.com/simple-talk/author/dennes-torres/</a></p>
+ 
+<p>Dennes Torres is a Data Platform MVP with more than 25 years of experience in the IT area. He improves Data Platform Architectures and turns data into knowledge. As a Brazilian living in Malta, Dennes works as a software developer and leads the Malta MDP User Group. Having the MCSE Data Platform, Business Intelligence, and Microsoft Certified Trainer (MCT) certifications, Dennes has been in love with database servers since he was  introduced to SQL Server 6.5, more years ago than he would like to admit.</p>
+ 
+<h3 class="section-heading">Vitor Ferreira
+ - <a href="https://www.twitter.com/https://twitter.com/vitor_engaut">https://twitter.com/vitor_engaut</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/vitor-ferreira-rodrigues-santos-84a51564">https://br.linkedin.com/in/vitor-ferreira-rodrigues-santos-84a51564</a></p>
+ 
+<p>Contact: <a href="https://vitorferreira.com.br">https://vitorferreira.com.br</a></p>
+ 
+<p>Músico, belo-horizontino, 28 anos e amante de tecnologias. Atua como CTO na Otus7, uma empresa especializada em análise de dados e tecnologias Microsoft.
+Palestrante nas comunidades de tecnologia e Membro MTAC, possui certificações MCSA SQL Server 2016 Database Development, MCSA SQL Server 2016 Business Intelligence Development, MCSA SQL Server BI Reporting, Microsoft Office Expert Especialist e MCSE Management and Analytics.</p>
+ 
+<h3 class="section-heading">Diego Miranda
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/pub/di%C3%AAgo-miranda/23/803/466">https://www.linkedin.com/pub/di%C3%AAgo-miranda/23/803/466</a></p>
+ 
+<p>Formado em Sistemas de Informa#231;#227;o pela Faculdade Inf#243;rium de Tecnologia - Belo Horizonte-MG e MBA em Gest#227;o Estrat#233;gica de TI pela Funda#231;#227;o Get#250;lio Vargas - Rio de Janeiro-RJ.
+Trabalho desde 2004 com suporte e consultoria em bancos de dados Microsoft SQL Server e ambientes Windows Server.
+Trabalhei durante 4 anos com suporte em bancos de dados Oracle em ambiente Linux, Unix e Windows Server.
+Desde Mar#231;o de 2012 atuo como Premier Field Engineer na Microsoft.
+</p>
+ 
+<h3 class="section-heading">Marcus Vinícius Bittencourt
+ - <a href="https://www.twitter.com/http://twitter.com/mvbitt">http://twitter.com/mvbitt</a>
+</h3>
+<p>LinkedIn: <a href="http://likedin.com/marcus.bittencourt">http://likedin.com/marcus.bittencourt</a></p>
+ 
+<p>Contact: <a href="http://isqlserver.wordpress.com">http://isqlserver.wordpress.com</a></p>
+ 
+<p>MVP Data Platform, PASS Regional Mentor, Chapter Leader do SQL Server RS.
+DBA especializado em infraestrutura, troubleshooting. 
+Trabalha com SQL Server há mais de 10 anos.
+SQL Performance Counters and Storage Expert, powershell, speaker na comunidade SQL Server em eventos como SQLSaturday, 24HOP, CMG, Eventos de Chapters Locais e Virtuais, dentre outros...</p>
+ 
+<h3 class="section-heading">André Castro
+
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/andr#233;-castro-54335126">https://br.linkedin.com/in/andr#233;-castro-54335126</a></p>
+ 
+<p>Mais de 5 anos de experi#234;ncia com projetos de BI, focados na plataforma Microsoft.
+Atualmente trabalhando como premier field engineer na Microsoft, suportando a estrutura de BI.</p>
+ 
+<h3 class="section-heading">Rodrigo Dornel
+
+</h3>
+<p>Rodrigo Dornel é MVP de Data Platform, MCT, MCSA, consultor na RDdornel Data Platform Experts e professor Universitário.</p>
+ 
+<h3 class="section-heading">Rodrigo Crespi
+ - <a href="https://www.twitter.com/sqlcrespi">sqlcrespi</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/rodrigocrespi/">https://www.linkedin.com/in/rodrigocrespi/</a></p>
+ 
+<p>Contact: <a href="http://sqlcrespi.com">http://sqlcrespi.com</a></p>
+ 
+<p>Rodrigo Crespi is Microsoft Data Platform MVP, MCT, MCSE, MCSA, MCIT, MCDBA and MCP in SQL Server. Also, he has certifications in .NET Framework, Dynamics CRM, among others. He started working with SQL Server on version 6.5 as a developer and then opted for working especially with database administration. Nowadays he is a partner in CrespiDB – Soluções em Plataformas de Dados and university professor at Uniftec – Caxias do Sul. Author of many published articles on websites and magazines about SQL Server and software engineering, he runs a YouTube channel named SQLCrespi and a personal blog called SQLCrespi, too. Rodrigo is the founder of SQL Server RS PASS Chapter in Rio Grande do Sul – Brazil and a Chapter Leader</p>
+ 
+<h3 class="section-heading">Marcelo Adade
+ - <a href="https://www.twitter.com/@marceloadade">@marceloadade</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/marceloadade">https://br.linkedin.com/in/marceloadade</a></p>
+ 
+<p>Contact: <a href="http://www.dbbits.com.br">http://www.dbbits.com.br</a></p>
+ 
+<p>Marcelo is a Database Consultant at The Pythian Group. He has more than 10 years of experience in several Companies from different branches and sizes. Like financial companies, consultant shops, datacenters and e-commerce sites. Currently holds the MCSE, MCT and MCSA Microsoft Certifications and also the Oracle OCP. Loves technology and enjoys sharing his Database knowledge delivering presentations and official Microsoft Training Courses. Currently he is also the co-leader of the SQLMANIACS PASS User Group, based in Sao Paulo, Brazil</p>
+ 
+<h3 class="section-heading">Viviane Ribeiro
+ - <a href="https://www.twitter.com/@viviane_sql">@viviane_sql</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/pub/viviane-ribeiro/16/234/930">https://br.linkedin.com/pub/viviane-ribeiro/16/234/930</a></p>
+ 
+<p>Contact: <a href="http://vivianeribeiro1.wordpress.com">http://vivianeribeiro1.wordpress.com</a></p>
+ 
+<p>Viviane Ribeiro #233; Diretora Executiva e Especialista em Business Intelligence na BI do Brasil. Possui mais de 15 anos de experi#234;ncia na #225;rea de TI, atuando como profissional certificada Microsoft desde 2000, atendendo #224;s certifica#231;#245;es MCSA, MCSS, MCSE, MCDST, MCDBA, MCT, MCTS e MCITP. Realizou diversos projetos de implanta#231;#227;o, migra#231;#227;o e integra#231;#227;o de sistemas e de produtos Microsoft. Engloba em seu curr#237;culo a participa#231;#227;o no time de DPE na Microsoft e no time Global Database Engineering da Dell</p>
+ 
+<h3 class="section-heading">Mauro Pichiliani
+ - <a href="https://www.twitter.com/http://twitter.com/@pichiliani">http://twitter.com/@pichiliani</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/mauro-pichiliani-b0a48417">https://br.linkedin.com/in/mauro-pichiliani-b0a48417</a></p>
+ 
+<p>Contact: <a href="http://pichiliani.com.br">http://pichiliani.com.br</a></p>
+ 
+<p>Mauro Pichilian é bacharel em Ciência da Computação, mestre e doutor pelo ITA (Instituto Tecnológico de Aeronáutica) e MCP, MCDBA e MCTS. Trabalha há mais de 15 anos utilizando diversos bancos de dados SQL e NoSQL. É escritor da revista SQL Magazine, colunista de do iMasters e co-produtor do DatabaseCast, o podcast brasileiro sobre banco de dados.</p>
+ 
+<h3 class="section-heading">Luan Moreno Medeiros Maciel
+ - <a href="https://www.twitter.com/@luansql">@luansql</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</a></p>
+ 
+<p>Contact: <a href="https://luanmorenodba.wordpress.com/ amp; http://www.sqlshack.com/author/luan-moreno-m-maciel/">https://luanmorenodba.wordpress.com/ amp; http://www.sqlshack.com/author/luan-moreno-m-maciel/</a></p>
+ 
+<p>Based out of Brazil, Luan Moreno credits his ability to solve problems to thinking critically before acting. He values working with a team because he and his clients can benefit from various perspectives and collaboration, particularly when faced with difficult issues. When Luan Moreno first became interested in technology, he didn’t have a mentor, so he made a commitment to teaching others in the community and sharing his knowledge through blogging, speaking engagements.
+
+Luan Moreno is a addicted Brazilian blogger and speaker. SQL Server MCT, MCSE and MVP living in Brazil. Nowadays he#39;s a Database Consultant at Pythian, company based in Ottawa - Canada.#160;</p>
+ 
+<h3 class="section-heading">Luiz Henrique Garetti
+ - <a href="https://www.twitter.com/luizhgaretti">luizhgaretti</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/luizhenriquegaretti">https://www.linkedin.com/in/luizhenriquegaretti</a></p>
+ 
+<p>Contact: <a href="https://dataisbig.com.br/">https://dataisbig.com.br/</a></p>
+ 
+<p>Arquiteto de Soluções Big Data no Itáu, Bacharel em Ciência da Computação com MBA em Big Data. 
+Palestrante em eventos de tecnologia com participações nacionais como São Paulo, Brasília, Salvador, Belo Horizonte, Caxias do Sul, Joinville e internacionais como Bogotá-Colômbia.
+Nas horas vagas... curto pegar a estrada de moto, é o meu limpa cache :)
+Entusiasta do Ecossistema Big Data, o qual dedica horas de estudos em tecnologias emergentes, compartilhando um pouco no blog www.dataisbig.com.br</p>
+ 
+<h3 class="section-heading">EDVALDO CASTRO
+ - <a href="https://www.twitter.com/https://twitter.com/edvaldocastro02">https://twitter.com/edvaldocastro02</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/edvaldocastro">https://br.linkedin.com/in/edvaldocastro</a></p>
+ 
+<p>Contact: <a href="http://edvaldocastro.com">http://edvaldocastro.com</a></p>
+ 
+<p>Database specialist working exclusively with SQL Server for more than 8 years. I´ve worked as a Premier Field Engineer (PFE) at Microsoft and other companies in financial, pulp manufactuing and education (Federal University) areas.
+
+I´m experienced in planning and deploying High Availability and Disaster Recovery solutions,by using Windows Server Failover Cluster, AlwaysOn Availbility Groups and Backup / Restore strategies.
+I got graduated twice at college (Systems of Information | IT for businness and Commerce).
+
+Nowadays I'm a Senior Database Administrator in one of the biggest financial companies in Brasil. (Sicoob) and also a Data Platform Instructor and Consultant at BTS Tecnologia.</p>
+ 
+<h3 class="section-heading">Sulamita Dantas
+ - <a href="https://www.twitter.com/@suladantas">@suladantas</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sulamita-dantas-21976340/">https://www.linkedin.com/in/sulamita-dantas-21976340/</a></p>
+ 
+<p>Contact: <a href="http://www.sulamitadantas.com.br">http://www.sulamitadantas.com.br</a></p>
+ 
+<p>Sulamita Dantas é formada em Ciência da Computação pelo Centro Universitário Unibh.
+Possui experiência como DBA SQL Server, Analista Protheus e Analista BI.
+Atualmente é MVP Data Plataform (Microsoft Most Valuable Professional), 
+Lider do Local Group SQL BH, 
+Co-Organizadora do Grupo Random Hacks   
+Conselheira Fiscal da ONG MTAC.
+Apaixonada por Ciclismo!</p>
+ 
+<h3 class="section-heading">Igor Santos de Paula
+
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/igor-santos-de-paula-098bab35">https://br.linkedin.com/in/igor-santos-de-paula-098bab35</a></p>
+ 
+<p>Administrador de bancos de dados em ambientes 24x7, sem janela de manutenção. Possui experiencia em instituições financeiras e de e-commerce. Atua na empresa líder em soluções de pagamento e serviços financeiros para e-commerce na América Latina.
+Entusiasta do Cosmos DB.</p>
+ 
+<h3 class="section-heading">Nilton Pinheiro
+ - <a href="https://www.twitter.com/nilton_pinheiro">nilton_pinheiro</a>
+</h3>
+<p>LinkedIn: <a href="http://br.linkedin.com/in/niltonpinheiro">http://br.linkedin.com/in/niltonpinheiro</a></p>
+ 
+<p>Contact: <a href="http://www.mcdbabrasil.com.br">http://www.mcdbabrasil.com.br</a></p>
+ 
+<p>Nilton has 18+ years of SQL Server experience and is the co-author of the book "SQL Server 2014: High Availability in Practice with AlwaysOn Failover Cluster Instances". He worked as a SQL Server Specialist at Itaú Bank (Brazil) for 11 years working on design and coordination of large database infrastructure projects involving deployment and migration of mission-critical servers. Nilton worked at IBM for 4 years as a SQL Server SME and also at Microsoft as a Sr. Support Engineer in the Microsoft CSS SQL team. Speaker at events like SQLSaturday, TechEd, MS Tech Summit and others, he was Microsoft MVP for 11 years and holds SQL Server MCSA\MCSE certifications. Currently he is a Sr. Database Consultant at AGAP2 IT, working in Brussels.</p>
+ 
+<h3 class="section-heading">Marcos Freccia
+ - <a href="https://www.twitter.com/@sqlfreccia">@sqlfreccia</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/marcosfreccia">https://br.linkedin.com/in/marcosfreccia</a></p>
+ 
+<p>Contact: <a href="http://marcosfreccia.wordpress.com">http://marcosfreccia.wordpress.com</a></p>
+ 
+<p>Currently working as a Microsoft SQL Server DBA at Zalando SE, Marcos has over 9 years of SQL Server experience, working from small to enterprise environments with High Availability, Disaster Recovery, Database Optimization, etc.. Holding several Microsoft certifications such as: MCITP DBA  DEV, MCSE Data Plataform and his last certification on Microsoft Azure Design and Implement Cloud Data Platform Solutions. In 2013 Marcos was awarded as a Microsoft MVP by his contributions in the Brazilian SQL Server community. Marcos is a frequent speaker in the SQL Server Community and he was the organizer of the first SQLSaturday in South Brazil.</p>
+ 
+<h3 class="section-heading">Fabricio Catae
+ - <a href="https://www.twitter.com/https://twitter.com/fcatae">https://twitter.com/fcatae</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/fabriciocatae">https://www.linkedin.com/in/fabriciocatae</a></p>
+ 
+<p>Contact: <a href="https://blogs.msdn.microsoft.com/fcatae/">https://blogs.msdn.microsoft.com/fcatae/</a></p>
+ 
+<p>Fabricio Catae #233; evangelista t#233;cnico com foco em Data Architecture e Cloud. Trabalha h#225; 14 anos na Microsoft com as linguagens C/C++, C#, Javascript e muito SQL. Atualmente est#225; cuidando de tecnologias SQL relacional, NoSQL, mensageria e containers. </p>
+ 
+<h3 class="section-heading">Gustavo Moura Fé
+ - <a href="https://www.twitter.com/https://twitter.com/GustavoMouraFe">https://twitter.com/GustavoMouraFe</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/gmfmaia">https://www.linkedin.com/in/gmfmaia</a></p>
+ 
+<p>Contact: <a href="https://comunidadesqlserver.wordpress.com/">https://comunidadesqlserver.wordpress.com/</a></p>
+ 
+<p>Gustavo [Guzz] Moura Fé Maia é um SQL Geek viciado em automatização e performance tuning. É um dos autores do blog Comunidade SQL Server onde gosta de escrever sobre programação em T-SQL, powershell e segurança. Quando não está com uma caneca de café, estudando sobre tecnologia, está com uma caneca de café fazendo outra coisa.</p>
+ 
+<h3 class="section-heading">Thiago Cruz
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=AAIAAAfV-XQB4Ggvl4F52vu4lyVU4GML2HYSbWMamp;trk=nav_responsive_tab_profile">https://www.linkedin.com/profile/view?id=AAIAAAfV-XQB4Ggvl4F52vu4lyVU4GML2HYSbWMamp;trk=nav_responsive_tab_profile</a></p>
+ 
+<p>Contact: <a href="http://www.dbaacademy.com.br">http://www.dbaacademy.com.br</a></p>
+ 
+<p>Founder of database consulting training firm DBA Academy, he has been working with Database for about 10 years, working with SQL Server, PostgreSQL and MySQL platforms. He keeps a constantly updated Blog with articles from various database platforms. data, and constantly discusses various database events.</p>
+ 
+<h3 class="section-heading">Roberto Fonseca
+
+</h3>
+<p>Trabalha  com  tecnologia  a mais  de  10  anos,  sempre  com foco  principal  nas tecnologias Microsoft. #201; DBA desde 2001 e possui diversas certifica#231;#245;es em Windows Server  e SQL Server  como MCDBA, MCITP, MCPD,  MCT e Small 
+Business  Specialist.  Atua como  moderador  do  f#243;rum  de  SQL  Server  no  Microsoft  Technet (www.technetbrasil.com.br) e  MSDN  (www.msdnbrasil.com.br)  e  tamb#233;m  como  palestrante em diversos eventos por todo o Brasil.</p>
+ 
+<h3 class="section-heading">Tiago Neves
+ - <a href="https://www.twitter.com/tiagolneves">tiagolneves</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/tiago-neves-dba/">https://www.linkedin.com/in/tiago-neves-dba/</a></p>
+ 
+<p>Contact: <a href="http://www.tiagoneves.net/blog">http://www.tiagoneves.net/blog</a></p>
+ 
+<p>Sou MTAC, Local Group Leader SQL SERVER - ES, atualmente trabalho como consultor SQL Server na  Eiti Soluções Gestão de TI, atendendo clientes de todo o Brasil.
+Tenho um blog sobre SQL Server http://www.tiagoneves.net/blog/</p>
+ 
+<h3 class="section-heading">Dhiego Piroto
+ - <a href="https://www.twitter.com/@dhiegopiroto">@dhiegopiroto</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dhiego-piroto-1a990629">https://www.linkedin.com/in/dhiego-piroto-1a990629</a></p>
+ 
+<p>Contact: <a href="http://dhiegopiroto.wordpress.com/">http://dhiegopiroto.wordpress.com/</a></p>
+ 
+<p>MCITP SQL Server 2008 (ADM amp; DEV). Atua com tecnologias SQL Server a 6 anos. Atualmente #233; consultor de performance, com foco em tecnologias Microsoft. Dentro dos clientes atentidos destacam-se institui#231;#245;es financeiras (nacionais e internacionais) e empresas de varejo.
+Contribui com a revista SQL Magazine e #233; membro atuante na comunidade SQL Server BR.</p>
+ 
+<h3 class="section-heading">Fabiano Amorim
+ - <a href="https://www.twitter.com/mcflyamorim">mcflyamorim</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/fabianoamorim/">https://www.linkedin.com/in/fabianoamorim/</a></p>
+ 
+<p>Contact: <a href="http:\\blogfabiano.com">http:\\blogfabiano.com</a></p>
+ 
+<p>Fabiano Amorim is a Data Platform MVP that loves to conquer complex, challenging problems—especially ones that others aren’t able to solve. He first became interested in technology when his older brother would bring him to his work meetings at the age of 14. With over a decade of experience, Fabiano is well known in the database community for his performance tuning abilities. When he isn’t working, he loves to read and spend time with his family.</p>
+ 
+<h3 class="section-heading">Luciano Moreira
+ - <a href="https://www.twitter.com/@luticm">@luticm</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/luticm">http://www.linkedin.com/in/luticm</a></p>
+ 
+<p>Contact: <a href="http://luticm.blogspot.com">http://luticm.blogspot.com</a></p>
+ 
+<p>Luciano Moreira is owner of Sr. Nimbus, a consulting and training company. MVP and SQL Server specialist, in the past years he#39;s trying to explore other database engines, relational or not, besides studying subjects related to data science and solution#39;s architecture. Divides his professional time between consulting, training and technical community, helping companies to develop data solutions, utilizing efficiently their products and, of course, troubleshooting hard SQL Server issues.</p>
+ 
+<h3 class="section-heading">Fabio Cotrim
+
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/fcotrim">https://br.linkedin.com/in/fcotrim</a></p>
+ 
+<p>Contact: <a href="https://dbabrasil.net.br">https://dbabrasil.net.br</a></p>
+ 
+<p>Especialista em TI, com sólida atuação no desenvolvimento e manutenção de bancos de dados Microsoft SQL Server, nas versões 2000 à 2019. 
+Atuação na integração, réplica e sincronia de dados em ambientes de alta disponibilidade.
+Implantação de ambientes de alta disponibilidade, utilizando o AlwaysOn.
+Experiência na realização de tunning e análise de segurança de bancos de dados.
+Atuação em projetos voltados à gestão das áreas de Marketing, Publicidade, Finanças, Contábil, Fiscal, Logística, Vendas, Suprimentos, Manufatura e Gestão de Pessoal.</p>
+ 
+<h3 class="section-heading">Ricardo Leka
+ - <a href="https://www.twitter.com/@bigleka">@bigleka</a>
+</h3>
+<p>LinkedIn: <a href="http://br.linkedin.com/in/ricardoleka">http://br.linkedin.com/in/ricardoleka</a></p>
+ 
+<p>Contact: <a href="http://leka.com.br">http://leka.com.br</a></p>
+ 
+<p>Microsoft Certified Master e Microsoft Certified Solutions Master, Ricardo #233; uma das poucas pessoas do Brasil com o mais alto n#237;vel de certifica#231;#227;o Microsoft em SQL Server.
+Consultor SQL Server a mais de 15 anos, especialista em planejamento de ambientes de Alta disponibilidade e Recupera#231;#227;o de Desastre.</p>
+ 
+<h3 class="section-heading">Gustavo Maia Aguiar
+
+</h3>
+<p>Contact: <a href="http://gustavomaiaaguiar.wordpress.com">http://gustavomaiaaguiar.wordpress.com</a></p>
+ 
+<p>Profissional entusiasta do mundo de banco de dados e armazenamento, passou por v#225;rias empresas e hoje trabalha em uma das maiores institui#231;#245;es financeiras do pa#237;s atuando como l#237;der de banco de dados. Acostumado com ambientes de miss#227;o cr#237;tica e palestrante recorrente em eventos ligados a banco de dados e a tecnologias Microsoft.</p>
+ 
+<h3 class="section-heading">Silas Mendes
+ - <a href="https://www.twitter.com/@silasmendes">@silasmendes</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/silasmendes">https://br.linkedin.com/in/silasmendes</a></p>
+ 
+<p>Contact: <a href="http://www.silasmendes.com">http://www.silasmendes.com</a></p>
+ 
+<p>Silas Mendes tem + 8 anos de experi#234;ncia com SQL Server, atuando em grandes companhias e em ambientes de alta criticidade. #201; formado em banco de dados pelo IBTA e atualmente trabalha na Microsoft como Premier Field Engineer. </p>
+ 
+<h3 class="section-heading">Suellen Moraes
+
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/suellen-moraes-46562138">https://br.linkedin.com/in/suellen-moraes-46562138</a></p>
+ 
+<p>Formada Tecnologia em banco de dados pós graduada em gestão de TI e formação em coaching. Auxiliando pessoas a se conhecerem, se transformarem e alcançar os seus sonhos e objetivos. Atualmente coordenadora de banco de dados com experiência em gestão corporativa de pessoas, administração de Banco de Dados SQL Server desde a versão 2000, tendo como foco principal Administração das Bases, Tunning, troubleshooting, utilizaçãodo do SSIS, diagnosticar problemas no sistema, garantir alta disponibilidade do ambiente, estudo de viabilidade de ambientes, análise de consultas visando otimizar o desempenho dos processos, planejar a arquitetura para novos projetos e melhoria para os ja existentes no ambiente.</p>
+ 
+<h3 class="section-heading">Gustavo Carneiro
+ - <a href="https://www.twitter.com/@gustavosavant">@gustavosavant</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/gcarneiro">https://br.linkedin.com/in/gcarneiro</a></p>
+ 
+<p>Contact: <a href="http://@toad_brasil">http://@toad_brasil</a></p>
+ 
+<p>Gustavo is the Strategic Solutions Consultant from Quest Software with 18+ years of IT technical and commercial experience. Previously was Dell End User Computing 3th party Software Consultant</p>
+ 
+<h3 class="section-heading">Marcos Vinicius Oliveira Schardong
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/marcos-vinicius-oliveira-schardong-719b132a">https://www.linkedin.com/in/marcos-vinicius-oliveira-schardong-719b132a</a></p>
+ 
+<p>MCSA SQL Server, SQLSaturday Speaker, Publicações na SQL Maganize.</p>
+ 
+<h3 class="section-heading">Guilherme Ferraudo
+
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/guilherme-ferraudo-b531665b">http://www.linkedin.com/in/guilherme-ferraudo-b531665b</a></p>
+ 
+<p>Guilherme Moraes Ferraudo é PhD em Agronomia (Genética e Melhoramento de Plantas) pela Universidade Estadual Paulista (2013), Mestre (2008) e Bacharel (2006) em Estatística pela Universidade Federal de São Carlos. Atuou como Statistician Specialist da Monsanto junto ao time de Technology Development onde trabalhou com análise de dados das culturas de milho, soja e algodao. Anteriormente, trabalhou com o time de Discovery Breeding de cana-de-açúcar e sorgo, sendo responsável pela análise de dados do programa de melhoramento genético convencional e time de biotecnologia. Trabalhou numa startup de People Analytics. É assessor científico da Revista Brasileira de Biometria e outras. Atualmente, atua como consultor de Data Analytics.</p>
+ 
+<h3 class="section-heading">Alexandre Soteras
+
+</h3>
+<p>LinkedIn: <a href="http://br.linkedin.com/in/alexandresoteras">http://br.linkedin.com/in/alexandresoteras</a></p>
+ 
+<p>Consultor com mais de 10 anos de experi#234;ncia na suite Bi Microsoft, atualmente atuando na Microsoft como Premier Field Engineer para SQL Server Bi.</p>
+ 
+<h3 class="section-heading">Lucas Souza
+ - <a href="https://www.twitter.com/https://twitter.com/LucasJ_DBA">https://twitter.com/LucasJ_DBA</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=105952892amp;trk=nav_responsive_tab_profile">https://www.linkedin.com/profile/view?id=105952892amp;trk=nav_responsive_tab_profile</a></p>
+ 
+<p>Contact: <a href="http://www.lucasdba.com.br">http://www.lucasdba.com.br</a></p>
+ 
+<p>Lucas Jos#233; dos Reis Souza, Formado em Sistemas da informa#231;#227;o pela universidade Anhembi Morumbi. Atua como Administrador de banco de dados na plataforma SQL Server há mais de 6 anos com #234;nfase em administra#231;#227;o e tunning. Lecionou treinamentos e Atuou em grandes empresas bem como, Santander, Saraiva e Grupo B2W com grandes projetos de implanta#231;#227;o, migra#231;#245;es de vers#245;es (2000 gt; 2008r2 / 2008r2 gt; 2012). Possui os t#237;tulos de MCTS, MCITP, MCSA e MCT em SQL Server 2008/2012.</p>
+ 
+<h3 class="section-heading">Marcelo Fernandes
+ - <a href="https://www.twitter.com/marcelodba">marcelodba</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/marcelodba">https://br.linkedin.com/in/marcelodba</a></p>
+ 
+<p>Contact: <a href="http://marcelodba.wordpress.com">http://marcelodba.wordpress.com</a></p>
+ 
+<p>Marcelo Fernandes is SQL Server MVP and has 12+ years experience with databases, specialized in High Availability, critical missions and very large databases. He holds the MCP / MCDBA / MCSA / MCTS / MCITP and MCT certifications, he lives and works in Berlin for an American e-commerce company that sells home goods. He share their knowledge through webcasts, presentations and articles on Microsoft technologies and can be cantacted by email fernandes_dba@hotmail.com or twitter @ marcelodba</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://www.crespidb.com.br">CrespiDB</a></p>
+ 
+<p><a href="http://www.fabriciolima.net/">Fabricio Lima Soluções em BD</a></p>
+ 
+<p><a href="http://www.pass.org">PASS</a></p>
+ 
+<p><a href="https://www.btstecnologia.com.br">BTS Tecnologia</a></p>
+ 
+<p><a href="http://www.tomatemkt.com/">Toma.te Mkt</a></p>
+ 
+<p><a href="http://www.unip.br">UNIP Tatuapé</a></p>
+ 
+<p><a href="http://www.ctanet.com.br/">CTA Informática</a></p>
+ 
+<p><a href="http://www.ngrsolutions.com.br">NGR Solutions</a></p>
+ 
+<p><a href="http://rd.gt/2j7SNf9">Red Gate</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQLSaturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

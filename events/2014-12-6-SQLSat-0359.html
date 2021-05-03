@@ -1,0 +1,593 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQLSaturday SQLSaturday #359 - Istanbul 2014" />
+        <meta name="author" content=" />
+        <title>SQLSaturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #359 - Istanbul 2014
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQLSaturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #359 - Istanbul 2014</div>
+        <div class="masthead-subheading">This event was held on 2014-12-6</div>
+        <p><b>Event Location</b>:</p>
+        <p>Microsoft - Bellevue Residences, Levent Mahallesi</p>
+        <p>Aydin Sokak No:7, Levent</p>
+        <p>Istanbul, , Turkey</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0359.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Query Processing in In-Memory OLTP (Hekaton)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In-Memory OLTP (code name: Hekaton) is the most important new feature in SQL Server 2014, and this session will teach you how query processing and optimization work with this new database engine. After explaining the basics, we will discuss how the query optimizer is used in In-Memory OLTP by both natively compiled stored procedures and by traditional stored procedures accessing memory-optimized tables through the query interop functionality. We will also take a look at how the new hash and range indexes are used, as well as how their performance implications are also covered along with the process of translating the plan created by the query optimizer into C code. Finally, some limitations with the current release will also be explained.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Benjamin Nevarez</b>, 
+</p>
+<hr>
+ 
+<h3>How to tune your applications before moving your database to Microsoft Azure SQL Database (PaaS)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>OK, you've jumped into your Azure journey by creating your Azure SQL Database. Created your schema and filled up your data or just used import/export wizard. Then, you've plugged your application(s) to this new Azure SQL Database but something goes wrong by means of performance. It was working perfectly ok when your database was running on your on premises SQL Server. But now it does not perform very well with Azure SQL Database and your users started reporting interesting error message that you did not see before. "What could it be wrong ?" Some possible answers you may think of are : 
+A) This Azure SQL Database thingy is not for me, I give up!
+B) I guess I'm missing some details
+
+If you are answering this as "B", plase come join us to learn what you could have been missing
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Faruk Celik</b>, 
+</p>
+<hr>
+ 
+<h3>Scaling Out Microsoft Azure SQL Databases</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft Azure SQL offers a variety of service tiers and performance levels to fit the diverse needs of database applications in the cloud. For each tire, the maximum database size is limited (up to 500GB), so when additional resources are required scaling out becomes necessary. This requires sharding, which horizontally partitions data across multiple databases.  Each database in this model is referred to as a shard.
+Azure SQL Database supports three methods to implement sharding: Elastic Scale, Custom Sharding and Federations
+This talk is a comparison and overview of these approaches, to be possible to choose the best one in your practice.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mihail Mateev</b>, 
+</p>
+<hr>
+ 
+<h3>Deep dive to SQL Server configuration for SharePoint Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>If you're using SQL Server 2012 or SQL Server 2014 as the database server for SharePoint 2013, you must perform particular set of steps to install SQL Server and then configure it specifically to host your SharePoint 2013 farm. In this session, we’ll walk through the installation process for SQL Server. I'll explain the post-installation configuration changes that are foreseen to SharePoint 2013. We’ll also have a look on how to configure SQL as SharePoint backups – all via PowerShell - for sure! As last point bottlenecks for HA/DR environments will be explained in a few steps.
+
+After this session you will serve admirably the database back end to your SharePoint 2013 farm.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gokan Ozcifci</b>, 
+</p>
+<hr>
+ 
+<h3>How to improve SQL query performances by analyzing the cached code in buffer pool</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Performance improvement of T-SQL code is one of the most recurring topic. SQL Server provides developers with a very rich source of information to understand performance issues and bottlenecks: the plan cache.
+The session shows a technique for deeply exploring SQL Server plan cache, in order to identify the less performing queries by automatically analyze the XML execution plans through XQuery scripts. It shows the metrics for query plan quality evaluation, how to automatically find the most expensive plans, the less performing operators, and possible optimizations suggested directly by the engine.
+More in general, how to identify the most resource consuming pieces of code in order to provide the developers and DBAs with precise indications in terms of code design and maintenance. Finally, the session shows news about SQL 2014 to facilitate this approach.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Saverio  Lorenzini</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to Document DB and Azure Search</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft Azure Document DB is a purpose built JSON document database that is ideal for use in developing the next generation of modern web and mobile applications. DocumentDB provides the scale and performance of benefits of a NoSQL database but without forcing developers to take a productivity hit at design time in order to use it. NoSQL databases bring the promise of near limitless scale out and improved developer productivity
+ 
+In this session we'll deep dive into the capabilities that set DocumentDB apart from RDBMS stores as well its NoSQL.
+This session will focus on the recently announced Azure Document DB service, a powerful JSON store well suited to building modern web and mobile applications and a free tour of NoSQL storage options in Microsoft Azure. Guidance on selecting the right storage will be covered through best practices.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Umit Sunar</b>, 
+</p>
+<hr>
+ 
+<h3>Effective T-SQL. To be effective or not to be.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Almost any database query can be written in several ways. T-SQL, as any other query language, contains many language constructions and has a lot of aspects, that can both make life easier and more complex. Under "complex life", I understand bad readability and poor performance. In this session we will consider a number of typical tasks, solved with the help of T-SQL, and will look at effective and ineffective task solutions.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Denis Reznik</b>, 
+</p>
+<hr>
+ 
+<h3>Relational Data Management on Microsoft Azure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Start with data management features available on Microsoft Azure and learn about the various options for using SQL Server in Windows Azure. Explore the differences between Azure SQL Database (PaaS) and SQL Server in infrastructure as a service (IaaS), and see how to deploy and manage both approaches.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mine Tokus</b>, 
+</p>
+<hr>
+ 
+<h3>One Small Step for Power BI, Four Giant Tools for Power Users</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Connect any source to discover and combine any data with Power Query
+Establish your model  Analyze with Power Pivot
+Visualize your data to create interactive reports with Power View and gain more insights on 3D maps with Power Map
+Share your reports, create Collaborative BI sites, ask Qs and get As with Power BI for Office 365</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mustafa Acungil</b>, 
+</p>
+<hr>
+ 
+<h3>Let's cook  'best SQL Server DBA practices'</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we will go through the topics of performance, scalability and availbility - the 3 core topics that every DBA needs to know. Performance is at the core and required for every database application (small or mission-critical). In this talk we will go through the concepts, tools and procedures that will help you in monitoring and start fine-tuning the performance or find the root-cause on your data platform. The subject covered here is excerpted from my book "Microsoft SQL Server 2008 R2 Administration cookbook". This will also be an ideal beginning for any IT person who is willing step-into DBA world. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Satya Jayanty</b>, 
+</p>
+<hr>
+ 
+<h3>Predictive Modelling with SQL Server and Azure ML</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Nowadays there is no meaning : Big Data if you are digging. The important thing is how can we find a benefits of our business strategy using our structured or non-structured data. Predictive modelling is based on statistical algorithms and usually that can be difficult situations for Developers. Azure Machine Learning that is the new products to build predictive Data Mining models easily. In this session we create an Azure, Azure Machine Learning systems and show how can we generate statistical predictive models using SQL Server Data and HDInsight. On the other hand we'll show real samples to real business to understand benefits of our business.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Koray Kocabas</b>, 
+</p>
+<hr>
+ 
+<h3>SQL 2014 Column Store Index Enhancements</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Start with Column Store Index concept which is a new feature coming with SQL 2012. Explain the architecture of CSI and the workload types fit with CSI. Explore the new great enhancements in SQL 2014 with useful demos by comparing the results with traditional and column store indexes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Işıl Efe</b>, 
+</p>
+<hr>
+ 
+<h3>Troubleshooting: How to understand if the storage is a problem on the database server?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this demo-packed session, you will learn how reads/writes work in SQL Server and you will be able to prove whether the storage is the biggest bottleneck or not!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Yigit Aktan</b>, 
+</p>
+<hr>
+ 
+<h3>Making customer segmentation using SQL Server SSAS</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session will show in practice how to make customer segmentation using SQL Server Analysis services. By using algorithms for segmentation available in Analysis services, we will create segments and statistically test segments (clusters).
+
+Goal of this session is to show how to deploy customer segmentation using data mining in SSAS and what are the practical needs for people working with BI and in Marketing.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tomaž Kaštrun</b>, 
+</p>
+<hr>
+ 
+<h3>Common TSQL Mistakes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We are going to examine a variety of oopsies MANY developers fall prey too - some obvious, some pretty subtle and some down right sneaky! Lots of code examples with the bad AND good code presented. I GUARANTEE that you will find things here that will either prevent you from getting bad data, throwing unwanted errors or vastly improving your database application's performance.  I have given this talk over SEVENTY times now and it is always very highly rated!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Boles</b>, 
+</p>
+<hr>
+ 
+<h3>Why "Big Data" Is a Big Deal? Converting Big Data into Value</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session will discuss architecture differences between SQL Server Analytics Platform System (APS) vs SQL Server 201x in terms of data warehouse implementations. It will discuss transitioning from SMP to MPP, the why and the how. Session will also discuss managing “Data Lakes” with Hadoop integration. There will be demos to show the concepts in real life implementations.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Serdar Altug</b>, 
+</p>
+<hr>
+ 
+<h3>DQS step-by-step  with Domain Management, Knowledge Discovery and Matching Policies</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Data Quality Services (DQS/ new since  SQL Server 2012) include  Domain Management, Knowledge Discovery and Matching Policies.
+The session gives an introduction to each of the three parts and shows the preconditions, the configuration and the implementation 
+in the workflow. 
+The improvement of the DataQuality can be seen as the result.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alexander Karl</b>, 
+</p>
+<hr>
+ 
+<h3>How Latch Contention Affects the Performance? Common Scenarios and Workarounds from the Field</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Latches are lightweight synchronization primitives that are used by the SQL Server engine to guarantee consistency of in-memory structures including; index, data pages and internal structures such as non-leaf pages in a B-Tree. Latch contention occurs when multiple threads concurrently attempt to acquire incompatible latches to the same in-memory structure. In this session, you will learn what SQL Server Latch Contention is and how to diagnose it. The session will also cover the common application designs and access patterns lead to latch contention and what the possible workarounds are.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Turgay Sahtiyan</b>, 
+</p>
+<hr>
+ 
+<h3>Easy Way of Data Consumption  Visualization with SSRS, PowerPivot and Power View</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Abstract: This session will cover presentation of the capabilities of the data visualization with Reporting Services, Self-Service BI with Report Builder and Self-Service BI with PowerPivot for Excel. Data source sample will be RDBMS, Data Warehouse and a CSV file.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Belkis Ozhorasan</b>, 
+</p>
+<hr>
+ 
+<h3>See the POWER of PowerBI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Over the course of this session, you will see the improvements that Microsoft has made in the SharePoint 2013 stack to take this new focus from being a nice idea to a truly powerful reality. We will explore the improvements made to Excel, PowerPivot, Power View, PowerQuery and PowerMap. We will explain the underlying technology that makes the new features possible and walk through demos of some of the shinier toys. At the end of the session, you will walk away with a better understanding of what is new in 2013 for business intelligence and an extreme desire to build reusable data model that will undoubtedly bring real value to your business.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Burak Tufanoglu</b>, 
+</p>
+<hr>
+ 
+<h3>The nightmare of locking, blocking and isolation levels!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>I am sure you all know that troubleshooting problems related to locking and blocking (hey, sometimes there are deadlocks too) can be a real nightmare! In this session, you will be able to see and understand why and how locking actually works, what problems it causes and how can we use isolation levels and various other techniques to resolve them!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Boris Hristov</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2014: High Availability and Disaster Recovery Solutions</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Today almost all of the business applications/databases need High Availability and Disaster Recovery solutions for uninterrupted service continuity. In this session we'll have a look at High Availability and Disaster Recovery (HA/DR) Solutions of SQL Server 2014. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Levent Oktar</b>, 
+</p>
+<hr>
+ 
+<h3>Backups for Azure SQL Databases and SQL Server instances running on Azure Virtual Machines</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Session on backup to Azure feature (manual and managed) in SQL Server 2014 to provide a cost effective DR and best practices around the same</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Chandra Mohan Situmalli</b>, 
+</p>
+<hr>
+ 
+<h3>Monitoring and Assessing SQL Server with extended events</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Configuring SQL Server Extended Events in terms of the data load
+Importing data to SQL Server
+Analyzing data for Expensive Queries, Adhoc queries, wait statistics
+If extended events is still heavy to run in production environment, discussion on alternative method</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Batuhan Yildiz</b>, 
+</p>
+<hr>
+ 
+<h3>Write Quick, Readable and High Performance Queries Using Window Functions with SQL Server 2014</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we will cover how Windows Functions works and explain how they can help-us to write better. Also we describe the improvements in Windows Functions T-SQL support from SQL Server 2005 through SQL Server 2014. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ismail Adar</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Batuhan Yildiz
+
+</h3>
+<p>Contact: <a href="http://blogs.msdn.com/b/batuhanyildiz/">http://blogs.msdn.com/b/batuhanyildiz/</a></p>
+ 
+<p>I started in Microsoft in 2004. I have been consulting SQL Server for 15 years. I am one of the leads for SQL Server in EMEA and working on the SQL Server training preparation world wide. My main area in SQL Server is SQL Server core including performance troubleshooting, high availability solutions, administration, migration, disaster recovery. </p>
+ 
+<h3 class="section-heading">Levent Oktar
+
+</h3>
+<p>Before Microsoft Levent has worked for several Microsoft Partners and Government Offices as Database Administrator and Systems Engineer. He has worked on Database Migration Projects, SQL Server Database Systems Design and Architecture and HA/DR Projects for Government Offices. He#39;s been working at Microsoft Customer Services and Support Team as Support Engineer and Senior Premier Field Engineer since 2010.</p>
+ 
+<h3 class="section-heading">Benjamin Nevarez
+
+</h3>
+<p>Contact: <a href="http://www.benjaminnevarez.com/">http://www.benjaminnevarez.com/</a></p>
+ 
+<p>Benjamin Nevarez is a SQL Server MVP and independent consultant based in Los Angeles, California who specializes in SQL Server query tuning and optimization. He is the author of “SQL Server 2014 Query Tuning  Optimization”, “Inside the SQL Server Query Optimizer” and has contributed to other SQL Server books including “SQL Server 2012 Internals”. Benjamin has also been a speaker at many SQL Server conferences, including the PASS Summit, SQL Server Connections and SQLBits.</p>
+ 
+<h3 class="section-heading">Faruk Celik
+ - <a href="https://www.twitter.com/https://twitter.com/faruk_celik_">https://twitter.com/faruk_celik_</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/farukc">https://www.linkedin.com/in/farukc</a></p>
+ 
+<p>Contact: <a href="http://blogs.msdn.com/farukcelik">http://blogs.msdn.com/farukcelik</a></p>
+ 
+<p>Faruk is working as Senior Support Escalation Engineer in Microsoft Support SQL BI team since 2006. He's expert on Data Access layer components and technologies developed by Microsoft.</p>
+ 
+<h3 class="section-heading">Gokan Ozcifci
+
+</h3>
+<p>Contact: <a href="http://gokan.ms">http://gokan.ms</a></p>
+ 
+<p>Gokan Ozcifci, consultant principal et fondateur de la soci#233;t#233; Neoxy. Gokan est membre ex#233;cutif la communaut#233; francophone sur le TechNet Wiki, r#233;dacteur de blogs et mod#233;rateur sur forums SharePoint depuis plus de 4 ans. Il a #233;galement particip#233; avec les membres communautaires de Microsoft US pour la cr#233;ation de l#39;#233;quipe TAT. Gokan est #233;galement un MVP SharePoint, reconnu
+
+pour ses blogs SharePoint, scripts et repr#233;sentation de SharePoint au Conseil de TechNet Wiki.</p>
+ 
+<h3 class="section-heading">Yigit Aktan
+ - <a href="https://www.twitter.com/@ygtaktn">@ygtaktn</a>
+</h3>
+<p>LinkedIn: <a href="https://tr.linkedin.com/in/yigitaktan">https://tr.linkedin.com/in/yigitaktan</a></p>
+ 
+<p>Contact: <a href="http://www.yigitaktan.com">http://www.yigitaktan.com</a></p>
+ 
+<p>Yigit Aktan is a founder and principal consultant of DataDynamic and he has been working in the IT industry since 2000. He specializes in HA amp; DR solutions, performance tuning and optimization of database systems with a focus on scalable, performing and secure deployments. He has been using SQL Server since version 2000. He is president of the PASS Turkey and a SQLSaturday organizer. He has been awarded as SQL Server MVP since 2012. He is a regular speaker at the SQL Server related events.</p>
+ 
+<h3 class="section-heading">Turgay Sahtiyan
+ - <a href="https://www.twitter.com/https://twitter.com/turgaysahtiyan">https://twitter.com/turgaysahtiyan</a>
+</h3>
+<p>LinkedIn: <a href="http://tr.linkedin.com/pub/turgay-sahtiyan/15/b46/682">http://tr.linkedin.com/pub/turgay-sahtiyan/15/b46/682</a></p>
+ 
+<p>Contact: <a href="http://www.turgaysahtiyan.com/">http://www.turgaysahtiyan.com/</a></p>
+ 
+<p>Turgay Sahtiyan has been working in IT industry over a decade and he currently works as a PMC (Premier Mission Critical) Solution Engineer at Microsoft.He is based in Turkey and primarily giving proactive and reactive services with solution based approach to top enterprise customer in the MEA region.Before joined to Microsoft, he was one of the SQL Server MVP in Turkey,in addition he is founder and former president of SQLPass Turkey Chapter.(Detailed BIO http://www.turgaysahtiyan.com/about.aspx)</p>
+ 
+<h3 class="section-heading">Saverio  Lorenzini
+
+</h3>
+<p>Saverio Lorenzini is a Principal Engineer at the Premier Field Engineering division in Microsoft Italy. He has a master degree in Computer Science Engineering from University of Pisa, and joined Microsoft in 1998, where he started to work on SQL Server from version 7.0.
+He started supporting customers and projects on data platform Microsoft technologies: SQL, SSIS and Reporting Services up to solutions development on SQL/.NET platform.</p>
+ 
+<h3 class="section-heading">Mihail Mateev
+ - <a href="https://www.twitter.com/mihailmateev">mihailmateev</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1">http://www.linkedin.com/pub/mihail-mateev/1/6b3/4b1</a></p>
+ 
+<p>Contact: <a href="https://mmateev.wordpress.com/">https://mmateev.wordpress.com/</a></p>
+ 
+<p>Mihail Mateev is a technical consultant, community enthusiast, PASS Regional Mentor for CEE, chapter lead, Microsoft Azure MVP, Microsoft Regional Director. He works as a Senior Solutions Architect at EPAM Systems, focused on Data Platform, IoT and cloud related solutions. He also worked many years like a Technical evangelist in the Infragistics. Last years Mihail was focused on various areas related to technology Microsoft: Data Platform, Visual Studio, ASP.Net, Windows client apps, Data Platform, and Microsoft Azure. Michael also has a PhD in cloud computing area. He is a university lecturer on Smart Homes and Smart Energy IoT Solutions.</p>
+ 
+<h3 class="section-heading">Burak Tufanoglu
+
+</h3>
+<p>Tufanoglu has graduated from Computer Engineering Department of Marmara University in 2009. While he was student, has started to work as Business Intelligence Consultant in 2008. Since 2011 he is working for TCM (Teknoloji Çözümleri Merkezi ) as Business Intelligence Team Leader and take part in works actively including datawarehouse designing, data architecture, consultancy of Microsoft business intelligence suites and development.</p>
+ 
+<h3 class="section-heading">Belkis Ozhorasan
+
+</h3>
+<p>-</p>
+ 
+<h3 class="section-heading">Alexander Karl
+ - <a href="https://www.twitter.com/sqlfabrik">sqlfabrik</a>
+</h3>
+<p>Alexander Karl is database-developer and certified MCT for Windows and SQL Server with .net-CDE GmbH. For more than 18 years he has been working with Database-, Datawarehouse- and Reporting-Solutions for companies from medium-sized enterprises to Group level. His spectrum includes Serversizing, Programming to optimize performances as well as Report- and Chartdesign; in trainings and seminars he conveys participants well-founded theoretical knowledge complemented with his practical.</p>
+ 
+<h3 class="section-heading">Tomaž Kaštrun
+ - <a href="https://www.twitter.com/@tomaz_tsql">@tomaz_tsql</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/tomaz.kastrun">http://www.linkedin.com/tomaz.kastrun</a></p>
+ 
+<p>Contact: <a href="http://www.tomaztsql.wordpress.com">http://www.tomaztsql.wordpress.com</a></p>
+ 
+<p>Tomaž Kaštrun is BI developer and data analyst. His main focus are data mining, T-SQL development, programming and query optimization. He has been working with SQL server since version 2000. He is Microsoft Certified Professional, Microsoft MVP for data platform and Microsoft trainer.</p>
+ 
+<h3 class="section-heading">Işıl Efe
+
+</h3>
+<p>Işıl Efe has been working for Microsoft Turkey for more than 6 years as a senior SQL Server Premier Field Engineer. Her main expertise has been on SQL Server Core,  but for more than a year she is very interested in Cloud Analytics and working on PowerBI, HDInsight and Machine Learning. She has delivered many workshops, techbriefs, webcasts to customers and also partners and also delivered two sessions @SQLSaturday İstanbul for the last two years.</p>
+ 
+<h3 class="section-heading">Kevin Boles
+ - <a href="https://www.twitter.com/@TheSQLGuru">@TheSQLGuru</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/thesqlguru">http://www.linkedin.com/in/thesqlguru</a></p>
+ 
+<p>Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.</p>
+ 
+<h3 class="section-heading">Boris Hristov
+ - <a href="https://www.twitter.com/https://twitter.com/BorisHristov">https://twitter.com/BorisHristov</a>
+</h3>
+<p>LinkedIn: <a href="http://bg.linkedin.com/in/borishristov">http://bg.linkedin.com/in/borishristov</a></p>
+ 
+<p>Contact: <a href="http://borishristov.com/blog/">http://borishristov.com/blog/</a></p>
+ 
+<p>Boris is a SQL Server Consultant, but also an Author for Pluralsight and a SQL Server MVP. He is frequently speaking at conferences all accross Europe and is heavily involved in training students and organizations in what he calls quot;The Art of SQL Serverquot;. Boris is frequently blogging and is the host of SQLHangouts.</p>
+ 
+<h3 class="section-heading">Satya Jayanty
+ - <a href="https://www.twitter.com/sqlmaster">sqlmaster</a>
+</h3>
+<p>LinkedIn: <a href="https://uk.linkedin.com/sqlmaster">https://uk.linkedin.com/sqlmaster</a></p>
+ 
+<p>Contact: <a href="http://www.sqlserver-qa.net">http://www.sqlserver-qa.net</a></p>
+ 
+<p>My experience surrounded with high focus on the data platform with a track record of defining strategy, designing and delivering digital transformation  migrations with major enhancements to current working methods.  Worked in a capacity of Head of Data Engineering, Enterprise Data Architect and Solutions 
+
+Key career accomplishment  recognition as an industry expert  technical excellence from the Microsoft as Data Platform Most Valuable Professional (MVP) recognition since the year 2006 (13 years as MVP and counting), which recognizes exceptional technical community leaders worldwide who actively deliver, present  share their extraordinary contributions, high quality, and real-world expertise.
+Twitter pod (http://twitter.com/sqlmast</p>
+ 
+<h3 class="section-heading">Mine Tokus
+
+</h3>
+<p>Graduated from Hacettpe University Computer Science (Ankara - Turkey) department at 2004 
+and had master degree from Middle East Technical University on Software Engineering.
+Mine has 10 years experience on software development and testing, first on aerospace industry (Boeing) and then on Microsoft.
+She joined Microsoft on 2010 as a Software Design Engineer in Test for SQL Server group in Redmond USA.
+She participated development of various features for SQL Server 2012 and SQL Server 2014.
+</p>
+ 
+<h3 class="section-heading">Koray Kocabas
+
+</h3>
+<p>Contact: <a href="http://www.data-dynamic.com">http://www.data-dynamic.com</a></p>
+ 
+<p>After I graduated Technical University (Statistics programme), I worked at Fujitsu Siemens Computers, Mavi, Project House HAVAS that i developed Business Intelligence Projects. Now I#39;m working at yemeksepeti.com that is a one of the biggest e-commerce company in Turkey as Senior Business Intelligence Developer.By the way I#39;m a periodical teacher at Bahcesehir University (MIS Master Programme) about Business Intelligence using Microsoft SQL Server. I awarded as SQL Server MVP in 2014,2015</p>
+ 
+<h3 class="section-heading">Ismail Adar
+
+</h3>
+<p>Contact: <a href="http://ismailadar.com">http://ismailadar.com</a></p>
+ 
+<p>Ismail Adar, Computer Engineer, Microsoft Certified Trainer, MCSE and MCSA. Focused on the SQL Server relational engine at performance troubleshooting, OLTP scalability and defining and implementing reliable high availability environments. Also Author of quot;SQL Server 2012 Programming and Administrationquot; and quot;Data Warehouse Desing with SQL Server Interation Servicequot;</p>
+ 
+<h3 class="section-heading">Serdar Altug
+
+</h3>
+<p>-</p>
+ 
+<h3 class="section-heading">Umit Sunar
+ - <a href="https://www.twitter.com/@umitsunar">@umitsunar</a>
+</h3>
+<p>LinkedIn: <a href="https://ae.linkedin.com/in/umitsunar">https://ae.linkedin.com/in/umitsunar</a></p>
+ 
+<p>Umit Sunar has been working in IT Industry since 2000 and he is currently working as Cloud Solution Architect (Azure) at Microsoft MEA HQ. Based in Dubai and traveling a lot for business and entertainment. Formerly, he is an aeronautics engineer originally supposed to build airplanes. 
+
+In technical keywords, he received his first development certificate from Borland at 1992 and continued development in many platforms including C, PHP, Pascal Fortran, Python, Java, C#, Node.js and maybe couple more that he forgot writing this.
+
+He is passionate about Cloud Computing for 8+ years and even created a small cloud environment in 2008
+
+He doesn’t like the word “geek” but likes a lot traveling, cooking and smiling.
+</p>
+ 
+<h3 class="section-heading">Chandra Mohan Situmalli
+
+</h3>
+<p>Been working as a Senior Support Engineer in Microsoft and currently working as a Senior Premier Field Engineer</p>
+ 
+<h3 class="section-heading">Denis Reznik
+ - <a href="https://www.twitter.com/https://twitter.com/DenisReznik">https://twitter.com/DenisReznik</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/denis-reznik/3/502/234">http://www.linkedin.com/pub/denis-reznik/3/502/234</a></p>
+ 
+<p>Contact: <a href="http://reznik.uneta.com.ua">http://reznik.uneta.com.ua</a></p>
+ 
+<p>Denis Reznik is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design, and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains MVP status today. Apart from his professional career, Denis actively participates in the development of the Ukrainian Data Community.</p>
+ 
+<h3 class="section-heading">Mustafa Acungil
+ - <a href="https://www.twitter.com/https://twitter.com/acungil">https://twitter.com/acungil</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/acungil/">https://www.linkedin.com/in/acungil/</a></p>
+ 
+<p>Contact: <a href="https://www.linkedin.com/today/author/acungil">https://www.linkedin.com/today/author/acungil</a></p>
+ 
+<p>Mustafa Acungil had been working on data since 2001. He is an expert on SQL Server, Business Intelligence, and Machine Learning.
+As a trainer, consultant, and manager he has been working in Bilgeadam for more than 10 years.
+He is also a writer and last title he has published is 24 Kariyer Tuzağı. (http://www.dr.com.tr/Kitap/24-Kariyer-Tuzagi/Egitim-Basvuru/Is-Ekonomi-Hukuk/Yonetim-Is-Gelistirme-Kalite/urunno=0001693784001)</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.data-dynamic.com">DataDynamic</a></p>
+ 
+<p><a href="http://www.tcm.com.tr">TCM - Teknoloji Çözümleri Merkezi</a></p>
+ 
+<p><a href="http://www.mechsoft.com.tr">MechSoft</a></p>
+ 
+<p><a href="http://www.cozumpark.com">ÇözümPark</a></p>
+ 
+<p><a href="http://www.btakademi.com">BT Akademi</a></p>
+ 
+<p><a href="http://www.apexsql.com/?utm_source=SQLSaturdaysutm_medium=sponsorlinkutm_campaign=%5BSQLSaturdays-Homepage%5D">ApexSQL LLC</a></p>
+ 
+<p><a href="http://www.pluralsight.com">PluralSight</a></p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQLSaturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

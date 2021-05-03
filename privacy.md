@@ -3,7 +3,7 @@ layout: page
 title: Privacy Policy
 permalink: /privacy/
 ---
-## SQL Saturday - Privacy notice
+## SQLSaturday - Privacy notice
 
 Redgate (which means Red Gate Software Limited and its subsidiaries) respects your privacy. All information you give us is held with the utmost care and security.
 
@@ -13,24 +13,24 @@ Our use of personal data is in accordance with the UK Data Protection Act 2018 (
 
 ### How we use your information
 
-If you're visiting the SQL Saturday website, or submitting event information to us, this privacy notice sets out what data we collect, and how we use it. It also describes your rights regarding our use of your data.
+If you're visiting the SQLSaturday website, or submitting event information to us, this privacy notice sets out what data we collect, and how we use it. It also describes your rights regarding our use of your data.
 
 We collect common types of personal data, such as: names, email addresses and social media usernames. Our website hosting provider (GitHub) will also see your computer's IP address.
 
 We will use your data to:
 
-- Provide contact details for organizers of events listed on the SQL Saturday website
+- Provide contact details for organizers of events listed on the SQLSaturday website
 - Run the SQLSaturday.com website
 
-### Visiting the SQL Saturday website
+### Visiting the SQLSaturday website
 
-When you visit the SQL Saturday website, our website hosting provider (GitHub) may log your computer's IP address in order to comply with legal obligations and to maintain the security and integrity of the website and their service. We rely on the lawful basis of legitimate interests to process this data.
+When you visit the SQLSaturday website, our website hosting provider (GitHub) may log your computer's IP address in order to comply with legal obligations and to maintain the security and integrity of the website and their service. We rely on the lawful basis of legitimate interests to process this data.
 
 We do not use any cookies on the website.
 
-### Submitting your event details to SQL Saturday
+### Submitting your event details to SQLSaturday
 
-If you submit an event to SQL Saturday, any details you provide will be publicly available on the website, and in the SQL Saturday GitHub repository. We rely on the basis of legitimate interests to process this data.
+If you submit an event to SQLSaturday, any details you provide will be publicly available on the website, and in the SQLSaturday GitHub repository. We rely on the basis of legitimate interests to process this data.
 
 If you wish to remove your event from the website, please let us know. Any data previously included on the website may remain visible in the GitHub history of the website.
 

@@ -1,0 +1,886 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #760 - Rheinland 2018" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #760 - Rheinland 2018
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #760 - Rheinland 2018</div>
+        <div class="masthead-subheading">This event was held on 2018-6-9</div>
+        <p><b>Event Location</b>:</p>
+        <p>Bonn-Rhein-Sieg University of Applied Sciences</p>
+        <p>Grantham-Allee 20</p>
+        <p>Sankt Augustin, North Rhine-Westphalia, Germany</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0760.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Mastering DML Operations like a master</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>DML operations mean lot of work for the database engine of Microsoft SQL Server. Understanding the details of a DML transaction may give you great benefits when planning workloads for INSERT, UPDATE and DELETE operations.
+
+Come and learn the differences of space allocation/deallocation between Clustered Indexes and Heaps in this demo oriented session. It will answer these questions:
+
+What is the difference of data page allocation for heaps and clustered indexes?
+What is the amount of transaction log when you update data in a heap and/or in a clustered index?
+What are the differences when data are delete from a heap and clustered index?
+Can ETL processes be improved by usage of the right strategy for INSERTS and DELETES?
+What performance drawbacks have Page Splits and Forwarded Records for my application design?</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Uwe Ricken</b>, 
+</p>
+<hr>
+ 
+<h3>TFS for Continous Integration for SSIS and database projects in a Data Warehouse environment</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Source control and continous integration is standard in software development. However, TFS does not come with the ability to build SSIS projects out of the box. To use the benefits of continous integration, methodologies for automatic deployment and validation of SSIS projects will be presented. Finally, validation of best practices with the help of the testing frameworks Nbi and pester is shown.
+
+The session gives an overview of everything you need to know to setup continous integration including testing and deployment (TFS, msbuild for SSIS, Nbi, pester).
+
+It will help you to:
+- Deploy your SISS solution to the next environment with just a click in a web browser
+- Never again have out of date meta data in your packages
+- Never again have a package not adheering the naming conventions
+- Never again have objects in your database project that depend on objects that are not there anymore
+
+For any violation of the above, you will get a mail right after the checkin to fix it right away.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Felix Möller</b>, 
+</p>
+<hr>
+ 
+<h3>Cosmos DB - NoSQL strikes back (Introduction to the dark side of data)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Es war einmal vor langer Zeit in einer weit, weit entfernten Datenbank...
+
+SQL war für lange Zeit die einzige Option Applikationsdaten zu speichern. Es gab immer wieder rebellische Aktivitäten, das SQL Imperium zu stürzen, was eine neue Hoffnung verbreitete. Aber alle anderen Möglichkeiten Daten zu speichern, entpuppten sich nur als eine dunkle Bedrohung. Nun, nach dem Erwachen der Cosmos DB startet die Rache von NoSQL.
+
+Während der Session schauen wir uns Azure Cosmos DB im Detail an, was Sie mit Cosmos DB erreichen können und wie Cosmos DB in einer galaktischen Umgebung aus Daten und Applikationen genutzt werden kann.
+
+Besuchen Sie meinen Vortrag und finden Sie richtige Lösung für Ihre Applikation. Mögen die Daten mit Ihnen sein.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andre Essing</b>, 
+</p>
+<hr>
+ 
+<h3>Continuous Integration Pipelines With Jenkins, Docker and SQL Server</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Docker has taken the world of IT by storm and looks to be ushering in the greatest platform paradigm shift since virtualisation and the public cloud. The transient nature of Docker containers makes them the perfect fit for spinning up and then tearing down SQL Server instances as part of continuous integration pipelines. Jenkins is the most popular build automation engine in the open source community, it has phenomenal plugin support, it is used by the likes of Netflix and eBay and excels in its ability to handle build pipelines as code. In this session you will learn how a simple build pipeline that takes a SQL Server data tools project checked out from source code control, built into a DACPAC which is then deployed to a SQL Server instance can be extended to use containers, multi-branch build pipelines, tSQt testing and much much more.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Christopher Adkin</b>, 
+</p>
+<hr>
+ 
+<h3>WIT - Wie kann ich euch erreichen?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Auch dieses Jahr versuche ich erneut Gehör für das Thema "Women in Technology" auf dem SQL Saturday Rheinland zu finden. Nachdem wir bereits über Themen der Nachwuchsförderung oder allgemein über persönliche Erlebnisse und Erfahrungen diskutiert haben, möchte ich diesmal konkreter auf Events wie unsere eingehen!
+
+Ich werde immer wieder mit der Frage konfrontiert, warum ich eigentlich WIT Events auf Veranstaltungen wie dem SQL Saturday Rheinland vorschlage. Gründe für diese Frage sind:
+- Hier sind doch die falschen Zielgruppen: Die Frauen hier arbeiten doch schon in der IT
+- Ist es schlau Frauen so herauszustellen? Bewirkt das nicht eher das Gegenteil?
+- Interessiert sich hier überhaupt jemand für das Thema?
+
+Ich habe meine Meinung zu diesen Fragen und werde diese gerne mit euch teilen. Viel mehr bin ich aber daran interessiert, eure Meinung zu hören. Und vor allem bin ich daran interessiert, Vorschläge für interessante Formate genau für solche Veranstaltungen wie unsere zu sammeln. :-)</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gabi Münster</b>, 
+</p>
+<hr>
+ 
+<h3>Security Intelligence in Azure PaaS</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session is all about gaining high quality insights and making good decisions in context of security. It covers governance, risk management and compliance in public cloud and specifically focuses on Azure PaaS resources. Expect corrections to common misconceptions and answers to difficult questions related to trust and privacy. There will be practical examples of network topologies with their strengths and weaknesses, recommendations and best practices for hybrid and cloud-only solutions. In addition techniques to acquire knowledge like deception and chaos engineering and finally orchestration and instrumentation available in Azure: Security Center, Vulnerability Assessment, Threat Detection, Log Analytics and OMS, Data Classification, Key Vault and more.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Janusz Rokicki</b>, 
+</p>
+<hr>
+ 
+<h3>In Sekunden die Stecknadel im Heuhaufen finden – Data Quality auf Knopfdruck</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Der Zusammenhang zwischen der Qualität der Entscheidungen und der Qualität der Daten ist ebenso simpel wie nachvollziehbar: Je „verlässlicher“ die Daten, desto höher die Wahrscheinlichkeit erfolgreicher Entscheidungen. Big Data, die steigende Anzahl an Datenquellen sowie die zunehmende Vernetzung stellen immer höhere Anforderungen an Prozesse – das Thema Datenqualität wird immer wichtiger: Fehlerhafte Stammdaten führen z.B. zu Problemen in Abläufen und zu Kundenabwanderung. Die zur Verfügung stehenden Funktionalitäten des SQL Servers oder Drittprodukte wie MS Excel, MS Access etc. sind nicht auf die Erreichung von Datenqualitätszielen ausgerichtet. Endlich keine Geheimnisse mehr – so lernen Daten sprechen: Die Session zeigt am Praxisbeispiel des Stadtwerkes Herborn, wie die Funktionalitäten des SQL Servers im Bereich Datenqualität sinnvoll durch die Fraunhofer Idee InfoZoom ergänzt wird.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Markus Christ</b>, 
+</p>
+<hr>
+ 
+<h3>Graph Databases and Solutions</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The modern connected world requires connected solutions, beyond basic relational engine - think about web pages connections, social media network communications or map path finding. 
+Even though one can implement eventually everything with a relational engine, the bigger amount of analysed data is involved, the less probable is that your analysis will be done on time and with acceptable ease for the developers.
+
+Graph databases do exist in the wild since 1960s, but only in the last 2 decades - with the advances of the internet, started to conquer wider recognition and usage.
+
+Let's dive into this diverse world of graph databases and discover the new kid on the block - the GraphDB in SQL Server 2017  Azure SQL Database, which promises to allow you to expand and convert your workloads for solving modern connected world problems.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Niko Neugebauer</b>, 
+</p>
+<hr>
+ 
+<h3>Apple's Swift trifft Microsoft's SQL Server - Yes we can!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Apple's Swift ist eine Multiparadigmen-Programmiersprache für macOS/iOS sowie Linux und steht seit Dezember 2015 unter einer Open-Source-Lizenz. Bereits einen Monat später verkündete IBM, Swift sowohl in Cloud- als auch im Client-/Server-Umfeld anzubieten. Was macht Swift so interessant?
+
+Swift kombiniert bewährte und moderne Konzepte wie Closures, Generics, Tupels und Nested Functions. Daher fühlen sich C#-Entwickler gleich wohl, wenn sie Swift-Code vorgesetzt bekommen.
+
+Der Vortrag führt in die grundlegende Entwicklung mit Swift ein. Praktische Beispiele verdeutlichen wie man sehr schnell einen RESTful Micro-/Webservices unter Linux aufbauen kann. Dabei wird der Schwerpunkt auf die Kopplungsmöglichkeiten von Swift mit einem Microsoft SQL Server gelegt. Die Präsentation verdeutlicht, wie eine solche Kopplung über die Integration der Open Database Connectivity in das Swift-Umfeld gelingt.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Burak Bagci</b>, 
+</p>
+<hr>
+ 
+<h3>The joy of analytics - wir malen ein Data Warehouse in die Cloud</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Es gibt eine Menge Wege und Möglichkeiten Mehrwerte aus seinen Daten zu ziehen. Seit Jahren machen wir das mit den gleichen Techniken in unseren "klassischen" Data Warehouse Umgebungen. Aber die Welt ist im steten Wandel und so auch die Daten.
+
+Wo die Daten vor ein paar Jahren noch ausschließlich strukturiert waren, wächst die Zahl von schemalosen Datentypen ins unermessliche, und eine Ende ist nicht in Sicht. Wir kämpfen mit Daten, bei denen sich ständig das Schemata ändert und versuchen Mehrwerte aus neuen Datentypen wie Soziale Medien, Videos und Bildern zu ziehen. In dieser Whiteboard Session möchte ich mit Ihnen über moderne Wege sprechen, Ihre Daten zu speichern, zu analysieren und zu visualisieren. Zusammen zeichnen wir ein Modern Data Warehouse, schauen uns an welche Möglichkeiten sich bieten verschiedenste Daten zu analysieren und warum uns die Cloud hier hilft.
+
+Besuchen Sie meinen Vortrag und zeichnen Sie mit mir zusammen ein modernes Data Warehouse.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andre Essing</b>, 
+</p>
+<hr>
+ 
+<h3>Wird SSAS Tabular erwachsen?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SSAS Tabular Mode existiert seit SQL Server 2012. Und zu Beginn befand sich diese Technologie wirklich noch in den Kinderschuhen. Gerade aus Sicht von Nutzern der SSAS Multidimensional war Tabular Mode kein ernstzunehmender Faktor.
+Aber im Laufe der letzten Versionen hat sich einiges getan. Lasst uns die Entwicklung von Tabular Mode Revue passieren und die wichtigsten Meilensteine herausstellen. 
+Und wie hat sich die Abgrenzung zu Multidimensional entwickelt? Wo liegen mittlerweile die Stärken und Schwächen beider Produkte?
+In dieser Session wollen wir uns beide Produkte mehr aus strategischer Sicht betrachten, daher wird ein Grundwissen über die Besonderheiten und Anforderungen analytischer Systeme vorausgesetzt.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gabi Münster</b>, 
+</p>
+<hr>
+ 
+<h3>Das Modell und der Freak – Intelligente Bots zum Selbermachen</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft stellt etliche Cognitive Services bereit, die es einfach machen die eigene Anwendung mit zusätzlicher Intelligenz auszustatten. Manchmal genügt aber ein solcher Black-Box Service nicht, um die eigene Business Domäne zu adressieren. Und warum überhaupt „eigene Anwendung“? Gibt es nicht einen einfacheren Weg einen intelligenten Service bereitzustellen? Mit trainierbaren Diensten, wie z.B. LUIS und Custom Vision und dem Microsoft Bot Framework lassen sich schnell und effizient Lösungen gestalten, die eigene Anforderungen erfüllen und spezielles Domänenwissen beinhalten. Auf diese Weise lassen sich individuelle Modelle und intelligente Bots erstellen, und das auch ohne großen Softwareentwicklungsaufwand. Hier lässt sich live erleben, wie sich zuverlässig Hunde- und Katzenrassen identifizieren oder gar Pilzsorten unterscheiden lassen.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Constantin Klein</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Architecturen. Interaktive Whiteboard session</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Ihr findet die Microsoft Data Plattform verwirrend und komplex? Dann ist das die richtige Session für euch.Nach einem kurzen Abriss über einige der wichtigsten Komponenten in der Data Plattform werden wir den interaktiven Teil der Session starten. 
+Im Interaktiven Teil bildet ihr mehrere Teams und bearbeitet im Team eine Aufgabe bei der es darum geht anhand von Spezifikationen eine Lösungsarchitektur zu ermitteln. Am Ende präsentiert jedes Team seine Lösung und wir diskutieren Eure Resultate. 
+Bei dieser Session gibt es kein "Richtig" oder "Falsch", das Ziel ist, dass ihr alle lernt, wie man auf Basis der Microsoft Data Plattform eine moderne Architektur in der Cloud zusammenstellt und begründet.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Benjamin Kettner</b>, 
+</p>
+<hr>
+ 
+<h3>How to simplify a scientists life – PowerBI, R and an applied statistics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>How to simplify a scientists life – PowerBI, R and an excursus to applied statistics.
+
+In the last years several research fields have been revolutionized by the invention of Next Generation Sequencing (NGS) methods and as a result the amount of data generated in a single experiment has increased remarkably and can now easily exceed several GB. 
+The analysis of these comparably big amounts of data has become challenging because established software and workflows are often not applicable for these big amounts of data or make the analysis of the data to an time consuming and frustrating work step. 
+In this talk I’ll show how the use of PowerBI simplified my daily routine. I’ll provide insight into the daily struggles a scientist has to deal with and why the implementation of R into PowerBI made this tool to my first choice when it comes to visualizing and analyzing big amounts of data. 
+Every project has its own hypotheses and it is the overreaching goal of every experiment to prove</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ameli Kirse</b>, 
+</p>
+<hr>
+ 
+<h3>Künstliche Intelligenz im SQL Server 2017</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Wie gewinne ich weitere Erkenntnisse aus meiner Datenbank zu potenziellen Problemen oder Verkaufschancen, die mir bisher vielleicht entgangen sind?
+Wie setzte ich Analysen direkt dort ein, wo sich meine Daten befinden, um schnell verwertbare Insights zu ermitteln?
+Diesen und weiteren Fragen gehen Sascha Dittmann und Christoph Seck in seiner Session zu den SQL Server Machine Learning-Services nach.
+Anhand von Codebeispielen in Python, R und den neuen T-SQL Syntaxerweiterungen, zeigen sie, wie man seine Datenbanken mit Machine Learning Funktionalitäten erweitern kann.Er gibt außerdem einen Einblick, wie diese neuen Services unter der Haube umgesetzt worden sind.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sascha Dittmann</b>, 
+</p>
+<hr>
+ 
+<h3>Choose your own Database Adventure</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Based on real life scenarios, in this audience interactive session we will go through some scenarios you might encounter whilst dealing with SQL Server databases and you will be provided with some options about what to do. Members of the audience will then select from these options what to do and we will follow that path and see what the outcome is from there.
+
+Each selection will have a different outcome, and along the way you will probably learn some new things.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Chant</b>, 
+</p>
+<hr>
+ 
+<h3>Azure SQL Database überwachen, analysieren und optimieren mit OMS</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Immer mehr Firmen und Anwendungen finden ihren Weg in die Cloud, aber wie kann man dort die Leistung überwachen, suboptimale Statements finden und korrigieren oder sogar die automatischen Features nutzen? Ich möchte in dieser Session einen Überblick über die Möglichkeiten zeigen, was man wie womit sehen und erfahren kann und wie dies dann unter Umständen zu einer verbesserten Performance der Datenbank(en) führen kann. Ich möchte das "reine" Monitoring mit der Operations Management Suite zeigen und was man aus dem Azure SQL DB eigenen Logging/Auditing erfahren kann.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Björn Peters</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to Azure Databricks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure Databricks is one of the newest services in Microsoft Azure. It provides a fast, easy to use and collaborative platform to run Apache Spark workloads in Azure, thereby integrating very well into other Azure services like Data Factory or various storage services. In this sessions I will give you a short introduction to DataBricks and also show some real-world scenarios.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gerhard Brueckl</b>, 
+</p>
+<hr>
+ 
+<h3>Fallen in M - und wie man sie umgeht</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In Demo-Videos zu Power Query und Power BI Desktop klappen Import und Aufbereitung von Daten immer reibungslos. In der Praxis sieht es aber oft anders aus und Power Query tut scheinbar unerklärliche Dinge - oder auch nicht. Manche Fallen lassen sich durch clevere Einstellungen in den Optionen von vornhinein umschiffen. Aus anderen Fußangeln von Power Query befreien Sie sich mit wenigen Mausklicks oder kleinen Eingriffen in den M-Code. Dann klappt's auch wieder wie in den Demo-Videos…</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Dominik Petri</b>, 
+</p>
+<hr>
+ 
+<h3>TensorFlow as a Service</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Wer mit beliebten KI-Frameworks, wie beispielsweise TensorFlow, CNTK, Caffe, Chainer  Co, ein Modell bauen wollte, musste sich bislang selbst um die komplette Infrastruktur kümmern und seine Data Science IDE entsprechend konfigurieren.
+Doch das hat jetzt ein Ende.
+In dieser Session zeigt Sascha Dittmann wie man mit der Azure Machine Learning Workbench und dem Azure Batch AI Dienst eine durchgängige und einfach zu nutzende Data Science Umgebung aufbaut. Mit dieser lassen sich dann im großem Umfang parallel experimentieren, sowie Deep Learning- und KI-Modelle trainieren.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sascha Dittmann</b>, 
+</p>
+<hr>
+ 
+<h3>Deep-Dive into Polybase</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Polybase is a feature originally coming from APS but is now finally also available in native SQL Server 2016. It allows you to query external data sources, foremost Hadoop, directly from within SQL Server and combine it with any other data that already resides in your database. Especially the rise of the whole Hadoop data platform in the current markets makes this feature very interesting and is definitely worth a closer look. This session will guide you through the process of setting up Polybase on Hadoop and Azure Blob Stores, showing some real-world use-cases and highlight the most common pitfalls that you may encounter.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gerhard Brueckl</b>, 
+</p>
+<hr>
+ 
+<h3>BI in Azure ein Jahr live</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Wie kann man sein bestehendes on prime Data Warehouse und Reporting in die Cloud bringen? Genau das war die Fragestellung vor mehr als einem Jahr. Ziel war es möglichst alles als Service zu nutzen. Hier bietet Azure mit Azuer SQL DB / Azuer SQL DW / Azure Data Factory / Logic Apps / Streamanalytics / Power BI viele Möglichkeiten. 
+
+Jetzt nach mehr als einem Jahr im live Betrieb eine kurze Zusammenfassung und Bewertung zu dem Thema BI in Azure.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alexander Klein</b>, 
+</p>
+<hr>
+ 
+<h3>On-premises, Hybrid and Cloud: Databases Can Live Anywhere Now!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft now has options to host your SQL Server database pretty much anywhere. However, with great choice comes great uncertainty.
+
+This session will help shed light on what the options are available to you and what advantages and constraints each option has.
+
+We'll look at:
+
+On-Premises: Physical, Virtual, HA/DR and everything between
+Hybrid: Mixed infrastructure (partial On-Premises, partial Cloud)
+Cloud: The multiple Azure offerings for SQL Server
+
+At the end of the session you will have an understanding of what options are available and what their unique offerings can mean to your business.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>William Durkin</b>, 
+</p>
+<hr>
+ 
+<h3>Parallele Paket-Verarbeitung mit SSIS Scale Out</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Mit dem SQL Server 2017 wurden die Integration Services um ein neues Feature erweitert: SSIS Scale Out. Es ermöglicht, SSIS-Pakete auf verschiedenen "Worker"-Servern – und kontrolliert vom "Master"-Server – verteilt auszuführen. Der Vortrag beschreibt den Aufbau dieser Scale-Out-Umgebung sowie die Ausführung der SSIS-Pakete in diesem Szenario. Was müssen Entwickler beachten? Welche Änderungen werden an bestehenden Paketen vorgenommen? Welche an den Workloads? Diese und andere Fragen werden im Rahmen des Vortrages geklärt.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Stefan Grigat</b>, 
+</p>
+<hr>
+ 
+<h3>Power Moving</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In dieser Session dreht sich alles um Animationen innerhalb von Power BI. Seit einigen Versionen bietet Power BI verschiedene Möglichkeiten, Daten animiert darzustellen – aktuell aber auch noch mit einigen verschiedenen Stolpersteinen. Mittels einer C# Applikation werde ich zeigen, wie Daten an ein Power BI Streaming Data Set gesendet und in Power BI mit den verschiedenen Standard Streaming Charts visualisiert werden können. Danach werde ich diese Daten mit dem ArcGIS Map Visual verarbeiten und die Animationsfunktion aufzeigen die diese Komponente mit sich bringt.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Christian Storms</b>, 
+</p>
+<hr>
+ 
+<h3>Einstieg in Azure SQL Databases und Powershell Automation</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Einstieg in das Thema SQL Datenbanken in der Microsoft Cloud, von A wie Allgemeines, nach B wie Backup, dann über P wie Powershell nach R wie Restore. 
+Ich gebe einen Überblick, welche Möglichkeiten es gibt eine Azure SQL Database zur Verfügung zu stellen, wie höhere Anforderungen realisiert werden können, ebenso gehe ich auf das Thema Kostenersparnis ein. 
+
+Wir werden uns verschiedene Deployments anschauen, auf das Thema Backup und auf die unterschiedlichen betrieblichen Leistungsanforderungen eingehen.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Björn Peters</b>, 
+</p>
+<hr>
+ 
+<h3>Power Metal mit Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Im, nicht immer ganz ernst gemeinten, Vortrag zeigen Dr. Benjamin Kettner und der deutsche Data Platform MVP Frank Geisler unterschiedliche Einsatzmöglichkeiten von Power BI und Artificial Intelligence am Beispiel einer Datenbank aus dem Bereich Heavy Metal (Finanzdaten kann ja jeder...;)). Es wird sowohl auf Streaming Data wie auch auf die Einbindung von Web-Services wie auch auf verschiedene AI Techniken wie z.B. Klassifizierungsalgorithmen eingegangen. Neben der Technik steht auch der Spaß im Vordergrund dieser lebhaften Session. In diesem Sinne: Metal will never die! ;)</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Frank Geisler</b>, 
+</p>
+<hr>
+ 
+<h3>Azure SQL Datawarehouse - The complete introduction</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure SQL Datawarehouse is not really the standard SQL Server that you could point your existing SSIS packages and reporting queries at and expect the same behaviour and performance.
+So why is that? And what should you do different to get the most out of Azure SQL DB?
+In this session I will explain what is happening behind the scenes and how it is architected. Combined with a bunch of demos you will gain a good knowledge about how it works, and if and how it would work for you in your situtation.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>André Kamman</b>, 
+</p>
+<hr>
+ 
+<h3>Sneak Peak on the SQL Server Tools for Linux  Windows</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server running on Linux is already out there, and with this new version of the product Microsoft has released some tools that allow us to connect/query/administrate SQL Server instances.
+
+Join me in this session and see the tools that we have available for the moment that allow us to manipulate SQL Server on Windows/Linux. You we will see the difference between all of them, the good things, the bad things and a handful of tips.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ivan Campos</b>, 
+</p>
+<hr>
+ 
+<h3>Next first steps - selected applications of R</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Die Einführung für R-Neulinge hat Dir gefallen, jetzt möchtest Du die nächsten Schritte wagen, und echten R-Code ausprobieren? Wir vertiefen zwei Aspekte aus meiner Präsentation "Von SQL zu R und darüber hinaus" und wir werden sehen, wer sich an Benford's Gesetz hält, und wer nicht. 
+Die drei Themen dieser leicht Code-lastigen Session sind:
+• dynamisches SQL umgesetzt in R, als Beispiel zur Abfrage einer Multi-Mandanten-Datenbank
+• Visualisierungen in R auf der Basis von Shapefiles und Choropleth-Techniken
+• die Anwendung von Benford's Gesetz, in dem es eigentlich nicht um Betrug geht, zur möglich Aufdeckung von Betrug</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Thomas Hütter</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Backup</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Datenbanken sind das Daten- Herstück im Unternehmen, aber Backup ist doch irgendwie ein leidiges Thema. Doch mit der Cloud lassen sich die großen Datenmengen kosteneffizient und schnell sichern. In dieser Session werde ich euch gleich zwei Backup Möglichkeiten zeigen und einen Vergleich ziehen. Zunächst werden wir uns die Möglichkeiten von Azure Backup anschauen und die notwendigen Konfigurationsschritte näher betrachten. Wer es kostengünstiger mag für den eignet sich die Sicherung der SQL Datenbanken direkt zu Azure Blob Storage. 
+In der Session werden wir beide Alternativen diskutieren, die Funktionsweise betrachten und ein Fazit ziehen.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gregor Reimling</b>, 
+</p>
+<hr>
+ 
+<h3>10 Alerts that you should have it running in your SQL Server!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Did you not get budget for that cool monitoring tool, but you still want to monitor your SQL Server? In this session I am going to show you 10 alerts that you should setup in your SQL Server instance. Going from CPU, IO, Corruption and Backups.
+
+By the end of this session, your life as a DBA will be much easier with those alerts in place!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Marcos Freccia</b>, 
+</p>
+<hr>
+ 
+<h3>Das SSIS Paket das sich selbst optimiert</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Die Anzahl der parallelen Dataflows in SSIS ist je nach Vorsystem begrenzt. Somit ist ein paralleles Laden nur bis zu einem gewissen Punkt möglich. Was aber, wenn Tabellen unterschiedlich stark bzw. schnell wachsen?
+
+Hier hilft nur ein regelmäßiges Optimieren, um zu vermeiden, dass Ressourcen verschwendet werden.
+
+Oder ihr habt stark wachsende Strukturen mit hinzukommenden Fremdschlüsseln, die bei der Beladungs-Reihenfolge beachtet werden müssen?
+
+Wir sehen uns für beide Fälle an, wie wir diese mit Biml weitgehend automatisiert lösen und optimieren können!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ben Weissman</b>, 
+</p>
+<hr>
+ 
+<h3>Be ready for GDPR – from zero to hero in 60 minutes!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>15 days after we have to be compliant with the GDPR and national law regulations in collect, handle and using. Let´s start a process to be compliant in 60 minutes. The speaker will talk about the key facts and how the attendees can check their solutions. We will start with the process for database solutions and match the rules to the architecture. So be complaint, safe money and be a part of this session.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Raphael Köllner</b>, 
+</p>
+<hr>
+ 
+<h3>Arbeiten mit Azure Notebooks</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Mit den Azure Notebooks stellt Microsoft einen PaaS Dienst, basierend auf der Open-Source Anwendung Juypter, zur Verfügung, mit der Dokumente erstellt und freigeben werden können, die Live-Code, Gleichungen, Visualisierungen und narrativen Text enthalten können. 
+In dieser Session erkläre ich die technischen Grundlagen der Azure Notebooks und für welchen Einsatzweck sich Notebooks eignen. Ich gehe auf verschiedene Einsatzmöglichkeiten ein, wie Daten mittels R, Python oder F# verarbeitet werden können und wie die Azure Notebooks mit weiteren Azure Diensten zusammenarbeiten.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tillmann Eitelberg</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Sascha Dittmann
+ - <a href="https://www.twitter.com/SaschaDittmann">SaschaDittmann</a>
+</h3>
+<p>LinkedIn: <a href="http://de.linkedin.com/in/saschadittmann">http://de.linkedin.com/in/saschadittmann</a></p>
+ 
+<p>Contact: <a href="http://www.sascha-dittmann.de/">http://www.sascha-dittmann.de/</a></p>
+ 
+<p>Sascha Dittmann ist Cloud Solution Architect bei der Microsoft Deutschland GmbH und unterst#252;tzt hierbei Kunden beim Implementierungsprozess erfolgreicher Cloud-L#246;sungen. Seine Schwerpunkte liegen in der Softwareentwicklung f#252;r die Microsoft Azure Plattform, sowie im SQL Server Business Intelligence und Big Data Bereich.
+
+Bevor er Ende 2015 zu Microsoft kam, war er viele Jahre bei der heutigen Ernst amp; Young GmbH t#228;tig; Davon 13 Jahre als Softwareentwickler und 3 Jahre als Solution Architect. W#228;hrend dieser Zeit Gr#252;ndete er auch die Community-Webseiten cloudbloggers.de und cloudbloggers.net und war Mitbegr#252;nder des .NET Stammtischs Rheinhessen. Zwischen 2012 und 2015 wurde er 4-mal mit dem MVP-Award im Bereich Microsoft Azure ausgezeichnet.</p>
+ 
+<h3 class="section-heading">Niko Neugebauer
+ - <a href="https://www.twitter.com/NikoNeugebauer">NikoNeugebauer</a>
+</h3>
+<p>LinkedIn: <a href="http://pt.linkedin.com/in/webcaravela/">http://pt.linkedin.com/in/webcaravela/</a></p>
+ 
+<p>Contact: <a href="http://www.nikoport.com">http://www.nikoport.com</a></p>
+ 
+<p>Niko Neugebauer is a Data Platform Consultant. A SQL Server MVP with over 20 years of experience in IT, he is passionate about the Microsoft Data Platform and community. Founder of the Portuguese SQL Server User Group and the main organizer of the first SQLSaturday event outside of North America (#78 Portugal), Niko speaks regularly at events such as PASS Summit, SQLRally, SQLBits, and SQLSaturday events around the world. Niko loves sharing information and knowledge and has authored over 130 blog posts on Columnstore Indexes, and regularly contributes to the open-sourced CISL library focused on Columnstore Indexes.</p>
+ 
+<h3 class="section-heading">Ben Weissman
+ - <a href="https://www.twitter.com/bweissman">bweissman</a>
+</h3>
+<p>LinkedIn: <a href="https://de.linkedin.com/in/weissmanben">https://de.linkedin.com/in/weissmanben</a></p>
+ 
+<p>Ben Weissman has been working with SQL Server since SQL Server 6.5, mainly in the BI/Datawarehousing field. He is a Data Platform MVP, MCSE Data Management and Analytics, and a Certified Data Vault Data Modeler. He is also the first BimlHero Certified Expert in Germany and a co-author of  'SQL Server Big Data Clusters' and 'The Biml Book'.
+Ben has been involved in more than 150 BI Projects and is always looking for ways to become more productive and make SQL Server even more fun!
+Together with his team at Solisyon, Ben provides training, implementation and consultancy for SQL/BI developers and data analysts in upper-mid-market companies around the globe.</p>
+ 
+<h3 class="section-heading">Sascha Dittmann
+ - <a href="https://www.twitter.com/SaschaDittmann">SaschaDittmann</a>
+</h3>
+<p>LinkedIn: <a href="http://de.linkedin.com/in/saschadittmann">http://de.linkedin.com/in/saschadittmann</a></p>
+ 
+<p>Contact: <a href="http://www.sascha-dittmann.de/">http://www.sascha-dittmann.de/</a></p>
+ 
+<p>Sascha Dittmann ist Cloud Solution Architect bei der Microsoft Deutschland GmbH und unterst#252;tzt hierbei Kunden beim Implementierungsprozess erfolgreicher Cloud-L#246;sungen. Seine Schwerpunkte liegen in der Softwareentwicklung f#252;r die Microsoft Azure Plattform, sowie im SQL Server Business Intelligence und Big Data Bereich.
+
+Bevor er Ende 2015 zu Microsoft kam, war er viele Jahre bei der heutigen Ernst amp; Young GmbH t#228;tig; Davon 13 Jahre als Softwareentwickler und 3 Jahre als Solution Architect. W#228;hrend dieser Zeit Gr#252;ndete er auch die Community-Webseiten cloudbloggers.de und cloudbloggers.net und war Mitbegr#252;nder des .NET Stammtischs Rheinhessen. Zwischen 2012 und 2015 wurde er 4-mal mit dem MVP-Award im Bereich Microsoft Azure ausgezeichnet.</p>
+ 
+<h3 class="section-heading">Markus Christ
+
+</h3>
+<p>Markus Christ ist seit 2009 Prokurist  Bereichsleiter SharedService bei den Stadtwerken Herborn GmbH. Zuvor verantwortete der staatlich geprüfte Betriebswirt bereits 14 Jahre als Leiter den Bereich Abrechnung und Service. Durch die Liberalisierung des Energiemarktes entstanden in diesem Zeitraum viele neue Prozesse und Systeme. Das Thema Datenqualität nahm an Wichtigkeit immer weiter zu. Die zur Verfügung stehenden Funktionalitäten des SQL Servers oder anderer Drittprodukte wie MS Excel, MS Access etc. boten nicht die gewünschten Funktionalitäten und führten zu hohem Aufwand sowie Unsicherheit. Grund genug, sich intensiver mit alternativen Möglichkeiten zu beschäftigen. Heute berät er als Experte viele weitere Stadtwerke im Thema DQM.</p>
+ 
+<h3 class="section-heading">Janusz Rokicki
+ - <a href="https://www.twitter.com/DataSic">DataSic</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/jrokicki/">https://www.linkedin.com/in/jrokicki/</a></p>
+ 
+<p>Contact: <a href="https://www.datasic.com/">https://www.datasic.com/</a></p>
+ 
+<p>Microsoft Data Platform Expert and certified Azure Solutions Architect with over 12 years’ experience working in the City of London in the Financial Services Industry (retail and investment banking, multi-asset class trading systems). He has passion for secure, high-performance, maintainable data-driven applications that can be deployed with confidence on-premises and in-cloud. With educational background in intelligent sensor networks and machine learning he is always in search of automation and optimisation opportunities.
+
+Has presented at SqlBits, PASS Summit, SqlDay and multiple Sql Saturday events (Tel-Aviv, Kiev, Paris, Tallinn, Bonn, Bratislava, Goteborg, Kharkiv, Bucharest, Sofia, Ljubljana) and user groups.</p>
+ 
+<h3 class="section-heading">Thomas Hütter
+ - <a href="https://www.twitter.com/DerFredo">DerFredo</a>
+</h3>
+<p>LinkedIn: <a href="https://de.linkedin.com/in/derfredo">https://de.linkedin.com/in/derfredo</a></p>
+ 
+<p>Contact: <a href="https://sqlfredo.wordpress.com/">https://sqlfredo.wordpress.com/</a></p>
+ 
+<p>Thomas holds a degree in Business Administration, but has been a data explorer and a developer at heart ever since the days of dBase and Turbo Pascal. He touched his first SQL Server at V6.5 and used covering indexes before they became a feature.
+
+Thomas has been developing in Navision/Dynamics/Business Central systems for quite some time (since 2001, one year before MS acquired Navision), joined PASS in 2006 and got his hands on R in 2014 (the year before MS bought Revolution Analytics). He has worked for ISVs as well as end-user companies, as a developer, consultant, accidental DBA and is an author for data-related articles as well as a speaker at SQL events across Europe.</p>
+ 
+<h3 class="section-heading">Stefan Grigat
+
+</h3>
+<p>Contact: <a href="https://www.oraylis.de/bi-big-data-blog">https://www.oraylis.de/bi-big-data-blog</a></p>
+ 
+<p>Stefan Grigat ist Senior Consultant bei der ORAYLIS GmbH. Als MSCE BI arbeitet er bereits mehr als 12 Jahren mit dem SQL Server. Seit Version 2005 liegt der Schwerpunkt seiner Tätigkeit auf der Entwicklung mit SSIS, SSRS und SSAS. Er verfügt über langjährige Erfahrung beim Aufbau von Hochverfügbarkeitslösungen für Trading- und Kraftwerkssysteme. Zudem berät er Kunden unterschiedlicher Branchen in den Bereichen Datenanalyse und Auswertung sowie ETL-Workflow und Reporting. Sein vielfältiges Theorie- und Praxiswissen vermittelt Stefan in internen Schulungen.</p>
+ 
+<h3 class="section-heading">Felix Möller
+
+</h3>
+<p>Felix Möller has been working as a Consultant for Data Warehousing for more than five years. His focus is tradtional Enterprise Data Warehousing clear layered architecture and presenting easy to grasp dimensional models for complex business process to frontend users. Felix technology focus has been the relational engine and Integration Services and from time to time multidimensional or tabular Analysis Services.</p>
+ 
+<h3 class="section-heading">Gabi Münster
+ - <a href="https://www.twitter.com/@SQLMissSunshine">@SQLMissSunshine</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/gabimuenster/">https://www.linkedin.com/in/gabimuenster/</a></p>
+ 
+<p>Gabi Münster is working as a Business Intelligence consultant and team lead and brings in her experience with SQL Server, data warehousing, relational and multidimensional database design and implementation, report and dashboard design, and Master Data Services, as well as project management into the community as a regional PASS Local Group lead. She is also passionate about motivating other women to start a technical career and therefore initiates and supports "Women in Technology" events. Apart from SQLSaturdays, she also spoke at SQLBits, SQL Nexus, Tuga IT, and 2015's and 2017's PASS Summit. In October 2017 Gabi received her first Data Platform MVP award.</p>
+ 
+<h3 class="section-heading">Gerhard Brueckl
+ - <a href="https://www.twitter.com/gbrueckl">gbrueckl</a>
+</h3>
+<p>LinkedIn: <a href="http://at.linkedin.com/in/gbrueckl/">http://at.linkedin.com/in/gbrueckl/</a></p>
+ 
+<p>Contact: <a href="http://blog.gbrueckl.at">http://blog.gbrueckl.at</a></p>
+ 
+<p>Gerhard has been working with Microsoft BI tools since 2006 mainly focusing on Microsoft SQL Server and its components. As a consultant and architect he designed various enterprise BI solutions primary in the German-speaking areas. His personal interest has always been on analytical databases and their capabilities. In 2012 he achieved the SSAS Maestro certification. He is also very active in the community, has its own blog and speaks at conferences all over the world on a regular basis.</p>
+ 
+<h3 class="section-heading">Andre Essing
+ - <a href="https://www.twitter.com/@aessing">@aessing</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/aessing">http://www.linkedin.com/in/aessing</a></p>
+ 
+<p>Contact: <a href="http://www.andreessing.de/">http://www.andreessing.de/</a></p>
+ 
+<p>Andre Essing advises, in his role as Technology Solutions Professional, customers in topics all around the Microsoft Data Platform. Since version 7.0, Andre gathering experience with the SQL Server product family, where he has focused on infrastructure topics, mission-critical systems and security. Today Andre concentrates on working with data in the cloud, like Modern Data Warehouse architectures, Artificial Intelligence and new scalable database systems like Azure Cosmos DB.
+
+In addition to his work at Microsoft, Andre is engaged in the community as a chapter leader for the PASS chapter in Bavaria, Germany. You can meet him as a speaker at user groups and international conferences.</p>
+ 
+<h3 class="section-heading">Benjamin Kettner
+ - <a href="https://www.twitter.com/DataMonsterBen">DataMonsterBen</a>
+</h3>
+<p>Contact: <a href="https://www.tsql-ninja.com">https://www.tsql-ninja.com</a></p>
+ 
+<p>Dr. Benjamin Kettner is a mathematician, founder and CTO of ML!PA Consulting GmbH. His fokus lies on consulting his clients technically and strategically for implementation of projects in different areas of the data platform. 
+Er is regional chapter lead of the Berlin chapter of PASS, since 2020 he is a Microsoft MVP and he is a regular speaker on different events.</p>
+ 
+<h3 class="section-heading">Gregor Reimling
+ - <a href="https://www.twitter.com/https://twitter.com/GregorReimling">https://twitter.com/GregorReimling</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/gregorreimling/">https://www.linkedin.com/in/gregorreimling/</a></p>
+ 
+<p>Contact: <a href="https://www.reimling.eu">https://www.reimling.eu</a></p>
+ 
+<p>Gregor is working for sepago GmbH as a Cloud Architect for Azure. Before joining sepago, he was working as Cloud- and Infrastructure architect with main focus on Microsoft technologies.
+In october 2018 he was honored with his first MVP award for Azure. 
+Gregor is mostly find as Speaker on many community conferences, blogs regulary at www.reimling.eu and he is organizer of the Azure Bonn Meetup (azurebonn.de), an local Azure user group near cologne.</p>
+ 
+<h3 class="section-heading">Uwe Ricken
+ - <a href="https://www.twitter.com/https://twitter.com/dbBerater">https://twitter.com/dbBerater</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro">http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro</a></p>
+ 
+<p>Contact: <a href="http://www.sqlmaster.de">http://www.sqlmaster.de</a></p>
+ 
+<p>Uwe Ricken is working with IT systems since the 90’s. The primary passion for developments with Microsoft SQL Server expanded in 2007 with his engagement as a DBA for Deutsche Bank AG in Frankfurt am Main. After 6 years of operational experiences as a DBA and over 14 years as a developer of complex database models he achieved the “Microsoft Certified Master – SQL Server 2008” certification which “was” the highest technical certification. In the same year he earned his first award as a Data Platform MVP for his support to the Microsoft SQL Server community in Germany and Europe. Uwe Ricken is a speaker on many international conferences and events and preferred topics are “Database Internals”, “Indexing” and “Development”.</p>
+ 
+<h3 class="section-heading">Marcos Freccia
+ - <a href="https://www.twitter.com/@sqlfreccia">@sqlfreccia</a>
+</h3>
+<p>LinkedIn: <a href="https://br.linkedin.com/in/marcosfreccia">https://br.linkedin.com/in/marcosfreccia</a></p>
+ 
+<p>Contact: <a href="http://marcosfreccia.wordpress.com">http://marcosfreccia.wordpress.com</a></p>
+ 
+<p>Currently working as a Microsoft SQL Server DBA at Zalando SE, Marcos has over 9 years of SQL Server experience, working from small to enterprise environments with High Availability, Disaster Recovery, Database Optimization, etc.. Holding several Microsoft certifications such as: MCITP DBA  DEV, MCSE Data Plataform and his last certification on Microsoft Azure Design and Implement Cloud Data Platform Solutions. In 2013 Marcos was awarded as a Microsoft MVP by his contributions in the Brazilian SQL Server community. Marcos is a frequent speaker in the SQL Server Community and he was the organizer of the first SQL Saturday in South Brazil.</p>
+ 
+<h3 class="section-heading">Raphael Köllner
+ - <a href="https://www.twitter.com/https://twitter.com/Ra_Koellner">https://twitter.com/Ra_Koellner</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/raphael-köllner-63a94930/">https://www.linkedin.com/in/raphael-köllner-63a94930/</a></p>
+ 
+<p>Contact: <a href="http://www.rakoellner.de">http://www.rakoellner.de</a></p>
+ 
+<p>Raphael Koellner combining the law and the information technology in particular the cloud computing. He worked for universities, Microsoft Germany (DX), Microsoft Partner as consultant. As a consultant for Alegri International Services GmbH and his own Company he worked for huge international companies to migrate and implementate cloud solutions on a technical and a contract/law way. He is the community guy, MVP for Office Server  Services, Windows 10 Insider MVP, MCT, Microsoft Student Partner Evangelist and become an attorney in Europe. He is the lead of the Office 365 Usergroup Germany, Leader of the Office 365 conference Germany, the Azure Meetup Cologne Owner and Windows Insider Meetup Owner.</p>
+ 
+<h3 class="section-heading">Björn Peters
+ - <a href="https://www.twitter.com/https://twitter.com/sql_aus_hh">https://twitter.com/sql_aus_hh</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/bj%C3%B6rn-peters-b26b5813b/">https://www.linkedin.com/in/bj%C3%B6rn-peters-b26b5813b/</a></p>
+ 
+<p>Contact: <a href="http://www.sql-aus-hamburg.de">http://www.sql-aus-hamburg.de</a></p>
+ 
+<p>I've started with SQL Server 6.5 but only as a sys-admin and not as DBA. Later I'd worked as a full DBA with SQL Server 2000 and my love to SQL Server started. In 2015  I'd got more interested in SQL PASS and tried to speak for the first time... the main part of my job is to work as DB-Admin and solution architect but I'm trying to widen my horizons. In 2016 I've visited and volunteered at the German SQL Saturdays und SQLGrillen and since October 2016 I'm the organizer of Azure Meetup Hamburg.</p>
+ 
+<h3 class="section-heading">Ameli Kirse
+
+</h3>
+<p>Ameli Kirse is a biologist working with Next Generation Sequencing data. During her studies she focused on the field of molecular biodiversity research, which heavily relies on bioinformatic tools as it is dealing with big data. For her master’s thesis she compared three different bioinformatic pipelines, which are coded for the analysis of NGS data, and highlighted advantages and disadvantages of these Tools. She recently started her PhD, which includes the work with HTP (high-troughput) sequencing approaches and the analysis of resulting datasets on the basis of bioinformatic tools.</p>
+ 
+<h3 class="section-heading">Frank Geisler
+ - <a href="https://www.twitter.com/@Frank Geisler">@Frank Geisler</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=4839367">https://www.linkedin.com/profile/view?id=4839367</a></p>
+ 
+<p>Contact: <a href="http://www.gdsbi.de">http://www.gdsbi.de</a></p>
+ 
+<p>Frank Geisler is owner and CEO of GDS Business Intelligence GmbH. He is SQL Server MVP, MCT,  MCSE – Business Intelligence, MCSE – Data Plattform and MCSE - Azure Solutions Architect. In his Job he is building Business Intelligence Systems based on Microsoft Technology, mainly on SQL Server and SharePoint.</p>
+ 
+<h3 class="section-heading">Christopher Adkin
+ - <a href="https://www.twitter.com/ChrisAdkin8">ChrisAdkin8</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/wollatondba">https://www.linkedin.com/in/wollatondba</a></p>
+ 
+<p>Contact: <a href="http://www.chrisadkin.io">http://www.chrisadkin.io</a></p>
+ 
+<p>Chris is a freelance SQL consultant who has been working with SQL Server since 2000, his passion is for squeezing every last drop of performance out of SQL Server and understanding the database engine at a level which conventional tools cannot provide any insights on.</p>
+ 
+<h3 class="section-heading">Gabi Münster
+ - <a href="https://www.twitter.com/@SQLMissSunshine">@SQLMissSunshine</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/gabimuenster/">https://www.linkedin.com/in/gabimuenster/</a></p>
+ 
+<p>Gabi Münster is working as a Business Intelligence consultant and team lead and brings in her experience with SQL Server, data warehousing, relational and multidimensional database design and implementation, report and dashboard design, and Master Data Services, as well as project management into the community as a regional PASS Local Group lead. She is also passionate about motivating other women to start a technical career and therefore initiates and supports "Women in Technology" events. Apart from SQLSaturdays, she also spoke at SQLBits, SQL Nexus, Tuga IT, and 2015's and 2017's PASS Summit. In October 2017 Gabi received her first Data Platform MVP award.</p>
+ 
+<h3 class="section-heading">Burak Bagci
+
+</h3>
+<p>Computer science student at the Bonn-Rhein-Sieg University</p>
+ 
+<h3 class="section-heading">Andre Essing
+ - <a href="https://www.twitter.com/@aessing">@aessing</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/aessing">http://www.linkedin.com/in/aessing</a></p>
+ 
+<p>Contact: <a href="http://www.andreessing.de/">http://www.andreessing.de/</a></p>
+ 
+<p>Andre Essing advises, in his role as Technology Solutions Professional, customers in topics all around the Microsoft Data Platform. Since version 7.0, Andre gathering experience with the SQL Server product family, where he has focused on infrastructure topics, mission-critical systems and security. Today Andre concentrates on working with data in the cloud, like Modern Data Warehouse architectures, Artificial Intelligence and new scalable database systems like Azure Cosmos DB.
+
+In addition to his work at Microsoft, Andre is engaged in the community as a chapter leader for the PASS chapter in Bavaria, Germany. You can meet him as a speaker at user groups and international conferences.</p>
+ 
+<h3 class="section-heading">Alexander Klein
+ - <a href="https://www.twitter.com/@SQL_Alex">@SQL_Alex</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/alexander-klein-13a04b3a">http://www.linkedin.com/in/alexander-klein-13a04b3a</a></p>
+ 
+<p>Alexander Klein is a senior Business Intelligence consultant with more than 15 years of experience. He focuses on Business Intelligence and Data Warehouse projects with Microsoft technologies like SQL Server, Power BI, Azure ML or Cortana Intelligence. 
+
+Since 2008, he has been a self-employed consultant in large and medium-sized projects in all sectors across Europe. He has been visiting SQL Saturdays and other Data Conference all over Europe since 2013. Speaker at national and international events since 2017.</p>
+ 
+<h3 class="section-heading">Tillmann Eitelberg
+ - <a href="https://www.twitter.com/@_Tillmann">@_Tillmann</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/tillmanneitelberg">https://www.linkedin.com/in/tillmanneitelberg</a></p>
+ 
+<p>Contact: <a href="http://www.ssis-components.net">http://www.ssis-components.net</a></p>
+ 
+<p>Tillmann Eitelberg is CEO and co-founder of oh22information services GmbH, which specializes in data integration and data management. Tillmann is an active blogger at www.ssis-components.net, writing regularly about data quality topics and his passion: spatial data. In addition, he has published several SSIS components on Codeplex and GitHub. Tillmann is a Data Platform MVP, a board member of PASS Germany e.V., a PASS CL for the Cologne/Bonn region, and a PASS RM.</p>
+ 
+<h3 class="section-heading">Constantin Klein
+ - <a href="https://www.twitter.com/KostjaKlein">KostjaKlein</a>
+</h3>
+<p>Contact: <a href="http://kostjaklein.wordpress.com">http://kostjaklein.wordpress.com</a></p>
+ 
+<p>Constantin is working at Syntax Systems GmbH  Co. KG. He mainly deals with the design and development of solutions based on Microsoft products and technologies. Since 2010 he was each year designated Most Valuable Professional (MVP) for the Microsoft Data Platform. In addition he is member of the board of Just Community e.V. (http://www.justcommunity.de) and PASS Deutschland e.V. (http://www.sqlpass.de). He also leads the .NET User Group Frankfurt/Germany (http://dnug-frankfurt.de). Find his blog at: http://kostjaklein.wordpress.com</p>
+ 
+<h3 class="section-heading">Kevin Chant
+ - <a href="https://www.twitter.com/kevchant">kevchant</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kevin-chant/">https://www.linkedin.com/in/kevin-chant/</a></p>
+ 
+<p>Contact: <a href="https://www.KevinRChant.com/">https://www.KevinRChant.com/</a></p>
+ 
+<p>Senior Database Architect originally from the UK and now living in the Netherlands. 
+
+Over 23 years experience in the IT sector, and has supported databases for companies in the top 10 of the fortune 500 list.
+
+In addition to a lot of SQL Server experience also has a fair few Microsoft Certifications. In addition, was probably the last ever person in the world to gain the MCSD Azure Architect certification and has gained the latest Microsoft DevOps Engineer Expert certification. 
+
+Has real life experience with SQL Server and Azure Devops. Currently SQL Server Product Owner of around 1,900 instances. 
+
+In addition, done various things over the years for the Data Platform Community.</p>
+ 
+<h3 class="section-heading">William Durkin
+ - <a href="https://www.twitter.com/@sql_williamd">@sql_williamd</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/wdurkin">http://www.linkedin.com/in/wdurkin</a></p>
+ 
+<p>Contact: <a href="http://williamdurkin.com">http://williamdurkin.com</a></p>
+ 
+<p>William Durkin is a DBA, Data Platform MVP, and Data Platform Architect for Data Masterminds (http://datamasterminds.io). He uses his decade of experience with SQL Server to help multinational corporations achieve their data management goals. Born in the UK and now based in Germany, William has worked as a Database Developer and DBA on projects ranging from single server installations, up to environments spanning 5 continents, using a range of high availability solutions. William is a regular speaker at conferences around the globe, organizes the popular event SQLGrillen (http://sqlgrillen.com).</p>
+ 
+<h3 class="section-heading">Björn Peters
+ - <a href="https://www.twitter.com/https://twitter.com/sql_aus_hh">https://twitter.com/sql_aus_hh</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/bj%C3%B6rn-peters-b26b5813b/">https://www.linkedin.com/in/bj%C3%B6rn-peters-b26b5813b/</a></p>
+ 
+<p>Contact: <a href="http://www.sql-aus-hamburg.de">http://www.sql-aus-hamburg.de</a></p>
+ 
+<p>I've started with SQL Server 6.5 but only as a sys-admin and not as DBA. Later I'd worked as a full DBA with SQL Server 2000 and my love to SQL Server started. In 2015  I'd got more interested in SQL PASS and tried to speak for the first time... the main part of my job is to work as DB-Admin and solution architect but I'm trying to widen my horizons. In 2016 I've visited and volunteered at the German SQL Saturdays und SQLGrillen and since October 2016 I'm the organizer of Azure Meetup Hamburg.</p>
+ 
+<h3 class="section-heading">André Kamman
+ - <a href="https://www.twitter.com/@andrekamman">@andrekamman</a>
+</h3>
+<p>Contact: <a href="http://andrekamman.com">http://andrekamman.com</a></p>
+ 
+<p>André Kamman is a DBA and SQL Server Solutions Architect for CloudDBA. He has done a lot of DBA work on 1000’s of servers where he discovered his love for Powershell, architecting SQL Server solutions, building and tuning ETL processes (with BIML). He also likes to work with MPP platforms APS and AzureDW. André is a Data Platform MVP, Dutch PASS Chapter Leader and organiser of SQL Saturday Holland.</p>
+ 
+<h3 class="section-heading">Dominik Petri
+ - <a href="https://www.twitter.com/https://twitter.com/petrisoftware">https://twitter.com/petrisoftware</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/dominik-petri-b713aa91">https://www.linkedin.com/in/dominik-petri-b713aa91</a></p>
+ 
+<p>Contact: <a href="http://www.petri-software.de">http://www.petri-software.de</a></p>
+ 
+<p>Dominik Petri ist langjähriger Entwickler mit den Schwerpunkten Excel, Business Intelligence (BI) und VBA. Er ist zudem Chartered Financial Analyst (CFA).
+
+Er berät Firmen in Deutschland und der Schweiz bei der Einführung und dem Einsatz der Power BI-Tools. Außerdem führt er praxisbezogene und zielgruppenorientierte Seminare und Workshops zu Excel, Power BI und VBA durch, in denen er die Teilnehmer begeistert und die Inhalte verständlich, praxisnah und überzeugend vermittelt.
+
+Sein Wissen gibt der MCT, Microsoft Office Master, Microsoft Excel Expert und MCSA (BI Reporting) u.a. als Blogger auf www.petri-software.de und www.office-kompetenz.de, als Autor des Excel 2016 Handbuchs und als Video2Brain- bzw. LinkedIn Learning Trainer weiter.</p>
+ 
+<h3 class="section-heading">Ivan Campos
+ - <a href="https://www.twitter.com/WizardDBA">WizardDBA</a>
+</h3>
+<p>LinkedIn: <a href="https://pt.linkedin.com/in/idcampos">https://pt.linkedin.com/in/idcampos</a></p>
+ 
+<p>Contact: <a href="http://wizarddba.com/">http://wizarddba.com/</a></p>
+ 
+<p>Ivan Campos is currently a database administrator in 3C Payment a fin-tech in Luxembourg. (3CPayment.com).
+He is Microsoft Most Valuable Professional, active speaker at local community meetings in Portugal and outside Portugal. He is the leader and one of the founders of the community based in the north of Portugal Porto.Data (www.portodata.net) and the organizer of SQLSaturday in Porto Portugal.</p>
+ 
+<h3 class="section-heading">Christian Storms
+
+</h3>
+<p>Arbeite mit Power Bi, SSRS und SQL Database.</p>
+ 
+<h3 class="section-heading">Gerhard Brueckl
+ - <a href="https://www.twitter.com/gbrueckl">gbrueckl</a>
+</h3>
+<p>LinkedIn: <a href="http://at.linkedin.com/in/gbrueckl/">http://at.linkedin.com/in/gbrueckl/</a></p>
+ 
+<p>Contact: <a href="http://blog.gbrueckl.at">http://blog.gbrueckl.at</a></p>
+ 
+<p>Gerhard has been working with Microsoft BI tools since 2006 mainly focusing on Microsoft SQL Server and its components. As a consultant and architect he designed various enterprise BI solutions primary in the German-speaking areas. His personal interest has always been on analytical databases and their capabilities. In 2012 he achieved the SSAS Maestro certification. He is also very active in the community, has its own blog and speaks at conferences all over the world on a regular basis.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<p><a href="http://www.solisyon.de/">Solisyon GmbH</a></p>
+ 
+<p><a href="http://www.gdsbi.de">GDS Business Intelligence GmbH</a></p>
+ 
+<p><a href="https://www.quest.com/de-de/">Quest SOFTWARE GmbH</a></p>
+ 
+<p><a href="http://www.oraylis.de/home">ORAYLIS GmbH</a></p>
+ 
+<p><a href="http://www.oh22.net">oh22</a></p>
+ 
+<p><a href="http://www.dbwatch.com">dbWatch AS</a></p>
+ 
+<p><a href="https://www.infozoom.com/">humanIT Software GmbH</a></p>
+ 
+<p><a href="http://www.melissadata.de">Melissa Data GmbH</a></p>
+ 
+<p><a href="https://www.sentryone.com/">SentryOne</a></p>
+ 
+<p><a href="http://www.inovex.de">inovex GmbH</a></p>
+ 
+<p><a href="http://www.pass.org">PASS</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

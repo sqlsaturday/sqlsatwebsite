@@ -1,0 +1,1028 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #904 - Madrid 2019" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #904 - Madrid 2019
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #904 - Madrid 2019</div>
+        <div class="masthead-subheading">This event was held on 2019-9-28</div>
+        <p><b>Event Location</b>:</p>
+        <p>Universidad Politécnica de Madrid Campus Sur - ETSI Sistemas Informáticos</p>
+        <p>Calle Alan Turing s/n </p>
+        <p>, , </p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0904.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>Data Science for beginners (Hands On)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Data science can be hard to grasp, complex and big, but making data science easy to understand and bringing it closer to all who want to tackle this new emerging field is an important task in world of data.  Exploring, extracting and finding hidden gems  from data using statistical and mathematical methods, computer science and several different technologies is essentially what data science is doing. In practice this means, data science is an iterative process of harvesting data, managing and cleaning the data,  performing analysis and and at the end interpreting, visualizing and using information  that will bring insights to end-user, business people and making decisions much easier.
+We will focus on answering 5 simple questions. 
+
+1) is this weird? 
+2) is A better than B, respectively? 
+3) how much / many of this is needed? 
+4) this belong to group A? 
+5) what is next?
+
+Session we will look into technologies that can be tackled using SQL Server 2016 and ML Azure.
+
+Es una sesión con algunas demos prácticas que, aunque no es obligatorio, si que necesitarás un portatil si quieres ponerte manos en la masa. ¡No te lo olvides en casa!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tomaž Kaštrun</b>, 
+</p>
+<hr>
+ 
+<h3>Daily indexing problems and its - possible - solution</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Have you ever been in the situation that an application performed well the last day and - suddenly - you run into problems? Although you have Index Maintenance jobs and statistics up to date you will monitor a big degrade of performance! This session will demonstrate in a over 80 percent demo based presentation the following scenarios which happend this way in real life!
+- Why performance degradation in spite of maintenance jobs?
+- just one more database in the result set and the query runs really bad - why?
+- usage of literals is completely different from the usage of variables - why?
+- identical data types but the query runs in part perfect and in part bad...
+- your execution plan shows an INDEX SEEK - but the table will be scanned!
+- you get a query from the business which performs really bad but when you test it it runs pretty cool - why?</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Uwe Ricken</b>, 
+</p>
+<hr>
+ 
+<h3>¿Bases de Datos en Kubernetes?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Kubernetes es mas conocido por hacer despliegues de contenedores no dependientes del estado, pero tambien es capaz de manejar cargas de trabajo que dependen del estado, como las bases de datos. Con Kubernetes es muy facil tener aplicaciones que tengan alta disponibilidad y que los cambios se hagan de una forma transparente. Pero, ¿Podemos/Queremos tener estos beneficios para las bases de datos? ¿Que pasa con los servicios gestionados como Azure SQL?
+
+En esta sesion mi objetivo es introducirte al mundo de Kubernetes respecto al manejo de aplicaciones dependientes del estado y cuales son las opciones junto a los conceptos que existen en el ecosistema. Luego, a travez de una demostracion podras ver si te vale desplegar tu base de datos en Kubernetes, o no.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Christian Melendez</b>, 
+</p>
+<hr>
+ 
+<h3>2 Fast 2 Furious - designing for speed, concurrency, and correctness</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>With the multitude of isolation levels, concurrency models, and specialist technologies available in SQL Server, it is no surprise that transaction throughput and correctness can be directly correlated to the ability and knowledge of the person that wrote the code.
+
+In this session, we will reveal how SQL Server concurrency and correctness often goes wrong, how we can avoid this, and how we can use our knowledge to design and develop for optimal server throughput for our applications and processes using tips and tricks gained from real-world scenarios.
+
+We will cover SQL Server’s traditional locking model, In-Memory OLTP, Columnstore, Delayed Durability, and many other technologies and techniques you can use to make your transactions more robust.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mark Broadbent</b>, 
+</p>
+<hr>
+ 
+<h3>Convirtiéndonos en masters de PowerBI con DAX Studio y más. Del desarrollo al Performance Tuning.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Con la presión de los entornos Enterprise, las herramientas actuales como Visual Studio o PowerBI Desktop, se pueden llegar a quedar cortas a la hora de automatizar tareas de desarrollo de PowerBI y agilizar el análisis de rendimiento.
+
+Durante esta sesión trabajaremos con diferentes herramientas como DAX Studio, Tabular Editor y Vertipaq Analyzer para convertirnos en unos masters de PowerBI.
+Conocimiento que nos permitirá introducirnos en el mundo del Performance Tuning, mejorando el rendimiento de nuestras consultas DAX en PowerBI.
+
+Además, compartiremos ejemplos de casos prácticos y experiencias reales en entornos de gran volumen de datos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ruben Pertusa Lopez</b>, 
+</p>
+<hr>
+ 
+<h3>Data Clinic. ¡Ven y pregunta a los expertos!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>¿Estás trabajando con una de estas tecnologías: SQL Server on Premise, Azure SQL Database, Azure Managed Instance, Azure SQL Database for MySQL, Azure SQL Database for PostgreSQL, SQL Server on Virtual Machine, Azure SQL Datawarehouse, Azure Billing, Power BI, SSAS, SSIS, SSRS, ML y Windows - .NET Developer y necesitas respuestas sobre cómo migrar, implementar, depurar, controlar, monitorizar o mejorar tu entorno o simplemente complentarte lo aprendido de las sesiones de los speakers?
+
+Si es así, pásate un rato por el Data Clinic Ask-The-Expert y pregunta gratis directamente a los ingenieros de Microsoft y varios Speakers sobre estos y otros temas. Estaremos encantados de poder ayudarte.
+
+Y No olvides traer tu portátil!
+
+Tendremos en el equipo:
+Ingenieros Microsoft en:
+* SQL Server on Premise y SQL Server on Virtual Machine: 
+* Azure SQL Database, Azure Managed Instance, Azure SQL Database for MySQL, Azure SQL Database for PostgreSQL, SQL Server on Virtual Machine
+* Azure SQL</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jose Manuel Jurado Diaz</b>, 
+</p>
+<hr>
+ 
+<h3>Tune Like a Guru - The Big Three! (Hands On)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>EVERY client I engage with is taught to RUN 3 SCRIPTS IMMEDIATELY, WITHOUT THOUGHT AND WITHOUT DELAY as soon as a performance problem is noted. I am exceptionally good at performance tuning and forensics, but I (nor anyone else out there) cannot get at the root cause of a problem without information about the occurrence. These scripts will give you said information, which is very often transient in nature! I could be putting myself out of work teaching stuff like this! :-D
+
+Es una sesión con algunas demos prácticas que, aunque no es obligatorio, si que necesitarás un portatil si quieres ponerte manos en la masa. ¡No te lo olvides en casa!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Boles</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Machine Learning Service with Python</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure Machine Learning service is  Azure based service with provided on-prem Python SDK, that combines both worlds, cloud and on-prem, and brings data scientists ability to quickly prepare data, train and deploy machine learning models and consume the predictions. 
+Azure ML service provides broader usage of cloud and improves the productivity, helps burden the knowledge scarcity, reduces costs and does auto-scaling. Azure ML Service embraces also many open-source python frameworks and packages, such as Scikit-Learn, TensorFlow, Pytorch and MXnet. 
+
+In this session we will explore many of the service features, the ability to combine on-prem with cloud work (using notebooks), connecting to Kubernetes Service, Databricks and other features.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tomaž Kaštrun</b>, 
+</p>
+<hr>
+ 
+<h3>¡Qué locos están estos de Azure Database PaaS! (Hands On)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>• ¿cómo dices que…MySQL, MariaDB y PostgreSQL también están en Azure como un servicio administrado y que Microsoft da soporte?
+• ¿qué tengo un SQL Server como un servicio administrado para mí y que puedo ajustarlo en base a mis necesidades y mi dinero? ¿ cómo ?
+
+En este Hand-On-Labs daremos un repaso a las posibilidades de estos 6 servicios administrados de que disponemos, cómo:
+
+• Si eres un loco del Open Source Database o si eres más de SQL Server en cualquiera de sus ediciones:
+
+o Revisaremos los 3 sabores existentes de SQL Server, Azure SQL Database, ServerLess y Managed Instance sus ventajas e inconvenientes.
+o Crearemos y configuraremos dando un repaso a todos los puntos más importantes de estas bases en Azure.
+o Migraremos nuestras bases de datos a Azure
+o Revisaremos las mejores prácticas para nuestras aplicaciones y conectividad.
+o Resolveremos tus preguntas y ya sabes, si tienes una base de datos te ayudamos a migrarla.
+
+Es una sesión con algunas demos prácticas que, aunque no es obligatorio, si que necesitarás un portatil si quieres ponerte manos en la masa. ¡No te lo olvides en casa!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jose Manuel Jurado Diaz</b>, 
+</p>
+<hr>
+ 
+<h3>Predictive Maintenance for airplane turbines with IoT, bringing deep learning to the edge.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>We will present an end to end solution for aeroplane turbine predictive maintenance in the edge
+Moreover, the session will cover the following points:
+- Introduction to predictive maintenance
+- How to use Deep Learning and RNN to solve predictive maintenance problems
+- Machine Learning workflow for the solution proposed. We will provide all the details of our model's implementation and the technology used: Databricks, Python and Tensorflow
+o Data Pre-processing and Feature selection
+      •Normalization
+o Model selection
+o Training  Testing
+o Evaluation Metrics
+o Deployment of the model using a lightweight version of Tensorflow: TFLite. This provides the tools needed to deploy a lightweight model in the edge without compromising its accuracy.
+- Development of different IoT edge modules and how to deploy them in a RaspberryPi
+     o Sensor engine module
+     o Predictive module for ARM32 Arch
+- How to send telemetry to the Cloud
+- Analytics  BI: Data Visualization with PowerBI</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rodrigo Cabello</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Databricks - Construcción en vivo de un "pipeline" de IA (Hands On)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>En este workshop de Azure Databricks veremos de forma práctica todos los pasos a seguir para crear una solución de IA con la idea de facilitar la comprensión de este servicio basado en Spark. También veremos cómo se integra con otros servicios de Azure necesarios para construir una solución completa. Constará de dos partes fundamentales: Adquisición de datos y creación del "data pipeline" necesario para el correcto procesamiento de los modelos. Creación y entrenamiento de los modelos desde Azure Databricks sobre Azure ML y despliegue de los más adecuados como API REST en un contenedor Docker.
+
+Es una sesión con algunas demos prácticas que, aunque no es obligatorio, si que necesitarás un portatil si quieres ponerte manos en la masa. ¡No te lo olvides en casa!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alberto Diaz Martin</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Data Factory v2: Mapping Data Flows - first blood</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft's services in Azure helps us to leverage big data more easily and even more often accessible for non-technical users. Having UI in ADF version 2 - Microsoft added a new feature: Mapping Data Flow which resembles components of SSIS. This is a very user-friendly and non-code approach tool-set.
+But, has that been only UI introduction? Why and how Databricks does work under the hood?
+Do you want to know this new feature of ADF and reveal the power of modern big data processes without knowledge of such languages like Python or Scala?
+We will review this new feature of ADFv2, do deep dive to understand the mentioned techniques, compare them to SSIS and/or T-SQL and learn how modelled data flow runs Scala behind the scenes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kamil Nowinski</b>, 
+</p>
+<hr>
+ 
+<h3>Taller Infantil Robótica: Desafía tu mente</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Taller de Robótica: Desafía tu mente
+¿Cuántas operaciones puedes hacer seguidas?¿Superarás a tus amigos? Construye desde zero y programa tu consola de cálculo mental con Makecode y las placas Micro:bit. Desafía a tus amigos y supérales con este divertido juego. ¿te apuntas?
+
+Importante:
+- Esta actividad esta incluida de manera gratuita dentro del SQLSaturday Madrid 2019 bajo registro previo, para niñ@s entre 8 y 13 años. El taller incluirá un pequeño catering adaptado a los mas pequeños.
+- Para asistir, se requiere un registro extra en el siguiente formulario https://forms.gle/HNtbw7qpe9BGaUv26 
+- Es necesario traer un portátil para realizar la actividad. El resto de materiales del taller se dispondrán de manera gratuita.
+- El horario del taller es de 10:30h a 13:45h del Sábado 28 de Septiembre en el mismo recinto que el SQLSaturday Madrid 2019. Habrá un descanso de 45 minutos, de 11:15h a 12:00h que coincide con el descanso del café, para permitir a los tutores legales acompañar a los menores durante el descanso.
+- Tanto la entrada como la salida siempre se tiene que hacer con el tutor legal. El tutor legal deberá estar puntal en la recogida.
+- El taller estará impartido por dos profesionales cualificados de la empresa Possible (http://espossible.es/ ), organizadores habituales de los talleres en Microsoft.
+- Si tienes más dudas sobre el taller, puedes contactar Alba Rodriguez (lab@espossible.com),  Directora Educativa de Possible Lab.
+- El taller esta limitado a un máximo de 30 niñ@s. Se confirmará el registro via email una vez rellenado el formulario.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ruben Pertusa Lopez</b>, 
+</p>
+<hr>
+ 
+<h3>From adaptive to intelligent: query processing in SQL 2019</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>As announced in September 2018, SQL Server 2019 expands the "adaptive query processing" features of SQL 2017 and relabels them as "intelligent query processing". This name now covers many features, such as batch mode on rowstore, memory grant feedback, interleaved execution, adaptive joins, deferred compilation, and approximate query processing.
+
+In this high-paced session, we will look at all these features and cover some use cases where they might help - or hurt! - you.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Hugo Kornelis</b>, 
+</p>
+<hr>
+ 
+<h3>AI @ Scale</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>AI@Scale is a change and adoption approach to become an AI driven organisation. In this session we will speak about how develop and embed in your organisation the needed AI capabilities on people, process, data and technology to repeatedly bring data  AI scenarios successfully from first idea and experiment to full and organisation-wide business adoption and value. No more Proof of Concepts or zero-sum MVPs. 
+
+We will also explain how to apply concepts like DevOps for AI, Data governance, AI Center of Excellence, AI-driven culture  ethics, AI champions and AI community.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Pablo Peris</b>, 
+</p>
+<hr>
+ 
+<h3>What's new in Security for SQL Server 2019 and Azure SQL Database</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Join this session to find out about the latest Azure SQL security innovations and learn about new customer scenarios and opportunities which the new security technologies unlock. You will get the first-hand look at the new cutting-edge capabilities in network security, authentication, data encryption, security management, and other areas that enable business-critical applications handling financial, healthcare, government and other sensitive data even better than before.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andreas Wolter</b>, 
+</p>
+<hr>
+ 
+<h3>Churn Norris - ML para mantener a tus clientes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Tus clientes son tus amigos, y a los amigos hay que tenerlos siempre cerca. Para evitar que se vayan de tu lado y seguir construyendo una preciosa amistad, ven a esta sesión en la que revisaremos el concepto de "churn" o abandono de clientes, qué lo define y cómo podemos atacar el problema usando técnicas de Machine Learning con Python y scikit-learn.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Pau Sempere</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Data Studio - The tool formerly known as SQL Operations Studio</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>On PASS Summit 2017 Microsoft revealed a new tool for managing and developing SQL Server: Azure Data Studio. In his demo packed session German Data Platform MVP Frank Geisler will show how to use SQL Operations Studio, what is new compared with SQL Server Management Studio and he will show what capabilites this tool has not only to develop SQL Server Solutions but also how to monitor a SQL Server with Azure Data Studio. By the way: One of the biggest advantages is that Azure Data Studio is not only available for Windows but also for Mac and for Linux.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Frank Geisler</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Defaults SUCK!!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>If you just click next-next-next and think you have a good-to-go SQL Server THINK AGAIN!! :-)  There are umpteen things you just GOTTA change right out of the box if you want your potentially very expensive and always precious SQL Server resource to perform and behave optimally.  This session will cover a laundry list from High Power Setting to data file growth and many useful items in between.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kevin Boles</b>, 
+</p>
+<hr>
+ 
+<h3>Modelos de datos en Azure Cosmos DB</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Una sesión para conocer, de una forma práctica, como modelar datos NOSQL en Azure Cosmos DB, con el objetivo de optimizar consultas y el consumo de RUs.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alberto Diaz Martin</b>, 
+</p>
+<hr>
+ 
+<h3>Modelado Avanzado en PowerBI. Cuando el drag and drop no es suficiente.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>La interfaz de Power BI Desktop nos permite hacer potentes modelos de datos a base de clicks. Pero existen casos en los que esto no es suficiente y acabamos haciendo monstruosas metricas DAX para solucionar problemas que simplemente se podrían modelar de manera diferente.
+
+Hablaremos de patrones para medidas semiaditivas como el Stock. Nos pelearemos con el Distinct Count, y nos divertiremos con las relaciones Many to Many. Todo esto y más, en una sesión cargada de experiencias personales en proyectos reales con modelos gigantescos de datos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ruben Pertusa Lopez</b>, 
+</p>
+<hr>
+ 
+<h3>Desnormalizando nuestros Cosmos DB, perdiendo el miedo a las particiones</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>¿Has tenido problemas a definir tus particiones de datos con SQL Api de Cosmos DB? . En muchos casos hacer JOINS entre particiones, y optimizar nuestras consultas se hace complicado. Veremos como trabajar con Cosmos DB Changes Feed y optimizar nuestras consultas y particiones.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sergio Hernandez Mancebo</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI Tips  Tricks from the Real World</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Power BI is an amazing BI platform out of the box, but there’ is a lot of things that you can do with Power BI that probably you don’t even imagine!
+
+Come to my session to find out….</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rui Romano</b>, 
+</p>
+<hr>
+ 
+<h3>Building a data connector for Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Do you want to access data from a REST API with Power BI? Willing to know more about data connectors and the Power Query M language? Welcome on board! This session will show you, with a real use-case, what’s a data connector and how to build it. Starting with the definition of a function, going through authorization and finally packaging the whole is a nice journey that we’ll follow during the next 60 minutes.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Cédric Charlier</b>, 
+</p>
+<hr>
+ 
+<h3>Transformaciones que pueden salvar tu ETL</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>El proceso de extracción, transformación, limpieza, preparación y carga de datos es muy importante para los modelos analíticos. La sesión analiza un conjunto de escenarios que quedan resueltos en esta etapa y no pasan como tareas al modelado tabular de Power BI. El lenguaje M ofrece una gran cantidad de oportunidades que se exponen en esta sesión.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ana Maria Bisbé York</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI: Si siempre haces lo mismo, no esperes resultados diferentes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Estamos en un mundo de cambios continuos, los negocios y las herramientas evolucionan a gran velocidad, ¡Power BI tiene actualizaciones mensuales!.
+¿En tu empresa tienen tecnologías actualizadas, pero las personas siguen con la misma mentalidad y métodos de hace años? Tienes un problema. En esta sesión te propongo las soluciones que estoy aplicando con éxito.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Salvador Ramos</b>, 
+</p>
+<hr>
+ 
+<h3>Snowflake, tu DWH puro SaaS que tienes que conocer</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>¿Has oido hablar de Snowflake? Pero no del tradicional esquema de BI, sino de un producto que está rompiendo moldes en el mercado del DWH con una arquitectura puro cloud (100%, sin medias tintas) y unas funcionalidades que obligan a repensar la forma en la que se encaran este tipo de proyectos. ¿Qué es lo que le hace tan diferente? ¿Por qué merece la pena conocerle? En esta sesión trataremos de dar unas pinceladas que te hagan despertar la misma curiosidad que nos despertó a nosotros cuando lo vimos por primera vez. Que no te pase que cuando alguien te hable de Snowflake tú no sepas de qué están hablando</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Carlos Sacristán</b>, 
+</p>
+<hr>
+ 
+<h3>Kabel - Debate y tendencias en IA en 2020</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>TBD</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Carlos Sacristán</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI and PowerApps: A real world example on Budgeting (Hands On)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The goal of this workshop is to learn the potential of the PowerPlatform and its use cases, specifically you will learn how to use Power Apps to update the budget and visualize the update in realtime in a Power BI report.
+
+Es una sesión con algunas demos prácticas que, aunque no es obligatorio, si que necesitarás un portatil si quieres ponerte manos en la masa. ¡No te lo olvides en casa!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Rui Romano</b>, 
+</p>
+<hr>
+ 
+<h3>Aura - Aura, Unos novatos muy veteranos</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Solo llevamos dos años en el mercado como empresa de consultoría IT, pero detrás de Aura está un grupo de consultores expertos, con más de 20 años de trayectoria en diferentes empresas de referencia en el entorno Microsoft. Pensarás: una compañía más. 
+Si crees que todas las empresas priman la cooperación frente a la competición, facilitan una conciliación real y apuestan por la formación continua, entonces no tenemos nada más que contarte. De lo contrario, acércate a conocernos.
+
+Ponente: Gianluca Risi</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ruben Pertusa Lopez</b>, 
+</p>
+<hr>
+ 
+<h3>Planes de ejecución con SQL Server 2017/2019</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2019 tiene novedades muy in teresantes en el motor relacional. Esta versión Microsoft ha puesto el foco en el auto-tuning, implementando features que llevamos años esperando como el inlining de funciones real, drásticos cambios de funcionamiento a nivel BATCH MODE,...En definitiva, no te puedes perder esta sesión donde vamos a ver cómo esta edición de SQL Server es la que mayor nº de cambios ha tenido en el motor desde la aparición de SQL Server 2014 con el motor In-Memory OLTP</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Enrique Bañuls</b>, 
+</p>
+<hr>
+ 
+<h3>Dr. Bot, when AI meets helthcare</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Do you remember when in films humans are taken care of medical robots? Well, we are not yet there but we will be in time.  AI is getting increasingly sophisticated at what humans do but depending on the area they can be more efficient. In addition, thanks to the NLP techniques the AI is getting better in understanding humans. So, in this talk an application of AI is presented for helping the diagnosis of rare diseases and helping doctors to making decisions in their treatments. In addition, the application is going to be taken to cloud in order to get accessible for any doctor to request it and help them to make a more accurate diagnosis.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Eduardo Matallanas</b>, 
+</p>
+<hr>
+ 
+<h3>PlainConcepts – Rediscovering the meaning of technology</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>En esta charla de patrocinador Plain Concepts dará a conocer quiénes son. Actualmente, como empresa del sector tecnológico, está enfocada en las últimas tecnologías y se centra sobre todo en el desarrollo de proyectos relacionados con la Realidad Virtual y Aumentada, Big data e IA. Por ello en esta charla daremos a conocer algunos de nuestros proyectos más impactantes y hablaremos cómo se lo pasan los Plain Piggies dentro de una empresa que apuesta por las personas. Además, al final de la charla podrás participar en un Kahoot donde podrás llevarte un maravilloso premio sólo por asistir. ¡¡¡No te lo pierdas y ven a descubrir a Plain Concepts!!!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Eduardo Matallanas</b>, 
+</p>
+<hr>
+ 
+<h3>Test Driven BI (Hands On)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>La confianza en una solución se gana en mucho tiempo y se pierde en dos bugs... o menos. ¿que tal si generamos pruebas que nos avisen de los errores e informamos del nivel de confianza en los datos en cada ejecución? Quizá de esa manera, mientras se estabilizan las plataformas no perderemos esa confianza. 
+Ven al taller y descubre que son los test anidados, test de negocio en el mundo del BI y llevate de paso una aplicación lista para instalar que te permitirá ejecutar fácilmente esos test.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Miguel Egea</b>, 
+</p>
+<hr>
+ 
+<h3>Data Virtualization: Superando la resistencia al cambio</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>"Habría que echar todo esto abajo y empezar de cero para hacerlo bien. Pero eso es imposible."
+
+¿Os suena ese mantra? 
+
+Logra modernizar tu sistema de información sin mover los datos de donde estén ni cambiar las aplicaciones, virtualizando la información, generando el nuevo modelo que te permita crecer y construyendo la plataforma de futuro que necesitas. Sin resistencia al cambio, ¡porque no hay cambio! (o eso les haremos creer).
+
+En esta sesión hablaremos de las grandes ventajas que plantea la virtualización, incluso son SQL Server 2019 (pero sin ser la única alternativa).
+
+Virtualiza... Conecta...</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alberto López Grande</b>, 
+</p>
+<hr>
+ 
+<h3>Query Store a gran escala: llegando a la milla extra</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Query store feature was presented in SQL Server 2016 to provide insights on query performance and simplify troubleshooting.
+This feature might be enough for small enterprise environments, but When managing hundreds of instances requiring top performance
+and zero down-time - it requires going an extra mile.
+
+In this session we'll present how at ChannelAdvisor we leverage the power of query store feature into a central store - proactively improving performance on an on-going basis.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Efraim Sharon</b>, 
+</p>
+<hr>
+ 
+<h3>Building a voice bot for PowerBI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Learn how you can query your PowerBI models from Alexa, Google Assistant, and integrate it with Microsoft Teams for assisting the need of information from different channels.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Fran Mercado</b>, 
+</p>
+<hr>
+ 
+<h3>Machine Learning - Best Practices and Vulnerabilities</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>It seems like Artificial Intelligence and Machine Learning are a must nowdays.
+For projects carrying a simple or well kown problem we can find a lot of ready-made solutions, but this extremne easy to use could be one of our best enemy when facing with specific custom problems.
+With this session we will cover how to apply best practices in configurin ML but much more, do we reaaly need it always?
+The second part will cover vulnerabilities of ML discovering how easy could be to fool a neural network by some techinques (Like pixel attack) and their implication in projects that requires no security issues.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sebastiano Galazzo</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2008 ha muerto, larga vida a Managed Instance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>En esta sesión se tratará cuales son las implicaciones de mantener entornos SQL Server 2008 y lo que nos aporta Azure SQL Managed Instance.
+También se abordará algunos aspectos en la configuración inicial de una Managed Instance y algunos tips encontrados durante su puesta en marcha</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Fran Lens</b>, 
+</p>
+<hr>
+ 
+<h3>Entrada y salida de datos a través de PowerQuery en APIs Web</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Aunque la entrada de información de un modelo de Power BI suele ser una base de datos o un proceso local, PowerQuery está preparado para analizar información procedente de la Web, pudiendo usar APIs web como orígenes de datos para nuestros modelos. 
+En esta charla veremos las distintas maneras que presenta Power BI para conectarse a datos en Internet, y veremos ejemplos con Twitter y Azure.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ernesto Luis Bisbé</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Tomaž Kaštrun
+ - <a href="https://www.twitter.com/@tomaz_tsql">@tomaz_tsql</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/tomaz.kastrun">http://www.linkedin.com/tomaz.kastrun</a></p>
+ 
+<p>Contact: <a href="http://www.tomaztsql.wordpress.com">http://www.tomaztsql.wordpress.com</a></p>
+ 
+<p>Tomaž Kaštrun is BI developer and data analyst. His main focus are data mining, T-SQL development, programming and query optimization. He has been working with SQL server since version 2000. He is Microsoft Certified Professional, Microsoft MVP for data platform and Microsoft trainer.</p>
+ 
+<h3 class="section-heading">Alberto López Grande
+ - <a href="https://www.twitter.com/@qwalgrande">@qwalgrande</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/alberto-l%C3%B3pez-grande-b756aa9/">https://www.linkedin.com/in/alberto-l%C3%B3pez-grande-b756aa9/</a></p>
+ 
+<p>Contact: <a href="http://qwalgrande.com/">http://qwalgrande.com/</a></p>
+ 
+<p>Data Platform MVP, sqlpass.es coordination team. But before all that, I am DBA. I write the blog quot;Diario de un DBAquot; (http://qwalgrande.com).
+
+I am currently Head of Structured Systems in Grupo Catalana Occidente. Working with SQL Server since 1998 in many areas (management, architecture, infrastructure, high availability, tunning, SSIS, SSAS, data quality,...).</p>
+ 
+<h3 class="section-heading">Alberto Diaz Martin
+ - <a href="https://www.twitter.com/@adiazcan">@adiazcan</a>
+</h3>
+<p>LinkedIn: <a href="https://es.linkedin.com/in/albertodiazmartin">https://es.linkedin.com/in/albertodiazmartin</a></p>
+ 
+<p>Contact: <a href="http://blogs.encamina.com/negocios-sharepoint/">http://blogs.encamina.com/negocios-sharepoint/</a></p>
+ 
+<p>A professional with 15 years of experience in the IT Industry, all of them working with Microsoft Technologies. His principal activities are Development and Solution Analysts on his first years and as Team Leader and Solution Architect on the last 6 years. Currently Chief Technology Innovation Officer in ENCAMINA, leading Microsoft technology software development and member of the management board.  
+For the Spanish Community, he works as organizer and speaker in the most important Microsoft technologies conferences which he is one of the most important leaders. Author of several books and articles in professional magazine, from 2013 he began a new career as co-director of CompartiMOSS, a Microsoft technologies magazine.</p>
+ 
+<h3 class="section-heading">Eduardo Matallanas
+ - <a href="https://www.twitter.com/ematde">ematde</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/matallanas/">https://www.linkedin.com/in/matallanas/</a></p>
+ 
+<p>AI Lead en Plain Concepts. Emocionado por las nuevas tecnologías, la robótica y la inteligencia artificial. Tanto me apasiona que hice un doctorado en la Universidad Politécnica de Madrid en estos temas. Así que, llevo trabajando en este campo desde hace 9 años tanto en el ámbito universitario como en el empresarial. Entre los proyectos en los que he estado trabajando, he estado desarrollando redes neuronales para análisis de señales, procesamiento de imagen, procesamiento del lenguaje natural, chatbots, asistentes virtuales, etc. Desde que me incorporé a Plain Concepts me encargo de todos los proyectos relacionados con inteligencia artificial. A parte del software, disfruto mucho del ciclismo, escuchar música y leer.</p>
+ 
+<h3 class="section-heading">Rui Romano
+ - <a href="https://www.twitter.com/@RuiRomano">@RuiRomano</a>
+</h3>
+<p>LinkedIn: <a href="https://pt.linkedin.com/in/ruiromano">https://pt.linkedin.com/in/ruiromano</a></p>
+ 
+<p>Contact: <a href="http://ruiromanoblog.wordpress.com/">http://ruiromanoblog.wordpress.com/</a></p>
+ 
+<p>Rui Romano lives in Portugal and he leads the Business Intelligence team at DevScope. 
+
+He has been Developing amp; Architecting software solutions since 2003 always focused in the Business Intelligence area.</p>
+ 
+<h3 class="section-heading">Hugo Kornelis
+ - <a href="https://www.twitter.com/Hugo_Kornelis">Hugo_Kornelis</a>
+</h3>
+<p>LinkedIn: <a href="http://nl.linkedin.com/in/hugokornelis">http://nl.linkedin.com/in/hugokornelis</a></p>
+ 
+<p>Contact: <a href="http://sqlblog.com/blogs/hugo_kornelis/default.aspx">http://sqlblog.com/blogs/hugo_kornelis/default.aspx</a></p>
+ 
+<p>Hugo Kornelis is an established SQL Server community expert who spends a lot of time at various conferences. He is author of "the Execution Plan Reference" (sqlserverfast.com/epr), blogger, technical editor of Grant Fritchey's "SQL Server Execution Plans, 3rd edition" and some other books, and Pluralsight author. He was awarded SQL Server MVP and Data Platform MVP 12 times (2006 - 2016, and 2019-present).
+
+When not working for the community, he is busy at his day job: freelance database developer/consultant.
+
+Hugo has over 20 years of SQL Server experience in various roles. He loves to write and tune complex queries, but he also has a strong database design background.
+
+When not working for the community, he is busy at his day job: freelance database developer/consultant.
+
+Hugo has over 20 years of SQL Server experience in various roles. He loves to write and tune complex queries, but he also has a strong database design background.</p>
+ 
+<h3 class="section-heading">Ernesto Luis Bisbé
+ - <a href="https://www.twitter.com/elbisbe">elbisbe</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/elbisbe/">https://www.linkedin.com/in/elbisbe/</a></p>
+ 
+<p>Contact: <a href="https://mas140blog.wordpress.com/">https://mas140blog.wordpress.com/</a></p>
+ 
+<p>95% Graduado de Ingeniería de Telecomunicaciones en UAM, Madrid. Apasionado de la tecnología, programación y servicios de comunicación, especializado en tratamiento y procesado de imágenes y señal. Aficionado del BI con un énfasis en visualización y modelados analíticos
+
+Actualmente becario en Telefónica de España.</p>
+ 
+<h3 class="section-heading">Rui Romano
+ - <a href="https://www.twitter.com/@RuiRomano">@RuiRomano</a>
+</h3>
+<p>LinkedIn: <a href="https://pt.linkedin.com/in/ruiromano">https://pt.linkedin.com/in/ruiromano</a></p>
+ 
+<p>Contact: <a href="http://ruiromanoblog.wordpress.com/">http://ruiromanoblog.wordpress.com/</a></p>
+ 
+<p>Rui Romano lives in Portugal and he leads the Business Intelligence team at DevScope. 
+
+He has been Developing amp; Architecting software solutions since 2003 always focused in the Business Intelligence area.</p>
+ 
+<h3 class="section-heading">Andreas Wolter
+ - <a href="https://www.twitter.com/AndreasWolter">AndreasWolter</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/andreaswolter">http://www.linkedin.com/in/andreaswolter</a></p>
+ 
+<p>Contact: <a href="http://www.andreas-wolter.com/blog/">http://www.andreas-wolter.com/blog/</a></p>
+ 
+<p>Andreas Wolter is a Program Manager for SQL Server- and Azure Security at Microsoft. In this role he is working on Security features of SQL Server, Azure SQL Database and Managed Instance. He is currently focusing on “Separation of Duties”-concepts and RBAC-Integration. He has 18 years of experience with SQL Server before joining Microsoft and is the founder of Sarpedon Quality Lab, the Germany-based company specialized on SQL Server HA, Performance and Security. He is Microsoft Certified Master (MCM) for SQL Server and Microsoft Certified Solutions Master for the Data Platform (MCSM) and was recognized as MVP for multiple years in row.</p>
+ 
+<h3 class="section-heading">Kamil Nowinski
+ - <a href="https://www.twitter.com/@NowinskiK">@NowinskiK</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kamilnowinski/">https://www.linkedin.com/in/kamilnowinski/</a></p>
+ 
+<p>Contact: <a href="https://sqlplayer.net">https://sqlplayer.net</a></p>
+ 
+<p>Blogger, speaker, #sqlfamily member. Microsoft Data Platform MVP. Data passionate, Data engineer and Architect.
+Over 13 years of programming and experience with SQL Server databases, he worked both as developer and administrator big databases designing systems from the scratch. Passionate about tuning database engines, code transparency and maximising performance database engine.
+Currently, he is expanding new horizons as a contractor in the UK market, making troubleshooting, prototyping BI and Big Data solutions, enhancing existing processes among Microsoft stuff environments, popularizing the DevOps approach and efficient solutions in the cloud.
+An originator of the "Ask SQL Family" podcast and founder of SQLPlayer blog.</p>
+ 
+<h3 class="section-heading">Ruben Pertusa Lopez
+ - <a href="https://www.twitter.com/@rpertusa">@rpertusa</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/ruben-pertusa-lopez/24/ba3/b0">http://www.linkedin.com/pub/ruben-pertusa-lopez/24/ba3/b0</a></p>
+ 
+<p>Contact: <a href="http://www.sqlpass.es">http://www.sqlpass.es</a></p>
+ 
+<p>Ruben is a Global BI/BigData Manager and Global Data Lead Architect at DUFRY HQ, member of PASS Spanish Group and founder of SQLSaturday Barcelona and Madrid. MCP and MCSA in SQL Server 2012 and also awarded with Microsoft MVP Data Platform. With more than 9 years of experience, he has been working in top projects for leading worldwide companies and teaching in the SolidQ BI Master. He has presented at the SQL Server 2008 R2 and 2014 Spanish launch event, PASS BA Chicago, TechNet Webcasts, Microsoft Partner Program and SolidQ Summit events.</p>
+ 
+<h3 class="section-heading">Fran Mercado
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/franmercado/">https://www.linkedin.com/in/franmercado/</a></p>
+ 
+<p>Data Visualization, BI and Analytics passionate. Combining cross-functional analysis with technical skills to deliver cost effective value to clients. Always looking for innovation, process automating and lean management to implement analytics solutions that provide the unlock of business insights.
+
+MCSE Business Intelligence</p>
+ 
+<h3 class="section-heading">Alberto Diaz Martin
+ - <a href="https://www.twitter.com/@adiazcan">@adiazcan</a>
+</h3>
+<p>LinkedIn: <a href="https://es.linkedin.com/in/albertodiazmartin">https://es.linkedin.com/in/albertodiazmartin</a></p>
+ 
+<p>Contact: <a href="http://blogs.encamina.com/negocios-sharepoint/">http://blogs.encamina.com/negocios-sharepoint/</a></p>
+ 
+<p>A professional with 15 years of experience in the IT Industry, all of them working with Microsoft Technologies. His principal activities are Development and Solution Analysts on his first years and as Team Leader and Solution Architect on the last 6 years. Currently Chief Technology Innovation Officer in ENCAMINA, leading Microsoft technology software development and member of the management board.  
+For the Spanish Community, he works as organizer and speaker in the most important Microsoft technologies conferences which he is one of the most important leaders. Author of several books and articles in professional magazine, from 2013 he began a new career as co-director of CompartiMOSS, a Microsoft technologies magazine.</p>
+ 
+<h3 class="section-heading">Cédric Charlier
+ - <a href="https://www.twitter.com/@Seddryck">@Seddryck</a>
+</h3>
+<p>LinkedIn: <a href="http://be.linkedin.com/in/cedriccharlier">http://be.linkedin.com/in/cedriccharlier</a></p>
+ 
+<p>Contact: <a href="http://seddryck.wordpress.com">http://seddryck.wordpress.com</a></p>
+ 
+<p>Cédric is a talented architect and Data Platform MVP active in the domain of Business Intelligence and Data warehousing. He has more than 10 years of successful experiences with SQL Server in European industrial groups and services companies. Driven by quality and reliability, he is the main developer of an open-source solution for testing BI solutions (cubes, etl, reports) named NBi (www.nbi.io). Cedric also advocates for the introduction and general usage of agile practices in BI’s world.</p>
+ 
+<h3 class="section-heading">Pablo Peris
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/pabloperis/">https://www.linkedin.com/in/pabloperis/</a></p>
+ 
+<p>Pablo Peris works for Microsoft as Digital Advisor In the manufacturing and utilities sector. He studied Computer Engineering and holds a master’s degree in Information Systems Management. Pablo has several years’ experience leading International IoT projects.  Before joining Microsoft, he was 4 years in England as managing Director of a technology consultancy. Previously he was an analyst/programmer, a university professor and founded his own startup in 2007. With more than 16 years of experience in the sector his current mission is to help companies finally become data driven for real.</p>
+ 
+<h3 class="section-heading">Kevin Boles
+ - <a href="https://www.twitter.com/@TheSQLGuru">@TheSQLGuru</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/thesqlguru">http://www.linkedin.com/in/thesqlguru</a></p>
+ 
+<p>Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.</p>
+ 
+<h3 class="section-heading">Carlos Sacristán
+ - <a href="https://www.twitter.com/https://twitter.com/sacrisql">https://twitter.com/sacrisql</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/csacristan/">https://www.linkedin.com/in/csacristan/</a></p>
+ 
+<p>Data Geek. Creo que estas dos palabras es lo que mejor me definen. Que luego esto se aplique en el "mundo real" en trabajar con bases de datos relacionales, multidimensionales, nosql, big data, machine learning o cosas así es lo de menos.
+
+Pero eso sí, SQL Server siempre será mi favorito. No lo puedo evitar. Me tiene ganado.</p>
+ 
+<h3 class="section-heading">Rodrigo Cabello
+ - <a href="https://www.twitter.com/https://twitter.com/mrcabellom">https://twitter.com/mrcabellom</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/rodrigocabello/">https://www.linkedin.com/in/rodrigocabello/</a></p>
+ 
+<p>AI Team Lead at Plain Concepts and Microsoft MVP in Artificial Intelligence with more than 10 years of experience in web application development. Passionate about new technologies and applications that use techniques based on Artificial Intelligence.</p>
+ 
+<h3 class="section-heading">Frank Geisler
+ - <a href="https://www.twitter.com/@Frank Geisler">@Frank Geisler</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/profile/view?id=4839367">https://www.linkedin.com/profile/view?id=4839367</a></p>
+ 
+<p>Contact: <a href="http://www.gdsbi.de">http://www.gdsbi.de</a></p>
+ 
+<p>Frank Geisler is owner and CEO of GDS Business Intelligence GmbH. He is SQL Server MVP, MCT,  MCSE – Business Intelligence, MCSE – Data Plattform and MCSE - Azure Solutions Architect. In his Job he is building Business Intelligence Systems based on Microsoft Technology, mainly on SQL Server and SharePoint.</p>
+ 
+<h3 class="section-heading">Carlos Sacristán
+ - <a href="https://www.twitter.com/https://twitter.com/sacrisql">https://twitter.com/sacrisql</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/csacristan/">https://www.linkedin.com/in/csacristan/</a></p>
+ 
+<p>Data Geek. Creo que estas dos palabras es lo que mejor me definen. Que luego esto se aplique en el "mundo real" en trabajar con bases de datos relacionales, multidimensionales, nosql, big data, machine learning o cosas así es lo de menos.
+
+Pero eso sí, SQL Server siempre será mi favorito. No lo puedo evitar. Me tiene ganado.</p>
+ 
+<h3 class="section-heading">Pau Sempere
+
+</h3>
+<p>Contact: <a href="http://www.solidq.com">http://www.solidq.com</a></p>
+ 
+<p>Pau Sempere S#225;nchez is a Computer Science graduate, working at SolidQ as Data Platform Architect and is member of PASS Spanish Group. He#39;s worked in BI and database projects for top companies in the world, in diverse areas as communications, insurance, retail, transport, banking and automotive. He has been presenting in many Microsoft and community events such as SQL Saturday Madrid and Barcelona, the 12 hours of SQL Server, SolidQ Summit or TechNet Webcasts, and teaching in the SolidQ Master for 6 years in a row</p>
+ 
+<h3 class="section-heading">Fran Lens
+ - <a href="https://www.twitter.com/franlens">franlens</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/franlens/">https://www.linkedin.com/in/franlens/</a></p>
+ 
+<p>Contact: <a href="https://aleson-itc.com/author/fran-lens/">https://aleson-itc.com/author/fran-lens/</a></p>
+ 
+<p>Consultor SQL Server con 10 años de experiencia, MCSE Data Platform, con conocimientos de toda la herramienta y enfocado principalmente a la detección y mejora de problemas de rendimiento en Base de Datos. Entusiasta de la fotografía de lugares abandonados.</p>
+ 
+<h3 class="section-heading">Mark Broadbent
+ - <a href="https://www.twitter.com/@retracement">@retracement</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/retracement">http://www.linkedin.com/in/retracement</a></p>
+ 
+<p>Contact: <a href="http://tenbulls.co.uk">http://tenbulls.co.uk</a></p>
+ 
+<p>Mark Broadbent is a Data Platform MVP and SQL Server MCM with more than 20 years of experience working with SQL Server and principal of SQLCloud, a consultancy specializing in concurrency control and highly available solutions. He is the founder of the UK's SQLSaturday Cambridge (its first and largest), SharePoint Saturday Cambridge, the Hybrid Virtual Chapter and the East Anglia SQL User Group.</p>
+ 
+<h3 class="section-heading">Sergio Hernandez Mancebo
+ - <a href="https://www.twitter.com/@shmancebo">@shmancebo</a>
+</h3>
+<p>Microsoft Azure MVP 
+Ingeniero informatico  por la universiad complutense de madrid, con amplia experiencia liderando proyectos .Net.
+Muy especializado en proyectos basados sobre Sharepoint, BI y desarrollo Web.
+Adem#225;s soy un activo colaborador con la comunidad escribiendo en blogs y publicando art#237;culos en la revista Compartimoss.</p>
+ 
+<h3 class="section-heading">Miguel Egea
+ - <a href="https://www.twitter.com/@miguelegea">@miguelegea</a>
+</h3>
+<p>Contact: <a href="http://www.portalsql.com">http://www.portalsql.com</a></p>
+ 
+<p>SQL Server MVP desde 2001 hasta la actualidad (con algunos años fuera del programa), trabaja como mentor en SolidQ en el departamento de BI. Es ponente habitual en eventos de comunidad de habla hispana. Apasionado de la tecnolog#237;a en general y de la relacionada con base de datos en particular.</p>
+ 
+<h3 class="section-heading">Kevin Boles
+ - <a href="https://www.twitter.com/@TheSQLGuru">@TheSQLGuru</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/thesqlguru">http://www.linkedin.com/in/thesqlguru</a></p>
+ 
+<p>Kevin Boles is a SQL Server expert, working exclusively with the product since v6.5. With over 25 years of database experience and over 45,000 man hours of SQL Server engine experience, he holds many related certifications, is an MCT and was a SQL Server MVP from 2007 to 2012. Kevin has been a very successful independent consultant for over 20 years. His passion is the relational engine, especially designing, building, analyzing and tuning high-performance database applications.</p>
+ 
+<h3 class="section-heading">Eduardo Matallanas
+ - <a href="https://www.twitter.com/ematde">ematde</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/matallanas/">https://www.linkedin.com/in/matallanas/</a></p>
+ 
+<p>AI Lead en Plain Concepts. Emocionado por las nuevas tecnologías, la robótica y la inteligencia artificial. Tanto me apasiona que hice un doctorado en la Universidad Politécnica de Madrid en estos temas. Así que, llevo trabajando en este campo desde hace 9 años tanto en el ámbito universitario como en el empresarial. Entre los proyectos en los que he estado trabajando, he estado desarrollando redes neuronales para análisis de señales, procesamiento de imagen, procesamiento del lenguaje natural, chatbots, asistentes virtuales, etc. Desde que me incorporé a Plain Concepts me encargo de todos los proyectos relacionados con inteligencia artificial. A parte del software, disfruto mucho del ciclismo, escuchar música y leer.</p>
+ 
+<h3 class="section-heading">Ruben Pertusa Lopez
+ - <a href="https://www.twitter.com/@rpertusa">@rpertusa</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/ruben-pertusa-lopez/24/ba3/b0">http://www.linkedin.com/pub/ruben-pertusa-lopez/24/ba3/b0</a></p>
+ 
+<p>Contact: <a href="http://www.sqlpass.es">http://www.sqlpass.es</a></p>
+ 
+<p>Ruben is a Global BI/BigData Manager and Global Data Lead Architect at DUFRY HQ, member of PASS Spanish Group and founder of SQLSaturday Barcelona and Madrid. MCP and MCSA in SQL Server 2012 and also awarded with Microsoft MVP Data Platform. With more than 9 years of experience, he has been working in top projects for leading worldwide companies and teaching in the SolidQ BI Master. He has presented at the SQL Server 2008 R2 and 2014 Spanish launch event, PASS BA Chicago, TechNet Webcasts, Microsoft Partner Program and SolidQ Summit events.</p>
+ 
+<h3 class="section-heading">Ruben Pertusa Lopez
+ - <a href="https://www.twitter.com/@rpertusa">@rpertusa</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/ruben-pertusa-lopez/24/ba3/b0">http://www.linkedin.com/pub/ruben-pertusa-lopez/24/ba3/b0</a></p>
+ 
+<p>Contact: <a href="http://www.sqlpass.es">http://www.sqlpass.es</a></p>
+ 
+<p>Ruben is a Global BI/BigData Manager and Global Data Lead Architect at DUFRY HQ, member of PASS Spanish Group and founder of SQLSaturday Barcelona and Madrid. MCP and MCSA in SQL Server 2012 and also awarded with Microsoft MVP Data Platform. With more than 9 years of experience, he has been working in top projects for leading worldwide companies and teaching in the SolidQ BI Master. He has presented at the SQL Server 2008 R2 and 2014 Spanish launch event, PASS BA Chicago, TechNet Webcasts, Microsoft Partner Program and SolidQ Summit events.</p>
+ 
+<h3 class="section-heading">Sebastiano Galazzo
+ - <a href="https://www.twitter.com/@galazzoseba">@galazzoseba</a>
+</h3>
+<p>LinkedIn: <a href="https://it.linkedin.com/in/sebastianogalazzo">https://it.linkedin.com/in/sebastianogalazzo</a></p>
+ 
+<p>Passionate about Artificial Intelligence, Sebastiano @galazzoseba brings over 15 years of experience in AI and machine learning to his current position as CTO at Sistem-EVO srl.
+Sebastiano has dedicated the last few years to designing and developing algorithms to tackle the challenges of Natural Language Processing, image recognition and predictive analysis through machine learning.
+He is a Microsoft MVP and his work in AI has gained commendation in numerous publications and has received several national and international awards.</p>
+ 
+<h3 class="section-heading">Efraim Sharon
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/efraim-sharon-ab6ab433">https://www.linkedin.com/in/efraim-sharon-ab6ab433</a></p>
+ 
+<p>Database Engineer / Application Developer / Oracle RDBMS  Microsoft SQL Server Expert / Data Science passionate with experience in both SQL and NoSQL technologies. 
+With over 12 years of working in the IT industry I tend to bring fresh perspectives for data management and utilization. I believe my most valuable skill is queries optimization.</p>
+ 
+<h3 class="section-heading">Jose Manuel Jurado Diaz
+ - <a href="https://www.twitter.com/jmjuradodiaz">jmjuradodiaz</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/jose-manuel-jurado-diaz-5a586014/">https://www.linkedin.com/in/jose-manuel-jurado-diaz-5a586014/</a></p>
+ 
+<p>José Manuel Jurado currently works as SQL Escalation Engineer and Subject Matter Expert in Azure SQL Database at Microsoft Spain. With over 20+ years of experience in SQL Server environments (administration and database development), he is a speaker for internal events at Microsoft and for public events such as SQLSaturday, SQL Nexus, SQLBits, Pass Summit, SQL Server Konferenze, TechReady, DotNetConference, and Azure BootCamp. In the past, he worked as Project Manager for large global retail company for more than 10 years developing projects using different Microsoft Technologies.</p>
+ 
+<h3 class="section-heading">Ana Maria Bisbé York
+ - <a href="https://www.twitter.com/@ambynet">@ambynet</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ambynet">https://www.linkedin.com/in/ambynet</a></p>
+ 
+<p>Contact: <a href="http://amby.net/">http://amby.net/</a></p>
+ 
+<p>Partner Microsoft en Power BI. Influencer en Pragmatic Works. Lic. en Cibernetica Economica con Master en Ciencias Economicas, Moscu; 1988. Master en Gestion del Conocimiento y Business Intelligence con tecnologia Microsoft(MS), y Master en Tecnologias de Desarrollo de MS. Colaboro activamente en grupos de usuarios de MS Visual FoxPro. Mantiene un blog personal. Actualmente es Consultora Business Intelligence con tecnologia MS, trabajando tanto en formacion como en proyectos. Ha sido ponente en eventos SQL Saturday, dentro y fuera de Espania, 24H SQL, IT Woman y Encuentros en Microsoft Espania.</p>
+ 
+<h3 class="section-heading">Ruben Pertusa Lopez
+ - <a href="https://www.twitter.com/@rpertusa">@rpertusa</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/ruben-pertusa-lopez/24/ba3/b0">http://www.linkedin.com/pub/ruben-pertusa-lopez/24/ba3/b0</a></p>
+ 
+<p>Contact: <a href="http://www.sqlpass.es">http://www.sqlpass.es</a></p>
+ 
+<p>Ruben is a Global BI/BigData Manager and Global Data Lead Architect at DUFRY HQ, member of PASS Spanish Group and founder of SQLSaturday Barcelona and Madrid. MCP and MCSA in SQL Server 2012 and also awarded with Microsoft MVP Data Platform. With more than 9 years of experience, he has been working in top projects for leading worldwide companies and teaching in the SolidQ BI Master. He has presented at the SQL Server 2008 R2 and 2014 Spanish launch event, PASS BA Chicago, TechNet Webcasts, Microsoft Partner Program and SolidQ Summit events.</p>
+ 
+<h3 class="section-heading">Salvador Ramos
+ - <a href="https://www.twitter.com/https://twitter.com/salvador_ramos">https://twitter.com/salvador_ramos</a>
+</h3>
+<p>LinkedIn: <a href="https://linkedin.com/in/SalvadorRamos">https://linkedin.com/in/SalvadorRamos</a></p>
+ 
+<p>Contact: <a href="https://elfuturodelosdatos.com">https://elfuturodelosdatos.com</a></p>
+ 
+<p>Más de 20 años trabajando con datos y aportando soluciones con ellos. 
+Microsoft MVP desde 2003.
+Visita mi blog https://elfuturodelosdatos.com
+
+Te ayudo a destacar frente a la multitud, como ANALISTA DE DATOS especializado en #PowerBI. Aprenderás a:
+- Desarrollar un modelo de datos único
+- Mantener los informes actualizados siempre sin el más mínimo esfuerzo
+- Conseguir analizar mayor cantidad de información en menos tiempo y con mayor facilidad.
+
+En definitiva, tomar decisiones rápidas y seguras basadas en datos.</p>
+ 
+<h3 class="section-heading">Enrique Bañuls
+ - <a href="https://www.twitter.com/@enriquecatala">@enriquecatala</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/enriquecatala">http://www.linkedin.com/in/enriquecatala</a></p>
+ 
+<p>Contact: <a href="http://www.enriquecatala.com/">http://www.enriquecatala.com/</a></p>
+ 
+<p>Mentor en SolidQ, Microsoft SQL Server MVP, Ingeniero en inform#225;tica,  Microsoft Certified Trainer (MCT) y MCSE. Centrado en el motor relacional SQL Server, tanto en la resoluci#243;n de problemas de rendimiento y escalabilidad en sistemas OLTP como la definici#243;n e implementaci#243;n de entornos de alta disponibilidad confiables, en donde ha llevado con #233;xito m#225;s de 100 proyectos en diversos pa#237;ses (EEUU, Holanda, M#233;xico, Arabia Saud#237; o Austria)</p>
+ 
+<h3 class="section-heading">Tomaž Kaštrun
+ - <a href="https://www.twitter.com/@tomaz_tsql">@tomaz_tsql</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/tomaz.kastrun">http://www.linkedin.com/tomaz.kastrun</a></p>
+ 
+<p>Contact: <a href="http://www.tomaztsql.wordpress.com">http://www.tomaztsql.wordpress.com</a></p>
+ 
+<p>Tomaž Kaštrun is BI developer and data analyst. His main focus are data mining, T-SQL development, programming and query optimization. He has been working with SQL server since version 2000. He is Microsoft Certified Professional, Microsoft MVP for data platform and Microsoft trainer.</p>
+ 
+<h3 class="section-heading">Uwe Ricken
+ - <a href="https://www.twitter.com/https://twitter.com/dbBerater">https://twitter.com/dbBerater</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro">http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro</a></p>
+ 
+<p>Contact: <a href="http://www.sqlmaster.de">http://www.sqlmaster.de</a></p>
+ 
+<p>Uwe Ricken is working with IT systems since the 90’s. The primary passion for developments with Microsoft SQL Server expanded in 2007 with his engagement as a DBA for Deutsche Bank AG in Frankfurt am Main. After 6 years of operational experiences as a DBA and over 14 years as a developer of complex database models he achieved the “Microsoft Certified Master – SQL Server 2008” certification which “was” the highest technical certification. In the same year he earned his first award as a Data Platform MVP for his support to the Microsoft SQL Server community in Germany and Europe. Uwe Ricken is a speaker on many international conferences and events and preferred topics are “Database Internals”, “Indexing” and “Development”.</p>
+ 
+<h3 class="section-heading">Christian Melendez
+ - <a href="https://www.twitter.com/Christianhxc">Christianhxc</a>
+</h3>
+<p>LinkedIn: <a href="https://gt.linkedin.com/in/christian-melendez-6174454a">https://gt.linkedin.com/in/christian-melendez-6174454a</a></p>
+ 
+<p>Contact: <a href="http://cmelendeztech.com/">http://cmelendeztech.com/</a></p>
+ 
+<p>Christian has been in the industry for more than fourteen years now. He started to get interested in software development at school when he was 15 years old. In 2013, he made the switch from developing software to managing infrastructure on the cloud. He helped his employer as they were spending too much money and having too many problems when releasing software. He was able to use his skills as a developer in a different context: infrastructure. 
+
+Christian is now helping customers in their onboard journey to the cloud with the help of agile practices, DevOps culture adoption, and modern tools and technologies like containers, cloud, and serverless.</p>
+ 
+<h3 class="section-heading">Jose Manuel Jurado Diaz
+ - <a href="https://www.twitter.com/jmjuradodiaz">jmjuradodiaz</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/jose-manuel-jurado-diaz-5a586014/">https://www.linkedin.com/in/jose-manuel-jurado-diaz-5a586014/</a></p>
+ 
+<p>José Manuel Jurado currently works as SQL Escalation Engineer and Subject Matter Expert in Azure SQL Database at Microsoft Spain. With over 20+ years of experience in SQL Server environments (administration and database development), he is a speaker for internal events at Microsoft and for public events such as SQLSaturday, SQL Nexus, SQLBits, Pass Summit, SQL Server Konferenze, TechReady, DotNetConference, and Azure BootCamp. In the past, he worked as Project Manager for large global retail company for more than 10 years developing projects using different Microsoft Technologies.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="https://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation</a></p>
+ 
+<p><a href="https://www.plainconcepts.com/">Plain Concepts</a></p>
+ 
+<p><a href="http://tokiota.com/">TOKIOTA</a></p>
+ 
+<p><a href="https://www.encamina.com">ENCAMINA</a></p>
+ 
+<p><a href="http://www.upm.es">Universidad Politecnica de Madrid</a></p>
+ 
+<p><a href="http://www.solidq.com/es">SolidQ</a></p>
+ 
+<p><a href="http://www.channeladvisor.com">CHANNELADVISOR</a></p>
+ 
+<p><a href="http://www.kabel.es">Kabel Sistemas de Información S.L.</a></p>
+ 
+<p><a href="https://www.zaltor.com/solarwinds-dpa/">Zaltor SolarWinds</a></p>
+ 
+<p><a href="http://aleson-itc.com">ALESON ITC</a></p>
+ 
+<p><a href="http://www.upm.es">Universidad Politecnica de Madrid</a></p>
+ 
+<p><a href="https://auragroup.es/">Aura</a></p>
+ 
+<p><a href="http://www.devscope.net">DevScope, S.A.</a></p>
+ 
+<p><a href="https://www.sentryone.com/">SentryOne</a></p>
+ 
+<p><a href="http://www.sqlpass.es">sqlpass.es</a></p>
+ 
+<p><a href="http://www.pass.org">PASS</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

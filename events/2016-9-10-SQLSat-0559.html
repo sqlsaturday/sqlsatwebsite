@@ -1,0 +1,525 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #559 - Cape Town 2016" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #559 - Cape Town 2016
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #559 - Cape Town 2016</div>
+        <div class="masthead-subheading">This event was held on 2016-9-10</div>
+        <p><b>Event Location</b>:</p>
+        <p>The River Club</p>
+        <p> Observatory Rd, Observatory, Cape Town, South Africa</p>
+        <p>Cape Town, Western Cape, South Africa</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0559.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>SQL Server 2016: A dive into Data Quality Services</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2016: Data quality and data cleansing have always been major challenges to any enterprise that deals with data. For those of us who have dealt with Data Profiler Tasks in SQL Server 2008, we were shocked yet pleasantly surprised with the great advances that Microsoft has made with the advent of Data Quality Services, in the SQL Server 2012 release. In this hands-on presentation we shall be looking at how to set up a new knowledge base, based upon an existing one, set up rules, do knowledge discovery within the new knowledge base and finally cleanse the data through a data quality project. The end results being more effective data, guaranteed to keep end users and management happy.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Steve Simon</b>, 
+</p>
+<hr>
+ 
+<h3>Dive into the Query Optimizer - Undocumented Insight</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This 500 level session will focus on using undocumented statements and trace flags to get insight into how the query optimizer works and show you which operations it performs during query optimization. I will use these undocumented features to explain what the query optimizer does from the moment a query is submitted to SQL Server until an execution plan is generated including operations like parsing, binding, simplification, trivial plan, and full optimization. Concepts like transformation rules, the memo structure, how the query optimizer generates possible alternative execution plans, and how the best alternative is chosen based on those costs will be explained as well.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Benjamin Nevarez</b>, 
+</p>
+<hr>
+ 
+<h3>Query Processing in In-Memory OLTP (Hekaton)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In-Memory OLTP (code name: Hekaton) is the most important new feature in SQL Server 2014, and this session will teach you how query processing and optimization work with this new database engine. After explaining the basics, we will discuss how the query optimizer is used in In-Memory OLTP by both natively compiled stored procedures and by traditional stored procedures accessing memory-optimized tables through the query interop functionality. We will also take a look at how the new hash and range indexes are used, as well as how their performance implications are also covered along with the process of translating the plan created by the query optimizer into C code. Finally, some limitations with the current release will also be explained.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Benjamin Nevarez</b>, 
+</p>
+<hr>
+ 
+<h3>Getting started with Azure SQL Data Warehouse</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>As data warehouses continue to see rapid expansions of data, traditional architectures struggle to keep up. Massively Parallel Processing is a technique that allows a data warehouse to be seamlessly distributed across multiple machines allowing for near linear scaling. Massively Parallel processing was first introduced to SQL through Parallel Data Warehouse (PDW) which was a large and often expensive deployment process. Azure SQL Data Warehouse brings much of the Power of Parallel Data Warehouse but with many advantages of the cloud such as lower costs and faster deployment.
+In this session we will look at how the Azure SQL Data Warehouse works behind the scenes. We will also look at various options for provisioning and loading data before ending with a look at how queries executed.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Michael Johnson</b>, 
+</p>
+<hr>
+ 
+<h3>The language informally known as M</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>At the heart of Power BI is the Power Query Formula Language (informally known as M), a dynamically typed, case-sensitive functional language for creating mashup queries, similar to the F# language.
+
+Although Power BI Desktop has a number of great UI features for transformations, under the hood it's all M, and the better you understand the language, the more you can take advantage of the capabilities inherent in Power BI.
+
+In this session I will introduce you to the basics of the M language and demonstrate some of the more advanced features.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Matt Horn</b>, 
+</p>
+<hr>
+ 
+<h3>Real-Time Operational Analytics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>It used to be that if you want to do analysis of data that is stored in SQL Server, you had to extract the data into a data ware-house or something similar, and run you analysis there. The downside with that is the time it takes from the time of insertion into the transaction store until the data is available in the DW. In this session we will see how we can use SQL Server 2016 to do real time analytics against your OLTP database.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Niels Berglund</b>, 
+</p>
+<hr>
+ 
+<h3>From Me BI to We BI, take your BI solution beyond the clouds</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>ne of the main challenges organizations face in the BI world is to allow, via a single platform, contradicting needs of self-service BI with governance and Enterprise scale.
+Come and see the game changing approach of Pyramid Analytics that allows organizations to obtain these impossible needs of business users and IT in a singular BI platform.
+Pyramid Analytics the platform that Microsoft selected as a strategic partner for PowerBI.
+ 
+Pyramid Analytics revolutionary platform provides a single platform that delivers:
+•             Self Service – No code necessary.
+•             Web based central administration and security.
+•             Role based functionality for different roles in the organization (Professional, Analyst and Consumer).
+•             Universal configuration – build once use anywhere (PC, Tablet and Mobile).
+•             Enterprise scale – parallel processing, clustering and load balancing.
+•             And more ….</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Michael Raam</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server 2016: Master Data Services and Rapid Application Development</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Master Data Services can be readily be employed for Rapid Application Development. We shall be looking at important development, data security and data maintenance aspects, all based upon a recent client implementation.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Steve Simon</b>, 
+</p>
+<hr>
+ 
+<h3>Your code is not just...your code</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>When you code do you only thing about your code? What about how you release it fast, with high Quality and in a regulated environment?
+
+We'll take a look at how SQL code traditionally (or at least most commonly) gets into production. We'll then switch our focus to using unit tests as a way to help improve quality in the fast paced world we live in and a release pipeline to simplify it all</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gordon Beeming</b>, 
+</p>
+<hr>
+ 
+<h3>So, when you say database what do you mean?</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>These days when you say "database server" it could really mean many things.
+
+For something like SQL server there are so many options: on-premise server, off-premise server. On-premise server with off-premise data. Then there are the various  Azure offerings with fancy names like Azure SQL, Data Lake, Hadoop.
+
+You also get graph databases and document databases.
+
+This session will cover some of the more popular types of data stores that are available today and we will look at their use cases. While SQL server is great for many things, one has to be aware of the other options that are available out there.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Clinton van Blommestein</b>, 
+</p>
+<hr>
+ 
+<h3>What R You Analyzing</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>R has become one of the leading analysis tools for developers and data scientists alike. However, in order for R to do its magic it needs data so historically we have imported data from various sources, SQL Server being one of those sources. In SQL Server 2016, Microsoft has embedded R in the SQL engine. Yes, we do now have access to R natively in SQL Server.
+
+In this session we will look at how R works in SQL Server, and also talk about some performance improvements you are getting by running R in SQL Server. </p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Niels Berglund</b>, 
+</p>
+<hr>
+ 
+<h3>Data Driven: finding value in the digital maze</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>No one needs to be convinced that data is valuable. But trying to understand where to look for value in your data and what to focus on is challenging. We try to give meaningful context to terminology such as big data, digital disruption, 4th industrial revolution, etc.
+
+This is a non-technical session that will give an overview of how your data landscape is changing and what you need to be aware of  to derive value from data.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Toufiq Abrahams</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to Indexes</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session, we'll look at  design considerations for clustered and non-clustered indexes. We'll investigate what makes an index useful to SQL Server and what common mistakes make indexes useless. We'll go into the details of how various query predicates interact with indexes and what the primary driver is when designing indexes for any database application.
+
+This session is aimed at people who are relatively new to indexing.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gail Shaw</b>, 
+</p>
+<hr>
+ 
+<h3>Infographics using PowerBI and BI Office</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Utilization of infographics through PowerBI and BI Office</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jason Basterfield</b>, 
+</p>
+<hr>
+ 
+<h3>On Transactions and Atomic Operations</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>If there’s one thing that we, as SQL developers, do, it's not use enough transactions.
+
+Transactions are critical when multiple changes need to be made entirely or not at all, but even given that it’s rare to see transactions used at all in most production code
+
+In this session, we'll look at what transactions are and why we should use them. We'll explore the effects transactions have on locking and the transaction log. We'll investigate methods of handling errors and undoing data modifications, and we'll see why nested transactions are a lie.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gail Shaw</b>, 
+</p>
+<hr>
+ 
+<h3>Using the SQL 2016 Query Store to optimise Performance and Scalability</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL 2016 introduces the Query Store, a mechanism that has been built into the SQL 2016 database engine in order to facilitate rapid identification and resolution of performance and scalability bottlenecks in SQL application scenarios. In the session we will examine Query Store architecture and features and gain an understanding of how the tools should be used.
+</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Peter Willmot</b>, 
+</p>
+<hr>
+ 
+<h3>Introduction to Business Intelligence Markup Language (BIML)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Demonstrating how you can easily generate SSIS packages based on metadata, allowing us to effectively apply code reuse, templates and patterns in our ETL solutions using BIML</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ziyaad Mohamed</b>, 
+</p>
+<hr>
+ 
+<h3>BI Office Analytic Platforms and the Value of Shared Context</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Modern self-service personal productivity analytic tools allow individual users to create sophisticated calculations and sets. However, for an organization to maximize the value of analytics this business logic must be released from myriad of spreadsheets and documents that it is embedded. Join us to discuss how analytic platforms allow data-driven organizations to centralize, share and contextualize this content.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sandesh Nagaraj</b>, 
+</p>
+<hr>
+ 
+<h3>Query Performance Tuning on a budget (Free)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server has built in tools available to assist you in Query Performance Tuning. We will go through the tools and how you can use them to quickly identify various performance issues.  There are also various free software and scripts available provided by third parties which I use on a daily basis which I will recommend.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Martin Phelps</b>, 
+</p>
+<hr>
+ 
+<h3>Windows on Data</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A look at Window functions, and how their performance has improved over the SQL versions.
+Also ideas/samples of potential use cases.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Desmond Norton</b>, 
+</p>
+<hr>
+ 
+<h3>Detecting ETL Duration Anomalies with Simple Linear Regression</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>When an ETL is initially deployed it is expected to run for a certain amount of time based on testing during development. It does not always come to our attention that the duration the ETL takes to complete starts growing at an abnormal rate. Using Simple Linear Regression, we can detect the duration anomalies of ETLs. Will be going into detail on what Simple Linear Regression is and how you can use it to your advantage to detect ETL duration anomalies.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jeanne Combrinck</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Clinton van Blommestein
+
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/clintonvb">https://za.linkedin.com/in/clintonvb</a></p>
+ 
+<p>Clinton is a senior developer at Derivco in Durban (South Africa), a company that is a leader in the online gaming space. He has over 16 years experience in highly transactions systems, with focus on the services and data tiers. He is a regular speaker at SQL events in South Africa, is also the co-leader for the Durban SQL User Group and has recognised as a Couchbase Champion for his contribution to their community.</p>
+ 
+<h3 class="section-heading">Gail Shaw
+ - <a href="https://www.twitter.com/@SQLInTheWild">@SQLInTheWild</a>
+</h3>
+<p>Contact: <a href="http://sqlinthewild.co.za">http://sqlinthewild.co.za</a></p>
+ 
+<p>Gail Shaw is a Database Specialist focusing on database performance tuning and database recovery, with a particular interest in topics such as indexing strategies, execution plans, and writing T-SQL code that performs well and scales gracefully. Gail holds a Microsoft Certified Master certification for SQL Server 2008 and is a Data Platform MVP. She's a frequent poster on the SQLServerCentral forums, a Pluralsight author, writes articles for both SQLServerCentral.com and Simple-Talk.com, and has spoken at SQLSaturdays, SQL Bits and at the PASS Community Summit. Gail has been responsible for extending the lifespan of many an application, by performance-tuning their databases and providing technical guidance on all things SQL Server related.</p>
+ 
+<h3 class="section-heading">Gordon Beeming
+ - <a href="https://www.twitter.com/GordonBeeming">GordonBeeming</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/b1n4ryd1g1t">https://www.linkedin.com/in/b1n4ryd1g1t</a></p>
+ 
+<p>Contact: <a href="http://beeming.net/">http://beeming.net/</a></p>
+ 
+<p>Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. He is a Visual Studio ALM Ranger, Visual Studio ALM MVP and Friend of Red Gate. His blog is at beeming.net and you can follow him on Twitter at twitter.com/gordonbeeming.</p>
+ 
+<h3 class="section-heading">Benjamin Nevarez
+ - <a href="https://www.twitter.com/@BenjaminNevarez">@BenjaminNevarez</a>
+</h3>
+<p>Contact: <a href="http://www.benjaminnevarez.com/">http://www.benjaminnevarez.com/</a></p>
+ 
+<p>Benjamin Nevarez is a SQL Server independent consultant based in Los Angeles, California, who specializes in SQL Server query tuning and optimization. He is the author of “SQL Server 2014 Query Tuning amp; Optimization” and “Inside the SQL Server Query Optimizer” and co-author of “SQL Server 2012 Internals.quot; Benjamin has also been a speaker at many SQL Server conferences, including PASS Summit, SQL Server Connections, and SQLBits. His blog can be found at http://www.benjaminnevarez.com.</p>
+ 
+<h3 class="section-heading">Niels Berglund
+ - <a href="https://www.twitter.com/nielsberglund">nielsberglund</a>
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/niels-berglund-0122593">https://za.linkedin.com/in/niels-berglund-0122593</a></p>
+ 
+<p>Contact: <a href="https://nielsberglund.com">https://nielsberglund.com</a></p>
+ 
+<p>Niels works as Software Architect at Derivco, where he develops software as well as "dreaming" up new and innovative ways to use existing and new technology. Before joining Derivco, Niels worked as researcher/instructor at Developmentor where he was responsible for the database curriculum. He was a co-author of the first SQL Server 2005 book for developers: quot; A First Look at SQL 2005 for Developersquot;. He has presented at all leading technical conferences; Tech-ED, SQL PASS, DevWeek, Ignite the Tour, etc., and is also a Microsoft Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Benjamin Nevarez
+ - <a href="https://www.twitter.com/@BenjaminNevarez">@BenjaminNevarez</a>
+</h3>
+<p>Contact: <a href="http://www.benjaminnevarez.com/">http://www.benjaminnevarez.com/</a></p>
+ 
+<p>Benjamin Nevarez is a SQL Server independent consultant based in Los Angeles, California, who specializes in SQL Server query tuning and optimization. He is the author of “SQL Server 2014 Query Tuning amp; Optimization” and “Inside the SQL Server Query Optimizer” and co-author of “SQL Server 2012 Internals.quot; Benjamin has also been a speaker at many SQL Server conferences, including PASS Summit, SQL Server Connections, and SQLBits. His blog can be found at http://www.benjaminnevarez.com.</p>
+ 
+<h3 class="section-heading">Steve Simon
+ - <a href="https://www.twitter.com/SQLServerBoffin">SQLServerBoffin</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/stephenrsimon/">http://www.linkedin.com/in/stephenrsimon/</a></p>
+ 
+<p>Contact: <a href="http://www.sqlservercentral.com/blogs/simon_says/">http://www.sqlservercentral.com/blogs/simon_says/</a></p>
+ 
+<p>Steve Simon is a Database Solutions Architect with Business Knowledge Services Inc. He has been involved with database design and analysis for over 35 years. Steve has presented papers at numerous PASS Summits and PASS SQL Rallies. He is also regular presenter on the SQL Saturday circuit and he is a contributor on SQLShack.com</p>
+ 
+<h3 class="section-heading">Martin Phelps
+ - <a href="https://www.twitter.com/https://twitter.com/mphelps1968">https://twitter.com/mphelps1968</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/phelpsm">http://www.linkedin.com/in/phelpsm</a></p>
+ 
+<p>Martin Phelps is database architect at MiX Telematics. Specialising in Solution Architecture across their OLTP and DW databases. With 20 years of in-the-trenches experience with Sql Server he has provided solutions using Sql Server since version 4.2. Has previously done work for Insurance, ICT, Marketing and Mining companies.
+
+</p>
+ 
+<h3 class="section-heading">Jeanne Combrinck
+ - <a href="https://www.twitter.com/TheSQLGirl">TheSQLGirl</a>
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/jeannecombrinck">https://za.linkedin.com/in/jeannecombrinck</a></p>
+ 
+<p>Contact: <a href="http://thesqlgirl.com">http://thesqlgirl.com</a></p>
+ 
+<p>Senior BI Developer at Britehouse. In her spare time she can be found spending time with her animals, doing SQL puzzles and writing on her blog http://thesqlgirl.com/.</p>
+ 
+<h3 class="section-heading">Peter Willmot
+
+</h3>
+<p>Peter has been writing software (and teaching folk how to write software) for over 30 years. He has worked with SQL Server as an architect and developer for more than 20 years (since SQL 4.2) and has also worked extensively with the .Net and various other development platforms.
+
+Peter is a past MSDN Regional Director and was also an MVP (SQL Server and Architecture) for many years. He is a passionate and regular speaker and various industry events around the world.</p>
+ 
+<h3 class="section-heading">Niels Berglund
+ - <a href="https://www.twitter.com/nielsberglund">nielsberglund</a>
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/niels-berglund-0122593">https://za.linkedin.com/in/niels-berglund-0122593</a></p>
+ 
+<p>Contact: <a href="https://nielsberglund.com">https://nielsberglund.com</a></p>
+ 
+<p>Niels works as Software Architect at Derivco, where he develops software as well as "dreaming" up new and innovative ways to use existing and new technology. Before joining Derivco, Niels worked as researcher/instructor at Developmentor where he was responsible for the database curriculum. He was a co-author of the first SQL Server 2005 book for developers: quot; A First Look at SQL 2005 for Developersquot;. He has presented at all leading technical conferences; Tech-ED, SQL PASS, DevWeek, Ignite the Tour, etc., and is also a Microsoft Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Michael Johnson
+ - <a href="https://www.twitter.com/MikeJohnsonZA">MikeJohnsonZA</a>
+</h3>
+<p>LinkedIn: <a href="http://za.linkedin.com/pub/michael-johnson/22/73/735">http://za.linkedin.com/pub/michael-johnson/22/73/735</a></p>
+ 
+<p>Contact: <a href="http://michaeladrianjohnson.com/">http://michaeladrianjohnson.com/</a></p>
+ 
+<p>Michael Johnson is a Microsoft data platform MVP and leader of the Johannesburg SQL User Group and Business Analytics Virtual Group. He works as an Independent Business Intelligence Consultant and regularly presents at local user groups, SQL Saturdays and PASS Virtual Chapters.</p>
+ 
+<h3 class="section-heading">Ziyaad Mohamed
+
+</h3>
+<p>Studied Software Development at CPUT.  Now currently working at EOH as an Intermediate SQL developer within the  financial services industry for around 5 years, while also obtaining my Microsoft Certifications. When I am not drilling down data I enjoy keeping fit at the gym.</p>
+ 
+<h3 class="section-heading">Jason Basterfield
+
+</h3>
+<p>Director of a Business Intelligence company called Expeditus.  Having over 15 years experience in Business Intelligence using multiple technologies and implementing numerous successful data warehousing projects within different verticals.  Always looking to the future of Business Intelligence and data, trying to stay abreast of the curve.</p>
+ 
+<h3 class="section-heading">Toufiq Abrahams
+ - <a href="https://www.twitter.com/https://twitter.com/ToufiqAbrahams">https://twitter.com/ToufiqAbrahams</a>
+</h3>
+<p>Contact: <a href="http://www.osmosisconsulting.co.za">http://www.osmosisconsulting.co.za</a></p>
+ 
+<p>Toufiq Abrahams is the Principal Consultant at Osmosis Consulting and Technology Director at Plain Sight Analytics. He has a passion for turning data into business value with one foot in the cloud and the other on-prem.</p>
+ 
+<h3 class="section-heading">Steve Simon
+ - <a href="https://www.twitter.com/SQLServerBoffin">SQLServerBoffin</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/stephenrsimon/">http://www.linkedin.com/in/stephenrsimon/</a></p>
+ 
+<p>Contact: <a href="http://www.sqlservercentral.com/blogs/simon_says/">http://www.sqlservercentral.com/blogs/simon_says/</a></p>
+ 
+<p>Steve Simon is a Database Solutions Architect with Business Knowledge Services Inc. He has been involved with database design and analysis for over 35 years. Steve has presented papers at numerous PASS Summits and PASS SQL Rallies. He is also regular presenter on the SQL Saturday circuit and he is a contributor on SQLShack.com</p>
+ 
+<h3 class="section-heading">Michael Raam
+
+</h3>
+<p>Data amp; Analytics Principal at Pyramid Analytics</p>
+ 
+<h3 class="section-heading">Desmond Norton
+
+</h3>
+<p>Desmond is a senior database developer at Derivco, with 15 years development experience.  He started out as a full stack developer, and made the move to a purely SQL developer 9 years ago.</p>
+ 
+<h3 class="section-heading">Sandesh Nagaraj
+
+</h3>
+<p>LinkedIn: <a href="http://za.linkedin.com/in/sandeshnagaraj">http://za.linkedin.com/in/sandeshnagaraj</a></p>
+ 
+<p>A Certified Data Architect with around 15 years of experience in Data warehouse, Business Intelligence and Database implementation. Sandesh holds MCITP SQL Server in BI, Data Architect certified from Microstrategy etc. He has worked extensively as BI Consultant/Technical Specialist/BI Architect/Sales Engineer/Manager.  Sandesh actively participates and speaks at Johannesburg SQL Server User and SQL Saturday events.</p>
+ 
+<h3 class="section-heading">Gail Shaw
+ - <a href="https://www.twitter.com/@SQLInTheWild">@SQLInTheWild</a>
+</h3>
+<p>Contact: <a href="http://sqlinthewild.co.za">http://sqlinthewild.co.za</a></p>
+ 
+<p>Gail Shaw is a Database Specialist focusing on database performance tuning and database recovery, with a particular interest in topics such as indexing strategies, execution plans, and writing T-SQL code that performs well and scales gracefully. Gail holds a Microsoft Certified Master certification for SQL Server 2008 and is a Data Platform MVP. She's a frequent poster on the SQLServerCentral forums, a Pluralsight author, writes articles for both SQLServerCentral.com and Simple-Talk.com, and has spoken at SQLSaturdays, SQL Bits and at the PASS Community Summit. Gail has been responsible for extending the lifespan of many an application, by performance-tuning their databases and providing technical guidance on all things SQL Server related.</p>
+ 
+<h3 class="section-heading">Matt Horn
+ - <a href="https://www.twitter.com/https://twitter.com/maxui">https://twitter.com/maxui</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=14818091">http://www.linkedin.com/profile/view?id=14818091</a></p>
+ 
+<p>Matt Horn is a Business Intelligence Developer and director with Immersant Data Solutions.
+He  has been a regular speaker at SQLSaturday events for many years 
+He is the Co Lead of the IntelliCape Business Intelligence user group based in Cape Town.
+.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="https://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation</a></p>
+ 
+<p><a href="http://www.dvt.co.za/">DVT</a></p>
+ 
+<p><a href="http://www.cloudondemand.co.za/">Tarsus Cloud OnDemand</a></p>
+ 
+<p><a href="http://www.eohmc.co.za">EOH Microsoft Coastal</a></p>
+ 
+<p><a href="http://www.PyramidAnalytics.com">Pyramid Analytics</a></p>
+ 
+<p><a href="https://www.plainsight.cloud/">Plain Sight Analytics</a></p>
+ 
+<p><a href="http://rd.gt/2j7SNf9">Redgate Software (GAP)</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

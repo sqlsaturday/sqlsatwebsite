@@ -1,0 +1,326 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #668 - Tallinn 2017" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #668 - Tallinn 2017
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #668 - Tallinn 2017</div>
+        <div class="masthead-subheading">This event was held on 2017-11-18</div>
+        <p><b>Event Location</b>:</p>
+        <p>Microsoft</p>
+        <p>Rävala pst. 5, Tallinn</p>
+        <p>Tallinn, Harjumaa, Estonia</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0668.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>SQL Server 2017 New Features (Not Linux support!)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session covers the new features in SQL Server 2017 - apart from Linux support
+
+- Using Query Store for automatic tuning of querys which have bad plans (multiple plans with regressions)
+
+- Additional information stored in actual execution plans
+
+- New DMVs e.g. log information, statistics histograms
+
+- Interleaved Execution for multi-statement T-SQL TVFs
+
+- Adapative joins for queries
+
+- Resumable online index rebuild
+
+- Faster non-cluster index builds on memory optimized tables.
+
+- Additional in-memory SQL Surface Area e.g. Computed columns, JSON, CROSS APPLY,sp_spaceused,sp_rename,CASE,TOP N with TIES
+
+- Parallel Redo for memory optimized tables, increases throughput for Always On Availability Groups
+
+- DTC support for Always On Availability Groups
+
+- Cluster-less Availability Groups 
+
+- Minimum Replica Commit Availability Groups
+
+- New CLR strict security
+
+- Graph database queries
+
+- Running Python scripts in SQL Server
+
+- BULK INSERT directly fro</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>David Williams</b>, 
+</p>
+<hr>
+ 
+<h3>A Game of Hierarchies: Introduction to Graph Processing with SQL</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Hierarchies are the bread and butter of most business applications and you find them almost everywhere:
+* Product Categories
+* Sales Territories
+* Bill of Material
+* Calendar and Time
+Even when there is a big need from a business perspective, the solutions in relational databases are mostly sort of awkward. The most flexible hierarchies are usually modeled as self-referenced tables. If you want to successfully query such self-referenced hierarchies, you will need either loops or recursive Common Table Expressions. SQL Server 2017 comes now with a different approach: Graph Database. 
+Join this session for a journey through best practices to transform your hierarchies into useful information. We will have fun playing around with a sample database based on G. R. R. Martin’s famous “Game of Thrones”.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Markus Ehrenmueller-Jensen</b>, 
+</p>
+<hr>
+ 
+<h3>Biml for Beginners: Speed Up Your SSIS Development</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Are you tired of creating and updating the same SSIS packages again and again? Is your wrist hurting from all that clicking, dragging, dropping, connecting and aligning? Do you want to take the next step and really speed up your SSIS development?
+
+Say goodbye to repetitive work and hello to Biml, the markup language for Business Intelligence projects.
+
+In this session we will look at the basics of Biml. First learn how to use Biml to generate SSIS packages from database metadata. Then see how you can reuse code to implement changes in multiple SSIS packages and projects with just a few clicks. Finally, we will create an example project that you can download and start with to speed up your SSIS development from day one.
+
+Stop wasting your valuable time on doing the same things over and over and over again, and see how you can complete in a day what once took more than a week!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Cathrine Wilhelmsen</b>, 
+</p>
+<hr>
+ 
+<h3>Don't cross the streams, a closer look at Azure Stream Analytics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Azure is ready to recieve all your event- and devicedata for storage and analysis.
+But which options in the Azure IoT portfolio should you use to recieve and manage your data?
+
+In this session I will explain the different options in the Azure IoT portfolio, take a closer look at how they work and what this means for you.
+Furthermore, I will take a closer look at the Azure Stream Analytics (ASA) language. 
+You will learn how to develop both simple and complex ASA queries, and how to debug. 
+We will look at the possibilities, limitations and pitfalls in the Azure Stream Analytics language.
+And finally look at the different input and output choices and when to use which one. This includes a look at how to build a live stream dashboard with Stream Analytics data in PowerBI.
+
+The session is based on real world project experiences and will use real world data in the demos.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Johan Ludvig Brattås</b>, 
+</p>
+<hr>
+ 
+<h3>Deadlocks. Everything you ever wanted to ask but were too shy.</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>It's not a secret that a deadlock - it's not very good. Definition of deadlock is very simple and quite clear: This is an exceptional situation when two concurrent queries request same resources but in a different order. 
+
+Classic deadlock can occur when two concurrent transactions are modifying data from the two tables in a different order. Unfortunately, in real life deadlocks often are more complex and unobvious. One of the rules, which I always keep in mind, sounds: "You can not design a database, in which the occurrence of deadlock is impossible". And we should deal with them. The algorithm is simple: 
+1. Catch the deadlock
+2. Find the root cause
+3. Design and implement a solution. 
+In practice, these steps can be tricky and may require different types of analysis. 
+
+In this session, we will look at ten various deadlocks scenarios and find the root cause of the deadlocks. Then, you will see how it will be easy to get the solutions for the deadlock issue if we did the second step.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Denis Reznik</b>, 
+</p>
+<hr>
+ 
+<h3>Hidden gems of SQL Server 2016</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server 2016 is full of new features and improvements. Some of them are "Killer" features like Query Store, Temporal Tables, R Integration, etc., which are discussed a lot and we always can get a lot of information about them. And in the same time, SQL Server 2016 have several fantastic features and improvements, which are more hidden from our sight. 
+
+In this session, we will learn a lot about these features and improvements. Which features? This is a secret :) Come to the session and discover them with me!</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Denis Reznik</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Graph Database</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Graph database object in SQL server, Graph Querys. 
+
+How to play with graphs and how the actually implemented internally</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Henn Sarv</b>, 
+</p>
+<hr>
+ 
+<h3>Create Stunning Visualizations with The Help of R</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>R is the first choice for data scientists for a good reason: besides accessing and transforming data and applying statistical methods and models to it, it has a wide variety of possibilities to visualize data. As visual perception of data is the key to understanding data, this capability is crucial. This session will give you a broad overview over available packages and diagram types you can build with them on the one hand, and a deep dive into common visualizations and their possibilities on the other hand. Impress yourself and your peers with stunning visualizations which will give you insights into data you could not achieve with other tools of Microsoft’s BI stack.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Markus Ehrenmueller-Jensen</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Markus Ehrenmueller-Jensen
+ - <a href="https://www.twitter.com/MEhrenmueller">MEhrenmueller</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/markus-ehrenmueller/">https://www.linkedin.com/in/markus-ehrenmueller/</a></p>
+ 
+<p>Contact: <a href="http://www.savorydata.com">http://www.savorydata.com</a></p>
+ 
+<p>Markus Ehrenmueller-Jensen, as the founder of Savory Data, has a long history of providing customer solutions in the areas of data engineering, data science, and Business Intelligence. He is a certified software engineer, a graduated business educator, and professor of Databases  Project Management at HTL Leonding, and is certified as an MCSE  MCT. He is a published author and writes articles for well-known journals. He co-founded PASS Austria and organizes SQLSaturdays in Austria. Markus is a founding member of Power BI Usergroup Austria. Since 2017 Markus was awarded as an Microsoft Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Markus Ehrenmueller-Jensen
+ - <a href="https://www.twitter.com/MEhrenmueller">MEhrenmueller</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/markus-ehrenmueller/">https://www.linkedin.com/in/markus-ehrenmueller/</a></p>
+ 
+<p>Contact: <a href="http://www.savorydata.com">http://www.savorydata.com</a></p>
+ 
+<p>Markus Ehrenmueller-Jensen, as the founder of Savory Data, has a long history of providing customer solutions in the areas of data engineering, data science, and Business Intelligence. He is a certified software engineer, a graduated business educator, and professor of Databases  Project Management at HTL Leonding, and is certified as an MCSE  MCT. He is a published author and writes articles for well-known journals. He co-founded PASS Austria and organizes SQLSaturdays in Austria. Markus is a founding member of Power BI Usergroup Austria. Since 2017 Markus was awarded as an Microsoft Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Cathrine Wilhelmsen
+ - <a href="https://www.twitter.com/@cathrinew">@cathrinew</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/cathrinewilhelmsen">https://www.linkedin.com/in/cathrinewilhelmsen</a></p>
+ 
+<p>Contact: <a href="https://www.cathrinewilhelmsen.net/">https://www.cathrinewilhelmsen.net/</a></p>
+ 
+<p>Cathrine loves teaching and sharing knowledge :) She is based in Norway and works as a Senior Business Intelligence Consultant in Inmeta, focusing on Data Warehousing, Data Integration, Analytics, and Reporting projects. Her core skills are Azure Data Factory, SSIS, Biml and T-SQL development, but she enjoys everything from programming to data visualization. Outside of work she's active in the SQL Server community as a Microsoft Data Platform MVP, BimlHero Certified Expert, author, speaker, blogger, organizer and chronic volunteer.</p>
+ 
+<h3 class="section-heading">Denis Reznik
+ - <a href="https://www.twitter.com/https://twitter.com/DenisReznik">https://twitter.com/DenisReznik</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/denis-reznik/3/502/234">http://www.linkedin.com/pub/denis-reznik/3/502/234</a></p>
+ 
+<p>Contact: <a href="http://reznik.uneta.com.ua">http://reznik.uneta.com.ua</a></p>
+ 
+<p>Denis Reznik is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design, and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains MVP status today. Apart from his professional career, Denis actively participates in the development of the Ukrainian Data Community.</p>
+ 
+<h3 class="section-heading">Denis Reznik
+ - <a href="https://www.twitter.com/https://twitter.com/DenisReznik">https://twitter.com/DenisReznik</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/pub/denis-reznik/3/502/234">http://www.linkedin.com/pub/denis-reznik/3/502/234</a></p>
+ 
+<p>Contact: <a href="http://reznik.uneta.com.ua">http://reznik.uneta.com.ua</a></p>
+ 
+<p>Denis Reznik is a Data Architect at Intapp, Inc. He has more than ten years experience in software development, database design, and performance tuning for cloud and on-premises solutions. In 2010 Denis became Microsoft Data Platform MVP and maintains MVP status today. Apart from his professional career, Denis actively participates in the development of the Ukrainian Data Community.</p>
+ 
+<h3 class="section-heading">Johan Ludvig Brattås
+ - <a href="https://www.twitter.com/intoleranse">intoleranse</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/johanludvig/">https://www.linkedin.com/in/johanludvig/</a></p>
+ 
+<p>Contact: <a href="http://brattas.org/sqlmusings">http://brattas.org/sqlmusings</a></p>
+ 
+<p>Johan Ludvig Brattås is a managing consultant at Capgemini, and a dedicated community guy. He has worked with MS SQL server since late 1999, mostly with BI in one form or another. The last 6 years, most of his work has been in Azure working on data platforms, Power BI and the last three years expanding to Azure IoT and Stream Analytics.
+
+Combining his passion for Microsoft SQL Server with his passion for sharing knowledge, he has spoken at various events in the SQL Community. This is also a way to give back to the community for all the things he has learned over the years. When not working, Johan Ludvig either spends his time with his kids, playing with new technology, or teaching coeliacs how to bake glutenfree food.</p>
+ 
+<h3 class="section-heading">Henn Sarv
+
+</h3>
+<p>.</p>
+ 
+<h3 class="section-heading">David Williams
+ - <a href="https://www.twitter.com/@smooth1x1">@smooth1x1</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/justdaveinfo?trk=nav_responsive_tab_profile">https://www.linkedin.com/in/justdaveinfo?trk=nav_responsive_tab_profile</a></p>
+ 
+<p>Contact: <a href="http://justdave.info">http://justdave.info</a></p>
+ 
+<p>David is a cross product DBA (SQL Server, DB2, Oracle, Informix, Sybase) who has worked for 25 years as a DBA for both private, 
+local/central government customers including a Fortune 50 investment bank. Certifications include MCSE 2014 Data Platform, MCTS SQL Server 2008 DBA and Developer as well as certifcations in other products. 
+David has spoken at multiple SQL Saturdays as well as local usergroups and is a regular volunteer at events including SQLBits.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">Microsoft Corporation (GAP)</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

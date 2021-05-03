@@ -1,0 +1,713 @@
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="SQL Saturday SQLSaturday #785 - Johannesburg 2018" />
+        <meta name="author" content=" />
+        <title>SQL Saturdays</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.1/css/bootstrap.css rel=stylesheet>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    SQLSaturday #785 - Johannesburg 2018
+                    <!-- <img src="assets/img/navbar-logo.svg" alt="Navlogo" /> -->
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">SQL Saturday home</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../past.html">Past Events</a></li> 
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+        <div class="masthead-heading text-uppercase">SQLSaturday #785 - Johannesburg 2018</div>
+        <div class="masthead-subheading">This event was held on 2018-9-1</div>
+        <p><b>Event Location</b>:</p>
+        <p>Microsoft head office</p>
+        <p>3012 William Nicol Drive</p>
+        <p>Bryanston, Gauteng, South Africa</p>
+ 
+<!-- Schedule-->
+<section class="page-section" id="schedule">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Schedule</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p><a href="./Assets/PDF/0785.pdf">PDF of Schedule</a></p>
+ 
+ 
+<h3>DevOps 101 for Data People</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In 2009 John Allspaw and Paul Hammond delivered the session "10 deploys per day - Dev  ops cooperation at Flickr." In forty six minutes they changed the way millions of people would think about the software delivery process for years to come. It didn't have a name yet, but DevOps was born. DevOps folk preached about the cloud, automation, rapid delivery and any database technology that wasn't relational.
+ 
+In 2013 Kenny Gorman declared "The DBA is Dead".
+ 
+For the record, I don't believe that, but a lot of people do. What is certain is that the world of IT is changing and traditional roles are changing with it. We all need to adapt.
+ 
+In this interactive talk I'll explain what DevOps is, where it came from, and its implications for SQL Server. I'll demo example solutions to some of the foundational technical challenges (source control and test/deployment automation) and will leave plenty of time at the end to answer your questions.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alex Yates</b>, 
+</p>
+<hr>
+ 
+<h3>Daily indexing problems and its - possible - solution</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Have you ever been in the situation that an application performed well the last day and - suddenly - you run into problems? Although you have Index Maintenance jobs and statistics up to date you will monitor a big degrade of performance! This session will demonstrate in a over 80 percent demo based presentation the following scenarios which happend this way in real life!
+- Why performance degradation in spite of maintenance jobs?
+- just one more database in the result set and the query runs really bad - why?
+- usage of literals is completely different from the usage of variables - why?
+- identical data types but the query runs in part perfect and in part bad...
+- your execution plan shows an INDEX SEEK - but the table will be scanned!
+- you get a query from the business which performs really bad but when you test it it runs pretty cool - why?</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Uwe Ricken</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Reporting Services 2017 on Steroids!!</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Reporting requests that are required ‘yesterday or sooner’, oft times necessitate working more efficiently and effectively. We have all been through this at one time or another.
+In this hands on presentation we shall be looking some of the more challenging techniques of extracting our data from our Multidimensional and Tabular Models, in addition to our Data Mining Models. 
+We shall be utilizing concepts of  ‘Openquery()’ and ‘linked servers’ as a means to extract data,  in addition to looking at the way that these two concepts can help us extract our data utilizing MDX, DMX and DAX expressions;  AND YET maintain the  flexibility and the ability to utilize all those wonderful techniques that may  be done with T-SQL.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Steve Simon</b>, 
+</p>
+<hr>
+ 
+<h3>Wading into Stream Analytics</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Large volumes of data originate at high velocity from various sources including IoT devices and sensors, web sites and social media feeds. A common approach is to simply store these data for offline processing.
+
+Processing that in many instances never happens...
+
+Wouldn't it be more efficient and effective to process the data stream as it arrives?
+
+Azure Stream Analytics is an event-processing engine which enables processing of streaming data in real time. It can handle up to 1 Gb of data per second, which should suffice for most applications.
+
+In this tutorial I'll take you through the processing of setting up a job on Azure Stream Analytics. I'll look specifically at the following:
+
+- connecting to a data source
+- extracting information
+- identifying patterns and relationships
+- using machine learning
+- triggering actions
+- reporting tools and
+- offline processing.
+
+To illustrate these concepts we'll build a real time sentiment analysis system for streaming data from Twitter.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Andrew Collier</b>, 
+</p>
+<hr>
+ 
+<h3>Power BI Report Design for the aesthetically challenged</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Do you ever worry that your reports look they were born in the 90s, or designed by a grade 1? Do you feel overwhelmed when tasked with creating attractive reports which tell the customer a story?
+
+Thankfully, a few simple design concepts can have big impacts on your reports. There are easy-to-learn techniques and patterns to create a pleasing look and feel to our reports, and some well defined principles to decide which visual is most appropriate in your situation.
+
+Join me in this session to learn:
+
+- How to choose the right visual to complement the data message.
+- Best practices for visual formatting to tell a complete story.
+- Colour theory - designing a colour palette, and ensuring accessibility.
+- Layout techniques for clean and simple reports.
+- Real estate management, or how to fit everything on a report without it looking cluttered and losing effectiveness.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>James McGillivray</b>, 
+</p>
+<hr>
+ 
+<h3>Re-engineering legacy SQL Server Radius Accounting processor archiving solution</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In an outdated "resource hogged" solution the data archiving strategy of using stored procedures for DML with no caching, validation, exception handling and working automation was preventing thousands of the organisations client internet usage data from being correctly reported, due to lost records causing data integrity issues. This was a huge concern for the organisation as it affected the service ratings and client retention. In this presentation we relive the empirical process by going through the solution demonstrating the SSIS Incremental Data Loads method, discussing the creation and purpose of read and write tables, implementing indexes whilst keeping fill-factor, rebuilds and reorganization in mind, as well as provisioning staging tables for troubleshooting and verification purposes. Lastly we end off with the mirrored architecture's scheduled SQL agent jobs automation and notifications.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ridewaan Hanslo</b>, 
+</p>
+<hr>
+ 
+<h3>Demystifying Azure Information Protection</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Lets face it. Excel is still the largest used BI tool in the world. From traditional end user all the way up to organisational BI, data is still sucked into Excel and shared across the business. Now we know that at a data level, data is encrypted at REST and in transit but what happens once the data is surfaced in traditional applications like Excel? How do we ensure that the output (The excel file) is secured, protected and retained? Enter Azure Information Protection.
+
+In this session we unpack:
+·         What is Azure IP
+·         How to find content that needs protection
+·         How to use Azure IP to protect your content
+·         How to build out you Information protection strategy
+
+In the mobile first, work from anywhere world we live it, managing access control is only half the journey to ensuring that your content is protected from misuse and inadvertent dissemination.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Alistair Pugin</b>, 
+</p>
+<hr>
+ 
+<h3>Tips  Tricks To Bridge The Gap Between IT and Your BI Report Users</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>IT / SQL-orientated BI users can significantly increase the success of BI projects by understanding the report user' needs, fears, pain points and so on.  Learn practical, quick-win tips to help you hit the BI sweet-spot.
+
+This topic will be a combination of theory (BI in general) and practical (using Power BI).
+
+Learn how to address the needs of your end-users (user-friendly semantic model, appealing colour / report themes; interactive and intuitive report design; etc.), how to make reports accessible to the end-users (explore pros and cons of various deployment methods), whilst maintaining security and governance best-practice.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sven Vosse</b>, 
+</p>
+<hr>
+ 
+<h3>GPU Accelerated Deep Learning with SQL Server 2017</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Learn how to leverage Python and SQL Server 2017 In-Database Analytics with GPU acceleration to use NeuralNet algorithms for Deep Learning.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Donovan White</b>, 
+</p>
+<hr>
+ 
+<h3>Design considerations and patterns for creating a supportable Data Warehouse</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>So you've built a flashy new Data Warehouse and deployed it to production. 
+
+Great now what?
+
+Nobody wants to be involved with a project that is constantly failing and difficult to support.
+This session will take a look at some design considerations and tips to ensure that your mart runs with minimal intervention and is easy to support.
+
+The tools discussed and used in the examples will be SSIS and SQL server but many of the points discussed are valid for all tools.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Tinus Visagie</b>, 
+</p>
+<hr>
+ 
+<h3>Generate Heatmap Dashboards: SSRS vs Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Within the Microsoft reporting ecosystem, Power BI and Excel easily support the implementation of heatmaps yet the same cannot be said of SQL Server Reporting Services (SSRS). In this session, we take a look at the Top 3 options for implementing heatmaps in SSRS, namely,  using the SWITCH Expression, using Custom VB.NET Code, as well as using External Assembly File.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sifiso Ndlovu</b>, 
+</p>
+<hr>
+ 
+<h3>Zero to Pi to 10 on Cloud,Intro to Windows 10 IoT Core on a Raspberry Pi and BI using Azure IoT Hub</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>This session will focusing on providing a  SQL/BI developer with a walkthrough developing apps for Windows 10 IoT core running on a Raspberry Pi and using this to collect data and send data to Azure IoT hub. Some of the aspects that will be looked at is  development environment , Windows 10 IoT core running on a Raspberry Pi , Azure IoT the challenges faced, from getting started to getting an app running that sends data to IoT hub and visualizing this data in Power BI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Arohan Naidoo</b>, 
+</p>
+<hr>
+ 
+<h3>Overview SQL Server Machine Learning Services</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>SQL Server Machine Learning Services (ML Services) was introduced in SQL Server 2016. At that time SQL Server ML Services only supported the R language. When SQL Server 2017 was released Python was added to the mix. In this session, we get an overview of what SQL Server ML services can do and what it can be used for. The session is code heavy.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Niels Berglund</b>, 
+</p>
+<hr>
+ 
+<h3>Taking the data to Isengard</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Analysis of Big Data is a fast growing field with more and more technologies popping up to enable us to analyse this data in a fast and efficient way. With the available choices of technology ever increasing, the question remains - which way do we go?
+
+In this session we'll explore the world of middle earth with the help of Apache Spark, Azure HDInsight and PowerBI. Apache spark is a distributed data processing engine which is deployed as a cluster, with master and worker nodes. 
+
+We'll look at setting up a spark cluster in Azure HDInsight as well as visualising the results in PowerBI.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Mercia Malan</b>, 
+</p>
+<hr>
+ 
+<h3>How to become the most sought after SQL Server professionals in SA</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Are you underpaid? Would you like to know what a market related salary is for your skill set? What are the most in demand IT Developer profiles in the market today? Is your CV going to stand out from the guy sitting next to you? Come along to my presentation and we will have a look at what a market related salary for you is; are you keeping your skills relevant for today’s needs and are you representing yourself well enough to stand out.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Vanessa Raath</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Managed Instance</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session we will take a look at what all the fuss is about as well as 
+
+Architecture of AMI(Azure managed Instance)
+Cost of AMI vs on-prem
+Different options to migrate to AMI
+Benefits of AMI
+Differences Between AMI and SQL Server on=prem</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jody Roberts</b>, 
+</p>
+<hr>
+ 
+<h3>Azure Database Migrations: The secret sauce to successful database migrations</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this session you will learn about the various migration paths and tools available to migrate your databases to Azure.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Kathryn Varrall</b>, 
+</p>
+<hr>
+ 
+<h3>An introduction to Azure SQLDatawarehouse</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>The Azure SQL Datawarehouse is intended for large-scale data processing in the cloud, but it’s not just a really big managed SQL Server instance. 
+
+In this session, I’ll take you through the architecture of Azure SQL Datawarehouse, how it differs from a regular SQL Server and what those differences mean for database design, query design and usage patterns.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Gail Shaw</b>, 
+</p>
+<hr>
+ 
+<h3>BI and DW Schema Design and Evolution</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Discussion around Data Warehouse Schema Design and evolution.The flexibility of ROLAP and In-Memory data models to support all Schema design categorizations and optimizes the performance of the data model.
+
+Different types Schema Design: In terms of tables accessed, Joins, data modification, data loading/Maintenance, data redundancy, design and size.
+
+•         Normalized
+•         Moderately de-normalized
+•         Completely de-normalized
+•         Star Schema
+•         Data vault
+•         NoSQL
+
+And lastly discuss around the common schema design roadblocks that people face like Hierarchy, SCD etc…</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sandesh Nagaraj</b>, 
+</p>
+<hr>
+ 
+<h3>Deploying Power BI for the Enterprise</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Implementing Power BI for the enterprise is not as easy as it may look. Most enterprises seem to follow a somewhat ad-hoc approach. 
+
+In this session I will look at what is required to plan a successful Power BI Premium implementation for the Enterprise. 
+
+The following topics may be included: 
+- Versions Overview
+- Decision Points
+- Data Sources
+- Data Storage Options
+- Data Refresh
+- Dataset development vs Report authoring
+- Security, Compliance and Auditing</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Minette Steynberg</b>, 
+</p>
+<hr>
+ 
+<h3>SQL Server Temporal Tables</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Change Tracking over the years has been handled in many different ways with People often building their own bespoke auditing systems.  This session will introduce Temporal Table's pros and cons allowing someone to make a much more informed decision as to whether or not this could add value to their systems.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Sean Cremer</b>, 
+</p>
+<hr>
+ 
+<h3>Data Science in Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Microsoft has released amazing Machine Learning, Advanced Analytics and AI capabilities. as a Power BI user, how can we use these capabilities in our analytics and dashboards. This will cover in the box capabilities as well as enhancing Power BI with other Microsoft ML capabilities.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Ryan Jamieson</b>, 
+</p>
+<hr>
+ 
+<h3>Master Data Services From Start To Finish</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>Master Data Services can look complicated. In this session I will take you through how to install MDS to having a complete solution that will work for you. This session will include installing MDS, setting up a model with entities and attributes, integrating with Excel and setting up security.</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Jeanne Combrinck</b>, 
+</p>
+<hr>
+ 
+<h3>Top tips on cracking a new database (and impressing your new employer)</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>A quickstart guide for SQL developers in the dark to start making sense of their new environment</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Warren Rocchi</b>, 
+</p>
+<hr>
+ 
+<h3>Machine Learning with R in Power BI</h3>
+ 
+<p><b>Abstract</b>:</p>
+<p>In this talk we'll discuss how to do Machine Learning with R inside Power BI with a brief explanation on different algorithms.
+
+We'll cover:
+* How to do machine learning inside power query using R
+* How to write R scripts to create functions inside Power Query for data transformation
+* A brief description of some algorithms with some R sample code</p>
+<p>&nbsp;</p> 
+<p><b>Speaker(s):</b> 
+<b>Luis de Sousa</b>, 
+</p>
+<hr>
+<!-- Speakers-->
+<section class="page-section" id="speakers">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Speakers</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>This is a list of speakers from the XML Guidebook records. The details and URLs were valid at the time of the event.</p>
+<h3 class="section-heading">Uwe Ricken
+ - <a href="https://www.twitter.com/https://twitter.com/dbBerater">https://twitter.com/dbBerater</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro">http://www.linkedin.com/profile/view?id=270775013amp;trk=tab_pro</a></p>
+ 
+<p>Contact: <a href="http://www.sqlmaster.de">http://www.sqlmaster.de</a></p>
+ 
+<p>Uwe Ricken is working with IT systems since the 90’s. The primary passion for developments with Microsoft SQL Server expanded in 2007 with his engagement as a DBA for Deutsche Bank AG in Frankfurt am Main. After 6 years of operational experiences as a DBA and over 14 years as a developer of complex database models he achieved the “Microsoft Certified Master – SQL Server 2008” certification which “was” the highest technical certification. In the same year he earned his first award as a Data Platform MVP for his support to the Microsoft SQL Server community in Germany and Europe. Uwe Ricken is a speaker on many international conferences and events and preferred topics are “Database Internals”, “Indexing” and “Development”.</p>
+ 
+<h3 class="section-heading">Ridewaan Hanslo
+
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/ridewaanhanslo">https://za.linkedin.com/in/ridewaanhanslo</a></p>
+ 
+<p>Software engineer by profession. Actively involved in the IT industry since 2002, spanning experience across departments such as development, cyber security, analysis, networking, teaching, research and support.
+
+Highlights of experience and credentials includes, being a Senior Software Engineer, Cyber Security Specialist, Advisory Board Member, Online Tutor, Mentor, Researcher, Professional Scrum Master and Certified IT Professional.</p>
+ 
+<h3 class="section-heading">Minette Steynberg
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/msteynberg/">https://www.linkedin.com/in/msteynberg/</a></p>
+ 
+<p>Contact: <a href="https://www.sqlshack.com/author/minette/">https://www.sqlshack.com/author/minette/</a></p>
+ 
+<p>Having been in the IT industry for 20 years, I've seen IT from almost every angle, developer, analyst, DBA and now data architect.
+
+I am so excited about technology and the speed at which it develops, the capabilities that already exist and all possiblities that come with advanced analytics, artifical intelligence, the cloud and the direction that Microsoft is taking.</p>
+ 
+<h3 class="section-heading">Jeanne Combrinck
+ - <a href="https://www.twitter.com/TheSQLGirl">TheSQLGirl</a>
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/jeannecombrinck">https://za.linkedin.com/in/jeannecombrinck</a></p>
+ 
+<p>Contact: <a href="http://thesqlgirl.com">http://thesqlgirl.com</a></p>
+ 
+<p>Senior BI Developer at Britehouse. In her spare time she can be found spending time with her animals, doing SQL puzzles and writing on her blog http://thesqlgirl.com/.</p>
+ 
+<h3 class="section-heading">Warren Rocchi
+ - <a href="https://www.twitter.com/@wazdarocsta">@wazdarocsta</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/warren-rocchi-06035138/">https://www.linkedin.com/in/warren-rocchi-06035138/</a></p>
+ 
+<p>Contact: <a href="http://www.ebsphere.com">http://www.ebsphere.com</a></p>
+ 
+<p>Commonly described as the boy next door (although next door to whom has never been quite defined), Warren fell in love with SQL when he was accidentally thrust into it after going to see a girl at a tech company. He liked it so he put a ring on it. That was the girl, and as for SQL the affair continues. Warren consults as a SQL dev for EBSphere (Pty) Ltd and lectures on all aspects of SQL in his spare time. Amongst other things he dabbles in MySQL and is passionate about IT Security and recycling.</p>
+ 
+<h3 class="section-heading">Sandesh Nagaraj
+
+</h3>
+<p>LinkedIn: <a href="http://za.linkedin.com/in/sandeshnagaraj">http://za.linkedin.com/in/sandeshnagaraj</a></p>
+ 
+<p>A Certified Data Architect with around 15 years of experience in Data warehouse, Business Intelligence and Database implementation. Sandesh holds MCITP SQL Server in BI, Data Architect certified from Microstrategy etc. He has worked extensively as BI Consultant/Technical Specialist/BI Architect/Sales Engineer/Manager.  Sandesh actively participates and speaks at Johannesburg SQL Server User and SQL Saturday events.</p>
+ 
+<h3 class="section-heading">Tinus Visagie
+ - <a href="https://www.twitter.com/@dietinus">@dietinus</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/tinusvisagie">http://www.linkedin.com/in/tinusvisagie</a></p>
+ 
+<p>Contact: <a href="https://tvisagieblog.wordpress.com/">https://tvisagieblog.wordpress.com/</a></p>
+ 
+<p>Started my IT career as a software developer just in time for Y2K. After 13 years of software development I moved my focus to data and have been doing data development in various forms for 8 years. 
+Currently working at one of the big banks developing data marts and defining best practice development patterns.</p>
+ 
+<h3 class="section-heading">Mercia Malan
+ - <a href="https://www.twitter.com/@Kitri747">@Kitri747</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/merciamalan">https://www.linkedin.com/in/merciamalan</a></p>
+ 
+<p>me => Developer, Data lover, Dancer, Climber, Hobbit
+
+I bounce around in various areas of development and BI and consider myself an equal opportunity lover of all tech stacks. I particularly enjoy working with data, whether it be SQL stack or some combination of python/java, spark and mongodb.</p>
+ 
+<h3 class="section-heading">Jean-Pierre Voogt
+ - <a href="https://www.twitter.com/@CloudySQL">@CloudySQL</a>
+</h3>
+<p>Jean-Pierre is an SQL Developer and Data Analysis Team Lead from South Africa. He is MCSA (Microsoft Certified Solutions Associate) and owner of a bachelor’ degree in Software Engineering with good experience with Database design, Data warehousing and development. He has a great passion for SQL server and he enjoys solving complex business problems.
+
+Jean-Pierre speaks at the Johannesburg SQL User Group, trying to give back to the SQL community as much as possible. He loves to tinker with SQL Server and see how he can approach a problem with a different angle.</p>
+ 
+<h3 class="section-heading">Sean Cremer
+ - <a href="https://www.twitter.com/https://twitter.com/seanCremer">https://twitter.com/seanCremer</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/profile/preview?locale=en_UStrk=prof-0-sb-preview-primary-button">http://www.linkedin.com/profile/preview?locale=en_UStrk=prof-0-sb-preview-primary-button</a></p>
+ 
+<p>Contact: <a href="https://seancremer.github.io/">https://seancremer.github.io/</a></p>
+ 
+<p>Sean Cremer is a Senior Developer at Derivco.  He has worked with SQL Server for nearly two decades on Large OLTP and Data Warehousing  Systems and has a wealth of accumulated  Database Design and Implementation knowledge.</p>
+ 
+<h3 class="section-heading">Sven Vosse
+
+</h3>
+<p>Sven Vosse is the lead consultant at Seidor Analytics, a specialist BI Training and Consulting company based in Jhb.  Seidor Analytics serves clients of all sizes in all industries and focuses mainly on Power BI and SAP Analytics Cloud.
+
+Sven is also the Johannesburg Power BI User Group Leader</p>
+ 
+<h3 class="section-heading">Vanessa Raath
+ - <a href="https://www.twitter.com/@Van_Raath">@Van_Raath</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/vanessaraath">https://www.linkedin.com/in/vanessaraath</a></p>
+ 
+<p>Contact: <a href="https://www.vanessaraath.com">https://www.vanessaraath.com</a></p>
+ 
+<p>I am determined to bring the ‘Human Element’ back into today’s Recruitment Process as I believe it has been lacking for too long now! I believe that people are the core building blocks of every business but that doesn’t mean that we can treat every ‘block’ the same. I have over 13 years’ experience in the Recruitment Industry and I have specialised in the IT Applications space for most of this time. I have recently decided to flex my entrepreneurial muscle and I have launched my own Sourcing Training Business. I am passionate about raising the standard of Sourcing in Africa.</p>
+ 
+<h3 class="section-heading">Alistair Pugin
+ - <a href="https://www.twitter.com/@alistairpugin">@alistairpugin</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/alistairpugin/">https://www.linkedin.com/in/alistairpugin/</a></p>
+ 
+<p>Contact: <a href="http://2guysandsharepoint.co.za">http://2guysandsharepoint.co.za</a></p>
+ 
+<p>Alistair has worked in various capacities in multiple verticals from retail – manufacturing to government, spanning 50 to 50000 users utilizing all aspects of pure Enterprise Information Management.
+
+His current position as an Office Servers and Services MVP in South Africa, provides him with a mechanism to assist companies with architecting their SharePoint environment using "best of breed", proven methodologies to foster innovation and growth through an ECM framework.</p>
+ 
+<h3 class="section-heading">Luis de Sousa
+ - <a href="https://www.twitter.com/@luis_de_sousa">@luis_de_sousa</a>
+</h3>
+<p>LinkedIn: <a href="http://za.linkedin.com/in/luisdza">http://za.linkedin.com/in/luisdza</a></p>
+ 
+<p>Contact: <a href="http://www.luisdesousa.co.za">http://www.luisdesousa.co.za</a></p>
+ 
+<p>Consult to large financial institutions in South Africa providing Business Intelligence and Analysis insight.</p>
+ 
+<h3 class="section-heading">Steve Simon
+ - <a href="https://www.twitter.com/SQLServerBoffin">SQLServerBoffin</a>
+</h3>
+<p>LinkedIn: <a href="http://www.linkedin.com/in/stephenrsimon/">http://www.linkedin.com/in/stephenrsimon/</a></p>
+ 
+<p>Contact: <a href="http://www.sqlservercentral.com/blogs/simon_says/">http://www.sqlservercentral.com/blogs/simon_says/</a></p>
+ 
+<p>Steve Simon is a Database Solutions Architect with Business Knowledge Services Inc. He has been involved with database design and analysis for over 35 years. Steve has presented papers at numerous PASS Summits and PASS SQL Rallies. He is also regular presenter on the SQL Saturday circuit and he is a contributor on SQLShack.com</p>
+ 
+<h3 class="section-heading">Arohan Naidoo
+
+</h3>
+<p>Arohan is a Business Intelligence developer working at Entelect primarily on the Microsoft BI stack who has an interest in using Big Data and IoT to find insights into ways to improve daily life as well as focused research on using technology to enhance learning.</p>
+ 
+<h3 class="section-heading">Sifiso Ndlovu
+ - <a href="https://www.twitter.com/https://twitter.com/mafiswana">https://twitter.com/mafiswana</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sifiso-w-ndlovu-89239a14">https://www.linkedin.com/in/sifiso-w-ndlovu-89239a14</a></p>
+ 
+<p>Contact: <a href="http://blogs.selectsifiso.com/">http://blogs.selectsifiso.com/</a></p>
+ 
+<p>I am a certified Microsoft professional with a Master’s degree in IT Management from the University of Johannesburg. I specializes on a range of enterprise and consumer technologies using open source and proprietary software. I am a member of the Johannesburg SQL User Group wherein I have made several presentations on User Group Meetings and SQL Saturday sessions. I have written for a number of publications including SQLShack.com and SQLServerCentral.com.</p>
+ 
+<h3 class="section-heading">Kathryn Varrall
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kathryn-varrall-87212132">https://www.linkedin.com/in/kathryn-varrall-87212132</a></p>
+ 
+<p>I have been doing what I love most for the last 15 years and that is working with data, specifically building data warehouse and business intelligence solutions and doing advanced analytics. I now work for Microsoft as a Technical Solutions Professional in the Advanced Analytics and AI space assisting and guiding customers in their data journey</p>
+ 
+<h3 class="section-heading">Jodi Craig
+
+</h3>
+<p>I am passionate about striving for Technical Excellence and designing the right solution for the business need.
+I have been in the IT industry for 20+ years and spent majority of that time in a technical / management role. I particularly enjoy working with data anything related to SQL Databases.</p>
+ 
+<h3 class="section-heading">Andrew Collier
+ - <a href="https://www.twitter.com/DataWookie">DataWookie</a>
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/datawookie/">https://www.linkedin.com/in/datawookie/</a></p>
+ 
+<p>Contact: <a href="https://datawookie.netlify.com/blog/">https://datawookie.netlify.com/blog/</a></p>
+ 
+<p>Itinerant Data Scientist; Geek; Runner.</p>
+ 
+<h3 class="section-heading">Alex Yates
+ - <a href="https://www.twitter.com/@_alexyates_">@_alexyates_</a>
+</h3>
+<p>LinkedIn: <a href="http://uk.linkedin.com/in/alexanderyates">http://uk.linkedin.com/in/alexanderyates</a></p>
+ 
+<p>Contact: <a href="http://www.workingwithdevs.com">http://www.workingwithdevs.com</a></p>
+ 
+<p>Alex Yates has been helping organisations to apply DevOps principles to relational database development and deployment since 2010. He’s most proud of helping Skyscanner develop the ability to deploy 95 times a day. Originally for Redgate, later for DLM Consultants, Alex has worked with clients on every continent except Antarctica – so he’s keen to meet anyone who researches penguins. 
+
+A keen community member, he co-organises SQL Relay, is the founder of www.SpeakingMentors.com and has been recognised as a Microsoft Data Platform MVP since 2017.</p>
+ 
+<h3 class="section-heading">Donovan White
+ - <a href="https://www.twitter.com/@SQLSoup">@SQLSoup</a>
+</h3>
+<p>An avid lover of SQL Server and an Architect for Microsoft South Africa, I have been working with SQL Server for the last 16 years focusing on database development and administration, focusing on architecting high performance large scale virtualized database environments. Currently my delivery and focus has been on Microsoft's leading data platform technologies working with customers to deliver Big Data  HTAP solutions.</p>
+ 
+<h3 class="section-heading">Ryan Jamieson
+
+</h3>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ryan-jamieson-7286a86/">https://www.linkedin.com/in/ryan-jamieson-7286a86/</a></p>
+ 
+<p>I am currently the CTO at Karabina and have been part of the company for 17 years. This role is the alignment of technology to business needs. This involves thought leadership, leading technical leaders, innovation and RD.  My passion for technology and solving business challenges with technology started while I was a mining engineer and has matured over the years from developing solutions, leading teams, architecting solutions, and evangelising technology. Both my BSc Engineering Degree and MBA help me bring the relevance and capability of technology to bear in aligning to business need. I have and still enjoy speaking at technology events especially in association with Microsoft as well as more generally.</p>
+ 
+<h3 class="section-heading">Jody Roberts
+ - <a href="https://www.twitter.com/Jody_Wp">Jody_Wp</a>
+</h3>
+<p>LinkedIn: <a href="http://za.linkedin.com/pub/jody-roberts/7/b29/193/Edit">http://za.linkedin.com/pub/jody-roberts/7/b29/193/Edit</a></p>
+ 
+<p>Contact: <a href="http://JodyWP.wordpress.com">http://JodyWP.wordpress.com</a></p>
+ 
+<p>Jody Roberts is a Microsoft Data Platform MVP based in Cape Town, South Africa. He specializes in SQL Server architecture, disaster recovery (DR), and server optimization.
+
+Jody serves as a PASS Regional Mentor responsible for the Middle East amp; Africa, Chapter Lead of the SQLCape user group, and Co-Lead of the PASS Cloud Virtual Chapter. Jody is a Principal Consultant at Northern Data.</p>
+ 
+<h3 class="section-heading">Gail Shaw
+ - <a href="https://www.twitter.com/@SQLInTheWild">@SQLInTheWild</a>
+</h3>
+<p>Contact: <a href="http://sqlinthewild.co.za">http://sqlinthewild.co.za</a></p>
+ 
+<p>Gail Shaw is a Database Specialist focusing on database performance tuning and database recovery, with a particular interest in topics such as indexing strategies, execution plans, and writing T-SQL code that performs well and scales gracefully. Gail holds a Microsoft Certified Master certification for SQL Server 2008 and is a Data Platform MVP. She's a frequent poster on the SQLServerCentral forums, a Pluralsight author, writes articles for both SQLServerCentral.com and Simple-Talk.com, and has spoken at SQLSaturdays, SQL Bits and at the PASS Community Summit. Gail has been responsible for extending the lifespan of many an application, by performance-tuning their databases and providing technical guidance on all things SQL Server related.</p>
+ 
+<h3 class="section-heading">Niels Berglund
+ - <a href="https://www.twitter.com/nielsberglund">nielsberglund</a>
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/niels-berglund-0122593">https://za.linkedin.com/in/niels-berglund-0122593</a></p>
+ 
+<p>Contact: <a href="https://nielsberglund.com">https://nielsberglund.com</a></p>
+ 
+<p>Niels works as Software Architect at Derivco, where he develops software as well as "dreaming" up new and innovative ways to use existing and new technology. Before joining Derivco, Niels worked as researcher/instructor at Developmentor where he was responsible for the database curriculum. He was a co-author of the first SQL Server 2005 book for developers: quot; A First Look at SQL 2005 for Developersquot;. He has presented at all leading technical conferences; Tech-ED, SQL PASS, DevWeek, Ignite the Tour, etc., and is also a Microsoft Data Platform MVP.</p>
+ 
+<h3 class="section-heading">Donovan White
+ - <a href="https://www.twitter.com/@SQLSoup">@SQLSoup</a>
+</h3>
+<p>An avid lover of SQL Server and an Architect for Microsoft South Africa, I have been working with SQL Server for the last 16 years focusing on database development and administration, focusing on architecting high performance large scale virtualized database environments. Currently my delivery and focus has been on Microsoft's leading data platform technologies working with customers to deliver Big Data  HTAP solutions.</p>
+ 
+<h3 class="section-heading">James McGillivray
+ - <a href="https://www.twitter.com/JamesMcG_MSBI">JamesMcG_MSBI</a>
+</h3>
+<p>LinkedIn: <a href="https://za.linkedin.com/in/thejimmyrsa">https://za.linkedin.com/in/thejimmyrsa</a></p>
+ 
+<p>Contact: <a href="https://jimbabwe.co.za/blog-posts/">https://jimbabwe.co.za/blog-posts/</a></p>
+ 
+<p>James McGillivray, Data Management and Analytics MCSE, has been working in Business Intelligence for over a decade. He spends his working hours building solutions that allow people to make informed decisions quickly and accurately. James is a director at Cobalt Analytics.
+
+Before his career in data, James was an avid musical theatre student and musician. This love for performance has developed into a passion for developing and delivering presentations that are informative and enjoyable. James speaks frequently at the Johannesburg SQL User Group, and has delivered sessions at numerous SQL Saturdays, PASS Summit, Power BI World Tour and SQL Bits.</p>
+ 
+<!-- Sponsors-->
+<section class="page-section" id="sponsors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Sponsors</h2>
+            <div class="alert alert-light" role="alert">
+ 
+<p>The following is a list of sponsors that helped fund the event.</p>
+ 
+<p><a href="http://www.eoh.co.za">EOH</a></p>
+ 
+<p><a href="https://www.quest.com/">Quest (South Africa)</a></p>
+ 
+<p><a href="http://www.red-gate.com/">Redgate Software</a></p>
+ 
+<p><a href="http://www.cloudondemand.co.za/">Tarsus Cloud OnDemand</a></p>
+ 
+<p><a href="http://www.entelect.co.za/">Entelect Software</a></p>
+ 
+<p><a href="https://sqlsa.co.za/">SQLSA</a></p>
+ 
+<p><a href="http://dariel.co.za/">Dariel Solutions</a></p>
+ 
+<p><a href="http://www.microsoft.com">Microsoft</a></p>
+ 
+<p><a href="https://www.ewx.co.za/">EnterpriseWorx</a></p>
+ 
+<p><a href="http://www.pass.org">PASS</a></p>
+ 
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright &copy;SQL Saturday 2021</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/sqlsaturday"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/groups/58052797867"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/groups/13945573/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="mailto:support@datasaturdays.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="../privacy.html">Privacy Policy</a>
+                <a href="../terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<!-- Bootstrap core JS-->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+    </body>
+</html>

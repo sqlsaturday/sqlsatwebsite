@@ -10,7 +10,7 @@ This is a basic code of conduct taken from Redgate Software. At a minimum, your 
 
 Note: this policy is under construction and will change over time. Please feel free to submit suggestions to the organization using the contact items below.
 
-SQL Saturday events seek to create a respectful, friendly, patient, considerate, and inclusive event experience, and an environment where all participants feel welcome.
+SQLSaturday events seek to create a respectful, friendly, patient, considerate, and inclusive event experience, and an environment where all participants feel welcome.
 
 We therefore ask all participants to honor this Code of Conduct. Any kind of disruptive, intolerant or inappropriate behavior will not be tolerated, and we reserve the right to remove any participants who violate our Code of Conduct from the event.
 
