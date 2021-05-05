@@ -90,4 +90,4 @@ These are the speakers who have spoken at more than 100 events.
 - [Janice Griffin - 105 Events](https://twitter.com/doboutanything)
 
 ### Feedback
-If you notice anything here needing correction, please contact the webmaster at this domain.
+If you notice anything here needing correction, please contact the webmaster at this domain. Contact information is listed below.
