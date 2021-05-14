@@ -223,9 +223,29 @@ layout: base
            </p>
         <p>&nbsp;</p>
 
-    <!-- Schedule -->
+      <!-- Rooms -->
+      <h2 align="center"><A name="rooms"></A>Rooms</h2>
+      {% if pagedata.join.description %}
+        <p> {{pagedata.join.description}}
+        </p>
+        <p style="text-align: center;">
+          {%- for room in pagedata.join.rooms -%}
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mr-4" target="_blank" href="{{room.url}}">{{room.name}}</a>
+          {%- endfor %}
+        </p>
+        {% else %}
+        <p style="text-align: center;">The rooms are not available for this event.</p>
+      {% endif %}
+      <p> &nbsp;</p>
+
+      <!-- Schedule -->
           <h2 align="center"><A name="schedule"></A>Schedule</h2>
             {% if pagedata.scheduleurl%}
+                {% if pagedata.scheduletimezone %}
+                  <p>
+                    Please note the schedule is in {{pagedata.scheduletimezone}}
+                 </p>
+                {% endif %}
             <p>
               <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
               </iframe>
@@ -243,20 +263,6 @@ layout: base
             <p>&nbsp;</p>
       
 
-      <!-- Rooms -->
-      <h2 align="center"><A name="rooms"></A>Rooms</h2>
-      {% if pagedata.join.description %}
-        <p> {{pagedata.join.description}}
-        </p>
-        <p style="text-align: center;">
-          {%- for room in pagedata.join.rooms -%}
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mr-4" target="_blank" href="{{room.url}}">{{room.name}}</a>
-          {%- endfor %}
-        </p>
-        {% else %}
-        <p style="text-align: center;">The rooms are not available for this event.</p>
-      {% endif %}
-      <p> &nbsp;</p>
 
 
       <!-- Speakers -->
