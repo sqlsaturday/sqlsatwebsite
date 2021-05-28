@@ -4,7 +4,7 @@ title: Past Events
 permalink: /past/
 ---
 
-The data listed here is from the public historial XML records used for the Guidebook site. If you have any corrections, please feel free to submit a Pull Request or contact the webmaster with the details.
+The data listed here is from the public historical XML records used for the Guidebook site. If you have any corrections, please feel free to submit a Pull Request or contact the webmaster with the details.
 
 ## Previous SQLSaturday Events
 
