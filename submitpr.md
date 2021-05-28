@@ -24,9 +24,7 @@ Each of these is fairly simple to work with, but an understanding of markdown an
 
 The event markdown file is stored in the _posts folder and should have this structure for the name.
 
-`
-yyyy-mm-dd-sqlsaturdaynnnn.markdown
-`
+~yyyy-mm-dd-sqlsaturdaynnnn.markdown
 
 The values to set are:
 - yyyy: the year of the event
@@ -38,7 +36,7 @@ As an example, the 2021 data.SQL.Saturday LA event is: 2021-06-12-sqlsaturday102
 
 The contents of this file are the metadata for the event. A sample is shown below, with each item described.
 
-`
+~~~~
 ---
 layout: event
 title: "SQL Saturday Los Angeles June 2021"
@@ -48,7 +46,7 @@ thumb: /assets/img/logos/Just_icon_Color_small.png
 comments: false
 data: SQLSat1020
 ---
-`
+~~~~
 
 The layout is required as the type of page we are displaying.
 
@@ -79,7 +77,7 @@ Each of the values for these keys controls the display of your event page, so ad
 - virtual: set to true if you are running a virtual event, false otherwise. This is displayed below the description after "This event is:". The next two settings relate to this.
 -  physical: set to true if the event is live with attendees coming in person. Displayed as the virtual key.
 - hybrid: set to true if this is a hybrid event. Displayed as the virtual key above.
-- description: This is the description that you want to display below your title and logo. If this is a multi-line value, use a | on the first line of the key and start the description below. Indent each line with 4 spaces.
+- description: This is the description that you want to display below your title and logo. If this is a multi-line value, use a pipe on the first line of the key and start the description below. Indent each line with 4 spaces.
 - officialwebsite: If you have your own website, you can enter a URL here and the page will show: "official website" and then this link. Leave blank if you do not have your own website/page.
 - eventlocation: text descrption of the location for your event. Leave blank for virtual. If multiline, format as noted for the description key.
 - registrationurl: The URL for your attendee registration. For example, the LA event uses Eventbrite and had this as the value - "https://www.eventbrite.com/e/virtual-2021-datasqlsaturdayla-tickets-136013374665". This is used as the target behind the "Register Now" button.
@@ -93,5 +91,29 @@ Each of the values for these keys controls the display of your event page, so ad
 - speakerlisturl: If you wish to link to a list of speakers, enter a value here. Your sessionize page will contain a list of speakers and sessions submitted.
 - callforspeakersurl: This is the link for your call for speakers provider. Sessionize.com seems to be the preferred provider for everyone these days. This is only displayed if the callforspeakers key is set to true.
 - callforspeakers: true for open calls, false otherwise.
-- callforspeakersenddate: the date on which your call for speakers closes.
+- callforspeakersenddate: the date on which your call for speakers closes. This is printed if the callforspeakers is set to true.
+- organizers: This key is blank, but it has subkeys. Each of these subkeys is described, and if you have multiple groups of subjects, each needs a hypen at the beginning and we will print each group of these at the bottom of your event page under the "Contact the Organizers" section. This can be a group instead of individuals.
+  - name: The name of the organizer as you want it printed.
+  - twitter: a twitter handle for the organizer, minus the @. leave blank if you have none. This is hot linked to Twitter. 
+  - email: An email address for contacting this organizer.
+  - url: If this organizer or group has a website, add here. Leave blank if not needed. Include the http://.
+- volunteers: Another key with subkeys. Leave blank.
+  - description: text you'd like to have printed under the "Volunteers" section on your page.
+  - volunteerurl: a signup form URL to link on the page. If blank, nothing is printed.
+- social: another key with subkeys. Leave blank.
+  - twitter: if you have a twitter account for your event, add here. This is used as the target of a twitter icon below the table of contents. If blank, no twitter icon is shown.
+  - youtube: if you have a youtube channel for your event, add here. This is just the name of the channel, not a URL. This is used as the target of an  icon below the table of contents. If blank, no icon is shown.
+  - linkedin: if you have a LinkedIn URL for your event, add here. This is the full URL. This is used as the target of an icon below the table of contents. If blank, no icon is shown.
+  - instagram: if you have a instagram account for your event, add here. This is the handle, not the full URL. This is used as the target of an icon below the table of contents. If blank, no icon is shown.
+  - tiktok: if you have a TikTok account for your event, add here. This is the handle, not the full URL. This is used as the target of an icon below the table of contents. If blank, no icon is shown.
+  - pinterest: if you have a Pinterest account for your event, add here. This is the handle, not the full URL. This is used as the target of an icon below the table of contents. If blank, no icon is shown.
+sponsorcontacturl: A URL if you have a place for sponsors to sign up or contact. If you wish to set up sponsorship plans, you can set up a second EventBrite with different types of tickets for sponsors to "purchase" and fund your event.
+sponsors: another top key with subkeys. Leave blank. If you have multiple sponsors, repeat this set of keys, starting the new group with a hypen in front of the first key.
+  - link: the url to which you redirect clicks on the sponsor logo.
+  - image: the path to the logo. /assets/img/logos is where you submit your logos in the repo.
+join: This is a top level key. Leave blank.
+  - description: text you want printed below the "Rooms" section on the page.
+  - rooms: This is a subkey. Leave blank. 
+    - name: If you have rooms for broadcast, you can add a name here. This set of keys can be repeated as needed. You do not need a URL to add rooms.
+    - url: the URL to link the room button to. Blank before you have URLs assigned.
 
