@@ -60,7 +60,7 @@ On January 15, 2021, PASS ceased operations and the franchise closed.  The <a hr
 
 ### The Fourth Evolution of SQLSaturday
 
-<a href="https://www.red-gate.com/">Redgate Software</a> purchased the assets of PASS in an auction. The SQLSaturday domain, trademarks, and other related assets will be donated to the [SQLSaturday Foundation](/foundation), which is a community-run organization. While Redgate maintains a seat on the board of directors, the rest of the board is community appointed and helps to steer this franchise in the best interests of growing events around the world.
+<a href="https://www.red-gate.com/">Redgate Software</a> purchased the assets of PASS in an auction. The SQLSaturday domain, trademarks, and other related assets will be donated to the [SQLSaturday corporation](/foundation), which is a community-run organization. While Redgate maintains a seat on the board of directors, the rest of the board is community appointed and helps to steer this franchise in the best interests of growing events around the world.
 
 This site continues to support the SQLSaturday events with infrastructure, mentoring, and sponsorship where possible.
 

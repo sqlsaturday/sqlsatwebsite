@@ -1,13 +1,13 @@
 ---
 layout: page
-title: The SQLSaturday Foundation
+title: The SQLSaturday Corporation
 permalink: /foundation/
 ---
 ![Under Construction](/assets/img/Page_Under_Construction.png)
 
 **Note: this site is under construction and will change over time.**
 
-The SQLSaturday foundation is being established as a non-profit corporation in the US at this time. 
+The SQL Saturday Corporation was established as a US corporation in May 2021. This entity is currently seeking nonprofit status from the US IRS. 
 
 The initial board of directors was appointed by Steve Jones, and consists of these individuals:
 
