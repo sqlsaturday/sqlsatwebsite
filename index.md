@@ -4,6 +4,8 @@ title: "SQLSaturday"
 ---
 Welcome to SQLSaturday, the data platform and SQL Server community franchise for technical events. We have a list of <a href="#events">upcoming events</a> below as well as <a href="#other">other events</a> from different sources that are of interest to the data professional.
 
+If you want to know more about events from an organizer, speaker, sponsor, or attendee standpoint, sign up for our [mailing list](http://eepurl.com/hwVBKn)
+
 ## <a name="events"></a>Events
 
 These are the SQLSaturday events that have been scheduled.
