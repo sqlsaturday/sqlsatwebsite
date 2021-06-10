@@ -243,9 +243,12 @@ layout: base
             {% if pagedata.scheduleurl%}
                 {% if pagedata.scheduletimezone %}
                   <p>
-                    Please note the schedule is in {{pagedata.scheduletimezone}}
+                    Please note the event is taking place in {{pagedata.scheduletimezone}}
                  </p>
                 {% endif %}
+            <p>
+              The schedule shown below is updated by Sessionize to match your computer's time zone setting.
+            </p>
             <p>
               <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
               </iframe>
