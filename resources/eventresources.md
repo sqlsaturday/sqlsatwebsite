@@ -14,7 +14,7 @@ Keep in mind that the goals of SQL Saturday are to reach and teach other data pr
 
 These are the main items you need to consider when running an event.
 
-- [Call for Speakers](/resources/cfs/)
+- [Call for Speakers](/resources/cfs)
 - [Registration for Attendees](/resources/registration)
 - Scheduling
 - [Broadcast Platforms](/resources/platform)
@@ -30,7 +30,7 @@ These are the main items you need to consider when running an event.
 - Budgeting
 - Artwork and Logos
 - Event Website
-- [Retrospectives](.resources/retrospective)
+- [Retrospectives](/resources/retrospective)
 
 Not every event needs to worry about all of these areas, but they are available for you to learn from others. 
 
