@@ -35,3 +35,4 @@ These are the main items you need to consider when running an event.
 Not every event needs to worry about all of these areas, but they are available for you to learn from others. 
 
 For Organizers: If you have knowledge or updates on resources, prices, problems, etc., please submit a note as a PR to one of these pages (or send to the webmaster). Include a date of the update and what you would like to inform other events about.
+
