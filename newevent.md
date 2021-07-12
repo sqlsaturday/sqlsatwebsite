@@ -28,7 +28,7 @@ You can, however, name your event anything after the SQLSaturday #xxx part. For 
 
 You can even theme these events without a city or physical location, such as the last item in the list above.
 
-Once you have the information for your event, please [open an issue in the GitHub repository](https://github.com/red-gate/sql-saturday-website/issues) with the title of your event. Provide the information in your issue from the checklist below.
+Once you have the information for your event, please [open an issue in the GitHub repository](https://github.com/sqlsaturday/sqlsatwebsite) with the title of your event. Provide the information in your issue from the checklist below.
 
 We have a [checklist in an Excel file](#checklist) below of items you need as well as [guidance](#guidance) to help you run your event.
 
