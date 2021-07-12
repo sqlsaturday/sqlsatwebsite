@@ -68,17 +68,17 @@ layout: base
       {% endif %}
 
       <p align="center">
-        <a href="#schedule">Schedule</a> 
-        &#x25CF 
-        <a href="#rooms">Rooms</a> 
-        &#x25CF 
         {% if pagedata.eventlocation %}
         <a href="#location">Location</a> 
         &#x25CF 
         {% endif %}
-        <a href="#speakers">Speakers</a> 
-        &#x25CF 
         <a href="#sponsor">Sponsors</a> 
+        &#x25CF 
+        <a href="#rooms">Rooms</a> 
+        &#x25CF 
+        <a href="#schedule">Schedule</a> 
+        &#x25CF 
+        <a href="#speakers">Speakers</a> 
         &#x25CF 
         <a href="#volunteer">Volunteers</a> 
         &#x25CF 
@@ -142,7 +142,7 @@ layout: base
       </p>
       {% endif %}
       {% if pagedata.eventlocationurl %}
-        <a href="{{pagedata.eventlocation}}">{{pagedata.eventlocation}}</a>
+        <a href="{{pagedata.eventlocationurl}}">{{pagedata.eventlocationurl}}</a>
       {% endif %}
       {% if pagedata.googlemapurl %}
       <iframe src="{{pagedata.googlemapurl}}"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
