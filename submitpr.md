@@ -81,8 +81,8 @@ Each of the values for these keys controls the display of your event page, so ad
 - officialwebsite: If you have your own website, you can enter a URL here and the page will show: "official website" and then this link. Leave blank if you do not have your own website/page.
 - eventlocation: text descrption of the location for your event. Leave blank for virtual. If multiline, format as noted for the description key.
 - registrationurl: The URL for your attendee registration. For example, the LA event uses Eventbrite and had this as the value - "https://www.eventbrite.com/e/virtual-2021-datasqlsaturdayla-tickets-136013374665". This is used as the target behind the "Register Now" button.
-- capacity: If you have a capacity limit, you can enter a value here. If this is not blank, the text "The capacity for this event is " is printed with this value. This can be numerical or text.
-- googlemapurl: If you have a google maps URL for your event location, this will pull in the map in an iframe and print it on the page.
+- **capacity**: If you have a capacity limit, you can enter a value here. If this is not blank, the text "The capacity for this event is " is printed with this value. This can be numerical or text.
+- googlemapurl: If you have a google maps URL for your event location, this will pull in the map in an iframe and print it on the page. Use the share link, and the embed. Get the URL and put it in this key.
 - scheduleurl: If your schedule is set, this is the place for a sessionize schedule URL. This should look something like "scheduleurl: https://sessionize.com/api/v2/a3ebxb7v/view/GridSmart". If you have no schedule set, leave this blank.
 - scheduletimezone: Text for your time zone. We print this below the "Schedule" section on your page, above the schedule itself.
 - eventcountdown: set to true if you have a value for the countdownscript value below.
