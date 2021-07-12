@@ -141,6 +141,9 @@ layout: base
       {{pagedata.eventlocation}}
       </p>
       {% endif %}
+      {% if pagedata.eventlocationurl %}
+        <a href="{{pagedata.eventlocation}}">{{pagedata.eventlocation}}</a>
+      {% endif %}
       {% if pagedata.googlemapurl %}
       <iframe src="{{pagedata.googlemapurl}}"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <p>&nbsp;</p>
