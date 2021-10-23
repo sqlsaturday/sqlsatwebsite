@@ -107,11 +107,11 @@ Each of the values for these keys controls the display of your event page, so ad
   - instagram: if you have a instagram account for your event, add here. This is the handle, not the full URL. This is used as the target of an icon below the table of contents. If blank, no icon is shown.
   - tiktok: if you have a TikTok account for your event, add here. This is the handle, not the full URL. This is used as the target of an icon below the table of contents. If blank, no icon is shown.
   - pinterest: if you have a Pinterest account for your event, add here. This is the handle, not the full URL. This is used as the target of an icon below the table of contents. If blank, no icon is shown.
-sponsorcontacturl: A URL if you have a place for sponsors to sign up or contact. If you wish to set up sponsorship plans, you can set up a second EventBrite with different types of tickets for sponsors to "purchase" and fund your event.
-sponsors: another top key with subkeys. Leave blank. If you have multiple sponsors, repeat this set of keys, starting the new group with a hypen in front of the first key.
+- sponsorcontacturl: A URL if you have a place for sponsors to sign up or contact. If you wish to set up sponsorship plans, you can set up a second EventBrite with different types of tickets for sponsors to "purchase" and fund your event.
+- sponsors: another top key with subkeys. Leave blank. If you have multiple sponsors, repeat this set of keys, starting the new group with a hypen in front of the first key.
   - link: the url to which you redirect clicks on the sponsor logo.
   - image: the path to the logo. /assets/img/logos is where you submit your logos in the repo.
-join: This is a top level key. Leave blank.
+- join: This is a top level key. Leave blank.
   - description: text you want printed below the "Rooms" section on the page.
   - rooms: This is a subkey. Leave blank. 
     - name: If you have rooms for broadcast, you can add a name here. This set of keys can be repeated as needed. You do not need a URL to add rooms.
