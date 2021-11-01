@@ -6,19 +6,13 @@ permalink: /about/
 
 SQLSaturday was the brainchild of Andy Warren, Brian Knight, and Steve Jones.
 
-The idea was to bring the conference experience to local areas, with grassroots organization and a free day of training supplied by speakers, and supported by sponsors. 
-
-Saturday was chosen as this was the day when the community could attend without interfering with work, and many schools, universities, and other spaces would have space available at a low or no cost.
+The idea was to bring the conference experience to local areas, with grassroots organization and a free day of training supplied by speakers, and supported by sponsors. Saturday was chosen as this was the day when the community could attend without interfering with work, and many schools, universities, and other spaces would have space available at a low or no cost.
 
 While these events were originally intended to support the SQL Server platform and those that work with it with events on Saturdays, the events have expanded to take place on most days of the week and encompass many other technologies and platforms that are data related.
 
 All of these events are the result of many organizers, volunteers, and speakers that have donated time and resources to ensure their local events would be a success. SQLSaturday could not succeed without their efforts.
 
-![Under Construction](/assets/img/Page_Under_Construction.png)
-
-**Note: this site is under construction and will change over time.**
-
-Read more about the [history](#history) and [milestones](#milestone) of the franchise. You can also learn more about the [foundation](/sql-saturday-website/foundation) that manages the current brand.
+Read more about the [history](#history), [milestones](#milestone), and [speakers that have been to over 100 events](#centurion) of the franchise. You can also learn more about the [foundation](/sql-saturday-website/foundation) that manages the current brand.
 
 ## <a name="history"></a>History
 
@@ -81,7 +75,7 @@ These are some of the milestones throughout the history of the franchise. If you
 - [SQLSaturday #900 - Vitoria 2019](/2019-08-24-SQLSat-0900/)
 - [SQLSaturday #1000 - Oregon Virtual 2020](/2020-10-24-SQLSat-1000/)
 
-### Centurion Speakers
+### <a name="centurion"></a>Centurion Speakers
 
 These are the speakers who have spoken at more than 100 events.
 
