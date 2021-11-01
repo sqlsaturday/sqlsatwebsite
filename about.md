@@ -88,6 +88,7 @@ These are the speakers who have spoken at more than 100 events.
 - [Kevin Boles - 133 Events](https://twitter.com/thesqlguru)
 - [Kevin Feasel - 108 Events](https://twitter.com/feaselkl)
 - [Janice Griffin - 105 Events](https://twitter.com/doboutanything)
+- [Rob Volk - 101 Events](https://twitter.com/sql_r)
 
 ### Feedback
 If you notice anything here needing correction, please contact the webmaster at this domain. Contact information is listed below.
