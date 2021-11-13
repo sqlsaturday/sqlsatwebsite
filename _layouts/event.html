@@ -279,16 +279,16 @@ layout: base
       <p>{{pagedata.speakertext}}</p>
       {% endif %}                         
       </p>
-      {% if pagedata.callforspeakersverbiage %}
-       <p>{{pagedate.callforspeakersverbiage}} 
+      {% if pagedata.callforspeakers == "false" %}
+       <p>The call for speakers is now closed.
        </p>
-      {% if pagedata.speakerlisturl %}
+        {% if pagedata.speakerlisturl %}
           You can see a list of the speakers on <a href="{{pagedata.speakerlisturl}}">the submission page</a>.
+        {% endif %}
+      {% else %}
+        {% if pagedata.callforspeakersenddate > TodayDate %}
+        <p>You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
       {% endif %}
-      
-       {% if pagedata.callforspeakersenddate > TodayDate %}
-       <p>You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
-       {% endif %}
        </p>
        <p align="center">
        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}">Submit your session</a>
