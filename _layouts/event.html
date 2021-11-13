@@ -275,7 +275,7 @@ layout: base
       <!-- Speakers -->
       <div id="speakers">
       <h2 align="center"><A name="speakers"></A>Speakers</h2>
-      <p>{{pagedata.speakertext}}</p>
+      <p align="center">{{pagedata.speakertext}}</p>
       </p>
       {% if pagedata.callforspeakers == false %}
        <p>The call for speakers is now closed.
@@ -285,7 +285,7 @@ layout: base
         {% endif %}
       {% else %}
         {% if pagedata.callforspeakersurl > '' %}
-        <p>You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
+        <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
         </p>
         <p align="center">
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}">Submit your session</a>
