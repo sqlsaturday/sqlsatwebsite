@@ -275,18 +275,16 @@ layout: base
       <!-- Speakers -->
       <div id="speakers">
       <h2 align="center"><A name="speakers"></A>Speakers</h2>
-      {% if pagedata.speakertext %}
       <p>{{pagedata.speakertext}}</p>
-      {% endif %}                         
       </p>
-      {% if pagedata.callforspeakers == "false" %}
+      {% if pagedata.callforspeakers == false %}
        <p>The call for speakers is now closed.
        </p>
         {% if pagedata.speakerlisturl %}
           You can see a list of the speakers on <a href="{{pagedata.speakerlisturl}}">the submission page</a>.
         {% endif %}
       {% else %}
-        {% if pagedata.callforspeakersenddate > TodayDate %}
+        {% if pagedata.callforspeakersurl > '' %}
         <p>You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
       {% endif %}
        </p>
