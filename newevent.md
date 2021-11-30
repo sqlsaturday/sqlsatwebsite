@@ -4,29 +4,27 @@ title: New Event Resources
 permalink: /newevent/
 ---
 
-This page is designed to help you setup and request a new SQLSaturday event. As with the rest of the site, this is a work in progress and under construction.
-
-![Under Construction](assets/img/Page_Under_Construction.png)
-
-There are a few simple steps to get your event set up on the site:
+This page is designed to help you setup and request a new SQLSaturday event. There are a few simple steps to get your event set up on the site:
 
 - Gather information about the event (see our checklist below)
 - Submit this to this site
-- Sign the contract for using the SQLSaturday name
+- Sign the contract for using the SQLSaturday brand
 
 That's it. Once you have the signed agreement and the information submitted, we will update this site with your event.
 
-Note that the contract is a temporary one with Redgate Software until the SQLSaturday Foundation is legally established.
+## Naming
+
+We are flexible with naming. We will assign a number for tracking purposes, but feel free to name your event similar to the following names:
+
+- SQLSaturday Orlando 2021
+- SQLSaturday #1021 - Orlando
+- SQLSaturday Orlando 2021 - BI Edition
+- SQLSaturday Orlando Fall 2021
+- SQLSaturday Virtualization Edition 2021
 
 Numbers for new events are assigned on a first come basis once the event is added to the system. Once an administrator adds a pull request for your event, the number is assigned and used for your event. Future events will get subsequent numbers. 
 
-You can, however, name your event anything after the SQLSaturday #xxx part. For example if you want an edition, you can so something like:
-- SQLSaturday #2000 - Atlanta - BI Edition
-- SQLSaturday #2000 - Denver Azure Edition
-- Data Saturday #10/SQLSaturday #2000 - LA
-- SQLSaturday #2000 - Diversity and Inclusion Edition
-
-You can even theme these events without a city or physical location, such as the last item in the list above.
+You can even theme these events without a city or physical location, as the last example above.
 
 Once you have the information for your event, please [open an issue in the GitHub repository](https://github.com/sqlsaturday/sqlsatwebsite) with the title of your event. Provide the information in your issue from the checklist below.
 
