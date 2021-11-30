@@ -6,10 +6,7 @@ permalink: /coc/
 
 This is a basic code of conduct taken from Redgate Software. At a minimum, your event must adhere to this code of conduct. You can publish a more comprehensive CoC/AHP if you choose.
 
-![Under Construction](assets/img/Page_Under_Construction.png)
-
-Note: this policy is under construction and will change over time. Please feel free to submit suggestions to the organization using the contact items below.
-
+## Code of Conduct 
 SQLSaturday events seek to create a respectful, friendly, patient, considerate, and inclusive event experience, and an environment where all participants feel welcome.
 
 We therefore ask all participants to honor this Code of Conduct. Any kind of disruptive, intolerant or inappropriate behavior will not be tolerated, and we reserve the right to remove any participants who violate our Code of Conduct from the event.
