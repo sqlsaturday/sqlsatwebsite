@@ -12,6 +12,13 @@ This page is designed to help you setup and request a new SQLSaturday event. The
 
 That's it. Once you have the signed agreement and the information submitted, we will update this site with your event.
 
+Other items
+- Set up a [call for speakers](#cfp)
+- Set up [attendee registration](#reg)
+- Decide on [sponsorship plans](#sponsor) and reach out to vendors
+- Submit your event to the [Azure Data Community](http://aka.ms/datacommunityevents)
+- [Market to attendees](#marketing)
+
 ## Naming
 
 We are flexible with naming. We will assign a number for tracking purposes, but feel free to name your event similar to the following names:
