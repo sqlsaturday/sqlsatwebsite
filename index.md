@@ -21,7 +21,7 @@ These are the SQLSaturday events that have been scheduled.
       <tbody>
   {% assign TodayDate = site.time | date: '%s' %}
   {% assign future = 0 %}
-  {% for post in site.posts reversed%}
+  {% for post in site.posts reversed %}
   {% assign EventDate = post.date | date: '%s' %}
    {% if EventDate >= TodayDate %}
     {% assign future = 1 %}
