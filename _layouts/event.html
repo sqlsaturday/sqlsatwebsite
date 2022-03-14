@@ -31,12 +31,6 @@ layout: base
       <br/>
       <p><b>Event Date:</b> {{ eventdate | date_to_long_string }}
       </p>
-      <p>{{pagedata.description}}</p>
-
-      {% if pagedata.officialwebsite %}
-      <p>The official website is: <a href="{{ pagedata.officialwebsite }}">{{ pagedata.officialwebsite }}</a></p>
-      {% endif %}
-
     
       <p>This event is: 
          {% if pagedata.virtual == true %}
@@ -72,6 +66,13 @@ layout: base
         <p>There is a code of conduct for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a></a></p>
       {% else %}
       <p>There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a></a></p>
+      {% endif %}
+
+      <h2>Event Details</h2>
+      <p>{{pagedata.description}}</p>
+
+      {% if pagedata.officialwebsite %}
+      <p>The official website is: <a href="{{ pagedata.officialwebsite }}">{{ pagedata.officialwebsite }}</a></p>
       {% endif %}
 
       {% if pagedata.lunchcost %}
