@@ -84,6 +84,14 @@ layout: base
       {% endif %}
 
       <p align="center">
+        {% if pagedata.eventbriteembed %}
+          {{ pagedata.eventbriteembed }}
+        {% else %}
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+        {% endif %}
+      </p>
+
+      <p align="center">
         {% if pagedata.eventlocation %}
         <a href="#location">Location</a> 
         &#x25CF 
