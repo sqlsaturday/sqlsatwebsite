@@ -74,6 +74,14 @@ layout: base
       <p>There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a></a></p>
       {% endif %}
 
+      {% if pagedata.lunchcost %}
+        <p><b>Lunch:</b> {{ pagedata.lunchcost }}</p>
+      {% endif %}
+
+      {% if pagedata.eventhotel %}
+        <p>{{ pagedata.eventhotel }}</p>
+      {% endif %}
+
       <p align="center">
         {% if pagedata.eventlocation %}
         <a href="#location">Location</a> 
