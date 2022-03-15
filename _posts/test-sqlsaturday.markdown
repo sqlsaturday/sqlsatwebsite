@@ -1,0 +1,10 @@
+---
+layout: event
+title: "SQL Saturday Jacksonville 2022 (#1022)"
+subtitle: ""
+tags: [Jacksonville, Florida, USA, physical, 2022]
+thumb: /assets/img/logos/Just_icon_Color_small.png
+comments: false
+data: testevent
+testevent: 1
+---
