@@ -245,8 +245,12 @@ layout: base
            {% if pagedata.sponsorscontacturl %}
              For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
            {% else %}
-             <p align="center"><a href="#contact">Contact the organizers</a> for information about sponsoring this event.</p>
-           {% endif %}                         
+             {% if pagedata.sponsorplan %}
+               There are <a href="#sponsorship">sponsorship plans available.</a>
+             {% else %}
+               <p align="center"><a href="#contact">Contact the organizers</a> for information about sponsoring this event.</p>
+               {% endif %}                         
+             {% endif %}                         
            </p>
         <p>&nbsp;</p>
 
