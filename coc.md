@@ -13,4 +13,4 @@ We therefore ask all participants to honor this Code of Conduct. Any kind of dis
 
 We do not tolerate any harassment or discrimination. Although this list cannot be exhaustive, we explicitly honor diversity in age, gender, gender identity or expression, culture, ethnicity, language, national origin, profession, race, religion, sexual orientation, socioeconomic status, physical and psychological ability, and technical ability.
 
-The organizer of this event will prioritize marginalized people's safety over privileged people's comfort. Please report any concerns, harassing behavior, suspicious, or disruptive activity to the event organizer or staff.
+The organizer of this event will prioritize marginalized people's safety over privileged people's comfort. Please report any concerns, harassing behavior, suspicious, or disruptive activity to the event organizer or staff and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a>
