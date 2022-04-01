@@ -309,13 +309,13 @@ layout: base
       <h2 align="center"><A name="speakers"></A>Speakers</h2>
       <p align="center">{{pagedata.speakertext}}</p>
       </p>
+      {% if pagedata.speakerlisturl %}
+        <p>Here is a list of speakers for this event:</p>
+         <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>
+      {% endif %}
       {% if pagedata.callforspeakers == false %}
-       <p>The call for speakers is now closed.
-       </p>
-        {% if pagedata.speakerlisturl %}
-         <p>Here is a list of speakers for this event:</p>
-          <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>
-        {% endif %}
+        <p>The call for speakers is now closed.
+        </p>
       {% else %}
         {% if pagedata.callforspeakersurl > '' %}
         <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
