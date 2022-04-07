@@ -12,7 +12,7 @@ While these events were originally intended to support the SQL Server platform a
 
 All of these events are the result of many organizers, volunteers, and speakers that have donated time and resources to ensure their local events would be a success. SQLSaturday could not succeed without their efforts.
 
-Read more about the [history](#history), [milestones](#milestone), and [speakers that have been to over 100 events](#centurion) of the franchise. You can also learn more about the [foundation](/sql-saturday-website/foundation) that manages the current brand.
+Read more about the [history](#history) and [milestones](#milestone) of the franchise. You can also learn more about the [foundation](/sql-saturday-website/foundation) that manages the current brand.
 
 ## <a name="history"></a>History
 
@@ -74,15 +74,6 @@ These are some of the milestones throughout the history of the franchise. If you
 - [SQLSaturday #800 - Atlanta - BI Edition 2018](/2018-09-22-SQLSat-0800/)
 - [SQLSaturday #900 - Vitoria 2019](/2019-08-24-SQLSat-0900/)
 - [SQLSaturday #1000 - Oregon Virtual 2020](/2020-10-24-SQLSat-1000/)
-
-### <a name="centurion"></a>Centurion Speakers
-
-These are the speakers who have spoken at more than 100 events.
-
-- [Kevin Boles - 133 Events](https://twitter.com/thesqlguru)
-- [Kevin Feasel - 108 Events](https://twitter.com/feaselkl)
-- [Janice Griffin - 105 Events](https://twitter.com/doboutanything)
-- [Rob Volk - 101 Events](https://twitter.com/sql_r)
 
 ### Feedback
 If you notice anything here needing correction, please contact the webmaster at this domain. Contact information is listed below.

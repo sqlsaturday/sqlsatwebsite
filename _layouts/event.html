@@ -29,7 +29,7 @@ layout: base
         <i>{{pagedata.logocredit}}</i>
       {% endif %}
       <br/>
-      <p><b>Event Date:</b> {{ eventdate | date_to_long_string }}
+      <p><b><A href="top">Event Date</A>:</b> {{ eventdate | date_to_long_string }}
       </p>
     
       <p>This event is: 
@@ -62,34 +62,12 @@ layout: base
           {{ pagedata.countdownscript }}
       {% endif %}
 
-      {% if pagedata.cocurl %}
-        <p>There is a code of conduct for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a></a></p>
-      {% else %}
-      <p>There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a></a></p>
-      {% endif %}
-
-      <h2>Event Details</h2>
-      <p>{{pagedata.description}}</p>
-
-      {% if pagedata.officialwebsite %}
-      <p>The official website is: <a href="{{ pagedata.officialwebsite }}">{{ pagedata.officialwebsite }}</a></p>
-      {% endif %}
-
-      {% if pagedata.lunchcost %}
-        <p><b>Lunch:</b> {{ pagedata.lunchcost }}</p>
-      {% endif %}
-
-      {% if pagedata.eventhotel %}
-        <p>{{ pagedata.eventhotel }}</p>
-      {% endif %}
-
-      <p align="center">
-        {% if pagedata.eventbriteembed %}
-          {{ pagedata.eventbriteembed }}
-        {% else %}
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
-        {% endif %}
-      </p>
+      <p>{% if pagedata.cocurl %}
+            This event has its own <a href="{{ pagedata.cocurl }}">code of conduct</a> that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>.
+         {% else %}
+           There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>
+         {% endif %}
+       If you need to report a Code of Conduct violation, please contact the organizers and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a></p>
 
       <p align="center">
         {% if pagedata.eventlocation %}
@@ -157,6 +135,30 @@ layout: base
      {% endif %}
      </p>
 
+     <h2>Event Details</h2>
+      <p>{{pagedata.description}}</p>
+
+      {% if pagedata.officialwebsite %}
+      <p>The official website is: <a href="{{ pagedata.officialwebsite }}">{{ pagedata.officialwebsite }}</a></p>
+      {% endif %}
+
+      {% if pagedata.lunchcost %}
+        <p><b>Lunch:</b> {{ pagedata.lunchcost }}</p>
+      {% endif %}
+
+      {% if pagedata.eventhotel %}
+        <p>{{ pagedata.eventhotel }}</p>
+      {% endif %}
+
+      <p align="center">
+        {% if pagedata.eventbriteembed %}
+          {{ pagedata.eventbriteembed }}
+        {% else %}
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+        {% endif %}
+      </p>
+
+ 
       <!-- Location for event -->
       {% if pagedata.eventlocation %}
       <h3><a name="location"></a>Location</h3>
@@ -171,7 +173,7 @@ layout: base
       {% if pagedata.googlemapurl %}
       <iframe src="{{pagedata.googlemapurl}}"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <p>&nbsp;</p>
-      <p>&nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
       {% endif %}
    
       <!-- Sponsors -->
@@ -245,10 +247,15 @@ layout: base
            {% if pagedata.sponsorscontacturl %}
              For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
            {% else %}
-             <p align="center"><a href="#contact">Contact the organizers</a> for information about sponsoring this event.</p>
+             {% if pagedata.sponsorplan %}
+               There are <a href="#sponsorship">sponsorship plans available.</a>
+             {% else %}
+               <p align="center"><a href="#contact">Contact the organizers</a> for information about sponsoring this event.</p>
+             {% endif %}                         
            {% endif %}                         
            </p>
         <p>&nbsp;</p>
+        <p><a href="#top">Return to the top of the page</a></p>
 
       <!-- Rooms -->
       <h2 align="center"><A name="rooms"></A>Rooms</h2>
@@ -264,6 +271,7 @@ layout: base
         <p style="text-align: center;">The rooms are not available for this event.</p>
       {% endif %}
       <p> &nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
 
       <!-- Schedule -->
           <h2 align="center"><A name="schedule"></A>Schedule</h2>
@@ -291,6 +299,7 @@ layout: base
               {% endif %}
             {% endif %}
             <p>&nbsp;</p>
+            <p><a href="#top">Return to the top of the page</a></p>
       
 
 
@@ -300,12 +309,13 @@ layout: base
       <h2 align="center"><A name="speakers"></A>Speakers</h2>
       <p align="center">{{pagedata.speakertext}}</p>
       </p>
+      {% if pagedata.speakerlisturl %}
+        <p>Here is a list of speakers for this event:</p>
+         <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>
+      {% endif %}
       {% if pagedata.callforspeakers == false %}
-       <p>The call for speakers is now closed.
-       </p>
-        {% if pagedata.speakerlisturl %}
-          You can see a list of the speakers on <a href="{{pagedata.speakerlisturl}}">the submission page</a>.
-        {% endif %}
+        <p>The call for speakers is now closed.
+        </p>
       {% else %}
         {% if pagedata.callforspeakersurl > '' %}
         <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
