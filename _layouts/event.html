@@ -79,7 +79,7 @@ layout: base
         <a href="#rooms">Rooms</a> 
         &#x25CF 
         {% if pagedata.precons %}
-        <a href="#precon">Pre-con Talks</a> 
+        <a href="#precon">Pre-cons</a> 
         &#x25CF 
         {% endif %}
         <a href="#schedule">Schedule</a> 
@@ -289,7 +289,7 @@ layout: base
               The schedule shown below is updated by Sessionize to match your computer's time zone setting.
             </p>
             <p>
-              <script type='text/javascript' src='{{pagedata.scheduleurl}}'></script>
+              <iframe frameborder="0" STYLE="width: 100%" SRCDOC="<script type='text/javascript' src='{{pagedata.scheduleurl}}'></script>"></iframe>
             </p>
             {% else %}
               <p style="text-align: center;">
