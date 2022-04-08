@@ -55,7 +55,9 @@ layout: base
         {% if pagedata.eventbriteembed %}
           {{ pagedata.eventbriteembed }}
         {% else %}
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+          {% if pagedata.registrationurl %}
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>            
+          {% endif %}
         {% endif %}
       </p>
       {% if pagedata.eventcountdown %}
@@ -158,7 +160,9 @@ layout: base
         {% if pagedata.eventbriteembed %}
           {{ pagedata.eventbriteembed }}
         {% else %}
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+          {% if pagedata.registrationurl %}
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+          {% endif %}
         {% endif %}
       </p>
 
