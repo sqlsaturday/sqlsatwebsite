@@ -243,8 +243,9 @@ layout: base
             <p>
               The schedule shown below is updated by Sessionize to match your computer's time zone setting.
             </p>
-            <p align="center">
-              <script type='text/javascript' src='{{pagedata.scheduleurl}}'></script>
+            <p>
+              <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+              </iframe>
             </p>
             {% else %}
               <p style="text-align: center;">
