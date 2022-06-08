@@ -191,70 +191,17 @@ layout: base
       <!-- Sponsors -->
       <h2 align="center"><A name="sponsor"></A>Please Visit Our Sponsors</h2>
       <p>&nbsp;</p>
-      {% if pagedata.sponsorcarousel %}
-        <div id="{{ include.name }}" class="carousel slide" data-ride="carousel">
-  
-          <ol class="carousel-indicators">
-           {% for picture in pagedata.sponsors %}
-           {% if forloop.first == true %}
-             <li data-target=”#{{ include.name }}” data-slide-to=”0" class=”active”></li>
-           {% else %}
-             <li data-target=”#{{ include.name }}” data-slide-to=”{{ forloop.index0 }}”></li>
-           {% endif %}
-           {% endfor %}
-           </ol>  <div class=”carousel-inner” role=”listbox”>
-            {% for picture in pagedata.sponsors %}
-              {% if forloop.first == true %}
-                <div class=”item active”>
-                  {% if picture.name %}
-                    <a href="{{ sponsor.link }}">
-                    <img src=”{{ picture.image }}” alt=”{{ picture.name }}”>
-                    </a>
-                  {% else %}
-                    <a href="{{ sponsor.link }}">
-                     <img src=”{{ picture.image }}”>
-                    </a>
-                  {% endif %}
-                  {% if picture.caption %}
-                    <div class=”carousel-caption”>
-                      {{ picture.caption }}
-                    </div>
-                  {% endif %}
-                </div>
-              {% else %}
-                <div class=”item”>
-                  {% if sponsor.name %}
-                    <img src=”{{ picture.image }}” alt=”{{ picture.name }}”>
-                  {% else %}
-                    <img src=”{{ picture.image }}”>
-                  {% endif %}
-                  {% if picture.caption %}
-                    <div class=”carousel-caption”>
-                      {{ picture.caption }}
-                    </div>
-                  {% endif %}
-                </div>
-              {% endif %}
-            {% endfor %}
-         </div>
-         <a class=”left carousel-control” href=”#{{ include.name }}” role=”button” data-slide=”prev”>
-         <span class=”glyphicon glyphicon-chevron-left” aria-hidden=”true”></span>
-         <span class=”sr-only”>Previous</span>
-         </a>
-         <a class=”right carousel-control” href=”#{{ include.name }}” role=”button” data-slide=”next”>
-        <span class=”glyphicon glyphicon-chevron-right” aria-hidden=”true”></span>
-         <span class=”sr-only”>Next</span>
-         </a>
-        </div>
-      {% else %}
         {% for sponsor in pagedata.sponsors %}
         <p align="center">
           <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
-          <img src="{{ sponsor.image }}" height="{{ sponsor.height }}">
+          <img src="{{ sponsor.image }}" 
+          {% if sponsor.height %} 
+            height="{{ sponsor.height }}"
+          {% endif %}
+          >
           </a>
         </p>
         {% endfor %}
-      {% endif %}
         <p>
            {% if pagedata.sponsorscontacturl %}
              For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
@@ -296,8 +243,9 @@ layout: base
             <p>
               The schedule shown below is updated by Sessionize to match your computer's time zone setting.
             </p>
-            <p align="center">
-              <script type='text/javascript' src='{{pagedata.scheduleurl}}'></script>
+            <p>
+              <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+              </iframe>
             </p>
             {% else %}
               <p style="text-align: center;">
