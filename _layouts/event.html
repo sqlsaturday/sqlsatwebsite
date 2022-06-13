@@ -194,11 +194,7 @@ layout: base
         {% for sponsor in pagedata.sponsors %}
         <p align="center">
           <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
-          <img src="{{ sponsor.image }}" 
-          {% if sponsor.height %} 
-            height="{{ sponsor.height }}"
-          {% endif %}
-          >
+          <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} height="{{ sponsor.width }}" {% endif %}>
           </a>
         </p>
         {% endfor %}
