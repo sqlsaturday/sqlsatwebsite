@@ -190,12 +190,10 @@ layout: base
       <div class="container container-lg">
       <h2 align="center"><A name="sponsor"></A>Please Visit Our Sponsors</h2>
         {% for sponsor in pagedata.sponsors %}
-        <p align="center">
-          {% if sponsor.type %} <h3>{{ sponsor.type }} Sponsor</h3> {% endif %}<br/>
-          <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
-          <img src="{{ sponsor.image }}" 
-          {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %}
-          {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} >
+          {% if sponsor.type %} <h3 align="center">{{ sponsor.type }} Sponsor</h3> {% endif %}
+          <p align="center">
+            <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
+          <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} >
           </a>
         </p>
         {% endfor %}
