@@ -6,11 +6,6 @@ layout: base
 
 {% include header.html type="event" %}
 
-<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
-  <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
-
-
       {% if page.before-content %}
         <div class="before-content">
           {% for file in page.before-content %}
@@ -19,6 +14,7 @@ layout: base
         </div>
       {% endif %}
 
+    <div class="container container-sm">
     <!-- Event -->
       {% assign eventdate = pagedata.date %}
       {% assign TodayDate = site.time | date: '%s' %}
@@ -94,10 +90,11 @@ layout: base
         &#x25CF 
         <a href="#contact">Contact</a>
       </p>
-
+    </div>
  
 
      <!-- Social -->
+     <div class="container container-md">
      <p style="text-align: center;">
      {% if pagedata.social.twitter %}
        <a href="https://www.twitter.com/{{ pagedata.social.twitter }}" target="_blank"
@@ -180,23 +177,24 @@ layout: base
       </p>
       {% endif %}
       {% if pagedata.eventlocationurl %}
-        <a href="{{pagedata.eventlocationurl}}">{{pagedata.eventlocationurl}}</a>
+        <p><a href="{{pagedata.eventlocationurl}}">{{pagedata.eventlocationurl}}</a></p>
       {% endif %}
       {% if pagedata.googlemapurl %}
       <iframe src="{{pagedata.googlemapurl}}"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <p>&nbsp;</p>
       <p><a href="#top">Return to the top of the page</a></p>
       {% endif %}
-   
+    </div>
+
       <!-- Sponsors -->
+      <div class="container container-lg">
       <h2 align="center"><A name="sponsor"></A>Please Visit Our Sponsors</h2>
-      <p>&nbsp;</p>
         {% for sponsor in pagedata.sponsors %}
-        {% if sponsor.type %} <h3 align="center">{{ sponsor.type }} Sponsor</h3> {% endif %}
-        <p align="center">
-          <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
-          <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} height="{{ sponsor.width }}" {% endif %}>
-          </a>
+          {% if sponsor.type %} <h3 align="center">{{ sponsor.type }} Sponsor</h3> {% endif %}
+          <p align="center">
+            <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
+          <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} >
+          </a><br/>
         </p>
         {% endfor %}
         <p>
@@ -212,8 +210,10 @@ layout: base
            </p>
         <p>&nbsp;</p>
         <p><a href="#top">Return to the top of the page</a></p>
+      </div>
 
       <!-- Rooms -->
+      <div class="container container-md">
       <h2 align="center"><A name="rooms"></A>Rooms</h2>
       {% if pagedata.join.description %}
         <p> {{pagedata.join.description}}
@@ -228,9 +228,11 @@ layout: base
       {% endif %}
       <p> &nbsp;</p>
       <p><a href="#top">Return to the top of the page</a></p>
+      </div>
 
       <!-- Schedule -->
-          <h2 align="center"><A name="schedule"></A>Schedule</h2>
+      <div class="container container-xxl">
+      <h2 align="center"><A name="schedule"></A>Schedule</h2>
             {% if pagedata.scheduleurl%}
                 {% if pagedata.scheduletimezone %}
                   <p>
@@ -257,11 +259,12 @@ layout: base
             <p>&nbsp;</p>
             <p><a href="#top">Return to the top of the page</a></p>
       
-
+      </div>
 
 
       <!-- Speakers -->
       <div id="speakers">
+      <div class="container container-lg">
       <h2 align="center"><A name="speakers"></A>Speakers</h2>
       <p align="center">{{pagedata.speakertext}}</p>
       </p>
@@ -283,11 +286,12 @@ layout: base
       {% endif %}                         
       </div>
       <p>&nbsp;</p>
-      <p>&nbsp;</p>
-  
+    </div>
+
       <!-- Volunteers -->
       <div id="volunters">
-        <h2 align="center"><A name="volunteer"></A>Volunteers</h2>
+      <div class="container container-md">
+      <h2 align="center"><A name="volunteer"></A>Volunteers</h2>
         {% if pagedata.volunteers.description %}
         <p>
          {{pagedata.volunteers.description}}
@@ -300,6 +304,7 @@ layout: base
           {% endif %}                         
         <p>&nbsp;</p>
         <p>&nbsp;</p>
+      </div>
       </div>
 
       <!-- Contact -->
@@ -331,12 +336,13 @@ layout: base
             <p>&nbsp;</p>
 
       <!-- Sponsorship plan -->
-      <div class="container">
+      <div class="container container-lg">
         <h2 align="center"><A name="sponsorship"></A>Sponsorship Plans</h2>
         {% if pagedata.sponsorplan %}
           {{ pagedata.sponsorplan }}
         {% endif %}
       </div>
+
       <p>&nbsp;</p>
 
         <br/>
@@ -380,6 +386,3 @@ layout: base
         {% endif %}
       </ul>
       {% include comments.html %}
-    </div>
-  </div>
-</div>
