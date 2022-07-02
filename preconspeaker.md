@@ -16,7 +16,8 @@ Here are speakers that organizers can contact. Please do not email a large group
 
 ### Steve Jones
 Contact: DM on Twitter at [@way0utwest](https://twitter.com/way0utwest)
-Note: Please don't contact me unless you cannot find other speakers. I rarely deliver precons anymore.
+
+**Note**: Please don't contact me unless you cannot find other speakers. I rarely deliver precons anymore.
 
 Precons
 - Learn Database DevOps With Redgate
