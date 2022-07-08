@@ -76,8 +76,10 @@ layout: base
         {% endif %}
         <a href="#sponsor">Sponsors</a> 
         &#x25CF 
+        {% if pagedata.usingrooms %}
         <a href="#rooms">Rooms</a> 
         &#x25CF 
+        {% endif %}
         {% if pagedata.precons %}
         <a href="#precon">Pre-cons</a> 
         &#x25CF 
@@ -211,6 +213,20 @@ layout: base
         <p>&nbsp;</p>
         <p><a href="#top">Return to the top of the page</a></p>
       </div>
+
+      <!-- Precons -->
+      {% if pagedata.precons  %}
+      <div class="container container-md">
+      <h2 align="center"><A name="precon"></A>Precons</h2>
+      {% if pagedata.precondetail %}
+        {{pagedata.precondetail}}
+        {% else %}
+        <p style="text-align: center;">Precon information coming soon.</p>
+      {% endif %}
+      <p> &nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
+      </div>
+      {% endif %}
 
       <!-- Rooms -->
       {% if pagedata.usingrooms %}
