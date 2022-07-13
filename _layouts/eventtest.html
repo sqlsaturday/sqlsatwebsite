@@ -14,15 +14,16 @@ layout: base
         </div>
       {% endif %}
 
-    <div class="container container-sm">
+    <div class="container container-md">
     <!-- Event -->
       {% assign eventdate = pagedata.date %}
       {% assign TodayDate = site.time | date: '%s' %}
       {% if pagedata.logo %}
-        <img src="{{pagedata.logo}}"/>
-      {% endif %}
-      {% if pagedata.logocredit %}
-        <i>{{pagedata.logocredit}}</i>
+        <p align="center"><img src="{{pagedata.logo}}"/>
+        {% if pagedata.logocredit %}
+          <br/><i>{{pagedata.logocredit}}</i>
+        {% endif %}
+        </p>
       {% endif %}
       <br/>
       <p><b><A href="top">Event Date</A>:</b> {{ eventdate | date_to_long_string }}
