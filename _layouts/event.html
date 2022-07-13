@@ -19,12 +19,14 @@ layout: base
       {% assign eventdate = pagedata.date %}
       {% assign TodayDate = site.time | date: '%s' %}
       {% if pagedata.logo %}
-        <img src="{{pagedata.logo}}"/>
-      {% endif %}
-      {% if pagedata.logocredit %}
-        <i>{{pagedata.logocredit}}</i>
+        <p align="center"><img src="{{pagedata.logo}}"/>
+        {% if pagedata.logocredit %}
+          <br/><i>{{pagedata.logocredit}}</i>
+        {% endif %}
+        </p>
       {% endif %}
       <br/>
+        
       <p><b><A href="top">Event Date</A>:</b> {{ eventdate | date_to_long_string }}
       </p>
     
@@ -36,7 +38,7 @@ layout: base
            {% if pagedata.virtual == true %}
            , 
            {% endif %}
-           Live and in-person
+           in-person
            {% endif %}
          {% if pagedata.hybrid == true %}
          Hybrid (streamed and live)
@@ -52,7 +54,7 @@ layout: base
           {{ pagedata.eventbriteembed }}
         {% else %}
           {% if pagedata.registrationurl %}
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>            
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}" target="_blank" rel="noopener noreferrer">Register now</a>            
             {% else %}
             Registration coming soon
           {% endif %}
@@ -76,8 +78,10 @@ layout: base
         {% endif %}
         <a href="#sponsor">Sponsors</a> 
         &#x25CF 
+        {% if pagedata.usingrooms %}
         <a href="#rooms">Rooms</a> 
         &#x25CF 
+        {% endif %}
         {% if pagedata.precons %}
         <a href="#precon">Pre-cons</a> 
         &#x25CF 
@@ -160,7 +164,7 @@ layout: base
           {{ pagedata.eventbriteembed }}
         {% else %}
           {% if pagedata.registrationurl %}
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}" target="_blank" rel="noopener noreferrer">Register now</a>
           {% else %}
             Registration coming soon
           {% endif %}
@@ -199,7 +203,7 @@ layout: base
         {% endfor %}
         <p>
            {% if pagedata.sponsorscontacturl %}
-             For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
+             For sponsor information, follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
            {% else %}
              {% if pagedata.sponsorplan %}
                There are <a href="#sponsorship">sponsorship plans available.</a>
@@ -212,7 +216,22 @@ layout: base
         <p><a href="#top">Return to the top of the page</a></p>
       </div>
 
+      <!-- Precons -->
+      {% if pagedata.precons  %}
+      <div class="container container-md">
+      <h2 align="center"><A name="precon"></A>Precons</h2>
+      {% if pagedata.precondetail %}
+        {{pagedata.precondetail}}
+      {% else %}
+        <p style="text-align: center;">Precon information coming soon.</p>
+      {% endif %}
+      <p> &nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
+      </div>
+      {% endif %}
+
       <!-- Rooms -->
+      {% if pagedata.usingrooms %}
       <div class="container container-md">
       <h2 align="center"><A name="rooms"></A>Rooms</h2>
       {% if pagedata.join.description %}
@@ -229,6 +248,7 @@ layout: base
       <p> &nbsp;</p>
       <p><a href="#top">Return to the top of the page</a></p>
       </div>
+      {% endif %}
 
       <!-- Schedule -->
       <div class="container container-xxl">
@@ -280,7 +300,7 @@ layout: base
         <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
         </p>
         <p align="center">
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}">Submit your session</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}" target="_blank" rel="noopener noreferrer">Submit your session</a>
         </p>
          {% endif %}                         
       {% endif %}                         
