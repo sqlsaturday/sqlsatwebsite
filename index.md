@@ -22,17 +22,17 @@ These are the SQLSaturday events that have been scheduled.
   {% assign TodayDate = site.time | date: '%s' %}
   {% assign future = 0 %}
   {% for post in site.posts reversed %}
-  {% assign EventDate = post.date | date: '%s' %}
-   {% if post.testevent != 1 %}
-     {% if EventDate >= TodayDate %}
-      {% assign future = 1 %}
-      <tr>
-        <td><img src="{{ post.thumb }}"></td>
-        <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-        </td>
-        <td>{{post.date | date_to_long_string }}</td>
-      </tr>
-     {% endif %}
+    {% assign EventDate = post.date | date: '%s' %}
+    {% if post.testevent != 1 %}
+      {% if EventDate >= TodayDate %}
+        {% assign future = 1 %}
+        <tr>
+          <td><img src="{{ post.thumb }}"></td>
+          <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+          </td>
+          <td>{{post.date | date_to_long_string }}</td>
+        </tr>
+      {% endif %}
    {% endif %}
   {% endfor %}
   {% if future == 0 %}
