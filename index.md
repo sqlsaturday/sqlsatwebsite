@@ -8,7 +8,7 @@ If you want to know more about events from an organizer, speaker, sponsor, or at
 
 ## <a name="events"></a>Events
 
-These are the SQLSaturday events that have been scheduled.
+These are the SQLSaturday events that are currently scheduled. If you would like to organize or schedule an event, please visit our [running a new event](http://beta.sqlsaturday.com/newevent/) page.
 
 <table cellspacing=0 class="table table-hover table-borderless table-sortable mt-3" width="100%">
   <thead>
@@ -22,17 +22,17 @@ These are the SQLSaturday events that have been scheduled.
   {% assign TodayDate = site.time | date: '%s' %}
   {% assign future = 0 %}
   {% for post in site.posts reversed %}
-  {% assign EventDate = post.date | date: '%s' %}
-   {% if post.testevent != 1 %}
-     {% if EventDate >= TodayDate %}
-      {% assign future = 1 %}
-      <tr>
-        <td><img src="{{ post.thumb }}"></td>
-        <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-        </td>
-        <td>{{post.date | date_to_long_string }}</td>
-      </tr>
-     {% endif %}
+    {% assign EventDate = post.date | date: '%s' %}
+    {% if post.testevent != 1 %}
+      {% if EventDate >= TodayDate %}
+        {% assign future = 1 %}
+        <tr>
+          <td><img src="{{ post.thumb }}"></td>
+          <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+          </td>
+          <td>{{post.date | date: "%b %d %Y" }}</td>
+        </tr>
+      {% endif %}
    {% endif %}
   {% endfor %}
   {% if future == 0 %}
