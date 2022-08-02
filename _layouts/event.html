@@ -336,17 +336,18 @@ layout: base
               <ul>
               {% for organizer in pagedata.organizers %}   
                 <li>{{ organizer.name }} - Contact:
-                  (
+                  (<ul>
                   {% if organizer.email %}
-                  <a href="mailto:{{organizer.email}}">email</a> &#x25CF
+                  <li><a href="mailto:{{organizer.email}}">email</a></li>
                   {% endif %}
                   {% if organizer.twitter %}
-                  <a href="https://www.twitter.com/{{organizer.twitter}}">@{{organizer.twitter}}</a> &#x25CF
+                  <li><a href="https://www.twitter.com/{{organizer.twitter}}">@{{organizer.twitter}}</a></li>
                   {% endif %}
                   {% if organizer.url %}
-                  <a href="{{organizer.url}}">{{organizer.url}}</a>
+                  <li><a href="{{organizer.url}}">{{organizer.url}}</a></li>
                   {% endif %}
                   )
+                </ul>
                 </li>
               {% endfor %}
               </ul>
