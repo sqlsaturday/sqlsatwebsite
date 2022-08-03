@@ -3,6 +3,9 @@ layout: page
 title: New Event Resources
 permalink: /newevent/
 ---
+If you would like to organize a SQL Saturday branded event (or co-branded event), we have two rules:
+- You must have a Code of Conduct and enforce it (you can use <a href="/coc/">ours</a> or your own.)
+- You must have a free option for attendees (you can charge for lunch, but people can opt out if they choose)
 
 This page is designed to help you setup and request a new SQLSaturday event. There are a few simple steps to get your event set up on the site:
 
@@ -10,16 +13,18 @@ This page is designed to help you setup and request a new SQLSaturday event. The
 - Submit this to this site
 - Sign the contract for using the SQLSaturday brand
 
-That's it. Once you have the signed agreement and the information submitted, we will update this site with your event.
+That's it. Once you have the signed agreement and the information submitted, we will update this site with your event. We are happy to help submit your CFS and send emails/social messages marketing the event.
 
-Other items
+More details below:
+- [Event Naming](naming)
+- [Event Checklist](#checklist)
 - Set up a [call for speakers](#cfp)
 - Set up [attendee registration](#reg)
 - Decide on [sponsorship plans](#sponsor) and reach out to vendors
 - Submit your event to the [Azure Data Community](http://aka.ms/datacommunityevents)
 - [Market to attendees](#marketing)
 
-## Naming
+## <A name="naming">Naming</a>
 
 We are flexible with naming. We will assign a number for tracking purposes, but feel free to name your event similar to the following names:
 
