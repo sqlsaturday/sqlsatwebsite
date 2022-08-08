@@ -340,7 +340,7 @@ layout: base
               <ul>
               {% for organizer in pagedata.organizers %}   
                 <li>{{ organizer.name }} - Contact:
-                  (<ul>
+                  <ul>
                   {% if organizer.email %}
                   <li><a href="mailto:{{organizer.email}}">email</a></li>
                   {% endif %}
@@ -350,7 +350,6 @@ layout: base
                   {% if organizer.url %}
                   <li><a href="{{organizer.url}}">{{organizer.url}}</a></li>
                   {% endif %}
-                  )
                 </ul>
                 </li>
               {% endfor %}
