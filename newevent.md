@@ -23,6 +23,7 @@ More details below:
 - Decide on [sponsorship plans](#sponsor) and reach out to vendors
 - Submit your event to the [Azure Data Community](http://aka.ms/datacommunityevents)
 - [Market to attendees](#marketing)
+- [Evalations](/evals/)
 
 ## <A name="naming">Naming</a>
 
