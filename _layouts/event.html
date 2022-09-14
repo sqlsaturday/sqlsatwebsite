@@ -366,6 +366,21 @@ layout: base
             <p><a href="#top">Return to the top of the page</a></p>
             </div>
 
+      <!-- Downloads -->
+      {% if pagedata.downloads  %}
+      <div class="container container-md">
+      <h2 align="center"><A name="downloads"></A>Downloads</h2>
+      <p>Here are the downloads that are available for this event:</p>
+      <ul>
+        {% for item in pagedata.downloads %}   
+        <li><a href="/assets/event/{{pagedata.eventnumber}}/{{ item.url }}">{{ item.name }}</a></li>
+      {% endfor %}
+      </ul>
+      <p> &nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
+      </div>
+      {% endif %}
+
       <!-- Previous Events -->
       {% if pagedata.primarytag  %}
       <div class="container container-md">
