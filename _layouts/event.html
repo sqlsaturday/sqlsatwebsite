@@ -83,6 +83,10 @@ layout: base
         <a href="#volunteer">Volunteers</a> 
         &#x25CF 
         <a href="#contact">Contact</a>
+        {% if pagedata.primarytag %}
+        <a href="#previous">Previous Events</a> 
+        &#x25CF 
+        {% endif %}
       </p>
       {% if pagedata.eventcountdown %}
           {{ pagedata.countdownscript }}
@@ -361,6 +365,16 @@ layout: base
             <p>&nbsp;</p>
             <p><a href="#top">Return to the top of the page</a></p>
             </div>
+
+      <!-- Previous Events -->
+      {% if pagedata.primarytag  %}
+      <div class="container container-md">
+      <h2 align="center"><A name="previous"></A>Previous Events</h2>
+      <p>You can see a list of previous events for this location at <a href="https://sqlsaturday.com/tags/#{{pagedata.primarytag}}">here</a>
+      <p> &nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
+      </div>
+      {% endif %}
 
       <!-- Sponsorship plan -->
       <div class="container container-lg">
