@@ -16,6 +16,7 @@ These are the SQLSaturday events that have been scheduled.
           <th scope="col"></th>
           <th scope="col">Event Name</th>
           <th scope="col">Date</th>
+          <th scope="col">Virtual Option</th>
         </tr>
       </thead>
       <tbody>
@@ -31,6 +32,10 @@ These are the SQLSaturday events that have been scheduled.
           <td>{{ post.previous }}</a>
           </td>
           <td>{{post.date | date_to_long_string }}</td>
+          <td>{% if post.virtual = 1 %}Yes
+               {% else %}&nbsp;
+               {% endif %}
+          </td>
         </tr>
       {% endif %}
    {% endif %}
