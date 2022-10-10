@@ -28,8 +28,8 @@ These are the SQLSaturday events that have been scheduled.
       {% if EventDate >= TodayDate %}
         {% assign future = 1 %}
         <tr>
-          <td>{{ page.path }} | {{ post.path }}</td>
-          <td>{{ post.previous }}</a>
+          <td><img src="{{ post.thumb }}"></td>
+          <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
           </td>
           <td>{{post.date | date_to_long_string }}</td>
           <td>{% if post.virtual == 1 %}Yes
