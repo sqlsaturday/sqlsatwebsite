@@ -8,8 +8,7 @@ If you want to know more about events from an organizer, speaker, sponsor, or at
 
 ## <a name="events"></a>Events
 
-These are the SQLSaturday events that are currently scheduled. 
-
+These are the SQLSaturday events that are currently scheduled. If you would like to organize or schedule an event, please visit our [running a new event](http://beta.sqlsaturday.com/newevent/) page.
 
 <table cellspacing=0 class="table table-hover table-borderless table-sortable mt-3" width="100%">
   <thead>

@@ -32,7 +32,7 @@ These are the SQLSaturday events that have been scheduled.
           <td>{{ post.previous }}</a>
           </td>
           <td>{{post.date | date_to_long_string }}</td>
-          <td>{% if post.virtual = 1 %}Yes
+          <td>{% if post.virtual == 1 %}Yes
                {% else %}&nbsp;
                {% endif %}
           </td>
