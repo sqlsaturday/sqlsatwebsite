@@ -268,18 +268,22 @@ layout: base
       <div class="container container-xxl">
       <h2 align="center"><A name="schedule"></A>Schedule</h2>
             {% if pagedata.scheduleurl%}
+              {% if pagedata.schedulehtml %}
+                {% pagedata.schedulehtml %}
+              {% else %}
                 {% if pagedata.scheduletimezone %}
                   <p>
                     Please note the event is taking place in {{pagedata.scheduletimezone}}
                  </p>
                 {% endif %}
-            <p>
-              The schedule shown below is updated by Sessionize to match your computer's time zone setting.
-            </p>
-            <p>
-              <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
-              </iframe>
-            </p>
+                <p>
+                The schedule shown below is updated by Sessionize to match your computer's time zone setting.
+                </p>
+                <p>
+                <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+                </iframe>
+                </p>
+              {% endif %}
             {% else %}
               <p style="text-align: center;">
                  The schedule has not been announced yet. 
