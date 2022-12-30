@@ -14,7 +14,7 @@ layout: base
         </div>
       {% endif %}
 
-    <div class="container container-md">
+    <div class="container container-sm">
     <!-- Event -->
       {% assign eventdate = pagedata.date %}
       {% assign TodayDate = site.time | date: '%s' %}
@@ -26,6 +26,7 @@ layout: base
         </p>
       {% endif %}
       <br/>
+        
       <p><b><A href="top">Event Date</A>:</b> {{ eventdate | date_to_long_string }}
       </p>
     
@@ -37,7 +38,7 @@ layout: base
            {% if pagedata.virtual == true %}
            , 
            {% endif %}
-           Live and in-person
+           in-person
            {% endif %}
          {% if pagedata.hybrid == true %}
          Hybrid (streamed and live)
@@ -53,14 +54,14 @@ layout: base
           {{ pagedata.eventbriteembed }}
         {% else %}
           {% if pagedata.registrationurl %}
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>            
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}" target="_blank" rel="noopener noreferrer">Register now</a>            
             {% else %}
             Registration coming soon
           {% endif %}
         {% endif %}
       </p>
-       <!-- TOC -->
-       <p align="center">
+      <!-- toc -->
+      <p align="center">
         {% if pagedata.eventlocation %}
         <a href="#location">Location</a> 
         &#x25CF 
@@ -68,8 +69,8 @@ layout: base
         <a href="#sponsor">Sponsors</a> 
         &#x25CF 
         {% if pagedata.usingrooms %}
-          <a href="#rooms">Rooms</a> 
-          &#x25CF 
+        <a href="#rooms">Rooms</a> 
+        &#x25CF 
         {% endif %}
         {% if pagedata.precons %}
         <a href="#precon">Pre-cons</a> 
@@ -82,20 +83,37 @@ layout: base
         <a href="#volunteer">Volunteers</a> 
         &#x25CF 
         <a href="#contact">Contact</a>
+        {% if pagedata.downloads %}
+          &#x25CF 
+          <a href="#downloads">Downloads</a> 
+        {% endif %}
+        {% if pagedata.downloads %}
+          &#x25CF 
+          <a href="#previous">Previous Events</a> 
+        {% endif %}
       </p>
-
       {% if pagedata.eventcountdown %}
           {{ pagedata.countdownscript }}
       {% endif %}
 
+      <!-- Code of Conduct -->
       <p>{% if pagedata.cocurl %}
             This event has its own <a href="{{ pagedata.cocurl }}">code of conduct</a> that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>.
-         {% else %}
+        {% else %}
            There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>
-         {% endif %}
-       If you need to report a Code of Conduct violation, please contact the organizers and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a></p>
+        {% endif %}
+        If you need to report a Code of Conduct violation, please contact the organizers and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a>
+      </p>
 
-    </div>
+      <!-- Data Privacy -->
+      <p>
+      {% if pagedata.dataprivacy %}
+            {{ pagedata.dataprivacy }}
+      {% else %}
+          This event adheres to the generic <a href="/data/">data privacy</a> policy.
+      {% endif %}
+      </p>
+</div>
  
 
      <!-- Social -->
@@ -157,6 +175,7 @@ layout: base
       {% endif %}
 
       {% if pagedata.eventhotel %}
+        <p><b>Event Hotel:</b></p>
         <p>{{ pagedata.eventhotel }}</p>
       {% endif %}
 
@@ -165,7 +184,7 @@ layout: base
           {{ pagedata.eventbriteembed }}
         {% else %}
           {% if pagedata.registrationurl %}
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}">Register now</a>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.registrationurl}}" target="_blank" rel="noopener noreferrer">Register now</a>
           {% else %}
             Registration coming soon
           {% endif %}
@@ -189,6 +208,10 @@ layout: base
       <p>&nbsp;</p>
       <p><a href="#top">Return to the top of the page</a></p>
       {% endif %}
+      {% if pagedata.parkingdesc %}
+        <h3><a name="parking"></a>Parking</h3>
+        <p>{{pagedata.parkingdesc}}</p>
+      {% endif %}
     </div>
 
       <!-- Sponsors -->
@@ -197,14 +220,14 @@ layout: base
         {% for sponsor in pagedata.sponsors %}
           {% if sponsor.type %} <h3 align="center">{{ sponsor.type }} Sponsor</h3> {% endif %}
           <p align="center">
-            <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.name }}">
-          <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} >
+            <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.alt }}">
+          <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} {% if sponsor.alt %} alt="{{ sponsor.alt }}" {% endif %} >
           </a><br/>
         </p>
         {% endfor %}
         <p>
            {% if pagedata.sponsorscontacturl %}
-             For sponsor information follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
+             For sponsor information, follow <a href="{{pagedata.sponsorscontacturl}}">this link</a>.
            {% else %}
              {% if pagedata.sponsorplan %}
                There are <a href="#sponsorship">sponsorship plans available.</a>
@@ -223,7 +246,7 @@ layout: base
       <h2 align="center"><A name="precon"></A>Precons</h2>
       {% if pagedata.precondetail %}
         {{pagedata.precondetail}}
-        {% else %}
+      {% else %}
         <p style="text-align: center;">Precon information coming soon.</p>
       {% endif %}
       <p> &nbsp;</p>
@@ -255,18 +278,22 @@ layout: base
       <div class="container container-xxl">
       <h2 align="center"><A name="schedule"></A>Schedule</h2>
             {% if pagedata.scheduleurl%}
+              {% if pagedata.schedulehtml %}
+                {{pagedata.schedulehtml}}
+              {% else %}
                 {% if pagedata.scheduletimezone %}
                   <p>
                     Please note the event is taking place in {{pagedata.scheduletimezone}}
                  </p>
                 {% endif %}
-            <p>
-              The schedule shown below is updated by Sessionize to match your computer's time zone setting.
-            </p>
-            <p>
-              <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<script type='text/javascript' src='{{pagedata.scheduleurl}}'></script>">
-              </iframe>
-            </p>
+                <p>
+                The schedule shown below is updated by Sessionize to match your computer's time zone setting.
+                </p>
+                <p>
+                <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+                </iframe>
+                </p>
+              {% endif %}
             {% else %}
               <p style="text-align: center;">
                  The schedule has not been announced yet. 
@@ -301,13 +328,14 @@ layout: base
         <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
         </p>
         <p align="center">
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}">Submit your session</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}" target="_blank" rel="noopener noreferrer">Submit your session</a>
         </p>
          {% endif %}                         
       {% endif %}                         
-      </div>
       <p>&nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
     </div>
+  </div>
 
       <!-- Volunteers -->
       <div id="volunters">
@@ -319,12 +347,12 @@ layout: base
        </p>
        {% endif %}                         
         {% if pagedata.volunteers.volunteerurl %}
-           <p style="text-align: center;">
-            <a href="{{pagedata.volunteers.volunteerurl}}">Volunteer information</a>.
+          <p align="center">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.volunteers.volunteerurl}}" target="_blank" rel="noopener noreferrer">Click to volunteer</a>
           </p>
           {% endif %}                         
         <p>&nbsp;</p>
-        <p>&nbsp;</p>
+        <p><a href="#top">Return to the top of the page</a></p>
       </div>
       </div>
 
@@ -335,17 +363,17 @@ layout: base
               <ul>
               {% for organizer in pagedata.organizers %}   
                 <li>{{ organizer.name }} - Contact:
-                  (
+                  <ul>
                   {% if organizer.email %}
-                  <a href="mailto:{{organizer.email}}">email</a> &#x25CF
+                  <li><a href="mailto:{{organizer.email}}">email</a></li>
                   {% endif %}
                   {% if organizer.twitter %}
-                  <a href="https://www.twitter.com/{{organizer.twitter}}">@{{organizer.twitter}}</a> &#x25CF
+                  <li><a href="https://www.twitter.com/{{organizer.twitter}}">@{{organizer.twitter}}</a></li>
                   {% endif %}
                   {% if organizer.url %}
-                  <a href="{{organizer.url}}">{{organizer.url}}</a>
+                  <li><a href="{{organizer.url}}">{{organizer.url}}</a></li>
                   {% endif %}
-                  )
+                </ul>
                 </li>
               {% endfor %}
               </ul>
@@ -353,8 +381,34 @@ layout: base
             {% if pagedata.organizers.twitter %}
             <p>Twitter: <a href="https://www.twitter.com/{{ pagedata.organizers.twitter }}">@{{ pagedata.organizers.twitter }}</a></p>
             {% endif %}
-            </div>
             <p>&nbsp;</p>
+            <p><a href="#top">Return to the top of the page</a></p>
+            </div>
+
+      <!-- Downloads -->
+      {% if pagedata.downloads  %}
+      <div class="container container-md">
+      <h2 align="center"><A name="downloads"></A>Downloads</h2>
+      <p>Here are the downloads that are available for this event:</p>
+      <ul>
+        {% for item in pagedata.downloads %}   
+        <li><a href="/assets/event/{{pagedata.eventnumber}}/{{ item.url }}">{{ item.name }}</a></li>
+      {% endfor %}
+      </ul>
+      <p> &nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
+      </div>
+      {% endif %}
+
+      <!-- Previous Events -->
+      {% if pagedata.primarytag  %}
+      <div class="container container-md">
+      <h2 align="center"><A name="previous"></A>Previous Events</h2>
+      <p>You can see a list of previous events for this location <a href="https://sqlsaturday.com/tags/#{{pagedata.primarytag}}">here</a>
+      <p> &nbsp;</p>
+      <p><a href="#top">Return to the top of the page</a></p>
+      </div>
+      {% endif %}
 
       <!-- Sponsorship plan -->
       <div class="container container-lg">
