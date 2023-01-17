@@ -15,6 +15,8 @@ This page is designed to help you setup and request a new SQLSaturday event. The
 
 That's it. Once you have the signed agreement and the information submitted, we will update this site with your event. We are happy to help submit your CFS and send emails/social messages marketing the event.
 
+[Branding and Image are available](https://blog.sqlsaturday.com/branding/)
+
 More details below:
 - [Event Naming](naming)
 - [Event Checklist](#checklist)

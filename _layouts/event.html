@@ -96,14 +96,30 @@ layout: base
           {{ pagedata.countdownscript }}
       {% endif %}
 
+      <!-- Code of Conduct -->
+      <h3>Code of Conduct</h3>
       <p>{% if pagedata.cocurl %}
             This event has its own <a href="{{ pagedata.cocurl }}">code of conduct</a> that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>.
-         {% else %}
-           There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>
-         {% endif %}
-       If you need to report a Code of Conduct violation, please contact the organizers and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a></p>
+        {% else %}
+          {% if pagedata.coctext %}
+          {{ pagedata.coctext }}
+          {% else %}
+            There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>
+           {% endif %}
+        {% endif %}
+        If you need to report a Code of Conduct violation, please contact the organizers and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a>
+      </p>
 
-    </div>
+      <!-- Data Privacy -->
+      <h3>Data Privacy</h3>
+      <p>
+      {% if pagedata.dataprivacy %}
+            {{ pagedata.dataprivacy }}
+      {% else %}
+          This event adheres to the generic <a href="/data/">data privacy</a> policy.
+      {% endif %}
+      </p>
+</div>
  
 
      <!-- Social -->
