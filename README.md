@@ -1,3 +1,3 @@
-# SQL Saturday Archive Website
+# SQL Saturday Website
 
-This is the archive repository for the SQLSaturday events that have completed. The URL for this archive is archive.sqlsaturday.com.
+This is the main repository for the SQLSaturday.com website.

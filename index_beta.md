@@ -2,13 +2,13 @@
 layout: home
 title: "SQLSaturday"
 ---
-Welcome to SQLSaturday, the data platform and SQL Server community franchise for technical events. We have a list of <a href="#events">upcoming events</a> below as well as <a href="#reserved">reserved dates</a>. There are also <a href="#other">other events</a> from different sources that are of interest to the data professional.
+Welcome to SQLSaturday, the data platform and SQL Server community franchise for technical events. We have a list of <a href="#events">upcoming events</a> below as well as <a href="#other">other events</a> from different sources that are of interest to the data professional.
 
 If you want to know more about events from an organizer, speaker, sponsor, or attendee standpoint, sign up for our [mailing list](http://eepurl.com/hwVBKn)
 
 ## <a name="events"></a>Events
 
-These are the SQLSaturday events that are currently scheduled. If you would like to organize or schedule an event, please visit our [running a new event](http://beta.sqlsaturday.com/newevent/) page.
+These are the SQLSaturday events that have been scheduled.
 
 <table cellspacing=0 class="table table-hover table-borderless table-sortable mt-3" width="100%">
   <thead>
@@ -16,6 +16,7 @@ These are the SQLSaturday events that are currently scheduled. If you would like
           <th scope="col"></th>
           <th scope="col">Event Name</th>
           <th scope="col">Date</th>
+          <th scope="col">Virtual Option</th>
         </tr>
       </thead>
       <tbody>
@@ -30,7 +31,11 @@ These are the SQLSaturday events that are currently scheduled. If you would like
           <td><img src="{{ post.thumb }}"></td>
           <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
           </td>
-          <td>{{post.date | date: "%b %d %Y" }}</td>
+          <td>{{post.date | date_to_long_string }}</td>
+          <td>{% if post.virtual == 1 %}Yes
+               {% else %}&nbsp;
+               {% endif %}
+          </td>
         </tr>
       {% endif %}
    {% endif %}
@@ -45,13 +50,6 @@ These are the SQLSaturday events that are currently scheduled. If you would like
   {% endif %}
   </tbody>
 </table>
-
-## <a name="reserved"></a>Reserved Dates
-
-The following dates are tentative for these cities, but they have asked to reserve the date:
-- Oct 7, 2023 - Orlando 2023
-- Oct 14, 2023 - Boston 2023
-- June 10, 2023 - Los Angeles 2023
 
 You can see completed events on the [Past Events](past) page.
 
