@@ -1,8 +1,8 @@
 ---
 layout: home
-title: "SQLSaturday"
+title: "SQLSaturday Archive"
 ---
-Welcome to SQLSaturday, the data platform and SQL Server community franchise for technical events. We have a list of <a href="#events">upcoming events</a> below as well as <a href="#reserved">reserved dates</a>. There are also <a href="#other">other events</a> from different sources that are of interest to the data professional.
+Welcome to the SQLSaturday archive. This is a site that holds the historical record of completed events. Current events are listed at [SQLSaturday.com](https://www.sqlsaturday.com).
 
 If you want to know more about events from an organizer, speaker, sponsor, or attendee standpoint, sign up for our [mailing list](http://eepurl.com/hwVBKn)
 
@@ -20,7 +20,7 @@ These are the SQLSaturday events that are currently scheduled. If you would like
       </thead>
       <tbody>
   {% assign TodayDate = site.time | date: '%s' %}
-  {% assign future = 0 %}
+  {% assign count = 1 %}
   {% for post in site.posts reversed %}
     {% assign EventDate = post.date | date: '%s' %}
     {% if post.testevent != 1 %}
@@ -34,52 +34,10 @@ These are the SQLSaturday events that are currently scheduled. If you would like
         </tr>
       {% endif %}
    {% endif %}
+   {% assign count = count + 1 %}
   {% endfor %}
-  {% if future == 0 %}
-    <tr>
-    <td><img src="/assets/img/logos/Just_icon_Color_small.png"></td>
-      <td>No future events scheduled at this time
-      </td>
-      <td>&nbsp;</td>
-    </tr>
-  {% endif %}
   </tbody>
 </table>
 
-## <a name="reserved"></a>Reserved Dates
-
-The following dates are tentative for these cities, but they have asked to reserve the date:
-- Oct 7, 2023 - Orlando 2023
-- Oct 14, 2023 - Boston 2023
-- June 10, 2023 - Los Angeles 2023
-
 You can see completed events on the [Past Events](past) page.
 
-## <a name="other"></a>Other Events
-
-Here are some other events that you might find interesting as a data professional:
-
-<table cellspacing=0 class="table table-hover table-borderless table-sortable mt-3" width="100%">
-  <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">Event Name</th>
-          <th scope="col">Date</th>
-        </tr>
-  </thead>
-  <tbody>
-        {% for block in site.data.otherevents.events %}
-        {% assign thumbnail = block.thumb %}
-        <tr>
-          <td>
-            {% if thumbnail %}
-              <img src="{{ block.thumb }}">
-            {% else %}
-               &nbsp;
-            {% endif %}
-          </td>
-          <th scope="col"><a href="{{ block.url }}">{{ block.title }}</a></th>
-          <th scope="col">{{ block.date }}</th>
-        </tr>
-        {% endfor %}
-  </tbody>
