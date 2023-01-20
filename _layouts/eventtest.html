@@ -101,7 +101,11 @@ layout: base
       <p>{% if pagedata.cocurl %}
             This event has its own <a href="{{ pagedata.cocurl }}">code of conduct</a> that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>.
         {% else %}
-           There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>
+          {% if pagedata.coctext %}
+          {{ pagedata.coctext }}
+          {% else %}
+            There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>
+           {% endif %}
         {% endif %}
         If you need to report a Code of Conduct violation, please contact the organizers and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a>
       </p>
@@ -301,9 +305,9 @@ layout: base
                  The schedule has not been announced yet. 
               </p>
               {% if pagedata.callforspeakers == true %}
-              <p style="text-align: center;">
-                 If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.
-              </p>
+                <p style="text-align: center;">
+                  If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.
+                </p>
               {% endif %}
             {% endif %}
             <p>&nbsp;</p>
@@ -327,12 +331,15 @@ layout: base
         </p>
       {% else %}
         {% if pagedata.callforspeakersurl > '' %}
-        <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
-        </p>
-        <p align="center">
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}" target="_blank" rel="noopener noreferrer">Submit your session</a>
-        </p>
-         {% endif %}                         
+          <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
+          </p>
+          <p align="center">
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}" target="_blank" rel="noopener noreferrer">Submit your session</a>
+          </p>
+          {% if pagedata.submittedsessionurl %}
+          <p>{{pagedata.submittedsessionurl}}</p>
+          {% endif %}
+        {% endif %}                         
       {% endif %}                         
       <p>&nbsp;</p>
       <p><a href="#top">Return to the top of the page</a></p>
