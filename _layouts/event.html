@@ -331,12 +331,19 @@ layout: base
         </p>
       {% else %}
         {% if pagedata.callforspeakersurl > '' %}
-        <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
-        </p>
-        <p align="center">
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}" target="_blank" rel="noopener noreferrer">Submit your session</a>
-        </p>
-         {% endif %}                         
+          <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
+          </p>
+          <p align="center">
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{pagedata.callforspeakersurl}}" target="_blank" rel="noopener noreferrer">Submit your session</a>
+          </p>
+          {% if pagedata.submittedsessionurl %}
+          <h3>Current Submitted Sessions</h3>
+          <p>Below is a list of submitted sessions by all speakers.</p>
+          <p align="left"><script type="text/javascript" src="{{pagedata.submittedsessionurl}}"></script></p>
+        {% endif %}
+      {% endif %}                         
+
+        {% endif %}                         
       {% endif %}                         
       <p>&nbsp;</p>
       <p><a href="#top">Return to the top of the page</a></p>
