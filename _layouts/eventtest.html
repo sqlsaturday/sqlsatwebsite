@@ -330,7 +330,6 @@ layout: base
         <p>The call for speakers is now closed.
         </p>
       {% else %}
-        {% if pagedata.callforspeakersurl > '' %}
           <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
           </p>
           <p align="center">
@@ -341,7 +340,6 @@ layout: base
           <p>Below is a list of submitted sessions by all speakers.</p>
           <p align="left"><script type="text/javascript" src="{{pagedata.submittedsessionurl}}"></script></p>
           {% endif %}
-        {% endif %}                         
       {% endif %}                         
       <p>&nbsp;</p>
       <p><a href="#top">Return to the top of the page</a></p>
