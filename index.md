@@ -53,6 +53,9 @@ The following dates are tentative for these cities, but they have asked to reser
 - Oct 14, 2023 - Boston 2023
 - June 3, 2023 - South Florida 2023
 - June 10, 2023 - Los Angeles 2023
+- June 24, 2023 - Ica, Peru 2023
+- Sept 12, 2023 - Lima, Peru 2023
+- Sept 30, 2023 - Minnesota 2023
 
 You can see completed events on the [Past Events](past) page.
 
