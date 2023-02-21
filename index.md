@@ -49,12 +49,13 @@ These are the SQLSaturday events that are currently scheduled. If you would like
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date:
-- Oct 7, 2023 - Orlando 2023
-- Oct 14, 2023 - Boston 2023
-- June 3, 2023 - South Florida 2023
-- June 10, 2023 - Los Angeles 2023
-- Sept 12, 2023 - Lima, Peru 2023
-- Sept 30, 2023 - Minnesota 2023
+- Oct 7, 2023 - Orlando 
+- Oct 14, 2023 - Boston 
+- June 3, 2023 - South Florida 
+- June 10, 2023 - Los Angeles 
+- July 15, 2023 - Cleveland 
+- Sept 12, 2023 - Lima, Peru 
+- Sept 30, 2023 - Minnesota 
 
 You can see completed events on the [Past Events](past) page.
 
