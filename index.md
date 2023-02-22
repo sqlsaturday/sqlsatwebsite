@@ -53,7 +53,7 @@ The following dates are tentative for these cities, but they have asked to reser
 - Oct 14, 2023 - Boston 
 - June 3, 2023 - South Florida 
 - June 10, 2023 - Los Angeles 
-- July 15, 2023 - Cleveland 
+- July 15, 2023 - Columbus
 - Sept 12, 2023 - Lima, Peru 
 - Sept 30, 2023 - Minnesota 
 
