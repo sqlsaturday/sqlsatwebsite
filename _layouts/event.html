@@ -131,7 +131,7 @@ layout: base
        <a href="https://www.twitter.com/{{ pagedata.social.twitter }}" target="_blank"
          class="btn btn-social-icon btn-twitter" title="Follow us on Twitter">
          <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
-         <span class="sr-only">Twitter</span>
+         <span class="sr-only">Twitter</span> 
        </a>
      {% endif %}
      {% if pagedata.social.linkedin %}
@@ -139,6 +139,11 @@ layout: base
        class="btn btn-social-icon btn-linkedin" title="Follow us on LinkedIn">
        <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
        <span class="sr-only">LinkedIn</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.meetup %}
+       <a href="{{ pagedata.social.meetup }}" title="Find us on Meetup">
+       <img src="/assets/img/meetup.png">
         </a>
      {% endif %}
      {% if pagedata.social.instagram %}
