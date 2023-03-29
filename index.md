@@ -52,9 +52,7 @@ The following dates are tentative for these cities, but they have asked to reser
 - Oct 7, 2023 - Orlando 
 - May 20, 2023 - Cleveland
 - June 10, 2023 - Los Angeles 
-- July 15, 2023 - Columbus
 - Sept 12, 2023 - Lima, Peru 
-- Sept 30, 2023 - Minnesota 
 
 You can see completed events on the [Past Events](past) page.
 
