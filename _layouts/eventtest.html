@@ -330,9 +330,10 @@ layout: base
         <h2 align="center"><A name="speakers"></A>Speakers</h2>
         <p align="center">{{pagedata.speakertext}}</p>
         </p>
+        <p>CFS Value: {{ pagedata.callforspeakersenddate }}</p>
         <p>CFS End: {{ CFSDate }}</p>
         <p>Today: {{ TodayDate }}</p>
-    {% if pagedata.speakerlisturl %}
+        {% if pagedata.speakerlisturl %}
           <p>Here is a list of speakers for this event:</p>
            <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>
         {% endif %}
@@ -341,7 +342,7 @@ layout: base
           </p>
         {% else %}
          {% if pagedata.callforspeakersurl %}
-          {% if pagedata.CFSDate > TodayDate %}
+          {% if CFSDate > TodayDate %}
               <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
               </p>
               <p align="center">
