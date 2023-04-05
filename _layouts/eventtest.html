@@ -341,7 +341,7 @@ layout: base
           </p>
         {% else %}
          {% if pagedata.callforspeakersurl %}
-          {% if pagedata.callforspeakersenddate > now %}
+          {% if pagedata.CFSDate > TodayDate %}
               <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
               </p>
               <p align="center">
