@@ -337,9 +337,9 @@ layout: base
           <p>There is no call for speakers.
           </p>
         {% else %}
-          {% if pagedata.callforspeakersenddate > TodayDate %}
+          {% if pagedata.callforspeakersenddate > now %}
             <p>CFS End: {{ pagedata.callforspeakersenddate }}</p>
-            <p>Today: {{ TodayDate }}</p>
+            <p>Today: {{ now }}</p>
             <p align="center">You can submit a session by clicking the link below. The call for speakers ends on {{ pagedata.callforspeakersenddate }}
             </p>
             <p align="center">
