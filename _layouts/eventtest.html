@@ -288,8 +288,13 @@ layout: base
       {% endif %}
 
       <!-- Schedule -->
-      <div class="container container-xxl">
-      <h2 align="center"><A name="schedule"></A>Schedule</h2>
+      <div class="w-100 p-3">
+        {% if pagedata.scheduleheight %}
+            {% assign sessionizeheight = pagedata.scheduleheight %}
+        {% else %}
+            {% assign sessionizeheight = 1900 %}
+        {% endif %}
+        <h2 align="center"><A name="schedule"></A>Schedule</h2>
             {% if pagedata.scheduleurl%}
               {% if pagedata.schedulehtml %}
                 {{pagedata.schedulehtml}}
@@ -303,7 +308,7 @@ layout: base
                 The schedule shown below is updated by Sessionize to match your computer's time zone setting.
                 </p>
                 <p>
-                <iframe frameborder="0" STYLE="width: 100%;height:1900px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+                <iframe frameborder="0" STYLE="width: 100%;height:{{ sessionizeheight }}px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
                 </iframe>
                 </p>
               {% endif %}
