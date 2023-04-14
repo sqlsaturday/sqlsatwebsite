@@ -9,4 +9,4 @@ First, add a new YAML file with the next event number in the _data/events folder
 
 Second, add a new post in the _posts folder, using the naming format of the existing posts. The date of the event is the first part of the filename, and the new number of the YAML file goes at the end.
 
-Optionally, you can update or add a redirect .html file in the root.
+Optionally, you can update or add a redirect .html file in the root. Each redirect file is unique to the event location.
