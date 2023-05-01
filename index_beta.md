@@ -31,7 +31,11 @@ These are the SQLSaturday events that have been scheduled.
           <td><img src="{{ post.thumb }}"></td>
           <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
           </td>
-          <td>{{post.date | date_to_long_string }}</td>
+          <td>{% if post.postponed == 1 %}
+                Postponed
+              {% else %}  {{post.date | date_to_long_string }}
+              {% endif %}
+          </td>
           <td>{% if post.virtual == 1 %}Yes
                {% else %}&nbsp;
                {% endif %}
