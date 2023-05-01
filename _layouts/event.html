@@ -28,8 +28,11 @@ layout: base
       <br/>
         
       <p><b><A href="top">Event Date</A>:</b> 
-        {% if post.postponed == 1 %}
+        {% if pagedata.postponed == 1 %}
           **Postponed**
+          {% if pagedata.eventupdate %}
+            {{ pagedata.eventupdate }}
+          {% endif %}
         {% else %}
           {{ eventdate | date_to_long_string }}
         {% endif %}
