@@ -32,7 +32,7 @@ These are the SQLSaturday events that have been scheduled.
           <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
           </td>
           <td>{% if post.postponed == 1 %}
-                Postponed
+                **Postponed**
               {% else %}  {{post.date | date_to_long_string }}
               {% endif %}
           </td>
