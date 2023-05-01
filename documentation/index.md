@@ -11,7 +11,7 @@ If you find issues, please submit a PR or contact the webmaster.
 ## Index
 
 The following types of files are in use, each with it's own documentation linked to this page:
-- [Event post](/documentation/eventpost.md)
+- [Event post](/documentation/eventpost/)
 - Event data
 - Redirect files
 
