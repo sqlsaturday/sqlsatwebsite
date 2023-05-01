@@ -27,7 +27,12 @@ layout: base
       {% endif %}
       <br/>
         
-      <p><b><A href="top">Event Date</A>:</b> {{ eventdate | date_to_long_string }}
+      <p><b><A href="top">Event Date</A>:</b> 
+        {% if post.postponed == 1 %}
+          **Postponed**
+        {% else %}
+          {{ eventdate | date_to_long_string }}
+        {% endif %}
       </p>
     
       <p>This event is: 
