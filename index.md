@@ -31,7 +31,7 @@ These are the SQLSaturday events that are currently scheduled. If you would like
           <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
           </td>
           <td>{% if post.postponed == 1 %}
-                **Postponed**
+                <b>Postponed</b>
               {% else %}  {{post.date | date_to_long_string }}
               {% endif %}
           </td>
