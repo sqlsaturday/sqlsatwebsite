@@ -11,7 +11,7 @@ If you find issues, please submit a PR or contact the webmaster.
 ## Index
 
 The following types of files are in use, each with it's own documentation linked to this page:
-- [Event post](/documentation/eventpost/)
-- Event data
-- Redirect files
+- [Event post](/documentation/eventpost/) - The main metadata about an event in _posts.
+- Event data - The data file in _data/events
+- [Redirect files](/documentation/redirect/) - redirect HTML files in the root.
 

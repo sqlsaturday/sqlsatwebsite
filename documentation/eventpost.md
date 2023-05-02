@@ -3,6 +3,10 @@ layout: page
 title: Event Post File
 permalink: /documentation/eventpost/
 ---
+This file is created to provide the landing page for an event.
+
+**For a new event**: Create this file first
+## File Details
 
 The event post file is the blog post in Jekyll that describes the event and determines the date order in which is it shown. Each of these files is stored in the _posts folder with the following format: yyyy-mm-dd-SQLSat-nnnn.markdown. The values for each part of this name are:
 - yyyy - The year in 4 digit format, i.e. 2023
