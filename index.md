@@ -30,7 +30,11 @@ These are the SQLSaturday events that are currently scheduled. If you would like
           <td><img src="{{ post.thumb }}"></td>
           <td><a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
           </td>
-          <td>{{post.date | date: "%b %d %Y" }}</td>
+          <td>{% if post.postponed == 1 %}
+                <b>Postponed</b>
+              {% else %}  {{post.date | date_to_long_string }}
+              {% endif %}
+          </td>
         </tr>
       {% endif %}
    {% endif %}

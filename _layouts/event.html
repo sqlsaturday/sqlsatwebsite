@@ -27,7 +27,15 @@ layout: base
       {% endif %}
       <br/>
         
-      <p><b><A href="top">Event Date</A>:</b> {{ eventdate | date_to_long_string }}
+      <p><b><A href="top">Event Date</A>:</b> 
+        {% if pagedata.postponed == 1 %}
+          **Postponed**
+          {% if pagedata.eventupdate %}
+            {{ pagedata.eventupdate }}
+          {% endif %}
+        {% else %}
+          {{ eventdate | date_to_long_string }}
+        {% endif %}
       </p>
     
       <p>This event is: 
@@ -307,8 +315,10 @@ layout: base
                 <p>
                 The schedule shown below is updated by Sessionize to match your computer's time zone setting.
                 </p>
-                <p>You can also view the <a href="{{pagedata.printscheduleurl}}" target="_blank">print schedule</a></p>
-                <p>
+                {% if pagedata.printscheduleurl%}
+                  <p>You can also view the <a href="{{pagedata.printscheduleurl}}" target="_blank">print schedule</a></p>
+                {% endif %}
+
                 <p>
                   <iframe frameborder="0" STYLE="width: 100%;height:{{ sessionizeheight }}px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
                   </iframe>
