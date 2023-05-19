@@ -22,35 +22,21 @@ registrationurl: https://www.eventbrite.com/e/sql-saturday-south-florida-2023-ti
 capacity: 800
 googlemapurl: https://www.google.com/maps/dir//26.0808135,-80.2424955/@26.0805437,-80.2425662,135m/data=!3m1!1e3!4m2!4m1!3e0
 
-scheduleurl: 
+scheduleurl: https://sessionize.com/api/v2/eh4i56aq/view/GridSmart
+printscheduleurl: https://sessionize.com/view/eh4i56aq/GridSmart?format=Embed_Styled_Html&isDark=False&title=South%20Florida%20SQL%20Saturday%202023
+scheduleheight : 3500
 scheduletimezone: Eastern Standard Time UTC -5
-schedulehtml: |
-  <div id="GridSmart"></div>
-  <script>
-  (async () => {
-  const content = document.getElementById("GridSmart");
-  const GridSmart =   (await (await fetch("https://sessionize.com/api/v2/eh4i56aq/view/GridSmart?under=True")).text());
-  content.innerHTML= GridSmart;
-  })();
-  </script>
+lunchcost: $15 (optional)
 
 eventcountdown: false
 
 countdownscript:
  
-speakertext: |
-  <div id="SpeakerWall"></div>
-  <script>
-  (async () => {
-  const content = document.getElementById("SpeakerWall");
-  const SpeakerWall = (await (await fetch("https://sessionize.com/api/v2/eh4i56aq/view/SpeakerWall?under=True")).text());
-  content.innerHTML= SpeakerWall;
-  })();
-  </script>
-
-speakerlisturl: 
+speakertext: The call for speakers is now closed.
+speakerlisturl: https://sessionize.com/api/v2/eh4i56aq/view/Speakers
+submittedsessionurl: https://sessionize.com/api/v2/eh4i56aq/view/Sessions
 callforspeakersurl: https://sessionize.com/sql-saturday-south-fl-2023
-callforspeakers:  true
+callforspeakers:  false
 callforspeakersenddate: 2023-05-05 
 
 organizers:
