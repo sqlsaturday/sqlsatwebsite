@@ -143,8 +143,22 @@ layout: base
          <span class="sr-only">Twitter</span> 
        </a>
      {% endif %}
+     {% if pagedata.social.twitterurl %}
+       <a href="{{ pagedata.social.twitterurl }}" target="_blank"
+         class="btn btn-social-icon btn-twitter" title="Follow us on Twitter">
+         <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+         <span class="sr-only">Twitter</span> 
+       </a>
+     {% endif %}
      {% if pagedata.social.linkedin %}
        <a href="{{ pagedata.social.linkedin }}" 
+       class="btn btn-social-icon btn-linkedin" title="Follow us on LinkedIn">
+       <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+       <span class="sr-only">LinkedIn</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.linkedinurl %}
+       <a href="{{ pagedata.social.linkedinurl }}" 
        class="btn btn-social-icon btn-linkedin" title="Follow us on LinkedIn">
        <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
        <span class="sr-only">LinkedIn</span>
@@ -177,6 +191,13 @@ layout: base
      {% endif %}
      {% if pagedata.social.facebook %}
        <a href="https://www.facebook.com/{{ pagedata.social.facebook }}" 
+       class="btn btn-social-icon btn-facebook" title="Follow us on Facebook">
+       <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+       <span class="sr-only">Facebook</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.facebookurl %}
+       <a href="{{ pagedata.social.facebookurl }}" 
        class="btn btn-social-icon btn-facebook" title="Follow us on Facebook">
        <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
        <span class="sr-only">Facebook</span>
