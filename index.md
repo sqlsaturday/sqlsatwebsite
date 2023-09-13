@@ -53,8 +53,7 @@ These are the SQLSaturday events that are currently scheduled. If you would like
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date:
-- December 9, 2023 - Lima, Peru 
-- October 7, 2023 - Toronto, Canada
+- June 22, 2024 - ICA, Peru
 
 
 You can see completed events on the [Past Events](past) page.
