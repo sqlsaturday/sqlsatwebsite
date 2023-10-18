@@ -268,7 +268,11 @@ layout: base
           {% if sponsor.type %} <h3 align="center">{{ sponsor.type }} Sponsor</h3> {% endif %}
           <p align="center">
             <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.alt }}">
-          <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} {% if sponsor.alt %} alt="{{ sponsor.alt }}" {% endif %} >
+            {% if sponsor.image %}
+               <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} {% if sponsor.alt %} alt="{{ sponsor.alt }}" {% endif %} >
+            {% else %}
+              {{ sponsor.name }}
+            {% endif %}                         
           </a><br/>
         </p>
         {% endfor %}
