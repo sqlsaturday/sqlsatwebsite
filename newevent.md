@@ -15,6 +15,8 @@ This page is designed to help you setup and request a new SQLSaturday event. The
 
 That's it. Once you have the signed agreement and the information submitted, we will update this site with your event. We are happy to help submit your CFS and send emails/social messages marketing the event.
 
+You can submit your informaiton as <a href="https://github.com/sqlsaturday/sqlsatwebsite/issues">an issue on GitHubM</a>, or through <A href="mailto:admin@sqlsaturday.com">email</a>.
+
 [Branding and Image are available](https://blog.sqlsaturday.com/branding/)
 
 More details below:
@@ -43,11 +45,11 @@ You can even theme these events without a city or physical location, as the last
 
 Once you have the information for your event, please [open an issue in the GitHub repository](https://github.com/sqlsaturday/sqlsatwebsite) with the title of your event. Provide the information in your issue from the checklist below.
 
-We have a [checklist in an Excel file](#checklist) below of items you need as well as [guidance](#guidance) to help you run your event.
+We have a [checklist in an Excel file](#checklist) below of items you need as well as [guidance](#guidance) to help you run your event. Please email this to <A href="mailto:admin@sqlsaturday.com">our admin address</a>
 
 ## <A name="checklist"></a>New Event Checklist
 
-These items are kept in an [Excel spreadsheet](./assets/EventChecklist.xlsx) to make them easy for you to track. You can download the XLSX and fill it out before submitting as a part of your issue.
+These items are kept in an [Excel spreadsheet](./assets/EventChecklist.xlsx) to make them easy for you to track. You can download the XLSX and fill it out before submitting as a part of your issue and <A href="mailto:admin@sqlsaturday.com">email</a> to us.
 
 The basic information required to set up an event is:
 
