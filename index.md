@@ -52,9 +52,13 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 
 ## <a name="reserved"></a>Reserved Dates
 
-The following dates are tentative for these cities, but they have asked to reserve the date:
+The following dates are tentative for these cities, but they have asked to reserve the date.
+- April 5, 2024 - Salt Lake City (tentative)
+- May 4, 2024 - NYC
+- May 27, 2024 - Richmond (Tenative)
 - June 22, 2024 - ICA, Peru
 
+Please contact the local organizers for these areas if you have questions or concerns.
 
 You can see completed events on the [Past Events](past) page.
 
