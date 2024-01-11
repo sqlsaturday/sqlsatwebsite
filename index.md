@@ -57,6 +57,7 @@ The following dates are tentative for these cities, but they have asked to reser
 - April 27, 2024 - Orange County (tentative)
 - May 4, 2024 - NYC
 - May 27, 2024 - Richmond (Tenative)
+- June 1, 2024 - LA (tentative)
 - June 22, 2024 - ICA, Peru
 
 Please contact the local organizers for these areas if you have questions or concerns.
