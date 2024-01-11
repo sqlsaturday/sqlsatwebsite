@@ -55,7 +55,6 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 The following dates are tentative for these cities, but they have asked to reserve the date.
 - April 5, 2024 - Salt Lake City (tentative)
 - April 27, 2024 - Orange County (tentative)
-- May 4, 2024 - NYC
 - May 27, 2024 - Richmond (Tenative)
 - June 1, 2024 - LA (tentative)
 - June 22, 2024 - ICA, Peru
