@@ -377,10 +377,6 @@ layout: base
         <h2 align="center"><A name="speakers"></A>Speakers</h2>
         <p align="center">{{pagedata.speakertext}}</p>
         </p>
-        {% if pagedata.speakerlisturl %}
-          <p>Here is a list of speakers for this event:</p>
-           <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>
-        {% endif %}
         {% if pagedata.callforspeakers == false %}
           <p>There is no call for speakers.
           </p>
@@ -404,7 +400,11 @@ layout: base
           <p>The call for speakers is not open.</p>
          {% endif %}
        {% endif %}                         
-        <p>&nbsp;</p>
+       {% if pagedata.speakerlisturl %}
+       <p>Here is a list of speakers for this event:</p>
+        <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>
+     {% endif %}
+     <p>&nbsp;</p>
         <p><a href="#top">Return to the top of the page</a></p>
       </div>
     </div>
