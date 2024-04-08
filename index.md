@@ -53,10 +53,8 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
-- April 27, 2024 - Orange County (tentative)
-- May 27, 2024 - Richmond (Tenative)
 - June 1, 2024 - LA (tentative)
-- June 22, 2024 - Trujillo, Peru
+- Nov 2, 2024 - Oregon and SW Washington
 
 Please contact the local organizers for these areas if you have questions or concerns.
 
