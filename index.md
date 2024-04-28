@@ -53,7 +53,7 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
-- June 1, 2024 - LA (tentative)
+- June 1, 2024 - LA
 - Nov 2, 2024 - Oregon and SW Washington
 
 Please contact the local organizers for these areas if you have questions or concerns.
