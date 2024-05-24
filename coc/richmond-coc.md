@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code of Conduct
-permalink: /richmond-coc/
+permalink: /coc/richmond-coc/
 ---
 
 ## Conference Diversity and Inclusion. 
