@@ -11,5 +11,7 @@ jobs:
           ruby-version: '3.3'
       - name: Install dependencies
         run: bundle install && bundle exec appraisal install
+      - name: Install appraisal
+        run: bundle exec appraisal install
       - name: Build site
         run: bundle exec appraisal jekyll build --future
