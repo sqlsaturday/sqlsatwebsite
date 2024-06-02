@@ -9,8 +9,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-      - name: Install appraisal
-        run: bundle exec appraisal install
       - name: Install dependencies
         run: bundle install && bundle exec appraisal install
       - name: Build site
