@@ -57,6 +57,7 @@ The following dates are tentative for these cities, but they have asked to reser
 - Oct 12, 2024 - Orlando
 - Nov 2, 2024 - Oregon and SW Washington
 - Nov 30 - Lima, Peru
+- Mar 25, 2025 - Seattle/Redmond
 - May 10, 2025 - NYC
 
 Please contact the local organizers for these areas if you have questions or concerns.
