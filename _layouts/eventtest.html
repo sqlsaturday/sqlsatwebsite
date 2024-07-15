@@ -27,7 +27,15 @@ layout: base
       {% endif %}
       <br/>
         
-      <p><b><A href="top">Event Date</A>:</b> {{ eventdate | date_to_long_string }}
+      <p><b><A href="top">Event Date</A>:</b> 
+        {% if pagedata.postponed == 1 %}
+          **Postponed**
+          {% if pagedata.eventupdate %}
+            {{ pagedata.eventupdate }}
+          {% endif %}
+        {% else %}
+          {{ eventdate | date_to_long_string }}
+        {% endif %}
       </p>
     
       <p>This event is: 
@@ -98,38 +106,6 @@ layout: base
           {{ pagedata.countdownscript }}
       {% endif %}
 
-      <section class="banner">
-        <div class="padded-top--tight padded-bottom--tight">
-            <a href="https://passdatacommunitysummit.com/about/pricing/"><img src="/assets/img/ads/summit23earlybird.png"></a>
-        </div>
-    </section>
-
-      <!-- Code of Conduct -->
-      <h3>Code of Conduct</h3>
-      <p>{% if pagedata.cocurl %}
-            This event has its own <a href="{{ pagedata.cocurl }}">code of conduct</a> that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>.
-        {% else %}
-          {% if pagedata.coctext %}
-          {{ pagedata.coctext }}
-          {% else %}
-            There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>
-           {% endif %}
-        {% endif %}
-        If you need to report a Code of Conduct violation, please contact the organizers and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a>
-      </p>
-
-      <!-- Data Privacy -->
-      <h3>Data Privacy</h3>
-      <p>
-      {% if pagedata.dataprivacy %}
-            {{ pagedata.dataprivacy }}
-      {% else %}
-          This event adheres to the generic <a href="/data/">data privacy</a> policy.
-      {% endif %}
-      </p>
-</div>
- 
-
      <!-- Social -->
      <div class="container container-md">
      <h3><a name="social"></a>Find us online</h3>
@@ -141,8 +117,22 @@ layout: base
          <span class="sr-only">Twitter</span> 
        </a>
      {% endif %}
+     {% if pagedata.social.twitterurl %}
+       <a href="{{ pagedata.social.twitterurl }}" target="_blank"
+         class="btn btn-social-icon btn-twitter" title="Follow us on Twitter">
+         <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+         <span class="sr-only">Twitter</span> 
+       </a>
+     {% endif %}
      {% if pagedata.social.linkedin %}
        <a href="{{ pagedata.social.linkedin }}" 
+       class="btn btn-social-icon btn-linkedin" title="Follow us on LinkedIn">
+       <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+       <span class="sr-only">LinkedIn</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.linkedinurl %}
+       <a href="{{ pagedata.social.linkedinurl }}" 
        class="btn btn-social-icon btn-linkedin" title="Follow us on LinkedIn">
        <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
        <span class="sr-only">LinkedIn</span>
@@ -178,6 +168,18 @@ layout: base
        class="btn btn-social-icon btn-facebook" title="Follow us on Facebook">
        <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
        <span class="sr-only">Facebook</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.facebookurl %}
+       <a href="{{ pagedata.social.facebookurl }}" 
+       class="btn btn-social-icon btn-facebook" title="Follow us on Facebook">
+       <span class="fab fa-fw fa-facebook" aria-hidden="true"></span>
+       <span class="sr-only">Facebook</span>
+        </a>
+     {% endif %}
+     {% if pagedata.social.linktree %}
+       <a href="{{ pagedata.social.linktree }}" title="Follow us on Linktree">
+       <img src="/assets/img/Linktree-Symbol.png">
         </a>
      {% endif %}
      </p>
@@ -233,6 +235,31 @@ layout: base
       {% endif %}
     </div>
 
+      <!-- Code of Conduct -->
+      <h3>Code of Conduct</h3>
+      <p>{% if pagedata.cocurl %}
+            This event has its own <a href="{{ pagedata.cocurl }}">code of conduct</a> that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>.
+        {% else %}
+          {% if pagedata.coctext %}
+          {{ pagedata.coctext }}
+          {% else %}
+            There is a <a href="/coc/">code of conduct</a> for this event that all attendees are expected to follow. Please report violations to the <a href="#contact">organizers</a>
+           {% endif %}
+        {% endif %}
+        If you need to report a Code of Conduct violation, please contact the organizers and send a copy to <a href="mailto:coc@sqlsaturday.com">coc@sqlsaturday.com</a>
+      </p>
+
+      <!-- Data Privacy -->
+      <h3>Data Privacy</h3>
+      <p>
+      {% if pagedata.dataprivacy %}
+            {{ pagedata.dataprivacy }}
+      {% else %}
+          This event adheres to the generic <a href="/data/">data privacy</a> policy.
+      {% endif %}
+      </p>
+</div>
+
       <!-- Sponsors -->
       <div class="container container-lg">
       <h2 align="center"><A name="sponsor"></A>Please Visit Our Sponsors</h2>
@@ -240,7 +267,11 @@ layout: base
           {% if sponsor.type %} <h3 align="center">{{ sponsor.type }} Sponsor</h3> {% endif %}
           <p align="center">
             <a href="{{ sponsor.link }}" target="_blank" alt="{{ sponsor.alt }}">
-          <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} {% if sponsor.alt %} alt="{{ sponsor.alt }}" {% endif %} >
+            {% if sponsor.image %}
+               <img src="{{ sponsor.image }}" {% if sponsor.height %} height="{{ sponsor.height }}" {% endif %} {% if sponsor.width %} width="{{ sponsor.width }}" {% endif %} {% if sponsor.alt %} alt="{{ sponsor.alt }}" {% endif %} >
+            {% else %}
+              {{ sponsor.name }}
+            {% endif %}                         
           </a><br/>
         </p>
         {% endfor %}
@@ -300,8 +331,8 @@ layout: base
         {% else %}
             {% assign sessionizeheight = 1900 %}
         {% endif %}
-        <h2 align="center"><A name="schedule"></A>Schedule</h2>
-            {% if pagedata.scheduleurl %}
+      <h2 align="center"><A name="schedule"></A>Schedule</h2>
+            {% if pagedata.scheduleurl%}
               {% if pagedata.schedulehtml %}
                 {{pagedata.schedulehtml}}
               {% else %}
@@ -313,10 +344,13 @@ layout: base
                 <p>
                 The schedule shown below is updated by Sessionize to match your computer's time zone setting.
                 </p>
-                <p>You can also view the <a href="{{pagedata.printscheduleurl}}" target="_blank">print schedule</a></p>
+                {% if pagedata.printscheduleurl%}
+                  <p>You can also view the <a href="{{pagedata.printscheduleurl}}" target="_blank">print schedule</a></p>
+                {% endif %}
+
                 <p>
-                <iframe frameborder="0" STYLE="width: 100%;height:{{ sessionizeheight }}px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
-                </iframe>
+                  <iframe frameborder="0" STYLE="width: 100%;height:{{ sessionizeheight }}px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+                  </iframe>
                 </p>
               {% endif %}
             {% else %}
@@ -342,10 +376,6 @@ layout: base
         <h2 align="center"><A name="speakers"></A>Speakers</h2>
         <p align="center">{{pagedata.speakertext}}</p>
         </p>
-        {% if pagedata.speakerlisturl %}
-          <p>Here is a list of speakers for this event:</p>
-           <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>
-        {% endif %}
         {% if pagedata.callforspeakers == false %}
           <p>There is no call for speakers.
           </p>
@@ -369,7 +399,11 @@ layout: base
           <p>The call for speakers is not open.</p>
          {% endif %}
        {% endif %}                         
-        <p>&nbsp;</p>
+       {% if pagedata.speakerlisturl %}
+       <p>Here is a list of speakers for this event:</p>
+        <script type="text/javascript" src="{{pagedata.speakerlisturl}}"></script>
+     {% endif %}
+     <p>&nbsp;</p>
         <p><a href="#top">Return to the top of the page</a></p>
       </div>
     </div>
@@ -399,7 +433,7 @@ layout: base
             <p>The organizers of this event are: 
               <ul>
               {% for organizer in pagedata.organizers %}   
-                <li>{{ organizer.name }} - Contact:
+                <li>{{ organizer.name }}
                   <ul>
                   {% if organizer.email %}
                   <li><a href="mailto:{{organizer.email}}">email</a></li>
