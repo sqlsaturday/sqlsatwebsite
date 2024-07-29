@@ -6,7 +6,7 @@ permalink: /pullrequest/
 
 This page is designed to help you understand the GitHub repo and how to manage the settings and display of your event on the site.
 
-**Note:** If you have not worked with GitHub and submitting Pull Requests from a fork, Rob Sewell has a great post to help you: [How to fork a GitHub repository and contribute to an open source project ](https://blog.robsewell.com/blog/source%20control/jupyter%20notebooks/azure%20data%20studio/dbatools/dbachecks/how-to-fork-a-github-repository-and-contribute-to-an-open-source-project/)
+**Note:** If you have not worked with GitHub and submitting Pull Requests from a fork, Rob Sewell has a great post to help you: [How to fork a GitHub repository and contribute to an open source project](https://blog.robsewell.com/blog/how-to-fork-a-github-repository-and-contribute-to-an-open-source-project/) [[Mirror Link](https://web.archive.org/web/20240412114152/https://blog.robsewell.com/blog/how-to-fork-a-github-repository-and-contribute-to-an-open-source-project/)]
 
 If you have issues with these instructions, please feel free to contact the webmaster for this domain.
 
