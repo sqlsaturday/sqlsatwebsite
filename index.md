@@ -53,9 +53,6 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
-- Sept 7, 2024 - Syracuse (planning)
-- Oct 12, 2024 - Orlando
-- Nov 2, 2024 - Oregon and SW Washington
 - Nov 30 - Lima, Peru
 - Mar 25, 2025 - Seattle/Redmond
 - May 3, 2025 - Jacksonville
