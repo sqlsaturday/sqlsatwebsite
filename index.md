@@ -57,6 +57,7 @@ The following dates are tentative for these cities, but they have asked to reser
 - Mar 25, 2025 - Seattle/Redmond
 - May 3, 2025 - Jacksonville
 - May 10, 2025 - NYC
+- Tech Community Day / SQL Saturday Guatamala 2025 - TBD
 
 Please contact the local organizers for these areas if you have questions or concerns.
 
