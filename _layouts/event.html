@@ -333,43 +333,33 @@ layout: base
         {% else %}
             {% assign sessionizeheight = 1900 %}
         {% endif %}
-      <h2 align="center"><A name="schedule"></A>Schedule</h2>
-            {% if pagedata.scheduleurl%}
-              {% if pagedata.schedulehtml %}
-                {{pagedata.schedulehtml}}
-              {% else %}
-                {% if pagedata.scheduletimezone %}
-                  <p>
-                    Please note the event is taking place in {{pagedata.scheduletimezone}}
-                 </p>
-                {% endif %}
-                <p>
-                The schedule shown below is updated by Sessionize to match your computer's time zone setting.
-                </p>
-                {% if pagedata.printscheduleurl%}
-                  <p>You can also view the <a href="{{pagedata.printscheduleurl}}" target="_blank">print schedule</a></p>
-                {% endif %}
-
-                <p>
-                  <iframe frameborder="0" STYLE="width: 100%;height:{{ sessionizeheight }}px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
-                  </iframe>
-                </p>
-              {% endif %}
+        <h2 align="center"><A name="schedule"></A>Schedule</h2>
+          {% if pagedata.scheduleurl%}
+            {% if pagedata.schedulehtml %}
+               {{pagedata.schedulehtml}}
             {% else %}
-              <p style="text-align: center;">
-                 The schedule has not been announced yet. 
-              </p>
-              {% if pagedata.callforspeakers == true %}
-                {% if CFSDate > TodayDate %}
-                <p style="text-align: center;">
-                 If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.
-                </p>
-                {% endif %}
+               {% if pagedata.scheduletimezone %}
+                 <p>Please note the event is taking place in {{pagedata.scheduletimezone}}</p>
+               {% endif %}
+               <p>The schedule shown below is updated by Sessionize to match your computer's time zone setting.</p>
+               {% if pagedata.printscheduleurl%}
+                  <p>You can also view the <a href="{{pagedata.printscheduleurl}}" target="_blank">print schedule</a></p>
+               {% endif %}
+               <p>
+                 <iframe frameborder="0" STYLE="width: 100%;height:{{ sessionizeheight }}px" SRCDOC="<BODY><script type='text/javascript' src='{{pagedata.scheduleurl}}'></script></BODY>">
+                 </iframe>
+               </p>
+            {% endif %}
+         {% else %}
+            <p style="text-align: center;">The schedule has not been announced yet.</p>
+            {% if pagedata.callforspeakers == true %}
+              {% if CFSDate > TodayDate %}
+                <p style="text-align: center;">If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.</p>
               {% endif %}
             {% endif %}
-            <p>&nbsp;</p>
-            <p><a href="#top">Return to the top of the page</a></p>
-      
+         {% endif %}
+           <p>&nbsp;</p>
+           <p><a href="#top">Return to the top of the page</a></p>   
       </div>
 
 
@@ -381,7 +371,7 @@ layout: base
         <p align="center">{{pagedata.speakertext}}</p>
         </p>
         {% if pagedata.callforspeakers == false %}
-          <p>There is no call for speakers.
+          <p align="center">There is no call for speakers.
           </p>
         {% else %}
          {% if pagedata.callforspeakersurl %}
@@ -397,10 +387,10 @@ layout: base
                 <p align="left"><script type="text/javascript" src="{{pagedata.submittedsessionurl}}"></script></p>
               {% endif %}
           {% else %}
-              <p>The call for speakers is closed.</p>
+              <p align="center">The call for speakers is closed.</p>
           {% endif %}
          {% else %}
-          <p>The call for speakers is not open.</p>
+          <p align="center">The call for speakers is not open.</p>
          {% endif %}
        {% endif %}                         
        {% if pagedata.speakerlisturl %}
