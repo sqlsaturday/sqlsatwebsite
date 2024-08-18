@@ -360,9 +360,11 @@ layout: base
                  The schedule has not been announced yet. 
               </p>
               {% if pagedata.callforspeakers == true %}
-              <p style="text-align: center;">
+                {% if CFSDate > TodayDate %}
+                <p style="text-align: center;">
                  If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.
-              </p>
+                </p>
+                {% endif %}
               {% endif %}
             {% endif %}
             <p>&nbsp;</p>
