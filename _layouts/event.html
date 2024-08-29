@@ -230,7 +230,41 @@ layout: base
       {% if pagedata.googlemapurl %}
       <iframe src="{{pagedata.googlemapurl}}"" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <p>&nbsp;</p>
-      <p><a href="#top">Return to the top of the page</a></p>
+     <!-- toc -->
+     <p align="center">
+      {% if pagedata.eventlocation %}
+      <a href="#location">Location</a> 
+      &#x25CF 
+      {% endif %}
+      <a href="#sponsor">Sponsors</a> 
+      &#x25CF 
+      {% if pagedata.usingrooms %}
+      <a href="#rooms">Rooms</a> 
+      &#x25CF 
+      {% endif %}
+      {% if pagedata.precons %}
+      <a href="#precon">Pre-cons</a> 
+      &#x25CF 
+      {% endif %}
+      <a href="#schedule">Schedule</a> 
+      &#x25CF 
+      <a href="#speakers">Speakers</a> 
+      &#x25CF 
+      <a href="#volunteer">Volunteers</a> 
+      &#x25CF 
+      <a href="#contact">Contact</a>
+      {% if pagedata.downloads %}
+        &#x25CF 
+        <a href="#downloads">Downloads</a> 
+      {% endif %}
+      {% if pagedata.downloads %}
+        &#x25CF 
+        <a href="#previous">Previous Events</a> 
+      {% endif %}
+      &#x25CF 
+      <a href="#sponsorship">Sponsorship Plans</a>
+    </p>
+
       {% endif %}
       {% if pagedata.parkingdesc %}
         <h3><a name="parking"></a>Parking</h3>
