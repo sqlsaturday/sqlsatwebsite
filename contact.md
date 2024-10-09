@@ -11,8 +11,8 @@ Mailing Address:
     1999 Bryan Street
     Suite 900
     Dallas, Texas 75201
-    
-Email: [webmaster@sqlsaturday.com](mailto:webmaster@sqlsaturday.com)
+
+If you are wondering about a specific event, please use the Contact link on the event page. If you have a general question, please use the following: [webmaster@sqlsaturday.com](mailto:webmaster@sqlsaturday.com)
 
 Twitter: [@sqlsatoffical](https://twitter.com/sqlsatofficial/)
 
