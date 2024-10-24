@@ -2,10 +2,11 @@
 layout: home
 title: "SQL Saturday"
 ---
-Welcome to SQL Saturday, the free communityevent franchise for database professionals and those working with data across any platform. We have lists for:
+Welcome to SQL Saturday, the home of free community events for database professionals and those working with data across any platform. We have lists of events below:
 - <a href="#events">upcoming events</a>
 - <a href="#reserved">reserved dates</a>
 - <a href="#other">other non-SQL Saturday events</a>
+- <a href="https://sqlsaturday.com/feed.xml">an RSS feed of all events</a>
 
 If you want to know more about events from an organizer, speaker, sponsor, or attendee standpoint, sign up for our [mailing list](http://eepurl.com/hwVBKn)
 
