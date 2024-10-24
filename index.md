@@ -2,7 +2,10 @@
 layout: home
 title: "SQL Saturday"
 ---
-Welcome to SQL Saturday, the data platform and SQL Server community franchise for technical events. We have a list of <a href="#events">upcoming events</a> below as well as <a href="#reserved">reserved dates</a>. There are also <a href="#other">other events</a> from different sources that are of interest to the data professional.
+Welcome to SQL Saturday, the free communityevent franchise for database professionals and those working with data across any platform. We have lists for:
+- <a href="#events">upcoming events</a>
+- <a href="#reserved">reserved dates</a>
+- <a href="#other">other non-SQL Saturday events</a>
 
 If you want to know more about events from an organizer, speaker, sponsor, or attendee standpoint, sign up for our [mailing list](http://eepurl.com/hwVBKn)
 
