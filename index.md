@@ -2,9 +2,9 @@
 layout: home
 title: "SQL Saturday"
 ---
-Welcome to SQL Saturday, the home of free community events for database professionals and those working with data across any platform. We have lists of events below:
-- <a href="#events">upcoming events</a>
-- <a href="#reserved">reserved dates</a>
+Welcome to SQL Saturday, the home of free community events for database professionals and those working with data across any platform. We have these events listed:
+- <a href="#events">upcoming SQL Saturday events</a>
+- <a href="#reserved">reserved dates for future SQL Saturdays</a>
 - <a href="#other">other non-SQL Saturday events</a>
 - <a href="https://sqlsaturday.com/feed.xml">an RSS feed of all events</a>
 
