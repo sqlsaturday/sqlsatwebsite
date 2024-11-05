@@ -59,7 +59,6 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 The following dates are tentative for these cities, but they have asked to reserve the date.
 - Nov 30 - Lima, Peru
 - Mar 25, 2025 - Seattle/Redmond
-- May 3, 2025 - Jacksonville
 - May 10, 2025 - NYC
 - Tech Community Day / SQL Saturday Guatamala 2025 - TBD
 
