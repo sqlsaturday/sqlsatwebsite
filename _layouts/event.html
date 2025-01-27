@@ -310,11 +310,15 @@ layout: base
       <div class="container container-lg">
       <h2 align="center"><A name="sponsor"></A>Please Visit Our Sponsors</h2>
         <!-- Global sponsors -->
-        <h3 align="center">Global Sponsor</h3>
-        <p align="center">
-        <a href="https://www.microsoft.com" target="_blank" alt="Microsoft">
-           <img src="/assets/img/logos/Microsoft-logo_rgb_c-gray.png" height="340" width="1264">
-        </a><br/>
+        {% if pagedata.optOutGlobalSponsor %}
+          <p>&nsp;</p>
+        {% else %}
+          <h3 align="center">Global Sponsor</h3>
+          <p align="center">
+          <a href="https://www.microsoft.com" target="_blank" alt="Microsoft">
+             <img src="/assets/img/logos/Microsoft-logo_rgb_c-gray.png" height="340" width="1264">
+          </a><br/>
+        {% endif %}
         {% for sponsor in pagedata.sponsors %}
           {% if sponsor.type %} <h3 align="center">{{ sponsor.type }}</h3> {% endif %}
           <p align="center">
