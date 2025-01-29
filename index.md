@@ -2,13 +2,17 @@
 layout: home
 title: "SQL Saturday"
 ---
-Welcome to SQL Saturday, the data platform and SQL Server community franchise for technical events. We have a list of <a href="#events">upcoming events</a> below as well as <a href="#reserved">reserved dates</a>. There are also <a href="#other">other events</a> from different sources that are of interest to the data professional.
+Welcome to SQL Saturday, the home of free community events for database professionals and those working with data across any platform. We have these events listed:
+- <a href="#events">upcoming SQL Saturday events</a>
+- <a href="#reserved">reserved dates for future SQL Saturdays</a>
+- <a href="#other">other non-SQL Saturday events</a>
+- <a href="https://sqlsaturday.com/feed.xml">an RSS feed of all events</a>
 
 If you want to know more about events from an organizer, speaker, sponsor, or attendee standpoint, sign up for our [mailing list](http://eepurl.com/hwVBKn)
 
 ## <a name="events"></a>Events
 
-These are the SQL Saturday events that are currently scheduled. If you would like to organize or schedule an event, please visit our [running a new event](http://beta.sqlsaturday.com/newevent/) page.
+These are the SQL Saturday events that are currently scheduled. If you would like to organize or schedule an event, please visit our [running a new event](http://sqlsaturday.com/newevent/) page.
 
 <table cellspacing=0 class="table table-hover table-borderless table-sortable mt-3" width="100%">
   <thead>
@@ -53,13 +57,9 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
-- Sept 7, 2024 - Syracuse (planning)
-- Oct 12, 2024 - Orlando
-- Nov 2, 2024 - Oregon and SW Washington
-- Nov 30 - Lima, Peru
-- Mar 25, 2025 - Seattle/Redmond
-- May 3, 2025 - Jacksonville
-- May 10, 2025 - NYC
+- June 21, 2025 - SQL Saturday - Arequipa 2025
+- Nov 29, 2025 - Lima, Peru
+- Tech Community Day / SQL Saturday Guatamala 2025 - TBD
 
 Please contact the local organizers for these areas if you have questions or concerns.
 
