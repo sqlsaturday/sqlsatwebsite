@@ -5,7 +5,7 @@ permalink: /privacy/
 ---
 ## SQLSaturday - Privacy notice
 
-Redgate (which means Red Gate Software Limited and its subsidiaries) respects your privacy. All information you give us is held with the utmost care and security.
+All information you give us is held with the utmost care and security.
 
 Please take time to review this privacy policy as it sets out our privacy practices and tells you how your personal information will be treated by us. We do not sell, rent or loan any identifiable information regarding our customers to any third party. Only in the circumstances described within this Privacy Policy would we share your information with any third party.
 
@@ -18,9 +18,10 @@ If you're visiting the SQLSaturday website, or submitting event information to u
 We collect common types of personal data, such as: names, email addresses and social media usernames. Our website hosting provider (GitHub) will also see your computer's IP address.
 
 We will use your data to:
-
 - Provide contact details for organizers of events listed on the SQLSaturday website
 - Run the SQLSaturday.com website
+
+By registering for any SQL Saturday event, you are opting in to receive communications from our sponsors regarding products and offers. Your data will be handled in accordance with our sponsors' privacy policies
 
 ### Visiting the SQLSaturday website
 
@@ -53,16 +54,10 @@ If you have any questions regarding this policy, or wish to make a complaint abo
 
 You can also write to us at:
 
-Compliance Manager
-Red Gate Software Limited
-Newnham House
-Cambridge Business Park
-Cambridge
-CB4 0WZ
-United Kingdom
-
-If you are unhappy with how we have used your data, you can complain the UK data protection regulator, the Information Commissioner's Office.
+SQL Saturday
+1999 Bryan Street, Suite 900
+Dallas, TX 75201-3136
 
 ### Changes to this privacy policy
 
-We regularly review our privacy policy. This policy was last updated on 1st April 2021.
+We regularly review our privacy policy. This policy was last updated on 5th February 2025.
