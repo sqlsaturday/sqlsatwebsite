@@ -57,11 +57,8 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
-- Apr 26, 2025 - Orange County, LA, CA
 - May 2025 - Redmond (POSTPONED)
-- May 23, 2025 - Salt Lake City
-- June 21, 2025 - Arequipa
-- July 19, 2025 - South Florida
+- Sept 27, 2025 - Boston
 - Nov 15, 2025 - Oregon and SW Washington
 - Nov 29, 2025 - Lima, Peru
 - Tech Community Day / SQL Saturday Guatamala 2025 - TBD
