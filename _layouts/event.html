@@ -328,11 +328,13 @@ layout: base
             {% else %}
               {{ sponsor.name }}
             {% endif %}                         
-            {% if sponsor.textdesc %}
-            </p><p>{{ sponsor.textdesc }}
-            {% endif %}                         
           </a><br/>
-        </p>
+          {% if sponsor.textdesc %}
+            <br/>
+            {{ sponsor.textdesc }}
+            <br/>
+        {% endif %}                         
+    </p>
         {% endfor %}
         <p>
            {% if pagedata.sponsorscontacturl %}
