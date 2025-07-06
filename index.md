@@ -62,6 +62,7 @@ The following dates are tentative for these cities, but they have asked to reser
 - Nov 15, 2025 - Oregon and SW Washington
 - Nov 29, 2025 - Lima, Peru
 - Tech Community Day / SQL Saturday Guatamala 2025 - TBD
+- April 17-18, 2026 - SeaQL 2026 Ouddorp (NL)
 
 Please contact the local organizers for these areas if you have questions or concerns.
 
