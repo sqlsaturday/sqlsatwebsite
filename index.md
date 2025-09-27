@@ -23,7 +23,7 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
         </tr>
       </thead>
       <tbody>
-  {% assign TodayDate = site.time | date: '%s' %}
+  {% assign TodayDate = site.time | date: '%s' | plus: 86400  | date: "%Y-%m-%d" %}
   {% assign future = 0 %}
   {% for post in site.posts reversed %}
     {% assign EventDate = post.date | date: '%s' %}
