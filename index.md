@@ -96,3 +96,6 @@ Here are some other events that you might find interesting as a data professiona
         </tr>
         {% endfor %}
   </tbody>
+
+  {% assign nextday = TodayDate | plus: 86400 %}
+<p>The date plus one day is: {{ nextday | date: "%Y-%m-%d" }}</p>
