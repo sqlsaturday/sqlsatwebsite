@@ -24,7 +24,7 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
       </thead>
       <tbody>
   {% assign TodayDate = site.time | date: '%s'  %}
-  {% assign nextday = TodayDate | plus: 86400 %}
+  {% assign nextday = TodayDate | plus: 86400 | date: '%s' %}
   {% assign future = 0 %}
   {% for post in site.posts reversed %}
     {% assign EventDate = post.date | date: '%s' %}
