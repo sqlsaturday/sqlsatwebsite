@@ -98,4 +98,3 @@ Here are some other events that you might find interesting as a data professiona
         {% endfor %}
   </tbody>
 
-  
