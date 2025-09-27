@@ -24,11 +24,12 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
       </thead>
       <tbody>
   {% assign TodayDate = site.time | date: '%s'  %}
+  {% assign nextday = TodayDate | plus: 86400 %}
   {% assign future = 0 %}
   {% for post in site.posts reversed %}
     {% assign EventDate = post.date | date: '%s' %}
     {% if post.testevent != 1 %}
-      {% if EventDate > TodayDate %}
+      {% if EventDate > nextday %}
         {% assign future = 1 %}
         <tr>
           <td><img src="{{ post.thumb }}"></td>
@@ -97,5 +98,4 @@ Here are some other events that you might find interesting as a data professiona
         {% endfor %}
   </tbody>
 
-  {% assign nextday = TodayDate | plus: 86400 %}
-<p>The date plus one day is: {{ nextday | date: "%Y-%m-%d" }}</p>
+  
