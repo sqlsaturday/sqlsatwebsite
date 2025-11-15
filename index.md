@@ -59,11 +59,9 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
 - May 2025 - Redmond (POSTPONED)
-- Jan 31, 2026 - Lima, Peru
 - Mar 21, 2026 - Atlanta - AI & BI
 - Mar 21, 2026 - Sao Paulo, Brazil
 - April 17-18, 2026 - SeaQL 2026 Ouddorp (NL)
-- May 2, 2026 - Jacksonville 2026
 - Tech Community Day / SQL Saturday Guatamala 2025 - TBD
 
 Please contact the local organizers for these areas if you have questions or concerns.
