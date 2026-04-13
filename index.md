@@ -58,7 +58,7 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
-- Sep 19, 2026 - Salt Lake City, UT
+- Oct 24, 2026 - Minnesota Day of Data
 - Nov 7, 2026 - Oregon and SW Washington
 - Redmond (POSTPONED) TBD
 
