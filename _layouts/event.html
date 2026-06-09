@@ -496,9 +496,6 @@ layout: base
         {% endif %}
         <h2 align="center"><A name="schedule"></A>Schedule</h2>
           {% if pagedata.scheduleurl%}
-            {% if pagedata.schedulehtml %}
-               {{pagedata.schedulehtml}}
-            {% else %}
                {% if pagedata.scheduletimezone %}
                  <p>Please note the event is taking place in {{pagedata.scheduletimezone}}</p>
                {% endif %}
@@ -518,6 +515,9 @@ layout: base
                 <p style="text-align: center;">If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.</p>
               {% endif %}
             {% endif %}
+         {% endif %}
+         {% if pagedata.schedulehtml %}
+            {{pagedata.schedulehtml}}
          {% endif %}
            <p>&nbsp;</p>
       <!-- toc -->
