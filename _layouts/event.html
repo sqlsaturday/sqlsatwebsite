@@ -508,7 +508,11 @@ layout: base
                  </iframe>
                </p>
          {% else %}
-            <p style="text-align: center;">The schedule has not been announced yet.</p>
+            {% if pagedata.schedulehtml %}
+            &nbsp;
+            {% else %}
+               <p style="text-align: center;">The schedule has not been announced yet.</p>
+            {% endif %}
             {% if pagedata.callforspeakers == true %}
               {% if CFSDate > TodayDate %}
                 <p style="text-align: center;">If you want to <a href="#speakers" class="js-scroll-trigger">submit your own session</a> you can still do so.</p>
