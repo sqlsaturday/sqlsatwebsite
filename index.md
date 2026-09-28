@@ -58,8 +58,8 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
-- Oct 10, 2026 - Pittsburgh
-- Dec 5, 2026 - Houston
+- Mar 6, 2027 - Atlanta
+- Mar 13, 2027 - Atlanta (tentative)
 
 Please contact the local organizers for these areas if you have questions or concerns.
 
