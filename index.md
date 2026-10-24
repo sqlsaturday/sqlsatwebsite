@@ -58,7 +58,7 @@ These are the SQL Saturday events that are currently scheduled. If you would lik
 ## <a name="reserved"></a>Reserved Dates
 
 The following dates are tentative for these cities, but they have asked to reserve the date.
-- Mar 13, 2027 - Atlanta (tentative)
+- Mar 13, 2027 - Atlanta
 
 Please contact the local organizers for these areas if you have questions or concerns.
 
